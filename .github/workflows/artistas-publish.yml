@@ -40,12 +40,22 @@ jobs:
       - name: Validate Python
         run: python -m py_compile scripts/*.py live/*.py
 
+      - name: Refuse incomplete catalog
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/artists.json").read_text(encoding="utf-8"))
+          count=len(data.get("artists") or [])
+          print(f"artists={count}")
+          if count < 500:
+              raise SystemExit("Refusing Pages deploy: Artistas catalog is incomplete")
+          PY
+
       - name: Build static Artistas
         run: python scripts/build_artists.py
 
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
