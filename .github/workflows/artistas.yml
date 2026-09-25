@@ -23,7 +23,7 @@ permissions:
 
 concurrency:
   group: louder-artistas
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   migrate-build-deploy:
@@ -44,6 +44,9 @@ jobs:
 
       - name: Dependencies
         run: pip install -r requirements.txt
+
+      - name: Validate Python
+        run: python -m py_compile scripts/*.py live/*.py
 
       - name: Migrate current Artistas catalog
         shell: bash
