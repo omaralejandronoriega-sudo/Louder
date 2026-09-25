@@ -1,0 +1,98 @@
+name: Update Louder Radar 2026
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      track_id:
+        description: "Track ID (mb:...) to change; leave empty to only refresh"
+        required: false
+        type: string
+      status:
+        description: "Download/programming state"
+        required: false
+        type: choice
+        options:
+          - ""
+          - pending
+          - downloaded
+          - programmed
+          - discarded
+      louder_fit:
+        description: "Does it fit Louder?"
+        required: false
+        type: choice
+        options:
+          - ""
+          - yes
+          - review
+          - no
+      note:
+        description: "Optional note"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: louder-radar-2026
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Strict 2026 discovery
+        run: python scripts/update_radar_2026.py
+
+      - name: Apply manual state
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.track_id != '' }}
+        shell: bash
+        env:
+          TRACK_ID: ${{ inputs.track_id }}
+          STATUS: ${{ inputs.status }}
+          FIT: ${{ inputs.louder_fit }}
+          NOTE: ${{ inputs.note }}
+        run: |
+          args=(--id "$TRACK_ID")
+          if [ -n "$STATUS" ]; then args+=(--status "$STATUS"); fi
+          if [ -n "$FIT" ]; then args+=(--fit "$FIT"); fi
+          if [ -n "$NOTE" ]; then args+=(--note "$NOTE"); fi
+          python scripts/mark_radar_2026.py "${args[@]}"
+
+      - name: Enforce 2026-only invariant
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/radar_2026.json").read_text(encoding="utf-8"))
+          bad=[x for x in data.get("tracks",[]) if x.get("original_release_year") != 2026 or not str(x.get("original_release_date","")).startswith("2026")]
+          if bad:
+              raise SystemExit(f"Refusing commit: {len(bad)} non-2026 tracks")
+          print("2026 invariant OK")
+          PY
+
+      - name: Commit radar changes
+        shell: bash
+        run: |
+          if git diff --quiet -- data/radar_2026.json; then
+            echo "No radar changes"
+            exit 0
+          fi
+          git config user.name "Louder Radar"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/radar_2026.json
+          git commit -m "Update Louder Radar 2026"
+          git push
