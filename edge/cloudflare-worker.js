@@ -1,0 +1,72 @@
+const PAGES_ORIGIN = "https://omaralejandronoriega-sudo.github.io";
+const PAGES_BASE = "/Louder";
+
+function githubUrl(requestUrl) {
+  const incoming = new URL(requestUrl);
+  const target = new URL(PAGES_ORIGIN);
+  target.pathname = PAGES_BASE + incoming.pathname;
+  target.search = incoming.search;
+  return target;
+}
+
+function publicLocation(location, requestUrl) {
+  if (!location) return location;
+  const incoming = new URL(requestUrl);
+  const resolved = new URL(location, PAGES_ORIGIN);
+  if (resolved.hostname !== new URL(PAGES_ORIGIN).hostname) return location;
+  const path = resolved.pathname.startsWith(PAGES_BASE)
+    ? resolved.pathname.slice(PAGES_BASE.length) || "/"
+    : resolved.pathname;
+  return incoming.origin + path + resolved.search + resolved.hash;
+}
+
+export default {
+  async fetch(request) {
+    const incoming = new URL(request.url);
+
+    // The route is intentionally limited to /artistas*. Everything else keeps
+    // going to the existing Louder origin.
+    if (!incoming.pathname.startsWith("/artistas")) {
+      return fetch(request);
+    }
+
+    try {
+      const upstream = await fetch(new Request(githubUrl(request.url), request), {
+        cf: {
+          cacheEverything: true,
+          cacheTtl: incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg)$/i)
+            ? 86400
+            : 300,
+        },
+      });
+
+      // Never sacrifice the current WordPress section: if the static copy has
+      // a missing page or GitHub is unavailable, fall through to the origin.
+      if (upstream.status >= 500 || upstream.status === 404) {
+        return fetch(request);
+      }
+
+      const headers = new Headers(upstream.headers);
+      headers.set("X-Louder-Artistas-Origin", "github-pages");
+      headers.set(
+        "Cache-Control",
+        incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg)$/i)
+          ? "public, max-age=86400"
+          : "public, max-age=300, stale-while-revalidate=3600"
+      );
+
+      const location = headers.get("Location");
+      if (location) {
+        headers.set("Location", publicLocation(location, request.url));
+      }
+
+      return new Response(upstream.body, {
+        status: upstream.status,
+        statusText: upstream.statusText,
+        headers,
+      });
+    } catch (_) {
+      return fetch(request);
+    }
+  },
+};
