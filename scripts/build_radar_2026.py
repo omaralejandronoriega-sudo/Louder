@@ -64,7 +64,7 @@ def main() -> None:
 h1{{font-size:clamp(36px,7vw,82px);margin:0;letter-spacing:-.05em;line-height:.9}}
 .kicker{{text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:800}}
 .note{{color:var(--muted);max-width:760px;line-height:1.5}}
-.stats{{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:26px 0}}
+.stats{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:26px 0}}
 .stat{{background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px}}
 .stat strong{{display:block;font-size:28px}} .stat span{{color:var(--muted);font-size:12px;text-transform:uppercase}}
 .tools{{display:flex;gap:10px;flex-wrap:wrap;position:sticky;top:0;background:rgba(11,11,13,.92);padding:12px 0;backdrop-filter:blur(10px);z-index:2}}
@@ -91,11 +91,12 @@ input{{flex:1;min-width:220px}}
     <div class="stat"><strong>{stats.get('pending',0)}</strong><span>por descargar</span></div>
     <div class="stat"><strong>{stats.get('downloaded',0)}</strong><span>descargadas</span></div>
     <div class="stat"><strong>{stats.get('programmed',0)}</strong><span>programadas</span></div>
+    <div class="stat"><strong>{stats.get('review_queue',0)}</strong><span>revisar</span></div>
     <div class="stat"><strong>{stats.get('upcoming',0)}</strong><span>próximamente</span></div>
   </section>
   <div class="tools">
     <input id="q" placeholder="Buscar artista o canción…">
-    <select id="status"><option value="">Todos los estados</option><option value="pending">por descargar</option><option value="downloaded">descargada</option><option value="programmed">programada</option><option value="upcoming">próximamente</option><option value="discarded">descartada</option></select>
+    <select id="status"><option value="">Todos los estados</option><option value="pending">por descargar</option><option value="downloaded">descargada</option><option value="programmed">programada</option><option value="review">revisar</option><option value="upcoming">próximamente</option><option value="discarded">descartada</option></select>
     <select id="fit"><option value="">Todo Louder</option><option value="yes">sí encaja</option><option value="review">revisar</option><option value="no">no</option></select>
   </div>
   <section id="tracks">{"".join(rows) if rows else '<div class="empty">El radar todavía no ha ejecutado su primera recolección.</div>'}</section>
