@@ -4,9 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "scripts/**"
-      - "assets/**"
-      - "requirements.txt"
+      - "scripts/migrate_from_wp.py"
       - ".github/workflows/artistas.yml"
   workflow_dispatch:
     inputs:
@@ -18,36 +16,28 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  # Only the newest full migration should keep running.
   group: louder-artistas
   cancel-in-progress: true
 
 jobs:
-  migrate-build-deploy:
+  migrate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
-      - name: Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Dependencies
-        run: pip install -r requirements.txt
-
-      - name: Validate Python
-        run: python -m py_compile scripts/*.py live/*.py
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile scripts/*.py live/*.py
 
       - name: Migrate current Artistas catalog
         shell: bash
@@ -58,15 +48,12 @@ jobs:
           fi
           python scripts/migrate_from_wp.py --delay 0.65 $EXTRA
 
-      - name: Build static Artistas
-        run: python scripts/build_artists.py
-
       - name: Save normalized snapshot
         shell: bash
         run: |
           git config user.name "louder-artistas-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/artists.json docs/
+          git add data/artists.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
@@ -74,17 +61,3 @@ jobs:
             git pull --rebase origin main
             git push
           fi
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
