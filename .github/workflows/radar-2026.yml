@@ -1,6 +1,12 @@
 name: Update Louder Radar 2026
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/radar-2026.yml"
+      - "scripts/update_radar_2026.py"
+      - "scripts/mark_radar_2026.py"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
