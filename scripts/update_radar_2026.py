@@ -142,6 +142,7 @@ def candidate_from_mb(
         "originality": "review" if suspect else "verified_2026",
         "louder_fit": "yes" if known and not suspect else "review",
         "in_louder_catalog": known,
+        "availability": "released",
         "download_status": "pending",
         "downloaded_at": None,
         "programmed_at": None,
@@ -250,8 +251,20 @@ def main() -> None:
         if int(x.get("original_release_year") or 0) == YEAR
         and str(x.get("original_release_date") or "").startswith(str(YEAR))
     ]
+
+    today = dt.date.today().isoformat()
+    for track in tracks:
+        release_date = str(track.get("original_release_date") or "")
+        upcoming = len(release_date) >= 10 and release_date > today
+        track["availability"] = "upcoming" if upcoming else "released"
+        if upcoming and track.get("download_status") == "pending":
+            track["download_status"] = "upcoming"
+        elif not upcoming and track.get("download_status") == "upcoming":
+            track["download_status"] = "pending"
+
     tracks.sort(
         key=lambda x: (
+            1 if x.get("availability") == "released" else 0,
             str(x.get("original_release_date") or ""),
             str(x.get("artist") or "").casefold(),
             str(x.get("title") or "").casefold(),
@@ -265,6 +278,8 @@ def main() -> None:
     radar["tracks"] = tracks
     radar["stats"] = {
         "total": len(tracks),
+        "released": sum(x.get("availability") == "released" for x in tracks),
+        "upcoming": sum(x.get("availability") == "upcoming" for x in tracks),
         "pending": sum(x.get("download_status") == "pending" for x in tracks),
         "downloaded": sum(x.get("download_status") == "downloaded" for x in tracks),
         "programmed": sum(x.get("download_status") == "programmed" for x in tracks),
