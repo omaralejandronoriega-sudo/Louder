@@ -1,22 +1,12 @@
-# Edge routing for `loudermx.com/artistas/`
+# Louder Edge
 
-The public URL stays on **loudermx.com** while the HTML/CSS/JS is fetched from
-the GitHub Pages build.
+Worker de Cloudflare que conecta secciones estáticas de Louder con GitHub Pages
+sin trasladar procesamiento a WordPress.
 
-Route:
+Rutas actuales:
 
-```
-loudermx.com/artistas* -> Cloudflare Worker -> GitHub Pages
-everything else       -> existing WordPress origin
-```
+- `/artistas*`
+- `/radar-2026*`
 
-The Worker is fail-safe: a GitHub 404/5xx or fetch error falls back to the
-current WordPress request, so enabling the route does not delete the existing
-Artistas section.
-
-## Deployment
-
-Cloudflare must already be authoritative/proxying `loudermx.com`. Deploy the
-Worker and attach only the route `loudermx.com/artistas*`.
-
-This repo intentionally contains no Cloudflare account token or secret.
+Si GitHub Pages devuelve 404/5xx, el Worker conserva el origen de Louder como
+fallback. El despliegue se realiza con el workflow `deploy-artistas-edge.yml`.
