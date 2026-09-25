@@ -1,0 +1,7 @@
+name = "louder-artistas"
+main = "cloudflare-worker.js"
+compatibility_date = "2026-09-25"
+
+routes = [
+  { pattern = "loudermx.com/artistas*", zone_name = "loudermx.com" }
+]
