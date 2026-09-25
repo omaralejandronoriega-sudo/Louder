@@ -14,6 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "artists.json"
 GALLERIES = ROOT / "data" / "galleries.json"
+ALBUM_ART = ROOT / "data" / "album_art.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 
@@ -89,16 +90,23 @@ def social_links(artist: dict[str, Any]) -> str:
     return "".join(links)
 
 
-def tracks_html(artist: dict[str, Any]) -> str:
+def album_art_key(artist: str, album: str) -> str:
+    return norm(artist) + "|" + norm(album)
+
+
+def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
     tracks = artist.get("tracks") or []
     if not tracks:
         return '<div class="note">Todavía no hay canciones consolidadas para esta ficha.</div>'
 
     out: list[str] = ['<div class="track-list" data-track-list>']
     for track in tracks:
+        album = str(track.get("album") or "")
+        cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
+        artwork = str(track.get("artwork") or cached.get("url") or "")
         cover = (
-            f'<img src="{esc(track.get("artwork"))}" alt="" loading="lazy" decoding="async">'
-            if track.get("artwork")
+            f'<img src="{esc(artwork)}" alt="" loading="lazy" decoding="async">'
+            if artwork
             else '<span class="cover-fallback">Louder</span>'
         )
         out.append(
@@ -252,6 +260,7 @@ def build_artist(
     artist: dict[str, Any],
     by_slug: dict[str, dict[str, Any]],
     galleries: dict[str, Any],
+    album_art: dict[str, Any],
 ) -> None:
     name = artist.get("name", "")
     gallery = galleries.get(artist.get("slug", ""), {})
@@ -317,7 +326,7 @@ def build_artist(
    <button class="button" data-track-sort="last">Última vez</button>
   </div>
  </div>
- {tracks_html(artist)}
+ {tracks_html(artist, album_art)}
 </section>
 
 <section class="section">
@@ -355,6 +364,14 @@ def main() -> int:
             gallery_store = {"artists": {}}
     galleries = gallery_store.get("artists") or {}
 
+    art_store = {"albums": {}}
+    if ALBUM_ART.exists():
+        try:
+            art_store = json.loads(ALBUM_ART.read_text(encoding="utf-8"))
+        except Exception:
+            art_store = {"albums": {}}
+    album_art = art_store.get("albums") or {}
+
     if DOCS.exists():
         keep_media = DOCS / "media"
         tmp_media = ROOT / ".media-preserve"
@@ -373,7 +390,7 @@ def main() -> int:
 
     build_index(artists, galleries)
     for artist in artists:
-        build_artist(artist, by_slug, galleries)
+        build_artist(artist, by_slug, galleries, album_art)
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "index.html").write_text(
