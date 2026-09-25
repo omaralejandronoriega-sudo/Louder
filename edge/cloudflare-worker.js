@@ -20,15 +20,24 @@ function publicLocation(location, requestUrl) {
   return incoming.origin + path + resolved.search + resolved.hash;
 }
 
+function isStaticSection(pathname) {
+  return (
+    pathname === "/artistas" ||
+    pathname.startsWith("/artistas/") ||
+    pathname === "/radar-2026" ||
+    pathname.startsWith("/radar-2026/")
+  );
+}
+
 export default {
   async fetch(request) {
     const incoming = new URL(request.url);
 
-    // The route is intentionally limited to /artistas*. Everything else keeps
-    // going to the existing Louder origin.
+    // Only selected static sections are served from GitHub Pages.
+    // Everything else keeps going to the existing Louder origin.
     if (
-      request.method !== "GET" && request.method !== "HEAD" ||
-      !(incoming.pathname === "/artistas" || incoming.pathname.startsWith("/artistas/"))
+      (request.method !== "GET" && request.method !== "HEAD") ||
+      !isStaticSection(incoming.pathname)
     ) {
       return fetch(request);
     }
@@ -47,23 +56,23 @@ export default {
       const upstream = await fetch(upstreamRequest, {
         cf: {
           cacheEverything: true,
-          cacheTtl: incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg)$/i)
+          cacheTtl: incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg|json)$/i)
             ? 86400
             : 300,
         },
       });
 
-      // Never sacrifice the current WordPress section: if the static copy has
-      // a missing page or GitHub is unavailable, fall through to the origin.
+      // Fail safe: if GitHub is unavailable or a page is missing,
+      // keep the current WordPress origin available.
       if (upstream.status >= 500 || upstream.status === 404) {
         return fetch(request);
       }
 
       const headers = new Headers(upstream.headers);
-      headers.set("X-Louder-Artistas-Origin", "github-pages");
+      headers.set("X-Louder-Static-Origin", "github-pages");
       headers.set(
         "Cache-Control",
-        incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg)$/i)
+        incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg|json)$/i)
           ? "public, max-age=86400"
           : "public, max-age=300, stale-while-revalidate=3600"
       );
