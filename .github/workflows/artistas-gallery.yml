@@ -16,8 +16,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: louder-artistas-gallery
@@ -27,9 +25,6 @@ jobs:
   galleries:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout latest main
@@ -37,14 +32,13 @@ jobs:
         with:
           ref: main
 
-      - name: Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile scripts/*.py live/*.py
 
       - name: Build gallery manifests
         shell: bash
@@ -57,15 +51,12 @@ jobs:
           fi
           python scripts/enrich_galleries.py $EXTRA
 
-      - name: Build static Artistas
-        run: python scripts/build_artists.py
-
       - name: Save gallery metadata
         shell: bash
         run: |
           git config user.name "louder-artistas-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/galleries.json docs/
+          git add data/galleries.json
           if git diff --cached --quiet; then
             echo "No gallery changes"
           else
@@ -73,17 +64,3 @@ jobs:
             git pull --rebase origin main
             git push
           fi
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
