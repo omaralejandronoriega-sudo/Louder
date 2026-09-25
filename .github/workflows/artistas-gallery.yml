@@ -1,0 +1,89 @@
+name: Louder Artistas Galleries
+
+on:
+  workflow_run:
+    workflows: ["Louder Artistas"]
+    types: [completed]
+  schedule:
+    - cron: "23 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "Volver a consultar galerías existentes"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: louder-artistas
+  cancel-in-progress: false
+
+jobs:
+  galleries:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build gallery manifests
+        shell: bash
+        env:
+          FANART_TV_API_KEY: ${{ secrets.FANART_TV_API_KEY }}
+        run: |
+          EXTRA=""
+          if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
+            EXTRA="--refresh"
+          fi
+          python scripts/enrich_galleries.py $EXTRA
+
+      - name: Build static Artistas
+        run: python scripts/build_artists.py
+
+      - name: Save gallery metadata
+        shell: bash
+        run: |
+          git config user.name "louder-artistas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/galleries.json docs/
+          if git diff --cached --quiet; then
+            echo "No gallery changes"
+          else
+            git commit -m "Update Artistas galleries"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
