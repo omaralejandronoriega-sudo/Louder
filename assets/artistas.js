@@ -91,6 +91,48 @@
     }
   });
 
+  const galleryButtons = qa("[data-gallery-image]");
+  if (galleryButtons.length) {
+    const overlay = document.createElement("div");
+    overlay.className = "gallery-lightbox";
+    overlay.hidden = true;
+    overlay.innerHTML = `
+      <button class="gallery-close" type="button" aria-label="Cerrar">×</button>
+      <figure>
+        <img alt="">
+        <figcaption></figcaption>
+      </figure>
+    `;
+    document.body.appendChild(overlay);
+
+    const image = q("img", overlay);
+    const caption = q("figcaption", overlay);
+
+    function closeGallery() {
+      overlay.hidden = true;
+      image.removeAttribute("src");
+      document.body.classList.remove("gallery-open");
+    }
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        image.src = button.dataset.full || q("img", button)?.src || "";
+        image.alt = q("img", button)?.alt || "";
+        caption.textContent = button.dataset.caption || "";
+        overlay.hidden = false;
+        document.body.classList.add("gallery-open");
+      });
+    });
+
+    q(".gallery-close", overlay)?.addEventListener("click", closeGallery);
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) closeGallery();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !overlay.hidden) closeGallery();
+    });
+  }
+
   const trackList = q("[data-track-list]");
   if (trackList) {
     const rows = qa("[data-track]", trackList);
