@@ -116,9 +116,41 @@ def suspicious(item: dict[str, Any]) -> bool:
     return any(word in haystack for word in SUSPECT_WORDS)
 
 
+DERIVATIVE_TITLE_RE = re.compile(
+    r"(?:\\(|\\[|\\s[-–—]\\s).*\\b(remix|remaster(?:ed)?|reissue|live|acoustic|demo|edit|version|session|mix)\\b",
+    re.IGNORECASE,
+)
+
+
+def year_in(value: str) -> int | None:
+    match = re.search(r"\\b(?:19|20)\\d{2}\\b", value or "")
+    return int(match.group(0)) if match else None
+
+
+def legacy_louder_titles(artists: list[dict[str, Any]]) -> set[tuple[str, str]]:
+    legacy: set[tuple[str, str]] = set()
+    for artist in artists:
+        artist_name = norm(str(artist.get("name") or ""))
+        if not artist_name:
+            continue
+        for track in artist.get("tracks") or []:
+            if not isinstance(track, dict):
+                continue
+            title = norm(str(track.get("title") or ""))
+            first_year = year_in(str(track.get("first_played") or ""))
+            if title and first_year and first_year < YEAR:
+                legacy.add((artist_name, title))
+    return legacy
+
+
+def derivative_title(title: str) -> bool:
+    return bool(DERIVATIVE_TITLE_RE.search(title or ""))
+
+
 def candidate_from_mb(
     item: dict[str, Any],
     known_artists: set[str],
+    legacy_titles: set[tuple[str, str]],
     signal: str,
 ) -> dict[str, Any] | None:
     first = str(item.get("first-release-date") or "")
@@ -131,19 +163,30 @@ def candidate_from_mb(
     if not mbid or not title or not artist:
         return None
 
-    known = norm(artist) in known_artists
+    artist_key = norm(artist)
+    title_key = norm(title)
+    known = artist_key in known_artists
+
+    # "Netamente 2026": if Louder already played this exact artist/title
+    # before 2026, or the title explicitly identifies a remix/live/edit/etc.,
+    # it is legacy/derivative material and must not enter the 2026 song queue.
+    if (artist_key, title_key) in legacy_titles or derivative_title(title):
+        return None
+
     suspect = suspicious(item)
+    originality = "probable_2026" if known and not suspect else "review"
+    operational_status = "pending" if known and not suspect else "review"
     return {
         "id": f"mb:{mbid}",
         "artist": artist,
         "title": title,
         "original_release_date": first,
         "original_release_year": YEAR,
-        "originality": "review" if suspect else "verified_2026",
+        "originality": originality,
         "louder_fit": "yes" if known and not suspect else "review",
         "in_louder_catalog": known,
         "availability": "released",
-        "download_status": "pending",
+        "download_status": operational_status,
         "downloaded_at": None,
         "programmed_at": None,
         "notes": "",
@@ -186,6 +229,8 @@ def main() -> None:
     artists.sort(key=lambda a: int(a.get("plays") or 0), reverse=True)
 
     known_artists = {norm(str(a.get("name"))) for a in artists}
+    legacy_titles = legacy_louder_titles(artists)
+    print(f"legacy_louder_titles={len(legacy_titles)}")
     radar = read_json(
         RADAR_PATH,
         {
@@ -218,7 +263,7 @@ def main() -> None:
             print(f"MusicBrainz artist scan failed for {name}: {exc}")
             continue
         for row in rows:
-            item = candidate_from_mb(row, known_artists, "musicbrainz:louder-artist")
+            item = candidate_from_mb(row, known_artists, legacy_titles, "musicbrainz:louder-artist")
             if item:
                 discovered[item["id"]] = item
 
@@ -231,7 +276,7 @@ def main() -> None:
                 print(f"MusicBrainz tag scan failed for {tag}: {exc}")
                 continue
             for row in rows:
-                item = candidate_from_mb(row, known_artists, f"musicbrainz:tag:{tag}")
+                item = candidate_from_mb(row, known_artists, legacy_titles, f"musicbrainz:tag:{tag}")
                 if not item:
                     continue
                 if item["id"] in discovered:
@@ -250,6 +295,8 @@ def main() -> None:
         x for x in existing.values()
         if int(x.get("original_release_year") or 0) == YEAR
         and str(x.get("original_release_date") or "").startswith(str(YEAR))
+        and (norm(str(x.get("artist") or "")), norm(str(x.get("title") or ""))) not in legacy_titles
+        and not derivative_title(str(x.get("title") or ""))
     ]
 
     today = dt.date.today().isoformat()
@@ -257,9 +304,11 @@ def main() -> None:
         release_date = str(track.get("original_release_date") or "")
         upcoming = len(release_date) >= 10 and release_date > today
         track["availability"] = "upcoming" if upcoming else "released"
-        if upcoming and track.get("download_status") == "pending":
+        if upcoming:
             track["download_status"] = "upcoming"
-        elif not upcoming and track.get("download_status") == "upcoming":
+        elif track.get("louder_fit") != "yes":
+            track["download_status"] = "review"
+        elif track.get("download_status") in {"upcoming", "review"}:
             track["download_status"] = "pending"
 
     tracks.sort(
@@ -283,6 +332,7 @@ def main() -> None:
         "pending": sum(x.get("download_status") == "pending" for x in tracks),
         "downloaded": sum(x.get("download_status") == "downloaded" for x in tracks),
         "programmed": sum(x.get("download_status") == "programmed" for x in tracks),
+        "review_queue": sum(x.get("download_status") == "review" for x in tracks),
         "discarded": sum(x.get("download_status") == "discarded" for x in tracks),
         "louder_yes": sum(x.get("louder_fit") == "yes" for x in tracks),
         "review": sum(x.get("louder_fit") == "review" for x in tracks),
