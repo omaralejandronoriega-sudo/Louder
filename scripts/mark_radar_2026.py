@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PATH = ROOT / "data" / "radar_2026.json"
-VALID = {"pending", "downloaded", "programmed", "discarded"}
+VALID = {"pending", "downloaded", "programmed", "upcoming", "discarded"}
 FITS = {"yes", "review", "no"}
 
 
