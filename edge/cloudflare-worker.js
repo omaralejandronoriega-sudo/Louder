@@ -26,12 +26,25 @@ export default {
 
     // The route is intentionally limited to /artistas*. Everything else keeps
     // going to the existing Louder origin.
-    if (!incoming.pathname.startsWith("/artistas")) {
+    if (
+      request.method !== "GET" && request.method !== "HEAD" ||
+      !(incoming.pathname === "/artistas" || incoming.pathname.startsWith("/artistas/"))
+    ) {
       return fetch(request);
     }
 
     try {
-      const upstream = await fetch(new Request(githubUrl(request.url), request), {
+      const upstreamHeaders = new Headers();
+      for (const name of ["accept", "accept-language", "user-agent", "if-none-match", "if-modified-since"]) {
+        const value = request.headers.get(name);
+        if (value) upstreamHeaders.set(name, value);
+      }
+      const upstreamRequest = new Request(githubUrl(request.url), {
+        method: request.method,
+        headers: upstreamHeaders,
+        redirect: "manual",
+      });
+      const upstream = await fetch(upstreamRequest, {
         cf: {
           cacheEverything: true,
           cacheTtl: incoming.pathname.match(/\.(css|js|svg|webp|avif|png|jpg|jpeg)$/i)

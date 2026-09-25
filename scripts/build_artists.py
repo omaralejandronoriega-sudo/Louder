@@ -191,7 +191,7 @@ def page_shell(
 </head>
 <body>
 <header class="site-header">
- <a class="brand" href="https://loudermx.com/" aria-label="Louder"><span>LOUDER</span><small>LA ÚNICA ALTERNATIVA</small></a>
+ <a class="brand" href="https://loudermx.com/" aria-label="Louder"><img src="{asset_prefix}logo_louder.png" alt="Louder"><small>LA ÚNICA ALTERNATIVA</small></a>
  <nav><a href="https://loudermx.com/">Inicio</a><a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a></nav>
 </header>
 {body}
@@ -387,6 +387,7 @@ def main() -> int:
     (DOCS / "artistas" / "_assets").mkdir(parents=True, exist_ok=True)
     shutil.copy2(ASSETS / "artistas.css", DOCS / "artistas" / "_assets" / "artistas.css")
     shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
+    shutil.copy2(ASSETS / "logo_louder.png", DOCS / "artistas" / "_assets" / "logo_louder.png")
 
     build_index(artists, galleries)
     for artist in artists:
