@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: louder-artistas-live
+  group: louder-artistas-pages
   cancel-in-progress: true
 
 jobs:
@@ -27,14 +27,13 @@ jobs:
         with:
           ref: main
 
-      - name: Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile scripts/*.py live/*.py
 
       - name: Apply live history without WordPress
         run: python live/sync_history.py --require-min 500
@@ -42,13 +41,11 @@ jobs:
       - name: Build static Artistas
         run: python scripts/build_artists.py
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v5
         with:
           enablement: true
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
