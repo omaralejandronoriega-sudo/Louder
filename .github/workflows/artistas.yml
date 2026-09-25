@@ -1,0 +1,85 @@
+name: Louder Artistas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "assets/**"
+      - "requirements.txt"
+      - ".github/workflows/artistas.yml"
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "Volver a leer perfiles ya migrados"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: louder-artistas
+  cancel-in-progress: false
+
+jobs:
+  migrate-build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Migrate current Artistas catalog
+        shell: bash
+        run: |
+          EXTRA=""
+          if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
+            EXTRA="--refresh"
+          fi
+          python scripts/migrate_from_wp.py --delay 0.65 $EXTRA
+
+      - name: Build static Artistas
+        run: python scripts/build_artists.py
+
+      - name: Save normalized snapshot
+        shell: bash
+        run: |
+          git config user.name "louder-artistas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/artists.json docs/
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Update Artistas static snapshot"
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
