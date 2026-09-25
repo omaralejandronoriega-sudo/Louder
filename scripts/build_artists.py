@@ -13,6 +13,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "artists.json"
+GALLERIES = ROOT / "data" / "galleries.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 
@@ -32,6 +33,46 @@ def number(value: Any) -> str:
         return f"{int(value or 0):,}".replace(",", " ")
     except Exception:
         return "0"
+
+
+def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
+    if not isinstance(gallery, dict):
+        return []
+    images = gallery.get("images") or []
+    return [x for x in images if isinstance(x, dict) and x.get("url")][:5]
+
+
+def preferred_image(artist: dict[str, Any], gallery: dict[str, Any] | None = None) -> str:
+    images = gallery_images(gallery)
+    if images:
+        return str(images[0].get("preview") or images[0].get("url") or "")
+    return str(artist.get("image") or "")
+
+
+def gallery_html(name: str, gallery: dict[str, Any] | None) -> str:
+    images = gallery_images(gallery)
+    if len(images) < 2:
+        return ""
+    items: list[str] = []
+    for index, item in enumerate(images, start=1):
+        full = esc(item.get("url"))
+        preview = esc(item.get("preview") or item.get("url"))
+        source = esc(item.get("source") or "Fuente externa")
+        kind = esc(item.get("kind") or "foto")
+        items.append(
+            f'''<button class="gallery-item" type="button"
+ data-gallery-image data-full="{full}" data-caption="{esc(name)} · {source}">
+ <img src="{preview}" alt="{esc(name)} — imagen {index}" loading="lazy" decoding="async">
+ <span>{kind}</span>
+</button>'''
+        )
+    return f'''<section class="section gallery-section">
+ <div class="section-title">
+  <div><h2>Galería</h2><p>{len(items)} imágenes · servidas fuera del hosting de Louder</p></div>
+ </div>
+ <div class="artist-gallery">{"".join(items)}</div>
+ <p class="gallery-credit">Imágenes suministradas por sus respectivas fuentes; Louder conserva únicamente las referencias en GitHub.</p>
+</section>'''
 
 
 def social_links(artist: dict[str, Any]) -> str:
@@ -82,12 +123,16 @@ def tracks_html(artist: dict[str, Any]) -> str:
     return "".join(out)
 
 
-def related_html(artist: dict[str, Any], by_slug: dict[str, dict[str, Any]]) -> str:
+def related_html(
+    artist: dict[str, Any],
+    by_slug: dict[str, dict[str, Any]],
+    galleries: dict[str, Any],
+) -> str:
     items: list[str] = []
     for rel in (artist.get("related") or [])[:10]:
         slug = rel.get("slug", "")
         target = by_slug.get(slug, {})
-        image = target.get("image", "")
+        image = preferred_image(target, galleries.get(slug))
         media = (
             f'<img src="{esc(image)}" alt="{esc(rel.get("name"))}" loading="lazy">'
             if image
@@ -104,9 +149,17 @@ def related_html(artist: dict[str, Any], by_slug: dict[str, dict[str, Any]]) -> 
     return '<div class="related">' + "".join(items) + "</div>"
 
 
-def page_shell(title: str, body: str, depth: int = 1, description: str = "") -> str:
-    asset_prefix = "../" * depth + "assets/"
+def page_shell(
+    title: str,
+    body: str,
+    depth: int = 1,
+    description: str = "",
+    canonical_path: str = "/artistas/",
+    social_image: str = "",
+) -> str:
+    asset_prefix = "_assets/" if depth == 1 else "../_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
+    canonical = "https://loudermx.com" + canonical_path
     return f'''<!doctype html>
 <html lang="es-MX">
 <head>
@@ -115,6 +168,13 @@ def page_shell(title: str, body: str, depth: int = 1, description: str = "") -> 
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="theme-color" content="#080808">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="{esc(canonical)}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{esc(canonical)}">
+{f'<meta property="og:image" content="{esc(social_image)}">' if social_image else ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -132,11 +192,11 @@ def page_shell(title: str, body: str, depth: int = 1, description: str = "") -> 
 </html>'''
 
 
-def build_index(artists: list[dict[str, Any]]) -> None:
+def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> None:
     cards: list[str] = []
     for artist in artists:
         name = artist.get("name", "")
-        image = artist.get("image", "")
+        image = preferred_image(artist, galleries.get(artist.get("slug", "")))
         media = (
             f'<img src="{esc(image)}" alt="{esc(name)}" loading="lazy" decoding="async">'
             if image
@@ -182,12 +242,20 @@ def build_index(artists: list[dict[str, Any]]) -> None:
 
     out = DOCS / "artistas" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(page_shell("Artistas | Louder", body, depth=1), encoding="utf-8")
+    out.write_text(
+        page_shell("Artistas | Louder", body, depth=1, canonical_path="/artistas/"),
+        encoding="utf-8",
+    )
 
 
-def build_artist(artist: dict[str, Any], by_slug: dict[str, dict[str, Any]]) -> None:
+def build_artist(
+    artist: dict[str, Any],
+    by_slug: dict[str, dict[str, Any]],
+    galleries: dict[str, Any],
+) -> None:
     name = artist.get("name", "")
-    image = artist.get("image", "")
+    gallery = galleries.get(artist.get("slug", ""), {})
+    image = preferred_image(artist, gallery)
     hero_image = (
         f'<img src="{esc(image)}" alt="{esc(name)}" fetchpriority="high" decoding="async">'
         if image
@@ -237,6 +305,8 @@ def build_artist(artist: dict[str, Any], by_slug: dict[str, dict[str, Any]]) -> 
  <div class="bio">{bio_html}</div>
 </section>
 
+{gallery_html(name, gallery)}
+
 <section class="section">
  <div class="section-title">
   <div><h2>Canciones en Louder</h2><p>{len(artist.get("tracks") or [])} canciones registradas</p></div>
@@ -252,14 +322,24 @@ def build_artist(artist: dict[str, Any], by_slug: dict[str, dict[str, Any]]) -> 
 
 <section class="section">
  <div class="section-title"><h2>Artistas relacionados</h2></div>
- {related_html(artist, by_slug)}
+ {related_html(artist, by_slug, galleries)}
 </section>
 </main>'''
 
     out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     description = bio[:155] if bio else f"{name} en el Archivo Louder."
-    out.write_text(page_shell(f"{name} | Louder", body, depth=2, description=description), encoding="utf-8")
+    out.write_text(
+        page_shell(
+            f"{name} | Louder",
+            body,
+            depth=2,
+            description=description,
+            canonical_path=f"/artistas/{artist['slug']}/",
+            social_image=image,
+        ),
+        encoding="utf-8",
+    )
 
 
 def main() -> int:
@@ -267,6 +347,13 @@ def main() -> int:
     artists = [a for a in data.get("artists", []) if a.get("slug") and a.get("name")]
     artists.sort(key=lambda a: norm(a.get("name", "")))
     by_slug = {a["slug"]: a for a in artists}
+    gallery_store = {"artists": {}}
+    if GALLERIES.exists():
+        try:
+            gallery_store = json.loads(GALLERIES.read_text(encoding="utf-8"))
+        except Exception:
+            gallery_store = {"artists": {}}
+    galleries = gallery_store.get("artists") or {}
 
     if DOCS.exists():
         keep_media = DOCS / "media"
@@ -280,13 +367,13 @@ def main() -> int:
             DOCS.mkdir(parents=True, exist_ok=True)
             shutil.move(str(tmp_media), str(DOCS / "media"))
 
-    (DOCS / "assets").mkdir(parents=True, exist_ok=True)
-    shutil.copy2(ASSETS / "artistas.css", DOCS / "assets" / "artistas.css")
-    shutil.copy2(ASSETS / "artistas.js", DOCS / "assets" / "artistas.js")
+    (DOCS / "artistas" / "_assets").mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ASSETS / "artistas.css", DOCS / "artistas" / "_assets" / "artistas.css")
+    shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
 
-    build_index(artists)
+    build_index(artists, galleries)
     for artist in artists:
-        build_artist(artist, by_slug)
+        build_artist(artist, by_slug, galleries)
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "index.html").write_text(
