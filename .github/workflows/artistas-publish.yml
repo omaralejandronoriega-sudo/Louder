@@ -1,4 +1,4 @@
-name: Publish Louder Artistas
+name: Publish Louder Static Sections
 
 on:
   push:
@@ -7,8 +7,10 @@ on:
       - "data/artists.json"
       - "data/galleries.json"
       - "data/album_art.json"
+      - "data/radar_2026.json"
       - "assets/**"
       - "scripts/build_artists.py"
+      - "scripts/build_radar_2026.py"
       - ".github/workflows/artistas-publish.yml"
   workflow_dispatch:
 
@@ -18,7 +20,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: louder-artistas-pages
+  group: louder-static-pages
   cancel-in-progress: true
 
 jobs:
@@ -40,7 +42,7 @@ jobs:
       - name: Validate Python
         run: python -m py_compile scripts/*.py live/*.py
 
-      - name: Refuse incomplete catalog
+      - name: Refuse incomplete artist catalog
         run: |
           python - <<'PY'
           import json
@@ -52,8 +54,22 @@ jobs:
               raise SystemExit("Refusing Pages deploy: Artistas catalog is incomplete")
           PY
 
-      - name: Build static Artistas
-        run: python scripts/build_artists.py
+      - name: Enforce Radar 2026 invariant
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/radar_2026.json").read_text(encoding="utf-8"))
+          bad=[x for x in data.get("tracks",[]) if x.get("original_release_year") != 2026 or not str(x.get("original_release_date","")).startswith("2026")]
+          if bad:
+              raise SystemExit(f"Refusing Pages deploy: {len(bad)} Radar tracks are not original 2026 entries")
+          print(f"radar_tracks={len(data.get('tracks') or [])}")
+          PY
+
+      - name: Build static sections
+        run: |
+          python scripts/build_artists.py
+          python scripts/build_radar_2026.py
 
       - uses: actions/configure-pages@v5
 
