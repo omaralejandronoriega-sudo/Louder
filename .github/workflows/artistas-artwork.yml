@@ -14,8 +14,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: louder-artistas
-  cancel-in-progress: false
+  group: louder-artistas-artwork
+  cancel-in-progress: true
 
 jobs:
   artwork:
