@@ -1,0 +1,56 @@
+name: Publish Louder Artistas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/artists.json"
+      - "data/galleries.json"
+      - "data/album_art.json"
+      - "assets/**"
+      - "scripts/build_artists.py"
+      - ".github/workflows/artistas-publish.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: louder-artistas-pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Python
+        run: python -m py_compile scripts/*.py live/*.py
+
+      - name: Build static Artistas
+        run: python scripts/build_artists.py
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
