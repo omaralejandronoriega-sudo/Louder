@@ -67,6 +67,7 @@ jobs:
             echo "No data changes"
           else
             git commit -m "Update Artistas static snapshot"
+            git pull --rebase origin main
             git push
           fi
 
