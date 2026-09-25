@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: louder-artistas
-  cancel-in-progress: false
+  group: louder-artistas-live
+  cancel-in-progress: true
 
 jobs:
   sync-build-deploy:
