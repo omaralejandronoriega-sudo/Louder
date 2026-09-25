@@ -32,6 +32,7 @@ def main() -> None:
 <article class="track" data-track
  data-search="{esc((t.get('artist') or '') + ' ' + (t.get('title') or ''))}"
  data-status="{esc(t.get('download_status'))}"
+ data-availability="{esc(t.get('availability') or 'released')}"
  data-fit="{esc(t.get('louder_fit'))}">
   <div class="date">{esc(t.get('original_release_date'))}</div>
   <div class="main">
@@ -87,14 +88,14 @@ input{{flex:1;min-width:220px}}
   </div>
   <section class="stats">
     <div class="stat"><strong>{len(tracks)}</strong><span>detectadas</span></div>
-    <div class="stat"><strong>{stats.get('pending',0)}</strong><span>pendientes</span></div>
+    <div class="stat"><strong>{stats.get('pending',0)}</strong><span>por descargar</span></div>
     <div class="stat"><strong>{stats.get('downloaded',0)}</strong><span>descargadas</span></div>
     <div class="stat"><strong>{stats.get('programmed',0)}</strong><span>programadas</span></div>
-    <div class="stat"><strong>{stats.get('review',0)}</strong><span>por revisar</span></div>
+    <div class="stat"><strong>{stats.get('upcoming',0)}</strong><span>próximamente</span></div>
   </section>
   <div class="tools">
     <input id="q" placeholder="Buscar artista o canción…">
-    <select id="status"><option value="">Todos los estados</option><option>pending</option><option>downloaded</option><option>programmed</option><option>discarded</option></select>
+    <select id="status"><option value="">Todos los estados</option><option value="pending">por descargar</option><option value="downloaded">descargada</option><option value="programmed">programada</option><option value="upcoming">próximamente</option><option value="discarded">descartada</option></select>
     <select id="fit"><option value="">Todo Louder</option><option value="yes">sí encaja</option><option value="review">revisar</option><option value="no">no</option></select>
   </div>
   <section id="tracks">{"".join(rows) if rows else '<div class="empty">El radar todavía no ha ejecutado su primera recolección.</div>'}</section>
