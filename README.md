@@ -36,3 +36,18 @@ pequeño y propio.
 La versión de WordPress permanece intacta como respaldo. El Worker sólo se
 habilita cuando la copia estática ha sido validada. Si GitHub devuelve 404/5xx
 o falla una petición, el Worker cae automáticamente al origen actual.
+
+
+## Radar 2026
+
+El repositorio también contiene un radar desacoplado para lanzamientos del
+universo Louder. Su regla principal es estricta: sólo conserva canciones cuya
+primera publicación registrada corresponde a **2026**.
+
+- `data/radar_2026.json`: estado editorial y operativo.
+- `scripts/update_radar_2026.py`: descubrimiento 2026 con MusicBrainz.
+- `scripts/mark_radar_2026.py`: control de pendiente/descargada/programada/descartada.
+- `scripts/build_radar_2026.py`: panel estático.
+- `.github/workflows/radar-2026.yml`: actualización periódica y control manual.
+
+El panel se genera junto con Artistas y no ejecuta procesos en WordPress.
