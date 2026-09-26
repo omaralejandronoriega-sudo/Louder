@@ -36,6 +36,43 @@ def number(value: Any) -> str:
         return "0"
 
 
+def source_stats_html(artist: dict[str, Any]) -> str:
+    stats = artist.get("source_stats") or {}
+    chips: list[str] = []
+
+    lastfm = stats.get("lastfm") or {}
+    if lastfm:
+        chips.append(
+            f'<div class="source-chip"><strong>Last.fm</strong><span>{number(lastfm.get("plays"))} scrobbles</span></div>'
+        )
+
+    megaseg = stats.get("megaseg") or {}
+    if megaseg:
+        chips.append(
+            f'<div class="source-chip"><strong>MegaSeg</strong><span>{number(megaseg.get("plays"))} registros</span></div>'
+        )
+
+    yesstreaming = stats.get("yesstreaming") or {}
+    if yesstreaming:
+        chips.append(
+            f'<div class="source-chip"><strong>YesStreaming</strong><span>{number(yesstreaming.get("catalog_tracks"))} canciones en servidor</span></div>'
+        )
+
+    live = stats.get("yesstreaming_live") or {}
+    if live:
+        chips.append(
+            f'<div class="source-chip"><strong>YesStreaming live</strong><span>+{number(live.get("plays_after_baseline"))} nuevas</span></div>'
+        )
+
+    if not chips:
+        return ""
+    return f'''<section class="source-stats" aria-label="Fuentes del histórico">
+ <div class="source-stats-title">Fuentes del histórico</div>
+ <div class="source-chips">{"".join(chips)}</div>
+ <p>Los registros por fuente pueden solaparse; el total principal usa el contador canónico y no una suma ciega.</p>
+</section>'''
+
+
 def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
     if not isinstance(gallery, dict):
         return []
@@ -227,7 +264,7 @@ def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> Non
 <section class="archive-hero">
  <div class="eyebrow">Archivo Louder</div>
  <h1>Artistas</h1>
- <p>Bandas, solistas y colaboraciones registradas en el histórico de Louder Radio.</p>
+ <p>Bandas, solistas y colaboraciones reunidas desde Last.fm, MegaSeg y la programación de YesStreaming.</p>
  <div class="archive-actions">
   <label class="search"><span>Buscar</span><input type="search" data-artist-search placeholder="Buscar banda o artista" autocomplete="off"></label>
   <button class="button primary" type="button" data-shuffle>⤨ Otro artista</button>
@@ -305,6 +342,7 @@ def build_artist(
     <div><strong>{esc(artist.get("last_played") or "—")}</strong><span>última vez</span></div>
    </div>
    <div class="social">{social_links(artist)}</div>
+   {source_stats_html(artist)}
   </div>
  </div>
 </section>
