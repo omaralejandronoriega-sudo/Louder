@@ -3,13 +3,9 @@ name: Louder Artistas Live
 on:
   schedule:
     - cron: "7,27,47 * * * *"
-  push:
-    branches: [main]
-    paths:
-      - "data/history/**"
-      - "scripts/merge_history_sources.py"
-      - "live/sync_history.py"
-      - ".github/workflows/artistas-live.yml"
+  workflow_run:
+    workflows: ["Publish Louder Static Sections"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -23,6 +19,7 @@ concurrency:
 
 jobs:
   sync-build-deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
