@@ -27,6 +27,7 @@ DATA = ROOT / "data" / "artists.json"
 LASTFM = ROOT / "data" / "history" / "history_lastfm.json"
 MEGASEG = ROOT / "data" / "history" / "history_megaseg.json"
 YESSTREAMING = ROOT / "data" / "history" / "history_yesstreaming_catalog.json"
+WP_EXPORT = ROOT / "data" / "wp-export"
 
 MONTHS = {
     "ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6,
@@ -67,6 +68,18 @@ def load(path: Path) -> dict[str, Any]:
         return {}
     data = json.loads(path.read_text(encoding="utf-8"))
     return data if isinstance(data, dict) else {}
+
+
+def load_wp_export() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    artist_rows: list[dict[str, Any]] = []
+    track_rows: list[dict[str, Any]] = []
+    if not WP_EXPORT.exists():
+        return artist_rows, track_rows
+    for path in sorted(WP_EXPORT.glob("artists-*.json")):
+        artist_rows.extend((load(path).get("rows") or []))
+    for path in sorted(WP_EXPORT.glob("tracks-*.json")):
+        track_rows.extend((load(path).get("rows") or []))
+    return artist_rows, track_rows
 
 
 def parse_date(value: Any, end_of_day: bool = False) -> datetime | None:
@@ -165,6 +178,7 @@ def main() -> int:
     lastfm = (load(LASTFM).get("artists") or {})
     megaseg = (load(MEGASEG).get("artists") or {})
     yesstreaming = (load(YESSTREAMING).get("artists") or {})
+    wp_artists, wp_tracks = load_wp_export()
 
     by_artist = {
         normalize(a.get("name", "")): a
@@ -173,9 +187,129 @@ def main() -> int:
     }
     slugs = {a.get("slug", "") for a in artists if a.get("slug")}
     existing_keys = set(by_artist)
-
-    all_keys = set(lastfm) | set(megaseg) | set(yesstreaming)
     created = 0
+
+    # Direct WordPress database export is authoritative for profiles that
+    # existed in the plugin, including drafts that the public crawler could
+    # never see. Rich public-profile fields already migrated are preserved.
+    wp_by_id: dict[int, dict[str, Any]] = {}
+    for row in wp_artists:
+        name = str(row.get("display_name") or "").strip()
+        if not name:
+            continue
+        key = normalize(name)
+        if not key:
+            continue
+        wp_id = int(row.get("id") or 0)
+        wp_by_id[wp_id] = row
+        artist = by_artist.get(key)
+        was_existing = artist is not None
+        if artist is None:
+            artist = {
+                "slug": str(row.get("post_name") or "").strip() or unique_slug(name, slugs),
+                "name": name,
+                "source_url": "",
+                "image": "",
+                "genres": [],
+                "plays": 0,
+                "first_played": "",
+                "last_played": "",
+                "bio": "",
+                "official_url": "",
+                "social": [],
+                "tracks": [],
+                "related": [],
+                "catalog_status": "wp_" + (str(row.get("post_status") or "orphan") or "orphan"),
+                "sources": [],
+                "source_stats": {},
+            }
+            if artist["slug"] in slugs:
+                artist["slug"] = unique_slug(name, slugs)
+            else:
+                slugs.add(artist["slug"])
+            artists.append(artist)
+            by_artist[key] = artist
+            created += 1
+
+        artist.setdefault("sources", [])
+        artist.setdefault("source_stats", {})
+        add_source(artist, "wp_db")
+        wp_plays = int(row.get("play_count") or 0)
+        artist["plays"] = max(int(artist.get("plays") or 0), wp_plays)
+        wp_first = parse_date(row.get("first_played"))
+        wp_last = parse_date(row.get("last_played"))
+        current_first = parse_date(artist.get("first_played"))
+        current_last = parse_date(artist.get("last_played"), end_of_day=True)
+        first = min_dt([current_first, wp_first])
+        last = max_dt([current_last, wp_last])
+        if first:
+            artist["first_played"] = human(first)
+        if last:
+            artist["last_played"] = human(last, with_time=True)
+            artist["history_cutoff"] = max_dt([last, MIGRATED_SNAPSHOT_LOCAL]).isoformat(timespec="seconds")
+
+        # Prefer a previously approved/posted WordPress image over enrichment.
+        wp_image = str(row.get("remote_image") or row.get("thumbnail_image") or "").strip()
+        if wp_image:
+            artist["image"] = wp_image
+
+        artist["source_stats"]["wp_db"] = {
+            "wp_artist_id": wp_id,
+            "post_id": int(row.get("post_id") or 0),
+            "post_status": str(row.get("post_status") or ""),
+            "plays": wp_plays,
+            "history_total": int(row.get("history_total") or 0),
+            "history_reviewed": int(row.get("history_reviewed") or 0),
+            "history_imported": int(row.get("history_imported") or 0),
+            "source_mask": int(row.get("source_mask") or 0),
+            "had_image": bool(wp_image),
+        }
+        if not was_existing:
+            artist["catalog_status"] = "wp_" + (str(row.get("post_status") or "orphan") or "orphan")
+
+    # Restore every plugin track, including its existing artwork URL.
+    artist_by_wp_id = {
+        int((a.get("source_stats") or {}).get("wp_db", {}).get("wp_artist_id") or 0): a
+        for a in artists
+        if int((a.get("source_stats") or {}).get("wp_db", {}).get("wp_artist_id") or 0) > 0
+    }
+    for row in wp_tracks:
+        artist = artist_by_wp_id.get(int(row.get("artist_id") or 0))
+        if not artist:
+            continue
+        by_track = {
+            normalize(t.get("title", "")): t
+            for t in (artist.get("tracks") or [])
+            if isinstance(t, dict) and t.get("title")
+        }
+        track = ensure_track(artist, by_track, str(row.get("display_title") or ""))
+        if not track:
+            continue
+        add_source(track, "wp_db")
+        wp_plays = int(row.get("play_count") or 0)
+        track["plays"] = max(int(track.get("plays") or 0), wp_plays)
+        if row.get("album_title"):
+            track["album"] = str(row.get("album_title"))
+        if row.get("artwork_url"):
+            track["artwork"] = str(row.get("artwork_url"))
+        if row.get("external_url"):
+            track["external_url"] = str(row.get("external_url"))
+        old_first = parse_date(track.get("first_played"))
+        old_last = parse_date(track.get("last_played"), end_of_day=True)
+        wp_first = parse_date(row.get("first_played"))
+        wp_last = parse_date(row.get("last_played"))
+        tfirst = min_dt([old_first, wp_first])
+        tlast = max_dt([old_last, wp_last])
+        if tfirst:
+            track["first_played"] = human(tfirst)
+        if tlast:
+            track["last_played"] = human(tlast, with_time=True)
+        track["source_stats"]["wp_db"] = {
+            "plays": wp_plays,
+            "artwork_checked_at": str(row.get("artwork_checked_at") or ""),
+        }
+
+    all_keys = set(lastfm) | set(megaseg) | set(yesstreaming) | set(by_artist)
 
     for key in sorted(all_keys):
         lf = lastfm.get(key)
@@ -351,6 +485,8 @@ def main() -> int:
         "yesstreaming_artists": len(yesstreaming),
         "source_union_artists": len(all_keys),
         "base_artists": len(existing_keys),
+        "wp_db_artists": len(wp_artists),
+        "wp_db_tracks": len(wp_tracks),
         "created_history_artists": created,
         "merged_artists": len(artists),
         "merged_at": datetime.utcnow().isoformat() + "Z",
@@ -358,6 +494,7 @@ def main() -> int:
     DATA.write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         f"merged artists={len(artists)} created={created} "
+        f"wp={len(wp_artists)} tracks={len(wp_tracks)} "
         f"lastfm={len(lastfm)} megaseg={len(megaseg)} yesstreaming={len(yesstreaming)}"
     )
     return 0

@@ -81,10 +81,15 @@ def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
 
 
 def preferred_image(artist: dict[str, Any], gallery: dict[str, Any] | None = None) -> str:
+    # Preserve the image already used by Louder/WordPress whenever available.
+    # External gallery imagery is enrichment, not a replacement for approved art.
+    existing = str(artist.get("image") or "").strip()
+    if existing:
+        return existing
     images = gallery_images(gallery)
     if images:
         return str(images[0].get("preview") or images[0].get("url") or "")
-    return str(artist.get("image") or "")
+    return ""
 
 
 def gallery_html(name: str, gallery: dict[str, Any] | None) -> str:

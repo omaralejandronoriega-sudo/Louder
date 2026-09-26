@@ -1,6 +1,12 @@
 name: Louder Artistas Artwork
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "data/wp-export/**"
+      - "scripts/merge_history_sources.py"
+      - ".github/workflows/artistas-artwork.yml"
   schedule:
     - cron: "41 2,8,14,20 * * *"
   workflow_dispatch:
