@@ -35,8 +35,11 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m py_compile scripts/*.py live/*.py
 
-      - name: Apply live history without WordPress
-        run: python live/sync_history.py --require-min 500
+      - name: Merge historical sources
+        run: python scripts/merge_history_sources.py
+
+      - name: Apply new YesStreaming history without WordPress
+        run: python live/sync_history.py --require-min 7000
 
       - name: Build static Artistas
         run: python scripts/build_artists.py

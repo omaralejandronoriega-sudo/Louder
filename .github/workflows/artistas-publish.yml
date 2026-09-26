@@ -5,10 +5,12 @@ on:
     branches: [main]
     paths:
       - "data/artists.json"
+      - "data/history/**"
       - "data/galleries.json"
       - "data/album_art.json"
       - "data/radar_2026.json"
       - "assets/**"
+      - "scripts/merge_history_sources.py"
       - "scripts/build_artists.py"
       - "scripts/build_radar_2026.py"
       - ".github/workflows/artistas-publish.yml"
@@ -42,6 +44,9 @@ jobs:
       - name: Validate Python
         run: python -m py_compile scripts/*.py live/*.py
 
+      - name: Merge Last.fm, MegaSeg and YesStreaming
+        run: python scripts/merge_history_sources.py
+
       - name: Refuse incomplete artist catalog
         run: |
           python - <<'PY'
@@ -50,8 +55,9 @@ jobs:
           data=json.loads(Path("data/artists.json").read_text(encoding="utf-8"))
           count=len(data.get("artists") or [])
           print(f"artists={count}")
-          if count < 500:
-              raise SystemExit("Refusing Pages deploy: Artistas catalog is incomplete")
+          if count < 7000:
+              raise SystemExit("Refusing Pages deploy: merged Artistas catalog is incomplete")
+          print(data.get("history_merge") or {})
           PY
 
       - name: Enforce Radar 2026 invariant
