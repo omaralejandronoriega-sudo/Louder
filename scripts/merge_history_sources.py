@@ -33,6 +33,13 @@ MONTHS = {
     "jul": 7, "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
 }
 
+# Public WordPress crawl finished at 2026-09-25 20:10:51 UTC.
+# Historial Louder records local radio time (UTC-6 in San Luis Potosí), so
+# every already-migrated profile uses this local snapshot time as the minimum
+# live-sync cutoff. This prevents Sheet/YesStreaming events already reflected
+# in WordPress from being counted a second time.
+MIGRATED_SNAPSHOT_LOCAL = datetime(2026, 9, 25, 14, 10, 51)
+
 
 def normalize(value: str) -> str:
     value = unicodedata.normalize("NFD", str(value or ""))
@@ -228,7 +235,12 @@ def main() -> int:
             artist["first_played"] = human(first)
         if last:
             artist["last_played"] = human(last, with_time=True)
-            artist["history_cutoff"] = last.isoformat(timespec="seconds")
+
+        cutoff = last
+        if was_existing:
+            cutoff = max_dt([cutoff, MIGRATED_SNAPSHOT_LOCAL])
+        if cutoff:
+            artist["history_cutoff"] = cutoff.isoformat(timespec="seconds")
 
         if lf:
             add_source(artist, "lastfm")
@@ -333,7 +345,7 @@ def main() -> int:
 
     store["artists"] = artists
     store["history_merge"] = {
-        "strategy": "preserve_migrated_else_max_lastfm_megaseg",
+        "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
         "lastfm_artists": len(lastfm),
         "megaseg_artists": len(megaseg),
         "yesstreaming_artists": len(yesstreaming),
