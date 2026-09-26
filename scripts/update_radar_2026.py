@@ -117,13 +117,13 @@ def suspicious(item: dict[str, Any]) -> bool:
 
 
 DERIVATIVE_TITLE_RE = re.compile(
-    r"(?:\\(|\\[|\\s[-–—]\\s).*\\b(remix|remaster(?:ed)?|reissue|live|acoustic|demo|edit|version|session|mix)\\b",
+    r"(?:\(|\[|\s[-–—]\s).*\b(remix|remaster(?:ed)?|reissue|live|acoustic|demo|edit|version|session|mix)\b",
     re.IGNORECASE,
 )
 
 
 def year_in(value: str) -> int | None:
-    match = re.search(r"\\b(?:19|20)\\d{2}\\b", value or "")
+    match = re.search(r"\b(?:19|20)\d{2}\b", value or "")
     return int(match.group(0)) if match else None
 
 
