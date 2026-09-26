@@ -6,9 +6,10 @@ on:
     paths:
       - "data/wp-export/**"
       - "scripts/merge_history_sources.py"
+      - "scripts/enrich_album_art.py"
       - ".github/workflows/artistas-artwork.yml"
   schedule:
-    - cron: "41 2,8,14,20 * * *"
+    - cron: "41 * * * *"
   workflow_dispatch:
 
 permissions:

@@ -6,9 +6,10 @@ on:
     paths:
       - "data/wp-export/**"
       - "scripts/merge_history_sources.py"
+      - "scripts/enrich_galleries.py"
       - ".github/workflows/artistas-gallery.yml"
   schedule:
-    - cron: "23 1,7,13,19 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       refresh:

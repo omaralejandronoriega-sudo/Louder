@@ -222,10 +222,21 @@ def main() -> int:
         slug = artist.get("slug")
         if not slug:
             continue
-        existing = galleries.get(slug) or {}
-        if not args.refresh and len(existing.get("images") or []) >= 3:
+        existing = galleries.get(slug)
+        # Automatic passes attempt every artist once so low-image/no-match
+        # artists cannot starve the rest of the catalog. --refresh is the
+        # explicit second pass for incomplete galleries.
+        if not args.refresh and existing is not None:
             continue
         pending.append(artist)
+
+    pending.sort(
+        key=lambda a: (
+            bool(str(a.get("image") or "").strip()),
+            -int(a.get("plays") or 0),
+            norm(a.get("name", "")),
+        )
+    )
 
     if args.limit > 0:
         pending = pending[: args.limit]
