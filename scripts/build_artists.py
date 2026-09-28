@@ -481,7 +481,7 @@ def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> Non
 <section class="archive-hero">
  <div class="eyebrow">Archivo Louder</div>
  <h1>Artistas</h1>
- <p>Bandas, solistas y colaboraciones reunidas desde Last.fm, MegaSeg y la programación de YesStreaming.</p>
+ <p>Bandas, solistas y colaboraciones que han pasado por la programación de Louder, reunidas en un solo archivo.</p>
  <div class="archive-actions">
   <label class="search"><span>Buscar</span><input type="search" data-artist-search placeholder="Buscar banda o artista" autocomplete="off"></label>
   <button class="button primary" type="button" data-shuffle>⤨ Otro artista</button>
