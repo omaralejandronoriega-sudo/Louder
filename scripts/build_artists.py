@@ -356,13 +356,13 @@ def page_shell(
  <button class="nav-toggle" type="button" aria-label="Abrir menú" data-nav-toggle>☰</button>
  <nav data-main-nav>
   <a href="https://loudermx.com/">Inicio</a>
-  <a href="https://loudermx.com/category/noticias/">Noticias</a>
+  <a href="https://loudermx.com/noticias/">Noticias</a>
   <a href="https://loudermx.com/nosotros/">Nosotros</a>
   <a href="https://loudermx.com/radio/">Radio</a>
   <a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a>
   <a href="https://loudermx.com/playlist/">Playlist</a>
   <a href="https://loudermx.com/contacto/">Contacto</a>
-  <a href="https://loudermx.com/louder-plus/">Louder+</a>
+  <a href="https://loudermx.com/louderplus/">Louder+</a>
  </nav>
 </header>
 {body}
@@ -377,7 +377,7 @@ def page_shell(
   <a href="https://loudermx.com/">Inicio</a><a href="https://loudermx.com/category/noticias/">Noticias</a>
   <a href="https://loudermx.com/nosotros/">Nosotros</a><a href="https://loudermx.com/radio/">Radio</a>
   <a href="/artistas/">Artistas</a><a href="https://loudermx.com/playlist/">Playlist</a>
-  <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louder-plus/">Louder+</a>
+  <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louderplus/">Louder+</a>
  </div>
  <small>Louder Media © 2026.</small>
 </footer>
@@ -406,7 +406,9 @@ def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> Non
             f'''<a class="artist-card" href="./{esc(artist.get("slug"))}/"
  data-artist-card data-name="{esc(norm(name))}"
  data-letter="{esc(norm(name)[:1].upper())}"
- data-plays="{int(artist.get("plays") or 0)}">
+ data-plays="{int(artist.get("plays") or 0)}"
+ data-first="{esc(artist.get("first_played") or "")}"
+ data-last="{esc(artist.get("last_played") or "")}">
  <div class="artist-card-media">{media}</div>
  <div class="artist-card-body">
   <h2>{esc(name)}</h2>
@@ -426,6 +428,8 @@ def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> Non
   <select class="select" data-artist-sort aria-label="Ordenar artistas">
    <option value="az">A–Z</option>
    <option value="plays">Más reproducidos</option>
+   <option value="first">Primera aparición</option>
+   <option value="last">Última aparición</option>
   </select>
  </div>
  <div class="letters" data-letter-filter>
