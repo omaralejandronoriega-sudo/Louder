@@ -34,15 +34,101 @@ def slugify(value: str) -> str:
 
 
 def public_artist_name(value: str) -> str:
-    """Remove obvious track-number pollution without touching legitimate names.
-
-    Examples fixed: "04 Swimwear" -> "Swimwear", "05 Van She" -> "Van She".
-    We deliberately only strip zero-padded numeric prefixes, so real names such
-    as "4 The Cause", "2 Door Cinema Club" or "10 Years" remain untouched.
-    """
+    """Clean obvious playout-label pollution without renaming real artists."""
     raw = str(value or "").strip()
+    if not raw:
+        return ""
+
+    # Track-number pollution from historical playout exports.
     cleaned = re.sub(r"^0\d{1,2}[\s._-]+(?=\S)", "", raw).strip()
+
+    # Stray separators such as ". Keep Shelly in Athens" or "? Artist".
+    # Only strip punctuation when an alphanumeric artist name remains, so names
+    # made intentionally from punctuation are not silently rewritten here.
+    if re.search(r"[A-Za-z0-9]", cleaned):
+        cleaned = re.sub(r"^[\s._·•?¿!¡–—-]+(?=[A-Za-z0-9])", "", cleaned).strip()
+        cleaned = re.sub(r"(?<=[A-Za-z0-9])[\s._·•?¿!¡–—-]+$", "", cleaned).strip()
+
+    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
     return cleaned or raw
+
+
+NON_ARTIST_LABELS = {
+    "mordaz",
+    "the british corner",
+    "louder radio",
+    "louder mx",
+    "loudermx",
+    "louder station id",
+    "station id",
+    "promo louder",
+    "promos louder",
+    "jingle louder",
+}
+
+
+def is_public_artist_candidate(value: str) -> bool:
+    name = public_artist_name(value)
+    key = norm(name)
+    if not key or key in NON_ARTIST_LABELS:
+        return False
+    if not re.search(r"[a-z0-9]", key):
+        return False
+    # Reject obvious one-character metadata fragments.
+    if len(key.replace(" ", "")) < 2:
+        return False
+    return True
+
+
+SPANISH_MONTHS = {
+    "ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6,
+    "jul": 7, "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
+}
+
+
+def history_date_key(value: Any) -> tuple[int, int, int, int, int, int]:
+    raw = str(value or "").strip().lower()
+    if not raw:
+        return (9999, 12, 31, 23, 59, 59)
+
+    iso = re.match(
+        r"^(\d{4})-(\d{2})-(\d{2})(?:[t\s](\d{2}):(\d{2})(?::(\d{2}))?)?",
+        raw,
+    )
+    if iso:
+        return tuple(int(x or 0) for x in iso.groups(default="0"))  # type: ignore[return-value]
+
+    es = re.search(
+        r"(\d{1,2})\s+(ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\s+(\d{4})"
+        r"(?:\s*[·|-]\s*(\d{1,2}):(\d{2})(?::(\d{2}))?)?",
+        raw,
+    )
+    if es:
+        day, month, year, hour, minute, second = es.groups()
+        return (
+            int(year), SPANISH_MONTHS[month], int(day),
+            int(hour or 0), int(minute or 0), int(second or 0),
+        )
+
+    return (9998, 12, 31, 23, 59, 59)
+
+
+def earliest_date(values: list[Any]) -> str:
+    rows = [str(v) for v in values if v]
+    if not rows:
+        return ""
+    return min(rows, key=history_date_key)
+
+
+def latest_date(values: list[Any]) -> str:
+    rows = [str(v) for v in values if v]
+    if not rows:
+        return ""
+    valid = [v for v in rows if history_date_key(v)[0] < 9998]
+    if valid:
+        return max(valid, key=history_date_key)
+    return max(rows)
+
 
 
 def canonical_track_title(value: str) -> str:
@@ -62,9 +148,26 @@ def canonical_album(value: str) -> str:
     raw = str(value or "").strip()
     if not raw:
         return raw
-    out = re.sub(r"\s*[\[(](?:remaster(?:ed)?(?:\s+\d{4})?|\d{4}\s+remaster(?:ed)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?)[\])]\s*$", "", raw, flags=re.I).strip()
-    out = re.sub(r"\s*[\-–—]\s*(?:remaster(?:ed)?(?:\s+\d{4})?|\d{4}\s+remaster(?:ed)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?)\s*$", "", out, flags=re.I).strip()
+
+    out = raw
+    qualifier = (
+        r"(?:\d{4}\s+)?(?:remaster(?:ed)?|deluxe(?:\s+edition)?|"
+        r"expanded(?:\s+edition)?|special(?:\s+edition)?|anniversary(?:\s+edition)?|"
+        r"super\s+deluxe(?:\s+edition)?|reissue|remixed)"
+        r"(?:\s+\d{4})?"
+    )
+
+    # Remove one or more edition/remaster suffixes, including combined forms
+    # such as "(Deluxe Edition Remastered)".
+    out = re.sub(
+        r"\s*[\[(][^\])]*(?:remaster|deluxe|expanded|special edition|anniversary|reissue|remixed)[^\])]*[\])]\s*$",
+        "",
+        out,
+        flags=re.I,
+    ).strip()
+    out = re.sub(rf"\s*[\-–—]\s*{qualifier}\s*$", "", out, flags=re.I).strip()
     return out or raw
+
 
 
 def merge_public_tracks(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -86,12 +189,14 @@ def merge_public_tracks(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
             continue
 
         current["plays"] = max(int(current.get("plays") or 0), int(track.get("plays") or 0))
-        dates_first = [str(x or "") for x in (current.get("first_played"), track.get("first_played")) if x]
-        dates_last = [str(x or "") for x in (current.get("last_played"), track.get("last_played")) if x]
-        if dates_first:
-            current["first_played"] = min(dates_first)
-        if dates_last:
-            current["last_played"] = max(dates_last)
+        dates_first = [current.get("first_played"), track.get("first_played")]
+        dates_last = [current.get("last_played"), track.get("last_played")]
+        first = earliest_date(dates_first)
+        last = latest_date(dates_last)
+        if first:
+            current["first_played"] = first
+        if last:
+            current["last_played"] = last
         if not current.get("artwork") and track.get("artwork"):
             current["artwork"] = track.get("artwork")
         if (not current.get("album") or current.get("album") == "Programación YesStreaming") and track.get("album"):
@@ -110,6 +215,8 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
         if not isinstance(original, dict) or not original.get("name"):
             continue
         raw_name = str(original.get("name") or "").strip()
+        if not is_public_artist_candidate(raw_name):
+            continue
         clean_name = public_artist_name(raw_name)
         key = norm(clean_name)
         if not key:
@@ -123,6 +230,12 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
         else:
             current["plays"] = max(int(current.get("plays") or 0), int(candidate.get("plays") or 0))
             current["tracks"] = merge_public_tracks((current.get("tracks") or []) + (candidate.get("tracks") or []))
+            first = earliest_date([current.get("first_played"), candidate.get("first_played")])
+            last = latest_date([current.get("last_played"), candidate.get("last_played")])
+            if first:
+                current["first_played"] = first
+            if last:
+                current["last_played"] = last
             if not current.get("image") and candidate.get("image"):
                 current["image"] = candidate.get("image")
             if not current.get("bio") and candidate.get("bio"):
