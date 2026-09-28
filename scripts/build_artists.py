@@ -691,6 +691,17 @@ def main() -> int:
         json.dumps(index_payload, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
     )
+    link_map = {
+        norm(a.get("name", "")): a.get("slug", "")
+        for a in artists
+        if a.get("name") and a.get("slug")
+    }
+    (DOCS / "artist-links.js").write_text(
+        "window.LMX_ARTIST_LINKS=" +
+        json.dumps(link_map, ensure_ascii=False, separators=(",", ":")) +
+        ";window.dispatchEvent(new Event('lmx:artist-links-ready'));\n",
+        encoding="utf-8",
+    )
 
     sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
         f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
