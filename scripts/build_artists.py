@@ -610,6 +610,33 @@ def main() -> int:
             art_store = {"albums": {}}
     album_art = art_store.get("albums") or {}
 
+    public_track_count = sum(len(a.get("tracks") or []) for a in artists)
+    missing_artist_images = sum(
+        1 for a in artists if not preferred_image(a, galleries.get(a.get("slug", "")))
+    )
+    missing_bios = sum(1 for a in artists if not str(a.get("bio") or "").strip())
+    suspicious_prefixes = [
+        a.get("name", "") for a in artists
+        if re.match(r"^0\d{1,2}[\s._-]+", str(a.get("name") or ""))
+    ]
+    missing_track_art = 0
+    for a in artists:
+        artist_name = str(a.get("name") or "")
+        for track in a.get("tracks") or []:
+            if track.get("artwork"):
+                continue
+            album = str(track.get("album") or "").strip()
+            cached = album_art.get(album_art_key(artist_name, album), {}) if album else {}
+            if not cached.get("url"):
+                missing_track_art += 1
+    print(
+        "public_audit "
+        f"raw_artists={len(raw_artists)} public_artists={len(artists)} "
+        f"collapsed={len(raw_artists)-len(artists)} tracks={public_track_count} "
+        f"missing_artist_images={missing_artist_images} missing_bios={missing_bios} "
+        f"missing_track_art={missing_track_art} suspicious_prefixes={len(suspicious_prefixes)}"
+    )
+
     if DOCS.exists():
         keep_media = DOCS / "media"
         tmp_media = ROOT / ".media-preserve"
