@@ -26,57 +26,120 @@
 
   const grid = q("[data-artist-grid]");
   if (grid) {
-    const cards = qa("[data-artist-card]", grid);
     const search = q("[data-artist-search]");
     const sort = q("[data-artist-sort]");
     const count = q("[data-visible-count]");
+    const totalCount = q("[data-total-count]");
     const empty = q("[data-empty]");
     const letters = qa("[data-letter]");
+    const more = q("[data-load-more]");
     let activeLetter = "";
+    let limit = 120;
+    let catalog = qa("[data-artist-card]", grid).map((card) => ({
+      name: card.querySelector("h2")?.textContent || "",
+      slug: (card.getAttribute("href") || "").replace(/^\.\//, "").replace(/\/$/, ""),
+      plays: Number(card.dataset.plays || 0),
+      first: card.dataset.first || "",
+      last: card.dataset.last || "",
+      image: card.querySelector("img")?.src || "",
+    }));
+    let filtered = catalog.slice();
 
-    function apply() {
+    function makeCard(item) {
+      const a = document.createElement("a");
+      a.className = "artist-card";
+      a.href = "./" + item.slug + "/";
+      a.dataset.artistCard = "";
+      a.dataset.name = normalize(item.name);
+      a.dataset.letter = normalize(item.name).slice(0, 1).toUpperCase();
+      a.dataset.plays = String(item.plays || 0);
+      a.dataset.first = item.first || "";
+      a.dataset.last = item.last || "";
+
+      const media = document.createElement("div");
+      media.className = "artist-card-media";
+      if (item.image) {
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.name || "";
+        img.loading = "lazy";
+        img.decoding = "async";
+        media.appendChild(img);
+      } else {
+        const span = document.createElement("span");
+        span.textContent = String(item.name || "?").slice(0, 2);
+        media.appendChild(span);
+      }
+
+      const body = document.createElement("div");
+      body.className = "artist-card-body";
+      const h2 = document.createElement("h2");
+      h2.textContent = item.name || "";
+      const p = document.createElement("p");
+      p.textContent = Number(item.plays || 0).toLocaleString("es-MX") +
+        " reproducciones · última aparición " + (item.last || "—");
+      body.append(h2, p);
+      a.append(media, body);
+      return a;
+    }
+
+    function apply(reset = true) {
+      if (reset) limit = 120;
       const term = normalize(search?.value || "");
-      let visible = cards.filter((card) => {
-        const bySearch = !term || (card.dataset.name || "").includes(term);
-        const byLetter = !activeLetter || (card.dataset.letter || "") === activeLetter;
-        const show = bySearch && byLetter;
-        card.hidden = !show;
-        return show;
+      filtered = catalog.filter((item) => {
+        const name = normalize(item.name);
+        const letter = name.slice(0, 1).toUpperCase();
+        return (!term || name.includes(term)) && (!activeLetter || letter === activeLetter);
       });
 
       const key = sort?.value || "az";
-      visible.sort((a, b) => {
-        if (key === "plays") return Number(b.dataset.plays || 0) - Number(a.dataset.plays || 0);
-        if (key === "first") return parseLouderDate(a.dataset.first) - parseLouderDate(b.dataset.first);
-        if (key === "last") return parseLouderDate(b.dataset.last) - parseLouderDate(a.dataset.last);
-        return (a.dataset.name || "").localeCompare(b.dataset.name || "", "es", { sensitivity:"base", numeric:true });
+      filtered.sort((a, b) => {
+        if (key === "plays") return Number(b.plays || 0) - Number(a.plays || 0);
+        if (key === "first") return parseLouderDate(a.first) - parseLouderDate(b.first);
+        if (key === "last") return parseLouderDate(b.last) - parseLouderDate(a.last);
+        return String(a.name || "").localeCompare(String(b.name || ""), "es", { sensitivity:"base", numeric:true });
       });
 
+      const shown = filtered.slice(0, limit);
       const frag = document.createDocumentFragment();
-      visible.forEach((card) => frag.appendChild(card));
-      cards.filter((card) => card.hidden).forEach((card) => frag.appendChild(card));
-      grid.appendChild(frag);
-      if (count) count.textContent = String(visible.length);
-      if (empty) empty.hidden = visible.length !== 0;
+      shown.forEach((item) => frag.appendChild(makeCard(item)));
+      grid.replaceChildren(frag);
+
+      if (count) count.textContent = String(shown.length);
+      if (totalCount) totalCount.textContent = String(filtered.length);
+      if (empty) empty.hidden = filtered.length !== 0;
+      if (more) more.hidden = shown.length >= filtered.length;
     }
 
-    search?.addEventListener("input", apply);
-    sort?.addEventListener("change", apply);
+    search?.addEventListener("input", () => apply(true));
+    sort?.addEventListener("change", () => apply(true));
     letters.forEach((button) => {
       button.addEventListener("click", () => {
         activeLetter = button.dataset.letter || "";
         letters.forEach((x) => x.classList.toggle("active", x === button));
-        apply();
+        apply(true);
       });
+    });
+    more?.addEventListener("click", () => {
+      limit += 120;
+      apply(false);
     });
 
     q("[data-shuffle]")?.addEventListener("click", () => {
-      const visible = cards.filter((card) => !card.hidden);
-      if (!visible.length) return;
-      window.location.href = visible[Math.floor(Math.random() * visible.length)].href;
+      if (!filtered.length) return;
+      const pick = filtered[Math.floor(Math.random() * filtered.length)];
+      window.location.href = "./" + pick.slug + "/";
     });
 
-    apply();
+    fetch(new URL("/artists-index.json", window.location.origin), { cache:"force-cache" })
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error("catalog")))
+      .then((data) => {
+        if (Array.isArray(data?.artists) && data.artists.length) {
+          catalog = data.artists;
+          apply(true);
+        }
+      })
+      .catch(() => apply(true));
   }
 
   const currentSlug = q("[data-shuffle-from]")?.dataset.shuffleFrom || "";
