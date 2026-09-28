@@ -134,7 +134,8 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
     used: set[str] = set()
     key_to_slug: dict[str, str] = {}
     for key, artist in buckets.items():
-        base = slugify(str(artist.get("name") or ""))
+        existing_slug = str(artist.get("slug") or "").strip()
+        base = existing_slug or slugify(str(artist.get("name") or ""))
         slug = base
         n = 2
         while slug in used:
