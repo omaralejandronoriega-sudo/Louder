@@ -1,0 +1,68 @@
+name: Ingest MegaSeg History
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/history/megaseg-inbox/**"
+      - "scripts/ingest_megaseg.py"
+      - ".github/workflows/megaseg-ingest.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: louder-megaseg-ingest
+  cancel-in-progress: true
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate pipeline
+        run: python -m py_compile scripts/*.py live/*.py
+
+      - name: Ingest new MegaSeg exports
+        run: python scripts/ingest_megaseg.py
+
+      - name: Merge all history sources
+        run: python scripts/merge_history_sources.py
+
+      - name: Validate complete catalog
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/artists.json").read_text(encoding="utf-8"))
+          count=len(data.get("artists") or [])
+          print(f"artists={count}")
+          if count < 7000:
+              raise SystemExit("Refusing MegaSeg update: incomplete Artistas catalog")
+          print(data.get("history_merge") or {})
+          PY
+
+      - name: Save normalized history and catalog
+        shell: bash
+        run: |
+          git config user.name "louder-artistas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/history/history_megaseg.json data/artists.json
+          if git diff --cached --quiet; then
+            echo "MegaSeg/history already current"
+          else
+            git commit -m "Update MegaSeg history and Artistas catalog"
+            git pull --rebase origin main
+            git push
+          fi
