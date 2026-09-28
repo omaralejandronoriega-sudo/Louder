@@ -163,3 +163,210 @@
     );
   }
 })();
+
+
+  // Navegación móvil del shell estático.
+  q("[data-nav-toggle]")?.addEventListener("click", () => {
+    q("[data-main-nav]")?.classList.toggle("open");
+  });
+
+  // Índice ligero para resolver enlaces de artistas sin consultar WordPress.
+  let artistIndexPromise = null;
+  function artistIndex() {
+    if (!artistIndexPromise) {
+      const indexUrl = new URL("/artists-index.json", window.location.origin);
+      artistIndexPromise = fetch(indexUrl.href, { cache: "force-cache" })
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error("artist-index"))))
+        .catch(() => ({ artists: [], aliases: {} }));
+    }
+    return artistIndexPromise;
+  }
+
+  function artistSlugFor(name, index) {
+    const key = normalize(name);
+    const alias = index?.aliases?.[key];
+    if (alias) return alias;
+    const item = (index?.artists || []).find((x) => normalize(x.name) === key);
+    return item?.slug || "";
+  }
+
+  // Portadas faltantes: se resuelven en el navegador con iTunes; no toca hosting.
+  async function resolveMissingCover(node) {
+    const artist = node.dataset.artist || "";
+    const title = node.dataset.title || "";
+    const parent = node.closest(".track-cover");
+    if (!artist || !title || !parent || parent.dataset.coverResolved === "1") return;
+    parent.dataset.coverResolved = "1";
+    parent.classList.add("is-resolving");
+    try {
+      const url = "https://itunes.apple.com/search?media=music&entity=song&limit=8&term=" +
+        encodeURIComponent(artist + " " + title);
+      const response = await fetch(url, { cache: "force-cache" });
+      if (!response.ok) return;
+      const data = await response.json();
+      const wantArtist = normalize(artist);
+      const wantTitle = normalize(title);
+      const rows = Array.isArray(data.results) ? data.results : [];
+      let best = null;
+      let bestScore = -1;
+      rows.forEach((item) => {
+        const a = normalize(item.artistName || "");
+        const t = normalize(item.trackName || "");
+        let score = 0;
+        if (a === wantArtist) score += 100;
+        else if (a.includes(wantArtist) || wantArtist.includes(a)) score += 35;
+        if (t === wantTitle) score += 120;
+        else if (t.includes(wantTitle) || wantTitle.includes(t)) score += 45;
+        if (score > bestScore && item.artworkUrl100) {
+          best = item;
+          bestScore = score;
+        }
+      });
+      if (!best || bestScore < 80) return;
+      const img = document.createElement("img");
+      img.alt = "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.src = String(best.artworkUrl100).replace("100x100bb", "300x300bb");
+      parent.replaceChildren(img);
+      const album = parent.closest("[data-track]")?.querySelector(".track-album");
+      if (album && (!album.textContent.trim() || album.textContent.includes("identificado")) && best.collectionName) {
+        album.textContent = best.collectionName;
+      }
+    } catch (_) {
+      // El fallback permanece si el servicio externo no responde.
+    } finally {
+      parent.classList.remove("is-resolving");
+    }
+  }
+
+  const missingCovers = qa("[data-missing-cover]");
+  if (missingCovers.length) {
+    const queue = missingCovers.slice();
+    let active = 0;
+    const pump = () => {
+      while (active < 3 && queue.length) {
+        const node = queue.shift();
+        active += 1;
+        resolveMissingCover(node).finally(() => {
+          active -= 1;
+          pump();
+        });
+      }
+    };
+    pump();
+  }
+
+  // Reproductor persistente para la sección estática.
+  const radio = {
+    audio: q("[data-radio-audio]"),
+    play: q("[data-radio-play]"),
+    track: q("[data-radio-track]"),
+    art: q("[data-radio-art]"),
+    fallback: q("[data-radio-fallback]"),
+    artistLink: q("[data-radio-artist-link]"),
+    lastKey: "",
+  };
+
+  function splitRadioMeta(source) {
+    const artistField = String(source?.artist || "").trim();
+    let raw = String(source?.title || source?.yp_currently_playing || source?.song || "").trim();
+    if (artistField && raw) {
+      const low = raw.toLowerCase();
+      const a = artistField.toLowerCase();
+      if (low.startsWith(a + " - ") || low.startsWith(a + " – ") || low.startsWith(a + " — ")) {
+        raw = raw.slice(artistField.length + 3).trim();
+      }
+      return { artist: artistField, title: raw };
+    }
+    const match = raw.match(/^(.+?)\s+[\-–—]\s+(.+)$/u);
+    return match ? { artist: match[1].trim(), title: match[2].trim() } : { artist: "", title: raw };
+  }
+
+  async function nowPlaying() {
+    if (!radio.track) return;
+    const urls = [
+      "https://ec1.yesstreaming.net:2720/status-json.xsl",
+      "https://ec1.yesstreaming.net:2725/status-json.xsl",
+    ];
+    let source = null;
+    for (const url of urls) {
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) continue;
+        const data = await response.json();
+        const src = data?.icestats?.source;
+        source = Array.isArray(src)
+          ? src.find((x) => /\/stream(?:$|\?)/i.test(String(x?.listenurl || ""))) || src[0]
+          : src;
+        if (source) break;
+      } catch (_) {}
+    }
+    if (!source) return;
+
+    const meta = splitRadioMeta(source);
+    if (!meta.title) return;
+    const key = normalize(meta.artist + " " + meta.title);
+    if (key === radio.lastKey) return;
+    radio.lastKey = key;
+    radio.track.textContent = meta.artist ? meta.artist + " — " + meta.title : meta.title;
+
+    if (radio.artistLink && meta.artist) {
+      const index = await artistIndex();
+      const slug = artistSlugFor(meta.artist, index);
+      if (slug) {
+        radio.artistLink.href = "/artistas/" + slug + "/";
+        radio.artistLink.hidden = false;
+      } else {
+        radio.artistLink.hidden = true;
+      }
+    }
+
+    if (radio.art && radio.fallback) {
+      try {
+        const search = "https://itunes.apple.com/search?media=music&entity=song&limit=5&term=" +
+          encodeURIComponent((meta.artist || "") + " " + meta.title);
+        const response = await fetch(search, { cache: "force-cache" });
+        const data = response.ok ? await response.json() : { results: [] };
+        const wantArtist = normalize(meta.artist);
+        const wantTitle = normalize(meta.title);
+        const best = (data.results || []).find((x) =>
+          normalize(x.artistName) === wantArtist && normalize(x.trackName) === wantTitle
+        ) || (data.results || [])[0];
+        if (best?.artworkUrl100) {
+          radio.art.src = String(best.artworkUrl100).replace("100x100bb", "300x300bb");
+          radio.art.hidden = false;
+          radio.fallback.hidden = true;
+        } else {
+          radio.art.hidden = true;
+          radio.fallback.hidden = false;
+        }
+      } catch (_) {
+        radio.art.hidden = true;
+        radio.fallback.hidden = false;
+      }
+    }
+  }
+
+  radio.play?.addEventListener("click", async () => {
+    if (!radio.audio) return;
+    try {
+      if (radio.audio.paused) {
+        await radio.audio.play();
+        radio.play.classList.add("is-playing");
+        radio.play.setAttribute("aria-label", "Pausar Louder Radio");
+      } else {
+        radio.audio.pause();
+        radio.play.classList.remove("is-playing");
+        radio.play.setAttribute("aria-label", "Reproducir Louder Radio");
+      }
+    } catch (_) {}
+  });
+
+  if (radio.track) {
+    nowPlaying();
+    window.setInterval(nowPlaying, 15000);
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) nowPlaying();
+    });
+  }
