@@ -406,16 +406,6 @@ def page_shell(
  </form>
 </header>
 {body}
-<section class="site-newsletter" aria-label="Newsletter de Louder">
- <div class="newsletter-inner">
-  <div>
-   <span class="newsletter-kicker">Louder · La única alternativa</span>
-   <h2>Louder en tu correo</h2>
-   <p>Música nueva, historias, lanzamientos y lo que está pasando en Louder. Directo a tu correo, sin llenarte la bandeja.</p>
-  </div>
-  <a class="newsletter-button" href="https://loudermx.com/suscribetee/">Suscribirme</a>
- </div>
-</section>
 <footer class="site-footer">
  <div class="footer-inner">
   <div class="footer-brand">
