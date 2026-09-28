@@ -392,7 +392,7 @@ def page_shell(
    <h2>Louder en tu correo</h2>
    <p>Música nueva, historias, lanzamientos y lo que está pasando en Louder. Directo a tu correo, sin llenarte la bandeja.</p>
   </div>
-  <a class="newsletter-button" href="https://loudermx.com/">Suscribirme</a>
+  <a class="newsletter-button" href="https://loudermx.com/suscribetee/">Suscribirme</a>
  </div>
 </section>
 <footer class="site-footer">
