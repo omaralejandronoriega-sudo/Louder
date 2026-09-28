@@ -101,6 +101,44 @@ def art_exists(session: requests.Session, mbid: str) -> bool:
         return False
 
 
+def itunes_art(session: requests.Session, artist: str, album: str) -> tuple[str, str]:
+    """Fallback for releases missing in Cover Art Archive."""
+    try:
+        r = session.get(
+            "https://itunes.apple.com/search",
+            params={"media": "music", "entity": "song", "limit": 12, "term": f"{artist} {album}"},
+            headers={"User-Agent": UA},
+            timeout=30,
+        )
+        r.raise_for_status()
+        rows = r.json().get("results") or []
+        want_artist = norm(artist)
+        want_album = norm(album)
+        best = None
+        best_score = -1
+        for row in rows:
+            a = norm(row.get("artistName", ""))
+            al = norm(row.get("collectionName", ""))
+            score = 0
+            if a == want_artist:
+                score += 100
+            elif a and want_artist and (a in want_artist or want_artist in a):
+                score += 30
+            if al == want_album:
+                score += 120
+            elif al and want_album and (al in want_album or want_album in al):
+                score += 45
+            if score > best_score and row.get("artworkUrl100"):
+                best = row
+                best_score = score
+        if not best or best_score < 100:
+            return "", ""
+        url = str(best.get("artworkUrl100") or "").replace("100x100bb", "600x600bb")
+        return url, str(best.get("collectionName") or album)
+    except Exception:
+        return "", ""
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=150)
@@ -122,10 +160,11 @@ def main() -> int:
             if track.get("artwork"):
                 continue
             album = str(track.get("album") or "").strip()
-            if not album or album in {"Álbum no identificado", "Recién incorporada al historial"}:
+            if not album or album in {"Álbum no identificado", "Recién incorporada al historial", "Programación YesStreaming"}:
                 continue
             k = key(artist_name, album)
-            if not k or k in seen or k in albums:
+            existing = albums.get(k) or {}
+            if not k or k in seen or existing.get("url") or existing.get("status") == "not_found_itunes":
                 continue
             seen.add(k)
             pending.append((artist_name, album))
@@ -152,16 +191,28 @@ def main() -> int:
                 }
                 print(f"{i}/{len(pending)} OK {artist} — {album}")
             else:
-                albums[k] = {
-                    "artist": artist,
-                    "album": album,
-                    "release_group_mbid": mbid,
-                    "url": "",
-                    "source": "Cover Art Archive",
-                    "status": "not_found",
-                    "updated_at": datetime.now(timezone.utc).isoformat(),
-                }
-                print(f"{i}/{len(pending)} MISS {artist} — {album}")
+                itunes_url, itunes_album = itunes_art(session, artist, album)
+                if itunes_url:
+                    albums[k] = {
+                        "artist": artist,
+                        "album": itunes_album or album,
+                        "release_group_mbid": mbid,
+                        "url": itunes_url,
+                        "source": "iTunes Search",
+                        "updated_at": datetime.now(timezone.utc).isoformat(),
+                    }
+                    print(f"{i}/{len(pending)} ITUNES {artist} — {album}")
+                else:
+                    albums[k] = {
+                        "artist": artist,
+                        "album": album,
+                        "release_group_mbid": mbid,
+                        "url": "",
+                        "source": "MusicBrainz + iTunes Search",
+                        "status": "not_found_itunes",
+                        "updated_at": datetime.now(timezone.utc).isoformat(),
+                    }
+                    print(f"{i}/{len(pending)} MISS {artist} — {album}")
         except Exception as exc:
             print(f"{i}/{len(pending)} ERROR {artist} — {album}: {exc}")
 
