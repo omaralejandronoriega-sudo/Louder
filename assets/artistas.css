@@ -154,3 +154,7 @@ body.gallery-open{overflow:hidden}
  .louder-player{width:calc(100% - 12px);bottom:6px!important;grid-template-columns:38px 40px minmax(0,1fr) auto!important;padding:7px 8px!important}
  .player-donate,.player-artist-link{display:none!important}.player-cover{width:40px;height:40px}.player-play{width:38px;height:38px}.player-track{font-size:10px!important}
 }
+
+.artist-card{content-visibility:auto;contain-intrinsic-size:320px}
+.archive-more{display:flex;justify-content:center;margin:26px 0 0}.archive-more [hidden]{display:none}
+.archive-more .button{min-width:190px}
