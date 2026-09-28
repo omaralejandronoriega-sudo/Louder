@@ -740,10 +740,21 @@ def main() -> int:
     missing_artist_images = sum(
         1 for a in artists if not preferred_image(a, galleries.get(a.get("slug", "")))
     )
-    missing_bios = sum(1 for a in artists if not str(a.get("bio") or "").strip())
+    missing_bios = 0
+    verified_artists = 0
+    for a in artists:
+        gallery = galleries.get(a.get("slug", "")) or {}
+        if not str(a.get("bio") or gallery.get("bio_es") or gallery.get("bio_en") or "").strip():
+            missing_bios += 1
+        if gallery.get("verified"):
+            verified_artists += 1
+    rejected_nonartists = sum(
+        1 for a in raw_artists
+        if not is_public_artist_candidate(str(a.get("name") or ""))
+    )
     suspicious_prefixes = [
         a.get("name", "") for a in artists
-        if re.match(r"^0\d{1,2}[\s._-]+", str(a.get("name") or ""))
+        if re.match(r"^[\s._·•?¿!¡–—-]+", str(a.get("name") or ""))
     ]
     missing_track_art = 0
     for a in artists:
@@ -760,7 +771,8 @@ def main() -> int:
         f"raw_artists={len(raw_artists)} public_artists={len(artists)} "
         f"collapsed={len(raw_artists)-len(artists)} tracks={public_track_count} "
         f"missing_artist_images={missing_artist_images} missing_bios={missing_bios} "
-        f"missing_track_art={missing_track_art} suspicious_prefixes={len(suspicious_prefixes)}"
+        f"missing_track_art={missing_track_art} verified_artists={verified_artists} "
+        f"rejected_nonartists={rejected_nonartists} suspicious_prefixes={len(suspicious_prefixes)}"
     )
 
     if DOCS.exists():
