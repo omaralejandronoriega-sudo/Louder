@@ -692,7 +692,10 @@ def main() -> int:
         encoding="utf-8",
     )
     link_map = {
-        norm(a.get("name", "")): a.get("slug", "")
+        norm(a.get("name", "")): {
+            "name": a.get("name", ""),
+            "slug": a.get("slug", ""),
+        }
         for a in artists
         if a.get("name") and a.get("slug")
     }
