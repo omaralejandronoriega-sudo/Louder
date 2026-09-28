@@ -365,9 +365,10 @@ def page_shell(
    <a href="https://loudermx.com/noticias/">Noticias</a>
    <a href="https://loudermx.com/nosotros/">Nosotros</a>
    <a href="https://loudermx.com/radio/">Radio</a>
-   <a class="active" href="{("../" if depth > 1 else "./")}">Bandas</a>
+   <a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a>
    <a href="https://loudermx.com/playlist/">Playlist</a>
    <a href="https://loudermx.com/contacto/">Contacto</a>
+   <a href="https://loudermx.com/louderplus/">Louder+</a>
   </nav>
   <div class="header-actions">
    <div class="header-social" aria-label="Redes de Louder">
@@ -410,7 +411,7 @@ def page_shell(
   <nav class="footer-links" aria-label="Navegación de pie">
    <a href="https://loudermx.com/">Inicio</a><a href="https://loudermx.com/noticias/">Noticias</a>
    <a href="https://loudermx.com/nosotros/">Nosotros</a><a href="https://loudermx.com/radio/">Radio</a>
-   <a href="/artistas/">Bandas</a><a href="https://loudermx.com/playlist/">Playlist</a>
+   <a href="/artistas/">Artistas</a><a href="https://loudermx.com/playlist/">Playlist</a>
    <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louderplus/">Louder+</a>
   </nav>
   <small>Louder Media © 2026.</small>
