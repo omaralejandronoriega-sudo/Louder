@@ -1,16 +1,27 @@
 name: Deploy Louder Artistas Edge
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "edge/**"
+      - ".github/workflows/deploy-artistas-edge.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: louder-artistas-edge
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
