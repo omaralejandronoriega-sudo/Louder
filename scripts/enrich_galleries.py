@@ -102,17 +102,17 @@ def add_image(
     )
 
 
-def tadb_gallery(client: RateClient, artist: dict[str, Any]) -> tuple[list[dict[str, str]], str]:
+def tadb_gallery(client: RateClient, artist: dict[str, Any]) -> tuple[list[dict[str, str]], str, dict[str, Any]]:
     name = artist.get("name", "")
     data = client.get_json(f"{TADB_BASE}/search.php?s={quote(name)}") or {}
     rows = data.get("artists") or []
     if not rows or not isinstance(rows, list):
-        return [], ""
+        return [], "", {}
 
     row = rows[0] or {}
     returned = str(row.get("strArtist") or "")
     if norm(returned) != norm(name):
-        return [], ""
+        return [], "", {}
 
     images: list[dict[str, str]] = []
     seen: set[str] = set()
@@ -134,7 +134,18 @@ def tadb_gallery(client: RateClient, artist: dict[str, Any]) -> tuple[list[dict[
             f"{url}/medium" if url else None,
         )
 
-    return images[:5], str(row.get("strMusicBrainzID") or "").strip()
+    profile = {
+        "bio_es": str(row.get("strBiographyES") or "").strip(),
+        "bio_en": str(row.get("strBiographyEN") or "").strip(),
+        "website": str(row.get("strWebsite") or "").strip(),
+        "facebook": str(row.get("strFacebook") or "").strip(),
+        "twitter": str(row.get("strTwitter") or "").strip(),
+        "instagram": str(row.get("strInstagram") or "").strip(),
+        "genre": str(row.get("strGenre") or "").strip(),
+        "style": str(row.get("strStyle") or "").strip(),
+        "country": str(row.get("strCountry") or "").strip(),
+    }
+    return images[:5], str(row.get("strMusicBrainzID") or "").strip(), profile
 
 
 def fanart_gallery(
@@ -222,11 +233,10 @@ def main() -> int:
         slug = artist.get("slug")
         if not slug:
             continue
-        existing = galleries.get(slug)
-        # Automatic passes attempt every artist once so low-image/no-match
-        # artists cannot starve the rest of the catalog. --refresh is the
-        # explicit second pass for incomplete galleries.
-        if not args.refresh and existing is not None:
+        existing = galleries.get(slug) or {}
+        # Version 2 also enriches biography/social metadata. Existing gallery
+        # entries are revisited once if they predate this enrichment.
+        if not args.refresh and existing and existing.get("profile_checked_at"):
             continue
         pending.append(artist)
 
@@ -246,15 +256,28 @@ def main() -> int:
     for i, artist in enumerate(pending, start=1):
         slug = artist["slug"]
         try:
-            images, mbid = tadb_gallery(client, artist)
+            images, mbid, profile = tadb_gallery(client, artist)
             images = fanart_gallery(mbid, fanart_key, images)
             images = fallback_gallery(artist, images)
+            now = datetime.now(timezone.utc).isoformat()
             galleries[slug] = {
                 "name": artist.get("name", ""),
                 "musicbrainz_id": mbid,
                 "images": images[:5],
                 "image_count": min(len(images), 5),
-                "updated_at": datetime.now(timezone.utc).isoformat(),
+                "bio_es": profile.get("bio_es", ""),
+                "bio_en": profile.get("bio_en", ""),
+                "official_url": profile.get("website", ""),
+                "social": {
+                    "facebook": profile.get("facebook", ""),
+                    "twitter": profile.get("twitter", ""),
+                    "instagram": profile.get("instagram", ""),
+                },
+                "genre": profile.get("genre", ""),
+                "style": profile.get("style", ""),
+                "country": profile.get("country", ""),
+                "profile_checked_at": now,
+                "updated_at": now,
             }
             print(
                 f"{i}/{len(pending)} {artist.get('name')} "
