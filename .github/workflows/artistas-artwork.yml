@@ -40,7 +40,7 @@ jobs:
         run: python scripts/merge_history_sources.py
 
       - name: Resolve missing covers in safe batches
-        run: python scripts/enrich_album_art.py --limit 400
+        run: python scripts/enrich_album_art.py --limit 1200
 
       - name: Save artwork metadata
         shell: bash
