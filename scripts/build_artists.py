@@ -501,8 +501,7 @@ def build_artist(
     <div><strong>{esc(artist.get("last_played") or "—")}</strong><span>última vez</span></div>
    </div>
    <div class="social">{social_links(artist)}</div>
-   {source_stats_html(artist)}
-  </div>
+   </div>
  </div>
 </section>
 
