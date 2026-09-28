@@ -434,7 +434,8 @@ def page_shell(
 
 def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> None:
     cards: list[str] = []
-    for artist in artists:
+    initial = artists[:120]
+    for artist in initial:
         name = artist.get("name", "")
         image = preferred_image(artist, galleries.get(artist.get("slug", "")))
         media = (
@@ -476,11 +477,12 @@ def build_index(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> Non
   <button class="letter active" data-letter="">Todos</button>
   {"".join(f'<button class="letter" data-letter="{c}">{c}</button>' for c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ")}
  </div>
- <p class="count"><strong data-visible-count>{len(artists)}</strong> de {len(artists)} artistas</p>
+ <p class="count"><strong data-visible-count>{len(initial)}</strong> de <span data-total-count>{len(artists)}</span> artistas</p>
 </section>
 <section class="artist-grid" data-artist-grid>
 {"".join(cards)}
 </section>
+<div class="archive-more"><button class="button" type="button" data-load-more>Mostrar más artistas</button></div>
 <div class="empty-state" data-empty hidden>No encontramos artistas con ese filtro.</div>
 </main>'''
 
@@ -630,10 +632,17 @@ def main() -> int:
         build_artist(artist, by_slug, galleries, album_art)
 
     index_payload = {
-        "version": 1,
+        "version": 2,
         "base_url": "https://artistas.loudermx.com/artistas/",
         "artists": [
-            {"name": a.get("name", ""), "slug": a.get("slug", "")}
+            {
+                "name": a.get("name", ""),
+                "slug": a.get("slug", ""),
+                "plays": int(a.get("plays") or 0),
+                "first": a.get("first_played") or "",
+                "last": a.get("last_played") or "",
+                "image": preferred_image(a, galleries.get(a.get("slug", ""))),
+            }
             for a in artists
         ],
         "aliases": aliases,
@@ -642,6 +651,14 @@ def main() -> int:
         json.dumps(index_payload, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
     )
+
+    sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
+        f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
+    ]
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
+        f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
+    ) + "</urlset>\n"
+    (DOCS / "sitemap.xml").write_text(sitemap, encoding="utf-8")
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
