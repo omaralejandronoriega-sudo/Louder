@@ -209,7 +209,7 @@ def page_shell(
 ) -> str:
     asset_prefix = "_assets/" if depth == 1 else "../_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
-    canonical = "https://loudermx.com" + canonical_path
+    canonical = "https://artistas.loudermx.com" + canonical_path
     return f'''<!doctype html>
 <html lang="es-MX">
 <head>
