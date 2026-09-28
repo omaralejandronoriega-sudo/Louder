@@ -85,7 +85,7 @@ def merge_public_tracks(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
             merged[key] = track
             continue
 
-        current["plays"] = int(current.get("plays") or 0) + int(track.get("plays") or 0)
+        current["plays"] = max(int(current.get("plays") or 0), int(track.get("plays") or 0))
         dates_first = [str(x or "") for x in (current.get("first_played"), track.get("first_played")) if x]
         dates_last = [str(x or "") for x in (current.get("last_played"), track.get("last_played")) if x]
         if dates_first:
@@ -356,43 +356,77 @@ def page_shell(
 </head>
 <body>
 <header class="site-header">
- <a class="brand" href="https://loudermx.com/" aria-label="Louder"><img src="{asset_prefix}logo_louder.png" alt="Louder"><small>LA ÚNICA ALTERNATIVA</small></a>
- <button class="nav-toggle" type="button" aria-label="Abrir menú" data-nav-toggle>☰</button>
- <nav data-main-nav>
-  <a href="https://loudermx.com/">Inicio</a>
-  <a href="https://loudermx.com/noticias/">Noticias</a>
-  <a href="https://loudermx.com/nosotros/">Nosotros</a>
-  <a href="https://loudermx.com/radio/">Radio</a>
-  <a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a>
-  <a href="https://loudermx.com/playlist/">Playlist</a>
-  <a href="https://loudermx.com/contacto/">Contacto</a>
-  <a href="https://loudermx.com/louderplus/">Louder+</a>
- </nav>
+ <div class="header-inner">
+  <a class="brand" href="https://loudermx.com/" aria-label="Louder"><img src="{asset_prefix}logo_louder.png" alt="Louder"></a>
+  <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>☰</button>
+  <nav class="main-nav" data-main-nav aria-label="Navegación principal">
+   <a href="https://loudermx.com/">Inicio</a>
+   <a href="https://loudermx.com/noticias/">Noticias</a>
+   <a href="https://loudermx.com/nosotros/">Nosotros</a>
+   <a href="https://loudermx.com/radio/">Radio</a>
+   <a class="active" href="{("../" if depth > 1 else "./")}">Bandas</a>
+   <a href="https://loudermx.com/playlist/">Playlist</a>
+   <a href="https://loudermx.com/contacto/">Contacto</a>
+  </nav>
+  <div class="header-actions">
+   <div class="header-social" aria-label="Redes de Louder">
+    <a href="https://www.facebook.com/LouderMx" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+    <a href="https://twitter.com/mxlouder" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+    <a href="https://www.instagram.com/loudermx/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+    <a href="https://www.tiktok.com/@loudermx" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+    <a href="https://www.youtube.com/@ldrmx" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+   </div>
+   <button class="header-search" type="button" aria-label="Buscar en Louder" data-site-search>⌕</button>
+  </div>
+ </div>
+ <form class="site-search-panel" action="https://loudermx.com/" method="get" data-site-search-panel hidden>
+  <label><span>Buscar en Louder</span><input type="search" name="s" placeholder="Buscar en Louder…" autocomplete="off"></label>
+  <button type="submit">Buscar</button>
+ </form>
 </header>
 {body}
+<section class="site-newsletter" aria-label="Newsletter de Louder">
+ <div class="newsletter-inner">
+  <div>
+   <span class="newsletter-kicker">Louder · La única alternativa</span>
+   <h2>Louder en tu correo</h2>
+   <p>Música nueva, historias, lanzamientos y lo que está pasando en Louder. Directo a tu correo, sin llenarte la bandeja.</p>
+  </div>
+  <a class="newsletter-button" href="https://loudermx.com/">Suscribirme</a>
+ </div>
+</section>
 <footer class="site-footer">
  <div class="footer-inner">
-  <div class="footer-brand"><img src="{asset_prefix}logo_louder.png" alt="Louder"><p>La única alternativa</p></div>
-  <div><strong>Ubicación</strong><span>San Luis Potosí, México</span></div>
-  <div><strong>Contacto</strong><a href="mailto:socialmedia@loudermx.com">socialmedia@loudermx.com</a></div>
-  <div><strong>Louder+</strong><span>Ayuda a mantener Louder Radio, la web y nuestra cobertura musical.</span></div>
+  <div class="footer-brand">
+   <img src="{asset_prefix}logo_louder.png" alt="Louder">
+   <h2>La única alternativa</h2>
+  </div>
+  <div class="footer-column"><strong>Ubicación</strong><span>San Luis Potosí,<br>San Luis Potosí,<br>México</span></div>
+  <div class="footer-column"><strong>Contacto</strong><a href="mailto:socialmedia@loudermx.com">socialmedia@loudermx.com</a></div>
+  <div class="footer-column footer-plus"><a href="https://loudermx.com/louderplus/"><strong>Louder+</strong></a><span>Ayuda a mantener Louder Radio, la web y nuestra cobertura musical.</span></div>
  </div>
- <div class="footer-links">
-  <a href="https://loudermx.com/">Inicio</a><a href="https://loudermx.com/category/noticias/">Noticias</a>
-  <a href="https://loudermx.com/nosotros/">Nosotros</a><a href="https://loudermx.com/radio/">Radio</a>
-  <a href="/artistas/">Artistas</a><a href="https://loudermx.com/playlist/">Playlist</a>
-  <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louderplus/">Louder+</a>
+ <div class="footer-bottom">
+  <nav class="footer-links" aria-label="Navegación de pie">
+   <a href="https://loudermx.com/">Inicio</a><a href="https://loudermx.com/noticias/">Noticias</a>
+   <a href="https://loudermx.com/nosotros/">Nosotros</a><a href="https://loudermx.com/radio/">Radio</a>
+   <a href="/artistas/">Bandas</a><a href="https://loudermx.com/playlist/">Playlist</a>
+   <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louderplus/">Louder+</a>
+  </nav>
+  <small>Louder Media © 2026.</small>
  </div>
- <small>Louder Media © 2026.</small>
 </footer>
-<div class="louder-player" id="louder-static-player">
+<div class="louder-player" id="persistent-louder-radio" aria-label="Louder Radio">
  <button class="player-play" type="button" data-radio-play aria-label="Reproducir Louder Radio">▶</button>
  <div class="player-cover"><img data-radio-art alt="" hidden><span data-radio-fallback>LOUDER</span></div>
- <div class="player-copy"><strong>Louder Radio LIVE</strong><span class="player-live">En vivo</span><div data-radio-track>Cargando canción actual…</div></div>
+ <div class="player-copy">
+  <div class="player-title"><strong>Louder Radio LIVE</strong><span class="player-live">En vivo</span></div>
+  <div class="player-track" data-radio-track>Cargando canción actual…</div>
+ </div>
  <a class="player-artist-link" data-radio-artist-link href="/artistas/" hidden>Ver artista</a>
+ <a class="player-donate" href="https://ko-fi.com/loudermx" target="_blank" rel="noopener">Donar</a>
+ <label class="player-volume" aria-label="Volumen"><span>VOL</span><input type="range" min="0" max="1" step="0.05" value="0.8" data-radio-volume></label>
  <audio data-radio-audio preload="none" src="https://ec1.yesstreaming.net:2725/stream"></audio>
-</div>
-</body>
+</div></body>
 </html>'''
 
 
