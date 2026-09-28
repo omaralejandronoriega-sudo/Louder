@@ -145,17 +145,13 @@
   const currentSlug = q("[data-shuffle-from]")?.dataset.shuffleFrom || "";
   q("[data-shuffle-from]")?.addEventListener("click", async () => {
     try {
-      const base = new URL("../", window.location.href);
-      const response = await fetch(base.href, { cache:"force-cache" });
+      const response = await fetch(new URL("/artists-index.json", window.location.origin), { cache:"force-cache" });
       if (!response.ok) throw new Error("index");
-      const source = await response.text();
-      const doc = new DOMParser().parseFromString(source, "text/html");
-      const links = qa("[data-artist-card]", doc).filter(
-        (card) => !card.getAttribute("href")?.includes("/" + currentSlug + "/")
-      );
-      if (!links.length) return;
-      const pick = links[Math.floor(Math.random() * links.length)];
-      window.location.href = new URL(pick.getAttribute("href"), base).href;
+      const data = await response.json();
+      const rows = (data.artists || []).filter((item) => item.slug && item.slug !== currentSlug);
+      if (!rows.length) throw new Error("empty");
+      const pick = rows[Math.floor(Math.random() * rows.length)];
+      window.location.href = "/artistas/" + pick.slug + "/";
     } catch (_) {
       window.location.href = "../";
     }
