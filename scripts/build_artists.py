@@ -239,17 +239,36 @@ def gallery_html(name: str, gallery: dict[str, Any] | None) -> str:
 </section>'''
 
 
-def social_links(artist: dict[str, Any]) -> str:
+def social_links(artist: dict[str, Any], gallery: dict[str, Any] | None = None) -> str:
+    gallery = gallery or {}
     links: list[str] = []
-    if artist.get("official_url"):
-        links.append(
-            f'<a href="{esc(artist["official_url"])}" target="_blank" rel="noopener">Web oficial</a>'
-        )
+    seen: set[str] = set()
+
+    official = str(artist.get("official_url") or gallery.get("official_url") or "").strip()
+    if official:
+        if not official.startswith(("http://", "https://")):
+            official = "https://" + official.lstrip("/")
+        links.append(f'<a href="{esc(official)}" target="_blank" rel="noopener">Web oficial</a>')
+        seen.add(official)
+
     for item in artist.get("social") or []:
-        name = esc(item.get("name"))
-        url = esc(item.get("url"))
-        if name and url:
-            links.append(f'<a href="{url}" target="_blank" rel="noopener">{name}</a>')
+        name = str(item.get("name") or "").strip()
+        url = str(item.get("url") or "").strip()
+        if name and url and url not in seen:
+            links.append(f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a>')
+            seen.add(url)
+
+    fallback_social = gallery.get("social") or {}
+    labels = {"facebook": "Facebook", "twitter": "X", "instagram": "Instagram"}
+    for key, label in labels.items():
+        url = str(fallback_social.get(key) or "").strip()
+        if not url or url in seen:
+            continue
+        if not url.startswith(("http://", "https://")):
+            url = "https://" + url.lstrip("/")
+        links.append(f'<a href="{esc(url)}" target="_blank" rel="noopener">{label}</a>')
+        seen.add(url)
+
     return "".join(links)
 
 
@@ -513,10 +532,14 @@ def build_artist(
         if image
         else ""
     )
-    genres = "".join(
-        f'<span class="genre">{esc(g)}</span>' for g in (artist.get("genres") or [])[:8]
-    )
-    bio = artist.get("bio") or ""
+    genre_values = list(artist.get("genres") or [])
+    if not genre_values:
+        for value in (gallery.get("genre"), gallery.get("style")):
+            value = str(value or "").strip()
+            if value and value not in genre_values:
+                genre_values.append(value)
+    genres = "".join(f'<span class="genre">{esc(g)}</span>' for g in genre_values[:8])
+    bio = str(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en") or "").strip()
     bio_html = "".join(
         f"<p>{esc(p)}</p>" for p in re.split(r"\n\s*\n", bio) if p.strip()
     )
@@ -542,7 +565,7 @@ def build_artist(
     <div><strong>{esc(artist.get("first_played") or "—")}</strong><span>primera vez</span></div>
     <div><strong>{esc(artist.get("last_played") or "—")}</strong><span>última vez</span></div>
    </div>
-   <div class="social">{social_links(artist)}</div>
+   <div class="social">{social_links(artist, gallery)}</div>
    </div>
  </div>
 </section>
