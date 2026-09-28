@@ -29,6 +29,122 @@ def norm(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
 
 
+def public_artist_name(value: str) -> str:
+    """Remove obvious track-number pollution without touching legitimate names.
+
+    Examples fixed: "04 Swimwear" -> "Swimwear", "05 Van She" -> "Van She".
+    We deliberately only strip zero-padded numeric prefixes, so real names such
+    as "4 The Cause", "2 Door Cinema Club" or "10 Years" remain untouched.
+    """
+    raw = str(value or "").strip()
+    cleaned = re.sub(r"^0\d{1,2}[\s._-]+(?=\S)", "", raw).strip()
+    return cleaned or raw
+
+
+def canonical_track_title(value: str) -> str:
+    raw = str(value or "").strip()
+    patterns = [
+        r"\s*[\-–—]\s*(?:\d{4}\s+)?remaster(?:ed)?(?:\s+\d{4})?\s*$",
+        r"\s*\((?:\d{4}\s+)?remaster(?:ed)?(?:\s+\d{4})?\)\s*$",
+        r"\s*\[(?:\d{4}\s+)?remaster(?:ed)?(?:\s+\d{4})?\]\s*$",
+    ]
+    out = raw
+    for pattern in patterns:
+        out = re.sub(pattern, "", out, flags=re.I).strip()
+    return out or raw
+
+
+def canonical_album(value: str) -> str:
+    raw = str(value or "").strip()
+    if not raw:
+        return raw
+    out = re.sub(r"\s*[\[(](?:remaster(?:ed)?(?:\s+\d{4})?|\d{4}\s+remaster(?:ed)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?)[\])]\s*$", "", raw, flags=re.I).strip()
+    out = re.sub(r"\s*[\-–—]\s*(?:remaster(?:ed)?(?:\s+\d{4})?|\d{4}\s+remaster(?:ed)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?)\s*$", "", out, flags=re.I).strip()
+    return out or raw
+
+
+def merge_public_tracks(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged: dict[str, dict[str, Any]] = {}
+    for original in tracks or []:
+        if not isinstance(original, dict) or not original.get("title"):
+            continue
+        track = dict(original)
+        clean_title = canonical_track_title(str(track.get("title") or ""))
+        key = norm(clean_title)
+        if not key:
+            continue
+        track["title"] = clean_title
+        if track.get("album"):
+            track["album"] = canonical_album(str(track.get("album") or ""))
+        current = merged.get(key)
+        if current is None:
+            merged[key] = track
+            continue
+
+        current["plays"] = int(current.get("plays") or 0) + int(track.get("plays") or 0)
+        dates_first = [str(x or "") for x in (current.get("first_played"), track.get("first_played")) if x]
+        dates_last = [str(x or "") for x in (current.get("last_played"), track.get("last_played")) if x]
+        if dates_first:
+            current["first_played"] = min(dates_first)
+        if dates_last:
+            current["last_played"] = max(dates_last)
+        if not current.get("artwork") and track.get("artwork"):
+            current["artwork"] = track.get("artwork")
+        if (not current.get("album") or current.get("album") == "Programación YesStreaming") and track.get("album"):
+            current["album"] = track.get("album")
+        current["sources"] = sorted(set((current.get("sources") or []) + (track.get("sources") or [])))
+
+    return sorted(merged.values(), key=lambda t: (-int(t.get("plays") or 0), norm(str(t.get("title") or ""))))
+
+
+def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """Create a cleaned public view while preserving raw historical data."""
+    buckets: dict[str, dict[str, Any]] = {}
+    aliases: dict[str, str] = {}
+
+    for original in artists:
+        if not isinstance(original, dict) or not original.get("name"):
+            continue
+        raw_name = str(original.get("name") or "").strip()
+        clean_name = public_artist_name(raw_name)
+        key = norm(clean_name)
+        if not key:
+            continue
+        candidate = dict(original)
+        candidate["name"] = clean_name
+        candidate["tracks"] = merge_public_tracks(candidate.get("tracks") or [])
+        current = buckets.get(key)
+        if current is None:
+            buckets[key] = candidate
+        else:
+            current["plays"] = max(int(current.get("plays") or 0), int(candidate.get("plays") or 0))
+            current["tracks"] = merge_public_tracks((current.get("tracks") or []) + (candidate.get("tracks") or []))
+            if not current.get("image") and candidate.get("image"):
+                current["image"] = candidate.get("image")
+            if not current.get("bio") and candidate.get("bio"):
+                current["bio"] = candidate.get("bio")
+            current["sources"] = sorted(set((current.get("sources") or []) + (candidate.get("sources") or [])))
+        aliases[norm(raw_name)] = key
+        aliases[norm(clean_name)] = key
+
+    used: set[str] = set()
+    key_to_slug: dict[str, str] = {}
+    for key, artist in buckets.items():
+        base = slugify(str(artist.get("name") or ""))
+        slug = base
+        n = 2
+        while slug in used:
+            slug = f"{base}-{n}"
+            n += 1
+        used.add(slug)
+        artist["slug"] = slug
+        key_to_slug[key] = slug
+
+    alias_to_slug = {alias: key_to_slug[target] for alias, target in aliases.items() if target in key_to_slug}
+    public = sorted(buckets.values(), key=lambda a: norm(str(a.get("name") or "")))
+    return public, alias_to_slug
+
+
 def number(value: Any) -> str:
     try:
         return f"{int(value or 0):,}".replace(",", " ")
@@ -149,7 +265,10 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
         cover = (
             f'<img src="{esc(artwork)}" alt="" loading="lazy" decoding="async">'
             if artwork
-            else '<span class="cover-fallback">Louder</span>'
+            else (
+                f'<span class="cover-fallback" data-missing-cover '
+                f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
+            )
         )
         out.append(
             f'''<article class="track-row" data-track
@@ -234,10 +353,41 @@ def page_shell(
 <body>
 <header class="site-header">
  <a class="brand" href="https://loudermx.com/" aria-label="Louder"><img src="{asset_prefix}logo_louder.png" alt="Louder"><small>LA ÚNICA ALTERNATIVA</small></a>
- <nav><a href="https://loudermx.com/">Inicio</a><a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a></nav>
+ <button class="nav-toggle" type="button" aria-label="Abrir menú" data-nav-toggle>☰</button>
+ <nav data-main-nav>
+  <a href="https://loudermx.com/">Inicio</a>
+  <a href="https://loudermx.com/category/noticias/">Noticias</a>
+  <a href="https://loudermx.com/nosotros/">Nosotros</a>
+  <a href="https://loudermx.com/radio/">Radio</a>
+  <a class="active" href="{("../" if depth > 1 else "./")}">Artistas</a>
+  <a href="https://loudermx.com/playlist/">Playlist</a>
+  <a href="https://loudermx.com/contacto/">Contacto</a>
+  <a href="https://loudermx.com/louder-plus/">Louder+</a>
+ </nav>
 </header>
 {body}
-<footer class="site-footer">Louder · Archivo musical independiente</footer>
+<footer class="site-footer">
+ <div class="footer-inner">
+  <div class="footer-brand"><img src="{asset_prefix}logo_louder.png" alt="Louder"><p>La única alternativa</p></div>
+  <div><strong>Ubicación</strong><span>San Luis Potosí, México</span></div>
+  <div><strong>Contacto</strong><a href="mailto:socialmedia@loudermx.com">socialmedia@loudermx.com</a></div>
+  <div><strong>Louder+</strong><span>Ayuda a mantener Louder Radio, la web y nuestra cobertura musical.</span></div>
+ </div>
+ <div class="footer-links">
+  <a href="https://loudermx.com/">Inicio</a><a href="https://loudermx.com/category/noticias/">Noticias</a>
+  <a href="https://loudermx.com/nosotros/">Nosotros</a><a href="https://loudermx.com/radio/">Radio</a>
+  <a href="/artistas/">Artistas</a><a href="https://loudermx.com/playlist/">Playlist</a>
+  <a href="https://loudermx.com/contacto/">Contacto</a><a href="https://loudermx.com/louder-plus/">Louder+</a>
+ </div>
+ <small>Louder Media © 2026.</small>
+</footer>
+<div class="louder-player" id="louder-static-player">
+ <button class="player-play" type="button" data-radio-play aria-label="Reproducir Louder Radio">▶</button>
+ <div class="player-cover"><img data-radio-art alt="" hidden><span data-radio-fallback>LOUDER</span></div>
+ <div class="player-copy"><strong>Louder Radio LIVE</strong><span class="player-live">En vivo</span><div data-radio-track>Cargando canción actual…</div></div>
+ <a class="player-artist-link" data-radio-artist-link href="/artistas/" hidden>Ver artista</a>
+ <audio data-radio-audio preload="none" src="https://ec1.yesstreaming.net:2725/stream"></audio>
+</div>
 </body>
 </html>'''
 
@@ -396,8 +546,8 @@ def build_artist(
 
 def main() -> int:
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    artists = [a for a in data.get("artists", []) if a.get("slug") and a.get("name")]
-    artists.sort(key=lambda a: norm(a.get("name", "")))
+    raw_artists = [a for a in data.get("artists", []) if a.get("name")]
+    artists, aliases = prepare_public_artists(raw_artists)
     by_slug = {a["slug"]: a for a in artists}
     gallery_store = {"artists": {}}
     if GALLERIES.exists():
@@ -435,6 +585,20 @@ def main() -> int:
     build_index(artists, galleries)
     for artist in artists:
         build_artist(artist, by_slug, galleries, album_art)
+
+    index_payload = {
+        "version": 1,
+        "base_url": "https://artistas.loudermx.com/artistas/",
+        "artists": [
+            {"name": a.get("name", ""), "slug": a.get("slug", "")}
+            for a in artists
+        ],
+        "aliases": aliases,
+    }
+    (DOCS / "artists-index.json").write_text(
+        json.dumps(index_payload, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
