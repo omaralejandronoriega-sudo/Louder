@@ -29,6 +29,10 @@ def norm(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
 
 
+def slugify(value: str) -> str:
+    return norm(value).replace(" ", "-").strip("-") or "artista"
+
+
 def public_artist_name(value: str) -> str:
     """Remove obvious track-number pollution without touching legitimate names.
 
