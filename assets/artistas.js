@@ -5,12 +5,15 @@
   const qa = (s, root = document) => Array.from(root.querySelectorAll(s));
 
   function normalize(value) {
-    return String(value || "")
+    const raw = String(value || "").trim();
+    const normal = raw
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, " ")
       .trim();
+    if (normal) return normal;
+    return "symbol:" + Array.from(raw).map((ch) => ch.codePointAt(0).toString(16)).join("-");
   }
 
   const months = { ene:0,feb:1,mar:2,abr:3,may:4,jun:5,jul:6,ago:7,sep:8,oct:9,nov:10,dic:11 };
