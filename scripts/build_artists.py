@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "artists.json"
 GALLERIES = ROOT / "data" / "galleries.json"
 ALBUM_ART = ROOT / "data" / "album_art.json"
+ARTIST_REVIEW = ROOT / "data" / "artist_review_overrides.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 
@@ -24,33 +25,57 @@ def esc(value: Any) -> str:
 
 
 def norm(value: str) -> str:
-    value = unicodedata.normalize("NFD", value)
+    value = unicodedata.normalize("NFD", str(value or ""))
     value = "".join(c for c in value if unicodedata.category(c) != "Mn")
     return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
 
 
+def artist_key(value: str) -> str:
+    raw = str(value or "").strip()
+    normal = norm(raw)
+    if normal:
+        return normal
+    # Preserve legitimate punctuation-only artist names such as !!!.
+    return "symbol:" + "-".join(f"{ord(ch):x}" for ch in raw)
+
+
 def slugify(value: str) -> str:
-    return norm(value).replace(" ", "-").strip("-") or "artista"
+    normal = norm(value).replace(" ", "-").strip("-")
+    if normal:
+        return normal
+    raw = str(value or "").strip()
+    return "artist-" + "-".join(f"{ord(ch):x}" for ch in raw) if raw else "artista"
+
+
+def load_artist_review() -> dict[str, Any]:
+    if not ARTIST_REVIEW.exists():
+        return {"aliases": {}, "exclude": {}, "preserve_exact": [], "collaborations": []}
+    try:
+        data = json.loads(ARTIST_REVIEW.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {"aliases": {}, "exclude": {}, "preserve_exact": [], "collaborations": []}
+
+
+ARTIST_REVIEW_DATA = load_artist_review()
+ARTIST_ALIASES = {
+    str(k).strip(): str(v).strip()
+    for k, v in (ARTIST_REVIEW_DATA.get("aliases") or {}).items()
+    if str(k).strip() and str(v).strip()
+}
+ARTIST_EXCLUDES = {
+    artist_key(str(k)): str(v)
+    for k, v in (ARTIST_REVIEW_DATA.get("exclude") or {}).items()
+    if str(k).strip()
+}
 
 
 def public_artist_name(value: str) -> str:
-    """Clean obvious playout-label pollution without renaming real artists."""
-    raw = str(value or "").strip()
+    """Apply only reviewed identity corrections; never guess from punctuation."""
+    raw = re.sub(r"\s{2,}", " ", str(value or "").strip())
     if not raw:
         return ""
-
-    # Track-number pollution from historical playout exports.
-    cleaned = re.sub(r"^0\d{1,2}[\s._-]+(?=\S)", "", raw).strip()
-
-    # Stray separators such as ". Keep Shelly in Athens" or "? Artist".
-    # Only strip punctuation when an alphanumeric artist name remains, so names
-    # made intentionally from punctuation are not silently rewritten here.
-    if re.search(r"[A-Za-z0-9]", cleaned):
-        cleaned = re.sub(r"^[\s._·•?¿!¡–—-]+(?=[A-Za-z0-9])", "", cleaned).strip()
-        cleaned = re.sub(r"(?<=[A-Za-z0-9])[\s._·•?¿!¡–—-]+$", "", cleaned).strip()
-
-    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
-    return cleaned or raw
+    return ARTIST_ALIASES.get(raw, raw)
 
 
 NON_ARTIST_LABELS = {
@@ -68,15 +93,16 @@ NON_ARTIST_LABELS = {
 
 
 def is_public_artist_candidate(value: str) -> bool:
-    name = public_artist_name(value)
-    key = norm(name)
-    if not key or key in NON_ARTIST_LABELS:
+    raw = re.sub(r"\s{2,}", " ", str(value or "").strip())
+    if not raw:
         return False
-    if not re.search(r"[a-z0-9]", key):
+    key = artist_key(raw)
+    if key in ARTIST_EXCLUDES:
         return False
-    # Reject obvious one-character metadata fragments.
-    if len(key.replace(" ", "")) < 2:
+    if norm(raw) in NON_ARTIST_LABELS:
         return False
+    # Do not reject names for being short, numeric or punctuation-based:
+    # A, 424 and !!! are legitimate artist names.
     return True
 
 
@@ -218,12 +244,13 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
         if not is_public_artist_candidate(raw_name):
             continue
         clean_name = public_artist_name(raw_name)
-        key = norm(clean_name)
-        if not key:
-            continue
+        key = artist_key(clean_name)
         candidate = dict(original)
         candidate["name"] = clean_name
         candidate["tracks"] = merge_public_tracks(candidate.get("tracks") or [])
+        candidate["_canonical_exact"] = (raw_name == clean_name)
+        if candidate["_canonical_exact"] and candidate.get("slug"):
+            candidate["_canonical_slug"] = candidate.get("slug")
         current = buckets.get(key)
         if current is None:
             buckets[key] = candidate
@@ -241,13 +268,21 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
             if not current.get("bio") and candidate.get("bio"):
                 current["bio"] = candidate.get("bio")
             current["sources"] = sorted(set((current.get("sources") or []) + (candidate.get("sources") or [])))
-        aliases[norm(raw_name)] = key
-        aliases[norm(clean_name)] = key
+            if candidate.get("_canonical_exact"):
+                current["_canonical_exact"] = True
+                if candidate.get("slug"):
+                    current["_canonical_slug"] = candidate.get("slug")
+                if candidate.get("image"):
+                    current["image"] = candidate.get("image")
+                if candidate.get("bio"):
+                    current["bio"] = candidate.get("bio")
+        aliases[artist_key(raw_name)] = key
+        aliases[artist_key(clean_name)] = key
 
     used: set[str] = set()
     key_to_slug: dict[str, str] = {}
     for key, artist in buckets.items():
-        existing_slug = str(artist.get("slug") or "").strip()
+        existing_slug = str(artist.get("_canonical_slug") or artist.get("slug") or "").strip()
         base = existing_slug or slugify(str(artist.get("name") or ""))
         slug = base
         n = 2
@@ -256,6 +291,8 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
             n += 1
         used.add(slug)
         artist["slug"] = slug
+        artist.pop("_canonical_exact", None)
+        artist.pop("_canonical_slug", None)
         key_to_slug[key] = slug
 
     alias_to_slug = {alias: key_to_slug[target] for alias, target in aliases.items() if target in key_to_slug}
@@ -817,7 +854,7 @@ def main() -> int:
         encoding="utf-8",
     )
     link_map = {
-        norm(a.get("name", "")): {
+        artist_key(a.get("name", "")): {
             "name": a.get("name", ""),
             "slug": a.get("slug", ""),
         }
