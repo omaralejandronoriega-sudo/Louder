@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "policy": "No se elimina un nombre por puntuación, longitud o por parecer raro. Solo se excluyen etiquetas revisadas como no-artista; los errores de fuente se corrigen mediante alias explícitos.",
+  "aliases": {
+    ". Keep Shelly in Athens": "Keep Shelly in Athens",
+    ". Brett Laffin": "Brett Laffin",
+    ". Maxi Trusso)": "Maxi Trusso",
+    "11 Tv Girl": "TV Girl",
+    "05 Amanda Mair": "Amanda Mair",
+    "08 Craft Spells": "Craft Spells",
+    "08 Wild Nothing": "Wild Nothing",
+    "09 Novella": "Novella",
+    "13 Darkness Falls": "Darkness Falls",
+    "13 Little Scream": "Little Scream",
+    "13 Picnic": "Picnic",
+    "13 Sleep Over": "Sleep Over",
+    "14 Fanzine": "Fanzine",
+    "16 Friendly Fires": "Friendly Fires",
+    "17 Ikons": "Ikons",
+    "17 Little Jinder": "Little Jinder",
+    "17 Work Drugs": "Work Drugs",
+    "18 The Soft Pack": "The Soft Pack",
+    "19 Two Wounded birds": "Two Wounded Birds",
+    "1990 Rise And Fall Of A Decade": "Rise and Fall of a Decade",
+    "20 We Are Serenades": "We Are Serenades",
+    "22 Ski Lodge": "Ski Lodge",
+    "25 By The Sea": "By The Sea",
+    "Blondshell, COLORS": "Blondshell",
+    "The WAEVE, Graham Coxon, Rose Elinor Dougall": "The WAEVE",
+    "Alex Turner Brit Awards 2014": "Alex Turner",
+    "(Kidsmoke)": "Kidsmoke"
+  },
+  "exclude": {
+    "Mordaz": "Programa de Louder, no artista.",
+    "Live8": "Evento/concierto benéfico, no artista.",
+    "Various Artists": "Etiqueta de compilación, no artista de pista.",
+    "Shrek 3": "Película/banda sonora, no artista."
+  },
+  "preserve_exact": [
+    "A",
+    "424",
+    "Blondshell",
+    "Kidsmoke",
+    "Rise and Fall of a Decade",
+    "The WAEVE",
+    "!!!",
+    "†††"
+  ],
+  "collaborations": [
+    {
+      "raw": "Wavves × Cloud Nothings",
+      "artists": [
+        "Wavves",
+        "Cloud Nothings"
+      ]
+    },
+    {
+      "raw": "Alan Sparhawk, Trampled By Turtles",
+      "artists": [
+        "Alan Sparhawk",
+        "Trampled by Turtles"
+      ]
+    },
+    {
+      "raw": "Anna von Hausswolff, Ethel Cain",
+      "artists": [
+        "Anna von Hausswolff",
+        "Ethel Cain"
+      ]
+    },
+    {
+      "raw": "Bad Bad Hats, Ratboys",
+      "artists": [
+        "Bad Bad Hats",
+        "Ratboys"
+      ]
+    },
+    {
+      "raw": "FKA twigs / Headie One / Fred again..",
+      "artists": [
+        "FKA twigs",
+        "Headie One",
+        "Fred again.."
+      ]
+    },
+    {
+      "raw": "Flume / Reo Cragun",
+      "artists": [
+        "Flume",
+        "Reo Cragun"
+      ]
+    },
+    {
+      "raw": "Jamie xx feat. Romy",
+      "artists": [
+        "Jamie xx",
+        "Romy"
+      ]
+    },
+    {
+      "raw": "KAYTRANADA / Kali Uchis",
+      "artists": [
+        "KAYTRANADA",
+        "Kali Uchis"
+      ]
+    },
+    {
+      "raw": "Lava La Rue/Cuco",
+      "artists": [
+        "Lava La Rue",
+        "Cuco"
+      ]
+    },
+    {
+      "raw": "Little Simz / Obongjayar",
+      "artists": [
+        "Little Simz",
+        "Obongjayar"
+      ]
+    },
+    {
+      "raw": "Lord Huron / Allison Ponthier",
+      "artists": [
+        "Lord Huron",
+        "Allison Ponthier"
+      ]
+    },
+    {
+      "raw": "Madeon feat. Passion Pit",
+      "artists": [
+        "Madeon",
+        "Passion Pit"
+      ]
+    },
+    {
+      "raw": "Winter, Tanukichan",
+      "artists": [
+        "Winter",
+        "Tanukichan"
+      ]
+    },
+    {
+      "raw": "Weakened Friends, Buckethead",
+      "artists": [
+        "Weakened Friends",
+        "Buckethead"
+      ]
+    }
+  ]
+}
