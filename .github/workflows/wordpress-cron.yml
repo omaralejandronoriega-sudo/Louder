@@ -25,5 +25,5 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          URL="https://loudermx.com/wp-cron.php"
+          URL="https://loudermx.com/wp-cron.php?doing_wp_cron"
           curl             --fail             --silent             --show-error             --connect-timeout 5             --max-time 30             --user-agent "Louder-WP-Cron/1.0"             --output /dev/null             --write-out "HTTP %{http_code} | TTFB %{time_starttransfer}s | Total %{time_total}s\n"             "$URL"
