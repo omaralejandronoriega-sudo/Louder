@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "name": "Louder Control",
+    "version": "1.0.0",
+    "updated": "2026-09-29T18:34:00-06:00",
+    "timezone": "America/Monterrey",
+    "description": "Centro de control móvil para proyectos, automatizaciones, pendientes y mejoras de Louder."
+  },
+  "repositories": [
+    {"name":"Louder","repo":"omaralejandronoriega-sudo/Louder","label":"Core · Artistas · Radar"},
+    {"name":"TikTok Capture","repo":"omaralejandronoriega-sudo/louder-tiktok-capture","label":"TikTok capture/render"},
+    {"name":"TikTok Automation","repo":"omaralejandronoriega-sudo/louder-tiktok-automation","label":"Render manual/legacy"},
+    {"name":"Threads","repo":"omaralejandronoriega-sudo/louder-threads-hourly","label":"Threads · Newsroom"},
+    {"name":"Prensa","repo":"omaralejandronoriega-sudo/louder-prensa","label":"IMAP · boletines"}
+  ],
+  "projects": [
+    {
+      "id":"artistas",
+      "name":"Artistas + histórico",
+      "area":"Radio / Web",
+      "priority":"critical",
+      "status":"active",
+      "source":"GitHub + checklist",
+      "updated":"2026-09-29",
+      "chat_title":"Estado migración MegaSeg / Louder Artist Enrichment",
+      "repo":"omaralejandronoriega-sudo/Louder",
+      "summary":"Catálogo desacoplado de WordPress, fichas de artistas, histórico MegaSeg/Last.fm/YesStreaming, imágenes, bios, portadas y enlaces desde playlist.",
+      "next":"Cerrar faltantes reales de bio/foto/portada y validar que todos los enlaces artista→perfil funcionen.",
+      "tasks":[
+        {"id":"a1","text":"Arquitectura estática fuera de WordPress","done":true},
+        {"id":"a2","text":"Consolidar histórico Last.fm + MegaSeg + YesStreaming","done":true},
+        {"id":"a3","text":"Conservar artistas válidos con signos o nombres atípicos","done":true},
+        {"id":"a4","text":"Depurar falsos positivos como programas/IDs sin borrar artistas reales","done":false},
+        {"id":"a5","text":"Completar biografías faltantes","done":false},
+        {"id":"a6","text":"Completar fotografías faltantes","done":false},
+        {"id":"a7","text":"Resolver portadas faltantes o duplicadas","done":false},
+        {"id":"a8","text":"Verificar enlaces desde playlist y perfiles relacionados","done":false},
+        {"id":"a9","text":"Validar registro de reproducciones recientes en vivo","done":false}
+      ]
+    },
+    {
+      "id":"tiktok",
+      "name":"TikTok / video automático",
+      "area":"Social",
+      "priority":"critical",
+      "status":"active",
+      "source":"GitHub + checklist",
+      "updated":"2026-09-29",
+      "chat_title":"Publicar TikTok Louder / Video TikTok no publicado",
+      "repo":"omaralejandronoriega-sudo/louder-tiktok-capture",
+      "summary":"Render periódico de videos musicales con la nueva plantilla, logo oficial, composición centrada y copy específico para TikTok/Instagram.",
+      "next":"Confirmar que la próxima ejecución completa render + salida sin intervención manual y que usa siempre la plantilla aprobada.",
+      "tasks":[
+        {"id":"t1","text":"Nueva plantilla visual aprobada","done":true},
+        {"id":"t2","text":"Centrado y áreas seguras corregidas","done":true},
+        {"id":"t3","text":"Usar logo oficial del repo","done":true},
+        {"id":"t4","text":"Capture/render funcionando en GitHub Actions","done":true},
+        {"id":"t5","text":"Selección musical sin artistas débiles como gancho","done":false},
+        {"id":"t6","text":"Publicación automática confiable sin intervención manual","done":false},
+        {"id":"t7","text":"Validar siguiente video con plantilla definitiva","done":false}
+      ]
+    },
+    {
+      "id":"newsroom",
+      "name":"Newsroom V2",
+      "area":"Editorial",
+      "priority":"high",
+      "status":"active",
+      "source":"GitHub + checklist",
+      "updated":"2026-09-29",
+      "chat_title":"Louder Newsroom V2",
+      "repo":"omaralejandronoriega-sudo/louder-threads-hourly",
+      "summary":"Flujo editorial para detectar material, transformarlo en nota útil y preparar distribución social sin duplicados ni texto genérico.",
+      "next":"Validar extremo a extremo: entrada → nota → revisión → web → distribución social.",
+      "tasks":[
+        {"id":"n1","text":"Workflow Newsroom V2 creado","done":true},
+        {"id":"n2","text":"Última ejecución conocida termina correctamente","done":true},
+        {"id":"n3","text":"Evitar duplicados entre ejecuciones","done":false},
+        {"id":"n4","text":"Asegurar publicación web con metadatos/SEO","done":false},
+        {"id":"n5","text":"Asegurar salida social según reglas de cada red","done":false},
+        {"id":"n6","text":"Registrar testigos de publicación reutilizables para acreditaciones","done":false}
+      ]
+    },
+    {
+      "id":"buffer",
+      "name":"Buffer + distribución social",
+      "area":"Social",
+      "priority":"high",
+      "status":"attention",
+      "source":"Checklist",
+      "updated":"2026-09-28",
+      "chat_title":"Cambio a Buffer / Duplicados de Instagram",
+      "summary":"Facebook, Instagram y X salen por Buffer. Threads queda fuera por el límite de tres canales y usa una ruta independiente.",
+      "next":"Cerrar el origen de duplicados en Instagram y asegurar que toda nota publicada dispare su distribución correspondiente.",
+      "tasks":[
+        {"id":"b1","text":"Facebook en Buffer","done":true},
+        {"id":"b2","text":"Instagram en Buffer","done":true},
+        {"id":"b3","text":"X en Buffer","done":true},
+        {"id":"b4","text":"Threads separado de Buffer","done":true},
+        {"id":"b5","text":"Eliminar causa de publicaciones duplicadas en Instagram","done":false},
+        {"id":"b6","text":"Garantizar nota web → redes sin omisiones","done":false},
+        {"id":"b7","text":"Metricool reservado solo para métricas","done":true}
+      ]
+    },
+    {
+      "id":"threads",
+      "name":"Threads automático",
+      "area":"Social",
+      "priority":"normal",
+      "status":"active",
+      "source":"GitHub",
+      "updated":"2026-09-29",
+      "chat_title":"Campaña agresiva en Threads",
+      "repo":"omaralejandronoriega-sudo/louder-threads-hourly",
+      "summary":"Ruta independiente para Threads con publicaciones periódicas y margen para campañas específicas de Louder Radio.",
+      "next":"Separar autopost de radio, Newsroom y campañas para evitar repetición y medir qué formato produce respuestas reales.",
+      "tasks":[
+        {"id":"th1","text":"Ruta independiente de Buffer","done":true},
+        {"id":"th2","text":"Workflow horario funcionando","done":true},
+        {"id":"th3","text":"Evitar repetición temática","done":false},
+        {"id":"th4","text":"Añadir métricas de interacción por formato","done":false},
+        {"id":"th5","text":"Campaña específica para escuchar Louder Radio","done":false}
+      ]
+    },
+    {
+      "id":"radar",
+      "name":"Radar musical 2026",
+      "area":"Radio / Scouting",
+      "priority":"high",
+      "status":"active",
+      "source":"GitHub + checklist",
+      "updated":"2026-09-25",
+      "chat_title":"Crear apartado GitHub – Universo Louder",
+      "repo":"omaralejandronoriega-sudo/Louder",
+      "summary":"Radar desacoplado para canciones publicadas originalmente en 2026, con control editorial de descarga/programación/descarte.",
+      "next":"Ampliar fuentes y convertir el radar en cola accionable para descarga/programación sin contaminarlo con reediciones.",
+      "tasks":[
+        {"id":"r1","text":"Regla estricta de lanzamiento original 2026","done":true},
+        {"id":"r2","text":"Panel estático de Radar","done":true},
+        {"id":"r3","text":"Estados pendiente/descargada/programada/descartada","done":true},
+        {"id":"r4","text":"Ampliar descubrimiento con fuentes editoriales relevantes","done":false},
+        {"id":"r5","text":"Cruzar automáticamente contra programación actual","done":false},
+        {"id":"r6","text":"Acción rápida para marcar canción descargada/programada","done":false}
+      ]
+    },
+    {
+      "id":"prensa",
+      "name":"Prensa / boletines IMAP",
+      "area":"Editorial",
+      "priority":"high",
+      "status":"active",
+      "source":"GitHub + checklist",
+      "updated":"2026-09-26",
+      "chat_title":"Generar más material testigo",
+      "repo":"omaralejandronoriega-sudo/louder-prensa",
+      "summary":"Lectura de boletines recibidos en socialmedia@loudermx.com, selección editorial y generación de piezas/testigos para web y redes.",
+      "next":"Pasar de prueba técnica a procesamiento recurrente con deduplicación, clasificación por promotor y registro de testigos.",
+      "tasks":[
+        {"id":"p1","text":"Repositorio y workflow de revisión creados","done":true},
+        {"id":"p2","text":"Primera ejecución conocida termina correctamente","done":true},
+        {"id":"p3","text":"Clasificar remitentes/promotores","done":false},
+        {"id":"p4","text":"Deduplicar boletines y seguimientos","done":false},
+        {"id":"p5","text":"Generar nota principal + derivados sociales","done":false},
+        {"id":"p6","text":"Guardar 5–6 testigos por evento/campaña","done":false}
+      ]
+    },
+    {
+      "id":"radio",
+      "name":"Louder Radio / automatización",
+      "area":"Radio",
+      "priority":"high",
+      "status":"active",
+      "source":"Checklist",
+      "updated":"2026-09-29",
+      "chat_title":"SAM Broadcaster nube / MegaSeg histórico / Telegram→YesStreaming",
+      "summary":"Programación, histórico, player, automatización de descargas, autopost y evaluación de una operación de radio en nube sin cargar WordPress.",
+      "next":"Consolidar una sola capa de automatización para biblioteca, programación, histórico y monitoreo.",
+      "tasks":[
+        {"id":"lr1","text":"Stream HTTPS de Louder operativo","done":true},
+        {"id":"lr2","text":"Histórico desacoplado en proceso","done":true},
+        {"id":"lr3","text":"Definir reemplazo/cloud para automatización tipo SAM","done":false},
+        {"id":"lr4","text":"Automatizar ingreso seguro de nuevas canciones","done":false},
+        {"id":"lr5","text":"Autopost de canción al aire sin depender de WordPress","done":false},
+        {"id":"lr6","text":"Panel de salud del stream y procesos","done":false}
+      ]
+    },
+    {
+      "id":"web",
+      "name":"Web / rendimiento / indexación",
+      "area":"Web",
+      "priority":"critical",
+      "status":"attention",
+      "source":"Checklist",
+      "updated":"2026-09-28",
+      "chat_title":"Alerta cPanel / Search Console 5xx",
+      "summary":"Rendimiento de loudermx.com, errores 5xx, indexación y reducción de procesos pesados sobre WordPress/hosting.",
+      "next":"Priorizar causas medibles de la caída de rendimiento y vigilar que las automatizaciones nuevas no añadan carga al origen.",
+      "tasks":[
+        {"id":"w1","text":"Migrar procesos pesados fuera de WordPress","done":true},
+        {"id":"w2","text":"Diagnosticar caída desktop reportada por cPanel","done":false},
+        {"id":"w3","text":"Resolver/monitorizar errores 5xx de Search Console","done":false},
+        {"id":"w4","text":"Definir monitor de disponibilidad y rendimiento","done":false},
+        {"id":"w5","text":"Revisar scripts de terceros y player global","done":false}
+      ]
+    },
+    {
+      "id":"hipnosis",
+      "name":"Hipnosis 2026 / acreditación",
+      "area":"Prensa",
+      "priority":"high",
+      "status":"active",
+      "source":"Checklist",
+      "updated":"2026-09-29",
+      "chat_title":"Llenar acreditación de prensa",
+      "summary":"Solicitud de acreditación y armado de testigos centrados en Hipnosis y su universo editorial, evitando materiales ajenos al festival.",
+      "next":"Revisar banners/promociones de Hipnosis visibles en la web y completar el paquete de testigos relevantes.",
+      "event_date":"2026-11-07",
+      "tasks":[
+        {"id":"h1","text":"Separar testigos realmente relacionados con Hipnosis","done":true},
+        {"id":"h2","text":"Revisar banners de Hipnosis en loudermx.com","done":false},
+        {"id":"h3","text":"Seleccionar mejores notas/redes del universo Hipnosis","done":false},
+        {"id":"h4","text":"Completar solicitud de acreditación","done":false},
+        {"id":"h5","text":"Preparar cobertura previa y plan del festival","done":false}
+      ]
+    }
+  ]
+}
