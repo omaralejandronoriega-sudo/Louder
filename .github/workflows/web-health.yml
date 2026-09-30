@@ -40,7 +40,8 @@ jobs:
               --show-error \
               --connect-timeout 5 \
               --max-time 15 \
-              --user-agent "Louder-Web-Health/1.0" \
+              --user-agent "Louder-Web-Health/1.1" \
+              --dump-header "health/${name}.headers" \
               --output /dev/null \
               --write-out "${name}\t%{http_code}\t%{time_namelookup}\t%{time_connect}\t%{time_appconnect}\t%{time_starttransfer}\t%{time_total}\t%{size_download}\n" \
               "$url" >> health/metrics.tsv
@@ -56,6 +57,28 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
+          def selected_headers(name):
+              path = Path("health") / f"{name}.headers"
+              result = {}
+              if not path.exists():
+                  return result
+              for raw in path.read_text(errors="replace").splitlines():
+                  if ":" not in raw:
+                      continue
+                  key, value = raw.split(":", 1)
+                  key = key.strip().lower()
+                  if key in {
+                      "server",
+                      "cache-control",
+                      "content-type",
+                      "content-encoding",
+                      "x-litespeed-cache",
+                      "cf-cache-status",
+                      "x-cache",
+                  }:
+                      result[key] = value.strip()
+              return result
+
           rows = []
           for line in Path("health/metrics.tsv").read_text().splitlines():
               name, code, dns, connect, tls, ttfb, total, size = line.split("\t")
@@ -68,6 +91,7 @@ jobs:
                   "ttfb_s": float(ttfb),
                   "total_s": float(total),
                   "bytes": int(size),
+                  "headers": selected_headers(name),
               })
 
           data = {
@@ -83,14 +107,20 @@ jobs:
           summary = [
               "# Louder Web Health",
               "",
-              "| Endpoint | HTTP | TTFB | Total | Bytes |",
-              "|---|---:|---:|---:|---:|",
+              "| Endpoint | HTTP | TTFB | Total | Bytes | Cache |",
+              "|---|---:|---:|---:|---:|---|",
           ]
           for row in rows:
+              cache = (
+                  row["headers"].get("x-litespeed-cache")
+                  or row["headers"].get("cf-cache-status")
+                  or row["headers"].get("x-cache")
+                  or "—"
+              )
               summary.append(
                   f'| {row["name"]} | {row["http_code"]} | '
                   f'{row["ttfb_s"]:.3f}s | {row["total_s"]:.3f}s | '
-                  f'{row["bytes"]} |'
+                  f'{row["bytes"]} | {cache} |'
               )
 
           warnings = []
@@ -103,21 +133,26 @@ jobs:
                   f'Homepage total alto: {home["total_s"]:.3f}s (>5s).'
               )
 
+          bad = [x for x in rows if x["http_code"] != 200]
+          if bad:
+              warnings.append(
+                  "Endpoints críticos con HTTP distinto de 200: "
+                  + ", ".join(f'{x["name"]}={x["http_code"]}' for x in bad)
+              )
+
           if warnings:
               summary.extend(["", "## Advertencias", ""])
               summary.extend(f"- {w}" for w in warnings)
 
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
               f.write("\n".join(summary) + "\n")
+
+          if bad:
+              raise SystemExit(1)
           PY
 
-          HOME_CODE="$(awk '$1=="homepage"{print $2}' health/metrics.tsv)"
-          if [ "$HOME_CODE" -ge 500 ] || [ "$HOME_CODE" -lt 200 ]; then
-            echo "Homepage unhealthy: HTTP $HOME_CODE"
-            exit 1
-          fi
-
       - name: Preserve metrics
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: louder-web-health-${{ github.run_id }}
