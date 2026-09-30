@@ -1,0 +1,29 @@
+name: Louder WordPress Cron
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/wordpress-cron.yml"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: louder-wordpress-cron
+  cancel-in-progress: true
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Run WordPress cron once
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://loudermx.com/wp-cron.php?doing_wp_cron=$(date +%s)"
+          curl             --fail             --silent             --show-error             --connect-timeout 5             --max-time 30             --user-agent "Louder-WP-Cron/1.0"             --output /dev/null             --write-out "HTTP %{http_code} | TTFB %{time_starttransfer}s | Total %{time_total}s\n"             "$URL"
