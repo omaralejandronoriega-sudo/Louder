@@ -83,7 +83,7 @@ self.addEventListener('message',e=>{
     (OUT / "sw.js").write_text(sw, encoding="utf-8")
 
     seed = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    html_doc = f"""<!doctype html>
+    html_doc = """<!doctype html>
 <html lang="es-MX">
 <head>
 <meta charset="utf-8">
@@ -310,7 +310,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </div>
 </dialog>
 
-<script id="seed-data" type="application/json">{seed}</script>
+<script id="seed-data" type="application/json">__SEED_DATA__</script>
 <script>
 const seed=JSON.parse(document.getElementById('seed-data').textContent);
 const STORE='louder-control-state-v1';
@@ -544,7 +544,7 @@ renderReminderProjectOptions();renderAll();checkReminders();fetchLive();
 </script>
 </body>
 </html>"""
-    (OUT / "index.html").write_text(html_doc, encoding="utf-8")
+    html_doc = html_doc.replace("{{", "{").replace("}}", "}").replace("__SEED_DATA__", seed)\n    (OUT / "index.html").write_text(html_doc, encoding="utf-8")
     print(f"Louder Control built: {len(data.get('projects') or [])} projects")
 
 
