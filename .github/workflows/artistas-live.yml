@@ -49,6 +49,7 @@ jobs:
         run: |
           python scripts/build_artists.py
           python scripts/build_radar_2026.py
+          python scripts/build_control.py
 
       - uses: actions/configure-pages@v5
 
