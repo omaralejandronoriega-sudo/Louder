@@ -85,6 +85,7 @@ jobs:
         shell: bash
         run: |
           test -s docs/control/index.html
+          test -s docs/artistas/_control/index.html
           test -s docs/control/sw.js
           test -s docs/control/manifest.webmanifest
           python -m json.tool docs/control/manifest.webmanifest >/dev/null
