@@ -60,7 +60,7 @@ def main() -> None:
 </svg>"""
     (OUT / "icon.svg").write_text(icon, encoding="utf-8")
 
-    sw = """const CACHE='louder-control-v3';
+    sw = """const CACHE='louder-control-v4';
 const CORE=['./','./index.html','./data.json','./manifest.webmanifest','./icon.svg','./logo_louder.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.filter(Boolean))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -632,10 +632,15 @@ function renderTaskAutomation(p,t){
 }
 function renderTaskSimpleAction(p,t){
  const el=$('#taskSimpleAction');if(!el)return;
+ const href=chatGPTTaskUrl(p,t).replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+ const label=t.action?'Resolver también con ChatGPT':'Resolver ahora con ChatGPT';
  const cls=t.action?'btn':'btn primary';
- const label=t.action?'Resolver conmigo en ChatGPT':'Resolver con ChatGPT';
- el.innerHTML=`<button class="${cls}" id="taskChat" type="button">${label}</button>`;
- $('#taskChat').addEventListener('click',()=>copyTaskContext(true));
+ el.innerHTML=`<a class="${cls}" id="taskChat" href="${href}" target="_blank" rel="noopener">${label}</a>`;
+ $('#taskChat').addEventListener('click',()=>{
+  persistTaskNote();
+  if(!taskDone(t)){state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();renderAll();}
+  navigator.clipboard?.writeText(taskPrompt(p,t)).catch(()=>{});
+ });
 }
 function collectActionInputs(action){{
  const out={{}};
@@ -831,25 +836,36 @@ $('#saveProject').addEventListener('click',()=>{{
 }});
 
 
-function taskPrompt(p,t){{
- return `Trabajemos este pendiente de Louder de principio a fin.
+function taskPrompt(p,t){
+ const note=(state.taskNotes[t.id]||'').trim();
+ return `Resuelve este pendiente de Louder ahora mismo, de principio a fin.
 
 PROYECTO: ${p.name}
 ÁREA: ${p.area}
 PENDIENTE: ${t.text}
 
-CONTEXTO DEL PROYECTO:
+CONTEXTO:
 ${p.summary}
 
-SIGUIENTE OBJETIVO GENERAL:
+OBJETIVO GENERAL:
 ${p.next}
 
-FUENTE / INFRAESTRUCTURA:
+${note?`NOTAS ACTUALES:\n${note}\n`:''}INFRAESTRUCTURA / FUENTE:
 ${p.source}${p.repo?' · GitHub: '+p.repo:''}
 
-INSTRUCCIÓN:
-No te limites a recordarme qué falta ni a darme una lista de pasos. Primero verifica el estado real usando las herramientas conectadas que correspondan. Después ejecuta directamente todo lo que puedas, valida el resultado y corrige cualquier fallo que aparezca. Si una acción necesita una aprobación, credencial o intervención mía que no puedas sustituir, detente únicamente en ese punto y dime exactamente qué debo hacer. Cuando quede resuelto, resume qué cambió, cómo se validó y qué pendiente sigue.`;
-}}
+INSTRUCCIÓN DE TRABAJO:
+Empieza directamente. No me devuelvas solamente una lista de pasos. Verifica el estado real usando las herramientas, conectores, archivos o web que correspondan; ejecuta todo lo que puedas; valida el resultado; corrige errores si aparecen y continúa hasta dejar el pendiente resuelto. Si existe una acción que requiere una aprobación, contraseña, token o intervención humana que no puedas sustituir, detente únicamente en ese punto y dime exactamente qué debo hacer. Al terminar, indica qué cambió, cómo lo validaste y cuál sería el siguiente pendiente.
+
+Si este trabajo corresponde a un proyecto Louder ya existente en mi cuenta, usa el contexto disponible de ese proyecto y de nuestras conversaciones anteriores.`;
+}
+function chatGPTTaskUrl(p,t){
+ const prompt=taskPrompt(p,t);
+ const saved=(state.chats[p.id]||'').trim();
+ if(saved){
+  try{const u=new URL(saved);u.searchParams.set('prompt',prompt);return u.toString();}catch(_){}
+ }
+ return 'https://chatgpt.com/?q='+encodeURIComponent(prompt);
+}
 function openTask(projectId,taskId){
  const p=projectById(projectId),t=findTask(p,taskId);if(!p||!t)return;
  currentTask={p,t};
@@ -869,10 +885,13 @@ async function copyTaskContext(openChat){
  if(!currentTask)return;
  persistTaskNote();
  const {p,t}=currentTask,prompt=taskPrompt(p,t);
- if(!taskDone(t)){state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();}
- try{await navigator.clipboard.writeText(prompt);}catch(_){}
- renderAll();
- if(openChat)window.open(state.chats[p.id]||'https://chatgpt.com/','_blank','noopener');
+ if(!taskDone(t)){state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();renderAll();}
+ const target=chatGPTTaskUrl(p,t);
+ if(openChat){
+  const opened=window.open(target,'_blank','noopener');
+  if(!opened)window.location.href=target;
+ }
+ navigator.clipboard?.writeText(prompt).catch(()=>{});
 }
 $('#taskClose').addEventListener('click',()=>{persistTaskNote();$('#taskDialog').close();});
 $('#githubClose').addEventListener('click',()=>$('#githubDialog').close());
