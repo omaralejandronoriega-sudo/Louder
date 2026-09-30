@@ -1,0 +1,125 @@
+name: Louder Web Health
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/web-health.yml"
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: louder-web-health
+  cancel-in-progress: true
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: Probe Louder public endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p health
+          : > health/metrics.tsv
+
+          probe() {
+            local name="$1"
+            local url="$2"
+
+            curl \
+              --location \
+              --silent \
+              --show-error \
+              --connect-timeout 5 \
+              --max-time 15 \
+              --user-agent "Louder-Web-Health/1.0" \
+              --output /dev/null \
+              --write-out "${name}\t%{http_code}\t%{time_namelookup}\t%{time_connect}\t%{time_appconnect}\t%{time_starttransfer}\t%{time_total}\t%{size_download}\n" \
+              "$url" >> health/metrics.tsv
+          }
+
+          probe homepage "https://loudermx.com/"
+          probe robots "https://loudermx.com/robots.txt"
+          probe sitemap "https://loudermx.com/sitemap_index.xml"
+
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          rows = []
+          for line in Path("health/metrics.tsv").read_text().splitlines():
+              name, code, dns, connect, tls, ttfb, total, size = line.split("\t")
+              rows.append({
+                  "name": name,
+                  "http_code": int(code),
+                  "dns_s": float(dns),
+                  "connect_s": float(connect),
+                  "tls_s": float(tls),
+                  "ttfb_s": float(ttfb),
+                  "total_s": float(total),
+                  "bytes": int(size),
+              })
+
+          data = {
+              "checked_at_utc": datetime.now(timezone.utc).isoformat(),
+              "checks": rows,
+          }
+          Path("health/metrics.json").write_text(
+              json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+          )
+
+          home = next(x for x in rows if x["name"] == "homepage")
+
+          summary = [
+              "# Louder Web Health",
+              "",
+              "| Endpoint | HTTP | TTFB | Total | Bytes |",
+              "|---|---:|---:|---:|---:|",
+          ]
+          for row in rows:
+              summary.append(
+                  f'| {row["name"]} | {row["http_code"]} | '
+                  f'{row["ttfb_s"]:.3f}s | {row["total_s"]:.3f}s | '
+                  f'{row["bytes"]} |'
+              )
+
+          warnings = []
+          if home["ttfb_s"] > 2.5:
+              warnings.append(
+                  f'Homepage TTFB alto: {home["ttfb_s"]:.3f}s (>2.5s).'
+              )
+          if home["total_s"] > 5:
+              warnings.append(
+                  f'Homepage total alto: {home["total_s"]:.3f}s (>5s).'
+              )
+
+          if warnings:
+              summary.extend(["", "## Advertencias", ""])
+              summary.extend(f"- {w}" for w in warnings)
+
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write("\n".join(summary) + "\n")
+          PY
+
+          HOME_CODE="$(awk '$1=="homepage"{print $2}' health/metrics.tsv)"
+          if [ "$HOME_CODE" -ge 500 ] || [ "$HOME_CODE" -lt 200 ]; then
+            echo "Homepage unhealthy: HTTP $HOME_CODE"
+            exit 1
+          fi
+
+      - name: Preserve metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: louder-web-health-${{ github.run_id }}
+          path: health/metrics.json
+          retention-days: 7
