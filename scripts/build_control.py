@@ -183,6 +183,19 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .work-step::before{{counter-increment:work;content:counter(work);width:28px;height:28px;border-radius:9px;background:var(--accent);color:#000;display:grid;place-items:center;font-weight:900;font-size:12px}}
 .task-actions{{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}}
 .task-context{{background:#0d0f0f;border:1px solid var(--line);border-radius:14px;padding:13px;color:var(--muted);font-size:12px;line-height:1.55}}
+.automation-card{{margin:16px 0;background:#0b0d0d;border:1px solid var(--line);border-radius:16px;padding:14px}}
+.automation-card.ready{{border-color:rgba(202,255,0,.42)}}
+.automation-card.public{{border-color:rgba(255,209,102,.55)}}
+.automation-head{{display:flex;justify-content:space-between;gap:10px;align-items:start}}
+.automation-head h3{{margin:4px 0 3px;font-size:17px}}
+.automation-head p{{margin:0;color:var(--muted);font-size:12px;line-height:1.45}}
+.exec-state{{margin-top:10px;padding:10px 11px;border-radius:11px;background:var(--panel2);font-size:12px;color:var(--muted)}}
+.exec-state.running{{color:var(--warn)}} .exec-state.success{{color:var(--ok)}} .exec-state.failure{{color:var(--danger)}}
+.action-fields{{display:grid;gap:8px;margin:12px 0}}
+.action-fields .field{{margin:0}}
+.connect-card{{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px;margin:0 0 14px}}
+.connect-card strong{{display:block;font-size:14px;margin-bottom:4px}} .connect-card p{{margin:0;color:var(--muted);font-size:12px;line-height:1.5}}
+.secret{{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}}
 .empty{{border:1px dashed var(--line);border-radius:16px;padding:24px;color:var(--muted);text-align:center}}
 .panel{{display:none}} .panel.active{{display:block}}
 .bottom{{position:fixed;z-index:30;bottom:0;left:0;right:0;background:rgba(12,13,13,.96);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));display:flex;justify-content:center}}
@@ -294,6 +307,12 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
 
  <section class="panel" data-panel="activity">
   <div class="hero"><div class="eyebrow">Estado técnico</div><h1>Actividad.</h1><p>Últimas ejecuciones conocidas de los repositorios de Louder conectados.</p></div>
+  <div class="connect-card" id="githubConnectCard">
+   <div class="inline" style="justify-content:space-between">
+    <div><strong id="githubConnectTitle">GitHub Actions · sin conectar</strong><p id="githubConnectText">Conecta una credencial de sesión para ejecutar workflows directamente desde Louder Control.</p></div>
+    <button class="btn primary" id="githubConnectBtn" type="button">Conectar</button>
+   </div>
+  </div>
   <div class="toolbar" style="margin-bottom:12px"><button class="btn" id="exportBtn" type="button">Exportar control</button></div>
   <div class="activity-list" id="activityList"></div>
  </section>
@@ -344,6 +363,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
    <div class="work-step"><div><strong>Validar</strong><br><span class="note">Comprobar que el resultado funciona y no rompió otra parte de Louder.</span></div></div>
    <div class="work-step"><div><strong>Cerrar y seguir</strong><br><span class="note">Registrar resultado y pasar automáticamente al siguiente pendiente.</span></div></div>
   </div>
+  <div id="taskAutomation"></div>
   <div class="field"><label for="taskNote">Notas / bloqueo de este pendiente</label><textarea id="taskNote" placeholder="Qué encontramos, qué falta, credenciales requeridas, decisión tomada…"></textarea></div>
   <div class="task-actions">
    <button class="btn primary" id="taskStart" type="button">Empezar</button>
@@ -359,6 +379,23 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </div>
 </dialog>
 
+<dialog id="githubDialog">
+ <div class="modal-head">
+  <div><div class="area">Ejecución directa</div><h2>Conectar GitHub</h2></div>
+  <button class="close" id="githubClose" aria-label="Cerrar" type="button">×</button>
+ </div>
+ <div class="modal-body">
+  <p style="color:var(--muted);line-height:1.55">Para disparar GitHub Actions desde esta PWA hace falta un token de acceso fino. No se guarda en GitHub, WordPress ni en el almacenamiento permanente: vive únicamente en esta sesión del navegador.</p>
+  <div class="field"><label for="githubToken">Fine-grained personal access token</label><input class="secret" id="githubToken" type="password" autocomplete="off" placeholder="github_pat_…"></div>
+  <div class="task-context">Permisos mínimos recomendados: acceso solo a los repositorios de Louder y <strong>Actions: Read and write</strong>. No hace falta darle permisos administrativos.</div>
+  <div class="task-actions">
+   <button class="btn primary" id="githubVerify" type="button">Verificar y conectar</button>
+   <a class="btn" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Crear token en GitHub</a>
+  </div>
+  <div class="exec-state" id="githubVerifyState">Sin verificar.</div>
+ </div>
+</dialog>
+
 <script id="seed-data" type="application/json">__SEED_DATA__</script>
 <script>
 const seed=JSON.parse(document.getElementById('seed-data').textContent);
@@ -367,7 +404,9 @@ const state=JSON.parse(localStorage.getItem(STORE)||'null')||{{tasks:{{}},notes:
 state.taskStatus=state.taskStatus||{{}};
 state.taskNotes=state.taskNotes||{{}};
 state.taskStarted=state.taskStarted||{{}};
+state.executions=state.executions||{{}};
 let live={{}};
+let githubToken=sessionStorage.getItem('louder-control-github-token')||'';
 let currentProject=null;
 let currentTask=null;
 let deferredInstall=null;
@@ -506,7 +545,139 @@ function renderReminders(){{
   return `<article class="reminder ${due?'due':''}"><div><strong>${r.text}</strong><span>${fmtDate(r.when)}${p?' · '+p.name:''}</span></div><button class="btn small" data-reminder-delete="${r.id}" type="button">Borrar</button></article>`;
  }}).join('')||'<div class="empty">Todavía no hay recordatorios.</div>';
 }}
+function githubConnected(){{return !!githubToken;}}
+function executionFor(t){{return state.executions[t.id]||null;}}
+function executionLabel(ex){{
+ if(!ex)return 'Sin ejecutar';
+ if(ex.status==='queued'||ex.status==='in_progress')return 'En curso';
+ if(ex.conclusion==='success')return 'Terminó correctamente';
+ if(ex.conclusion==='failure')return 'Falló';
+ if(ex.conclusion==='cancelled')return 'Cancelado';
+ return ex.status||ex.conclusion||'Enviado';
+}}
+function executionClass(ex){{
+ if(!ex)return '';
+ if(ex.status==='queued'||ex.status==='in_progress')return 'running';
+ if(ex.conclusion==='success')return 'success';
+ if(ex.conclusion==='failure'||ex.conclusion==='cancelled')return 'failure';
+ return '';
+}}
+function renderGithubConnection(){{
+ const title=$('#githubConnectTitle'),textEl=$('#githubConnectText'),btn=$('#githubConnectBtn');
+ if(!title)return;
+ if(githubConnected()){{
+  title.textContent='GitHub Actions · conectado para esta sesión';
+  textEl.textContent='Puedes ejecutar automatizaciones directamente. El token se borra al cerrar esta sesión del navegador.';
+  btn.textContent='Cambiar';
+ }}else{{
+  title.textContent='GitHub Actions · sin conectar';
+  textEl.textContent='Conecta una credencial de sesión para ejecutar workflows directamente desde Louder Control.';
+  btn.textContent='Conectar';
+ }}
+}}
+function renderActionFields(action){{
+ const defs=action?.inputs||{{}};
+ return Object.entries(defs).map(([name,d])=>{{
+  const id='action-input-'+name;
+  if(d.type==='boolean')return `<label class="check"><input type="checkbox" id="${id}" data-action-input="${name}" ${d.default?'checked':''} ${d.locked?'disabled':''}><span>${d.label||name}</span></label>`;
+  if(d.type==='select')return `<div class="field"><label for="${id}">${d.label||name}</label><select class="select" id="${id}" data-action-input="${name}" ${d.required?'required':''}>${(d.options||[]).map(v=>`<option value="${v}">${v||'—'}</option>`).join('')}</select></div>`;
+  const type=d.type==='number'?'number':'text';
+  return `<div class="field"><label for="${id}">${d.label||name}</label><input id="${id}" data-action-input="${name}" type="${type}" value="${d.default??''}" placeholder="${d.placeholder||''}" ${d.required?'required':''} ${d.min!==undefined?'min="'+d.min+'"':''}></div>`;
+ }}).join('');
+}}
+function renderTaskAutomation(p,t){{
+ const el=$('#taskAutomation');if(!el)return;
+ const action=t.action;
+ if(!action){{el.innerHTML='';return;}}
+ const ex=executionFor(t);
+ el.innerHTML=`<section class="automation-card ${action.public?'public':'ready'}">
+  <div class="automation-head"><div><div class="area">${action.public?'Acción con publicación':'Automatización disponible'}</div><h3>${action.label}</h3><p>${action.effect||''}</p></div><span class="task-status ${ex?.conclusion==='success'?'done':(ex?.conclusion==='failure'?'blocked':(ex?.status==='in_progress'||ex?.status==='queued'?'in_progress':''))}">${action.public?'PUBLICA':'DIRECTA'}</span></div>
+  <div class="action-fields">${renderActionFields(action)}</div>
+  <div class="task-actions"><button class="btn primary" id="taskExecute" type="button">${githubConnected()?'Ejecutar ahora':'Conectar y ejecutar'}</button>${ex?.url?`<a class="btn" href="${ex.url}" target="_blank" rel="noopener">Ver ejecución</a>`:''}</div>
+  <div class="exec-state ${executionClass(ex)}" id="taskExecState">${executionLabel(ex)}${ex?.updated_at?' · '+fmtDate(ex.updated_at):''}</div>
+ </section>`;
+ $('#taskExecute')?.addEventListener('click',()=>executeCurrentTask());
+}}
+function collectActionInputs(action){{
+ const out={{}};
+ for(const [name,d] of Object.entries(action?.inputs||{{}})){{
+  const el=$('#action-input-'+name);if(!el)continue;
+  let value=d.type==='boolean'?!!el.checked:String(el.value??'').trim();
+  if(d.required&&(value===''||value===false)){{alert('Falta: '+(d.label||name));return null;}}
+  out[name]=String(value);
+ }}
+ return out;
+}}
+async function verifyGithubToken(token){{
+ const res=await fetch('https://api.github.com/repos/omaralejandronoriega-sudo/Louder/actions/workflows',{{headers:{{Accept:'application/vnd.github+json',Authorization:'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28'}}}});
+ if(!res.ok)throw new Error('GitHub respondió '+res.status);
+ return true;
+}}
+async function connectGithub(){{
+ const token=$('#githubToken').value.trim(),st=$('#githubVerifyState');
+ if(!token){{st.textContent='Pega el token para continuar.';st.className='exec-state failure';return;}}
+ st.textContent='Verificando…';st.className='exec-state running';
+ try{{
+  await verifyGithubToken(token);
+  githubToken=token;sessionStorage.setItem('louder-control-github-token',token);
+  st.textContent='Conectado. El token solo vive en esta sesión.';st.className='exec-state success';
+  renderGithubConnection();
+  if(currentTask)renderTaskAutomation(currentTask.p,currentTask.t);
+  setTimeout(()=>$('#githubDialog').close(),650);
+ }}catch(err){{st.textContent='No se pudo conectar: '+err.message;st.className='exec-state failure';}}
+}}
+async function dispatchWorkflow(action,inputs,task){{
+ const url=`https://api.github.com/repos/${action.repo}/actions/workflows/${encodeURIComponent(action.workflow)}/dispatches`;
+ const sentAt=new Date().toISOString();
+ const res=await fetch(url,{{method:'POST',headers:{{Accept:'application/vnd.github+json',Authorization:'Bearer '+githubToken,'X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'}},body:JSON.stringify({{ref:'main',inputs:inputs||{{}}}})}});
+ if(res.status!==204){{
+  let detail='';try{{detail=(await res.json()).message||'';}}catch(_){{}}
+  throw new Error(`GitHub ${res.status}${detail?': '+detail:''}`);
+ }}
+ state.executions[task.id]={{repo:action.repo,workflow:action.workflow,status:'queued',conclusion:null,created_at:sentAt,updated_at:sentAt,url:''}};
+ state.taskStatus[task.id]='in_progress';state.taskStarted[task.id]=state.taskStarted[task.id]||sentAt;save();
+ await pollExecution(task,action,sentAt,true);
+}}
+async function pollExecution(task,action,since,fast=false){{
+ const ex=state.executions[task.id];if(!ex)return;
+ const attempts=fast?8:1;
+ for(let i=0;i<attempts;i++){{
+  if(i)await new Promise(r=>setTimeout(r,2500));
+  try{{
+   const res=await fetch(`https://api.github.com/repos/${action.repo}/actions/workflows/${encodeURIComponent(action.workflow)}/runs?event=workflow_dispatch&per_page=5`,{{headers:{{Accept:'application/vnd.github+json'}}}});
+   if(!res.ok)continue;
+   const j=await res.json();const cutoff=new Date(since||ex.created_at||0).getTime()-30000;
+   const run=(j.workflow_runs||[]).find(r=>new Date(r.created_at).getTime()>=cutoff)||(j.workflow_runs||[])[0];
+   if(run){{
+    state.executions[task.id]={{...ex,id:run.id,status:run.status,conclusion:run.conclusion,created_at:run.created_at,updated_at:run.updated_at,url:run.html_url}};
+    save();
+    if(currentTask?.t.id===task.id)renderTaskAutomation(currentTask.p,currentTask.t);
+    if(run.status==='completed')return;
+   }}
+  }}catch(_){{}}
+ }}
+}}
+async function executeCurrentTask(){{
+ if(!currentTask?.t?.action)return;
+ const {{t}}=currentTask,action=t.action;
+ if(!githubConnected()){{
+  $('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();return;
+ }}
+ const inputs=collectActionInputs(action);if(inputs===null)return;
+ if(action.confirm&&!confirm(action.confirm))return;
+ const st=$('#taskExecState');if(st){{st.textContent='Enviando a GitHub Actions…';st.className='exec-state running';}}
+ try{{await dispatchWorkflow(action,inputs,t);renderAll();if(currentTask)openTask(currentTask.p.id,t.id);}}
+ catch(err){{if(st){{st.textContent='No se pudo ejecutar: '+err.message;st.className='exec-state failure';}}}}
+}}
+async function refreshPendingExecutions(){{
+ for(const p of seed.projects)for(const t of p.tasks){{
+  const ex=executionFor(t);if(t.action&&ex&&(ex.status==='queued'||ex.status==='in_progress'))await pollExecution(t,t.action,ex.created_at,false);
+ }}
+ renderAll();
+}}
+
 function renderActivity(){{
+ renderGithubConnection();
  const rows=seed.repositories.map(r=>{{
   const x=live[r.repo];
   if(!x)return `<article class="activity"><strong>${r.name}</strong><span>${r.label} · sin datos todavía</span></article>`;
@@ -572,6 +743,7 @@ function openTask(projectId,taskId){{
  $('#taskSummary').textContent=p.summary;
  $('#taskContext').innerHTML=`<strong>Siguiente objetivo:</strong> ${p.next}<br><strong>Origen:</strong> ${p.source}${p.chat_title?'<br><strong>Chat relacionado:</strong> '+p.chat_title:''}`;
  $('#taskNote').value=state.taskNotes[t.id]||'';
+ renderTaskAutomation(p,t);
  $('#taskStart').textContent=s==='in_progress'?'Continuar':'Empezar';
  const gh=$('#taskGithub');if(p.repo){{gh.hidden=false;gh.href='https://github.com/'+p.repo+'/actions';}}else{{gh.hidden=true;gh.removeAttribute('href');}}
  $('#taskDialog').showModal();
@@ -585,6 +757,9 @@ async function copyTaskContext(openChat){{
  if(openChat)window.open(state.chats[p.id]||'https://chatgpt.com/','_blank','noopener');
 }}
 $('#taskClose').addEventListener('click',()=>{{persistTaskNote();$('#taskDialog').close();}});
+$('#githubClose').addEventListener('click',()=>$('#githubDialog').close());
+$('#githubConnectBtn').addEventListener('click',()=>{{$('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();}});
+$('#githubVerify').addEventListener('click',connectGithub);
 $('#taskStart').addEventListener('click',()=>{{
  if(!currentTask)return;const {{t}}=currentTask;
  state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();persistTaskNote();save();renderAll();openTask(currentTask.p.id,t.id);
@@ -685,7 +860,7 @@ if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch
 if(state.activity&&state.activity.checked){{
  live={{...state.activity}};delete live.checked;
 }}
-renderReminderProjectOptions();renderAll();checkReminders();fetchLive();
+renderReminderProjectOptions();renderAll();checkReminders();fetchLive();refreshPendingExecutions();
 </script>
 </body>
 </html>"""
