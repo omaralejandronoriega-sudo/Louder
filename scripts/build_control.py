@@ -407,6 +407,7 @@ state.taskStarted=state.taskStarted||{{}};
 state.executions=state.executions||{{}};
 let live={{}};
 let githubToken=sessionStorage.getItem('louder-control-github-token')||'';
+let pendingExecutionAfterConnect=false;
 let currentProject=null;
 let currentTask=null;
 let deferredInstall=null;
@@ -532,7 +533,7 @@ function renderPending(){{
   const sb=(b.status==='in_progress'?1000:b.status==='blocked'?-200:0)+priorityScore(b.p);
   return sb-sa;
  }});
- $('#pendingList').innerHTML=rows.map(({{p,t,status}})=>`<article class="pending"><input type="checkbox" data-task="${t.id}" aria-label="Marcar hecho"><span><strong>${t.text}</strong><span>${p.name} · ${p.area} · ${taskStatusLabel(status)}</span></span><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar</button></article>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
+ $('#pendingList').innerHTML=rows.map(({{p,t,status}})=>`<article class="pending"><input type="checkbox" data-task="${t.id}" aria-label="Marcar hecho"><span><strong>${t.text}</strong><span>${p.name} · ${p.area} · ${taskStatusLabel(status)}${t.action?' · ejecutable':''}</span></span><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar</button></article>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
 }}
 function renderReminderProjectOptions(){{
  $('#reminderProject').innerHTML='<option value="">General</option>'+seed.projects.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
@@ -623,7 +624,8 @@ async function connectGithub(){{
   st.textContent='Conectado. El token solo vive en esta sesión.';st.className='exec-state success';
   renderGithubConnection();
   if(currentTask)renderTaskAutomation(currentTask.p,currentTask.t);
-  setTimeout(()=>$('#githubDialog').close(),650);
+  const resume=pendingExecutionAfterConnect;pendingExecutionAfterConnect=false;
+  setTimeout(()=>{{$('#githubDialog').close();if(resume)executeCurrentTask();}},650);
  }}catch(err){{st.textContent='No se pudo conectar: '+err.message;st.className='exec-state failure';}}
 }}
 async function dispatchWorkflow(action,inputs,task){{
@@ -661,6 +663,7 @@ async function executeCurrentTask(){{
  if(!currentTask?.t?.action)return;
  const {{t}}=currentTask,action=t.action;
  if(!githubConnected()){{
+  pendingExecutionAfterConnect=true;
   $('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();return;
  }}
  const inputs=collectActionInputs(action);if(inputs===null)return;
@@ -758,7 +761,7 @@ async function copyTaskContext(openChat){{
 }}
 $('#taskClose').addEventListener('click',()=>{{persistTaskNote();$('#taskDialog').close();}});
 $('#githubClose').addEventListener('click',()=>$('#githubDialog').close());
-$('#githubConnectBtn').addEventListener('click',()=>{{$('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();}});
+$('#githubConnectBtn').addEventListener('click',()=>{{pendingExecutionAfterConnect=false;$('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();}});
 $('#githubVerify').addEventListener('click',connectGithub);
 $('#taskStart').addEventListener('click',()=>{{
  if(!currentTask)return;const {{t}}=currentTask;
