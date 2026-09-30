@@ -544,7 +544,8 @@ renderReminderProjectOptions();renderAll();checkReminders();fetchLive();
 </script>
 </body>
 </html>"""
-    html_doc = html_doc.replace("{{", "{").replace("}}", "}").replace("__SEED_DATA__", seed)\n    (OUT / "index.html").write_text(html_doc, encoding="utf-8")
+    html_doc = html_doc.replace("{{", "{").replace("}}", "}").replace("__SEED_DATA__", seed)
+    (OUT / "index.html").write_text(html_doc, encoding="utf-8")
     print(f"Louder Control built: {len(data.get('projects') or [])} projects")
 
 
