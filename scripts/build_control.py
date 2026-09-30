@@ -361,7 +361,7 @@ function alerts(){{
  }}
  const failed=out.some(x=>x.level==='danger');
  if(!failed && Object.keys(live).length) out.push({{level:'ok',title:'Sin fallos nuevos en los últimos runs consultados',body:'Los repositorios que respondieron no muestran un fallo como ejecución más reciente.',date:new Date().toISOString()}});
- return out.sort((a,b)=>({{danger:4,warning:3,info:2,ok:1}}[b.level]-({{danger:4,warning:3,info:2,ok:1}}[a.level]));
+ const weight={{danger:4,warning:3,info:2,ok:1}}; return out.sort((a,b)=>(weight[b.level]||0)-(weight[a.level]||0));
 }}
 function metrics(){{
  const ps=seed.projects.map(mergedProject);
