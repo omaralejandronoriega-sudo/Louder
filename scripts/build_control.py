@@ -399,16 +399,16 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
 
 <dialog id="githubDialog">
  <div class="modal-head">
-  <div><div class="area">Ejecución directa</div><h2>Conectar GitHub</h2></div>
+  <div><div class="area">Configuración de una vez</div><h2>Activar ejecución directa</h2></div>
   <button class="close" id="githubClose" aria-label="Cerrar" type="button">×</button>
  </div>
  <div class="modal-body">
-  <p style="color:var(--muted);line-height:1.55">Para disparar GitHub Actions desde esta PWA hace falta un token de acceso fino. No se guarda en GitHub, WordPress ni en el almacenamiento permanente: vive únicamente en esta sesión del navegador.</p>
-  <div class="field"><label for="githubToken">Fine-grained personal access token</label><input class="secret" id="githubToken" type="password" autocomplete="off" placeholder="github_pat_…"></div>
-  <div class="task-context">Permisos mínimos recomendados: acceso solo a los repositorios de Louder y <strong>Actions: Read and write</strong>. No hace falta darle permisos administrativos.</div>
+  <p style="color:var(--muted);line-height:1.55">Esto permite que el botón Ejecutar lance los procesos de Louder. GitHub pide una clave privada de acceso; Louder Control la usa solo durante esta sesión y no la guarda permanentemente.</p>
+  <div class="field"><label for="githubToken">Clave de acceso de GitHub</label><input class="secret" id="githubToken" type="password" autocomplete="off" placeholder="github_pat_…"></div>
+  <div class="task-context">Al crearla, selecciona solo los repositorios de Louder y permite <strong>Actions: Read and write</strong>. No necesitas permisos administrativos.</div>
   <div class="task-actions">
-   <button class="btn primary" id="githubVerify" type="button">Verificar y conectar</button>
-   <a class="btn" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Crear token en GitHub</a>
+   <button class="btn primary" id="githubVerify" type="button">Activar ejecución</button>
+   <a class="btn" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Crear clave en GitHub</a>
   </div>
   <div class="exec-state" id="githubVerifyState">Sin verificar.</div>
  </div>
@@ -478,24 +478,25 @@ function alerts(){{
  if(!failed && Object.keys(live).length) out.push({{level:'ok',title:'Sin fallos nuevos en los últimos runs consultados',body:'Los repositorios que respondieron no muestran un fallo como ejecución más reciente.',date:new Date().toISOString()}});
  const weight={{danger:4,warning:3,info:2,ok:1}}; return out.sort((a,b)=>(weight[b.level]||0)-(weight[a.level]||0));
 }}
-function metrics(){{
- const ps=seed.projects.map(mergedProject);
- const a=alerts();
- return {{
-  attention:ps.filter(p=>p.status==='attention').length+a.filter(x=>x.level==='danger').length,
-  active:ps.filter(p=>p.status==='active').length,
-  pending:ps.reduce((n,p)=>n+p.pending,0),
-  done:ps.reduce((n,p)=>n+p.tasks.filter(taskDone).length,0)
- }};
-}}
-function renderMetrics(){{
+function metrics(){
+ let running=0,pending=0,blocked=0,done=0;
+ for(const p of seed.projects)for(const t of p.tasks){
+  const s=taskStatus(t);
+  if(s==='in_progress'||s==='review')running++;
+  else if(s==='blocked')blocked++;
+  else if(s==='done')done++;
+  else pending++;
+ }
+ return {running,pending,blocked,done};
+}
+function renderMetrics(){
  const m=metrics();
  $('#quickMetrics').innerHTML=`
- <div class="metric attn"><strong>${m.attention}</strong><span>requieren atención</span></div>
- <div class="metric work"><strong>${m.active}</strong><span>proyectos activos</span></div>
- <div class="metric"><strong>${m.pending}</strong><span>tareas pendientes</span></div>
- <div class="metric done"><strong>${m.done}</strong><span>tareas cerradas</span></div>`;
-}}
+ <div class="metric work"><strong>${m.running}</strong><span>en curso</span></div>
+ <div class="metric"><strong>${m.pending}</strong><span>por hacer</span></div>
+ <div class="metric attn"><strong>${m.blocked}</strong><span>bloqueados</span></div>
+ <div class="metric done"><strong>${m.done}</strong><span>resueltos</span></div>`;
+}
 function nextWorkItem(){
  const rows=[];
  seed.projects.forEach(p=>p.tasks.forEach(t=>{if(!taskDone(t))rows.push({p,t,status:taskStatus(t)});}));
