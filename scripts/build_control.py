@@ -170,6 +170,11 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .pending{{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}}
 .pending strong{{display:block;font-size:14px;line-height:1.35}} .pending span{{display:block;color:var(--muted);font-size:11px;margin-top:4px}}
 .pending .task-status{{display:inline-flex;margin-top:7px}}
+.pending-group{{margin:0 0 22px}}
+.pending-group-head{{display:flex;justify-content:space-between;align-items:center;margin:0 0 9px;padding:0 2px}}
+.pending-group-head h2{{font-size:17px;margin:0;letter-spacing:-.02em}}
+.pending-group-head span{{font-size:11px;color:var(--muted)}}
+.pending-group-list{{display:grid;gap:8px}}
 .focus-card{{background:linear-gradient(135deg,#171919,#101212);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}}
 .focus-card .focus-top{{display:flex;justify-content:space-between;gap:12px;align-items:start}}
 .focus-card h3{{font-size:22px;letter-spacing:-.04em;margin:6px 0}}
@@ -542,10 +547,16 @@ function renderPending(){
  seed.projects.forEach(p=>p.tasks.forEach(t=>{if(!taskDone(t))rows.push({p,t,status:taskStatus(t)});}));
  const weight=s=>s==='in_progress'?1200:s==='review'?1100:s==='blocked'?-300:0;
  rows.sort((a,b)=>(weight(b.status)+priorityScore(b.p))-(weight(a.status)+priorityScore(a.p)));
- $('#pendingList').innerHTML=rows.map(({p,t,status})=>{
+ const card=({p,t,status})=>{
   const label=t.action?(status==='review'?'Revisar':'Ejecutar'):'Resolver';
   return `<article class="pending"><div><strong>${t.text}</strong><span>${p.name} · ${p.area}</span><span class="task-status ${status}">${taskStatusLabel(status)}</span></div><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">${label}</button></article>`;
- }).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
+ };
+ const groups=[
+  ['En curso',rows.filter(x=>x.status==='in_progress'||x.status==='review')],
+  ['Por hacer',rows.filter(x=>x.status==='pending')],
+  ['Bloqueados',rows.filter(x=>x.status==='blocked')]
+ ].filter(x=>x[1].length);
+ $('#pendingList').innerHTML=groups.map(([name,items])=>`<section class="pending-group"><div class="pending-group-head"><h2>${name}</h2><span>${items.length}</span></div><div class="pending-group-list">${items.map(card).join('')}</div></section>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
 }
 function renderReminderProjectOptions(){{
  $('#reminderProject').innerHTML='<option value="">General</option>'+seed.projects.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
@@ -579,13 +590,13 @@ function renderGithubConnection(){{
  const title=$('#githubConnectTitle'),textEl=$('#githubConnectText'),btn=$('#githubConnectBtn');
  if(!title)return;
  if(githubConnected()){{
-  title.textContent='GitHub Actions · conectado para esta sesión';
-  textEl.textContent='Puedes ejecutar automatizaciones directamente. El token se borra al cerrar esta sesión del navegador.';
+  title.textContent='Ejecución directa activa';
+  textEl.textContent='Los botones Ejecutar ya pueden lanzar procesos desde esta app.';
   btn.textContent='Cambiar';
  }}else{{
-  title.textContent='GitHub Actions · sin conectar';
-  textEl.textContent='Conecta una credencial de sesión para ejecutar workflows directamente desde Louder Control.';
-  btn.textContent='Conectar';
+  title.textContent='Activar ejecución directa';
+  textEl.textContent='Hazlo una vez por sesión para usar los botones Ejecutar.';
+  btn.textContent='Activar';
  }}
 }}
 function renderActionFields(action){{
@@ -664,7 +675,7 @@ async function dispatchWorkflow(action,inputs,task){{
  }}
  state.executions[task.id]={{repo:action.repo,workflow:action.workflow,status:'queued',conclusion:null,created_at:sentAt,updated_at:sentAt,url:''}};
  state.taskStatus[task.id]='in_progress';state.taskStarted[task.id]=state.taskStarted[task.id]||sentAt;save();
- await pollExecution(task,action,sentAt,true);
+ pollExecution(task,action,sentAt,true).catch(()=>{});
 }}
 async function fetchRunDetails(repo,run){
  try{
@@ -720,7 +731,7 @@ async function executeCurrentTask(){{
  const inputs=collectActionInputs(action);if(inputs===null)return;
  if(action.confirm&&!confirm(action.confirm))return;
  const st=$('#taskExecState');if(st){{st.textContent='Enviando a GitHub Actions…';st.className='exec-state running';}}
- try{{await dispatchWorkflow(action,inputs,t);renderAll();if(currentTask)openTask(currentTask.p.id,t.id);}}
+ try{{await dispatchWorkflow(action,inputs,t);$('#taskDialog').close();renderAll();goPanel('activity');}}
  catch(err){{if(st){{st.textContent='No se pudo ejecutar: '+err.message;st.className='exec-state failure';}}}}
 }}
 async function refreshPendingExecutions(){
@@ -768,7 +779,8 @@ function runCard(run,compact=false){
  const cls=run.conclusion==='failure'?'failed':(run.status==='in_progress'||run.status==='queued'||run.status==='pending'?'running':'');
  const dot=run.conclusion==='failure'?'fail':(run.status==='completed'?'done':(run.status==='queued'||run.status==='pending'?'waiting':''));
  const steps=compact?'':`<div class="run-steps">${(run.steps||[]).slice(-7).map(s=>`<div class="run-step"><span class="step-icon">${stepIcon(s)}</span><span>${s.name}</span><span class="step-time">${s.status==='in_progress'?'ahora':(s.conclusion||'')}</span></div>`).join('')}</div>`;
- return `<article class="live-run ${cls}"><div class="live-run-head"><div><div class="area">${subtitle}</div><h3>${title}</h3><p>${current}</p></div><span class="live-dot ${dot}">${runStatusText(run)}</span></div><div class="run-progress"><i style="width:${Math.max(3,pct)}%"></i></div><div class="run-meta"><span>${pct}%</span><span>${fmtDate(run.updated_at||run.created_at)}</span></div>${steps}${!compact&&run.html_url?`<div class="task-actions"><a class="btn small" href="${run.html_url}" target="_blank" rel="noopener">Ver en GitHub</a></div>`:''}</article>`;
+ const link=run.html_url||run.url||'';
+ return `<article class="live-run ${cls}"><div class="live-run-head"><div><div class="area">${subtitle}</div><h3>${title}</h3><p>${current}</p></div><span class="live-dot ${dot}">${runStatusText(run)}</span></div><div class="run-progress"><i style="width:${Math.max(3,pct)}%"></i></div><div class="run-meta"><span>${pct}%</span><span>${fmtDate(run.updated_at||run.created_at)}</span></div>${steps}${!compact&&link?`<div class="task-actions"><a class="btn small" href="${link}" target="_blank" rel="noopener">Detalle técnico</a></div>`:''}</article>`;
 }
 function renderLivePanels(){
  const running=[...activeRuns];
