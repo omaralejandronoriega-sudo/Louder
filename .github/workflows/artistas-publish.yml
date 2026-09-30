@@ -10,10 +10,12 @@ on:
       - "data/galleries.json"
       - "data/album_art.json"
       - "data/radar_2026.json"
+      - "data/control.json"
       - "assets/**"
       - "scripts/merge_history_sources.py"
       - "scripts/build_artists.py"
       - "scripts/build_radar_2026.py"
+      - "scripts/build_control.py"
       - ".github/workflows/artistas-publish.yml"
   workflow_dispatch:
 
@@ -77,6 +79,7 @@ jobs:
         run: |
           python scripts/build_artists.py
           python scripts/build_radar_2026.py
+          python scripts/build_control.py
 
       - uses: actions/configure-pages@v5
 
