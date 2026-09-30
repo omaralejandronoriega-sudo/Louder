@@ -125,7 +125,12 @@ async function handleAi(request, env) {
 
   const message = String(payload?.message || "").trim();
   const task = payload?.task && typeof payload.task === "object" ? payload.task : null;
-  const previousResponseId = String(payload?.previous_response_id || "").trim();
+  const history = Array.isArray(payload?.history)
+    ? payload.history
+        .slice(-10)
+        .filter((m) => m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string")
+        .map((m) => ({ role: m.role, content: m.content.slice(0, 12000) }))
+    : [];
 
   if (!message) {
     return jsonResponse({ error: "EMPTY_MESSAGE" }, 400);
@@ -134,9 +139,9 @@ async function handleAi(request, env) {
   const body = {
     model: env.OPENAI_MODEL || "gpt-5.6-terra",
     instructions: louderInstructions(task),
-    input: message,
+    input: [...history, { role: "user", content: message }],
     stream: true,
-    store: true,
+    store: false,
     reasoning: { effort: "medium" },
     text: { verbosity: "medium" },
     tools: [{ type: "web_search" }],
@@ -144,7 +149,6 @@ async function handleAi(request, env) {
     max_output_tokens: 5000,
     safety_identifier: "louder-control-owner",
   };
-  if (previousResponseId) body.previous_response_id = previousResponseId;
 
   const clientRequestId = crypto.randomUUID();
   const upstream = await fetch("https://api.openai.com/v1/responses", {
