@@ -419,6 +419,7 @@ state.taskNotes=state.taskNotes||{{}};
 state.taskStarted=state.taskStarted||{{}};
 state.executions=state.executions||{{}};
 let live={{}};
+let activeRuns=[];
 let githubToken=sessionStorage.getItem('louder-control-github-token')||'';
 let pendingExecutionAfterConnect=false;
 let currentProject=null;
@@ -430,7 +431,7 @@ const $$=(q,r=document)=>[...r.querySelectorAll(q)];
 function save(){{localStorage.setItem(STORE,JSON.stringify(state));}}
 function taskDone(t){{return Object.prototype.hasOwnProperty.call(state.tasks,t.id)?!!state.tasks[t.id]:!!t.done;}}
 function taskStatus(t){{if(taskDone(t))return 'done';return state.taskStatus[t.id]||'pending';}}
-function taskStatusLabel(s){{return s==='in_progress'?'En curso':s==='blocked'?'Bloqueado':s==='done'?'Hecho':'Pendiente';}}
+function taskStatusLabel(s){return s==='in_progress'?'En curso':s==='review'?'Revisar resultado':s==='blocked'?'Bloqueado':s==='done'?'Resuelto':'Pendiente';}
 function findTask(p,id){{return p?.tasks?.find(t=>t.id===id);}}
 function projectProgress(p){{
  const total=p.tasks.length||1,done=p.tasks.filter(taskDone).length;
@@ -490,26 +491,24 @@ function renderMetrics(){{
  <div class="metric"><strong>${m.pending}</strong><span>tareas pendientes</span></div>
  <div class="metric done"><strong>${m.done}</strong><span>tareas cerradas</span></div>`;
 }}
-function nextWorkItem(){{
+function nextWorkItem(){
  const rows=[];
- seed.projects.forEach(p=>p.tasks.forEach(t=>{{if(!taskDone(t))rows.push({{p,t,status:taskStatus(t)}});}}));
- rows.sort((a,b)=>{{
-  const sa=(a.status==='in_progress'?1000:a.status==='blocked'?-200:0)+priorityScore(a.p);
-  const sb=(b.status==='in_progress'?1000:b.status==='blocked'?-200:0)+priorityScore(b.p);
-  return sb-sa;
- }});
+ seed.projects.forEach(p=>p.tasks.forEach(t=>{if(!taskDone(t))rows.push({p,t,status:taskStatus(t)});}));
+ const weight=s=>s==='in_progress'?1200:s==='review'?1100:s==='blocked'?-300:0;
+ rows.sort((a,b)=>(weight(b.status)+priorityScore(b.p))-(weight(a.status)+priorityScore(a.p)));
  return rows[0]||null;
-}}
-function renderFocus(){{
+}
+function renderFocus(){
  const item=nextWorkItem(),el=$('#focusTask');
- if(!item){{el.innerHTML='<div class="empty">Todo cerrado. No hay pendientes activos.</div>';return;}}
- const {{p,t,status}}=item;
+ if(!item){el.innerHTML='<div class="empty">Todo cerrado. No hay pendientes activos.</div>';return;}
+ const {p,t,status}=item;
+ const action=t.action?(status==='review'?'Revisar resultado':'Abrir tarea'):'Resolver tarea';
  el.innerHTML=`<article class="focus-card">
   <div class="focus-top"><div><div class="area">${p.area} · ${p.name}</div><h3>${t.text}</h3></div><span class="task-status ${status}">${taskStatusLabel(status)}</span></div>
-  <p>${p.next}</p>
-  <div class="inline"><button class="btn primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar ahora</button><span class="progress-mini">${projectProgress(p)}% del proyecto</span></div>
+  <p>${t.action?'Esta tarea tiene automatización disponible.':'Esta tarea necesita análisis o trabajo asistido.'}</p>
+  <div class="inline"><button class="btn primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">${action}</button><span class="progress-mini">${projectProgress(p)}% del proyecto</span></div>
  </article>`;
-}}
+}
 function renderPriority(){{
  const ps=seed.projects.map(mergedProject).sort((a,b)=>priorityScore(b)-priorityScore(a)).slice(0,4);
  $('#priorityList').innerHTML=ps.map((p,i)=>`<button class="priority-card" data-open="${p.id}" type="button" style="text-align:left;color:inherit;width:100%">
@@ -538,16 +537,16 @@ function renderProjects(){{
   <div class="source">Fuente: ${p.source} · actualización ${fmtDate(p.updated)}</div>
  </article>`).join('')||'<div class="empty">No hay proyectos con ese filtro.</div>';
 }}
-function renderPending(){{
+function renderPending(){
  const rows=[];
- seed.projects.forEach(p=>p.tasks.forEach(t=>{{if(!taskDone(t))rows.push({{p,t,status:taskStatus(t)}});}}));
- rows.sort((a,b)=>{{
-  const sa=(a.status==='in_progress'?1000:a.status==='blocked'?-200:0)+priorityScore(a.p);
-  const sb=(b.status==='in_progress'?1000:b.status==='blocked'?-200:0)+priorityScore(b.p);
-  return sb-sa;
- }});
- $('#pendingList').innerHTML=rows.map(({{p,t,status}})=>`<article class="pending"><input type="checkbox" data-task="${t.id}" aria-label="Marcar hecho"><span><strong>${t.text}</strong><span>${p.name} · ${p.area} · ${taskStatusLabel(status)}${t.action?' · ejecutable':''}</span></span><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar</button></article>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
-}}
+ seed.projects.forEach(p=>p.tasks.forEach(t=>{if(!taskDone(t))rows.push({p,t,status:taskStatus(t)});}));
+ const weight=s=>s==='in_progress'?1200:s==='review'?1100:s==='blocked'?-300:0;
+ rows.sort((a,b)=>(weight(b.status)+priorityScore(b.p))-(weight(a.status)+priorityScore(a.p)));
+ $('#pendingList').innerHTML=rows.map(({p,t,status})=>{
+  const label=t.action?(status==='review'?'Revisar':'Ejecutar'):'Resolver';
+  return `<article class="pending"><div><strong>${t.text}</strong><span>${p.name} · ${p.area}</span><span class="task-status ${status}">${taskStatusLabel(status)}</span></div><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">${label}</button></article>`;
+ }).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
+}
 function renderReminderProjectOptions(){{
  $('#reminderProject').innerHTML='<option value="">General</option>'+seed.projects.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
 }}
@@ -599,19 +598,33 @@ function renderActionFields(action){{
   return `<div class="field"><label for="${id}">${d.label||name}</label><input id="${id}" data-action-input="${name}" type="${type}" value="${d.default??''}" placeholder="${d.placeholder||''}" ${d.required?'required':''} ${d.min!==undefined?'min="'+d.min+'"':''}></div>`;
  }}).join('');
 }}
-function renderTaskAutomation(p,t){{
+function executionDetailHtml(ex){
+ if(!ex)return '<div class="exec-state">Todavía no se ha ejecutado.</div>';
+ const pct=Number.isFinite(ex.progress)?ex.progress:(ex.status==='completed'?100:0);
+ const step=ex.current_step||((ex.status==='queued'||ex.status==='pending')?'Esperando turno':(ex.conclusion==='success'?'Proceso terminado':'Actualizando…'));
+ return `<div class="exec-state ${executionClass(ex)}"><strong>${executionLabel(ex)}</strong><br>${step}${Number.isFinite(pct)?` · ${pct}%`:''}</div>`;
+}
+function renderTaskAutomation(p,t){
  const el=$('#taskAutomation');if(!el)return;
  const action=t.action;
- if(!action){{el.innerHTML='';return;}}
- const ex=executionFor(t);
+ if(!action){el.innerHTML='';return;}
+ const ex=executionFor(t),running=ex&&(ex.status==='queued'||ex.status==='pending'||ex.status==='in_progress');
+ const buttonLabel=running?'Ejecutándose…':(action.public?'▶ Ejecutar y publicar':'▶ Ejecutar automatización');
  el.innerHTML=`<section class="automation-card ${action.public?'public':'ready'}">
-  <div class="automation-head"><div><div class="area">${action.public?'Acción con publicación':'Automatización disponible'}</div><h3>${action.label}</h3><p>${action.effect||''}</p></div><span class="task-status ${ex?.conclusion==='success'?'done':(ex?.conclusion==='failure'?'blocked':(ex?.status==='in_progress'||ex?.status==='queued'?'in_progress':''))}">${action.public?'PUBLICA':'DIRECTA'}</span></div>
+  <div class="automation-head"><div><div class="area">${action.public?'Publica contenido':'Se puede automatizar'}</div><h3>${action.label}</h3><p>${action.effect||''}</p></div></div>
   <div class="action-fields">${renderActionFields(action)}</div>
-  <div class="task-actions"><button class="btn primary" id="taskExecute" type="button">${githubConnected()?'Ejecutar ahora':'Conectar y ejecutar'}</button>${ex?.url?`<a class="btn" href="${ex.url}" target="_blank" rel="noopener">Ver ejecución</a>`:''}</div>
-  <div class="exec-state ${executionClass(ex)}" id="taskExecState">${executionLabel(ex)}${ex?.updated_at?' · '+fmtDate(ex.updated_at):''}</div>
+  <div class="task-actions"><button class="btn primary" id="taskExecute" type="button" ${running?'disabled':''}>${buttonLabel}</button>${ex?.url?`<a class="btn" href="${ex.url}" target="_blank" rel="noopener">Ver detalle técnico</a>`:''}</div>
+  ${executionDetailHtml(ex)}
  </section>`;
  $('#taskExecute')?.addEventListener('click',()=>executeCurrentTask());
-}}
+}
+function renderTaskSimpleAction(p,t){
+ const el=$('#taskSimpleAction');if(!el)return;
+ const cls=t.action?'btn':'btn primary';
+ const label=t.action?'Resolver conmigo en ChatGPT':'Resolver con ChatGPT';
+ el.innerHTML=`<button class="${cls}" id="taskChat" type="button">${label}</button>`;
+ $('#taskChat').addEventListener('click',()=>copyTaskContext(true));
+}
 function collectActionInputs(action){{
  const out={{}};
  for(const [name,d] of Object.entries(action?.inputs||{{}})){{
@@ -653,25 +666,50 @@ async function dispatchWorkflow(action,inputs,task){{
  state.taskStatus[task.id]='in_progress';state.taskStarted[task.id]=state.taskStarted[task.id]||sentAt;save();
  await pollExecution(task,action,sentAt,true);
 }}
-async function pollExecution(task,action,since,fast=false){{
- const ex=state.executions[task.id];if(!ex)return;
+async function fetchRunDetails(repo,run){
+ try{
+  const res=await fetch(`https://api.github.com/repos/${repo}/actions/runs/${run.id}/jobs?per_page=20`,{headers:githubHeaders()});
+  if(!res.ok)return {};
+  const j=await res.json(),jobs=j.jobs||[];
+  const steps=jobs.flatMap(job=>(job.steps||[]).map(step=>({...step,job_name:job.name})));
+  const total=steps.length,finished=steps.filter(s=>s.status==='completed').length;
+  const current=steps.find(s=>s.status==='in_progress')||steps.find(s=>s.status==='queued');
+  const jobNow=jobs.find(x=>x.status==='in_progress')||jobs.find(x=>x.status==='queued');
+  const progress=total?Math.round(finished/total*100):(run.status==='completed'?100:0);
+  return {jobs,steps,current_step:current?.name||jobNow?.name||'',progress,total_steps:total,completed_steps:finished};
+ }catch(_){return {};}
+}
+async function pollExecution(task,action,since,fast=false){
+ let ex=state.executions[task.id];if(!ex)return;
  const attempts=fast?8:1;
- for(let i=0;i<attempts;i++){{
+ for(let i=0;i<attempts;i++){
   if(i)await new Promise(r=>setTimeout(r,2500));
-  try{{
-   const res=await fetch(`https://api.github.com/repos/${action.repo}/actions/workflows/${encodeURIComponent(action.workflow)}/runs?event=workflow_dispatch&per_page=5`,{{headers:{{Accept:'application/vnd.github+json'}}}});
-   if(!res.ok)continue;
-   const j=await res.json();const cutoff=new Date(since||ex.created_at||0).getTime()-30000;
-   const run=(j.workflow_runs||[]).find(r=>new Date(r.created_at).getTime()>=cutoff)||(j.workflow_runs||[])[0];
-   if(run){{
-    state.executions[task.id]={{...ex,id:run.id,status:run.status,conclusion:run.conclusion,created_at:run.created_at,updated_at:run.updated_at,url:run.html_url}};
-    save();
-    if(currentTask?.t.id===task.id)renderTaskAutomation(currentTask.p,currentTask.t);
+  try{
+   let run=null;
+   if(ex.id){
+    const rr=await fetch(`https://api.github.com/repos/${action.repo}/actions/runs/${ex.id}`,{headers:githubHeaders()});
+    if(rr.ok)run=await rr.json();
+   }else{
+    const res=await fetch(`https://api.github.com/repos/${action.repo}/actions/workflows/${encodeURIComponent(action.workflow)}/runs?event=workflow_dispatch&per_page=5`,{headers:githubHeaders()});
+    if(!res.ok)continue;
+    const j=await res.json(),cutoff=new Date(since||ex.created_at||0).getTime()-30000;
+    run=(j.workflow_runs||[]).find(r=>new Date(r.created_at).getTime()>=cutoff)||(j.workflow_runs||[])[0];
+   }
+   if(run){
+    const details=await fetchRunDetails(action.repo,run);
+    ex={...ex,...details,id:run.id,name:run.name,path:run.path,status:run.status,conclusion:run.conclusion,created_at:run.created_at,updated_at:run.updated_at,url:run.html_url};
+    state.executions[task.id]=ex;
+    if(run.status==='completed'){
+     if(run.conclusion==='success'&&!taskDone(task))state.taskStatus[task.id]='review';
+     if((run.conclusion==='failure'||run.conclusion==='cancelled')&&!taskDone(task))state.taskStatus[task.id]='blocked';
+    }else if(!taskDone(task))state.taskStatus[task.id]='in_progress';
+    save();renderLivePanels();renderFocus();renderPending();
+    if(currentTask?.t.id===task.id){renderTaskAutomation(currentTask.p,currentTask.t);const badge=$('#taskState');badge.textContent=taskStatusLabel(taskStatus(task));badge.className='task-status '+taskStatus(task);}
     if(run.status==='completed')return;
-   }}
-  }}catch(_){{}}
- }}
-}}
+   }
+  }catch(_){}
+ }
+}
 async function executeCurrentTask(){{
  if(!currentTask?.t?.action)return;
  const {{t}}=currentTask,action=t.action;
@@ -685,24 +723,74 @@ async function executeCurrentTask(){{
  try{{await dispatchWorkflow(action,inputs,t);renderAll();if(currentTask)openTask(currentTask.p.id,t.id);}}
  catch(err){{if(st){{st.textContent='No se pudo ejecutar: '+err.message;st.className='exec-state failure';}}}}
 }}
-async function refreshPendingExecutions(){{
- for(const p of seed.projects)for(const t of p.tasks){{
-  const ex=executionFor(t);if(t.action&&ex&&(ex.status==='queued'||ex.status==='in_progress'))await pollExecution(t,t.action,ex.created_at,false);
- }}
- renderAll();
-}}
-
-function renderActivity(){{
- renderGithubConnection();
- const rows=seed.repositories.map(r=>{{
+async function refreshPendingExecutions(){
+ let changed=false;
+ for(const p of seed.projects)for(const t of p.tasks){
+  const ex=executionFor(t);
+  if(t.action&&ex&&(ex.status==='queued'||ex.status==='pending'||ex.status==='in_progress')){await pollExecution(t,t.action,ex.created_at,false);changed=true;}
+ }
+ if(changed)renderAll();
+}
+function githubHeaders(){
+ const h={Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+ if(githubToken)h.Authorization='Bearer '+githubToken;
+ return h;
+}
+function taskForRun(run){
+ for(const p of seed.projects)for(const t of p.tasks){
+  if(!t.action||t.action.repo!==run.repo)continue;
+  const path=String(run.path||run.workflow||'');
+  if(path.includes(t.action.workflow))return {p,t};
+ }
+ return null;
+}
+function runStatusText(run){
+ if(run.status==='queued'||run.status==='pending')return 'En cola';
+ if(run.status==='in_progress')return 'Ejecutando ahora';
+ if(run.conclusion==='success')return 'Terminó bien';
+ if(run.conclusion==='failure')return 'Falló';
+ if(run.conclusion==='cancelled')return 'Cancelado';
+ return run.status||run.conclusion||'Actualizando';
+}
+function stepIcon(step){
+ if(step.status==='in_progress')return '●';
+ if(step.status==='queued')return '○';
+ if(step.conclusion==='success')return '✓';
+ if(step.conclusion==='failure')return '×';
+ if(step.conclusion==='skipped')return '–';
+ return '·';
+}
+function runCard(run,compact=false){
+ const match=taskForRun(run),title=match?.t?.text||run.name||'Proceso Louder';
+ const subtitle=match?`${match.p.name} · ${match.p.area}`:(run.repo?.split('/').pop()||'Louder');
+ const pct=Number.isFinite(run.progress)?run.progress:(run.status==='completed'?100:0);
+ const current=run.current_step||((run.status==='queued'||run.status==='pending')?'Esperando turno':'Procesando…');
+ const cls=run.conclusion==='failure'?'failed':(run.status==='in_progress'||run.status==='queued'||run.status==='pending'?'running':'');
+ const dot=run.conclusion==='failure'?'fail':(run.status==='completed'?'done':(run.status==='queued'||run.status==='pending'?'waiting':''));
+ const steps=compact?'':`<div class="run-steps">${(run.steps||[]).slice(-7).map(s=>`<div class="run-step"><span class="step-icon">${stepIcon(s)}</span><span>${s.name}</span><span class="step-time">${s.status==='in_progress'?'ahora':(s.conclusion||'')}</span></div>`).join('')}</div>`;
+ return `<article class="live-run ${cls}"><div class="live-run-head"><div><div class="area">${subtitle}</div><h3>${title}</h3><p>${current}</p></div><span class="live-dot ${dot}">${runStatusText(run)}</span></div><div class="run-progress"><i style="width:${Math.max(3,pct)}%"></i></div><div class="run-meta"><span>${pct}%</span><span>${fmtDate(run.updated_at||run.created_at)}</span></div>${steps}${!compact&&run.html_url?`<div class="task-actions"><a class="btn small" href="${run.html_url}" target="_blank" rel="noopener">Ver en GitHub</a></div>`:''}</article>`;
+}
+function renderLivePanels(){
+ const running=[...activeRuns];
+ for(const p of seed.projects)for(const t of p.tasks){
+  const ex=executionFor(t);if(!ex||!ex.id||!(ex.status==='queued'||ex.status==='pending'||ex.status==='in_progress'))continue;
+  if(!running.some(r=>String(r.id)===String(ex.id)))running.push({...ex,repo:t.action?.repo,workflow:t.action?.workflow});
+ }
+ running.sort((a,b)=>new Date(b.created_at||0)-new Date(a.created_at||0));
+ const compact=$('#liveNow'),full=$('#liveRuns');
+ if(compact)compact.innerHTML=running.length?running.slice(0,2).map(r=>runCard(r,true)).join(''):'<div class="live-empty"><strong>Nada ejecutándose ahora</strong><span>Cuando lances una automatización aparecerá aquí automáticamente.</span></div>';
+ if(full)full.innerHTML=running.length?running.map(r=>runCard(r,false)).join(''):'<div class="live-empty"><strong>Todo tranquilo</strong><span>No hay procesos activos. Abajo puedes revisar la última ejecución de cada sistema.</span></div>';
+}
+function renderActivity(){
+ renderGithubConnection();renderLivePanels();
+ const rows=seed.repositories.map(r=>{
   const x=live[r.repo];
-  if(!x)return `<article class="activity"><strong>${r.name}</strong><span>${r.label} · sin datos todavía</span></article>`;
-  const result=x.status==='in_progress'?'en curso':(x.conclusion||x.status);
-  return `<article class="activity"><strong>${r.name} · ${x.name||'workflow'}</strong><span>${r.label} · ${result} · ${fmtDate(x.updated_at||x.created_at)}</span>${x.html_url?` · <a href="${x.html_url}" target="_blank" rel="noopener">ver run</a>`:''}</article>`;
- }}).join('');
+  if(!x)return `<article class="activity"><strong>${r.name}</strong><span>Sin información reciente</span></article>`;
+  return `<article class="activity"><strong>${r.name}</strong><span>Última ejecución: ${runStatusText(x)} · ${fmtDate(x.updated_at||x.created_at)}</span>${x.html_url?` · <a href="${x.html_url}" target="_blank" rel="noopener">detalle técnico</a>`:''}</article>`;
+ }).join('');
  $('#activityList').innerHTML=rows;
-}}
-function renderAll(){{renderMetrics();renderFocus();renderPriority();renderAlerts();renderProjects();renderPending();renderReminders();renderActivity();bindOpeners();}}
+}
+function renderAll(){renderMetrics();renderFocus();renderPriority();renderAlerts();renderProjects();renderPending();renderReminders();renderActivity();renderLivePanels();bindOpeners();}
 
 function bindOpeners(){{$('[data-open]')}}
 function attachOpeners(){{$$('[data-open]').forEach(el=>{{if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('click',e=>{{if(e.target.matches('a,input'))return;openProject(el.dataset.open);}});}});}}
@@ -749,21 +837,20 @@ ${p.source}${p.repo?' · GitHub: '+p.repo:''}
 INSTRUCCIÓN:
 No te limites a recordarme qué falta ni a darme una lista de pasos. Primero verifica el estado real usando las herramientas conectadas que correspondan. Después ejecuta directamente todo lo que puedas, valida el resultado y corrige cualquier fallo que aparezca. Si una acción necesita una aprobación, credencial o intervención mía que no puedas sustituir, detente únicamente en ese punto y dime exactamente qué debo hacer. Cuando quede resuelto, resume qué cambió, cómo se validó y qué pendiente sigue.`;
 }}
-function openTask(projectId,taskId){{
+function openTask(projectId,taskId){
  const p=projectById(projectId),t=findTask(p,taskId);if(!p||!t)return;
- currentTask={{p,t}};
+ currentTask={p,t};
  $('#taskArea').textContent=p.area+' · '+p.name;
  $('#taskTitle').textContent=t.text;
  const s=taskStatus(t),badge=$('#taskState');badge.textContent=taskStatusLabel(s);badge.className='task-status '+s;
  $('#taskProjectProgress').textContent=`${projectProgress(p)}% del proyecto`;
- $('#taskSummary').textContent=p.summary;
- $('#taskContext').innerHTML=`<strong>Siguiente objetivo:</strong> ${p.next}<br><strong>Origen:</strong> ${p.source}${p.chat_title?'<br><strong>Chat relacionado:</strong> '+p.chat_title:''}`;
+ $('#taskSummary').textContent=t.action?'Esta tarea puede ejecutarse desde Louder Control.':'Esta tarea necesita análisis o trabajo asistido.';
+ $('#taskContext').innerHTML=`<strong>Objetivo:</strong> ${p.next}<br><strong>Proyecto:</strong> ${p.name}`;
  $('#taskNote').value=state.taskNotes[t.id]||'';
- renderTaskAutomation(p,t);
- $('#taskStart').textContent=s==='in_progress'?'Continuar':'Empezar';
- const gh=$('#taskGithub');if(p.repo){{gh.hidden=false;gh.href='https://github.com/'+p.repo+'/actions';}}else{{gh.hidden=true;gh.removeAttribute('href');}}
+ renderTaskAutomation(p,t);renderTaskSimpleAction(p,t);
+ $('#taskDoneNext').textContent='✓ Resuelto · siguiente';
  $('#taskDialog').showModal();
-}}
+}
 function persistTaskNote(){{if(currentTask){{state.taskNotes[currentTask.t.id]=$('#taskNote').value.trim();save();}}}}
 async function copyTaskContext(openChat){{
  if(!currentTask)return;
