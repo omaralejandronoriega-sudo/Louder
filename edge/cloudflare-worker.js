@@ -25,7 +25,9 @@ function isStaticSection(pathname) {
     pathname === "/artistas" ||
     pathname.startsWith("/artistas/") ||
     pathname === "/radar-2026" ||
-    pathname.startsWith("/radar-2026/")
+    pathname.startsWith("/radar-2026/") ||
+    pathname === "/control" ||
+    pathname.startsWith("/control/")
   );
 }
 
