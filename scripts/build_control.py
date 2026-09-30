@@ -191,6 +191,26 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .automation-head p{{margin:0;color:var(--muted);font-size:12px;line-height:1.45}}
 .exec-state{{margin-top:10px;padding:10px 11px;border-radius:11px;background:var(--panel2);font-size:12px;color:var(--muted)}}
 .exec-state.running{{color:var(--warn)}} .exec-state.success{{color:var(--ok)}} .exec-state.failure{{color:var(--danger)}}
+.live-stack{{display:grid;gap:10px}}
+.live-run{{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px}}
+.live-run.running{{border-color:rgba(202,255,0,.42);box-shadow:0 0 0 1px rgba(202,255,0,.06) inset}}
+.live-run.failed{{border-color:rgba(255,104,104,.5)}}
+.live-run-head{{display:flex;justify-content:space-between;gap:12px;align-items:start}}
+.live-run h3{{margin:5px 0 4px;font-size:18px;letter-spacing:-.03em}}
+.live-run p{{margin:0;color:var(--muted);font-size:12px;line-height:1.45}}
+.live-dot{{display:inline-flex;align-items:center;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);white-space:nowrap}}
+.live-dot::before{{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(112,224,155,.4);animation:pulse 1.8s infinite}}
+.live-dot.waiting::before{{background:var(--warn)}} .live-dot.done::before{{background:var(--ok);animation:none}} .live-dot.fail::before{{background:var(--danger);animation:none}}
+.run-progress{{height:9px;background:#242727;border-radius:999px;overflow:hidden;margin:13px 0 7px}}
+.run-progress i{{display:block;height:100%;background:var(--accent);border-radius:inherit;transition:width .35s ease}}
+.run-meta{{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:11px}}
+.run-steps{{display:grid;gap:6px;margin-top:12px}}
+.run-step{{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;font-size:12px;padding:7px 0;border-top:1px solid rgba(255,255,255,.05)}}
+.run-step:first-child{{border-top:0}}
+.step-icon{{font-size:12px;text-align:center}} .step-time{{color:var(--muted);font-size:10px}}
+.live-empty{{background:var(--panel);border:1px dashed var(--line);border-radius:18px;padding:18px}}
+.live-empty strong{{display:block;margin-bottom:4px}} .live-empty span{{color:var(--muted);font-size:12px}}
+@keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(112,224,155,.38)}}70%{{box-shadow:0 0 0 8px rgba(112,224,155,0)}}100%{{box-shadow:0 0 0 0 rgba(112,224,155,0)}}}}
 .action-fields{{display:grid;gap:8px;margin:12px 0}}
 .action-fields .field{{margin:0}}
 .connect-card{{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px;margin:0 0 14px}}
@@ -258,7 +278,11 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
   </div>
   <div class="quick" id="quickMetrics"></div>
   <section class="section">
-   <div class="section-head"><div><h2>Trabajar ahora</h2><p>Un pendiente a la vez. Al terminar, aparece el siguiente.</p></div></div>
+   <div class="section-head"><div><h2>En ejecución</h2><p>Qué está haciendo Louder Control en este momento.</p></div><button class="btn small" data-nav-jump="activity" type="button">Ver todo</button></div>
+   <div id="liveNow" class="live-stack"></div>
+  </section>
+  <section class="section">
+   <div class="section-head"><div><h2>Siguiente trabajo</h2><p>Un pendiente claro. Sin menús técnicos.</p></div></div>
    <div id="focusTask"></div>
   </section>
   <section class="section">
@@ -281,7 +305,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </section>
 
  <section class="panel" data-panel="pending">
-  <div class="hero"><div class="eyebrow">Modo de trabajo</div><h1>Pendientes.</h1><p>No solo los recuerda: abre cualquiera para trabajarlo, registrar avances, llevar el contexto a ChatGPT y cerrarlo cuando esté validado.</p></div>
+  <div class="hero"><div class="eyebrow">Uno por uno</div><h1>Trabajar.</h1><p>Elige una tarea. La app te dice si puede ejecutarla sola o si conviene resolverla conmigo en ChatGPT.</p></div>
   <div class="pending-list" id="pendingList"></div>
  </section>
 
@@ -306,7 +330,8 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </section>
 
  <section class="panel" data-panel="activity">
-  <div class="hero"><div class="eyebrow">Estado técnico</div><h1>Actividad.</h1><p>Últimas ejecuciones conocidas de los repositorios de Louder conectados.</p></div>
+  <div class="hero"><div class="eyebrow">Tiempo real</div><h1>En vivo.</h1><p>Aquí ves qué proceso está corriendo, en qué paso va y si terminó bien o falló.</p></div>
+  <div id="liveRuns" class="live-stack" style="margin-bottom:14px"></div>
   <div class="connect-card" id="githubConnectCard">
    <div class="inline" style="justify-content:space-between">
     <div><strong id="githubConnectTitle">GitHub Actions · sin conectar</strong><p id="githubConnectText">Conecta una credencial de sesión para ejecutar workflows directamente desde Louder Control.</p></div>
@@ -320,11 +345,11 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
 
 <nav class="bottom" aria-label="Navegación principal">
  <div class="nav">
-  <button class="active" data-nav="today" type="button"><strong>●</strong>Hoy</button>
+  <button class="active" data-nav="today" type="button"><strong>⌂</strong>Inicio</button>
+  <button data-nav="pending" type="button"><strong>▶</strong>Trabajar</button>
   <button data-nav="projects" type="button"><strong>▦</strong>Proyectos</button>
-  <button data-nav="pending" type="button"><strong>✓</strong>Pendientes</button>
-  <button data-nav="alerts" type="button"><strong>!</strong>Alertas</button>
-  <button data-nav="activity" type="button"><strong>↻</strong>Actividad</button>
+  <button data-nav="activity" type="button"><strong>●</strong>En vivo</button>
+  <button data-nav="alerts" type="button"><strong>!</strong>Avisos</button>
  </div>
 </nav>
 
@@ -356,26 +381,14 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
   <div class="inline"><span class="task-status" id="taskState"></span><span class="progress-mini" id="taskProjectProgress"></span></div>
   <p id="taskSummary" style="color:var(--muted);line-height:1.5"></p>
   <div class="task-context" id="taskContext"></div>
-  <h3>Cómo lo vamos a sacar</h3>
-  <div class="work-steps">
-   <div class="work-step"><div><strong>Verificar estado real</strong><br><span class="note">Revisar qué existe ahora antes de tocar nada.</span></div></div>
-   <div class="work-step"><div><strong>Ejecutar</strong><br><span class="note">Hacer el cambio con las herramientas disponibles, no solo describirlo.</span></div></div>
-   <div class="work-step"><div><strong>Validar</strong><br><span class="note">Comprobar que el resultado funciona y no rompió otra parte de Louder.</span></div></div>
-   <div class="work-step"><div><strong>Cerrar y seguir</strong><br><span class="note">Registrar resultado y pasar automáticamente al siguiente pendiente.</span></div></div>
-  </div>
   <div id="taskAutomation"></div>
-  <div class="field"><label for="taskNote">Notas / bloqueo de este pendiente</label><textarea id="taskNote" placeholder="Qué encontramos, qué falta, credenciales requeridas, decisión tomada…"></textarea></div>
+  <div id="taskSimpleAction" class="task-actions"></div>
+  <div class="field"><label for="taskNote">Notas de esta tarea</label><textarea id="taskNote" placeholder="Qué encontramos, qué falta o qué decisión tomamos…"></textarea></div>
   <div class="task-actions">
-   <button class="btn primary" id="taskStart" type="button">Empezar</button>
-   <button class="btn" id="taskChat" type="button">Copiar + abrir ChatGPT</button>
-   <button class="btn" id="taskShare" type="button">Compartir contexto</button>
-   <a class="btn" id="taskGithub" target="_blank" rel="noopener" hidden>GitHub</a>
+   <button class="btn primary" id="taskDoneNext" type="button">✓ Marcar resuelto</button>
+   <button class="btn" id="taskBlock" type="button">No puedo avanzar</button>
   </div>
-  <div class="task-actions">
-   <button class="btn" id="taskBlock" type="button">Marcar bloqueado</button>
-   <button class="btn primary" id="taskDoneNext" type="button">Hecho → siguiente</button>
-  </div>
-  <p class="note">La app prepara el contexto completo para que ChatGPT trabaje el pendiente de principio a fin. El estado, notas y avances quedan guardados en este dispositivo.</p>
+  <p class="note">Cuando una automatización corre, su progreso aparece en tiempo real en “En vivo”.</p>
  </div>
 </dialog>
 
