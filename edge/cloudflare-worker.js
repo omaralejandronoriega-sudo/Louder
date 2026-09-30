@@ -1,5 +1,6 @@
 const PAGES_ORIGIN = "https://omaralejandronoriega-sudo.github.io";
 const PAGES_BASE = "/Louder";
+const GITHUB_OWNER = "omaralejandronoriega-sudo";
 
 function githubUrl(requestUrl) {
   const incoming = new URL(requestUrl);
@@ -31,9 +32,165 @@ function isStaticSection(pathname) {
   );
 }
 
+function isAiRoute(pathname) {
+  return (
+    pathname === "/control/api/ai" ||
+    pathname === "/artistas/_control/api/ai"
+  );
+}
+
+function jsonResponse(data, status = 200, extraHeaders = {}) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-store",
+      ...extraHeaders,
+    },
+  });
+}
+
+async function verifyGithubOwner(token) {
+  if (!token) return false;
+  try {
+    const res = await fetch("https://api.github.com/user", {
+      headers: {
+        accept: "application/vnd.github+json",
+        authorization: `Bearer ${token}`,
+        "user-agent": "Louder-Control",
+        "x-github-api-version": "2022-11-28",
+      },
+      cf: { cacheTtl: 0, cacheEverything: false },
+    });
+    if (!res.ok) return false;
+    const user = await res.json();
+    return String(user?.login || "").toLowerCase() === GITHUB_OWNER.toLowerCase();
+  } catch (_) {
+    return false;
+  }
+}
+
+function louderInstructions(task) {
+  const taskContext = task
+    ? `
+PROJECT: ${task.project || ""}
+AREA: ${task.area || ""}
+TASK: ${task.title || ""}
+PROJECT CONTEXT: ${task.summary || ""}
+OBJECTIVE: ${task.objective || ""}
+NOTES: ${task.notes || ""}
+`
+    : "";
+
+  return `You are Louder Control AI, an embedded operations assistant for the Louder music/media project.
+Work in Spanish unless the user asks otherwise. Be concise, operational, and specific.
+Do not merely restate a checklist. Investigate, reason, and produce a usable result.
+Use web search when current public information materially improves the answer.
+When the task can be advanced with concrete instructions, commands, configuration, copy, analysis, or a diagnostic, produce those directly.
+Do not claim that you executed an external action unless the system actually performed it.
+If a task requires access to a connected account or tool that is not available to this API session, say exactly what access is missing and give the smallest next action needed.
+For web/performance work, prioritize measurable evidence: TTFB, HTTP status, Core Web Vitals, render-blocking resources, request counts, cron/query load, CPU/memory and origin requests. Avoid changes that add unnecessary load to WordPress.
+For Louder editorial/social work, keep the user's established Louder tone and avoid generic AI phrasing.
+At the end, include a short "Estado" line: RESUELTO, AVANZADO, or BLOQUEADO, plus one sentence explaining why.
+${taskContext}`;
+}
+
+async function handleAi(request, env) {
+  if (request.method !== "POST") {
+    return jsonResponse({ error: "METHOD_NOT_ALLOWED" }, 405, { allow: "POST" });
+  }
+
+  if (!env.OPENAI_API_KEY) {
+    return jsonResponse({
+      error: "AI_NOT_CONFIGURED",
+      message: "Falta configurar OPENAI_API_KEY como secreto del Worker.",
+    }, 503);
+  }
+
+  const githubToken = request.headers.get("x-louder-github-token") || "";
+  const authorized = await verifyGithubOwner(githubToken);
+  if (!authorized) {
+    return jsonResponse({
+      error: "UNAUTHORIZED",
+      message: "Activa la ejecución directa con tu sesión de GitHub antes de usar Louder IA.",
+    }, 401);
+  }
+
+  let payload;
+  try {
+    payload = await request.json();
+  } catch (_) {
+    return jsonResponse({ error: "INVALID_JSON" }, 400);
+  }
+
+  const message = String(payload?.message || "").trim();
+  const task = payload?.task && typeof payload.task === "object" ? payload.task : null;
+  const previousResponseId = String(payload?.previous_response_id || "").trim();
+
+  if (!message) {
+    return jsonResponse({ error: "EMPTY_MESSAGE" }, 400);
+  }
+
+  const body = {
+    model: env.OPENAI_MODEL || "gpt-5.6-terra",
+    instructions: louderInstructions(task),
+    input: message,
+    stream: true,
+    store: true,
+    reasoning: { effort: "medium" },
+    text: { verbosity: "medium" },
+    tools: [{ type: "web_search" }],
+    max_tool_calls: 6,
+    max_output_tokens: 5000,
+    safety_identifier: "louder-control-owner",
+  };
+  if (previousResponseId) body.previous_response_id = previousResponseId;
+
+  const clientRequestId = crypto.randomUUID();
+  const upstream = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env.OPENAI_API_KEY}`,
+      "content-type": "application/json",
+      accept: "text/event-stream",
+      "x-client-request-id": clientRequestId,
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!upstream.ok) {
+    let detail = "";
+    try {
+      const err = await upstream.json();
+      detail = err?.error?.message || err?.message || "";
+    } catch (_) {}
+    return jsonResponse({
+      error: "OPENAI_ERROR",
+      status: upstream.status,
+      message: detail || "OpenAI no pudo procesar la solicitud.",
+      request_id: upstream.headers.get("x-request-id") || clientRequestId,
+    }, upstream.status);
+  }
+
+  const headers = new Headers(upstream.headers);
+  headers.set("content-type", "text/event-stream; charset=utf-8");
+  headers.set("cache-control", "no-store");
+  headers.set("x-accel-buffering", "no");
+  headers.set("x-louder-ai", "openai-responses");
+  headers.set("x-louder-client-request-id", clientRequestId);
+  return new Response(upstream.body, {
+    status: 200,
+    headers,
+  });
+}
+
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const incoming = new URL(request.url);
+
+    if (isAiRoute(incoming.pathname)) {
+      return handleAi(request, env);
+    }
 
     // Only selected static sections are served from GitHub Pages.
     // Everything else keeps going to the existing Louder origin.
