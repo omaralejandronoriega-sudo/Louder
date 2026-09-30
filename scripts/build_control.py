@@ -170,6 +170,19 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .pending{{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}}
 .pending input{{width:20px;height:20px;accent-color:var(--accent)}}
 .pending strong{{display:block;font-size:13px}} .pending span{{display:block;color:var(--muted);font-size:11px;margin-top:2px}}
+.focus-card{{background:linear-gradient(135deg,#171919,#101212);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}}
+.focus-card .focus-top{{display:flex;justify-content:space-between;gap:12px;align-items:start}}
+.focus-card h3{{font-size:22px;letter-spacing:-.04em;margin:6px 0}}
+.focus-card p{{color:var(--muted);font-size:13px;line-height:1.5;margin:6px 0 14px}}
+.task-status{{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}}
+.task-status.in_progress{{color:var(--warn);border-color:rgba(255,209,102,.55)}}
+.task-status.blocked{{color:var(--danger);border-color:rgba(255,104,104,.55)}}
+.task-status.done{{color:var(--ok);border-color:rgba(112,224,155,.55)}}
+.work-steps{{counter-reset:work;display:grid;gap:8px;margin:14px 0 18px}}
+.work-step{{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;padding:11px;border:1px solid var(--line);border-radius:12px}}
+.work-step::before{{counter-increment:work;content:counter(work);width:28px;height:28px;border-radius:9px;background:var(--accent);color:#000;display:grid;place-items:center;font-weight:900;font-size:12px}}
+.task-actions{{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}}
+.task-context{{background:#0d0f0f;border:1px solid var(--line);border-radius:14px;padding:13px;color:var(--muted);font-size:12px;line-height:1.55}}
 .empty{{border:1px dashed var(--line);border-radius:16px;padding:24px;color:var(--muted);text-align:center}}
 .panel{{display:none}} .panel.active{{display:block}}
 .bottom{{position:fixed;z-index:30;bottom:0;left:0;right:0;background:rgba(12,13,13,.96);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));display:flex;justify-content:center}}
@@ -232,6 +245,10 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
   </div>
   <div class="quick" id="quickMetrics"></div>
   <section class="section">
+   <div class="section-head"><div><h2>Trabajar ahora</h2><p>Un pendiente a la vez. Al terminar, aparece el siguiente.</p></div></div>
+   <div id="focusTask"></div>
+  </section>
+  <section class="section">
    <div class="section-head"><div><h2>Prioridad ahora</h2><p>Calculada por criticidad, pendientes y alertas.</p></div></div>
    <div class="priority-list" id="priorityList"></div>
   </section>
@@ -251,7 +268,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </section>
 
  <section class="panel" data-panel="pending">
-  <div class="hero"><div class="eyebrow">Checklist global</div><h1>Pendientes.</h1><p>Marca tareas desde el teléfono; los cambios quedan guardados en este dispositivo.</p></div>
+  <div class="hero"><div class="eyebrow">Modo de trabajo</div><h1>Pendientes.</h1><p>No solo los recuerda: abre cualquiera para trabajarlo, registrar avances, llevar el contexto a ChatGPT y cerrarlo cuando esté validado.</p></div>
   <div class="pending-list" id="pendingList"></div>
  </section>
 
@@ -311,19 +328,57 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
  </div>
 </dialog>
 
+<dialog id="taskDialog">
+ <div class="modal-head">
+  <div><div class="area" id="taskArea"></div><h2 id="taskTitle"></h2></div>
+  <button class="close" id="taskClose" aria-label="Cerrar" type="button">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="inline"><span class="task-status" id="taskState"></span><span class="progress-mini" id="taskProjectProgress"></span></div>
+  <p id="taskSummary" style="color:var(--muted);line-height:1.5"></p>
+  <div class="task-context" id="taskContext"></div>
+  <h3>Cómo lo vamos a sacar</h3>
+  <div class="work-steps">
+   <div class="work-step"><div><strong>Verificar estado real</strong><br><span class="note">Revisar qué existe ahora antes de tocar nada.</span></div></div>
+   <div class="work-step"><div><strong>Ejecutar</strong><br><span class="note">Hacer el cambio con las herramientas disponibles, no solo describirlo.</span></div></div>
+   <div class="work-step"><div><strong>Validar</strong><br><span class="note">Comprobar que el resultado funciona y no rompió otra parte de Louder.</span></div></div>
+   <div class="work-step"><div><strong>Cerrar y seguir</strong><br><span class="note">Registrar resultado y pasar automáticamente al siguiente pendiente.</span></div></div>
+  </div>
+  <div class="field"><label for="taskNote">Notas / bloqueo de este pendiente</label><textarea id="taskNote" placeholder="Qué encontramos, qué falta, credenciales requeridas, decisión tomada…"></textarea></div>
+  <div class="task-actions">
+   <button class="btn primary" id="taskStart" type="button">Empezar</button>
+   <button class="btn" id="taskChat" type="button">Copiar + abrir ChatGPT</button>
+   <button class="btn" id="taskShare" type="button">Compartir contexto</button>
+   <a class="btn" id="taskGithub" target="_blank" rel="noopener" hidden>GitHub</a>
+  </div>
+  <div class="task-actions">
+   <button class="btn" id="taskBlock" type="button">Marcar bloqueado</button>
+   <button class="btn primary" id="taskDoneNext" type="button">Hecho → siguiente</button>
+  </div>
+  <p class="note">La app prepara el contexto completo para que ChatGPT trabaje el pendiente de principio a fin. El estado, notas y avances quedan guardados en este dispositivo.</p>
+ </div>
+</dialog>
+
 <script id="seed-data" type="application/json">__SEED_DATA__</script>
 <script>
 const seed=JSON.parse(document.getElementById('seed-data').textContent);
 const STORE='louder-control-state-v1';
 const state=JSON.parse(localStorage.getItem(STORE)||'null')||{{tasks:{{}},notes:{{}},chats:{{}},reminders:[],notified:{{}},activity:{{}}}};
+state.taskStatus=state.taskStatus||{{}};
+state.taskNotes=state.taskNotes||{{}};
+state.taskStarted=state.taskStarted||{{}};
 let live={{}};
 let currentProject=null;
+let currentTask=null;
 let deferredInstall=null;
 const $=(q,r=document)=>r.querySelector(q);
 const $$=(q,r=document)=>[...r.querySelectorAll(q)];
 
 function save(){{localStorage.setItem(STORE,JSON.stringify(state));}}
 function taskDone(t){{return Object.prototype.hasOwnProperty.call(state.tasks,t.id)?!!state.tasks[t.id]:!!t.done;}}
+function taskStatus(t){{if(taskDone(t))return 'done';return state.taskStatus[t.id]||'pending';}}
+function taskStatusLabel(s){{return s==='in_progress'?'En curso':s==='blocked'?'Bloqueado':s==='done'?'Hecho':'Pendiente';}}
+function findTask(p,id){{return p?.tasks?.find(t=>t.id===id);}}
 function projectProgress(p){{
  const total=p.tasks.length||1,done=p.tasks.filter(taskDone).length;
  return Math.round(done/total*100);
@@ -382,6 +437,26 @@ function renderMetrics(){{
  <div class="metric"><strong>${m.pending}</strong><span>tareas pendientes</span></div>
  <div class="metric done"><strong>${m.done}</strong><span>tareas cerradas</span></div>`;
 }}
+function nextWorkItem(){{
+ const rows=[];
+ seed.projects.forEach(p=>p.tasks.forEach(t=>{{if(!taskDone(t))rows.push({{p,t,status:taskStatus(t)}});}}));
+ rows.sort((a,b)=>{{
+  const sa=(a.status==='in_progress'?1000:a.status==='blocked'?-200:0)+priorityScore(a.p);
+  const sb=(b.status==='in_progress'?1000:b.status==='blocked'?-200:0)+priorityScore(b.p);
+  return sb-sa;
+ }});
+ return rows[0]||null;
+}}
+function renderFocus(){{
+ const item=nextWorkItem(),el=$('#focusTask');
+ if(!item){{el.innerHTML='<div class="empty">Todo cerrado. No hay pendientes activos.</div>';return;}}
+ const {{p,t,status}}=item;
+ el.innerHTML=`<article class="focus-card">
+  <div class="focus-top"><div><div class="area">${p.area} · ${p.name}</div><h3>${t.text}</h3></div><span class="task-status ${status}">${taskStatusLabel(status)}</span></div>
+  <p>${p.next}</p>
+  <div class="inline"><button class="btn primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar ahora</button><span class="progress-mini">${projectProgress(p)}% del proyecto</span></div>
+ </article>`;
+}}
 function renderPriority(){{
  const ps=seed.projects.map(mergedProject).sort((a,b)=>priorityScore(b)-priorityScore(a)).slice(0,4);
  $('#priorityList').innerHTML=ps.map((p,i)=>`<button class="priority-card" data-open="${p.id}" type="button" style="text-align:left;color:inherit;width:100%">
@@ -412,9 +487,13 @@ function renderProjects(){{
 }}
 function renderPending(){{
  const rows=[];
- seed.projects.forEach(p=>p.tasks.forEach(t=>{{if(!taskDone(t))rows.push({{p,t}});}}));
- rows.sort((a,b)=>priorityScore(b.p)-priorityScore(a.p));
- $('#pendingList').innerHTML=rows.map(({p,t})=>`<label class="pending"><input type="checkbox" data-task="${t.id}"><span><strong>${t.text}</strong><span>${p.name} · ${p.area}</span></span><button class="btn small" data-open="${p.id}" type="button">Ver</button></label>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
+ seed.projects.forEach(p=>p.tasks.forEach(t=>{{if(!taskDone(t))rows.push({{p,t,status:taskStatus(t)}});}}));
+ rows.sort((a,b)=>{{
+  const sa=(a.status==='in_progress'?1000:a.status==='blocked'?-200:0)+priorityScore(a.p);
+  const sb=(b.status==='in_progress'?1000:b.status==='blocked'?-200:0)+priorityScore(b.p);
+  return sb-sa;
+ }});
+ $('#pendingList').innerHTML=rows.map(({{p,t,status}})=>`<article class="pending"><input type="checkbox" data-task="${t.id}" aria-label="Marcar hecho"><span><strong>${t.text}</strong><span>${p.name} · ${p.area} · ${taskStatusLabel(status)}</span></span><button class="btn small primary" data-work-project="${p.id}" data-work-task="${t.id}" type="button">Trabajar</button></article>`).join('')||'<div class="empty">No quedan tareas pendientes.</div>';
 }}
 function renderReminderProjectOptions(){{
  $('#reminderProject').innerHTML='<option value="">General</option>'+seed.projects.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
@@ -436,7 +515,7 @@ function renderActivity(){{
  }}).join('');
  $('#activityList').innerHTML=rows;
 }}
-function renderAll(){{renderMetrics();renderPriority();renderAlerts();renderProjects();renderPending();renderReminders();renderActivity();bindOpeners();}}
+function renderAll(){{renderMetrics();renderFocus();renderPriority();renderAlerts();renderProjects();renderPending();renderReminders();renderActivity();bindOpeners();}}
 
 function bindOpeners(){{$('[data-open]')}}
 function attachOpeners(){{$$('[data-open]').forEach(el=>{{if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('click',e=>{{if(e.target.matches('a,input'))return;openProject(el.dataset.open);}});}});}}
@@ -463,11 +542,76 @@ $('#saveProject').addEventListener('click',()=>{{
  save();$('#projectDialog').close();renderAll();
 }});
 
+
+function taskPrompt(p,t){{
+ return `Trabajemos este pendiente de Louder de principio a fin.
+
+PROYECTO: ${p.name}
+ÁREA: ${p.area}
+PENDIENTE: ${t.text}
+
+CONTEXTO DEL PROYECTO:
+${p.summary}
+
+SIGUIENTE OBJETIVO GENERAL:
+${p.next}
+
+FUENTE / INFRAESTRUCTURA:
+${p.source}${p.repo?' · GitHub: '+p.repo:''}
+
+INSTRUCCIÓN:
+No te limites a recordarme qué falta ni a darme una lista de pasos. Primero verifica el estado real usando las herramientas conectadas que correspondan. Después ejecuta directamente todo lo que puedas, valida el resultado y corrige cualquier fallo que aparezca. Si una acción necesita una aprobación, credencial o intervención mía que no puedas sustituir, detente únicamente en ese punto y dime exactamente qué debo hacer. Cuando quede resuelto, resume qué cambió, cómo se validó y qué pendiente sigue.`;
+}}
+function openTask(projectId,taskId){{
+ const p=projectById(projectId),t=findTask(p,taskId);if(!p||!t)return;
+ currentTask={{p,t}};
+ $('#taskArea').textContent=p.area+' · '+p.name;
+ $('#taskTitle').textContent=t.text;
+ const s=taskStatus(t),badge=$('#taskState');badge.textContent=taskStatusLabel(s);badge.className='task-status '+s;
+ $('#taskProjectProgress').textContent=`${projectProgress(p)}% del proyecto`;
+ $('#taskSummary').textContent=p.summary;
+ $('#taskContext').innerHTML=`<strong>Siguiente objetivo:</strong> ${p.next}<br><strong>Origen:</strong> ${p.source}${p.chat_title?'<br><strong>Chat relacionado:</strong> '+p.chat_title:''}`;
+ $('#taskNote').value=state.taskNotes[t.id]||'';
+ $('#taskStart').textContent=s==='in_progress'?'Continuar':'Empezar';
+ const gh=$('#taskGithub');if(p.repo){{gh.hidden=false;gh.href='https://github.com/'+p.repo+'/actions';}}else{{gh.hidden=true;gh.removeAttribute('href');}}
+ $('#taskDialog').showModal();
+}}
+function persistTaskNote(){{if(currentTask){{state.taskNotes[currentTask.t.id]=$('#taskNote').value.trim();save();}}}}
+async function copyTaskContext(openChat){{
+ if(!currentTask)return;
+ persistTaskNote();
+ const {{p,t}}=currentTask,prompt=taskPrompt(p,t);
+ try{{await navigator.clipboard.writeText(prompt);}}catch(_){{}}
+ if(openChat)window.open(state.chats[p.id]||'https://chatgpt.com/','_blank','noopener');
+}}
+$('#taskClose').addEventListener('click',()=>{{persistTaskNote();$('#taskDialog').close();}});
+$('#taskStart').addEventListener('click',()=>{{
+ if(!currentTask)return;const {{t}}=currentTask;
+ state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();persistTaskNote();save();renderAll();openTask(currentTask.p.id,t.id);
+}});
+$('#taskBlock').addEventListener('click',()=>{{
+ if(!currentTask)return;const {{t}}=currentTask;
+ state.taskStatus[t.id]='blocked';persistTaskNote();save();renderAll();openTask(currentTask.p.id,t.id);
+}});
+$('#taskChat').addEventListener('click',()=>copyTaskContext(true));
+$('#taskShare').addEventListener('click',async()=>{{
+ if(!currentTask)return;persistTaskNote();const prompt=taskPrompt(currentTask.p,currentTask.t);
+ if(navigator.share){{try{{await navigator.share({{title:'Pendiente Louder',text:prompt}});return;}}catch(_){{}}}}
+ try{{await navigator.clipboard.writeText(prompt);alert('Contexto copiado.');}}catch(_){{alert('No se pudo copiar automáticamente.');}}
+}});
+$('#taskDoneNext').addEventListener('click',()=>{{
+ if(!currentTask)return;const {{t}}=currentTask;
+ state.tasks[t.id]=true;state.taskStatus[t.id]='done';persistTaskNote();save();$('#taskDialog').close();renderAll();
+ const n=nextWorkItem();if(n)openTask(n.p.id,n.t.id);
+}});
+
 document.addEventListener('change',e=>{{
  const box=e.target.closest?.('[data-task]');
  if(box){{state.tasks[box.dataset.task]=box.checked;save();renderAll();}}
 }});
 document.addEventListener('click',e=>{{
+ const work=e.target.closest?.('[data-work-task]');
+ if(work){{openTask(work.dataset.workProject,work.dataset.workTask);return;}}
  const del=e.target.closest?.('[data-reminder-delete]');
  if(del){{state.reminders=state.reminders.filter(r=>r.id!==del.dataset.reminderDelete);save();renderReminders();}}
 }});
