@@ -460,7 +460,7 @@ let currentProject=null;
 let currentTask=null;
 let deferredInstall=null;
 const $=(q,r=document)=>r.querySelector(q);
-const $=(q,r=document)=>[...r.querySelectorAll(q)];
+const $all=(q,r=document)=>[...r.querySelectorAll(q)];
 function escapeHtml(v){{return String(v??'').replace(/[&<>"']/g,ch=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}}[ch]));}}
 
 function save(){{localStorage.setItem(STORE,JSON.stringify(state));}}
@@ -943,7 +943,7 @@ function renderActivity(){
 function renderAll(){renderMetrics();renderFocus();renderPriority();renderAlerts();renderProjects();renderPending();renderReminders();renderActivity();renderLivePanels();bindOpeners();}
 
 function bindOpeners(){{$('[data-open]')}}
-function attachOpeners(){{$$('[data-open]').forEach(el=>{{if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('click',e=>{{if(e.target.matches('a,input'))return;openProject(el.dataset.open);}});}});}}
+function attachOpeners(){{$all('[data-open]').forEach(el=>{{if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('click',e=>{{if(e.target.matches('a,input'))return;openProject(el.dataset.open);}});}});}}
 const _renderAll=renderAll;
 renderAll=function(){{_renderAll();attachOpeners();}};
 
@@ -961,7 +961,7 @@ function openProject(id){{
 $('#modalClose').addEventListener('click',()=>$('#projectDialog').close());
 $('#saveProject').addEventListener('click',()=>{{
  if(!currentProject)return;
- $$('[data-modal-task]').forEach(x=>state.tasks[x.dataset.modalTask]=x.checked);
+ $all('[data-modal-task]').forEach(x=>state.tasks[x.dataset.modalTask]=x.checked);
  state.notes[currentProject.id]=$('#modalNote').value.trim();
  state.chats[currentProject.id]=$('#modalChat').value.trim();
  save();$('#projectDialog').close();renderAll();
@@ -1049,11 +1049,11 @@ document.addEventListener('click',e=>{
 $('#projectSearch').addEventListener('input',renderProjects);$('#projectFilter').addEventListener('change',renderProjects);
 
 function goPanel(name){
- $$('[data-nav]').forEach(x=>x.classList.toggle('active',x.dataset.nav===name));
- $$('[data-panel]').forEach(p=>p.classList.toggle('active',p.dataset.panel===name));
+ $all('[data-nav]').forEach(x=>x.classList.toggle('active',x.dataset.nav===name));
+ $all('[data-panel]').forEach(p=>p.classList.toggle('active',p.dataset.panel===name));
  window.scrollTo({top:0,behavior:'smooth'});
 }
-$$('[data-nav]').forEach(btn=>btn.addEventListener('click',()=>goPanel(btn.dataset.nav)));
+$all('[data-nav]').forEach(btn=>btn.addEventListener('click',()=>goPanel(btn.dataset.nav)));
 $('#reminderForm').addEventListener('submit',e=>{{
  e.preventDefault();
  const text=$('#reminderText').value.trim(),when=$('#reminderWhen').value,project=$('#reminderProject').value;
