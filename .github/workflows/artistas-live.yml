@@ -3,9 +3,6 @@ name: Louder Artistas Live
 on:
   schedule:
     - cron: "7,27,47 * * * *"
-  workflow_run:
-    workflows: ["Publish Louder Static Sections"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -19,7 +16,6 @@ concurrency:
 
 jobs:
   sync-build-deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -50,6 +46,24 @@ jobs:
           python scripts/build_artists.py
           python scripts/build_radar_2026.py
           python scripts/build_control.py
+
+      - name: Validate Louder Control PWA
+        shell: bash
+        run: |
+          test -s docs/control/index.html
+          test -s docs/artistas/_control/index.html
+          test -s docs/control/sw.js
+          test -s docs/control/manifest.webmanifest
+          python -m json.tool docs/control/manifest.webmanifest >/dev/null
+          node --check docs/control/sw.js
+          node - <<'NODE'
+          const fs=require('fs');
+          const html=fs.readFileSync('docs/control/index.html','utf8');
+          const scripts=[...html.matchAll(/<script(?![^>]*application\/json)[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]);
+          if(!scripts.length) throw new Error('No app JavaScript found');
+          fs.writeFileSync('/tmp/louder-control.js',scripts.join('\n'));
+          NODE
+          node --check /tmp/louder-control.js
 
       - uses: actions/configure-pages@v5
 
