@@ -314,7 +314,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
 <script>
 const seed=JSON.parse(document.getElementById('seed-data').textContent);
 const STORE='louder-control-state-v1';
-const state=JSON.parse(localStorage.getItem(STORE)||'{"tasks":{},"notes":{},"chats":{},"reminders":[],"notified":{},"activity":{}}');
+const state=JSON.parse(localStorage.getItem(STORE)||'null')||{{tasks:{{}},notes:{{}},chats:{{}},reminders:[],notified:{{}},activity:{{}}}};
 let live={{}};
 let currentProject=null;
 let deferredInstall=null;
