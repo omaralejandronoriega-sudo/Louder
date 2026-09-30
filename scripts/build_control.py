@@ -60,7 +60,7 @@ def main() -> None:
 </svg>"""
     (OUT / "icon.svg").write_text(icon, encoding="utf-8")
 
-    sw = """const CACHE='louder-control-v1';
+    sw = """const CACHE='louder-control-v3';
 const CORE=['./','./index.html','./data.json','./manifest.webmanifest','./icon.svg','./logo_louder.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.filter(Boolean))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -852,55 +852,44 @@ function openTask(projectId,taskId){
  $('#taskDialog').showModal();
 }
 function persistTaskNote(){{if(currentTask){{state.taskNotes[currentTask.t.id]=$('#taskNote').value.trim();save();}}}}
-async function copyTaskContext(openChat){{
+async function copyTaskContext(openChat){
  if(!currentTask)return;
  persistTaskNote();
- const {{p,t}}=currentTask,prompt=taskPrompt(p,t);
- try{{await navigator.clipboard.writeText(prompt);}}catch(_){{}}
+ const {p,t}=currentTask,prompt=taskPrompt(p,t);
+ if(!taskDone(t)){state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();}
+ try{await navigator.clipboard.writeText(prompt);}catch(_){}
+ renderAll();
  if(openChat)window.open(state.chats[p.id]||'https://chatgpt.com/','_blank','noopener');
-}}
-$('#taskClose').addEventListener('click',()=>{{persistTaskNote();$('#taskDialog').close();}});
+}
+$('#taskClose').addEventListener('click',()=>{persistTaskNote();$('#taskDialog').close();});
 $('#githubClose').addEventListener('click',()=>$('#githubDialog').close());
-$('#githubConnectBtn').addEventListener('click',()=>{{pendingExecutionAfterConnect=false;$('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();}});
+$('#githubConnectBtn').addEventListener('click',()=>{pendingExecutionAfterConnect=false;$('#githubToken').value='';$('#githubVerifyState').textContent='Sin verificar.';$('#githubVerifyState').className='exec-state';$('#githubDialog').showModal();});
 $('#githubVerify').addEventListener('click',connectGithub);
-$('#taskStart').addEventListener('click',()=>{{
- if(!currentTask)return;const {{t}}=currentTask;
- state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();persistTaskNote();save();renderAll();openTask(currentTask.p.id,t.id);
-}});
-$('#taskBlock').addEventListener('click',()=>{{
- if(!currentTask)return;const {{t}}=currentTask;
- state.taskStatus[t.id]='blocked';persistTaskNote();save();renderAll();openTask(currentTask.p.id,t.id);
-}});
-$('#taskChat').addEventListener('click',()=>copyTaskContext(true));
-$('#taskShare').addEventListener('click',async()=>{{
- if(!currentTask)return;persistTaskNote();const prompt=taskPrompt(currentTask.p,currentTask.t);
- if(navigator.share){{try{{await navigator.share({{title:'Pendiente Louder',text:prompt}});return;}}catch(_){{}}}}
- try{{await navigator.clipboard.writeText(prompt);alert('Contexto copiado.');}}catch(_){{alert('No se pudo copiar automáticamente.');}}
-}});
-$('#taskDoneNext').addEventListener('click',()=>{{
- if(!currentTask)return;const {{t}}=currentTask;
+$('#taskBlock').addEventListener('click',()=>{
+ if(!currentTask)return;const {t}=currentTask;
+ state.taskStatus[t.id]='blocked';persistTaskNote();save();$('#taskDialog').close();renderAll();
+});
+$('#taskDoneNext').addEventListener('click',()=>{
+ if(!currentTask)return;const {t}=currentTask;
  state.tasks[t.id]=true;state.taskStatus[t.id]='done';persistTaskNote();save();$('#taskDialog').close();renderAll();
- const n=nextWorkItem();if(n)openTask(n.p.id,n.t.id);
-}});
-
-document.addEventListener('change',e=>{{
- const box=e.target.closest?.('[data-task]');
- if(box){{state.tasks[box.dataset.task]=box.checked;save();renderAll();}}
-}});
-document.addEventListener('click',e=>{{
+ const n=nextWorkItem();if(n)setTimeout(()=>openTask(n.p.id,n.t.id),180);
+});
+document.addEventListener('click',e=>{
  const work=e.target.closest?.('[data-work-task]');
- if(work){{openTask(work.dataset.workProject,work.dataset.workTask);return;}}
+ if(work){openTask(work.dataset.workProject,work.dataset.workTask);return;}
+ const jump=e.target.closest?.('[data-nav-jump]');
+ if(jump){goPanel(jump.dataset.navJump);return;}
  const del=e.target.closest?.('[data-reminder-delete]');
- if(del){{state.reminders=state.reminders.filter(r=>r.id!==del.dataset.reminderDelete);save();renderReminders();}}
-}});
+ if(del){state.reminders=state.reminders.filter(r=>r.id!==del.dataset.reminderDelete);save();renderReminders();}
+});
 $('#projectSearch').addEventListener('input',renderProjects);$('#projectFilter').addEventListener('change',renderProjects);
 
-$$('[data-nav]').forEach(btn=>btn.addEventListener('click',()=>{{
- $$('[data-nav]').forEach(x=>x.classList.toggle('active',x===btn));
- $$('[data-panel]').forEach(p=>p.classList.toggle('active',p.dataset.panel===btn.dataset.nav));
- window.scrollTo({{top:0,behavior:'smooth'}});
-}}));
-
+function goPanel(name){
+ $$('[data-nav]').forEach(x=>x.classList.toggle('active',x.dataset.nav===name));
+ $$('[data-panel]').forEach(p=>p.classList.toggle('active',p.dataset.panel===name));
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('[data-nav]').forEach(btn=>btn.addEventListener('click',()=>goPanel(btn.dataset.nav)));
 $('#reminderForm').addEventListener('submit',e=>{{
  e.preventDefault();
  const text=$('#reminderText').value.trim(),when=$('#reminderWhen').value,project=$('#reminderProject').value;
@@ -932,21 +921,24 @@ function checkReminders(){{
 }}
 setInterval(checkReminders,60000);
 
-async function fetchLive(){{
- const pill=$('#livePill');pill.querySelector('span').textContent='Actualizando';
- let ok=0;
- await Promise.all(seed.repositories.map(async r=>{{
-  try{{
-   const res=await fetch(`https://api.github.com/repos/${r.repo}/actions/runs?per_page=1`,{{headers:{{Accept:'application/vnd.github+json'}}}});
+async function fetchLive(){
+ const pill=$('#livePill');pill.querySelector('span').textContent='Actualizando…';
+ let ok=0;const discovered=[];
+ await Promise.all(seed.repositories.map(async r=>{
+  try{
+   const res=await fetch(`https://api.github.com/repos/${r.repo}/actions/runs?per_page=4`,{headers:githubHeaders()});
    if(!res.ok)throw new Error(res.status);
-   const j=await res.json();const x=j.workflow_runs?.[0];
-   if(x){{live[r.repo]={{name:x.name,status:x.status,conclusion:x.conclusion,created_at:x.created_at,updated_at:x.updated_at,html_url:x.html_url,run_number:x.run_number}};ok++;}}
-  }}catch(err){{console.warn('GitHub',r.repo,err);}}
- }}));
- state.activity={{...live,checked:new Date().toISOString()}};save();
- pill.querySelector('span').textContent=ok?`${ok}/${seed.repositories.length} en vivo`:'Sin conexión';
+   const j=await res.json(),runs=j.workflow_runs||[],x=runs[0];
+   if(x){live[r.repo]={...x,repo:r.repo,url:x.html_url};ok++;}
+   runs.filter(x=>x.status==='queued'||x.status==='pending'||x.status==='in_progress').forEach(x=>discovered.push({...x,repo:r.repo,url:x.html_url}));
+  }catch(err){console.warn('GitHub',r.repo,err);}
+ }));
+ activeRuns=await Promise.all(discovered.slice(0,6).map(async run=>({...run,...await fetchRunDetails(run.repo,run)})));
+ state.activity={...live,checked:new Date().toISOString()};save();
+ const activeCount=activeRuns.length+Object.values(state.executions).filter(x=>x&&(x.status==='queued'||x.status==='pending'||x.status==='in_progress')).length;
+ pill.querySelector('span').textContent=activeCount?`${activeCount} en ejecución`:(ok?'Todo al día':'Sin conexión');
  renderAll();
-}}
+}
 $('#refreshLive').addEventListener('click',fetchLive);
 
 $('#exportBtn').addEventListener('click',()=>{{
@@ -964,6 +956,9 @@ if(state.activity&&state.activity.checked){{
  live={{...state.activity}};delete live.checked;
 }}
 renderReminderProjectOptions();renderAll();checkReminders();fetchLive();refreshPendingExecutions();
+setInterval(()=>{if(document.visibilityState==='visible')refreshPendingExecutions();},10000);
+setInterval(()=>{if(document.visibilityState==='visible'&&githubConnected())fetchLive();},30000);
+setInterval(()=>{if(document.visibilityState==='visible'&&!githubConnected())fetchLive();},360000);
 </script>
 </body>
 </html>"""
