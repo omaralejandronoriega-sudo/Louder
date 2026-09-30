@@ -92,9 +92,9 @@ jobs:
           node - <<'NODE'
           const fs=require('fs');
           const html=fs.readFileSync('docs/control/index.html','utf8');
-          const scripts=[...html.matchAll(/<script(?![^>]*application\\/json)[^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]);
+          const scripts=[...html.matchAll(/<script(?![^>]*application\/json)[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]);
           if(!scripts.length) throw new Error('No app JavaScript found');
-          fs.writeFileSync('/tmp/louder-control.js',scripts.join('\\n'));
+          fs.writeFileSync('/tmp/louder-control.js',scripts.join('\n'));
           NODE
           node --check /tmp/louder-control.js
           grep -q "Louder Control" docs/control/index.html
