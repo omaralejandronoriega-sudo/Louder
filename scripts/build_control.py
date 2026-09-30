@@ -60,7 +60,7 @@ def main() -> None:
 </svg>"""
     (OUT / "icon.svg").write_text(icon, encoding="utf-8")
 
-    sw = """const CACHE='louder-control-v4';
+    sw = """const CACHE='louder-control-v5';
 const CORE=['./','./index.html','./data.json','./manifest.webmanifest','./icon.svg','./logo_louder.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.filter(Boolean))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -188,6 +188,23 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .work-step::before{{counter-increment:work;content:counter(work);width:28px;height:28px;border-radius:9px;background:var(--accent);color:#000;display:grid;place-items:center;font-weight:900;font-size:12px}}
 .task-actions{{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}}
 .task-context{{background:#0d0f0f;border:1px solid var(--line);border-radius:14px;padding:13px;color:var(--muted);font-size:12px;line-height:1.55}}
+.ai-card{{margin:16px 0;background:#0c0e0e;border:1px solid rgba(202,255,0,.34);border-radius:18px;overflow:hidden}}
+.ai-head{{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px;border-bottom:1px solid var(--line)}}
+.ai-head strong{{display:block;font-size:15px}} .ai-head span{{display:block;color:var(--muted);font-size:11px;margin-top:2px}}
+.ai-badge{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;border:1px solid rgba(202,255,0,.35);border-radius:999px;padding:6px 8px;color:var(--accent);white-space:nowrap}}
+.ai-messages{{display:grid;gap:9px;max-height:360px;overflow:auto;padding:14px}}
+.ai-msg{{max-width:94%;border-radius:14px;padding:11px 12px;font-size:13px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}}
+.ai-msg.user{{justify-self:end;background:var(--accent);color:#080908}}
+.ai-msg.assistant{{justify-self:start;background:var(--panel2);border:1px solid var(--line);color:var(--text)}}
+.ai-empty{{padding:14px;color:var(--muted);font-size:12px;line-height:1.5}}
+.ai-status{{padding:0 14px 10px;color:var(--muted);font-size:11px}}
+.ai-status.running{{color:var(--warn)}} .ai-status.error{{color:var(--danger)}} .ai-status.ok{{color:var(--ok)}}
+.ai-composer{{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px 14px 14px;border-top:1px solid var(--line)}}
+.ai-composer textarea{{min-height:46px;max-height:120px;resize:vertical;background:#090b0b;border:1px solid var(--line);color:var(--text);border-radius:12px;padding:11px}}
+.ai-composer .btn{{align-self:end}}
+.ai-start{{padding:0 14px 14px}}
+.ai-streaming::after{{content:"▋";display:inline-block;margin-left:2px;animation:blink 1s infinite}}
+@keyframes blink{{50%{{opacity:0}}}}
 .automation-card{{margin:16px 0;background:#0b0d0d;border:1px solid var(--line);border-radius:16px;padding:14px}}
 .automation-card.ready{{border-color:rgba(202,255,0,.42)}}
 .automation-card.public{{border-color:rgba(255,209,102,.55)}}
@@ -386,6 +403,16 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
   <div class="inline"><span class="task-status" id="taskState"></span><span class="progress-mini" id="taskProjectProgress"></span></div>
   <p id="taskSummary" style="color:var(--muted);line-height:1.5"></p>
   <div class="task-context" id="taskContext"></div>
+  <section class="ai-card" id="taskAi">
+   <div class="ai-head"><div><strong>Louder IA</strong><span>Resuelve el pendiente aquí mismo</span></div><div class="ai-badge" id="aiBadge">IA</div></div>
+   <div class="ai-messages" id="aiMessages"></div>
+   <div class="ai-status" id="aiStatus"></div>
+   <div class="ai-start" id="aiStart"><button class="btn primary" id="aiResolveBtn" type="button">✨ Resolver aquí con IA</button></div>
+   <div class="ai-composer" id="aiComposer" hidden>
+    <textarea id="aiInput" placeholder="Pídele que continúe, corrija, compare o profundice…"></textarea>
+    <button class="btn primary" id="aiSendBtn" type="button">Enviar</button>
+   </div>
+  </section>
   <div id="taskAutomation"></div>
   <div id="taskSimpleAction" class="task-actions"></div>
   <div class="field"><label for="taskNote">Notas de esta tarea</label><textarea id="taskNote" placeholder="Qué encontramos, qué falta o qué decisión tomamos…"></textarea></div>
@@ -423,15 +450,18 @@ state.taskStatus=state.taskStatus||{{}};
 state.taskNotes=state.taskNotes||{{}};
 state.taskStarted=state.taskStarted||{{}};
 state.executions=state.executions||{{}};
+state.aiThreads=state.aiThreads||{{}};
 let live={{}};
 let activeRuns=[];
 let githubToken=sessionStorage.getItem('louder-control-github-token')||'';
 let pendingExecutionAfterConnect=false;
+let pendingAiAfterConnect=false;
 let currentProject=null;
 let currentTask=null;
 let deferredInstall=null;
 const $=(q,r=document)=>r.querySelector(q);
-const $$=(q,r=document)=>[...r.querySelectorAll(q)];
+const $=(q,r=document)=>[...r.querySelectorAll(q)];
+function escapeHtml(v){{return String(v??'').replace(/[&<>"']/g,ch=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}}[ch]));}}
 
 function save(){{localStorage.setItem(STORE,JSON.stringify(state));}}
 function taskDone(t){{return Object.prototype.hasOwnProperty.call(state.tasks,t.id)?!!state.tasks[t.id]:!!t.done;}}
@@ -630,18 +660,119 @@ function renderTaskAutomation(p,t){
  </section>`;
  $('#taskExecute')?.addEventListener('click',()=>executeCurrentTask());
 }
-function renderTaskSimpleAction(p,t){
+function renderTaskSimpleAction(p,t){{
  const el=$('#taskSimpleAction');if(!el)return;
  const href=chatGPTTaskUrl(p,t).replace(/&/g,'&amp;').replace(/"/g,'&quot;');
- const label=t.action?'Resolver también con ChatGPT':'Resolver ahora con ChatGPT';
- const cls=t.action?'btn':'btn primary';
- el.innerHTML=`<a class="${cls}" id="taskChat" href="${href}" target="_blank" rel="noopener">${label}</a>`;
- $('#taskChat').addEventListener('click',()=>{
-  persistTaskNote();
-  if(!taskDone(t)){state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();renderAll();}
-  navigator.clipboard?.writeText(taskPrompt(p,t)).catch(()=>{});
- });
-}
+ el.innerHTML=`<a class="btn" href="${href}" target="_blank" rel="noopener">Abrir en ChatGPT aparte</a>`;
+}} 
+function aiThread(t){{
+ if(!state.aiThreads[t.id])state.aiThreads[t.id]={{messages:[],status:'idle',error:''}};
+ return state.aiThreads[t.id];
+}}
+function aiEndpoint(){{
+ return location.pathname.startsWith('/artistas/_control')?'/artistas/_control/api/ai':'/control/api/ai';
+}}
+function renderTaskAi(p,t){{
+ const thread=aiThread(t),box=$('#aiMessages'),status=$('#aiStatus'),start=$('#aiStart'),composer=$('#aiComposer');
+ if(!box)return;
+ box.innerHTML=thread.messages.length
+  ? thread.messages.map(m=>`<div class="ai-msg ${m.role==='user'?'user':'assistant'}">${escapeHtml(m.content)}</div>`).join('')
+  : '<div class="ai-empty">Toca “Resolver aquí con IA”. La respuesta aparecerá dentro de Louder Control y podrás seguir conversando sin salir de la app.</div>';
+ if(thread.streamingText)box.innerHTML+=`<div class="ai-msg assistant ai-streaming">${escapeHtml(thread.streamingText)}</div>`;
+ status.textContent=thread.status==='running'?'Analizando el pendiente…':(thread.error||'');
+ status.className='ai-status '+(thread.status==='running'?'running':(thread.error?'error':(thread.messages.length?'ok':'')));
+ start.hidden=thread.messages.length>0||thread.status==='running';
+ composer.hidden=thread.messages.length===0;
+ $('#aiResolveBtn')?.toggleAttribute('disabled',thread.status==='running');
+ $('#aiSendBtn')?.toggleAttribute('disabled',thread.status==='running');
+ if(thread.messages.length||thread.streamingText)requestAnimationFrame(()=>{{box.scrollTop=box.scrollHeight;}});
+}}
+function currentTaskPayload(p,t){{
+ return {{
+  project:p.name,
+  area:p.area,
+  title:t.text,
+  summary:p.summary,
+  objective:p.next,
+  notes:state.taskNotes[t.id]||''
+ }};
+}}
+function sseEvents(buffer){{
+ const parts=buffer.split(/\n\n/),rest=parts.pop()||'';
+ const events=[];
+ for(const part of parts){{
+  for(const line of part.split(/\n/)){{
+   if(!line.startsWith('data:'))continue;
+   const raw=line.slice(5).trim();if(!raw||raw==='[DONE]')continue;
+   try{{events.push(JSON.parse(raw));}}catch(_){{}}
+  }}
+ }}
+ return {{events,rest}};
+}}
+async function sendAiMessage(text='',initial=false){{
+ if(!currentTask)return;
+ const {{p,t}}=currentTask,thread=aiThread(t);
+ if(!githubConnected()){{
+  pendingAiAfterConnect=true;
+  $('#githubToken').value='';$('#githubVerifyState').textContent='Activa esta sesión para usar Louder IA.';$('#githubVerifyState').className='exec-state';
+  $('#githubDialog').showModal();return;
+ }}
+ const message=initial
+  ? 'Resuelve este pendiente ahora. Empieza por verificar el estado real y avanza todo lo posible.'
+  : String(text||$('#aiInput')?.value||'').trim();
+ if(!message||thread.status==='running')return;
+ const history=thread.messages.slice(-10);
+ thread.messages.push({{role:'user',content:message}});
+ thread.status='running';thread.error='';thread.streamingText='';
+ state.taskStatus[t.id]='in_progress';state.taskStarted[t.id]=state.taskStarted[t.id]||new Date().toISOString();save();
+ if($('#aiInput'))$('#aiInput').value='';
+ renderTaskAi(p,t);renderAll();
+ try{{
+  const res=await fetch(aiEndpoint(),{{
+   method:'POST',
+   headers:{{
+    'content-type':'application/json',
+    'x-louder-github-token':githubToken
+   }},
+   body:JSON.stringify({{task:currentTaskPayload(p,t),history,message}})
+  }});
+  if(!res.ok){{
+   let err={{}};try{{err=await res.json();}}catch(_){{}}
+   if(res.status===503&&err.error==='AI_NOT_CONFIGURED')throw new Error('Louder IA está lista en la app, pero falta activar la clave de OpenAI en el servidor.');
+   if(res.status===401)throw new Error('La sesión de GitHub ya no es válida. Activa la ejecución directa otra vez.');
+   throw new Error(err.message||`Error ${res.status}`);
+  }}
+  const reader=res.body.getReader(),decoder=new TextDecoder();let buf='',answer='';
+  while(true){{
+   const {{value,done}}=await reader.read();
+   if(done)break;
+   buf+=decoder.decode(value,{{stream:true}});
+   const parsed=sseEvents(buf);buf=parsed.rest;
+   for(const ev of parsed.events){{
+    if(ev.type==='response.output_text.delta'&&ev.delta){{
+     answer+=ev.delta;thread.streamingText=answer;renderTaskAi(p,t);
+    }}
+    if(ev.type==='response.failed'){{
+     throw new Error(ev.response?.error?.message||'La IA no pudo completar la respuesta.');
+    }}
+   }}
+  }}
+  thread.streamingText='';
+  if(answer.trim())thread.messages.push({{role:'assistant',content:answer.trim()}});
+  thread.status='done';thread.error='';
+  state.taskStatus[t.id]='review';save();
+  renderTaskAi(p,t);renderAll();
+  const badge=$('#taskState');if(badge){{badge.textContent=taskStatusLabel('review');badge.className='task-status review';}}
+ }}catch(err){{
+  thread.status='error';thread.error=err.message||'No se pudo usar Louder IA.';thread.streamingText='';save();renderTaskAi(p,t);
+ }}
+}}
+function bindAiControls(){{
+ $('#aiResolveBtn')?.addEventListener('click',()=>sendAiMessage('',true));
+ $('#aiSendBtn')?.addEventListener('click',()=>sendAiMessage());
+ $('#aiInput')?.addEventListener('keydown',e=>{{if(e.key==='Enter'&&!e.shiftKey){{e.preventDefault();sendAiMessage();}}}});
+}}
+
 function collectActionInputs(action){{
  const out={{}};
  for(const [name,d] of Object.entries(action?.inputs||{{}})){{
@@ -668,7 +799,8 @@ async function connectGithub(){{
   renderGithubConnection();
   if(currentTask)renderTaskAutomation(currentTask.p,currentTask.t);
   const resume=pendingExecutionAfterConnect;pendingExecutionAfterConnect=false;
-  setTimeout(()=>{{$('#githubDialog').close();if(resume)executeCurrentTask();}},650);
+  const resumeAi=pendingAiAfterConnect;pendingAiAfterConnect=false;
+  setTimeout(()=>{{$('#githubDialog').close();if(resume)executeCurrentTask();else if(resumeAi)sendAiMessage('',true);}},650);
  }}catch(err){{st.textContent='No se pudo conectar: '+err.message;st.className='exec-state failure';}}
 }}
 async function dispatchWorkflow(action,inputs,task){{
@@ -876,7 +1008,7 @@ function openTask(projectId,taskId){
  $('#taskSummary').textContent=t.action?'Esta tarea puede ejecutarse desde Louder Control.':'Esta tarea necesita análisis o trabajo asistido.';
  $('#taskContext').innerHTML=`<strong>Objetivo:</strong> ${p.next}<br><strong>Proyecto:</strong> ${p.name}`;
  $('#taskNote').value=state.taskNotes[t.id]||'';
- renderTaskAutomation(p,t);renderTaskSimpleAction(p,t);
+ renderTaskAutomation(p,t);renderTaskSimpleAction(p,t);renderTaskAi(p,t);bindAiControls();
  $('#taskDoneNext').textContent='✓ Resuelto · siguiente';
  $('#taskDialog').showModal();
 }
