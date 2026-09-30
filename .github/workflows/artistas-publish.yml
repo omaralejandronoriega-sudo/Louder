@@ -81,6 +81,24 @@ jobs:
           python scripts/build_radar_2026.py
           python scripts/build_control.py
 
+      - name: Validate Louder Control PWA
+        shell: bash
+        run: |
+          test -s docs/control/index.html
+          test -s docs/control/sw.js
+          test -s docs/control/manifest.webmanifest
+          python -m json.tool docs/control/manifest.webmanifest >/dev/null
+          node --check docs/control/sw.js
+          node - <<'NODE'
+          const fs=require('fs');
+          const html=fs.readFileSync('docs/control/index.html','utf8');
+          const scripts=[...html.matchAll(/<script(?![^>]*application\\/json)[^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]);
+          if(!scripts.length) throw new Error('No app JavaScript found');
+          fs.writeFileSync('/tmp/louder-control.js',scripts.join('\\n'));
+          NODE
+          node --check /tmp/louder-control.js
+          grep -q "Louder Control" docs/control/index.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
