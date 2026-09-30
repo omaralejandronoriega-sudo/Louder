@@ -167,9 +167,9 @@ h1{{font-size:clamp(42px,11vw,78px);letter-spacing:-.065em;line-height:.88;margi
 .project-actions{{margin-top:auto;padding-top:14px;display:flex;gap:8px;flex-wrap:wrap}}
 .source{{margin-top:10px;color:#777f7b;font-size:10px}}
 .pending-list,.activity-list,.reminder-list{{display:grid;gap:8px}}
-.pending{{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}}
-.pending input{{width:20px;height:20px;accent-color:var(--accent)}}
-.pending strong{{display:block;font-size:13px}} .pending span{{display:block;color:var(--muted);font-size:11px;margin-top:2px}}
+.pending{{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}}
+.pending strong{{display:block;font-size:14px;line-height:1.35}} .pending span{{display:block;color:var(--muted);font-size:11px;margin-top:4px}}
+.pending .task-status{{display:inline-flex;margin-top:7px}}
 .focus-card{{background:linear-gradient(135deg,#171919,#101212);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}}
 .focus-card .focus-top{{display:flex;justify-content:space-between;gap:12px;align-items:start}}
 .focus-card h3{{font-size:22px;letter-spacing:-.04em;margin:6px 0}}
@@ -534,7 +534,7 @@ function renderProjects(){{
   <div class="bar" aria-label="Avance ${p.progress}%"><i style="width:${p.progress}%"></i></div>
   <div class="prog"><span>${p.tasks.length-p.pending}/${p.tasks.length} tareas</span><strong>${p.progress}%</strong></div>
   <div class="next"><b>Siguiente</b><p>${p.next}</p></div>
-  <div class="project-actions"><button class="btn small primary" data-open="${p.id}" type="button">Abrir</button>${p.repo?`<a class="btn small" href="https://github.com/${p.repo}/actions" target="_blank" rel="noopener">GitHub</a>`:''}</div>
+  <div class="project-actions"><button class="btn small primary" data-open="${p.id}" type="button">Ver tareas</button>${p.repo?`<a class="btn small" href="https://github.com/${p.repo}/actions" target="_blank" rel="noopener">GitHub</a>`:''}</div>
   <div class="source">Fuente: ${p.source} · actualización ${fmtDate(p.updated)}</div>
  </article>`).join('')||'<div class="empty">No hay proyectos con ese filtro.</div>';
 }}
