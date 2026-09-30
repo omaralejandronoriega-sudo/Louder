@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "control.json"
 OUT = ROOT / "docs" / "control"
+ALIAS = ROOT / "docs" / "artistas" / "_control"
 LOGO = ROOT / "assets" / "logo_louder.png"
 
 
@@ -546,6 +547,14 @@ renderReminderProjectOptions();renderAll();checkReminders();fetchLive();
 </html>"""
     html_doc = html_doc.replace("{{", "{").replace("}}", "}").replace("__SEED_DATA__", seed)
     (OUT / "index.html").write_text(html_doc, encoding="utf-8")
+
+    # Mirror the PWA under /artistas/_control/ so it is served through the
+    # already-deployed Louder Cloudflare route for /artistas*.
+    if ALIAS.exists():
+        shutil.rmtree(ALIAS)
+    ALIAS.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(OUT, ALIAS)
+
     print(f"Louder Control built: {len(data.get('projects') or [])} projects")
 
 
