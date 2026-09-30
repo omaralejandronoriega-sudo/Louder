@@ -698,10 +698,10 @@ function currentTaskPayload(p,t){{
  }};
 }}
 function sseEvents(buffer){{
- const parts=buffer.split(/\n\n/),rest=parts.pop()||'';
+ const parts=buffer.split(/\\n\\n/),rest=parts.pop()||'';
  const events=[];
  for(const part of parts){{
-  for(const line of part.split(/\n/)){{
+  for(const line of part.split(/\\n/)){{
    if(!line.startsWith('data:'))continue;
    const raw=line.slice(5).trim();if(!raw||raw==='[DONE]')continue;
    try{{events.push(JSON.parse(raw));}}catch(_){{}}
