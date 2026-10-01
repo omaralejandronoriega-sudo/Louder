@@ -868,6 +868,49 @@ def main() -> int:
         encoding="utf-8",
     )
 
+    def home_item(a: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "name": a.get("name", ""),
+            "slug": a.get("slug", ""),
+            "plays": int(a.get("plays") or 0),
+            "first": a.get("first_played") or "",
+            "last": a.get("last_played") or "",
+            "image": preferred_image(a, galleries.get(a.get("slug", ""))),
+        }
+
+    eligible_home = [
+        a for a in artists
+        if re.match(r"^[A-Za-z]", str(a.get("name") or ""))
+    ]
+    recent_home = sorted(
+        eligible_home,
+        key=lambda a: history_date_key(a.get("last_played")),
+        reverse=True,
+    )[:12]
+    popular_home = sorted(
+        eligible_home,
+        key=lambda a: (int(a.get("plays") or 0), history_date_key(a.get("last_played"))),
+        reverse=True,
+    )[:18]
+    new_home = sorted(
+        eligible_home,
+        key=lambda a: history_date_key(a.get("first_played")),
+        reverse=True,
+    )[:12]
+    home_payload = {
+        "version": 1,
+        "total": len(artists),
+        "recent": [home_item(a) for a in recent_home],
+        "popular": [home_item(a) for a in popular_home],
+        "new": [home_item(a) for a in new_home],
+    }
+    (DOCS / "artists-home.js").write_text(
+        "window.LMX_ARTISTS_HOME=" +
+        json.dumps(home_payload, ensure_ascii=False, separators=(",", ":")) +
+        ";window.dispatchEvent(new Event('lmx:artists-home-ready'));\n",
+        encoding="utf-8",
+    )
+
     sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
         f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
     ]
