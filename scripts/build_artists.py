@@ -426,6 +426,39 @@ def album_art_key(artist: str, album: str) -> str:
     return norm(artist) + "|" + norm(album)
 
 
+def track_album_bucket(track: dict[str, Any]) -> tuple[str, str]:
+    """Return a stable album filter key/label; unknown/non-album placeholders go to Otras."""
+    raw = canonical_album(str(track.get("album") or "")).strip()
+    normalized = norm(raw)
+    other_labels = {
+        "", "album no identificado", "album desconocido", "unknown album",
+        "recien incorporada al historial", "sin album", "no album",
+        "single", "sencillo", "otros", "otras",
+    }
+    if normalized in other_labels:
+        return ("__other__", "Otras")
+    return (normalized or "__other__", raw or "Otras")
+
+
+def track_album_filters(tracks: list[dict[str, Any]]) -> list[tuple[str, str]]:
+    seen: set[str] = set()
+    albums: list[tuple[str, str]] = []
+    has_other = False
+    for track in tracks:
+        key, label = track_album_bucket(track)
+        if key == "__other__":
+            has_other = True
+            continue
+        if key in seen:
+            continue
+        seen.add(key)
+        albums.append((key, label))
+    albums.sort(key=lambda item: norm(item[1]))
+    if has_other:
+        albums.append(("__other__", "Otras"))
+    return albums
+
+
 def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
     tracks = artist.get("tracks") or []
     if not tracks:
@@ -434,6 +467,7 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
     out: list[str] = ['<div class="track-list" data-track-list>']
     for track in tracks:
         album = str(track.get("album") or "")
+        album_key, album_label = track_album_bucket(track)
         cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
         artwork = str(track.get("artwork") or cached.get("url") or "")
         cover = (
@@ -449,11 +483,12 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
  data-title="{esc(track.get("title"))}"
  data-first="{esc(track.get("first_played"))}"
  data-last="{esc(track.get("last_played"))}"
- data-plays="{int(track.get("plays") or 0)}">
+ data-plays="{int(track.get("plays") or 0)}"
+ data-album="{esc(album_key)}">
  <div class="track-cover">{cover}</div>
  <div class="track-main">
   <div class="track-title">{esc(track.get("title"))}</div>
-  <div class="track-album">{esc(track.get("album") or "Álbum no identificado")}</div>
+  <div class="track-album">{esc(album_label)}</div>
  </div>
  <div class="track-dates">
   <div><span>Primera</span><strong>{esc(track.get("first_played") or "—")}</strong></div>
@@ -720,12 +755,13 @@ def build_artist(
 <section class="section">
  <div class="section-title">
   <div><h2>Canciones en Louder</h2><p>{len(artist.get("tracks") or [])} canciones registradas</p></div>
-  <div class="sort">
-   <button class="button active" data-track-sort="plays">Más reproducidas</button>
-   <button class="button" data-track-sort="title">A–Z</button>
-   <button class="button" data-track-sort="first">Primera vez</button>
-   <button class="button" data-track-sort="last">Última vez</button>
-  </div>
+  <label class="album-filter">
+   <span>Álbum</span>
+   <select data-track-album-filter>
+    <option value="__all__">Todos los álbumes</option>
+    {"".join(f'<option value="{esc(key)}">{esc(label)}</option>' for key, label in track_album_filters(artist.get("tracks") or []))}
+   </select>
+  </label>
  </div>
  {tracks_html(artist, album_art)}
 </section>
@@ -1114,13 +1150,18 @@ def main() -> int:
     const buttons = nav.querySelector(".lmx-track-pagination-buttons");
 
     function render() {
-      const rows = Array.from(list.querySelectorAll("[data-track]"));
+      const allRows = Array.from(list.querySelectorAll("[data-track]"));
+      const section = list.closest(".section") || list.parentElement;
+      const albumFilter = section.querySelector("[data-track-album-filter]");
+      const selectedAlbum = albumFilter?.value || "__all__";
+      const rows = allRows.filter((row) => selectedAlbum === "__all__" || row.dataset.album === selectedAlbum);
       const pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
       page = Math.min(Math.max(1, page), pages);
       const start = (page - 1) * PER_PAGE;
       const end = Math.min(start + PER_PAGE, rows.length);
+      allRows.forEach((row) => { row.hidden = true; });
       rows.forEach((row, i) => { row.hidden = i < start || i >= end; });
-      info.textContent = `${start + 1}–${end} de ${rows.length} canciones`;
+      info.textContent = rows.length ? `${start + 1}–${end} de ${rows.length} canciones` : "0 canciones";
 
       const items = [];
       items.push(`<button class="lmx-track-page" data-page="${page - 1}" ${page === 1 ? "disabled" : ""} aria-label="Página anterior">←</button>`);
@@ -1143,10 +1184,12 @@ def main() -> int:
     });
 
     const section = list.closest(".section") || list.parentElement;
-    section.querySelectorAll("[data-track-sort]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        setTimeout(() => { page = 1; render(); }, 0);
-      });
+    const albumFilter = section.querySelector("[data-track-album-filter]");
+    albumFilter?.addEventListener("change", () => {
+      page = 1;
+      render();
+      const top = list.getBoundingClientRect().top + window.scrollY - 140;
+      window.scrollTo({ top, behavior: "smooth" });
     });
 
     render();
