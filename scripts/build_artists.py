@@ -880,13 +880,51 @@ def main() -> int:
 
     eligible_home = [
         a for a in artists
-        if re.match(r"^[A-Za-z]", str(a.get("name") or ""))
+        if is_public_artist_candidate(str(a.get("name") or ""))
     ]
-    recent_home = sorted(
-        eligible_home,
-        key=lambda a: history_date_key(a.get("last_played")),
-        reverse=True,
-    )[:12]
+
+    # "En rotación" must reflect the actual latest YesStreaming playout order,
+    # not the artist's latest date in the consolidated historical archive.
+    public_by_name = {
+        norm(str(a.get("name") or "")): a
+        for a in eligible_home
+        if norm(str(a.get("name") or ""))
+    }
+    recent_home: list[dict[str, Any]] = []
+    recent_slugs: set[str] = set()
+    for event in data.get("live_recent_rotation") or []:
+        live_name = norm(str(event.get("artist") or ""))
+        artist = public_by_name.get(live_name)
+        if not artist:
+            continue
+        slug = str(artist.get("slug") or "")
+        if not slug or slug in recent_slugs:
+            continue
+        # Only show fully usable cards on the landing page.
+        if not preferred_image(artist, galleries.get(slug)):
+            continue
+        recent_home.append(artist)
+        recent_slugs.add(slug)
+        if len(recent_home) == 3:
+            break
+
+    # Safe fallback while the first live-sync run after deployment is pending.
+    if len(recent_home) < 3:
+        for artist in sorted(
+            eligible_home,
+            key=lambda a: history_date_key(a.get("last_played")),
+            reverse=True,
+        ):
+            slug = str(artist.get("slug") or "")
+            if not slug or slug in recent_slugs:
+                continue
+            if not preferred_image(artist, galleries.get(slug)):
+                continue
+            recent_home.append(artist)
+            recent_slugs.add(slug)
+            if len(recent_home) == 3:
+                break
+
     popular_home = sorted(
         eligible_home,
         key=lambda a: (int(a.get("plays") or 0), history_date_key(a.get("last_played"))),
@@ -957,7 +995,7 @@ def main() -> int:
 
   if (window.LMX_TRACK_PAGER_READY) return;
   window.LMX_TRACK_PAGER_READY = true;
-  const PER_PAGE = 12;
+  const PER_PAGE = 10;
 
   function ensureStyle() {
     if (document.getElementById("lmx-track-pagination-style")) return;
