@@ -904,10 +904,98 @@ def main() -> int:
         "popular": [home_item(a) for a in popular_home],
         "new": [home_item(a) for a in new_home],
     }
+    track_pager_js = r"""
+;(() => {
+  if (window.LMX_TRACK_PAGER_READY) return;
+  window.LMX_TRACK_PAGER_READY = true;
+  const PER_PAGE = 12;
+
+  function ensureStyle() {
+    if (document.getElementById("lmx-track-pagination-style")) return;
+    const style = document.createElement("style");
+    style.id = "lmx-track-pagination-style";
+    style.textContent = `
+      .lmx-track-pagination{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px;flex-wrap:wrap}
+      .lmx-track-pagination-info{color:#777;font-size:11px}
+      .lmx-track-pagination-buttons{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+      .lmx-track-page{min-width:36px;height:36px;padding:0 11px;border:1px solid #2b2b2b;border-radius:999px;background:#0d0d0d;color:#ccc;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+      .lmx-track-page:hover{border-color:#666;color:#fff}
+      .lmx-track-page.active{background:#f2f2f2;border-color:#f2f2f2;color:#050505}
+      .lmx-track-page:disabled{opacity:.35;cursor:default}
+      @media(max-width:560px){.lmx-track-pagination{align-items:flex-start;flex-direction:column}.lmx-track-pagination-buttons{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  function setup(list) {
+    if (!list || list.dataset.lmxPaged === "1") return;
+    const initialRows = Array.from(list.querySelectorAll("[data-track]"));
+    if (initialRows.length <= PER_PAGE) return;
+    list.dataset.lmxPaged = "1";
+    ensureStyle();
+
+    let page = 1;
+    const nav = document.createElement("nav");
+    nav.className = "lmx-track-pagination";
+    nav.setAttribute("aria-label", "Paginación de canciones");
+    nav.innerHTML = '<div class="lmx-track-pagination-info"></div><div class="lmx-track-pagination-buttons"></div>';
+    list.insertAdjacentElement("afterend", nav);
+    const info = nav.querySelector(".lmx-track-pagination-info");
+    const buttons = nav.querySelector(".lmx-track-pagination-buttons");
+
+    function render() {
+      const rows = Array.from(list.querySelectorAll("[data-track]"));
+      const pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
+      page = Math.min(Math.max(1, page), pages);
+      const start = (page - 1) * PER_PAGE;
+      const end = Math.min(start + PER_PAGE, rows.length);
+      rows.forEach((row, i) => { row.hidden = i < start || i >= end; });
+      info.textContent = `${start + 1}–${end} de ${rows.length} canciones`;
+
+      const items = [];
+      items.push(`<button class="lmx-track-page" data-page="${page - 1}" ${page === 1 ? "disabled" : ""} aria-label="Página anterior">←</button>`);
+      const from = Math.max(1, Math.min(page - 2, pages - 4));
+      const to = Math.min(pages, Math.max(5, page + 2));
+      for (let n = from; n <= to; n++) {
+        items.push(`<button class="lmx-track-page ${n === page ? "active" : ""}" data-page="${n}">${n}</button>`);
+      }
+      items.push(`<button class="lmx-track-page" data-page="${page + 1}" ${page === pages ? "disabled" : ""} aria-label="Página siguiente">→</button>`);
+      buttons.innerHTML = items.join("");
+    }
+
+    nav.addEventListener("click", (event) => {
+      const btn = event.target.closest("[data-page]");
+      if (!btn || btn.disabled) return;
+      page = Number(btn.dataset.page || 1);
+      render();
+      const top = list.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+
+    const section = list.closest(".section") || list.parentElement;
+    section.querySelectorAll("[data-track-sort]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setTimeout(() => { page = 1; render(); }, 0);
+      });
+    });
+
+    render();
+  }
+
+  function scan() {
+    document.querySelectorAll(".lmx-native-detail [data-track-list], main.wrap [data-track-list]").forEach(setup);
+  }
+
+  new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", scan, { once: true });
+  else scan();
+})();
+"""
     (DOCS / "artists-home.js").write_text(
         "window.LMX_ARTISTS_HOME=" +
         json.dumps(home_payload, ensure_ascii=False, separators=(",", ":")) +
-        ";window.dispatchEvent(new Event('lmx:artists-home-ready'));\n",
+        ";window.dispatchEvent(new Event('lmx:artists-home-ready'));\n" +
+        track_pager_js,
         encoding="utf-8",
     )
 
