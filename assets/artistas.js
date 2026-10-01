@@ -193,27 +193,54 @@
 
   const trackList = q("[data-track-list]");
   if (trackList) {
-    const rows = qa("[data-track]", trackList);
-    const buttons = qa("[data-track-sort]");
-    const collator = new Intl.Collator("es", { sensitivity:"base", numeric:true });
-    const value = (row, key) => {
-      if (key === "title") return row.dataset.title || "";
-      if (key === "first") return parseLouderDate(row.dataset.first);
-      if (key === "last") return parseLouderDate(row.dataset.last);
-      return Number(row.dataset.plays || 0);
-    };
-    function sortTracks(key) {
-      const sorted = rows.slice().sort((a, b) => {
-        if (key === "title") return collator.compare(value(a, key), value(b, key));
-        if (key === "first") return value(a, key) - value(b, key);
-        return value(b, key) - value(a, key);
-      });
-      const frag = document.createDocumentFragment();
-      sorted.forEach((row) => frag.appendChild(row));
-      trackList.appendChild(frag);
-      buttons.forEach((button) => button.classList.toggle("active", button.dataset.trackSort === key));
+    const PER_PAGE = 10;
+    const allRows = qa("[data-track]", trackList);
+    const section = trackList.closest(".section") || trackList.parentElement;
+    const albumFilter = q("[data-track-album-filter]", section);
+    let page = 1;
+    let nav = trackList.nextElementSibling?.matches?.("[data-track-pagination]") ? trackList.nextElementSibling : null;
+    if (!nav && allRows.length > PER_PAGE) {
+      nav = document.createElement("nav");
+      nav.className = "lmx-track-pagination";
+      nav.dataset.trackPagination = "1";
+      nav.innerHTML = '<div class="lmx-track-pagination-info"></div><div class="lmx-track-pagination-buttons"></div>';
+      trackList.insertAdjacentElement("afterend", nav);
     }
-    buttons.forEach((button) => button.addEventListener("click", () => sortTracks(button.dataset.trackSort || "plays")));
+    const render = () => {
+      const selected = albumFilter?.value || "__all__";
+      const rows = allRows.filter((row) => selected === "__all__" || row.dataset.album === selected);
+      const pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
+      page = Math.min(Math.max(1, page), pages);
+      const start = (page - 1) * PER_PAGE;
+      const end = Math.min(start + PER_PAGE, rows.length);
+      allRows.forEach((row) => { row.hidden = true; });
+      rows.forEach((row, i) => { row.hidden = i < start || i >= end; });
+      if (!nav) return;
+      nav.hidden = pages <= 1;
+      const info = q(".lmx-track-pagination-info", nav);
+      const buttons = q(".lmx-track-pagination-buttons", nav);
+      if (info) info.textContent = rows.length ? `${start + 1}–${end} de ${rows.length} canciones` : "0 canciones";
+      if (buttons) {
+        const parts = [];
+        if (pages > 1) {
+          parts.push(`<button class="lmx-track-page" type="button" data-page="${page-1}" ${page===1?"disabled":""}>←</button>`);
+          let from = Math.max(1, page - 2);
+          let to = Math.min(pages, from + 4);
+          from = Math.max(1, to - 4);
+          for (let n=from;n<=to;n++) parts.push(`<button class="lmx-track-page ${n===page?"active":""}" type="button" data-page="${n}">${n}</button>`);
+          parts.push(`<button class="lmx-track-page" type="button" data-page="${page+1}" ${page===pages?"disabled":""}>→</button>`);
+        }
+        buttons.innerHTML = parts.join("");
+      }
+    };
+    nav?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-page]");
+      if (!button || button.disabled) return;
+      page = Number(button.dataset.page || 1);
+      render();
+    });
+    albumFilter?.addEventListener("change", () => { page = 1; render(); });
+    render();
   }
 
   const navToggle = q("[data-nav-toggle]");
