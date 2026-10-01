@@ -906,6 +906,41 @@ def main() -> int:
     }
     track_pager_js = r"""
 ;(() => {
+  if (!window.LMX_NATIVE_DETAIL_UX_READY) {
+    window.LMX_NATIVE_DETAIL_UX_READY = true;
+
+    const style = document.createElement("style");
+    style.id = "lmx-native-detail-ux-style";
+    style.textContent = `
+      body.lmx-artist-detail-open #lmx-native-artists > .lmxn-hero{display:none!important}
+      body.lmx-artist-detail-open #lmx-native-artists{padding-top:18px!important;padding-left:clamp(12px,1.6vw,22px)!important}
+      body.lmx-artist-detail-open .lmx-native-detail .artist-hero-inner{padding-left:0!important}
+      body.lmx-artist-detail-open .lmx-native-detail .artist-copy{padding-left:0!important;margin-left:0!important}
+      @media(max-width:560px){
+        body.lmx-artist-detail-open #lmx-native-artists{padding-left:0!important;padding-right:0!important}
+        body.lmx-artist-detail-open .lmx-native-detail .lmxn-back{margin-left:16px}
+      }
+    `;
+    document.head.appendChild(style);
+
+    const syncDetailState = () => {
+      const detail = document.querySelector("#lmx-native-artists [data-lmxn-detail]");
+      document.body.classList.toggle("lmx-artist-detail-open", !!detail && !detail.hidden);
+    };
+
+    new MutationObserver(syncDetailState).observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["hidden", "class"]
+    });
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", syncDetailState, { once: true });
+    } else {
+      syncDetailState();
+    }
+  }
+
   if (window.LMX_TRACK_PAGER_READY) return;
   window.LMX_TRACK_PAGER_READY = true;
   const PER_PAGE = 12;
