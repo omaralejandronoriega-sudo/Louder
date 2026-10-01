@@ -427,16 +427,60 @@ def album_art_key(artist: str, album: str) -> str:
 
 
 def track_album_bucket(track: dict[str, Any]) -> tuple[str, str]:
-    """Return a stable album filter key/label; unknown/non-album placeholders go to Otras."""
-    raw = canonical_album(str(track.get("album") or "")).strip()
+    """Return a clean album bucket; singles/placeholders/technical labels go to Otras."""
+    title = canonical_track_title(str(track.get("title") or "")).strip()
+    album_raw = str(track.get("album") or "").strip()
+
+    # Collapse common edition suffixes so one album does not appear several times.
+    album_raw = re.sub(
+        r"\s*[\[(](?:bonus tracks?|deluxe(?: edition)?|expanded(?: edition)?|"
+        r"special(?: edition)?|anniversary(?: edition)?|remaster(?:ed)?(?: \d{4})?|"
+        r"super deluxe(?: edition)?)[^\])]*[\])]\s*$",
+        "",
+        album_raw,
+        flags=re.I,
+    ).strip()
+    album_raw = re.sub(
+        r"\s*[-–—]\s*(?:bonus tracks?|deluxe(?: edition)?|expanded(?: edition)?|"
+        r"special(?: edition)?|anniversary(?: edition)?|remaster(?:ed)?(?: \d{4})?)\s*$",
+        "",
+        album_raw,
+        flags=re.I,
+    ).strip()
+
+    raw = canonical_album(album_raw).strip()
     normalized = norm(raw)
+    title_norm = norm(title)
+
     other_labels = {
         "", "album no identificado", "album desconocido", "unknown album",
         "recien incorporada al historial", "sin album", "no album",
-        "single", "sencillo", "otros", "otras",
+        "single", "sencillo", "otros", "otras", "programacion yesstreaming",
+        "yesstreaming", "programacion", "programming", "radio edit",
     }
     if normalized in other_labels:
         return ("__other__", "Otras")
+
+    # If the release field is effectively the song title, it is usually a single,
+    # not a parent album. Keep the song, but group it under Otras.
+    if title_norm and normalized == title_norm:
+        return ("__other__", "Otras")
+
+    # Covers/promotional containers and technical release labels are not useful
+    # as album navigation.
+    non_album_patterns = (
+        r"\bcovered\b",
+        r"\bcover version\b",
+        r"\btribute\b",
+        r"\bpromo\b",
+        r"\bprogramacion\b",
+        r"\byesstreaming\b",
+        r"\bradio edit\b",
+        r"\bsingle version\b",
+    )
+    if any(re.search(pattern, normalized, flags=re.I) for pattern in non_album_patterns):
+        return ("__other__", "Otras")
+
     return (normalized or "__other__", raw or "Otras")
 
 
