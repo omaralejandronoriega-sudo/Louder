@@ -465,7 +465,7 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
         return '<div class="note">Todavía no hay canciones consolidadas para esta ficha.</div>'
 
     out: list[str] = ['<div class="track-list" data-track-list>']
-    for track in tracks:
+    for track_index, track in enumerate(tracks):
         album = str(track.get("album") or "")
         album_key, album_label = track_album_bucket(track)
         cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
@@ -478,8 +478,9 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
                 f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
             )
         )
+        hidden = " hidden" if track_index >= 10 else ""
         out.append(
-            f'''<article class="track-row" data-track
+            f'''<article class="track-row" data-track{hidden}
  data-title="{esc(track.get("title"))}"
  data-first="{esc(track.get("first_played"))}"
  data-last="{esc(track.get("last_played"))}"
@@ -498,6 +499,21 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
 </article>'''
         )
     out.append("</div>")
+    if len(tracks) > 10:
+        pages = (len(tracks) + 9) // 10
+        page_buttons = "".join(
+            f'<button class="lmx-track-page{" active" if page == 1 else ""}" type="button" data-page="{page}">{page}</button>'
+            for page in range(1, min(pages, 5) + 1)
+        )
+        out.append(
+            '<nav class="lmx-track-pagination" data-track-pagination aria-label="Paginación de canciones">'
+            f'<div class="lmx-track-pagination-info">1–10 de {len(tracks)} canciones</div>'
+            '<div class="lmx-track-pagination-buttons">'
+            '<button class="lmx-track-page" type="button" data-page="0" disabled aria-label="Página anterior">←</button>'
+            + page_buttons +
+            f'<button class="lmx-track-page" type="button" data-page="2" aria-label="Página siguiente">→</button>'
+            '</div></nav>'
+        )
     return "".join(out)
 
 
@@ -1121,6 +1137,10 @@ def main() -> int:
     const style = document.createElement("style");
     style.id = "lmx-track-pagination-style";
     style.textContent = `
+      [data-track][hidden]{display:none!important}
+      .album-filter{display:flex;align-items:center;gap:10px}
+      .album-filter span{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:.08em}
+      .album-filter select{min-width:220px;max-width:360px;border:1px solid #2b2b2b;border-radius:999px;background:#0d0d0d;color:#eee;padding:11px 36px 11px 14px;font:inherit;font-size:12px}
       .lmx-track-pagination{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px;flex-wrap:wrap}
       .lmx-track-pagination-info{color:#777;font-size:11px}
       .lmx-track-pagination-buttons{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
@@ -1141,11 +1161,15 @@ def main() -> int:
     ensureStyle();
 
     let page = 1;
-    const nav = document.createElement("nav");
-    nav.className = "lmx-track-pagination";
-    nav.setAttribute("aria-label", "Paginación de canciones");
-    nav.innerHTML = '<div class="lmx-track-pagination-info"></div><div class="lmx-track-pagination-buttons"></div>';
-    list.insertAdjacentElement("afterend", nav);
+    let nav = list.nextElementSibling?.matches?.("[data-track-pagination]") ? list.nextElementSibling : null;
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "lmx-track-pagination";
+      nav.dataset.trackPagination = "1";
+      nav.setAttribute("aria-label", "Paginación de canciones");
+      nav.innerHTML = '<div class="lmx-track-pagination-info"></div><div class="lmx-track-pagination-buttons"></div>';
+      list.insertAdjacentElement("afterend", nav);
+    }
     const info = nav.querySelector(".lmx-track-pagination-info");
     const buttons = nav.querySelector(".lmx-track-pagination-buttons");
 
@@ -1164,14 +1188,19 @@ def main() -> int:
       info.textContent = rows.length ? `${start + 1}–${end} de ${rows.length} canciones` : "0 canciones";
 
       const items = [];
-      items.push(`<button class="lmx-track-page" data-page="${page - 1}" ${page === 1 ? "disabled" : ""} aria-label="Página anterior">←</button>`);
-      const from = Math.max(1, Math.min(page - 2, pages - 4));
-      const to = Math.min(pages, Math.max(5, page + 2));
-      for (let n = from; n <= to; n++) {
-        items.push(`<button class="lmx-track-page ${n === page ? "active" : ""}" data-page="${n}">${n}</button>`);
+      if (pages > 1) {
+        items.push(`<button class="lmx-track-page" type="button" data-page="${page - 1}" ${page === 1 ? "disabled" : ""} aria-label="Página anterior">←</button>`);
+        const windowSize = 5;
+        let from = Math.max(1, page - 2);
+        let to = Math.min(pages, from + windowSize - 1);
+        from = Math.max(1, to - windowSize + 1);
+        for (let n = from; n <= to; n++) {
+          items.push(`<button class="lmx-track-page ${n === page ? "active" : ""}" type="button" data-page="${n}">${n}</button>`);
+        }
+        items.push(`<button class="lmx-track-page" type="button" data-page="${page + 1}" ${page === pages ? "disabled" : ""} aria-label="Página siguiente">→</button>`);
       }
-      items.push(`<button class="lmx-track-page" data-page="${page + 1}" ${page === pages ? "disabled" : ""} aria-label="Página siguiente">→</button>`);
       buttons.innerHTML = items.join("");
+      nav.hidden = pages <= 1;
     }
 
     nav.addEventListener("click", (event) => {
