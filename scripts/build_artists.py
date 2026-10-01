@@ -951,26 +951,109 @@ def main() -> int:
     style.id = "lmx-native-detail-ux-style";
     style.textContent = `
       body.lmx-artist-detail-open #lmx-native-artists > .lmxn-hero{display:none!important}
-      body.lmx-artist-detail-open #lmx-native-artists{width:100%!important;max-width:none!important;margin:0!important;padding:16px 0 120px!important}
-      body.lmx-artist-detail-open .lmx-native-detail{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
-      body.lmx-artist-detail-open .lmx-native-detail .lmxn-back{margin:0 0 18px clamp(18px,3vw,42px)!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-hero{margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;overflow:visible!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-backdrop{display:none!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-hero-inner{display:grid!important;grid-template-columns:minmax(240px,320px) minmax(0,1fr)!important;gap:clamp(24px,3vw,46px)!important;align-items:center!important;padding:0 clamp(18px,3vw,42px)!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-art{width:100%!important;max-width:320px!important;aspect-ratio:4/3!important;border-radius:14px!important;box-shadow:none!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-copy{width:100%!important;max-width:none!important;padding:0!important;margin:0!important}
-      body.lmx-artist-detail-open .lmx-native-detail .artist-copy h1{margin-left:0!important;padding-left:0!important}
-      body.lmx-artist-detail-open .lmx-native-detail .about,
-      body.lmx-artist-detail-open .lmx-native-detail .section,
-      body.lmx-artist-detail-open .lmx-native-detail .source-stats{width:auto!important;max-width:none!important;margin-left:clamp(18px,3vw,42px)!important;margin-right:clamp(18px,3vw,42px)!important}
-      body.lmx-artist-detail-open .lmx-native-detail .bio{max-width:920px!important}
+      body.lmx-artist-detail-open #lmx-native-artists{width:100%!important;max-width:none!important;margin:0!important;padding:12px 0 120px!important}
+
+      body.lmx-artist-detail-open #lmx-native-artists [data-lmxn-detail]{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+      body.lmx-artist-detail-open #lmx-native-artists [data-lmxn-detail] > .lmxn-back{margin:0 clamp(18px,3vw,42px) 18px!important}
+
+      body.lmx-artist-detail-open #lmx-native-artists [data-lmxn-detail] main.wrap{
+        width:100%!important;
+        max-width:none!important;
+        margin:0!important;
+        padding:0!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-hero{
+        width:100%!important;
+        margin:0!important;
+        padding:0!important;
+        border:0!important;
+        border-radius:0!important;
+        background:transparent!important;
+        overflow:visible!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-backdrop{display:none!important}
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-hero-inner{
+        display:flex!important;
+        flex-direction:column!important;
+        width:100%!important;
+        gap:0!important;
+        padding:0!important;
+        margin:0!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-art{
+        order:1!important;
+        display:block!important;
+        width:100%!important;
+        max-width:none!important;
+        height:auto!important;
+        aspect-ratio:16/7!important;
+        margin:0!important;
+        border-radius:0!important;
+        overflow:hidden!important;
+        background:#111!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-art img{
+        width:100%!important;
+        height:100%!important;
+        display:block!important;
+        object-fit:cover!important;
+        object-position:center!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-copy{
+        order:2!important;
+        align-self:stretch!important;
+        width:100%!important;
+        max-width:none!important;
+        box-sizing:border-box!important;
+        margin:0!important;
+        padding:30px clamp(18px,4vw,56px) 0!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .artist-copy h1{
+        margin:8px 0 18px!important;
+        padding:0!important;
+        max-width:none!important;
+        font-size:clamp(48px,8vw,96px)!important;
+        line-height:.92!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .genres,
+      body.lmx-artist-detail-open #lmx-native-artists .artist-actions,
+      body.lmx-artist-detail-open #lmx-native-artists .social{
+        width:100%!important;
+        max-width:none!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .metrics{
+        width:100%!important;
+        max-width:900px!important;
+        grid-template-columns:repeat(3,minmax(0,1fr))!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .about,
+      body.lmx-artist-detail-open #lmx-native-artists .section,
+      body.lmx-artist-detail-open #lmx-native-artists .source-stats{
+        width:auto!important;
+        max-width:none!important;
+        margin-left:clamp(18px,4vw,56px)!important;
+        margin-right:clamp(18px,4vw,56px)!important;
+      }
+
+      body.lmx-artist-detail-open #lmx-native-artists .bio{max-width:980px!important}
+
       @media(max-width:760px){
-        body.lmx-artist-detail-open .lmx-native-detail .artist-hero-inner{grid-template-columns:1fr!important;padding:0 18px!important}
-        body.lmx-artist-detail-open .lmx-native-detail .artist-art{max-width:none!important;aspect-ratio:16/10!important}
-        body.lmx-artist-detail-open .lmx-native-detail .lmxn-back{margin-left:18px!important}
-        body.lmx-artist-detail-open .lmx-native-detail .about,
-        body.lmx-artist-detail-open .lmx-native-detail .section,
-        body.lmx-artist-detail-open .lmx-native-detail .source-stats{margin-left:18px!important;margin-right:18px!important}
+        body.lmx-artist-detail-open #lmx-native-artists .artist-art{aspect-ratio:16/9!important}
+        body.lmx-artist-detail-open #lmx-native-artists .artist-copy{padding:22px 18px 0!important}
+        body.lmx-artist-detail-open #lmx-native-artists .metrics{grid-template-columns:1fr!important;max-width:none!important}
+        body.lmx-artist-detail-open #lmx-native-artists .about,
+        body.lmx-artist-detail-open #lmx-native-artists .section,
+        body.lmx-artist-detail-open #lmx-native-artists .source-stats{margin-left:18px!important;margin-right:18px!important}
       }
     `;
     document.head.appendChild(style);
