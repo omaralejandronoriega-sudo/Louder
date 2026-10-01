@@ -23,8 +23,6 @@ function publicLocation(location, requestUrl) {
 
 function isStaticSection(pathname) {
   return (
-    pathname === "/artistas" ||
-    pathname.startsWith("/artistas/") ||
     pathname === "/radar-2026" ||
     pathname.startsWith("/radar-2026/") ||
     pathname === "/control" ||
