@@ -233,7 +233,26 @@ def main() -> int:
                 track["first_played"] = human(first)
             track["last_played"] = human(last, with_time=True)
 
+    # Preserve the real playout order for the Artistas landing page.
+    # Keep more than three candidates here; the static builder will take the
+    # first three that resolve to an existing public profile with artwork.
+    recent_rotation: list[dict[str, str]] = []
+    recent_seen: set[str] = set()
+    for row in sorted(rows, key=lambda item: item["dt"], reverse=True):
+        key = normalize(row["artist"])
+        if not key or key in recent_seen:
+            continue
+        recent_seen.add(key)
+        recent_rotation.append({
+            "artist": row["artist"],
+            "title": row["title"],
+            "played_at": row["dt"].isoformat(timespec="seconds"),
+        })
+        if len(recent_rotation) >= 30:
+            break
+
     store["artists"] = artists
+    store["live_recent_rotation"] = recent_rotation
     store["live_history_rows_total"] = len(rows)
     store["live_history_rows_applied"] = applied
     store["live_history_artists_touched"] = touched
