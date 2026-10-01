@@ -1138,9 +1138,31 @@ def main() -> int:
     style.id = "lmx-track-pagination-style";
     style.textContent = `
       [data-track][hidden]{display:none!important}
-      .album-filter{display:flex;align-items:center;gap:10px}
-      .album-filter span{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:.08em}
-      .album-filter select{min-width:220px;max-width:360px;border:1px solid #2b2b2b;border-radius:999px;background:#0d0d0d;color:#eee;padding:11px 36px 11px 14px;font:inherit;font-size:12px}
+      .album-filter{display:flex!important;align-items:center!important;gap:10px!important;min-width:300px!important}
+      .album-filter span{display:block!important;font-size:11px!important;color:#777!important;text-transform:uppercase!important;letter-spacing:.08em!important;white-space:nowrap!important}
+      .album-filter select,[data-track-album-filter]{
+        display:block!important;
+        visibility:visible!important;
+        opacity:1!important;
+        position:static!important;
+        appearance:auto!important;
+        -webkit-appearance:menulist!important;
+        width:260px!important;
+        min-width:220px!important;
+        max-width:360px!important;
+        height:42px!important;
+        border:1px solid #343434!important;
+        border-radius:999px!important;
+        background:#111!important;
+        color:#f3f3f3!important;
+        padding:0 14px!important;
+        font:inherit!important;
+        font-size:12px!important;
+        line-height:42px!important;
+        cursor:pointer!important;
+        pointer-events:auto!important;
+      }
+      .album-filter select option,[data-track-album-filter] option{background:#111!important;color:#f3f3f3!important}
       .lmx-track-pagination{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px;flex-wrap:wrap}
       .lmx-track-pagination-info{color:#777;font-size:11px}
       .lmx-track-pagination-buttons{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
@@ -1225,8 +1247,23 @@ def main() -> int:
   }
 
   function scan() {
-    document.querySelectorAll(".lmx-native-detail [data-track-list], main.wrap [data-track-list]").forEach(setup);
+    document.querySelectorAll(".lmx-native-detail [data-track-list], main.wrap [data-track-list], #lmx-native-artists [data-track-list]").forEach(setup);
   }
+
+  document.addEventListener("change", (event) => {
+    const select = event.target.closest?.("[data-track-album-filter]");
+    if (!select) return;
+    const section = select.closest(".section") || select.parentElement?.parentElement;
+    const list = section?.querySelector?.("[data-track-list]");
+    if (!list) return;
+    // Re-run setup if the profile was injected after the first scan.
+    if (list.dataset.lmxPaged !== "1") setup(list);
+    const nav = list.nextElementSibling?.matches?.("[data-track-pagination], .lmx-track-pagination")
+      ? list.nextElementSibling
+      : null;
+    // Trigger the component's own change handler if already attached.
+    if (!nav && list.querySelectorAll("[data-track]").length > PER_PAGE) setup(list);
+  }, true);
 
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", scan, { once: true });
