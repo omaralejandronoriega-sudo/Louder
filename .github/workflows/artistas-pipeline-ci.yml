@@ -1,0 +1,33 @@
+name: Louder Artistas Pipeline CI
+
+on:
+  pull_request:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/artistas-*.yml"
+      - "tests/test_enrichment_state.py"
+  push:
+    branches:
+      - "fix/**"
+    paths:
+      - "scripts/**"
+      - ".github/workflows/artistas-*.yml"
+      - "tests/test_enrichment_state.py"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Compile Python
+        run: python -m py_compile scripts/*.py live/*.py
+      - name: Test enrichment state machine
+        run: python -m unittest discover -s tests -p "test_enrichment_state.py"
