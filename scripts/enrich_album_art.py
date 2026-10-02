@@ -35,8 +35,22 @@ def norm(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
 
 
+PLACEHOLDER_ALBUMS = {
+    "", "Álbum no identificado", "Recién incorporada al historial",
+    "Programación YesStreaming",
+}
+
+
 def key(artist: str, album: str) -> str:
     return norm(artist) + "|" + norm(album)
+
+
+def track_key(artist: str, title: str) -> str:
+    return "track|" + norm(artist) + "|" + norm(title)
+
+
+def cache_key(artist: str, album: str, title: str) -> str:
+    return track_key(artist, title) if album in PLACEHOLDER_ALBUMS else key(artist, album)
 
 
 def load(path: Path, fallback: dict[str, Any]) -> dict[str, Any]:
@@ -141,6 +155,42 @@ def itunes_art(session: requests.Session, artist: str, album: str) -> tuple[str,
         return "", ""
 
 
+def itunes_track_art(session: requests.Session, artist: str, title: str) -> str:
+    """Fallback cover for a track with no useful parent-album metadata."""
+    try:
+        r = session.get(
+            "https://itunes.apple.com/search",
+            params={"media": "music", "entity": "song", "limit": 12, "term": f"{artist} {title}"},
+            headers={"User-Agent": UA},
+            timeout=30,
+        )
+        r.raise_for_status()
+        want_artist = norm(artist)
+        want_title = norm(title)
+        best = None
+        best_score = -1
+        for row in r.json().get("results") or []:
+            a = norm(row.get("artistName", ""))
+            t = norm(row.get("trackName", ""))
+            score = 0
+            if a == want_artist:
+                score += 100
+            elif a and want_artist and (a in want_artist or want_artist in a):
+                score += 25
+            if t == want_title:
+                score += 140
+            elif t and want_title and (t in want_title or want_title in t):
+                score += 35
+            if score > best_score and row.get("artworkUrl100"):
+                best = row
+                best_score = score
+        if not best or best_score < 200:
+            return ""
+        return str(best.get("artworkUrl100") or "").replace("100x100bb", "600x600bb")
+    except Exception:
+        return ""
+
+
 def validated_art(
     session: requests.Session,
     url: str,
@@ -171,13 +221,24 @@ def main() -> int:
         for track in artist.get("tracks") or []:
             if not isinstance(track, dict):
                 continue
-            album = str(track.get("album") or "").strip()
-            if not album or album in {"Álbum no identificado", "Recién incorporada al historial", "Programación YesStreaming"}:
+            title = str(track.get("title") or "").strip()
+            if not title:
                 continue
-            k = key(artist_name, album)
+            album = str(track.get("album") or "").strip()
+            k = cache_key(artist_name, album, title)
             if not k:
                 continue
-            row = candidates.setdefault(k, {"artist": artist_name, "album": album, "track_artwork": ""})
+            mode = "track" if album in PLACEHOLDER_ALBUMS else "album"
+            row = candidates.setdefault(
+                k,
+                {
+                    "artist": artist_name,
+                    "album": album,
+                    "title": title,
+                    "mode": mode,
+                    "track_artwork": "",
+                },
+            )
             track_art = str(track.get("artwork") or "").strip()
             if track_art and not row["track_artwork"]:
                 row["track_artwork"] = track_art
@@ -188,7 +249,13 @@ def main() -> int:
         if es.is_due(existing, refresh=args.refresh, now=now):
             pending.append((k, candidate))
 
-    pending.sort(key=lambda item: (norm(item[1]["artist"]), norm(item[1]["album"])))
+    pending.sort(
+        key=lambda item: (
+            0 if item[1].get("track_artwork") else 1,
+            norm(item[1]["artist"]),
+            norm(item[1].get("album") or item[1].get("title") or ""),
+        )
+    )
     if args.limit > 0:
         pending = pending[: args.limit]
 
@@ -218,7 +285,9 @@ def main() -> int:
 
     for i, (k, candidate) in enumerate(pending, start=1):
         artist = candidate["artist"]
-        album = candidate["album"]
+        album = candidate.get("album", "")
+        title = candidate.get("title", "")
+        mode = candidate.get("mode", "album")
         track_artwork = candidate.get("track_artwork", "")
         existing = albums.get(k) or {}
         attempt = es.utcnow()
@@ -228,13 +297,14 @@ def main() -> int:
             source = ""
             mbid = str(existing.get("release_group_mbid") or "")
             matched_album = album
+            matched_title = title
 
             if track_artwork:
                 final_url, validation_method = validated_art(session, track_artwork)
                 if final_url:
                     source = "Historical track artwork"
 
-            if not final_url:
+            if not final_url and mode == "album":
                 mbid = mb.search_release_group(artist, album)
                 if mbid and art_exists(session, mbid):
                     caa_url = f"{CAA}/{mbid}/front-500"
@@ -242,7 +312,7 @@ def main() -> int:
                     if final_url:
                         source = "Cover Art Archive"
 
-            if not final_url:
+            if not final_url and mode == "album":
                 itunes_url, itunes_album = itunes_art(session, artist, album)
                 if itunes_url:
                     validated, validation_method = validated_art(session, itunes_url)
@@ -251,10 +321,20 @@ def main() -> int:
                         matched_album = itunes_album or album
                         source = "iTunes Search"
 
+            if not final_url and mode == "track":
+                itunes_url = itunes_track_art(session, artist, title)
+                if itunes_url:
+                    validated, validation_method = validated_art(session, itunes_url)
+                    if validated:
+                        final_url = validated
+                        source = "iTunes Track Search"
+
             if final_url:
                 albums[k] = {
                     "artist": artist,
                     "album": matched_album,
+                    "track_title": matched_title,
+                    "mode": mode,
                     "release_group_mbid": mbid,
                     "url": final_url,
                     "source": source,
@@ -267,12 +347,15 @@ def main() -> int:
                     "attempt_count": int(existing.get("attempt_count") or 0) + 1,
                     "updated_at": es.iso(attempt),
                 }
-                print(f"{i}/{len(pending)} complete {artist} — {album} [{source}]")
+                label = album or title
+                print(f"{i}/{len(pending)} complete {artist} — {label} [{source}]")
             else:
                 status = "partial" if mbid else "not_found"
                 albums[k] = {
                     "artist": artist,
                     "album": album,
+                    "track_title": title,
+                    "mode": mode,
                     "release_group_mbid": mbid,
                     "url": "",
                     "source": "MusicBrainz + Cover Art Archive + iTunes",
@@ -283,12 +366,15 @@ def main() -> int:
                     "attempt_count": int(existing.get("attempt_count") or 0) + 1,
                     "updated_at": es.iso(attempt),
                 }
-                print(f"{i}/{len(pending)} {status} {artist} — {album}")
+                label = album or title
+                print(f"{i}/{len(pending)} {status} {artist} — {label}")
         except Exception as exc:
             row = dict(existing)
             row.update({
                 "artist": artist,
                 "album": album,
+                "track_title": title,
+                "mode": mode,
                 "status": "retry",
                 "validated": False,
                 "checked_at": es.iso(attempt),
@@ -298,7 +384,8 @@ def main() -> int:
                 "updated_at": es.iso(attempt),
             })
             albums[k] = row
-            print(f"{i}/{len(pending)} retry {artist} — {album}: {exc}")
+            label = album or title
+            print(f"{i}/{len(pending)} retry {artist} — {label}: {exc}")
 
         if i % 25 == 0:
             store["updated_at"] = es.iso(es.utcnow())
