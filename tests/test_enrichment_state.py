@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import enrichment_state as es
+import build_artists as ba
 
 
 class EnrichmentStateTests(unittest.TestCase):
@@ -38,6 +39,16 @@ class EnrichmentStateTests(unittest.TestCase):
         status, missing = es.profile_status(artist, gallery)
         self.assertEqual(status, "complete")
         self.assertEqual(missing, [])
+
+    def test_track_artwork_key_uses_track_for_missing_album(self):
+        self.assertEqual(
+            ba.track_artwork_key("Artist", {"title": "Song", "album": ""}),
+            "track|artist|song",
+        )
+        self.assertEqual(
+            ba.track_artwork_key("Artist", {"title": "Song", "album": "Album"}),
+            "artist|album",
+        )
 
     def test_unvalidated_image_is_missing(self):
         artist = {"bio": "Bio"}
