@@ -50,6 +50,19 @@ class EnrichmentStateTests(unittest.TestCase):
             "artist|album",
         )
 
+    def test_existing_artist_metadata_counts_as_profile_data(self):
+        artist = {
+            "bio": "Bio",
+            "genres": ["indie"],
+            "social": [{"name": "Instagram", "url": "https://instagram.com/example"}],
+        }
+        gallery = {
+            "images": [{"url": "https://example.com/a.jpg", "valid": True}],
+        }
+        status, missing = es.profile_status(artist, gallery)
+        self.assertEqual(status, "complete")
+        self.assertEqual(missing, [])
+
     def test_unvalidated_image_is_missing(self):
         artist = {"bio": "Bio"}
         gallery = {

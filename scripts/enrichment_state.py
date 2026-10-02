@@ -140,17 +140,21 @@ def usable_gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]
     return rows[:5]
 
 
-def profile_missing_fields(artist: dict[str, Any], gallery: dict[str, Any] | None) -> list[str]:
+def has_profile_data(artist: dict[str, Any], gallery: dict[str, Any] | None) -> bool:
+    """Count usable identity/profile metadata from either canonical artist data or enrichment."""
     gallery = gallery if isinstance(gallery, dict) else {}
-    missing: list[str] = []
-    if not usable_gallery_images(gallery):
-        missing.append("image")
-    if not has_text(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en")):
-        missing.append("bio")
-
-    social = gallery.get("social") or {}
-    has_data = any(
+    gallery_social = gallery.get("social") or {}
+    artist_social = artist.get("social") or []
+    artist_social_ok = any(
+        isinstance(item, dict) and has_text(item.get("url"))
+        for item in artist_social
+    )
+    artist_genres = artist.get("genres") or []
+    return any(
         [
+            has_text(artist.get("official_url")),
+            artist_social_ok,
+            any(has_text(x) for x in artist_genres),
             has_text(gallery.get("musicbrainz_id")),
             has_text(gallery.get("genre")),
             has_text(gallery.get("style")),
@@ -159,10 +163,19 @@ def profile_missing_fields(artist: dict[str, Any], gallery: dict[str, Any] | Non
             has_text(gallery.get("wikipedia_url")),
             has_text(gallery.get("lastfm_url")),
             bool(gallery.get("verified")),
-            any(has_text(social.get(k)) for k in ("facebook", "twitter", "instagram")),
+            any(has_text(gallery_social.get(k)) for k in ("facebook", "twitter", "instagram")),
         ]
     )
-    if not has_data:
+
+
+def profile_missing_fields(artist: dict[str, Any], gallery: dict[str, Any] | None) -> list[str]:
+    gallery = gallery if isinstance(gallery, dict) else {}
+    missing: list[str] = []
+    if not usable_gallery_images(gallery):
+        missing.append("image")
+    if not has_text(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en")):
+        missing.append("bio")
+    if not has_profile_data(artist, gallery):
         missing.append("data")
     return missing
 
@@ -183,9 +196,6 @@ def profile_status(
     found_any = bool(
         usable_gallery_images(gallery)
         or has_text(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en"))
-        or gallery.get("verified")
-        or has_text(gallery.get("musicbrainz_id"))
-        or has_text(gallery.get("genre"))
-        or has_text(gallery.get("official_url"))
+        or has_profile_data(artist, gallery)
     )
     return ("partial" if found_any else "not_found"), missing
