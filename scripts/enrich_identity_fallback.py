@@ -12,6 +12,7 @@ from typing import Any
 from urllib.parse import quote, urlparse, unquote
 
 import requests
+import build_artists as ba
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTISTS = ROOT / "data" / "artists.json"
@@ -177,6 +178,8 @@ def main() -> int:
         name = str(artist.get("name") or "").strip()
         if not slug or not name:
             continue
+        if not ba.is_public_artist_candidate(name):
+            continue
         gallery = galleries.get(slug) or {}
         has_image = bool(str(artist.get("image") or "").strip()) or bool((gallery.get("images") or []))
         has_bio = bool(str(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en") or "").strip())
@@ -187,7 +190,23 @@ def main() -> int:
             continue
         pending.append(artist)
 
-    pending.sort(key=lambda a: (-int(a.get("plays") or 0), norm(a.get("name", ""))))
+    def priority(a: dict[str, Any]) -> tuple[Any, ...]:
+        sources = set(a.get("sources") or [])
+        date_key = ba.history_date_key(a.get("last_played"))
+        if date_key[0] >= 9998:
+            recent_score = 0
+        else:
+            y, m, d, hh, mm, ss = date_key
+            recent_score = y * 10**10 + m * 10**8 + d * 10**6 + hh * 10**4 + mm * 10**2 + ss
+        return (
+            0 if "yesstreaming_live" in sources else 1,
+            -recent_score,
+            0 if "yesstreaming" in sources else 1,
+            -int(a.get("plays") or 0),
+            norm(a.get("name", "")),
+        )
+
+    pending.sort(key=priority)
     if args.limit > 0:
         pending = pending[:args.limit]
 
