@@ -1,3 +1,4 @@
+// Louder AI backend v2
 const PAGES_ORIGIN = "https://artistas.loudermx.com";
 const PAGES_BASE = "";
 const GITHUB_OWNER = "omaralejandronoriega-sudo";
