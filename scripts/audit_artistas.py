@@ -121,6 +121,7 @@ def main() -> int:
     raw = [a for a in (artist_store.get("artists") or []) if isinstance(a, dict)]
     public, aliases = ba.prepare_public_artists(raw)
     galleries = gallery_store.get("artists") or {}
+    galleries = ba.apply_identity_fallbacks(galleries)
     album_cache = art_store.get("albums") or {}
 
     rows = []
