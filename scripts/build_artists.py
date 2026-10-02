@@ -414,6 +414,8 @@ def apply_identity_fallbacks(galleries: dict[str, Any]) -> dict[str, Any]:
                 "preview": image,
                 "source": str(fallback.get("image_source") or "MusicBrainz/Wikipedia"),
                 "kind": "portrait",
+                "valid": True,
+                "validated_at": str(fallback.get("checked_at") or fallback.get("profile_checked_at") or ""),
             }]
             gallery["image_count"] = 1
 
