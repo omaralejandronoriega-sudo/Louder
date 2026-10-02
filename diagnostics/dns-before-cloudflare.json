@@ -1,0 +1,106 @@
+{
+  "servers": {
+    "public": null,
+    "cloudflare_cris": "cris.ns.cloudflare.com",
+    "cloudflare_ryleigh": "ryleigh.ns.cloudflare.com"
+  },
+  "queries": {
+    "loudermx.com A": {
+      "public": [
+        "108.179.194.63"
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63"
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63"
+      ]
+    },
+    "loudermx.com AAAA": {
+      "public": [],
+      "cloudflare_cris": [],
+      "cloudflare_ryleigh": []
+    },
+    "loudermx.com MX": {
+      "public": [
+        "0 mail.loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "0 mail.loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "0 mail.loudermx.com."
+      ]
+    },
+    "loudermx.com TXT": {
+      "public": [
+        "\"v=spf1 a mx include:websitewelcome.com ~all\""
+      ],
+      "cloudflare_cris": [
+        "\"v=spf1 a mx include:websitewelcome.com ~all\""
+      ],
+      "cloudflare_ryleigh": [
+        "\"v=spf1 a mx include:websitewelcome.com ~all\""
+      ]
+    },
+    "www.loudermx.com A": {
+      "public": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63",
+        "loudermx.com."
+      ]
+    },
+    "www.loudermx.com AAAA": {
+      "public": [
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [],
+      "cloudflare_ryleigh": []
+    },
+    "www.loudermx.com CNAME": {
+      "public": [
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "loudermx.com."
+      ]
+    },
+    "mail.loudermx.com A": {
+      "public": [
+        "108.179.194.63"
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63"
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63"
+      ]
+    },
+    "mail.loudermx.com CNAME": {
+      "public": [],
+      "cloudflare_cris": [],
+      "cloudflare_ryleigh": []
+    },
+    "_dmarc.loudermx.com TXT": {
+      "public": [
+        "\"v=DMARC1; p=none;\""
+      ],
+      "cloudflare_cris": [
+        "\"v=DMARC1; p=none;\""
+      ],
+      "cloudflare_ryleigh": [
+        "\"v=DMARC1; p=none;\""
+      ]
+    }
+  }
+}
