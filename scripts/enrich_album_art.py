@@ -36,9 +36,14 @@ def norm(value: str) -> str:
 
 
 PLACEHOLDER_ALBUMS = {
-    "", "Álbum no identificado", "Recién incorporada al historial",
-    "Programación YesStreaming",
+    "", "album no identificado", "album desconocido", "unknown album",
+    "recien incorporada al historial", "sin album", "no album",
+    "programacion yesstreaming", "yesstreaming", "programacion", "programming",
 }
+
+
+def is_placeholder_album(album: str) -> bool:
+    return norm(album) in PLACEHOLDER_ALBUMS
 
 
 def key(artist: str, album: str) -> str:
@@ -50,7 +55,7 @@ def track_key(artist: str, title: str) -> str:
 
 
 def cache_key(artist: str, album: str, title: str) -> str:
-    return track_key(artist, title) if album in PLACEHOLDER_ALBUMS else key(artist, album)
+    return track_key(artist, title) if is_placeholder_album(album) else key(artist, album)
 
 
 def load(path: Path, fallback: dict[str, Any]) -> dict[str, Any]:
@@ -228,7 +233,7 @@ def main() -> int:
             k = cache_key(artist_name, album, title)
             if not k:
                 continue
-            mode = "track" if album in PLACEHOLDER_ALBUMS else "album"
+            mode = "track" if is_placeholder_album(album) else "album"
             row = candidates.setdefault(
                 k,
                 {
