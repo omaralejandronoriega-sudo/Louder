@@ -1,0 +1,36 @@
+{
+  "zone_lookup_status": 200,
+  "zone_success": true,
+  "zone_status": "pending",
+  "zone_paused": false,
+  "dns": {
+    "loudermx.com": {
+      "status": 403,
+      "success": false,
+      "records": []
+    },
+    "www.loudermx.com": {
+      "status": 403,
+      "success": false,
+      "records": []
+    }
+  },
+  "routes": {
+    "status": 200,
+    "success": true,
+    "items": [
+      {
+        "pattern": "loudermx.com/radar-2026*",
+        "script": "louder-artistas"
+      },
+      {
+        "pattern": "loudermx.com/artistas*",
+        "script": "louder-artistas"
+      },
+      {
+        "pattern": "loudermx.com/control*",
+        "script": "louder-artistas"
+      }
+    ]
+  }
+}
