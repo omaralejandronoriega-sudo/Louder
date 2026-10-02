@@ -25,6 +25,7 @@ from urllib.parse import quote
 
 import requests
 
+import build_artists as ba
 import enrichment_state as es
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -543,13 +544,23 @@ def main() -> int:
             continue
         pending.append(artist)
 
-    pending.sort(
-        key=lambda a: (
-            0 if "yesstreaming_live" in set(a.get("sources") or []) else 1,
-            -int(a.get("plays") or 0),
-            norm(a.get("name", "")),
+    def priority(a: dict[str, Any]) -> tuple[Any, ...]:
+        sources = set(a.get("sources") or [])
+        catalog_status = str(a.get("catalog_status") or "")
+        if catalog_status in {"live_only", "programmed_history"} or "yesstreaming_live" in sources:
+            active_rank = 0
+        elif catalog_status == "programmed_only" or "yesstreaming" in sources:
+            active_rank = 1
+        else:
+            active_rank = 2
+        date_key = ba.history_date_key(a.get("last_played"))
+        recent_score = 0 if date_key[0] >= 9998 else (
+            date_key[0] * 10**10 + date_key[1] * 10**8 + date_key[2] * 10**6
+            + date_key[3] * 10**4 + date_key[4] * 10**2 + date_key[5]
         )
-    )
+        return (active_rank, -recent_score, -int(a.get("plays") or 0), norm(a.get("name", "")))
+
+    pending.sort(key=priority)
     if args.limit > 0:
         pending = pending[: args.limit]
 
