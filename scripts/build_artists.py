@@ -633,7 +633,7 @@ def page_shell(
 ) -> str:
     asset_prefix = "_assets/" if depth == 1 else "../_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
-    canonical = "https://artistas.loudermx.com" + canonical_path
+    canonical = "https://loudermx.com" + canonical_path
     return f'''<!doctype html>
 <html lang="es-MX">
 <head>
@@ -975,7 +975,7 @@ def main() -> int:
 
     index_payload = {
         "version": 2,
-        "base_url": "https://artistas.loudermx.com/artistas/",
+        "base_url": "https://loudermx.com/artistas/",
         "artists": [
             {
                 "name": a.get("name", ""),
@@ -1366,13 +1366,14 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
-        f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
+    sitemap_urls = ["https://loudermx.com/artistas/"] + [
+        f"https://loudermx.com/artistas/{a['slug']}/" for a in artists
     ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
     ) + "</urlset>\n"
     (DOCS / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (DOCS / "artistas" / "sitemap.xml").write_text(sitemap, encoding="utf-8")
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
