@@ -334,6 +334,15 @@ def number(value: Any) -> str:
         return "0"
 
 
+def plays_label(value: Any) -> str:
+    try:
+        count = int(value or 0)
+    except Exception:
+        count = 0
+    noun = "reproducción" if count == 1 else "reproducciones"
+    return f"{number(count)} {noun}"
+
+
 def source_stats_html(artist: dict[str, Any]) -> str:
     stats = artist.get("source_stats") or {}
     chips: list[str] = []
@@ -867,7 +876,7 @@ def build_artist(
     out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     description = (
-        f"{name} en Louder: canciones registradas, {number(artist.get('plays'))} reproducciones, "
+        f"{name} en Louder: canciones registradas, {plays_label(artist.get('plays'))}, "
         "biografía, primera y última aparición y artistas relacionados."
     )
     out.write_text(
