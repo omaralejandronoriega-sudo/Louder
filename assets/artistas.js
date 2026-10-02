@@ -1,6 +1,7 @@
 (() => {
   "use strict";
 
+  const ARTISTS_ORIGIN = "https://artistas.loudermx.com";
   const q = (s, root = document) => root.querySelector(s);
   const qa = (s, root = document) => Array.from(root.querySelectorAll(s));
 
@@ -51,7 +52,7 @@
     function makeCard(item) {
       const a = document.createElement("a");
       a.className = "artist-card";
-      a.href = "./" + item.slug + "/";
+      a.href = ARTISTS_ORIGIN + "/artistas/" + item.slug + "/";
       a.dataset.artistCard = "";
       a.dataset.name = normalize(item.name);
       a.dataset.letter = normalize(item.name).slice(0, 1).toUpperCase();
@@ -131,10 +132,10 @@
     q("[data-shuffle]")?.addEventListener("click", () => {
       if (!filtered.length) return;
       const pick = filtered[Math.floor(Math.random() * filtered.length)];
-      window.location.href = "./" + pick.slug + "/";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/" + pick.slug + "/";
     });
 
-    fetch(new URL("/artists-index.json", window.location.origin), { cache:"force-cache" })
+    fetch(new URL("/artists-index.json", ARTISTS_ORIGIN), { cache:"force-cache" })
       .then((response) => response.ok ? response.json() : Promise.reject(new Error("catalog")))
       .then((data) => {
         if (Array.isArray(data?.artists) && data.artists.length) {
@@ -148,15 +149,15 @@
   const currentSlug = q("[data-shuffle-from]")?.dataset.shuffleFrom || "";
   q("[data-shuffle-from]")?.addEventListener("click", async () => {
     try {
-      const response = await fetch(new URL("/artists-index.json", window.location.origin), { cache:"force-cache" });
+      const response = await fetch(new URL("/artists-index.json", ARTISTS_ORIGIN), { cache:"force-cache" });
       if (!response.ok) throw new Error("index");
       const data = await response.json();
       const rows = (data.artists || []).filter((item) => item.slug && item.slug !== currentSlug);
       if (!rows.length) throw new Error("empty");
       const pick = rows[Math.floor(Math.random() * rows.length)];
-      window.location.href = "/artistas/" + pick.slug + "/";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/" + pick.slug + "/";
     } catch (_) {
-      window.location.href = "../";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/";
     }
   });
 
@@ -261,7 +262,7 @@
   let artistIndexPromise = null;
   function artistIndex() {
     if (!artistIndexPromise) {
-      const indexUrl = new URL("/artists-index.json", window.location.origin);
+      const indexUrl = new URL("/artists-index.json", ARTISTS_ORIGIN);
       artistIndexPromise = fetch(indexUrl.href, { cache:"force-cache" })
         .then((r) => r.ok ? r.json() : Promise.reject(new Error("artist-index")))
         .catch(() => ({ artists:[], aliases:{} }));
@@ -385,7 +386,7 @@
       const index = await artistIndex();
       const slug = artistSlugFor(meta.artist, index);
       radio.artistLink.hidden = !slug;
-      if (slug) radio.artistLink.href = "/artistas/" + slug + "/";
+      if (slug) radio.artistLink.href = ARTISTS_ORIGIN + "/artistas/" + slug + "/";
     }
 
     if (radio.art && radio.fallback) {
