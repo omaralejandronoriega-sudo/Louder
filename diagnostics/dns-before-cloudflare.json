@@ -101,6 +101,75 @@
       "cloudflare_ryleigh": [
         "\"v=DMARC1; p=none;\""
       ]
+    },
+    "default._domainkey.loudermx.com TXT": {
+      "public": [
+        "\"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqRKo4NDxOO18Bif3tYo1qCTMCRH+yn3ThfMhWju3DDbDWXmaW4LVB9E8vdjI6MjBBcv9kYeQe6j0SxooVgwDf0Z0LKj8DsSJcie2Vegrlxrvfr4i9TrrPyJjde+bybNFJkV0/DbzvDTY9/dBNq/pkR8dfrHT5bGCvGWTJHAdoqwwkfExobqy/OziYQ3Jrxhfr\" \"0OKm5LWHxJQAd0oLJV45FidIWXmUnsNT3vPIg6hgStDh0T2vXHqVgI53MllxhnYDGtWejZrJC9Husu33QFpwUEL4NOZ6z06qbO0wYAxJSNihdzOryx8ZB6Pk/IyG/wjmiK7zcL2n8vzteHXZ6GC+wIDAQAB;\""
+      ],
+      "cloudflare_cris": [
+        "\"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqRKo4NDxOO18Bif3tYo1qCTMCRH+yn3ThfMhWju3DDbDWXmaW4LVB9E8vdjI6MjBBcv9kYeQe6j0SxooVgwDf0Z0LKj8DsSJcie2Vegrlxrvfr4i9TrrPyJjde+bybNFJkV0/DbzvDTY9/dBNq/pkR8dfrHT5bGCvGWTJHAdoqwwkfExobqy/OziYQ3Jrxhfr\" \"0OKm5LWHxJQAd0oLJV45FidIWXmUnsNT3vPIg6hgStDh0T2vXHqVgI53MllxhnYDGtWejZrJC9Husu33QFpwUEL4NOZ6z06qbO0wYAxJSNihdzOryx8ZB6Pk/IyG/wjmiK7zcL2n8vzteHXZ6GC+wIDAQAB;\""
+      ],
+      "cloudflare_ryleigh": [
+        "\"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqRKo4NDxOO18Bif3tYo1qCTMCRH+yn3ThfMhWju3DDbDWXmaW4LVB9E8vdjI6MjBBcv9kYeQe6j0SxooVgwDf0Z0LKj8DsSJcie2Vegrlxrvfr4i9TrrPyJjde+bybNFJkV0/DbzvDTY9/dBNq/pkR8dfrHT5bGCvGWTJHAdoqwwkfExobqy/OziYQ3Jrxhfr\" \"0OKm5LWHxJQAd0oLJV45FidIWXmUnsNT3vPIg6hgStDh0T2vXHqVgI53MllxhnYDGtWejZrJC9Husu33QFpwUEL4NOZ6z06qbO0wYAxJSNihdzOryx8ZB6Pk/IyG/wjmiK7zcL2n8vzteHXZ6GC+wIDAQAB;\""
+      ]
+    },
+    "cpanel.loudermx.com A": {
+      "public": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63",
+        "loudermx.com."
+      ]
+    },
+    "webmail.loudermx.com A": {
+      "public": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63",
+        "loudermx.com."
+      ]
+    },
+    "ftp.loudermx.com A": {
+      "public": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63",
+        "loudermx.com."
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63",
+        "loudermx.com."
+      ]
+    },
+    "autodiscover.loudermx.com A": {
+      "public": [
+        "108.179.194.63"
+      ],
+      "cloudflare_cris": [
+        "108.179.194.63"
+      ],
+      "cloudflare_ryleigh": [
+        "108.179.194.63"
+      ]
+    },
+    "autodiscover.loudermx.com CNAME": {
+      "public": [],
+      "cloudflare_cris": [],
+      "cloudflare_ryleigh": []
     }
   }
 }
