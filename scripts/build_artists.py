@@ -18,7 +18,7 @@ ALBUM_ART = ROOT / "data" / "album_art.json"
 ARTIST_REVIEW = ROOT / "data" / "artist_review_overrides.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
-PUBLIC_ARTISTS_ORIGIN = "https://loudermx.com"
+PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
 
 
 def esc(value: Any) -> str:
@@ -1406,7 +1406,7 @@ def main() -> int:
     (DOCS / "artistas" / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (DOCS / "robots.txt").write_text(
         "User-agent: *\\nAllow: /\\n" +
-        f"Sitemap: {PUBLIC_ARTISTS_ORIGIN}/artistas/sitemap.xml\\n",
+        f"Sitemap: {PUBLIC_ARTISTS_ORIGIN}/sitemap.xml\\n",
         encoding="utf-8",
     )
 
