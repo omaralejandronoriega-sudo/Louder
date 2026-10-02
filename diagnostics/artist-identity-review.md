@@ -1,0 +1,104 @@
+# Revisión de identidad · Louder Artistas
+
+- Universo bruto: 8038
+- Candidatos de alta confianza: 18
+- Candidatos para revisión: 75
+
+## Alta confianza
+
+- Louder — internal_exact — 507 plays — Transmitting Live Live (0); Louder Radio (54)
+- The British Corner — internal_exact — 460 plays — www.louder.mx (241); EN VIVO!! (76); Louder Radio (48); Omar Noriega En Vivo (28)
+- Louder Radio — internal_exact — 235 plays — stream (0); Louder · La Única Alternativa (75)
+- ¡Mordaz! — internal_exact — 167 plays — Al Aire (62); Al aire 1 (52); Al aire 2 (49); @mxlouder (3)
+- Louder.mx — internal_exact — 26 plays — PLANETA ROCK 2 de OCTUBRE (0)
+- The British Corner www.louder.mx — program_name — 8 plays — Louder Radio (8)
+- The British Corner / @thebritco — program_name — 7 plays — www.louder.mx (0)
+- The British Corner / Omar Noriega — program_name — 3 plays — Louder Radio (0)
+- The British Corner EN VIVO — program_name — 2 plays — con Omar Noriega (2)
+- The British Corner Forever — program_name — 2 plays — Louder Radio (1); stream (1)
+- The British Corner I — program_name — 2 plays — @thebritco (2)
+- The British Corner Wankers! — program_name — 2 plays — Louder Radio (2)
+- The British Corner! al aire — program_name — 2 plays — Louder Radio (2)
+- The British Corner 24 — program_name — 1 plays — 01-17_mezcla (1)
+- The British Corner Forever And Ever — program_name — 1 plays — Louder Radio (1)
+- The British Corner PROGRAMA UNO — program_name — 1 plays — (23/10/2012 - 1er Aniversario) (1)
+- The British Corner! Oh si — program_name — 1 plays — Louder Radio (1)
+- The British Corner! Yes en Ingles — program_name — 1 plays — Louder Radio (1)
+
+## Revisar, no excluir automáticamente
+
+- 14 Milano Sun — numbered_prefix_duplicate — 7 plays
+- 11 Tv Girl — numbered_prefix_duplicate — 5 plays
+- 18 I Break Horses — numbered_prefix_duplicate — 4 plays
+- 10 Prince Innocence — numbered_prefix_duplicate — 3 plays
+- 10 Silver Swans — numbered_prefix_duplicate — 3 plays
+- 17 Sky Ferreira — numbered_prefix_duplicate — 3 plays
+- 18 Po Po — numbered_prefix_duplicate — 3 plays
+- 19 Northern Lite — numbered_prefix_duplicate — 3 plays
+- 19 Petite Noir — numbered_prefix_duplicate — 3 plays
+- 19 Superhumanoids — numbered_prefix_duplicate — 3 plays
+- 05 Amanda Mair — numbered_prefix_duplicate — 2 plays
+- 08 Craft Spells — numbered_prefix_duplicate — 2 plays
+- 08 Wild Nothing — numbered_prefix_duplicate — 2 plays
+- 09 Novella — numbered_prefix_duplicate — 2 plays
+- 13 Darkness Falls — numbered_prefix_duplicate — 2 plays
+- 13 Little Scream — numbered_prefix_duplicate — 2 plays
+- 13 Sleep Over — numbered_prefix_duplicate — 2 plays
+- 14 Fanzine — numbered_prefix_duplicate — 2 plays
+- 16 Friendly Fires — numbered_prefix_duplicate — 2 plays
+- 17 Ikons — numbered_prefix_duplicate — 2 plays
+- 17 Little Jinder — numbered_prefix_duplicate — 2 plays
+- 17 Work Drugs — numbered_prefix_duplicate — 2 plays
+- 18 The Soft Pack — numbered_prefix_duplicate — 2 plays
+- 19 Two Wounded birds — numbered_prefix_duplicate — 2 plays
+- 20 We Are Serenades — numbered_prefix_duplicate — 2 plays
+- 22 Ski Lodge — numbered_prefix_duplicate — 2 plays
+- 25 By The Sea — numbered_prefix_duplicate — 2 plays
+- 01 Neon Indian — numbered_prefix_duplicate — 1 plays
+- 01 New Navy — numbered_prefix_duplicate — 1 plays
+- 01 Twin Shadow — numbered_prefix_duplicate — 1 plays
+- 01_3_Doors_Down_ — numbered_prefix_duplicate — 1 plays
+- 02 Meltones — numbered_prefix_duplicate — 1 plays
+- 03 Haim — numbered_prefix_duplicate — 1 plays
+- 03 Panama — numbered_prefix_duplicate — 1 plays
+- 03 Slowdance — numbered_prefix_duplicate — 1 plays
+- 04 Magic Wands — numbered_prefix_duplicate — 1 plays
+- 04 Panthers — numbered_prefix_duplicate — 1 plays
+- 04 Real Estate — numbered_prefix_duplicate — 1 plays
+- 04 Swimwear — numbered_prefix_duplicate — 1 plays
+- 04 Van She — numbered_prefix_duplicate — 1 plays
+- 05 Pulseprogramming — numbered_prefix_duplicate — 1 plays
+- 05 Tiger Love — numbered_prefix_duplicate — 1 plays
+- 06 Blouse — numbered_prefix_duplicate — 1 plays
+- 06 Niki & The Dove — numbered_prefix_duplicate — 1 plays
+- 06 The Concept — numbered_prefix_duplicate — 1 plays
+- 07 Fear Of Men — numbered_prefix_duplicate — 1 plays
+- 07 High Highs — numbered_prefix_duplicate — 1 plays
+- 07_3_doors_down_ — numbered_prefix_duplicate — 1 plays
+- 08 Beta Frontiers — numbered_prefix_duplicate — 1 plays
+- 08 Internet Forever — numbered_prefix_duplicate — 1 plays
+- 08 lilys — numbered_prefix_duplicate — 1 plays
+- 09 Names — numbered_prefix_duplicate — 1 plays
+- 09 The New Division — numbered_prefix_duplicate — 1 plays
+- 10 The Bilinda Butchers — numbered_prefix_duplicate — 1 plays
+- 11 Caribou — numbered_prefix_duplicate — 1 plays
+- 11 Eugene McGuinness — numbered_prefix_duplicate — 1 plays
+- 11 Moons — numbered_prefix_duplicate — 1 plays
+- 12 Alpine — numbered_prefix_duplicate — 1 plays
+- 12 Anthem Facility — numbered_prefix_duplicate — 1 plays
+- 12 Black City Lights — numbered_prefix_duplicate — 1 plays
+- 14 Blue Boats — numbered_prefix_duplicate — 1 plays
+- 14 The Hobbes Fanclub — numbered_prefix_duplicate — 1 plays
+- 15 Simian Ghost — numbered_prefix_duplicate — 1 plays
+- 15 Zulu Winter — numbered_prefix_duplicate — 1 plays
+- 16 Casa del Mirto — numbered_prefix_duplicate — 1 plays
+- 16 Post Modern Team — numbered_prefix_duplicate — 1 plays
+- 17 Totally Enormous Extinct Dinosaurs — numbered_prefix_duplicate — 1 plays
+- 18 Best Coast — numbered_prefix_duplicate — 1 plays
+- 20 Arcade Fire — numbered_prefix_duplicate — 1 plays
+- 20 Minks — numbered_prefix_duplicate — 1 plays
+- 22 Divine Fits — numbered_prefix_duplicate — 1 plays
+- 24 Boy Friend — numbered_prefix_duplicate — 1 plays
+- 24 Vinyl Williams — numbered_prefix_duplicate — 1 plays
+- 25 Cassettes Won't Listen — numbered_prefix_duplicate — 1 plays
+- 61 Neon Indian — numbered_prefix_duplicate — 1 plays
