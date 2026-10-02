@@ -12,6 +12,7 @@ on:
       - "data/radar_2026.json"
       - "data/control.json"
       - "assets/**"
+      - "search-console/**"
       - "scripts/merge_history_sources.py"
       - "scripts/build_artists.py"
       - "scripts/build_radar_2026.py"
