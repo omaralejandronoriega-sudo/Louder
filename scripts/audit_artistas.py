@@ -231,7 +231,7 @@ def main() -> int:
     no_bio.sort(key=lambda r: (-r["plays"], r["name"].casefold()))
 
     targets = {}
-    wanted = {"boylife", "monsun"}
+    wanted = {"boylife", "monsun", "monsune"}
     for r in rows:
         if ba.norm(str(r["name"])) in wanted or ba.norm(str(r["slug"])) in wanted:
             targets[ba.norm(str(r["name"]))] = r
@@ -341,7 +341,7 @@ def main() -> int:
         "## Casos solicitados",
         "",
     ]
-    for key in ("boylife", "monsun"):
+    for key in ("boylife", "monsune", "monsun"):
         row = targets.get(key)
         if not row:
             lines.append(f"- {key}: no localizado entre perfiles públicos normalizados.")
