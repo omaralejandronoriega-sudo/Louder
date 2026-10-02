@@ -63,6 +63,34 @@ class EnrichmentStateTests(unittest.TestCase):
         self.assertEqual(status, "complete")
         self.assertEqual(missing, [])
 
+    def test_remote_image_validation_requires_real_image_bytes(self):
+        class Response:
+            def __init__(self, payload: bytes):
+                self.url = "https://example.com/image.jpg"
+                self.status_code = 200
+                self.headers = {"Content-Type": "image/jpeg"}
+                self.payload = payload
+
+            def iter_content(self, chunk_size: int):
+                yield self.payload
+
+        class Session:
+            def __init__(self, payload: bytes):
+                self.payload = payload
+
+            def get(self, *args, **kwargs):
+                return Response(self.payload)
+
+        fake_html = b"<html>not an image</html>" + (b"x" * 300)
+        ok, _, reason = es.validate_remote_image(Session(fake_html), "https://example.com/image.jpg")
+        self.assertFalse(ok)
+        self.assertTrue(reason.startswith("invalid_bytes"))
+
+        fake_jpeg = b"\xff\xd8\xff" + (b"x" * 300)
+        ok, _, reason = es.validate_remote_image(Session(fake_jpeg), "https://example.com/image.jpg")
+        self.assertTrue(ok)
+        self.assertEqual(reason, "bytes")
+
     def test_unvalidated_image_is_missing(self):
         artist = {"bio": "Bio"}
         gallery = {
