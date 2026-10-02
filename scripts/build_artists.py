@@ -99,7 +99,12 @@ def is_public_artist_candidate(value: str) -> bool:
     key = artist_key(raw)
     if key in ARTIST_EXCLUDES:
         return False
-    if norm(raw) in NON_ARTIST_LABELS:
+    normalized = norm(raw)
+    if normalized in NON_ARTIST_LABELS:
+        return False
+    # The British Corner is a Louder programme; historical playout metadata
+    # produced several variants that must never become public artist profiles.
+    if normalized.startswith("the british corner"):
         return False
     # Do not reject names for being short, numeric or punctuation-based:
     # A, 424 and !!! are legitimate artist names.
@@ -237,6 +242,22 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
     buckets: dict[str, dict[str, Any]] = {}
     aliases: dict[str, str] = {}
 
+    # Historical playlist imports sometimes prefixed the artist with a two-digit
+    # track number ("03 Haim", "09 The New Division"). Only strip that prefix
+    # when the clean artist also exists independently in the catalog. This keeps
+    # legitimate numeric names such as 30 Seconds to Mars or 31 Minutos intact.
+    exact_names: dict[str, str] = {}
+    for original in artists:
+        if not isinstance(original, dict) or not original.get("name"):
+            continue
+        raw_name = str(original.get("name") or "").strip()
+        if not is_public_artist_candidate(raw_name):
+            continue
+        reviewed_name = public_artist_name(raw_name)
+        if re.match(r"^\d{2}\s+.+$", reviewed_name):
+            continue
+        exact_names.setdefault(artist_key(reviewed_name), reviewed_name)
+
     for original in artists:
         if not isinstance(original, dict) or not original.get("name"):
             continue
@@ -244,6 +265,12 @@ def prepare_public_artists(artists: list[dict[str, Any]]) -> tuple[list[dict[str
         if not is_public_artist_candidate(raw_name):
             continue
         clean_name = public_artist_name(raw_name)
+        numbered = re.match(r"^\d{2}\s+(.+)$", clean_name)
+        if numbered:
+            stripped_name = public_artist_name(numbered.group(1).strip())
+            canonical_name = exact_names.get(artist_key(stripped_name))
+            if canonical_name:
+                clean_name = canonical_name
         key = artist_key(clean_name)
         candidate = dict(original)
         candidate["name"] = clean_name
