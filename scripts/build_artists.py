@@ -16,6 +16,7 @@ DATA = ROOT / "data" / "artists.json"
 GALLERIES = ROOT / "data" / "galleries.json"
 ALBUM_ART = ROOT / "data" / "album_art.json"
 ARTIST_REVIEW = ROOT / "data" / "artist_review_overrides.json"
+IDENTITY_ENRICHMENT = ROOT / "data" / "identity_enrichment.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 GSC_VERIFY_DIR = ROOT / "search-console"
@@ -86,6 +87,7 @@ NON_ARTIST_LABELS = {
     "louder radio",
     "louder mx",
     "loudermx",
+    "louder",
     "louder station id",
     "station id",
     "promo louder",
@@ -382,6 +384,63 @@ def source_stats_html(artist: dict[str, Any]) -> str:
 </section>'''
 
 
+def apply_identity_fallbacks(galleries: dict[str, Any]) -> dict[str, Any]:
+    """Merge conservative MusicBrainz/Wikipedia fallback data into gallery metadata.
+
+    Existing Louder/TheAudioDB/fanart data always wins. The fallback only fills
+    empty image, bio, genre, official-site and social fields and never renames an
+    artist automatically.
+    """
+    if not IDENTITY_ENRICHMENT.exists():
+        return galleries
+    try:
+        store = json.loads(IDENTITY_ENRICHMENT.read_text(encoding="utf-8"))
+    except Exception:
+        return galleries
+    rows = store.get("artists") or {}
+    if not isinstance(rows, dict):
+        return galleries
+
+    for slug, fallback in rows.items():
+        if not isinstance(fallback, dict) or not fallback.get("verified"):
+            continue
+        gallery = galleries.setdefault(slug, {})
+        image = str(fallback.get("image") or "").strip()
+        if image and not gallery_images(gallery):
+            gallery["images"] = [{
+                "url": image,
+                "preview": image,
+                "source": str(fallback.get("image_source") or "MusicBrainz/Wikipedia"),
+                "kind": "portrait",
+            }]
+            gallery["image_count"] = 1
+
+        if not str(gallery.get("bio_es") or gallery.get("bio_en") or "").strip():
+            bio = str(fallback.get("bio_en") or "").strip()
+            if bio:
+                gallery["bio_en"] = bio
+
+        if not str(gallery.get("official_url") or "").strip():
+            gallery["official_url"] = str(fallback.get("official_url") or "").strip()
+
+        social = gallery.setdefault("social", {})
+        fallback_social = fallback.get("social") or {}
+        for key in ("facebook", "twitter", "instagram"):
+            if not str(social.get(key) or "").strip():
+                social[key] = str(fallback_social.get(key) or "").strip()
+
+        if not str(gallery.get("genre") or "").strip():
+            gallery["genre"] = str(fallback.get("genre") or "").strip()
+        if not str(gallery.get("wikipedia_url") or "").strip():
+            gallery["wikipedia_url"] = str(fallback.get("wikipedia_url") or "").strip()
+
+        if fallback.get("verified") and not gallery.get("verified"):
+            gallery["verified"] = True
+            gallery["verification_source"] = str(fallback.get("verification_source") or "MusicBrainz")
+            gallery["verification_title"] = str(fallback.get("canonical_name") or fallback.get("name") or "")
+    return galleries
+
+
 def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
     if not isinstance(gallery, dict):
         return []
@@ -552,13 +611,17 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
         album_key, album_label = track_album_bucket(track)
         cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
         artwork = str(track.get("artwork") or cached.get("url") or "")
+        fallback_cover = (
+            f'<span class="cover-fallback" data-missing-cover '
+            f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
+        )
         cover = (
-            f'<img src="{esc(artwork)}" alt="" loading="lazy" decoding="async">'
+            f'<img src="{esc(artwork)}" alt="" loading="lazy" decoding="async" '
+            f'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">'
+            f'<span class="cover-fallback" style="display:none" data-missing-cover '
+            f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
             if artwork
-            else (
-                f'<span class="cover-fallback" data-missing-cover '
-                f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
-            )
+            else fallback_cover
         )
         hidden = " hidden" if track_index >= 10 else ""
         out.append(
@@ -808,10 +871,14 @@ def build_artist(
     name = artist.get("name", "")
     gallery = galleries.get(artist.get("slug", ""), {})
     image = preferred_image(artist, gallery)
+    initials = str(name[:2] or "?").upper()
+    hero_fallback = f'<span class="artist-art-fallback">{esc(initials)}</span>'
     hero_image = (
-        f'<img src="{esc(image)}" alt="{esc(name)}" fetchpriority="high" decoding="async">'
+        f'<img src="{esc(image)}" alt="{esc(name)}" fetchpriority="high" decoding="async" '
+        f'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">'
+        f'<span class="artist-art-fallback" style="display:none">{esc(initials)}</span>'
         if image
-        else f'<span>{esc(name[:2])}</span>'
+        else hero_fallback
     )
     backdrop = (
         f'<div class="artist-backdrop" style="background-image:url(&quot;{esc(image)}&quot;)"></div>'
@@ -934,6 +1001,7 @@ def main() -> int:
         except Exception:
             gallery_store = {"artists": {}}
     galleries = gallery_store.get("artists") or {}
+    galleries = apply_identity_fallbacks(galleries)
 
     art_store = {"albums": {}}
     if ALBUM_ART.exists():
