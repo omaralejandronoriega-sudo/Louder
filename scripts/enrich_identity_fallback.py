@@ -211,10 +211,16 @@ def main() -> int:
         else:
             y, m, d, hh, mm, ss = date_key
             recent_score = y * 10**10 + m * 10**8 + d * 10**6 + hh * 10**4 + mm * 10**2 + ss
+        catalog_status = str(a.get("catalog_status") or "")
+        if catalog_status in {"live_only", "programmed_history"} or "yesstreaming_live" in sources:
+            active_rank = 0
+        elif catalog_status == "programmed_only" or "yesstreaming" in sources:
+            active_rank = 1
+        else:
+            active_rank = 2
         return (
-            0 if "yesstreaming_live" in sources else 1,
+            active_rank,
             -recent_score,
-            0 if "yesstreaming" in sources else 1,
             -int(a.get("plays") or 0),
             norm(a.get("name", "")),
         )
