@@ -441,6 +441,44 @@ def apply_identity_fallbacks(galleries: dict[str, Any]) -> dict[str, Any]:
     return galleries
 
 
+def apply_reviewed_profile_overrides(galleries: dict[str, Any]) -> dict[str, Any]:
+    """Apply human-reviewed profile fields after automatic enrichment."""
+    profiles = ARTIST_REVIEW_DATA.get("profiles") or {}
+    if not isinstance(profiles, dict):
+        return galleries
+    for slug, profile in profiles.items():
+        if not isinstance(profile, dict):
+            continue
+        gallery = galleries.setdefault(str(slug), {})
+        bio_es = str(profile.get("bio_es") or "").strip()
+        if bio_es:
+            gallery["bio_es"] = bio_es
+        image = str(profile.get("image") or "").strip()
+        if image.startswith("https://"):
+            gallery["images"] = [{
+                "url": image,
+                "preview": image,
+                "source": "Louder reviewed override",
+                "kind": "portrait",
+            }]
+            gallery["image_count"] = 1
+        for key in ("official_url", "genre", "style", "country", "wikipedia_url"):
+            value = str(profile.get(key) or "").strip()
+            if value:
+                gallery[key] = value
+        social = profile.get("social") or {}
+        if isinstance(social, dict):
+            target = gallery.setdefault("social", {})
+            for key in ("facebook", "twitter", "instagram"):
+                value = str(social.get(key) or "").strip()
+                if value:
+                    target[key] = value
+        gallery["verified"] = True
+        gallery["verification_source"] = "Louder reviewed override"
+        gallery["verification_title"] = str(profile.get("canonical_name") or slug)
+    return galleries
+
+
 def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
     if not isinstance(gallery, dict):
         return []
@@ -1026,6 +1064,7 @@ def main() -> int:
             gallery_store = {"artists": {}}
     galleries = gallery_store.get("artists") or {}
     galleries = apply_identity_fallbacks(galleries)
+    galleries = apply_reviewed_profile_overrides(galleries)
 
     art_store = {"albums": {}}
     if ALBUM_ART.exists():
