@@ -36,6 +36,8 @@ jobs:
               zone_id=zones[0].get("id")
               out["zone_status"]=zones[0].get("status")
               out["zone_paused"]=zones[0].get("paused")
+              out["cloudflare_name_servers"]=zones[0].get("name_servers") or []
+              out["original_name_servers"]=zones[0].get("original_name_servers") or []
               for host in ["loudermx.com","www.loudermx.com"]:
                   rr=requests.get(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records",params={"name":host},headers=headers,timeout=30)
                   recs=[]
