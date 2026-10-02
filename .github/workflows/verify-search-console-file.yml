@@ -1,4 +1,4 @@
-name: Verify Search Console File
+name: Verify Artistas Sitemap
 
 on:
   push:
@@ -18,18 +18,33 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p diagnostics
-          URL="https://artistas.loudermx.com/google532e3e75045a6bdc.html"
+          URL="https://artistas.loudermx.com/sitemap.xml"
           BODY="$(curl -fsSL --max-time 30 "$URL")"
           CODE="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 "$URL")"
           printf '%s\n' "$BODY" > diagnostics/search-console-verification-body.txt
           python - <<'PY'
           import json, pathlib
-          expected="google-site-verification: google532e3e75045a6bdc.html"
+          import xml.etree.ElementTree as ET
           body=pathlib.Path("diagnostics/search-console-verification-body.txt").read_text().strip()
-          out={"url":"https://artistas.loudermx.com/google532e3e75045a6bdc.html","content_matches":body==expected,"body":body}
+          parse_ok=True
+          error=None
+          url_count=0
+          try:
+              root=ET.fromstring(body)
+              url_count=len(root.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url"))
+          except Exception as e:
+              parse_ok=False
+              error=str(e)
+          out={
+            "url":"https://artistas.loudermx.com/sitemap.xml",
+            "parse_ok":parse_ok,
+            "url_count":url_count,
+            "error":error,
+            "prefix":body[:200]
+          }
           pathlib.Path("diagnostics/search-console-verification.json").write_text(json.dumps(out,indent=2)+"\n")
-          if body != expected:
-              raise SystemExit("Verification body does not match")
+          if not parse_ok or url_count < 1:
+              raise SystemExit("Invalid or empty sitemap")
           print(json.dumps(out,indent=2))
           PY
           test "$CODE" = "200"
