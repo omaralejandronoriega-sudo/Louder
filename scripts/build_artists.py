@@ -885,8 +885,9 @@ def build_artist(
     out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     track_count = len(artist.get("tracks") or [])
+    track_label = "1 canción" if track_count == 1 else f"{track_count} canciones"
     description = (
-        f"Archivo de {name} en Louder: {track_count} canciones, {plays_label(artist.get('plays'))}; "
+        f"Archivo de {name} en Louder: {track_label}, {plays_label(artist.get('plays'))}; "
         "primera y última aparición, biografía y artistas relacionados."
     )
     breadcrumbs = {
@@ -1403,6 +1404,11 @@ def main() -> int:
     ) + "</urlset>\n"
     (DOCS / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (DOCS / "artistas" / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (DOCS / "robots.txt").write_text(
+        "User-agent: *\\nAllow: /\\n" +
+        f"Sitemap: {PUBLIC_ARTISTS_ORIGIN}/sitemap.xml\\n",
+        encoding="utf-8",
+    )
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
