@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T04:13:55.334947+00:00",
+  "generated_at": "2026-10-02T04:15:41.164742+00:00",
   "source_updates": {
-    "artists": "2026-10-02T04:13:50.955270Z",
+    "artists": "2026-10-02T04:15:35.967985Z",
     "galleries": "2026-10-01T23:57:13.496695+00:00",
     "album_art": "2026-10-02T01:48:36.574660+00:00"
   },
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-02T04:13:50.955270Z"
+      "merged_at": "2026-10-02T04:15:35.967985Z"
     }
   },
   "profile_enrichment": {
@@ -112,6 +112,42 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    "monsune": {
+      "name": "Monsune",
+      "slug": "monsune",
+      "plays": 10,
+      "first_played": "5 mar 2025",
+      "last_played": "1 oct 2026 · 19:18",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
       "missing_core": [
         "image"
       ],

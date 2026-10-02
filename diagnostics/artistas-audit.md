@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-10-02T04:13:55.334947+00:00
+Generada: 2026-10-02T04:15:41.164742+00:00
 
 ## Resumen
 
@@ -27,4 +27,5 @@ Generada: 2026-10-02T04:13:55.334947+00:00
 ## Casos solicitados
 
 - boylife: plays=9, tracks=1, imagen=no, bio=sí, portadas faltantes=1, Otras=1, faltantes core=image.
+- Monsune: plays=10, tracks=1, imagen=no, bio=sí, portadas faltantes=1, Otras=1, faltantes core=image.
 - monsun: no localizado entre perfiles públicos normalizados.
