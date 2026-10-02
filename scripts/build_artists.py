@@ -897,7 +897,31 @@ def build_artist(
         f"<p>{esc(p)}</p>" for p in re.split(r"\n\s*\n", bio) if p.strip()
     )
     if not bio_html:
-        bio_html = '<div class="note">Biografía en preparación. Los datos de programación ya forman parte del Archivo Louder.</div>'
+        tracks = [t for t in (artist.get("tracks") or []) if isinstance(t, dict) and t.get("title")]
+        track_count = len(tracks)
+        plays = int(artist.get("plays") or 0)
+        first = str(artist.get("first_played") or "").strip()
+        last = str(artist.get("last_played") or "").strip()
+        pieces = [f"{name} forma parte del Archivo Louder"]
+        if first:
+            pieces[0] += f" desde {first}"
+        pieces[0] += "."
+        if track_count:
+            noun = "una canción" if track_count == 1 else f"{track_count} canciones"
+            sentence = f"En el histórico registra {noun} y {plays_label(plays)}"
+            if last:
+                sentence += f"; su aparición más reciente fue {last}"
+            sentence += "."
+            pieces.append(sentence)
+            titles = [str(t.get("title") or "").strip() for t in tracks[:3] if str(t.get("title") or "").strip()]
+            if titles:
+                quoted = ", ".join(f"“{title}”" for title in titles)
+                pieces.append(("La canción registrada es " if len(titles) == 1 else "Entre las canciones registradas están ") + quoted + ".")
+        elif last:
+            pieces.append(f"Su aparición más reciente registrada fue {last}.")
+        if genre_values:
+            pieces.append("Etiquetas disponibles: " + ", ".join(str(g) for g in genre_values[:4]) + ".")
+        bio_html = "<p>" + esc(" ".join(pieces)) + "</p>"
 
     body = f'''<main class="wrap">
 <div class="eyebrow">Archivo Louder</div>
