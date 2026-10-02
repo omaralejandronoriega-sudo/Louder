@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-02T03:08:08.247445+00:00",
+  "generated_at": "2026-10-02T03:09:28.042226+00:00",
   "source_updates": {
-    "artists": "2026-09-28T15:40:45.015280Z",
+    "artists": "2026-10-02T03:09:23.168287Z",
     "galleries": "2026-10-01T23:57:13.496695+00:00",
     "album_art": "2026-10-02T01:48:36.574660+00:00"
   },
   "catalog": {
-    "raw_artists": 7988,
-    "public_artists": 7891,
-    "aliases_normalized": 7969,
-    "with_history": 7690,
-    "with_tracks": 7885,
+    "raw_artists": 8038,
+    "public_artists": 7941,
+    "aliases_normalized": 8019,
+    "with_history": 7832,
+    "with_tracks": 7935,
     "without_tracks": 6,
     "catalog_status": {
       "wp_draft": 4593,
@@ -18,13 +18,15 @@
       "history_only": 1326,
       "programmed_only": 201,
       "programmed_history": 88,
+      "live_only": 50,
       "wp_orphan": 2
     },
     "sources": {
       "wp_db": 6275,
       "lastfm": 5328,
       "megaseg": 2356,
-      "yesstreaming": 1550
+      "yesstreaming": 1550,
+      "yesstreaming_live": 1078
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -32,43 +34,43 @@
       "megaseg_artists": 2357,
       "yesstreaming_artists": 1551,
       "source_union_artists": 7988,
-      "base_artists": 1683,
+      "base_artists": 7988,
       "wp_db_artists": 6381,
       "wp_db_tracks": 14606,
-      "created_history_artists": 6305,
+      "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-09-28T15:40:45.015280Z"
+      "merged_at": "2026-10-02T03:09:23.168287Z"
     }
   },
   "profile_enrichment": {
-    "core_complete": 3551,
-    "core_complete_pct": 45.0,
+    "core_complete": 3575,
+    "core_complete_pct": 45.02,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 4645,
-    "effective_image_pct": 58.86,
+    "effective_image_pct": 58.49,
     "image_direct_artist": 1648,
     "image_gallery_fallback": 2997,
-    "missing_image": 3246,
+    "missing_image": 3296,
     "effective_bio": 3964,
-    "effective_bio_pct": 50.23,
+    "effective_bio_pct": 49.92,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 254,
     "bio_gallery_en": 2684,
-    "missing_bio": 3927,
+    "missing_bio": 3977,
     "gallery_checked": 7891,
-    "gallery_checked_pct": 100.0,
+    "gallery_checked_pct": 99.37,
     "gallery_with_images": 4645,
     "with_social": 3067,
     "with_genre": 3323,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18082,
+    "total": 18174,
     "with_effective_artwork": 14309,
-    "with_effective_artwork_pct": 79.13,
-    "missing_artwork": 3773,
-    "grouped_as_otras": 5786,
-    "with_first_and_last_dates": 17322,
+    "with_effective_artwork_pct": 78.73,
+    "missing_artwork": 3865,
+    "grouped_as_otras": 5878,
+    "with_first_and_last_dates": 17587,
     "album_art_cache_entries": 3094,
     "album_art_cache_found": 2383,
     "album_art_cache_missed": 711
@@ -77,13 +79,14 @@
     "boylife": {
       "name": "boylife",
       "slug": "boylife",
-      "plays": 7,
+      "plays": 9,
       "first_played": "16 mar 2025",
-      "last_played": "22 nov 2025 · 17:00",
+      "last_played": "1 oct 2026 · 20:55",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 1,
@@ -109,17 +112,18 @@
     {
       "name": "Louder",
       "slug": "louder",
-      "plays": 453,
+      "plays": 507,
       "first_played": "16 ago 2012",
-      "last_played": "22 mar 2017 · 23:59",
+      "last_played": "1 oct 2026 · 15:29",
       "catalog_status": "history_only",
       "sources": [
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -196,15 +200,16 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 131,
+      "plays": 134,
       "first_played": "22 jul 2012",
-      "last_played": "14 sep 2026 · 23:59",
+      "last_played": "29 sep 2026 · 17:54",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 8,
       "tracks_with_artwork": 8,
@@ -288,15 +293,16 @@
     {
       "name": "Augustines",
       "slug": "augustines",
-      "plays": 109,
+      "plays": 114,
       "first_played": "21 jul 2012",
-      "last_played": "15 sep 2026 · 23:59",
+      "last_played": "1 oct 2026 · 15:14",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 10,
       "tracks_with_artwork": 6,
@@ -319,14 +325,15 @@
     {
       "name": "Belle & Sebastian",
       "slug": "belle-sebastian",
-      "plays": 107,
+      "plays": 109,
       "first_played": "16 jul 2022",
-      "last_played": "15 sep 2026 · 23:59",
+      "last_played": "27 sep 2026 · 23:19",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 5,
       "tracks_with_artwork": 0,
@@ -468,13 +475,14 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 87,
+      "plays": 90,
       "first_played": "14 jul 2022",
-      "last_played": "30 abr 2026 · 13:06",
+      "last_played": "30 sep 2026 · 13:25",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 4,
       "tracks_with_artwork": 4,
@@ -910,6 +918,68 @@
       "core_complete": false
     },
     {
+      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
+      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
+      "plays": 64,
+      "first_played": "22 jul 2022",
+      "last_played": "30 sep 2026 · 22:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "Mitski",
+      "slug": "mitski",
+      "plays": 63,
+      "first_played": "29 ago 2022",
+      "last_played": "30 sep 2026 · 18:58",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 14,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 7,
+      "tracks_in_otras": 11,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -1027,36 +1097,6 @@
       "core_complete": false
     },
     {
-      "name": "Mitski",
-      "slug": "mitski",
-      "plays": 61,
-      "first_played": "29 ago 2022",
-      "last_played": "14 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 14,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 11,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
       "name": "The Go! Team",
       "slug": "the-go-team",
       "plays": 61,
@@ -1082,36 +1122,6 @@
       "has_genre": true,
       "related": 0,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 61,
-      "first_played": "22 jul 2022",
-      "last_played": "1 may 2026 · 18:44",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false
@@ -1614,6 +1624,38 @@
       "core_complete": false
     },
     {
+      "name": "Jelani Aryeh",
+      "slug": "jelani-aryeh",
+      "plays": 52,
+      "first_played": "28 feb 2025",
+      "last_played": "1 oct 2026 · 04:35",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -1851,37 +1893,6 @@
       "core_complete": false
     },
     {
-      "name": "Jelani Aryeh",
-      "slug": "jelani-aryeh",
-      "plays": 49,
-      "first_played": "28 feb 2025",
-      "last_played": "4 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
       "name": "She's A Tease",
       "slug": "shes-a-tease",
       "plays": 49,
@@ -2052,6 +2063,38 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "Patrick Wolf",
+      "slug": "patrick-wolf",
+      "plays": 47,
+      "first_played": "14 mar 2013",
+      "last_played": "26 sep 2026 · 03:30",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 2,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -2266,31 +2309,32 @@
       "core_complete": false
     },
     {
-      "name": "Patrick Wolf",
-      "slug": "patrick-wolf",
+      "name": "Pale Honey",
+      "slug": "pale-honey",
       "plays": 46,
-      "first_played": "14 mar 2013",
-      "last_played": "11 sep 2026 · 19:19",
-      "catalog_status": "wp_draft",
+      "first_played": "29 mar 2016",
+      "last_played": "30 sep 2026 · 10:51",
+      "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 7,
-      "tracks_with_artwork": 6,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 2,
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": true,
-      "image_source": "gallery",
+      "image_source": "artist",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 5,
+      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
-      "related": 0,
+      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -2588,6 +2632,37 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 45,
+      "first_played": "17 jul 2022",
+      "last_played": "30 sep 2026 · 09:52",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -3007,84 +3082,24 @@
         "bio"
       ],
       "core_complete": false
-    },
-    {
-      "name": "Marina & the Diamonds",
-      "slug": "marina-the-diamonds",
-      "plays": 43,
-      "first_played": "16 mar 2013",
-      "last_played": "29 jun 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 43,
-      "first_played": "29 mar 2016",
-      "last_played": "15 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
     }
   ],
   "priority_missing_image": [
     {
       "name": "Louder",
       "slug": "louder",
-      "plays": 453,
+      "plays": 507,
       "first_played": "16 ago 2012",
-      "last_played": "22 mar 2017 · 23:59",
+      "last_played": "1 oct 2026 · 15:29",
       "catalog_status": "history_only",
       "sources": [
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3103,15 +3118,16 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 131,
+      "plays": 134,
       "first_played": "22 jul 2012",
-      "last_played": "14 sep 2026 · 23:59",
+      "last_played": "29 sep 2026 · 17:54",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 8,
       "tracks_with_artwork": 8,
@@ -3135,15 +3151,16 @@
     {
       "name": "Augustines",
       "slug": "augustines",
-      "plays": 109,
+      "plays": 114,
       "first_played": "21 jul 2012",
-      "last_played": "15 sep 2026 · 23:59",
+      "last_played": "1 oct 2026 · 15:14",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 10,
       "tracks_with_artwork": 6,
@@ -3197,13 +3214,14 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 87,
+      "plays": 90,
       "first_played": "14 jul 2022",
-      "last_played": "30 abr 2026 · 13:06",
+      "last_played": "30 sep 2026 · 13:25",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 4,
       "tracks_with_artwork": 4,
@@ -3286,6 +3304,37 @@
       "core_complete": false
     },
     {
+      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
+      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
+      "plays": 64,
+      "first_played": "22 jul 2022",
+      "last_played": "30 sep 2026 · 22:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -3309,36 +3358,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 61,
-      "first_played": "22 jul 2022",
-      "last_played": "1 may 2026 · 18:44",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "image",
         "bio"
@@ -3582,6 +3601,38 @@
       "core_complete": false
     },
     {
+      "name": "Jelani Aryeh",
+      "slug": "jelani-aryeh",
+      "plays": 52,
+      "first_played": "28 feb 2025",
+      "last_played": "1 oct 2026 · 04:35",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "A Freudian Slip",
       "slug": "a-freudian-slip",
       "plays": 51,
@@ -3728,37 +3779,6 @@
       "related": 7,
       "missing_core": [
         "image"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "Jelani Aryeh",
-      "slug": "jelani-aryeh",
-      "plays": 49,
-      "first_played": "28 feb 2025",
-      "last_played": "4 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
       ],
       "core_complete": false
     },
@@ -6076,17 +6096,18 @@
     {
       "name": "Louder",
       "slug": "louder",
-      "plays": 453,
+      "plays": 507,
       "first_played": "16 ago 2012",
-      "last_played": "22 mar 2017 · 23:59",
+      "last_played": "1 oct 2026 · 15:29",
       "catalog_status": "history_only",
       "sources": [
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6163,15 +6184,16 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 131,
+      "plays": 134,
       "first_played": "22 jul 2012",
-      "last_played": "14 sep 2026 · 23:59",
+      "last_played": "29 sep 2026 · 17:54",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 8,
       "tracks_with_artwork": 8,
@@ -6255,14 +6277,15 @@
     {
       "name": "Belle & Sebastian",
       "slug": "belle-sebastian",
-      "plays": 107,
+      "plays": 109,
       "first_played": "16 jul 2022",
-      "last_played": "15 sep 2026 · 23:59",
+      "last_played": "27 sep 2026 · 23:19",
       "catalog_status": "",
       "sources": [
         "wp_db",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 5,
       "tracks_with_artwork": 0,
@@ -6404,13 +6427,14 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 87,
+      "plays": 90,
       "first_played": "14 jul 2022",
-      "last_played": "30 abr 2026 · 13:06",
+      "last_played": "30 sep 2026 · 13:25",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 4,
       "tracks_with_artwork": 4,
@@ -6846,6 +6870,68 @@
       "core_complete": false
     },
     {
+      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
+      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
+      "plays": 64,
+      "first_played": "22 jul 2022",
+      "last_played": "30 sep 2026 · 22:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "Mitski",
+      "slug": "mitski",
+      "plays": 63,
+      "first_played": "29 ago 2022",
+      "last_played": "30 sep 2026 · 18:58",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 14,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 7,
+      "tracks_in_otras": 11,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -6963,36 +7049,6 @@
       "core_complete": false
     },
     {
-      "name": "Mitski",
-      "slug": "mitski",
-      "plays": 61,
-      "first_played": "29 ago 2022",
-      "last_played": "14 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 14,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 11,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
       "name": "The Go! Team",
       "slug": "the-go-team",
       "plays": 61,
@@ -7018,36 +7074,6 @@
       "has_genre": true,
       "related": 0,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 61,
-      "first_played": "22 jul 2022",
-      "last_played": "1 may 2026 · 18:44",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false
@@ -7464,6 +7490,38 @@
       "core_complete": false
     },
     {
+      "name": "Jelani Aryeh",
+      "slug": "jelani-aryeh",
+      "plays": 52,
+      "first_played": "28 feb 2025",
+      "last_played": "1 oct 2026 · 04:35",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -7641,37 +7699,6 @@
       "core_complete": false
     },
     {
-      "name": "Jelani Aryeh",
-      "slug": "jelani-aryeh",
-      "plays": 49,
-      "first_played": "28 feb 2025",
-      "last_played": "4 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
       "name": "She's A Tease",
       "slug": "shes-a-tease",
       "plays": 49,
@@ -7842,6 +7869,38 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "Patrick Wolf",
+      "slug": "patrick-wolf",
+      "plays": 47,
+      "first_played": "14 mar 2013",
+      "last_played": "26 sep 2026 · 03:30",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 2,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -8056,31 +8115,32 @@
       "core_complete": false
     },
     {
-      "name": "Patrick Wolf",
-      "slug": "patrick-wolf",
+      "name": "Pale Honey",
+      "slug": "pale-honey",
       "plays": 46,
-      "first_played": "14 mar 2013",
-      "last_played": "11 sep 2026 · 19:19",
-      "catalog_status": "wp_draft",
+      "first_played": "29 mar 2016",
+      "last_played": "30 sep 2026 · 10:51",
+      "catalog_status": "",
       "sources": [
         "wp_db",
         "lastfm",
         "megaseg",
-        "yesstreaming"
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 7,
-      "tracks_with_artwork": 6,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 2,
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": true,
-      "image_source": "gallery",
+      "image_source": "artist",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 5,
+      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
-      "related": 0,
+      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -8378,6 +8438,37 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 45,
+      "first_played": "17 jul 2022",
+      "last_played": "30 sep 2026 · 09:52",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -8829,37 +8920,6 @@
       "core_complete": false
     },
     {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 43,
-      "first_played": "29 mar 2016",
-      "last_played": "15 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
       "name": "The Kills",
       "slug": "the-kills",
       "plays": 43,
@@ -8884,36 +8944,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 43,
-      "first_played": "17 jul 2022",
-      "last_played": "15 sep 2026 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
       "missing_core": [
         "bio"
       ],

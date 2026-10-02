@@ -1,24 +1,24 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-10-02T03:08:08.247445+00:00
+Generada: 2026-10-02T03:09:28.042226+00:00
 
 ## Resumen
 
-- Artistas crudos: 7988
-- Artistas públicos normalizados: 7891
-- Fichas core completas: 3551/7891 (45.00%)
-- Con imagen efectiva: 4645/7891 (58.86%)
-- Sin imagen: 3246
-- Con biografía efectiva: 3964/7891 (50.23%)
-- Sin biografía: 3927
-- Galerías ya revisadas: 7891/7891 (100.00%)
-- Artistas con canciones: 7885/7891
-- Canciones totales: 18082
-- Canciones con portada efectiva: 14309/18082 (79.13%)
-- Canciones sin portada: 3773
-- Canciones agrupadas en Otras: 5786
+- Artistas crudos: 8038
+- Artistas públicos normalizados: 7941
+- Fichas core completas: 3575/7941 (45.02%)
+- Con imagen efectiva: 4645/7941 (58.49%)
+- Sin imagen: 3296
+- Con biografía efectiva: 3964/7941 (49.92%)
+- Sin biografía: 3977
+- Galerías ya revisadas: 7891/7941 (99.37%)
+- Artistas con canciones: 7935/7941
+- Canciones totales: 18174
+- Canciones con portada efectiva: 14309/18174 (78.73%)
+- Canciones sin portada: 3865
+- Canciones agrupadas en Otras: 5878
 
 ## Casos solicitados
 
-- boylife: plays=7, tracks=1, imagen=no, bio=no, portadas faltantes=0, Otras=1, faltantes core=image, bio.
+- boylife: plays=9, tracks=1, imagen=no, bio=no, portadas faltantes=0, Otras=1, faltantes core=image, bio.
 - monsun: no localizado entre perfiles públicos normalizados.
