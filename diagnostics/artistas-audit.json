@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-02T13:04:50.161148+00:00",
+  "generated_at": "2026-10-02T22:29:28.432359+00:00",
   "source_updates": {
-    "artists": "2026-10-02T13:04:46.784811Z",
-    "galleries": "2026-10-02T06:15:41.100296+00:00",
-    "album_art": "2026-10-02T09:00:30.068799+00:00"
+    "artists": "2026-10-02T22:29:24.703232Z",
+    "galleries": "2026-10-02T18:55:09.185006+00:00",
+    "album_art": "2026-10-02T20:58:02.571626+00:00"
   },
   "catalog": {
     "raw_artists": 8038,
     "public_artists": 7940,
     "aliases_normalized": 8018,
-    "with_history": 7836,
+    "with_history": 7837,
     "with_tracks": 7934,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1104
+      "yesstreaming_live": 1125
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,53 +39,53 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-02T13:04:46.784811Z"
+      "merged_at": "2026-10-02T22:29:24.703232Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 441,
-    "real_profile_missing": 7499,
-    "real_profile_complete_pct": 5.55,
+    "real_profile_complete": 760,
+    "real_profile_missing": 7180,
+    "real_profile_complete_pct": 9.57,
     "profile_status": {
-      "legacy": 7400,
-      "complete": 434,
-      "partial": 79,
-      "not_found": 27
+      "legacy": 6937,
+      "complete": 748,
+      "partial": 214,
+      "not_found": 41
     },
-    "missing_validated_profile_image": 7346,
-    "missing_profile_bio": 3960,
-    "missing_profile_data": 2918,
+    "missing_validated_profile_image": 6938,
+    "missing_profile_bio": 3950,
+    "missing_profile_data": 2903,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 1384,
-    "core_complete_pct": 17.43,
+    "core_complete": 1422,
+    "core_complete_pct": 17.91,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 1758,
-    "effective_image_pct": 22.14,
+    "effective_image": 1805,
+    "effective_image_pct": 22.73,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 110,
-    "missing_image": 6182,
-    "effective_bio": 3980,
-    "effective_bio_pct": 50.13,
+    "image_gallery_fallback": 157,
+    "missing_image": 6135,
+    "effective_bio": 3990,
+    "effective_bio_pct": 50.25,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 2699,
-    "missing_bio": 3960,
+    "bio_gallery_en": 2709,
+    "missing_bio": 3950,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.37,
-    "gallery_with_images": 594,
-    "with_social": 3147,
-    "with_genre": 3339,
+    "gallery_with_images": 1002,
+    "with_social": 3166,
+    "with_genre": 3343,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18176,
-    "with_effective_artwork": 2325,
-    "with_effective_artwork_pct": 12.79,
-    "missing_artwork": 15851,
-    "grouped_as_otras": 5880,
-    "with_first_and_last_dates": 17599,
-    "album_art_cache_entries": 4722,
-    "album_art_cache_found": 4009,
+    "total": 18177,
+    "with_effective_artwork": 3188,
+    "with_effective_artwork_pct": 17.54,
+    "missing_artwork": 14989,
+    "grouped_as_otras": 5881,
+    "with_first_and_last_dates": 17603,
+    "album_art_cache_entries": 5408,
+    "album_art_cache_found": 4695,
     "album_art_cache_missed": 713
   },
   "focus": {
@@ -282,23 +282,21 @@
       "tracks_with_artwork": 8,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
+      "gallery_images": 1,
+      "has_social": true,
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -333,7 +331,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -643,8 +641,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -696,7 +694,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -749,8 +747,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -1110,8 +1108,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -1179,8 +1177,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -1710,8 +1708,8 @@
         "lastfm"
       ],
       "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -2098,8 +2096,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -3063,6 +3061,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 46,
+      "first_played": "17 jul 2022",
+      "last_played": "2 oct 2026 · 08:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "BEAT!BEAT!BEAT!",
       "slug": "beatbeatbeat",
       "plays": 45,
@@ -3279,42 +3313,6 @@
       "profile_complete": false
     },
     {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 45,
-      "first_played": "17 jul 2022",
-      "last_played": "30 sep 2026 · 09:52",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "The Mars Volta",
       "slug": "the-mars-volta",
       "plays": 45,
@@ -3437,8 +3435,8 @@
         "megaseg"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -3792,45 +3790,6 @@
       "profile_complete": false
     },
     {
-      "name": "Big Deal",
-      "slug": "big-deal",
-      "plays": 134,
-      "first_played": "22 jul 2012",
-      "last_played": "29 sep 2026 · 17:54",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 8,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Happyness",
       "slug": "happyness",
       "plays": 92,
@@ -4029,8 +3988,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -4319,8 +4278,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -4853,8 +4812,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -5871,8 +5830,8 @@
         "megaseg"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6813,8 +6772,8 @@
         "lastfm"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7023,8 +6982,8 @@
         "lastfm"
       ],
       "tracks": 8,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7373,6 +7332,43 @@
         "data"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "A House For Lions",
+      "slug": "a-house-for-lions",
+      "plays": 39,
+      "first_played": "24 jul 2012",
+      "last_played": "21 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7465,23 +7461,21 @@
       "tracks_with_artwork": 8,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
+      "gallery_images": 1,
+      "has_social": true,
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -7516,7 +7510,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -7826,8 +7820,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -7879,7 +7873,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -7932,8 +7926,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -8293,8 +8287,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -8328,8 +8322,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -8757,8 +8751,8 @@
         "lastfm"
       ],
       "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -9942,6 +9936,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 46,
+      "first_played": "17 jul 2022",
+      "last_played": "2 oct 2026 · 08:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "BEAT!BEAT!BEAT!",
       "slug": "beatbeatbeat",
       "plays": 45,
@@ -10090,42 +10120,6 @@
       "profile_complete": false
     },
     {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 45,
-      "first_played": "17 jul 2022",
-      "last_played": "30 sep 2026 · 09:52",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "The Mars Volta",
       "slug": "the-mars-volta",
       "plays": 45,
@@ -10248,8 +10242,8 @@
         "megaseg"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
