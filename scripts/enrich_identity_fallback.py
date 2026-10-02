@@ -23,6 +23,7 @@ MB_SEARCH = "https://musicbrainz.org/ws/2/artist/"
 MB_LOOKUP = "https://musicbrainz.org/ws/2/artist/{mbid}"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/page"
+DEEZER_SEARCH = "https://api.deezer.com/search/artist"
 UA = "LouderMX-Identity-Enrichment/1.0 (+https://loudermx.com)"
 
 
@@ -159,6 +160,19 @@ def wikipedia_data(client: Client, canonical: str, url: str) -> dict[str, str]:
     }
 
 
+def deezer_image(client: Client, name: str) -> str:
+    data = client.get(DEEZER_SEARCH, params={"q": name, "limit": 8}) or {}
+    wanted = norm(name)
+    for row in data.get("data") or []:
+        if not isinstance(row, dict) or norm(row.get("name", "")) != wanted:
+            continue
+        for key in ("picture_xl", "picture_big", "picture_medium", "picture"):
+            url = str(row.get(key) or "").strip()
+            if url.startswith("https://"):
+                return url
+    return ""
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=180)
@@ -212,6 +226,7 @@ def main() -> int:
 
     mb = Client(1.1)
     wiki = Client(0.35)
+    deezer = Client(0.20)
     print(f"pending={len(pending)}")
 
     for i, artist in enumerate(pending, start=1):
@@ -234,6 +249,8 @@ def main() -> int:
                 detail = mb.get(MB_LOOKUP.format(mbid=mbid), params={"inc": "url-rels+aliases+genres", "fmt": "json"}) or {}
                 official, social, wikipedia = relation_urls(detail)
                 w = wikipedia_data(wiki, canonical, wikipedia)
+                fallback_image = w.get("image", "") or deezer_image(deezer, canonical)
+                image_source = "Wikipedia via MusicBrainz" if w.get("image") else ("Deezer exact artist match" if fallback_image else "")
                 genres = detail.get("genres") or []
                 genre = ""
                 if isinstance(genres, list) and genres:
@@ -251,8 +268,8 @@ def main() -> int:
                     "social": social,
                     "genre": genre,
                     "bio_en": w.get("bio_en", ""),
-                    "image": w.get("image", ""),
-                    "image_source": "Wikipedia via MusicBrainz",
+                    "image": fallback_image,
+                    "image_source": image_source,
                     "wikipedia_url": w.get("wikipedia_url", wikipedia),
                     "checked_at": now,
                 })
