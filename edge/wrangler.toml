@@ -7,3 +7,6 @@ routes = [
   { pattern = "loudermx.com/radar-2026*", zone_name = "loudermx.com" },
   { pattern = "loudermx.com/control*", zone_name = "loudermx.com" }
 ]
+
+[ai]
+binding = "AI"
