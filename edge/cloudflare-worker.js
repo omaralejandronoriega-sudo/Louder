@@ -138,7 +138,7 @@ async function handleAi(request, env) {
   }
 
   const body = {
-    model: env.OPENAI_MODEL || "gpt-5.6-terra",
+    model: env.OPENAI_MODEL || "gpt-6-sol",
     instructions: louderInstructions(task),
     input: [...history, { role: "user", content: message }],
     stream: true,
