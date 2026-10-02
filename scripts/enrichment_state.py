@@ -90,7 +90,7 @@ def validate_remote_image(
     timeout: int = 15,
     min_bytes: int = 256,
 ) -> tuple[bool, str, str]:
-    """Validate that a remote HTTPS URL really resolves to image bytes."""
+    """Validate HTTPS remote imagery by reading real image bytes, never headers alone."""
     raw = str(url or "").strip()
     if not raw:
         return False, "", "empty"
@@ -98,33 +98,30 @@ def validate_remote_image(
     if parsed.scheme != "https" or not parsed.netloc:
         return False, raw, "not_https"
 
-    headers = {"Accept": "image/avif,image/webp,image/*,*/*;q=0.8"}
+    headers = {
+        "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+        "Range": "bytes=0-4095",
+    }
     try:
-        head = session.head(raw, headers=headers, allow_redirects=True, timeout=timeout)
-        final_url = str(head.url or raw)
-        ctype = str(head.headers.get("Content-Type") or "").split(";", 1)[0].strip().lower()
-        clen = int(head.headers.get("Content-Length") or 0)
-        if 200 <= head.status_code < 400 and ctype.startswith("image/") and (clen == 0 or clen >= min_bytes):
-            return True, final_url, "head"
-    except Exception:
-        final_url = raw
-
-    try:
-        get_headers = dict(headers)
-        get_headers["Range"] = "bytes=0-4095"
-        r = session.get(raw, headers=get_headers, allow_redirects=True, timeout=timeout, stream=True)
+        r = session.get(
+            raw,
+            headers=headers,
+            allow_redirects=True,
+            timeout=timeout,
+            stream=True,
+        )
         final_url = str(r.url or raw)
         if not (200 <= r.status_code < 400):
             return False, final_url, f"http_{r.status_code}"
         ctype = str(r.headers.get("Content-Type") or "").split(";", 1)[0].strip().lower()
         chunk = next(r.iter_content(chunk_size=4096), b"")
-        if ctype.startswith("image/") and len(chunk) >= min_bytes:
-            return True, final_url, "get"
-        if _looks_like_image(chunk) and len(chunk) >= min_bytes:
-            return True, final_url, "magic"
-        return False, final_url, f"not_image:{ctype or 'unknown'}"
+        if len(chunk) < min_bytes:
+            return False, final_url, "too_small"
+        if not _looks_like_image(chunk):
+            return False, final_url, f"invalid_bytes:{ctype or 'unknown'}"
+        return True, final_url, "bytes"
     except Exception as exc:
-        return False, final_url, f"error:{type(exc).__name__}"
+        return False, raw, f"error:{type(exc).__name__}"
 
 
 def usable_gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
