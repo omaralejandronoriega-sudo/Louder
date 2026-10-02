@@ -597,7 +597,7 @@ def page_shell(
 ) -> str:
     asset_prefix = "_assets/" if depth == 1 else "../_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
-    canonical = "https://artistas.loudermx.com" + canonical_path
+    canonical = "https://loudermx.com" + canonical_path
     return f'''<!doctype html>
 <html lang="es-MX">
 <head>
@@ -612,7 +612,12 @@ def page_shell(
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{esc(canonical)}">
+<meta property="og:site_name" content="Louder">
 {f'<meta property="og:image" content="{esc(social_image)}">' if social_image else ''}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(desc)}">
+{f'<meta name="twitter:image" content="{esc(social_image)}">' if social_image else ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -834,10 +839,13 @@ def build_artist(
 
     out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    description = bio[:155] if bio else f"{name} en el Archivo Louder."
+    description = (
+        f"{name} en Louder: canciones registradas, {number(artist.get('plays'))} reproducciones, "
+        "biografía, primera y última aparición y artistas relacionados."
+    )
     out.write_text(
         page_shell(
-            f"{name} | Louder",
+            f"{name}: canciones, biografía y archivo | Louder",
             body,
             depth=2,
             description=description,
@@ -931,7 +939,7 @@ def main() -> int:
 
     index_payload = {
         "version": 2,
-        "base_url": "https://artistas.loudermx.com/artistas/",
+        "base_url": "https://loudermx.com/artistas/",
         "artists": [
             {
                 "name": a.get("name", ""),
@@ -1322,8 +1330,8 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
-        f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
+    sitemap_urls = ["https://loudermx.com/artistas/"] + [
+        f"https://loudermx.com/artistas/{a['slug']}/" for a in artists
     ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
