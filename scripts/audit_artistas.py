@@ -60,10 +60,7 @@ def effective_genre(artist: dict[str, Any], gallery: dict[str, Any]) -> bool:
 
 
 def track_has_artwork(artist_name: str, track: dict[str, Any], album_cache: dict[str, Any]) -> bool:
-    album = str(track.get("album") or "").strip()
-    if not album:
-        return False
-    cached = album_cache.get(ba.album_art_key(artist_name, album)) or {}
+    cached = album_cache.get(ba.track_artwork_key(artist_name, track)) or {}
     return bool(
         isinstance(cached, dict)
         and cached.get("status") == "complete"
