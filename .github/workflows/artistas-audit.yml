@@ -5,10 +5,15 @@ on:
     branches: [main]
     paths:
       - "scripts/audit_artistas.py"
+      - "scripts/enrichment_state.py"
+      - "data/galleries.json"
+      - "data/album_art.json"
       - "scripts/audit_artist_identity.py"
       - "data/identity_enrichment.json"
       - "data/artist_review_overrides.json"
       - ".github/workflows/artistas-audit.yml"
+  schedule:
+    - cron: "37 */6 * * *"
   workflow_dispatch:
 
 permissions:
