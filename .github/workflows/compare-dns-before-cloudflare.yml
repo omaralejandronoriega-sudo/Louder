@@ -1,0 +1,56 @@
+name: Compare DNS Before Cloudflare Activation
+on:
+  push:
+    paths:
+      - ".github/workflows/compare-dns-before-cloudflare.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare public DNS with assigned Cloudflare nameservers
+        run: |
+          set -e
+          mkdir -p diagnostics
+          python - <<'PY'
+          import json, subprocess
+          hosts=[
+            ("loudermx.com","A"),("loudermx.com","AAAA"),("loudermx.com","MX"),("loudermx.com","TXT"),
+            ("www.loudermx.com","A"),("www.loudermx.com","AAAA"),("www.loudermx.com","CNAME"),
+            ("mail.loudermx.com","A"),("mail.loudermx.com","CNAME"),
+            ("_dmarc.loudermx.com","TXT"),
+          ]
+          servers={
+            "public":None,
+            "cloudflare_cris":"cris.ns.cloudflare.com",
+            "cloudflare_ryleigh":"ryleigh.ns.cloudflare.com",
+          }
+          def dig(name, rtype, server=None):
+              cmd=["dig","+short","+time=3","+tries=1"]
+              if server: cmd.append("@"+server)
+              cmd += [name,rtype]
+              try:
+                  out=subprocess.check_output(cmd,text=True,stderr=subprocess.STDOUT,timeout=10)
+                  return sorted([x.strip() for x in out.splitlines() if x.strip()])
+              except Exception as e:
+                  return ["ERROR:"+str(e)[:160]]
+          out={"servers":servers,"queries":{}}
+          for name,rtype in hosts:
+              key=f"{name} {rtype}"
+              out["queries"][key]={label:dig(name,rtype,server) for label,server in servers.items()}
+          open("diagnostics/dns-before-cloudflare.json","w",encoding="utf-8").write(json.dumps(out,indent=2)+"\n")
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Persist diagnostic
+        run: |
+          git config user.name "louder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add diagnostics/dns-before-cloudflare.json
+          git commit -m "chore: compare DNS before Cloudflare activation" || exit 0
+          git pull --rebase origin main
+          git push
