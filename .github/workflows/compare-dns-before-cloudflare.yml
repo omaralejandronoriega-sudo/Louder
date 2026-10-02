@@ -23,7 +23,9 @@ jobs:
             ("loudermx.com","A"),("loudermx.com","AAAA"),("loudermx.com","MX"),("loudermx.com","TXT"),
             ("www.loudermx.com","A"),("www.loudermx.com","AAAA"),("www.loudermx.com","CNAME"),
             ("mail.loudermx.com","A"),("mail.loudermx.com","CNAME"),
-            ("_dmarc.loudermx.com","TXT"),
+            ("_dmarc.loudermx.com","TXT"),("default._domainkey.loudermx.com","TXT"),
+            ("cpanel.loudermx.com","A"),("webmail.loudermx.com","A"),("ftp.loudermx.com","A"),
+            ("autodiscover.loudermx.com","A"),("autodiscover.loudermx.com","CNAME"),
           ]
           servers={
             "public":None,
