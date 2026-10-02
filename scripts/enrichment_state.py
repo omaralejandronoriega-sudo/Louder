@@ -157,6 +157,7 @@ def profile_missing_fields(artist: dict[str, Any], gallery: dict[str, Any] | Non
             has_text(gallery.get("country")),
             has_text(gallery.get("official_url")),
             has_text(gallery.get("wikipedia_url")),
+            has_text(gallery.get("lastfm_url")),
             bool(gallery.get("verified")),
             any(has_text(social.get(k)) for k in ("facebook", "twitter", "instagram")),
         ]
