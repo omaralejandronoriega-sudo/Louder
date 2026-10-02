@@ -3,6 +3,14 @@
   "zone_success": true,
   "zone_status": "pending",
   "zone_paused": false,
+  "cloudflare_name_servers": [
+    "cris.ns.cloudflare.com",
+    "ryleigh.ns.cloudflare.com"
+  ],
+  "original_name_servers": [
+    "ns20.hostgator.mx",
+    "ns21.hostgator.mx"
+  ],
   "dns": {
     "loudermx.com": {
       "status": 403,
