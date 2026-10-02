@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-02T04:30:18.348296+00:00",
+  "generated_at": "2026-10-02T13:04:50.161148+00:00",
   "source_updates": {
-    "artists": "2026-10-02T04:30:12.857654Z",
-    "galleries": "2026-10-01T23:57:13.496695+00:00",
-    "album_art": "2026-10-02T04:24:26.548655+00:00"
+    "artists": "2026-10-02T13:04:46.784811Z",
+    "galleries": "2026-10-02T06:15:41.100296+00:00",
+    "album_art": "2026-10-02T09:00:30.068799+00:00"
   },
   "catalog": {
     "raw_artists": 8038,
     "public_artists": 7940,
     "aliases_normalized": 8018,
-    "with_history": 7831,
+    "with_history": 7836,
     "with_tracks": 7934,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1079
+      "yesstreaming_live": 1104
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,52 +39,54 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-02T04:30:12.857654Z"
+      "merged_at": "2026-10-02T13:04:46.784811Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 11,
-    "real_profile_missing": 7929,
-    "real_profile_complete_pct": 0.14,
+    "real_profile_complete": 441,
+    "real_profile_missing": 7499,
+    "real_profile_complete_pct": 5.55,
     "profile_status": {
-      "legacy": 7929,
-      "complete": 11
+      "legacy": 7400,
+      "complete": 434,
+      "partial": 79,
+      "not_found": 27
     },
-    "missing_validated_profile_image": 7800,
-    "missing_profile_bio": 3969,
-    "missing_profile_data": 2937,
+    "missing_validated_profile_image": 7346,
+    "missing_profile_bio": 3960,
+    "missing_profile_data": 2918,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 1315,
-    "core_complete_pct": 16.56,
+    "core_complete": 1384,
+    "core_complete_pct": 17.43,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 1676,
-    "effective_image_pct": 21.11,
+    "effective_image": 1758,
+    "effective_image_pct": 22.14,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 28,
-    "missing_image": 6264,
-    "effective_bio": 3971,
-    "effective_bio_pct": 50.01,
+    "image_gallery_fallback": 110,
+    "missing_image": 6182,
+    "effective_bio": 3980,
+    "effective_bio_pct": 50.13,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 2690,
-    "missing_bio": 3969,
+    "bio_gallery_en": 2699,
+    "missing_bio": 3960,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.37,
-    "gallery_with_images": 140,
-    "with_social": 3119,
-    "with_genre": 3334,
+    "gallery_with_images": 594,
+    "with_social": 3147,
+    "with_genre": 3339,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18174,
-    "with_effective_artwork": 1386,
-    "with_effective_artwork_pct": 7.63,
-    "missing_artwork": 16788,
-    "grouped_as_otras": 5878,
-    "with_first_and_last_dates": 17589,
-    "album_art_cache_entries": 4040,
-    "album_art_cache_found": 3328,
-    "album_art_cache_missed": 712
+    "total": 18176,
+    "with_effective_artwork": 2325,
+    "with_effective_artwork_pct": 12.79,
+    "missing_artwork": 15851,
+    "grouped_as_otras": 5880,
+    "with_first_and_last_dates": 17599,
+    "album_art_cache_entries": 4722,
+    "album_art_cache_found": 4009,
+    "album_art_cache_missed": 713
   },
   "focus": {
     "boylife": {
@@ -103,24 +105,20 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": true,
       "bio_source": "gallery_es",
       "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
+      "gallery_images": 1,
+      "has_social": true,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
+      "missing_core": [],
+      "core_complete": true,
+      "profile_status": "partial",
+      "profile_missing_fields": [],
+      "profile_complete": true
     },
     "monsune": {
       "name": "Monsune",
@@ -160,80 +158,6 @@
     }
   },
   "priority_incomplete": [
-    {
-      "name": "Peace",
-      "slug": "peace",
-      "plays": 514,
-      "first_played": "11 dic 2012",
-      "last_played": "1 oct 2026 · 15:46",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 33,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 33,
-      "tracks_in_otras": 18,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Florence + The Machine",
-      "slug": "florence-the-machine",
-      "plays": 501,
-      "first_played": "14 jul 2012",
-      "last_played": "1 oct 2026 · 06:16",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 32,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 32,
-      "tracks_in_otras": 12,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
     {
       "name": "Belle and Sebastian",
       "slug": "belle-and-sebastian",
@@ -625,7 +549,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio",
@@ -790,8 +714,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -970,8 +894,8 @@
         "megaseg"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -1135,44 +1059,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 64,
-      "first_played": "22 jul 2022",
-      "last_played": "30 sep 2026 · 22:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -1718,8 +1604,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -1754,8 +1640,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -1988,6 +1874,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jelani Aryeh",
+      "slug": "jelani-aryeh",
+      "plays": 53,
+      "first_played": "28 feb 2025",
+      "last_played": "2 oct 2026 · 00:29",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "AC/DC",
       "slug": "ac-dc",
       "plays": 52,
@@ -2050,44 +1974,6 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jelani Aryeh",
-      "slug": "jelani-aryeh",
-      "plays": 52,
-      "first_played": "28 feb 2025",
-      "last_played": "1 oct 2026 · 04:35",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -2352,8 +2238,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -2494,8 +2380,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -2909,7 +2795,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 1,
+      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -2917,7 +2803,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -3225,8 +3111,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -3414,7 +3300,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 10,
@@ -3422,11 +3308,9 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3516,8 +3400,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -3758,83 +3642,120 @@
         "bio"
       ],
       "profile_complete": false
-    }
-  ],
-  "priority_missing_image": [
-    {
-      "name": "Peace",
-      "slug": "peace",
-      "plays": 514,
-      "first_played": "11 dic 2012",
-      "last_played": "1 oct 2026 · 15:46",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 33,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 33,
-      "tracks_in_otras": 18,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
     },
     {
-      "name": "Florence + The Machine",
-      "slug": "florence-the-machine",
-      "plays": 501,
-      "first_played": "14 jul 2012",
-      "last_played": "1 oct 2026 · 06:16",
-      "catalog_status": "",
+      "name": "Jane's Addiction",
+      "slug": "janes-addiction",
+      "plays": 44,
+      "first_played": "16 jul 2012",
+      "last_played": "18 nov 2025 · 17:24",
+      "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
         "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "megaseg"
       ],
-      "tracks": 32,
+      "tracks": 4,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 32,
-      "tracks_in_otras": 12,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
+      "has_bio": false,
+      "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": true,
       "has_genre": true,
       "related": 0,
       "missing_core": [
-        "image"
+        "image",
+        "bio"
       ],
       "core_complete": false,
       "profile_status": "legacy",
       "profile_missing_fields": [
-        "image"
+        "image",
+        "bio"
       ],
       "profile_complete": false
     },
+    {
+      "name": "New Wine",
+      "slug": "new-wine",
+      "plays": 44,
+      "first_played": "23 jul 2012",
+      "last_played": "27 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Ski Lodge",
+      "slug": "ski-lodge",
+      "plays": 44,
+      "first_played": "22 mar 2013",
+      "last_played": "22 feb 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "wp_db"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    }
+  ],
+  "priority_missing_image": [
     {
       "name": "Belle and Sebastian",
       "slug": "belle-and-sebastian",
@@ -4014,7 +3935,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio",
@@ -4218,8 +4139,8 @@
         "megaseg"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -4313,44 +4234,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 64,
-      "first_played": "22 jul 2022",
-      "last_played": "30 sep 2026 · 22:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -4686,8 +4569,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -4722,8 +4605,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -4768,6 +4651,44 @@
       "has_social": false,
       "has_genre": true,
       "related": 4,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Jelani Aryeh",
+      "slug": "jelani-aryeh",
+      "plays": 53,
+      "first_played": "28 feb 2025",
+      "last_played": "2 oct 2026 · 00:29",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
       "missing_core": [
         "image",
         "bio"
@@ -4843,44 +4764,6 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jelani Aryeh",
-      "slug": "jelani-aryeh",
-      "plays": 52,
-      "first_played": "28 feb 2025",
-      "last_played": "1 oct 2026 · 04:35",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -5075,8 +4958,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -5698,8 +5581,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -5951,8 +5834,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6642,8 +6525,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
@@ -6679,8 +6562,8 @@
         "megaseg"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7380,6 +7263,116 @@
         "bio"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "The Maine",
+      "slug": "the-maine",
+      "plays": 40,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Popopopops",
+      "slug": "the-popopopops",
+      "plays": 40,
+      "first_played": "28 mar 2013",
+      "last_played": "8 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "800beloved",
+      "slug": "800beloved",
+      "plays": 39,
+      "first_played": "27 jul 2012",
+      "last_played": "27 jun 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7739,7 +7732,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio",
@@ -7904,8 +7897,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -8084,8 +8077,8 @@
         "megaseg"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -8249,44 +8242,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Last Shadow Puppets/Alex Turner/Miles Kane",
-      "slug": "the-last-shadow-puppets-alex-turner-miles-kane",
-      "plays": 64,
-      "first_played": "22 jul 2022",
-      "last_played": "30 sep 2026 · 22:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -8730,8 +8685,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -8968,9 +8923,9 @@
     {
       "name": "Jelani Aryeh",
       "slug": "jelani-aryeh",
-      "plays": 52,
+      "plays": 53,
       "first_played": "28 feb 2025",
-      "last_played": "1 oct 2026 · 04:35",
+      "last_played": "2 oct 2026 · 00:29",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -9196,8 +9151,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -9338,8 +9293,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -9753,7 +9708,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 1,
+      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -9761,7 +9716,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -10035,8 +9990,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10156,7 +10111,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 10,
@@ -10164,11 +10119,9 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10258,8 +10211,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10881,8 +10834,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
@@ -10918,8 +10871,8 @@
         "megaseg"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -11001,6 +10954,42 @@
       "gallery_images": 0,
       "has_social": true,
       "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Sea Wolf",
+      "slug": "sea-wolf",
+      "plays": 42,
+      "first_played": "14 jul 2012",
+      "last_played": "17 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
       "related": 0,
       "missing_core": [
         "image",
