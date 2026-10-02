@@ -60,7 +60,7 @@ def main() -> None:
 </svg>"""
     (OUT / "icon.svg").write_text(icon, encoding="utf-8")
 
-    sw = """const CACHE='louder-control-v5';
+    sw = """const CACHE='louder-control-v7';
 const CORE=['./','./index.html','./data.json','./manifest.webmanifest','./icon.svg','./logo_louder.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.filter(Boolean))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -404,7 +404,7 @@ dialog::backdrop{{background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}}
   <p id="taskSummary" style="color:var(--muted);line-height:1.5"></p>
   <div class="task-context" id="taskContext"></div>
   <section class="ai-card" id="taskAi">
-   <div class="ai-head"><div><strong>Louder IA</strong><span>Resuelve el pendiente aquí mismo</span></div><div class="ai-badge" id="aiBadge">IA</div></div>
+   <div class="ai-head"><div><strong>Louder IA</strong><span>Resuelve el pendiente aquí mismo</span></div><div class="ai-badge" id="aiBadge">GRATIS</div></div>
    <div class="ai-messages" id="aiMessages"></div>
    <div class="ai-status" id="aiStatus"></div>
    <div class="ai-start" id="aiStart"><button class="btn primary" id="aiResolveBtn" type="button">✨ Resolver aquí con IA</button></div>
@@ -738,7 +738,8 @@ async function sendAiMessage(text='',initial=false){{
   }});
   if(!res.ok){{
    let err={{}};try{{err=await res.json();}}catch(_){{}}
-   if(res.status===503&&err.error==='AI_NOT_CONFIGURED')throw new Error('Louder IA está lista en la app, pero falta activar la clave de OpenAI en el servidor.');
+   if(res.status===503&&err.error==='AI_NOT_CONFIGURED')throw new Error('Louder IA no está enlazada todavía a Workers AI.');
+   if(res.status===429&&err.error==='FREE_LIMIT_REACHED')throw new Error('Se alcanzó el límite gratuito diario de Louder IA. Cloudflare lo restablece automáticamente.');
    if(res.status===401)throw new Error('La sesión de GitHub ya no es válida. Activa la ejecución directa otra vez.');
    throw new Error(err.message||`Error ${res.status}`);
   }}
@@ -749,8 +750,13 @@ async function sendAiMessage(text='',initial=false){{
    buf+=decoder.decode(value,{{stream:true}});
    const parsed=sseEvents(buf);buf=parsed.rest;
    for(const ev of parsed.events){{
-    if(ev.type==='response.output_text.delta'&&ev.delta){{
-     answer+=ev.delta;thread.streamingText=answer;renderTaskAi(p,t);
+    const delta =
+      (ev.type==='response.output_text.delta'&&ev.delta) ||
+      ev?.choices?.[0]?.delta?.content ||
+      ev?.response ||
+      (typeof ev?.delta==='string'?ev.delta:'');
+    if(delta){{
+     answer+=delta;thread.streamingText=answer;renderTaskAi(p,t);
     }}
     if(ev.type==='response.failed'){{
      throw new Error(ev.response?.error?.message||'La IA no pudo completar la respuesta.');
