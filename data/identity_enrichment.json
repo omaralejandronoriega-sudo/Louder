@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "updated_at": "2026-10-02T04:37:15.283208+00:00",
+  "updated_at": "2026-10-02T12:46:40.846202+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:06.712503+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:38:55.245905+00:00",
       "musicbrainz_id": "44130072-d72e-4926-8cb7-6163189bc9b0",
       "canonical_name": "Haute & Freddy",
       "match_score": 100,
@@ -21,13 +21,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/931b47a8ef9461263dca96e3755244d3/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:38:55.245905+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:38:55.245905+00:00",
+      "attempt_count": 1
     },
     "hazy-waters": {
       "name": "hazy waters",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:09.212404+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:38:58.446542+00:00",
       "musicbrainz_id": "f8dbbd4c-3e0c-4e2b-a08d-1d3e04e64c1e",
       "canonical_name": "Hazy Waters",
       "match_score": 100,
@@ -42,13 +49,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/8f949afc778100f980b0a5eead1a9806/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:38:58.446542+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:38:58.446542+00:00",
+      "attempt_count": 1
     },
     "ultra-lights": {
       "name": "Ultra Lights",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:11.596498+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:01.779766+00:00",
       "musicbrainz_id": "8a683690-8fdb-4162-ae93-a1d708115589",
       "canonical_name": "Ultra Lights",
       "match_score": 100,
@@ -63,19 +77,44 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/c50ff4503f64e8bb88ad9ef7ea4ea69f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:01.779766+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:01.779766+00:00",
+      "attempt_count": 1
     },
     "uncles-confession": {
       "name": "Uncle's Confession",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:14.124637+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:04.744495+00:00",
+      "profile_checked_at": "2026-10-02T12:39:04.744495+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Uncle's Confession",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:04.744495+00:00",
+      "attempt_count": 1
     },
     "dream-bodies": {
       "name": "Dream Bodies",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:15.029218+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:06.043759+00:00",
       "musicbrainz_id": "4ae677af-8559-4260-a96f-8ca02fd25b4a",
       "canonical_name": "Dream Bodies",
       "match_score": 100,
@@ -90,13 +129,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/df30a42dd377e7599c3278dfbf61f8b2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:06.043759+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:06.043759+00:00",
+      "attempt_count": 1
     },
     "glas-nost": {
       "name": "GLAS NOST",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:18.057087+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:08.658424+00:00",
       "musicbrainz_id": "9f1ffd88-b205-48da-9080-aecd00c9bb3d",
       "canonical_name": "GLAS NOST",
       "match_score": 100,
@@ -111,13 +157,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/994e94f95b6e17805fb36ad5775ec7a2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:08.658424+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:08.658424+00:00",
+      "attempt_count": 1
     },
     "wy": {
       "name": "Wy",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:20.408368+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:11.494425+00:00",
       "musicbrainz_id": "6e8a27a3-30f9-4bc0-b995-bcf616b19ab0",
       "canonical_name": "Wy",
       "match_score": 100,
@@ -132,25 +185,86 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/87cc0fcd5d682209fd666e82f95e7688/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:11.494425+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:11.494425+00:00",
+      "attempt_count": 1
     },
     "kodiak-galaxy": {
       "name": "Kodiak Galaxy",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:22.928029+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:14.059338+00:00",
+      "profile_checked_at": "2026-10-02T12:39:14.059338+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Kodiak Galaxy",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1732e4d83e730bf1408c14b3e5076e4b/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:14.059338+00:00",
+      "attempt_count": 1
     },
     "new-husband": {
       "name": "New Husband",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:23.858550+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:15.436416+00:00",
+      "profile_checked_at": "2026-10-02T12:39:15.436416+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "New Husband",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cc1b0114b6f87e24bffbc141e6c99373/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:15.436416+00:00",
+      "attempt_count": 1
     },
     "the-color-society": {
       "name": "The Color Society",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:25.104992+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:16.903766+00:00",
+      "profile_checked_at": "2026-10-02T12:39:16.903766+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "The Color Society",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ee8b22d95fdde52c08a6cfb0ea6d9b1c/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:16.903766+00:00",
+      "attempt_count": 1
     },
     "irfane": {
       "name": "Irfane",
@@ -218,8 +332,8 @@
     "terminal-serious": {
       "name": "Terminal Serious",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:34.282038+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:18.416230+00:00",
       "musicbrainz_id": "6683f834-281b-4736-aee3-05a0d66f5374",
       "canonical_name": "Terminal Serious",
       "match_score": 100,
@@ -234,13 +348,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/d9a36c96296038956aca54e886729e71/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:18.416230+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:18.416230+00:00",
+      "attempt_count": 1
     },
     "moonvampire": {
       "name": "moonvampire",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:36.783239+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:20.978139+00:00",
       "musicbrainz_id": "7b64bf42-f815-4e69-b9e5-6be4681bd87e",
       "canonical_name": "moonvampire",
       "match_score": 100,
@@ -255,7 +376,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/cecdff9e1025cb646541e00f1c2a1f7d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:20.978139+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:20.978139+00:00",
+      "attempt_count": 1
     },
     "eel-men": {
       "name": "Eel Men",
@@ -307,15 +435,53 @@
     },
     "the-yurrs": {
       "name": "The Yurrs",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:45.336643+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:23.923396+00:00",
+      "profile_checked_at": "2026-10-02T12:39:23.923396+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "The Yurrs",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6336a708a548cb65ddd7723a99c72d30/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:23.923396+00:00",
+      "attempt_count": 1
     },
     "jasmine-4-t-jacob-alon": {
       "name": "jasmine.4.t, Jacob Alon",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:24:46.302497+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:39:25.220641+00:00",
+      "profile_checked_at": "2026-10-02T12:39:25.220641+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "jasmine.4.t, Jacob Alon",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:39:25.220641+00:00",
+      "attempt_count": 1
     },
     "gorillaz-jehnny-beth": {
       "name": "Gorillaz/Jehnny Beth",
@@ -368,8 +534,8 @@
     "forever-grey": {
       "name": "Forever Grey",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:53.953114+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:25.802534+00:00",
       "musicbrainz_id": "0fe12f14-35ad-434c-b4de-47027fd72680",
       "canonical_name": "Forever Grey",
       "match_score": 100,
@@ -384,13 +550,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/1fe86be7642b5210e1d2bad67a634f0e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:25.802534+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:25.802534+00:00",
+      "attempt_count": 1
     },
     "dlina-volny": {
       "name": "Dlina Volny",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:56.455673+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:29.239951+00:00",
       "musicbrainz_id": "cf224202-6295-4aec-a7df-6594a355cbd4",
       "canonical_name": "Dlina Volny",
       "match_score": 100,
@@ -405,13 +578,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/4db5dba106f79cba73b208c0cb9e5e13/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:29.239951+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:29.239951+00:00",
+      "attempt_count": 1
     },
     "geometric-vision": {
       "name": "Geometric Vision",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:24:59.031879+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:31.868186+00:00",
       "musicbrainz_id": "c3000ac5-cc2d-41f5-93b8-98e544a308d8",
       "canonical_name": "Geometric Vision",
       "match_score": 100,
@@ -426,13 +606,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/90015b61efcaf911eb4d64f85043d823/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:31.868186+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:31.868186+00:00",
+      "attempt_count": 1
     },
     "glass-spells": {
       "name": "Glass Spells",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:01.550824+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:34.651755+00:00",
       "musicbrainz_id": "3c2fd8b8-2438-482a-b895-73c256e9601a",
       "canonical_name": "Glass Spells",
       "match_score": 100,
@@ -447,13 +634,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/369f328d6c4261a94687d20d9d3726af/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:34.651755+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:34.651755+00:00",
+      "attempt_count": 1
     },
     "veil-of-light": {
       "name": "Veil of Light",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:04.203230+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:37.223499+00:00",
       "musicbrainz_id": "64a104b8-e209-4136-91c7-6f69853c460a",
       "canonical_name": "Veil of Light",
       "match_score": 100,
@@ -468,13 +662,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/9f4b022e3d2790615dc97a6f24821c96/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:37.223499+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:37.223499+00:00",
+      "attempt_count": 1
     },
     "flycatcher": {
       "name": "Flycatcher",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:06.791326+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:40.119914+00:00",
       "musicbrainz_id": "439bc872-e429-4f4a-a2db-00da2d219423",
       "canonical_name": "Flycatcher",
       "match_score": 100,
@@ -489,13 +690,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/7f24316d776edbe872e687822c169ed9/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:40.119914+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:40.119914+00:00",
+      "attempt_count": 1
     },
     "final-body": {
       "name": "Final Body",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:09.349704+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:43.052934+00:00",
       "musicbrainz_id": "a7d46d79-e5e2-4b55-8798-22c9d23d0a67",
       "canonical_name": "Final Body",
       "match_score": 100,
@@ -510,13 +718,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/da618fceb899ca7f9af7cd379dd7e7d7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:43.052934+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:43.052934+00:00",
+      "attempt_count": 1
     },
     "chain-wallet": {
       "name": "Chain Wallet",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:12.009460+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:45.715875+00:00",
       "musicbrainz_id": "d9e2f429-733f-48d4-a708-700567bb55f2",
       "canonical_name": "Chain Wallet",
       "match_score": 100,
@@ -531,13 +746,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a78b12bade70a6ef89c676b09a457469/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:45.715875+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:45.715875+00:00",
+      "attempt_count": 1
     },
     "schwarze-fiktion": {
       "name": "Schwarze Fiktion",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:14.421136+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:48.302447+00:00",
       "musicbrainz_id": "35a0fd6e-0cdc-4521-b019-ad4fb0ce9097",
       "canonical_name": "Schwarze Fiktion",
       "match_score": 100,
@@ -552,13 +774,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/fadc37d0dc9713d677331aa4766d697e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:48.302447+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:48.302447+00:00",
+      "attempt_count": 1
     },
     "vision-video": {
       "name": "Vision Video",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:16.907397+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:51.226870+00:00",
       "musicbrainz_id": "4aeb34df-8fd5-48fa-b95f-cabf542d84a5",
       "canonical_name": "Vision Video",
       "match_score": 100,
@@ -573,13 +802,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/21994204b9b38083085336ab370c9cb1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:51.226870+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:51.226870+00:00",
+      "attempt_count": 1
     },
     "talk-to-her": {
       "name": "Talk to Her",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:19.507830+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:53.921151+00:00",
       "musicbrainz_id": "2afe6e0a-026a-4842-b382-a27720e7b52e",
       "canonical_name": "Talk to Her",
       "match_score": 100,
@@ -592,21 +828,48 @@
       },
       "genre": "new wave",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d9183e99b6b21a87c723e4cb4898c463/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:53.921151+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:53.921151+00:00",
+      "attempt_count": 1
     },
     "bragolin-adam-tristar": {
       "name": "Bragolin/Adam Tristar",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:25:22.095257+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:39:56.746786+00:00",
+      "profile_checked_at": "2026-10-02T12:39:56.746786+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Bragolin/Adam Tristar",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:39:56.746786+00:00",
+      "attempt_count": 1
     },
     "dark-o-matic": {
       "name": "Dark-O-Matic",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:22.906562+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:39:57.314485+00:00",
       "musicbrainz_id": "337dfcac-0368-47b2-b308-618c1ea81af0",
       "canonical_name": "Dark-o-matic",
       "match_score": 100,
@@ -621,13 +884,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/f988b7cefb5e9024bcd65a766073ac1a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:39:57.314485+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:39:57.314485+00:00",
+      "attempt_count": 1
     },
     "death-bells": {
       "name": "Death Bells",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:25.864408+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:00.542100+00:00",
       "musicbrainz_id": "da9c1ec9-6ac1-4cfb-b24d-1932e22b7b37",
       "canonical_name": "Death Bells",
       "match_score": 100,
@@ -642,13 +912,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/b5a9c6d876deee15925239925edb47ee/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:00.542100+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:00.542100+00:00",
+      "attempt_count": 1
     },
     "cutscene": {
       "name": "Cutscene",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:28.339735+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:02.582723+00:00",
       "musicbrainz_id": "3aec96c3-6df5-4851-ae71-e62c855b870c",
       "canonical_name": "Cutscene",
       "match_score": 100,
@@ -663,13 +940,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/2fa5c7b5bdbcdceb19de8d33137b0581/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:02.582723+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:02.582723+00:00",
+      "attempt_count": 1
     },
     "torpid": {
       "name": "Torpid",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:30.805109+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:05.158724+00:00",
       "musicbrainz_id": "723693fe-d44a-4a8a-9d1e-7307b4e4e0d1",
       "canonical_name": "Torpid",
       "match_score": 100,
@@ -684,13 +968,20 @@
       "bio_en": "",
       "image": "",
       "image_source": "",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:05.158724+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:05.158724+00:00",
+      "attempt_count": 1
     },
     "jupe-jupe": {
       "name": "Jupe Jupe",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:33.464559+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:07.759252+00:00",
       "musicbrainz_id": "868d767a-0db0-4bad-ba2b-cb7cfd167eef",
       "canonical_name": "Jupe Jupe",
       "match_score": 100,
@@ -705,19 +996,46 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/996af1fa287359804b6d8753eda32595/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:07.759252+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:07.759252+00:00",
+      "attempt_count": 1
     },
     "betamaxx-vandal-moon": {
       "name": "Betamaxx, Vandal Moon",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:25:36.055567+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:40:10.416192+00:00",
+      "profile_checked_at": "2026-10-02T12:40:10.416192+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Betamaxx, Vandal Moon",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:40:10.416192+00:00",
+      "attempt_count": 1
     },
     "dip": {
       "name": "Dip",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:36.907714+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:11.591007+00:00",
       "musicbrainz_id": "a6a1bb5f-c687-49a9-ab75-a5f2de6f9b45",
       "canonical_name": "dip",
       "match_score": 100,
@@ -732,13 +1050,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/49df2f3ef7a3faef4dd23ae6804b31c3/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:11.591007+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:11.591007+00:00",
+      "attempt_count": 1
     },
     "goon": {
       "name": "GOON",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:39.831436+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:14.279434+00:00",
       "musicbrainz_id": "b3617ef6-d29c-47b0-9bd0-e11decc1c248",
       "canonical_name": "Goon",
       "match_score": 94,
@@ -751,15 +1076,22 @@
       },
       "genre": "alternative rock",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/76cfd2cd6de72bec96a6d24de02f3d50/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6a541e398a3bbc0b6d937affe63679fa/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:14.279434+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:14.279434+00:00",
+      "attempt_count": 1
     },
     "soft-vein": {
       "name": "SOFT VEIN",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:42.337386+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:17.528764+00:00",
       "musicbrainz_id": "b7a6bbb4-12a3-4890-8445-20c81d72db1a",
       "canonical_name": "Soft Vein",
       "match_score": 100,
@@ -774,13 +1106,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/fc8707e5bafdaff9b4e46f02b137a21a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:17.528764+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:17.528764+00:00",
+      "attempt_count": 1
     },
     "new-west": {
       "name": "New West",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:44.957592+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:20.207852+00:00",
       "musicbrainz_id": "7f359346-c820-4ae7-9bea-9f25801789d1",
       "canonical_name": "New West",
       "match_score": 100,
@@ -795,13 +1134,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a43ccf5269b0d395de57ef6b204fa012/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:20.207852+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:20.207852+00:00",
+      "attempt_count": 1
     },
     "secret-attraction": {
       "name": "Secret Attraction",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:47.702264+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:22.706144+00:00",
       "musicbrainz_id": "7e1ea98d-27fe-4e59-8948-abad00504e3c",
       "canonical_name": "Secret Attraction",
       "match_score": 100,
@@ -816,19 +1162,45 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/e777a5f6f9705de41ed591d2b6c6f50b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:22.706144+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:22.706144+00:00",
+      "attempt_count": 1
     },
     "the-noodles-vassiliki-spyropoulou": {
       "name": "The Noodles, Vassiliki Spyropoulou",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:25:49.995123+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:40:25.875546+00:00",
+      "profile_checked_at": "2026-10-02T12:40:25.875546+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "The Noodles, Vassiliki Spyropoulou",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:40:25.875546+00:00",
+      "attempt_count": 1
     },
     "milliken-chamber": {
       "name": "Milliken Chamber",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:50.923641+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:26.439786+00:00",
       "musicbrainz_id": "f7ef0e27-5d23-45b3-9ca3-ffcb997a0000",
       "canonical_name": "Milliken Chamber",
       "match_score": 100,
@@ -843,19 +1215,46 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/b004b5ce56659f9a03aaaa47110c546e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:26.439786+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:26.439786+00:00",
+      "attempt_count": 1
     },
     "mortes-balduvian-bears": {
       "name": "Mortes, Balduvian Bears",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:25:53.780808+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:40:30.404864+00:00",
+      "profile_checked_at": "2026-10-02T12:40:30.404864+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Mortes, Balduvian Bears",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:40:30.404864+00:00",
+      "attempt_count": 1
     },
     "actors": {
       "name": "Actors",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:54.638207+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:31.416253+00:00",
       "musicbrainz_id": "230f2c85-8b1c-4e88-ab5d-0d015a4bbe16",
       "canonical_name": "ACTORS",
       "match_score": 100,
@@ -870,13 +1269,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/9d4071f376d3ddddb9b8868134db4a13/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:31.416253+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:31.416253+00:00",
+      "attempt_count": 1
     },
     "hey-nothing": {
       "name": "hey, nothing",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:25:57.573208+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:34.944263+00:00",
       "musicbrainz_id": "63094905-b963-46ca-8429-090e1afd6752",
       "canonical_name": "hey, nothing",
       "match_score": 100,
@@ -891,13 +1297,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/6006deadd5009b5ccdd7c739065fef59/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:34.944263+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:34.944263+00:00",
+      "attempt_count": 1
     },
     "blind-delon": {
       "name": "Blind Delon",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:00.121563+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:37.599994+00:00",
       "musicbrainz_id": "0c71a453-9152-4062-99fd-a54196e491bc",
       "canonical_name": "Blind Delon",
       "match_score": 100,
@@ -912,13 +1325,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/181e681b35b358665cdd5274e1bdb555/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:37.599994+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:37.599994+00:00",
+      "attempt_count": 1
     },
     "rikas": {
       "name": "Rikas",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:02.590366+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:39.764790+00:00",
       "musicbrainz_id": "59c85e04-a68a-4784-a7a0-d362085704ed",
       "canonical_name": "Rikas",
       "match_score": 100,
@@ -933,13 +1353,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/e0a66c18422dcb511cf10bcfa7208299/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:39.764790+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:39.764790+00:00",
+      "attempt_count": 1
     },
     "saigon-blue-rain": {
       "name": "Saigon Blue Rain",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:05.047716+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:42.392333+00:00",
       "musicbrainz_id": "f739f1dc-08ef-4ff9-a949-ee312a25488d",
       "canonical_name": "Saigon Blue Rain",
       "match_score": 100,
@@ -954,13 +1381,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/25608e1e32b01b538896e5efe1d60c8c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:42.392333+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:42.392333+00:00",
+      "attempt_count": 1
     },
     "je-taime": {
       "name": "Je t’aime",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:07.780227+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:45.699853+00:00",
       "musicbrainz_id": "21ae7a85-569f-41f7-9e23-4a977b7de357",
       "canonical_name": "Je t’aime",
       "match_score": 100,
@@ -973,9 +1407,16 @@
       },
       "genre": "new wave",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/74df4395b013b3ac4fe630d6564847ae/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8e3cec611bd4ee02a879eee654fd8cbe/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:45.699853+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:45.699853+00:00",
+      "attempt_count": 1
     },
     "mad-iris": {
       "name": "Mad Iris",
@@ -1001,8 +1442,8 @@
     "les-votives": {
       "name": "Les Votives",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:12.672784+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:48.383863+00:00",
       "musicbrainz_id": "b975a688-969d-4270-ba2b-671ae5029c97",
       "canonical_name": "LES VOTIVES",
       "match_score": 100,
@@ -1017,13 +1458,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/dcab11006614916b3848335d9ee189e5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:48.383863+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:48.383863+00:00",
+      "attempt_count": 1
     },
     "kontravoid": {
       "name": "Kontravoid",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:15.164098+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:50.367039+00:00",
       "musicbrainz_id": "a90da468-5d4f-482d-9f90-c4d52b3ee33a",
       "canonical_name": "Kontravoid",
       "match_score": 100,
@@ -1038,7 +1486,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/3d0cddae821c70fcdf5f72f41f89414c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:50.367039+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:50.367039+00:00",
+      "attempt_count": 1
     },
     "sloe-noon": {
       "name": "Sloe Noon",
@@ -1064,8 +1519,8 @@
     "bootblacks": {
       "name": "Bootblacks",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:20.195557+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:53.596075+00:00",
       "musicbrainz_id": "2268f44e-f0a2-40f9-bcad-62b02e49360e",
       "canonical_name": "Bootblacks",
       "match_score": 100,
@@ -1080,13 +1535,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/c37af6fe29814c19a799cc0ecf802105/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:53.596075+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:53.596075+00:00",
+      "attempt_count": 1
     },
     "casket-cassette": {
       "name": "Casket Cassette",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:22.793894+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:40:56.332428+00:00",
       "musicbrainz_id": "f6fd224d-3924-4dda-986f-dd185ce2ba41",
       "canonical_name": "Casket Cassette",
       "match_score": 100,
@@ -1101,7 +1563,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/ed05b1412ac51fca5b78820f4b957499/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:40:56.332428+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:40:56.332428+00:00",
+      "attempt_count": 1
     },
     "augustines": {
       "name": "Augustines",
@@ -1127,8 +1596,8 @@
     "belle-sebastian": {
       "name": "Belle & Sebastian",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:28.081305+00:00",
+      "status": "complete",
+      "checked_at": "2026-10-02T12:40:59.479060+00:00",
       "musicbrainz_id": "e5c7b94f-e264-473c-bb0f-37c85d4d5c70",
       "canonical_name": "Belle and Sebastian",
       "match_score": 100,
@@ -1142,15 +1611,20 @@
       "genre": "indie pop",
       "bio_en": "Belle and Sebastian are a Scottish indie pop band formed in Glasgow in 1996. Led by Stuart Murdoch, Belle and Sebastian have released twelve studio albums. The band are often compared with acts such as the Smiths and Nick Drake. Belle and Sebastian took their name from a short story Murdoch had written about a boy and girl, whose title was a play on the 1965 television series Belle and Sebastian.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Belle_and_Sebastian_British_Band.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "image_source": "Wikipedia via MusicBrainz",
+      "image_source": "Wikipedia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belle_and_Sebastian",
-      "alias_suggestion": "Belle and Sebastian"
+      "alias_suggestion": "Belle and Sebastian",
+      "profile_checked_at": "2026-10-02T12:40:59.479060+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "pale-honey": {
       "name": "Pale Honey",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:30.675375+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:01.775571+00:00",
       "musicbrainz_id": "27fba925-fc2f-4560-a1aa-6d31320128c0",
       "canonical_name": "Pale Honey",
       "match_score": 100,
@@ -1165,19 +1639,44 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/32aa563b03fe7472dcc0949fcc574411/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:01.775571+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:01.775571+00:00",
+      "attempt_count": 1
     },
     "the-london-suede": {
       "name": "The London Suede",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:26:32.932843+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:04.767300+00:00",
+      "profile_checked_at": "2026-10-02T12:41:04.767300+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "The London Suede",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/aadbf13a887836d6c86470ec65ac6aa6/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:04.767300+00:00",
+      "attempt_count": 1
     },
     "strangejuice": {
       "name": "Strangejuice",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:33.851627+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:05.381336+00:00",
       "musicbrainz_id": "d50139c9-ba5d-4fab-b80c-8579e7c63fd0",
       "canonical_name": "Strangejuice",
       "match_score": 100,
@@ -1192,13 +1691,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/78be95f4fd6641cef70bc3567d897b02/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:05.381336+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:05.381336+00:00",
+      "attempt_count": 1
     },
     "spirit-of-the-beehive": {
       "name": "SPIRIT OF THE BEEHIVE",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:36.707249+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:07.994119+00:00",
       "musicbrainz_id": "57ccf9a9-69da-47e0-9630-4c9125beeb88",
       "canonical_name": "SPIRIT OF THE BEEHIVE",
       "match_score": 100,
@@ -1213,13 +1719,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/bdae575e9f80959fabd4b95cc3f68164/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:07.994119+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:07.994119+00:00",
+      "attempt_count": 1
     },
     "charlie-burg": {
       "name": "Charlie Burg",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:39.318998+00:00",
+      "status": "complete",
+      "checked_at": "2026-10-02T12:41:10.573716+00:00",
       "musicbrainz_id": "7abd9931-ad9f-4e2b-8916-de63a00b89d8",
       "canonical_name": "Charlie Burg",
       "match_score": 100,
@@ -1234,13 +1747,18 @@
       "bio_en": "Charlie Burg is an American singer-songwriter and producer. In 2015, Burg released a mixtape, Blue Wave Mosaic, then went on to release a series of extended plays from 2016 to 2019. In 2022, Burg released his debut album Infinitely Tall.",
       "image": "https://cdn-images.dzcdn.net/images/artist/82ff8d82f4ba3483ac58e7a0703c9f1e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Burg"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Burg",
+      "profile_checked_at": "2026-10-02T12:41:10.573716+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "yot-club": {
       "name": "Yot Club",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:42.136838+00:00",
+      "status": "complete",
+      "checked_at": "2026-10-02T12:41:13.801940+00:00",
       "musicbrainz_id": "7df45a14-19d1-4273-b073-c7292790a6a6",
       "canonical_name": "Yot Club",
       "match_score": 100,
@@ -1254,14 +1772,19 @@
       "genre": "alternative rock",
       "bio_en": "John Ryan Kaiser, known professionally as Yot Club, is an American singer-songwriter and producer from Mississippi. He is best known for his single \"YKWIM?\", which was certified platinum by the Recording Industry Association of America in November 2022.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Yot_Club_Ampere_Munich_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "image_source": "Wikipedia via MusicBrainz",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Yot_Club"
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yot_Club",
+      "profile_checked_at": "2026-10-02T12:41:13.801940+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "sex-mask": {
       "name": "Sex Mask",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:44.716956+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:16.344228+00:00",
       "musicbrainz_id": "ce890917-f15b-4158-bce2-8b061451d43a",
       "canonical_name": "Sex Mask",
       "match_score": 100,
@@ -1276,13 +1799,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/ff665b7568bd391dc6666151ada66ea7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:16.344228+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:16.344228+00:00",
+      "attempt_count": 1
     },
     "flock-of-dimes": {
       "name": "Flock of Dimes",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:46.945898+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:18.721216+00:00",
       "musicbrainz_id": "4ecf50fc-b788-4d67-9972-ff6e1aed5295",
       "canonical_name": "Flock of Dimes",
       "match_score": 100,
@@ -1297,13 +1827,40 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/e17c0f11c6df4f64115840bc727916bc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:18.721216+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:18.721216+00:00",
+      "attempt_count": 1
     },
     "blondshell-colors": {
       "name": "Blondshell, COLORS",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:26:49.381849+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:41:21.946293+00:00",
+      "profile_checked_at": "2026-10-02T12:41:21.946293+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Blondshell, COLORS",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:41:21.946293+00:00",
+      "attempt_count": 1
     },
     "url": {
       "name": "Url",
@@ -1329,8 +1886,8 @@
     "blood-handsome": {
       "name": "Blood Handsome",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:53.209590+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:22.595978+00:00",
       "musicbrainz_id": "9c3c7673-d5ce-46d6-8656-dfae94af04ec",
       "canonical_name": "Blood Handsome",
       "match_score": 100,
@@ -1345,25 +1902,71 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/c8fdec8270f3b474aae8ca05c1552f8d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:22.595978+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:22.595978+00:00",
+      "attempt_count": 1
     },
     "orla-gartland-matt-maltese": {
       "name": "Orla Gartland, Matt Maltese",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:26:55.667616+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:41:26.152314+00:00",
+      "profile_checked_at": "2026-10-02T12:41:26.152314+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Orla Gartland, Matt Maltese",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:41:26.152314+00:00",
+      "attempt_count": 1
     },
     "passion-mango-ekkstacy": {
       "name": "Passion Mango, EKKSTACY",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:26:56.591393+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:41:26.769903+00:00",
+      "profile_checked_at": "2026-10-02T12:41:26.769903+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Passion Mango, EKKSTACY",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:41:26.769903+00:00",
+      "attempt_count": 1
     },
     "glimmer": {
       "name": "Glimmer",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:26:57.807513+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:27.975607+00:00",
       "musicbrainz_id": "ff3abcf7-5ea3-4fba-a50e-239dd66673d7",
       "canonical_name": "Glimmer",
       "match_score": 100,
@@ -1376,15 +1979,22 @@
       },
       "genre": "grunge",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/9a52f8674acbd571b5c04858c72a8f14/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/054f534ed0809d9bd8b5b52f3be74b1a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:27.975607+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:27.975607+00:00",
+      "attempt_count": 1
     },
     "oko-tygra": {
       "name": "Oko Tygra",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:00.696745+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:31.273518+00:00",
       "musicbrainz_id": "3c4665c1-9923-46ba-a8b6-c3d4644244ad",
       "canonical_name": "OKO TYGRA",
       "match_score": 100,
@@ -1399,13 +2009,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/f07b185ea123de2cd88876817fc0dee8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:31.273518+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:31.273518+00:00",
+      "attempt_count": 1
     },
     "sam-truth": {
       "name": "Sam Truth",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:03.098303+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:34.542482+00:00",
       "musicbrainz_id": "095c7785-3484-4dea-8c57-ffd6f6992df0",
       "canonical_name": "Sam Truth",
       "match_score": 100,
@@ -1420,7 +2037,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/98e443c0d38916c0ab52b58fab55b69f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:34.542482+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:34.542482+00:00",
+      "attempt_count": 1
     },
     "sunday-morning": {
       "name": "Sunday Morning",
@@ -1446,12 +2070,12 @@
     "tallies": {
       "name": "Tallies",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:08.359241+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:37.161714+00:00",
       "musicbrainz_id": "7d536b46-5cf6-4812-9f75-45fde66160f4",
       "canonical_name": "Tallies",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {
         "facebook": "https://www.facebook.com/talliesband",
@@ -1462,13 +2086,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/f84b44ae02a2259164f683185e36664b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:37.161714+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:37.161714+00:00",
+      "attempt_count": 1
     },
     "best-dressed-ghost": {
       "name": "best dressed ghost",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:10.786583+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:38.500220+00:00",
       "musicbrainz_id": "9c86cdb1-a9cd-4f3d-a334-769776d958a3",
       "canonical_name": "best dressed ghost",
       "match_score": 100,
@@ -1483,13 +2114,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/4d5b0b54efd9ce07b971e1dd4684dfa0/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:38.500220+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:38.500220+00:00",
+      "attempt_count": 1
     },
     "fuzzy-sun": {
       "name": "Fuzzy Sun",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:13.555614+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:41.145689+00:00",
       "musicbrainz_id": "28c41716-4b51-4e43-8901-602982b0f522",
       "canonical_name": "Fuzzy Sun",
       "match_score": 100,
@@ -1504,13 +2142,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/080e3fba40b979b9cbbe795cd3fae445/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:41.145689+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:41.145689+00:00",
+      "attempt_count": 1
     },
     "keep-dancing-inc": {
       "name": "Keep Dancing Inc",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:15.950759+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:47.603736+00:00",
       "musicbrainz_id": "78317bb9-e06f-4130-9394-d22491ae9726",
       "canonical_name": "Keep Dancing Inc",
       "match_score": 100,
@@ -1525,13 +2170,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/df0ae2e0fd21271a1b5d243e52bfd600/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:47.603736+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:47.603736+00:00",
+      "attempt_count": 1
     },
     "luna-bay": {
       "name": "Luna Bay",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:18.584234+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:50.750081+00:00",
       "musicbrainz_id": "eeaa57fa-f710-4db7-a0b1-32c5bec77af6",
       "canonical_name": "Luna Bay",
       "match_score": 100,
@@ -1546,13 +2198,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/04f56d510c84e28ffb51fd38414553eb/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:50.750081+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:50.750081+00:00",
+      "attempt_count": 1
     },
     "rinse": {
       "name": "Rinse",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:21.089886+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:41:55.972922+00:00",
       "musicbrainz_id": "4c1579f0-a4ab-4004-b9ed-c00a97837ed8",
       "canonical_name": "RINSE",
       "match_score": 100,
@@ -1567,17 +2226,24 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/20182e4ab277ca0766c81df246ab357c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:41:55.972922+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:41:55.972922+00:00",
+      "attempt_count": 1
     },
     "wants": {
       "name": "wants",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:23.624594+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:01.270876+00:00",
       "musicbrainz_id": "42036b5a-5fa5-42b1-adf0-1fc1206827f1",
       "canonical_name": "wants",
       "match_score": 93,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -1588,13 +2254,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/d270a1d11e65e5c707dd95405bb92ee5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:01.270876+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:01.270876+00:00",
+      "attempt_count": 1
     },
     "whenyoung": {
       "name": "whenyoung",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:26.227119+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:02.681740+00:00",
       "musicbrainz_id": "a3e2dd3e-ec3a-43e5-9420-2e79597ac3b1",
       "canonical_name": "whenyoung",
       "match_score": 100,
@@ -1607,15 +2280,22 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/9f80fdcbe66e52cd866625c8528672e7/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:02.681740+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:02.681740+00:00",
+      "attempt_count": 1
     },
     "twin-noir": {
       "name": "Twin Noir",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:28.730144+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:17.847136+00:00",
       "musicbrainz_id": "2b6930fa-f305-4160-8cb5-a5fafe4d632a",
       "canonical_name": "Twin Noir",
       "match_score": 100,
@@ -1630,13 +2310,40 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/189a2b8fd72428f2945b9712dbcea5d4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:17.847136+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:17.847136+00:00",
+      "attempt_count": 1
     },
     "primal-scream-kate-moss": {
       "name": "Primal Scream/Kate Moss",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:31.394710+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:42:20.495617+00:00",
+      "profile_checked_at": "2026-10-02T12:42:20.495617+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Primal Scream/Kate Moss",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:42:20.495617+00:00",
+      "attempt_count": 1
     },
     "ladylike": {
       "name": "ladylike",
@@ -1662,8 +2369,8 @@
     "social-station": {
       "name": "Social Station",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:35.155388+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:22.402145+00:00",
       "musicbrainz_id": "3990f445-929e-4078-bad2-e991d1525b9d",
       "canonical_name": "Social Station",
       "match_score": 100,
@@ -1678,19 +2385,46 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/11b15e60a41517ec9dd6b898879e5461/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:22.402145+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:22.402145+00:00",
+      "attempt_count": 1
     },
     "the-decemberists-james-mercer": {
       "name": "The Decemberists/James Mercer",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:37.854150+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:42:25.954446+00:00",
+      "profile_checked_at": "2026-10-02T12:42:25.954446+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "The Decemberists/James Mercer",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:42:25.954446+00:00",
+      "attempt_count": 1
     },
     "the-pill": {
       "name": "The Pill",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:38.625123+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:26.600840+00:00",
       "musicbrainz_id": "062bbad8-0854-4bf0-843c-7573f1a59746",
       "canonical_name": "The Pill",
       "match_score": 100,
@@ -1705,7 +2439,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/220aa844db1567b69a91c2efc43354da/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:26.600840+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:26.600840+00:00",
+      "attempt_count": 1
     },
     "hiding-places": {
       "name": "Hiding Places",
@@ -1731,26 +2472,84 @@
     "miami-horror-kimbra": {
       "name": "Miami Horror/Kimbra",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:44.059209+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:42:29.870668+00:00",
+      "profile_checked_at": "2026-10-02T12:42:29.870668+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Miami Horror/Kimbra",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:42:29.870668+00:00",
+      "attempt_count": 1
     },
     "islefever": {
       "name": "isle&fever",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:44.900968+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:30.489104+00:00",
+      "profile_checked_at": "2026-10-02T12:42:30.489104+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "isle&fever",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:30.489104+00:00",
+      "attempt_count": 1
     },
     "depeche-mode-tim-simenon": {
       "name": "Depeche Mode/Tim Simenon",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:46.123828+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:42:32.448269+00:00",
+      "profile_checked_at": "2026-10-02T12:42:32.448269+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Depeche Mode/Tim Simenon",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:42:32.448269+00:00",
+      "attempt_count": 1
     },
     "they-live": {
       "name": "They/Live",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:47.342811+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:38.365597+00:00",
       "musicbrainz_id": "43f0103b-490d-4be3-b822-302d2872031c",
       "canonical_name": "They Live",
       "match_score": 100,
@@ -1763,15 +2562,42 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/14817b9f4bf8969bd71f103eccc0e191/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/89914a49369100f609d362460614b20d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:38.365597+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:38.365597+00:00",
+      "attempt_count": 1
     },
     "gorillaz-neneh-cherry": {
       "name": "Gorillaz/Neneh Cherry",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:27:50.472218+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:42:41.897246+00:00",
+      "profile_checked_at": "2026-10-02T12:42:41.897246+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Gorillaz/Neneh Cherry",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:42:41.897246+00:00",
+      "attempt_count": 1
     },
     "keo": {
       "name": "Keo",
@@ -1797,8 +2623,8 @@
     "pynch": {
       "name": "Pynch",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:54.069126+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:42.548219+00:00",
       "musicbrainz_id": "7584c7e5-a89c-4096-b36e-5abdaa189ef4",
       "canonical_name": "Pynch",
       "match_score": 100,
@@ -1813,7 +2639,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/d59148c8d9a8b7da80b38cf470162a78/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:42.548219+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:42.548219+00:00",
+      "attempt_count": 1
     },
     "100wet": {
       "name": "100%WET",
@@ -1839,8 +2672,8 @@
     "surf-rock-is-dead": {
       "name": "Surf Rock Is Dead",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:27:59.306243+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:49.365149+00:00",
       "musicbrainz_id": "eac957df-20de-41fe-ac43-3e0041a212e4",
       "canonical_name": "Surf Rock Is Dead",
       "match_score": 100,
@@ -1855,13 +2688,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/858060fd0f7f884eb5b70bd038815862/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:49.365149+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:49.365149+00:00",
+      "attempt_count": 1
     },
     "really-good-time": {
       "name": "Really Good Time",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:01.841915+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:52.030910+00:00",
       "musicbrainz_id": "1aa193f3-6586-45ae-88c7-7c3eed569e84",
       "canonical_name": "Really Good Time",
       "match_score": 100,
@@ -1876,13 +2716,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/c36e64655927fde6552177dd8c4e19ed/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:52.030910+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:52.030910+00:00",
+      "attempt_count": 1
     },
     "among-the-citizens": {
       "name": "Among the Citizens",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:04.517736+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:42:55.337834+00:00",
       "musicbrainz_id": "c7cbc39d-3d41-4e18-b5e6-dd7e8f48afd5",
       "canonical_name": "Among The Citizens",
       "match_score": 100,
@@ -1897,13 +2744,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/c7f0ed77810df4a33670c3d231bfb03b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:42:55.337834+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:42:55.337834+00:00",
+      "attempt_count": 1
     },
     "night-sins": {
       "name": "Night Sins",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:07.259297+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:06.086654+00:00",
       "musicbrainz_id": "1882dd5c-e9d8-4655-a41e-909499ab8e58",
       "canonical_name": "Night Sins",
       "match_score": 100,
@@ -1916,15 +2770,22 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/bc2526d29e5a65e03630f8ec6d89cb74/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:06.086654+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:06.086654+00:00",
+      "attempt_count": 1
     },
     "juliper-sky": {
       "name": "Juliper Sky",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:09.639355+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:09.099402+00:00",
       "musicbrainz_id": "ffda6987-1033-49a7-ae6a-e70c20f5eea8",
       "canonical_name": "Juliper Sky",
       "match_score": 100,
@@ -1939,7 +2800,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/bfd6ae947b52c7f9b3c233b31758fc71/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:09.099402+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:09.099402+00:00",
+      "attempt_count": 1
     },
     "headsend": {
       "name": "HEADSEND",
@@ -1965,8 +2833,8 @@
     "lauren-auder": {
       "name": "Lauren Auder",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:14.899662+00:00",
+      "status": "complete",
+      "checked_at": "2026-10-02T12:43:17.020991+00:00",
       "musicbrainz_id": "759df5bb-4edf-40fb-bed3-17ed7312d4ff",
       "canonical_name": "Lauren Auder",
       "match_score": 100,
@@ -1981,13 +2849,18 @@
       "bio_en": "Lauren Auder is a British-French singer-songwriter and record producer. Born in Watford and raised in the French town of Albi, she began her career producing for underground French and English rap artists. Auder signed to True Panther Sounds and made her solo debut in 2018 with the EP Who Carry's You, which was followed by the EP Two Caves In in 2020. Her debut album, The Infinite Spine, was released on 18 July 2023.",
       "image": "https://cdn-images.dzcdn.net/images/artist/3dc786fb9543fd708cec6316be61e407/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lauren_Auder"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lauren_Auder",
+      "profile_checked_at": "2026-10-02T12:43:17.020991+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "thyla": {
       "name": "Thyla",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:18.601272+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:29.427006+00:00",
       "musicbrainz_id": "284f7926-4f6c-436b-beed-3460396754b8",
       "canonical_name": "Thyla",
       "match_score": 100,
@@ -2002,19 +2875,44 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/f99a1cb65bbcfe7ad49311790542624f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:29.427006+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:29.427006+00:00",
+      "attempt_count": 1
     },
     "supercaan": {
       "name": "Supercaan",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:28:20.447482+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:42.498827+00:00",
+      "profile_checked_at": "2026-10-02T12:43:42.498827+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Supercaan",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/02428031ea83f2ff2d7e6b4926a2b434/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:42.498827+00:00",
+      "attempt_count": 1
     },
     "sugar-for-the-pill": {
       "name": "Sugar For The Pill",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:21.336417+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:44.243109+00:00",
       "musicbrainz_id": "ef62d1c8-7a97-41fc-920b-9220c282693e",
       "canonical_name": "Sugar for the Pill",
       "match_score": 100,
@@ -2029,13 +2927,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a6f9fa8d2b959bf46629ed13906341a2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:44.243109+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:44.243109+00:00",
+      "attempt_count": 1
     },
     "joshua-idehen": {
       "name": "Joshua Idehen",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:24.420287+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:46.795004+00:00",
       "musicbrainz_id": "3fc0070f-6b5b-4fc3-b5d3-afc87c80354a",
       "canonical_name": "Joshua Idehen",
       "match_score": 100,
@@ -2050,19 +2955,44 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/bfd7a6c2999ae559535e9b48718765e7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:46.795004+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:46.795004+00:00",
+      "attempt_count": 1
     },
     "bel": {
       "name": "BEL",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:28:27.050812+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:49.383593+00:00",
+      "profile_checked_at": "2026-10-02T12:43:49.383593+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "BEL",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cd3568bb51e7d9e425797f9b4c10b7d3/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:49.383593+00:00",
+      "attempt_count": 1
     },
     "lovataraxx": {
       "name": "Lovataraxx",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:27.957064+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:50.164247+00:00",
       "musicbrainz_id": "2f3ff430-384f-4445-aae1-edef58880595",
       "canonical_name": "Lovataraxx",
       "match_score": 100,
@@ -2077,19 +3007,46 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/41496da951df8403a6bb7a458457bcd2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:50.164247+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:50.164247+00:00",
+      "attempt_count": 1
     },
     "jay-som-jim-adkins": {
       "name": "Jay Som, Jim Adkins",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:28:30.804458+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:43:54.396806+00:00",
+      "profile_checked_at": "2026-10-02T12:43:54.396806+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Jay Som, Jim Adkins",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:43:54.396806+00:00",
+      "attempt_count": 1
     },
     "tiberius-b": {
       "name": "Tiberius b",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:31.775212+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:43:56.295626+00:00",
       "musicbrainz_id": "003daddd-1214-404b-ba9c-01a7dd63e36e",
       "canonical_name": "Tiberius b",
       "match_score": 100,
@@ -2104,13 +3061,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/b1d806525412aa2d33f3c6e44c966354/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:43:56.295626+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:43:56.295626+00:00",
+      "attempt_count": 1
     },
     "sharp-pins": {
       "name": "Sharp Pins",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:34.704638+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:44:02.756559+00:00",
       "musicbrainz_id": "950f36f9-7e94-4b5a-9161-ddeeef94bf85",
       "canonical_name": "Sharp Pins",
       "match_score": 100,
@@ -2125,13 +3089,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/1e973a161f35b4f992dfd80a6c40ace4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:44:02.756559+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:44:02.756559+00:00",
+      "attempt_count": 1
     },
     "some-days-are-darker": {
       "name": "Some Days Are Darker",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:37.370662+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:44:12.127521+00:00",
       "musicbrainz_id": "42f1572a-75d7-4bc0-b111-a5d60ab01712",
       "canonical_name": "Some Days Are Darker",
       "match_score": 100,
@@ -2146,13 +3117,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/ac9474be2e034da6c3c7499483e922ca/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:44:12.127521+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:44:12.127521+00:00",
+      "attempt_count": 1
     },
     "baby-smith": {
       "name": "Baby Smith",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:39.910724+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:44:17.671628+00:00",
       "musicbrainz_id": "c7bd214a-b2f7-40a5-92fe-cbd4dc6498f1",
       "canonical_name": "Baby Smith",
       "match_score": 100,
@@ -2167,13 +3145,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/e3b8aa150289c40eb47ca8cf5d7c7c8a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:44:17.671628+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:44:17.671628+00:00",
+      "attempt_count": 1
     },
     "violentene": {
       "name": "Violentene",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:42.550068+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:44:41.638115+00:00",
       "musicbrainz_id": "a187e268-edf5-427f-83f0-9c1bbd2ed1a3",
       "canonical_name": "Violentene",
       "match_score": 100,
@@ -2188,7 +3173,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/01f7a8924dfdf1f386d1db10724681d8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:44:41.638115+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:44:41.638115+00:00",
+      "attempt_count": 1
     },
     "dust-85": {
       "name": "dust (85",
@@ -2199,8 +3191,8 @@
     "the-sea-at-midnight": {
       "name": "The Sea at Midnight",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:46.060790+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:44:55.736647+00:00",
       "musicbrainz_id": "bceddb17-1bf6-4b7e-93f8-7ea1e9451571",
       "canonical_name": "The Sea at Midnight",
       "match_score": 100,
@@ -2215,13 +3207,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/3d68ed906b9b00988a239af18aaf935e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:44:55.736647+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:44:55.736647+00:00",
+      "attempt_count": 1
     },
     "dilk": {
       "name": "DILK",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:49.028900+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:02.440872+00:00",
       "musicbrainz_id": "513b2f34-1b23-45db-96ea-25ab8b2836f1",
       "canonical_name": "Dilk",
       "match_score": 100,
@@ -2236,13 +3235,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a8c4f7e68355efdf01d6f92c8cb21afd/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:02.440872+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:02.440872+00:00",
+      "attempt_count": 1
     },
     "berlin-taxi": {
       "name": "Berlin Taxi",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:51.594679+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:05.019895+00:00",
       "musicbrainz_id": "e0d966fc-1aea-4325-b8ea-f0434cea75d9",
       "canonical_name": "Berlin Taxi",
       "match_score": 100,
@@ -2257,13 +3263,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/10d51a2f392860315ca0d87717727ebe/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:05.019895+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:05.019895+00:00",
+      "attempt_count": 1
     },
     "japan-suicide": {
       "name": "Japan Suicide",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:54.234131+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:08.110319+00:00",
       "musicbrainz_id": "bc90b89b-73f2-46de-ac16-256e86019223",
       "canonical_name": "Japan Suicide",
       "match_score": 100,
@@ -2278,13 +3291,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/b88806f911fe26387838a76ad6d7cfc9/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:08.110319+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:08.110319+00:00",
+      "attempt_count": 1
     },
     "carl-louis": {
       "name": "Carl Louis",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:28:56.742464+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:14.423220+00:00",
       "musicbrainz_id": "0680ba09-2b51-424a-a82d-e3ead2ea1681",
       "canonical_name": "Carl Louis",
       "match_score": 100,
@@ -2299,19 +3319,46 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a3d237471e3470eafe75f9015a06f59f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:14.423220+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:14.423220+00:00",
+      "attempt_count": 1
     },
     "danger-mouse-mormor": {
       "name": "Danger Mouse, Mormor",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:28:59.447288+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:45:17.037702+00:00",
+      "profile_checked_at": "2026-10-02T12:45:17.037702+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Danger Mouse, Mormor",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:45:17.037702+00:00",
+      "attempt_count": 1
     },
     "le-shiv": {
       "name": "Le Shiv",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:29:00.274273+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:17.662430+00:00",
       "musicbrainz_id": "6b4ef62d-8f94-49b0-aaea-6aa41836dd48",
       "canonical_name": "Le Shiv",
       "match_score": 100,
@@ -2326,7 +3373,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/1d30a99040bec0ee6a3b117dfe290278/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:17.662430+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:17.662430+00:00",
+      "attempt_count": 1
     },
     "widemouth": {
       "name": "Widemouth",
@@ -2352,14 +3406,34 @@
     "eyedress-cuco": {
       "name": "Eyedress/Cuco",
       "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:29:05.833665+00:00"
+      "status": "not_found",
+      "checked_at": "2026-10-02T12:45:28.721604+00:00",
+      "profile_checked_at": "2026-10-02T12:45:28.721604+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Eyedress/Cuco",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "next_retry_at": "2026-10-16T12:45:28.721604+00:00",
+      "attempt_count": 1
     },
     "sunken": {
       "name": "Sunken",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:29:06.756992+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:34.211094+00:00",
       "musicbrainz_id": "e8c079c6-6bc2-44b8-97e0-2c28c36c4f9d",
       "canonical_name": "Sunken",
       "match_score": 100,
@@ -2374,19 +3448,44 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/038e6f23680b76f701203d666dbaa55f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:34.211094+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:34.211094+00:00",
+      "attempt_count": 1
     },
     "richard-hummingbird": {
       "name": "Richard Hummingbird",
-      "verified": false,
-      "status": "no_exact_musicbrainz",
-      "checked_at": "2026-10-02T03:29:09.669316+00:00"
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:37.256142+00:00",
+      "profile_checked_at": "2026-10-02T12:45:37.256142+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Richard Hummingbird",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e67f67a21a1d749ff779a9f7fce783de/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:37.256142+00:00",
+      "attempt_count": 1
     },
     "child-of-the-parish": {
       "name": "Child Of The Parish",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:29:10.532387+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:39.445164+00:00",
       "musicbrainz_id": "41a7e11e-4ded-4b39-9a7f-033e5906fe30",
       "canonical_name": "Child of the Parish",
       "match_score": 100,
@@ -2401,13 +3500,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a3220beb4532d91334616a93f87bf7c1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:39.445164+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:39.445164+00:00",
+      "attempt_count": 1
     },
     "shad-shadows": {
       "name": "Shad Shadows",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:29:13.535463+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:44.436550+00:00",
       "musicbrainz_id": "8380c489-fae4-4a0c-afa4-7c63bc2d2a82",
       "canonical_name": "Shad Shadows",
       "match_score": 100,
@@ -2422,13 +3528,20 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/f285feb06226c4fe3046e1b7dd48c605/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:44.436550+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:44.436550+00:00",
+      "attempt_count": 1
     },
     "villagerrr": {
       "name": "villagerrr",
       "verified": true,
-      "status": "verified",
-      "checked_at": "2026-10-02T03:29:16.121769+00:00",
+      "status": "partial",
+      "checked_at": "2026-10-02T12:45:54.322976+00:00",
       "musicbrainz_id": "b9739f4d-8eae-4aa7-a7a0-d7e9797af4a6",
       "canonical_name": "villagerrr",
       "match_score": 100,
@@ -2443,7 +3556,14 @@
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/df3e254581c78995604c43538d28b4c8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
-      "wikipedia_url": ""
+      "wikipedia_url": "",
+      "profile_checked_at": "2026-10-02T12:45:54.322976+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-05T12:45:54.322976+00:00",
+      "attempt_count": 1
     },
     "big-deal": {
       "name": "Big Deal",
@@ -7802,6 +8922,1618 @@
       "genre": "",
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/a362c2431e055e929ba20a5256830a41/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "ghostland": {
+      "name": "Ghostland",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:41:44.155803+00:00",
+      "checked_at": "2026-10-02T12:41:44.155803+00:00",
+      "musicbrainz_id": "4e69b449-f8d7-4e1e-891a-208da8899d50",
+      "canonical_name": "Ghostland",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3e5a57a0094678319ba79e9c1b6b7671/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "jamie-xx-the-avalanches": {
+      "name": "Jamie xx, The Avalanches",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:41:46.825928+00:00",
+      "checked_at": "2026-10-02T12:41:46.825928+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Jamie xx, The Avalanches",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:41:46.825928+00:00",
+      "attempt_count": 1
+    },
+    "no-vacation": {
+      "name": "No Vacation",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:41:53.347649+00:00",
+      "checked_at": "2026-10-02T12:41:53.347649+00:00",
+      "musicbrainz_id": "7abcc817-ab8a-4095-9295-83aa5c11c3a1",
+      "canonical_name": "No Vacation",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.novacationband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/novacationgrrl",
+        "twitter": "https://twitter.com/novacationgrrl",
+        "instagram": "https://www.instagram.com/novacationgrrl/"
+      },
+      "genre": "dream pop",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1d91a79305fb727cd1a3f10f4908042e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "voith": {
+      "name": "VOITH",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:41:58.678861+00:00",
+      "checked_at": "2026-10-02T12:41:58.678861+00:00",
+      "musicbrainz_id": "81ff3fb7-67fa-4ad6-bfe2-dc6f7394077f",
+      "canonical_name": "VOITH",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0e0acebc300f357157b25d2dabc5e0d3/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "boy-pablo": {
+      "name": "boy pablo",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:05.240823+00:00",
+      "checked_at": "2026-10-02T12:42:05.240823+00:00",
+      "musicbrainz_id": "512171a4-d41a-4df6-838d-de0a47aea068",
+      "canonical_name": "boy pablo",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.boypablo.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/boypablol",
+        "twitter": "https://twitter.com/soypablo777",
+        "instagram": "https://www.instagram.com/soypablo777/"
+      },
+      "genre": "indie pop",
+      "bio_en": "Boy Pablo is the indie pop music project of Norwegian singer songwriter Nicolas Muñoz. Muñoz writes, records, performs, and produces all of the project's music. The project has been inactive since 2022. Boy Pablo's latest touring lineup consisted of Nicolás Muñoz, Gabriel Muñoz, Judah Kubendran and Esteban Muñoz (drums).",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Boy_Pablo_Piknik_i_Parken_2019_%28170641%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boy_Pablo",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "good-kid": {
+      "name": "Good Kid",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:07.573305+00:00",
+      "checked_at": "2026-10-02T12:42:07.573305+00:00",
+      "musicbrainz_id": "adab38f4-297d-4af8-9450-4e84697240e7",
+      "canonical_name": "Good Kid",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://goodkidofficial.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/goodkidband",
+        "twitter": "https://twitter.com/goodkidband",
+        "instagram": "https://www.instagram.com/goodkidband/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Good Kid is a Canadian indie rock band from Toronto, Ontario. It consists of five members: lead vocalist Nick Frosst, bassist Michael Kozakov, drummer Jon Kereliuk, and guitarists David Wood and Jacob Tsafatinos. The band's mascot, known as Nomu Kid, is primarily featured in their marketing and social media. The band released their first single in 2015, their self-titled first EP in 2018, and their first album in 2026. In late 2020, the band gained popularity through the use of their music on the internet, particularly on Fortnite streams. The band has chosen not to issue DMCA strikes so that their music could be used in streams. Good Kid primarily releases music in the form of singles, later bundled into self-titled, sequentially numbered EPs with additional tracks.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Good_Kid_NYC_performance_21_May_2023_-_34.png/3840px-Good_Kid_NYC_performance_21_May_2023_-_34.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Good_Kid",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "sincere-engineer": {
+      "name": "Sincere Engineer",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:10.765237+00:00",
+      "checked_at": "2026-10-02T12:42:10.765237+00:00",
+      "musicbrainz_id": "053c3c45-559a-4af7-adee-6cf3c7dd82c1",
+      "canonical_name": "Sincere Engineer",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://sincereengineer.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/SincereEngineer",
+        "twitter": "https://twitter.com/sincereengineer",
+        "instagram": "https://www.instagram.com/sincereengineer/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Sincere Engineer is an American punk rock band based in Chicago, Illinois. The band consists of Deanna Belos on lead vocals and guitar, Adam Beck on drums, Kyle Geib on guitar, and Nick Arvanitis on bass. The band has released four full-length albums. Their first album, Rhombithian, was released in 2017 via Red Scare Industries. In 2021, the group signed to Hopeless Records and released their second full-length album, titled Bless My Psyche. In 2023, the group released their third full-length album, titled Cheap Grills.. They released their fourth album, Probable Claws, on June 26th, 2026, featuring actor Wil Wheaton's spoken word on the song \"LOL\".",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4f33ed39afeb1056398bec22b5fa3510/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sincere_Engineer",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "hayley-williams": {
+      "name": "Hayley Williams",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:13.753449+00:00",
+      "checked_at": "2026-10-02T12:42:13.753449+00:00",
+      "musicbrainz_id": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "canonical_name": "Hayley Williams",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.hayleywilliams.net/",
+      "social": {
+        "facebook": "https://www.facebook.com/hayleywilliams",
+        "twitter": "https://twitter.com/yelyahwilliams",
+        "instagram": "https://www.instagram.com/yelyahwilliams/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Hayley Nichole Williams is an American singer and songwriter. She is the lead vocalist and a founding member of the rock band Paramore and has released several solo albums. In 2023, Billboard ranked her as the 13th greatest rock lead singer of all time; that same year, Alternative Press readers voted her as the second greatest pop-punk vocalist of all time.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hayley_Williams_Show_in_Raleigh_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hayley_Williams",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "mould": {
+      "name": "Mould",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:15.967156+00:00",
+      "checked_at": "2026-10-02T12:42:15.967156+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Mould",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b53bdcf823ef7e4f69ebe2b0db005bdc/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "hazel-english-day-wave": {
+      "name": "Hazel English/Day Wave",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:42:21.141902+00:00",
+      "checked_at": "2026-10-02T12:42:21.141902+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Hazel English/Day Wave",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:42:21.141902+00:00",
+      "attempt_count": 1
+    },
+    "mary": {
+      "name": "Mary",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:33.374718+00:00",
+      "checked_at": "2026-10-02T12:42:33.374718+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Mary",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2bdc795597300a815a2abbb66cdba0a7/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "cmat": {
+      "name": "Cmat",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:35.060576+00:00",
+      "checked_at": "2026-10-02T12:42:35.060576+00:00",
+      "musicbrainz_id": "2ac533ad-f3ec-4083-a2d4-6f30393414b3",
+      "canonical_name": "CMAT",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://cmatbaby.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/cmatbaby",
+        "twitter": "https://twitter.com/cmatbaby",
+        "instagram": "https://www.instagram.com/cmatbaby/"
+      },
+      "genre": "indie pop",
+      "bio_en": "Ciara Mary-Alice Thompson, known professionally as CMAT, is an Irish musician. She has released three studio albums, If My Wife New I'd Be Dead (2022), Crazymad, for Me (2023) and Euro-Country (2025). Her music has been described by Kate Hutchinson of The Guardian as \"songs [that] are mournful yet accessible, emotionally literate and cleverly crafted, but, crucially, with a huge sense of humour\".",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/CMAT%2C_May_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CMAT",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "depeche-mode-francois-kevorkian": {
+      "name": "Depeche Mode/Francois Kevorkian",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:42:37.159018+00:00",
+      "checked_at": "2026-10-02T12:42:37.159018+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Depeche Mode/Francois Kevorkian",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:42:37.159018+00:00",
+      "attempt_count": 1
+    },
+    "w-h-lung": {
+      "name": "W. H. Lung",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:45.846934+00:00",
+      "checked_at": "2026-10-02T12:42:45.846934+00:00",
+      "musicbrainz_id": "e6fceb73-a6f5-44c1-a678-c0a37d950a38",
+      "canonical_name": "W. H. Lung",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://whlung.wordpress.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/whlungmusic",
+        "twitter": "https://twitter.com/whlungmusic",
+        "instagram": "https://www.instagram.com/whlung/"
+      },
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f47cf9ace52a5eb1e9cb0cc9d1d8bb40/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "surf-mesa-gus-dapperton": {
+      "name": "Surf Mesa/ Gus Dapperton",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:42:48.752141+00:00",
+      "checked_at": "2026-10-02T12:42:48.752141+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Surf Mesa/ Gus Dapperton",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:42:48.752141+00:00",
+      "attempt_count": 1
+    },
+    "leathers": {
+      "name": "Leathers",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:42:58.052805+00:00",
+      "checked_at": "2026-10-02T12:42:58.052805+00:00",
+      "musicbrainz_id": "509c11b5-db25-426b-9b78-75de5632c764",
+      "canonical_name": "LEATHERS",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.leatherstheband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/leathersmusic",
+        "twitter": "https://twitter.com/leathersmusic",
+        "instagram": "https://www.instagram.com/leathersmusic/"
+      },
+      "genre": "dark wave",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1d964ebb5abfb1c8b047676f6d35c7eb/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "willow": {
+      "name": "WILLOW",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:00.912293+00:00",
+      "checked_at": "2026-10-02T12:43:00.912293+00:00",
+      "musicbrainz_id": "6bbfc71b-5f18-4e61-82fb-bee0c2a6b5f9",
+      "canonical_name": "WILLOW",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.willowsmith.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/OfficialWillow",
+        "twitter": "https://twitter.com/OfficialWillow",
+        "instagram": "https://www.instagram.com/willowsmith/"
+      },
+      "genre": "punk rock",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a0221011989d9c58bb8173ed42d06e40/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "anamanaguchi": {
+      "name": "Anamanaguchi",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:03.731382+00:00",
+      "checked_at": "2026-10-02T12:43:03.731382+00:00",
+      "musicbrainz_id": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+      "canonical_name": "Anamanaguchi",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.anamanaguchi.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/anamanaguchi",
+        "twitter": "https://twitter.com/anamanaguchi",
+        "instagram": "https://www.instagram.com/anamanaguchi_official/"
+      },
+      "genre": "chiptune",
+      "bio_en": "Anamanaguchi is an American chiptune-based pop and rock band from New York City. The band has four members: lead songwriters and guitarists Peter Berkman and Ary Warnaar, bassist James DeVito, and drummer Luke Silas.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Anamanaguchi.jpg/3840px-Anamanaguchi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anamanaguchi",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "estrons": {
+      "name": "Estrons",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:11.596185+00:00",
+      "checked_at": "2026-10-02T12:43:11.596185+00:00",
+      "musicbrainz_id": "fc8fd21f-4268-4cab-8100-71d9e8393e88",
+      "canonical_name": "Estrons",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.estrons.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/Estrons",
+        "twitter": "https://twitter.com/estrons_music",
+        "instagram": ""
+      },
+      "genre": "",
+      "bio_en": "Estrons was a Welsh alternative rock band from Cardiff, Wales. The band's final lineup featured Tali Källström (vocals), Rhodri Daniel (guitar), Steffan Pringle (bass), and Adam Thomas (drums).",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Estrons.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Estrons",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "maya-hawke": {
+      "name": "Maya Hawke",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:13.873794+00:00",
+      "checked_at": "2026-10-02T12:43:13.873794+00:00",
+      "musicbrainz_id": "6879c573-d161-427c-8b67-77d65fa477bb",
+      "canonical_name": "Maya Hawke",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.mayahawkemusic.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/MayaHawkeOfficial",
+        "twitter": "https://twitter.com/mayahawke",
+        "instagram": "https://www.instagram.com/maya_hawke/"
+      },
+      "genre": "indie folk",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e2c6164d42e4d99b1eb927162db1845f/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "dolly-zoom": {
+      "name": "DOLLY ZOOM",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:20.072320+00:00",
+      "checked_at": "2026-10-02T12:43:20.072320+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "DOLLY ZOOM",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/81c2870aaab0a4b150e4c412a1412bad/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "turnstile": {
+      "name": "Turnstile",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:21.325624+00:00",
+      "checked_at": "2026-10-02T12:43:21.325624+00:00",
+      "musicbrainz_id": "7b748dac-f5ce-45a7-9b95-c1d8b5b013ed",
+      "canonical_name": "Turnstile",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.turnstilehardcore.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/turnstilehc",
+        "twitter": "https://twitter.com/TURNSTILEHC",
+        "instagram": "https://www.instagram.com/turnstileluvconnection/"
+      },
+      "genre": "hardcore punk",
+      "bio_en": "Turnstile is an American rock band from Baltimore, Maryland, formed in 2010. The band consists of lead vocalist Brendan Yates, guitarists Pat McCrory and Meg Mills, bassist Franz Lyons, and drummer Daniel Fang.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Turnstile_Full_Force_2019_02.jpg/3840px-Turnstile_Full_Force_2019_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turnstile_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "sleater-kinney": {
+      "name": "Sleater-Kinney",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:23.692823+00:00",
+      "checked_at": "2026-10-02T12:43:23.692823+00:00",
+      "musicbrainz_id": "e36e78eb-3ace-4acd-882c-16789e700ab7",
+      "canonical_name": "Sleater‐Kinney",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.sleater-kinney.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/SleaterKinney",
+        "twitter": "https://twitter.com/Sleater_Kinney",
+        "instagram": "https://www.instagram.com/sleater_kinney/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Sleater-Kinney is an American rock band that formed in Olympia, Washington, in 1994. The band's lineup features Corin Tucker and Carrie Brownstein, following the departure of longtime member Janet Weiss in 2019. Sleater-Kinney originated as part of the riot grrrl movement and has become a key part of the American indie rock scene. The band is also known for its feminist and progressive politics.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Sleater-Kinney_%40_Palladium_11_14_2019_%2849311292593%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sleater-Kinney",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "rosi": {
+      "name": "Rosi",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:25.747284+00:00",
+      "checked_at": "2026-10-02T12:43:25.747284+00:00",
+      "musicbrainz_id": "0c8e18de-2820-4234-b5e2-b1e1c9674ede",
+      "canonical_name": "Rosi",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {
+        "facebook": "https://www.facebook.com/rosi.info",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "post-punk",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/107f050e55b6ef56765ac2a7f953255b/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "nuovo-testamento": {
+      "name": "Nuovo Testamento",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:32.007499+00:00",
+      "checked_at": "2026-10-02T12:43:32.007499+00:00",
+      "musicbrainz_id": "d3511642-f45b-4921-8161-70e7e949eaa9",
+      "canonical_name": "Nuovo Testamento",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://nuovotestamento.com/",
+      "social": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/nuovotestamento.band/"
+      },
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a3c9255bfc23dbfc41e2093c2d20fe2d/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "wunderhorse": {
+      "name": "Wunderhorse",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:34.839286+00:00",
+      "checked_at": "2026-10-02T12:43:34.839286+00:00",
+      "musicbrainz_id": "5126db33-86ad-469d-88fb-4158350e1515",
+      "canonical_name": "Wunderhorse",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://wunderhorseband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/wunderhorse",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "rock",
+      "bio_en": "Wunderhorse are a British rock band formed in 2020 by frontman and songwriter Jacob Slater. Initially a solo project, Wunderhorse became a full band in 2021, with Slater being joined by Harry Fowler (guitar), Pete Woodin (bass) and Jamie Staples (drums). Woodin has since been replaced by Seb Byford. They have released two albums and toured internationally.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Wunderhorselive.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wunderhorse",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "riki": {
+      "name": "RIKI",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:37.036936+00:00",
+      "checked_at": "2026-10-02T12:43:37.036936+00:00",
+      "musicbrainz_id": "8c037e17-3b3a-48ea-b2d2-b267d7811675",
+      "canonical_name": "Riki",
+      "match_score": 92,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {
+        "facebook": "https://www.facebook.com/riki.la.band",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/riki.band/"
+      },
+      "genre": "synth-pop",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "blaqk-audio": {
+      "name": "Blaqk Audio",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:40.143656+00:00",
+      "checked_at": "2026-10-02T12:43:40.143656+00:00",
+      "musicbrainz_id": "f94bf2b7-6f66-447a-9929-ac9f3c5452fc",
+      "canonical_name": "Blaqk Audio",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.blaqkaudio.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/blaqkaudio",
+        "twitter": "https://twitter.com/blaqkaudio",
+        "instagram": "https://www.instagram.com/blaqkaudio/"
+      },
+      "genre": "electronic",
+      "bio_en": "Blaqk Audio is an American electronic music duo, formed by current AFI members Davey Havok and Jade Puget under Interscope Records.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Blaqk_Audio_-_Davey_Havok.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blaqk_Audio",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "mstrkrft-john-legend": {
+      "name": "MSTRKRFT/John Legend",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:43:55.020314+00:00",
+      "checked_at": "2026-10-02T12:43:55.020314+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "MSTRKRFT/John Legend",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:43:55.020314+00:00",
+      "attempt_count": 1
+    },
+    "black-midi": {
+      "name": "black midi",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:43:59.748561+00:00",
+      "checked_at": "2026-10-02T12:43:59.748561+00:00",
+      "musicbrainz_id": "4afbef0a-05ee-4551-b0e0-f1f1870d8f1c",
+      "canonical_name": "black midi",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://bmblackmidi.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/blackmidi",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/bmblackmidi/"
+      },
+      "genre": "experimental rock",
+      "bio_en": "Black Midi were an English experimental rock band from London that formed in 2017. Their most recent line-up consisted of lead vocalists and multi-instrumentalists Geordie Greep and Cameron Picton, along with drummer Morgan Simpson. Between 2017 and 2021, the band also included guitarist Matt Kwasniewski-Kelvin. Following his departure, the trio were frequently joined by multi-instrumentalist Seth Evans and saxophonist Kaidi Akinnibi, both as session musicians and during live performances. Their name is derived from the Japanese electronic music genre black MIDI, though their own music has no obvious relation to it, instead incorporating styles such as math rock, progressive rock, post-punk, and avant-jazz.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Black_Midi_at_the_Wide_Awake_Festival_%2851427233998%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Midi",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "snooper": {
+      "name": "SNOOPER",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:06.889345+00:00",
+      "checked_at": "2026-10-02T12:44:06.889345+00:00",
+      "musicbrainz_id": "f2bc8767-3737-482c-a22f-8b11ce2b74b8",
+      "canonical_name": "Snõõper",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.snooperonline.com/",
+      "social": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/snooper_7/"
+      },
+      "genre": "",
+      "bio_en": "Snõõper is an American punk rock band formed in Nashville, Tennessee in 2020. The band was formed by core duo of vocalist Blair Tramel and guitarist Connor Cummins. Their music is often described as egg punk. They are known for their large papier-mâché puppets at their shows, including their mascot, a large green bug.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sn%C3%B4%C3%B4per_%2854544001093%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sn%C3%B5%C3%B5per",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "topographies": {
+      "name": "topographies",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:24.253781+00:00",
+      "checked_at": "2026-10-02T12:44:24.253781+00:00",
+      "musicbrainz_id": "b7bc85fc-87a3-4c18-86a8-7e39a0ecc1b4",
+      "canonical_name": "Topographies",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {
+        "facebook": "https://www.facebook.com/topographies",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/_topographies_/"
+      },
+      "genre": "post-punk",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/77999052d2f81c710f73f63b12933a18/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "sofia-kourtesis-daphni": {
+      "name": "Sofia Kourtesis, Daphni",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:44:29.317925+00:00",
+      "checked_at": "2026-10-02T12:44:29.317925+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Sofia Kourtesis, Daphni",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:44:29.317925+00:00",
+      "attempt_count": 1
+    },
+    "pink-turns-blue": {
+      "name": "Pink Turns Blue",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:29.935339+00:00",
+      "checked_at": "2026-10-02T12:44:29.935339+00:00",
+      "musicbrainz_id": "66c82752-3488-472e-8bc1-89b853da56df",
+      "canonical_name": "Pink Turns Blue",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://pinkturnsblue.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/Pink.Turns.Blue.Official",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "alternative rock",
+      "bio_en": "Pink Turns Blue are a German rock band from Cologne. Formed in 1985, they were part of the first generation of gothic rock in Germany and released their first LP, If Two Worlds Kiss with a sound reminiscent of new wave with very dark undertones and use of synthesizers, and went to become part of the developing sub-genre of dark wave.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/P1._PINK_TURNS_BLUE_2022_Jogwer%2BRichter%2BSammuri_%28by_D._Vorndran%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pink_Turns_Blue",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "the-slow-readers-club": {
+      "name": "The Slow Readers Club",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:38.004559+00:00",
+      "checked_at": "2026-10-02T12:44:38.004559+00:00",
+      "musicbrainz_id": "ce9e077c-30cd-47ca-9475-2d5bb99d8da0",
+      "canonical_name": "The Slow Readers Club",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.theslowreadersclub.co.uk/",
+      "social": {
+        "facebook": "https://www.facebook.com/theslowreadersclub",
+        "twitter": "https://twitter.com/slowreadersclub",
+        "instagram": "https://www.instagram.com/theslowreadersclub/"
+      },
+      "genre": "",
+      "bio_en": "The Slow Readers Club is an English rock band from Manchester. Their third studio album, Build a Tower, was a UK Top 20 hit album, reaching number 18. Their follow-up, The Joy of the Return, made it to the top 10, peaking at number 9 in March 2020.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Slow_Readers_Club_Live_Dot_to_Dot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Slow_Readers_Club",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "temples": {
+      "name": "Temples",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:45.797304+00:00",
+      "checked_at": "2026-10-02T12:44:45.797304+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Temples",
+      "match_score": 0,
+      "verification_source": "Deezer exact artist match",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9edb18b7816b8bbb7998f6ece84e6e0d/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "yumi-zouma": {
+      "name": "Yumi Zouma",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:47.289582+00:00",
+      "checked_at": "2026-10-02T12:44:47.289582+00:00",
+      "musicbrainz_id": "6e3252a1-397d-4bf8-b2b7-d16f7fbcb3dd",
+      "canonical_name": "Yumi Zouma",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.yumizouma.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/YumiZouma",
+        "twitter": "https://twitter.com/YumiZouma",
+        "instagram": "https://www.instagram.com/yumizouma/"
+      },
+      "genre": "alternative pop",
+      "bio_en": "Yumi Zouma are a New Zealand alternative pop band from Christchurch. The band consists of Christie Simpson, Josh Burgess, Charlie Ryder, and Olivia Campion (drums). The band's name is an amalgamation of the two friends who encouraged the group to start writing together.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/YUMI-ZOUMA-LP3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yumi_Zouma",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "jai-wolf-day-wave": {
+      "name": "Jai Wolf, Day Wave",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:44:50.500543+00:00",
+      "checked_at": "2026-10-02T12:44:50.500543+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Jai Wolf, Day Wave",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:44:50.500543+00:00",
+      "attempt_count": 1
+    },
+    "lower-dens": {
+      "name": "Lower Dens",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:51.714063+00:00",
+      "checked_at": "2026-10-02T12:44:51.714063+00:00",
+      "musicbrainz_id": "3dee0ca7-99ae-4421-9c3b-f42d8caf4c88",
+      "canonical_name": "Lower Dens",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://lowerdens.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/lowerdens",
+        "twitter": "https://twitter.com/lowerdens",
+        "instagram": "https://www.instagram.com/lowerdens/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Lower Dens was an American alternative indie pop band from Baltimore, Maryland, United States. The band was formed in 2010 by Jana Hunter, Geoff Graham, Abram Sanders and Will Adams. Lower Dens has released four albums: their debut on Gnomonsong and a follow-up album on Ribbon Music. Their third album, Escape from Evil, was released on March 31, 2015, on Ribbon Music.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Lower_Dens.jpg/3840px-Lower_Dens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lower_Dens",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "far-caspian": {
+      "name": "Far Caspian",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:44:58.871907+00:00",
+      "checked_at": "2026-10-02T12:44:58.871907+00:00",
+      "musicbrainz_id": "1b53a424-2bea-4210-9318-32eac0758f49",
+      "canonical_name": "Far Caspian",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.farcaspian.org/",
+      "social": {
+        "facebook": "https://www.facebook.com/FarCaspian",
+        "twitter": "https://twitter.com/farcaspian",
+        "instagram": "https://www.instagram.com/farcaspian/"
+      },
+      "genre": "dream pop",
+      "bio_en": "Far Caspian is a band headed by Irish musician and producer Joel Johnston.",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b12c36e87005df28d9aae8166ab24fb3/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Far_Caspian",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "second-still": {
+      "name": "Second Still",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:11.142217+00:00",
+      "checked_at": "2026-10-02T12:45:11.142217+00:00",
+      "musicbrainz_id": "be42ca5b-ad50-4d45-9700-f57184834dc0",
+      "canonical_name": "Second Still",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {
+        "facebook": "https://www.facebook.com/secondstillband",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "coldwave",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/72f4798d8031c9dcb427bbb5b17a7fb9/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "phoenix": {
+      "name": "Phoenix",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:21.113030+00:00",
+      "checked_at": "2026-10-02T12:45:21.113030+00:00",
+      "musicbrainz_id": "8d455809-96b3-4bb6-8829-ea4beb580d35",
+      "canonical_name": "Phoenix",
+      "match_score": 94,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.wearephoenix.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/wearephoenix",
+        "twitter": "https://www.wearephoenix.com/",
+        "instagram": "https://www.instagram.com/wearephoenix/"
+      },
+      "genre": "indie pop",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f89bd9be6606ebda61eaa21ebc00dbe1/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "bleachers": {
+      "name": "Bleachers",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:25.418534+00:00",
+      "checked_at": "2026-10-02T12:45:25.418534+00:00",
+      "musicbrainz_id": "58e235fc-f6ea-4614-9ed4-9855a5665ae1",
+      "canonical_name": "Bleachers",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.bleachersmusic.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/bleachersmusic",
+        "twitter": "https://twitter.com/bleachersmusic",
+        "instagram": "https://www.instagram.com/bleachersmusic/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Bleachers is an American rock band from New Jersey, formed in 2013 by musician Jack Antonoff. Antonoff was the only permanent member of the group until 2023, when longtime touring musicians Mikey Freedom Hart, Sean Hutchinson, Evan Smith, Michael Riddleberger, and Zem Audu became official members.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Bleachers_on_set_of_%22Modern_Girl%22_music_video_shoot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bleachers_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "gusgus-vok": {
+      "name": "GusGus/Vök",
+      "verified": false,
+      "profile_checked_at": "2026-10-02T12:45:27.812924+00:00",
+      "checked_at": "2026-10-02T12:45:27.812924+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "GusGus/Vök",
+      "match_score": 0,
+      "verification_source": "",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "",
+      "image_source": "",
+      "wikipedia_url": "",
+      "profile_status": "not_found",
+      "status": "not_found",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-16T12:45:27.812924+00:00",
+      "attempt_count": 1
+    },
+    "mannequin": {
+      "name": "Mannequin",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:29.992299+00:00",
+      "checked_at": "2026-10-02T12:45:29.992299+00:00",
+      "musicbrainz_id": "d12bc4e3-e716-4b12-a961-cdcd9078a872",
+      "canonical_name": "Mannequin",
+      "match_score": 90,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/82319fdd1792da2f2c939b443c991616/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "courting": {
+      "name": "Courting",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:42.253055+00:00",
+      "checked_at": "2026-10-02T12:45:42.253055+00:00",
+      "musicbrainz_id": "2ba62367-f36f-4d49-9439-9a81f22a47ce",
+      "canonical_name": "Courting",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://courtingband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/courtingband",
+        "twitter": "https://twitter.com/courtingband",
+        "instagram": "https://www.instagram.com/courtingband/"
+      },
+      "genre": "",
+      "bio_en": "Courting are a British electronic rock band based in Liverpool. The group consists of lead vocalist Sean Murphy-O'Neill, drummer Sean Thomas, guitarist Joshua Cope and bassist Connor McCann. Since their formation in 2018, they have released one extended play, Grand National (2021), and three studio albums: Guitar Music in 2022, New Last Name in 2024, and Lust for Life, Or: 'How to Thread the Needle and Come Out the Other Side to Tell the Story' in 2025.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Courting_Reading_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Courting_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "cafune": {
+      "name": "Cafuné",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:47.641090+00:00",
+      "checked_at": "2026-10-02T12:45:47.641090+00:00",
+      "musicbrainz_id": "ad10c69c-0cae-4c27-934d-a02e4ecc9985",
+      "canonical_name": "CAFUNÉ",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://wearecafune.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/wearecafune",
+        "twitter": "https://twitter.com/wearecafune",
+        "instagram": "https://www.instagram.com/wearecafune/"
+      },
+      "genre": "",
+      "bio_en": "Cafuné is an American indie pop duo formed in 2014 by singer-songwriter Sedona Schat and producer Noah Yoo. The two met at New York University. Their single \"Tek It\", from their debut album Running (2021), went viral, and they were subsequently signed to Elektra Records in 2022.",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e58c69501f1faae943585b776a2b38aa/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cafun%C3%A9",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "twin-tribes": {
+      "name": "Twin Tribes",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:51.975055+00:00",
+      "checked_at": "2026-10-02T12:45:51.975055+00:00",
+      "musicbrainz_id": "bf629fc0-2d07-4fa3-90dd-1e77629be935",
+      "canonical_name": "Twin Tribes",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.twin-tribes.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/TwinTribes",
+        "twitter": "https://twitter.com/twin_tribes",
+        "instagram": "https://www.instagram.com/twin_tribes/"
+      },
+      "genre": "dark wave",
+      "bio_en": "Twin Tribes is an American rock band formed in 2017 in Brownsville, Texas. After years touring and three albums, the band has become one of the referents of new gothic rock and dark wave styles.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c5/TwinTribesBand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twin_Tribes",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "the-killers": {
+      "name": "The Killers",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:57.531610+00:00",
+      "checked_at": "2026-10-02T12:45:57.531610+00:00",
+      "musicbrainz_id": "95e1ead9-4d31-4808-a7ac-32c3614c116b",
+      "canonical_name": "The Killers",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.thekillersmusic.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/Thekillers",
+        "twitter": "https://twitter.com/thekillers",
+        "instagram": "https://www.instagram.com/thekillers/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "The Killers are an American rock band formed in Las Vegas, Nevada, in 2001 by Brandon Flowers and Dave Keuning. After the band went through several short-term bassists and drummers, Mark Stoermer and Ronnie Vannucci Jr. joined in 2002.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/KillersBST080717-38_%2835742625041%29_%28cropped%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Killers",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "blur": {
+      "name": "Blur",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:45:59.829809+00:00",
+      "checked_at": "2026-10-02T12:45:59.829809+00:00",
+      "musicbrainz_id": "ba853904-ae25-4ebb-89d6-c44cfbd71bd2",
+      "canonical_name": "Blur",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.blur.co.uk/",
+      "social": {
+        "facebook": "https://www.facebook.com/blur",
+        "twitter": "https://twitter.com/blurofficial",
+        "instagram": "https://www.instagram.com/blurofficial/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Blur are an English rock band formed in London in 1988, consisting of singer Damon Albarn, guitarist Graham Coxon, bassist Alex James, and drummer Dave Rowntree. Their debut album, Leisure (1991), incorporated the sounds of Madchester and shoegaze. \nFollowing a stylistic change influenced by British guitar pop groups such as the Kinks, the Beatles, and XTC, Blur released the albums Modern Life Is Rubbish (1993), Parklife (1994), and The Great Escape (1995). The Parklife lead single \"Girls & Boys\" became a hit in the UK and the US, respectively peaking at number 5 on the UK singles chart and number 59 on the Billboard Hot 100. As a result, the band helped to popularise the Britpop genre and achieved mass popularity in the UK, aided by a widely publicised chart battle with rival band Oasis in 1995 dubbed \"the Battle of Britpop\".",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/BlurWembley090723_%28166_of_172%29_colour_change_%28shorter_crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blur_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "the-vaccines": {
+      "name": "The Vaccines",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:02.674854+00:00",
+      "checked_at": "2026-10-02T12:46:02.674854+00:00",
+      "musicbrainz_id": "aa76ec08-45ab-4724-9411-d80b0e59ac59",
+      "canonical_name": "The Vaccines",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.thevaccines.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/thevaccines",
+        "twitter": "https://twitter.com/TheRealVaccines",
+        "instagram": "https://www.instagram.com/thevaccines/"
+      },
+      "genre": "indie rock",
+      "bio_en": "The Vaccines are an English indie rock band, formed in West London in 2010 by Justin Hayward-Young, Freddie Cowan, Arni Arnason and Pete Robertson. The band currently consists of Young, Árni Árnason, Timothy Lanham and Yoann Intonti (drums).",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_Vaccines_2023.jpg/3840px-The_Vaccines_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Vaccines",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "muse": {
+      "name": "Muse",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:05.338612+00:00",
+      "checked_at": "2026-10-02T12:46:05.338612+00:00",
+      "musicbrainz_id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+      "canonical_name": "Muse",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://muse.mu/",
+      "social": {
+        "facebook": "https://www.facebook.com/museband",
+        "twitter": "https://twitter.com/muse",
+        "instagram": "https://www.instagram.com/museband/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Muse are an English rock band from Teignmouth, Devon, formed in 1994. The band consists of Matt Bellamy, Chris Wolstenholme, and Dominic Howard.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/MuseHammsmith100522_%2847_of_76%29_%2852089636284%29.jpg/3840px-MuseHammsmith100522_%2847_of_76%29_%2852089636284%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muse_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "radiohead": {
+      "name": "Radiohead",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:08.080765+00:00",
+      "checked_at": "2026-10-02T12:46:08.080765+00:00",
+      "musicbrainz_id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "canonical_name": "Radiohead",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.radiohead.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/radiohead",
+        "twitter": "https://twitter.com/radiohead",
+        "instagram": "https://www.instagram.com/radiohead/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "Radiohead are an English rock band formed in Abingdon, Oxfordshire, in 1985. The members are Thom Yorke ; the brothers Jonny Greenwood and Colin Greenwood (bass); Ed O'Brien ; and Philip Selway (drums). They have worked with the producer Nigel Godrich and the cover artist Stanley Donwood since 1994. Radiohead's experimental approach is credited with advancing the sound of alternative rock.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/RadioheadO2211125_composite.jpg/3840px-RadioheadO2211125_composite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Radiohead",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "arcade-fire": {
+      "name": "Arcade Fire",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:10.943482+00:00",
+      "checked_at": "2026-10-02T12:46:10.943482+00:00",
+      "musicbrainz_id": "52074ba6-e495-4ef3-9bb4-0703888a9f68",
+      "canonical_name": "Arcade Fire",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://arcadefire.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/arcadefire",
+        "twitter": "https://twitter.com/arcadefire",
+        "instagram": "https://www.instagram.com/arcadefire/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Arcade Fire is a Canadian indie rock band from Montreal, Quebec. The band consists of multi-instrumentalists Win Butler, Régine Chassagne, Richard Reed Parry, Tim Kingsbury, and Jeremy Gara. The band's touring line-up includes former core member Sarah Neufeld and multi-instrumentalists Paul Beaubrun and Dan Boeckner. Most of the band's studio albums feature contributions from composer and violinist Owen Pallett, who has also served as a touring member.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Arcade_Fire_%2827463874647%29.jpg/3840px-Arcade_Fire_%2827463874647%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arcade_Fire",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "foster-the-people": {
+      "name": "Foster The People",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:13.631750+00:00",
+      "checked_at": "2026-10-02T12:46:13.631750+00:00",
+      "musicbrainz_id": "",
+      "canonical_name": "Foster The People",
+      "match_score": 0,
+      "verification_source": "Wikipedia",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "Foster the People is an American indie pop band formed in Los Angeles, California, in 2009. Its members include founder and frontman Mark Foster and keyboardist Isom Innis.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Foster_The_People_at_Bilbao_BBK_Live_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Foster_the_People",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "peace": {
+      "name": "Peace",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:15.107976+00:00",
+      "checked_at": "2026-10-02T12:46:15.107976+00:00",
+      "musicbrainz_id": "1c54c526-682b-44e8-933a-fe8c2993402b",
+      "canonical_name": "Peace",
+      "match_score": 96,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.peaceforeverever.co.uk/",
+      "social": {
+        "facebook": "https://www.facebook.com/peaceforeverever",
+        "twitter": "https://twitter.com/peace4everever",
+        "instagram": ""
+      },
+      "genre": "alternative rock",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/21a4bfde0946681bd5db69e2c4fbbb4f/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "the-verve": {
+      "name": "The Verve",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:18.127218+00:00",
+      "checked_at": "2026-10-02T12:46:18.127218+00:00",
+      "musicbrainz_id": "d4d17620-fd97-4574-92a8-a2cb7e72ce42",
+      "canonical_name": "The Verve",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://web.archive.org/web/19980111171329/http://virgin.de/factory/verve/index.htm",
+      "social": {
+        "facebook": "https://www.facebook.com/theverve",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "alternative rock",
+      "bio_en": "The Verve were an English rock band formed in Wigan in 1990 by lead vocalist Richard Ashcroft, guitarist Nick McCabe, bass guitarist Simon Jones and drummer Peter Salisbury. Guitarist and keyboard player Simon Tong later became a member in their first reunion only.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Verve_MSG.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Verve",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "red-hot-chili-peppers": {
+      "name": "Red Hot Chili Peppers",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:20.320944+00:00",
+      "checked_at": "2026-10-02T12:46:20.320944+00:00",
+      "musicbrainz_id": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+      "canonical_name": "Red Hot Chili Peppers",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://redhotchilipeppers.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/ChiliPeppers",
+        "twitter": "https://music.yandex.com/artist/36833",
+        "instagram": "https://www.instagram.com/chilipeppers/"
+      },
+      "genre": "funk rock",
+      "bio_en": "The Red Hot Chili Peppers are an American rock band formed in Los Angeles in 1982, consisting of Flea (bass), Anthony Kiedis (vocals), Chad Smith (drums), and John Frusciante (guitar). Their music incorporates elements of alternative rock, funk, punk rock, hard rock, hip-hop, and psychedelic rock, and has influenced genres including funk metal, rap metal, rap rock, and nu metal. With over 120 million records sold worldwide, the Red Hot Chili Peppers are one of the top-selling bands of all time. They hold the records for most number-one singles on the American Alternative Songs charts (15), most cumulative weeks at number one (91), and most top-ten songs on the Billboard Alternative Songs chart (28). They have won three Grammy Awards, were inducted into the Rock and Roll Hall of Fame in 2012, and in 2022 received a star on the Hollywood Walk of Fame.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/RHCP_Live_in_London_26_June_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "alt-j": {
+      "name": "alt-J",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:23.187744+00:00",
+      "checked_at": "2026-10-02T12:46:23.187744+00:00",
+      "musicbrainz_id": "fc7bbf00-fbaa-4736-986b-b3ac0266ca9b",
+      "canonical_name": "alt‐J",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.altjband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/altJ.band",
+        "twitter": "https://twitter.com/alt_j",
+        "instagram": "https://www.instagram.com/unrealaltj/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Alt-J are an English indie rock band formed in 2007 in Leeds. Their lineup includes Joe Newman, Thom Sonny Green (drums), Gus Unger-Hamilton (keyboards/vocals), and formerly Gwil Sainsbury (guitar/bass).",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Alt-J_%40_Bonnaroo_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alt-J",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "toy": {
+      "name": "TOY",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:26.238543+00:00",
+      "checked_at": "2026-10-02T12:46:26.238543+00:00",
+      "musicbrainz_id": "72261eeb-12c8-44e5-8c0d-cb01bd5e6829",
+      "canonical_name": "TOY",
+      "match_score": 98,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3dc44ada7e0f6ccd9af5295fc7e4c743/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
+      "wikipedia_url": "",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "band-of-horses": {
+      "name": "Band of Horses",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:29.818228+00:00",
+      "checked_at": "2026-10-02T12:46:29.818228+00:00",
+      "musicbrainz_id": "07b6020a-c539-4d68-aeef-f159f3befc76",
+      "canonical_name": "Band of Horses",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://bandofhorses.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/5162567788",
+        "twitter": "https://twitter.com/bandofhorses",
+        "instagram": "https://www.instagram.com/bandofhorses/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Band of Horses is an American rock band formed in 2004 in Seattle, Washington. Led by singer-songwriter Ben Bridwell, who has been the band's sole constant member throughout numerous line-up changes, the band's current line-up also includes longtime member Creighton Barrett (drums) alongside Matt Gentling, Brett Nash, and Joel Graves.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Band_of_Horses_Bumbershoot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Band_of_Horses",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "sleigh-bells": {
+      "name": "Sleigh Bells",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:32.086852+00:00",
+      "checked_at": "2026-10-02T12:46:32.086852+00:00",
+      "musicbrainz_id": "95f7536d-b2f7-4087-8668-a663ec201f5a",
+      "canonical_name": "Sleigh Bells",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.tornclean.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/sleighbells",
+        "twitter": "https://twitter.com/sleighbells",
+        "instagram": "https://www.instagram.com/sleighbells/"
+      },
+      "genre": "noise pop",
+      "bio_en": "Sleigh Bells is an American musical duo based in Brooklyn, New York, formed in 2008 and consisting of vocalist Alexis Krauss and guitarist/producer Derek Miller. The group became known for its overdriven style of noise pop, which incorporates elements from various genres, including pop, hip hop, metal, and punk.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sleigh_Bells_%40_Sir_Stewart_Bovell_Park_%283_1_2011%29_%285359139726%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sleigh_Bells_(band)",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "of-monsters-and-men": {
+      "name": "Of Monsters and Men",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:35.528592+00:00",
+      "checked_at": "2026-10-02T12:46:35.528592+00:00",
+      "musicbrainz_id": "9e103f85-7af7-41d7-b83b-49ba8f0c5abf",
+      "canonical_name": "Of Monsters and Men",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.ofmonstersandmen.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/ofmonstersandmen",
+        "twitter": "https://twitter.com/monstersandmen",
+        "instagram": "https://www.instagram.com/ofmonstersandmen/"
+      },
+      "genre": "indie rock",
+      "bio_en": "Of Monsters and Men is an Icelandic indie folk/rock band formed in Garðabær in 2010. It consists of lead singer and guitarist Nanna Bryndís Hilmarsdóttir, singer and guitarist Ragnar \"Raggi\" Þórhallsson, lead guitarist Brynjar Leifsson, drummer Arnar Rósenkranz Hilmarsson, and bassist Kristján Páll Kristjánsson.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Of_Monsters_and_Men_Firenze.jpeg/3840px-Of_Monsters_and_Men_Firenze.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Of_Monsters_and_Men",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "massive-attack": {
+      "name": "Massive Attack",
+      "verified": true,
+      "profile_checked_at": "2026-10-02T12:46:38.348290+00:00",
+      "checked_at": "2026-10-02T12:46:38.348290+00:00",
+      "musicbrainz_id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+      "canonical_name": "Massive Attack",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://web.archive.org/web/19970131155102/http://www.vmg.co.uk/massive/index.html",
+      "social": {
+        "facebook": "https://www.facebook.com/massiveattack",
+        "twitter": "https://twitter.com/MassiveAttackUK",
+        "instagram": "https://www.instagram.com/massiveattackofficial/"
+      },
+      "genre": "trip hop",
+      "bio_en": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3bfbf74ea27b926ba5376ea381f51d0b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "complete",
