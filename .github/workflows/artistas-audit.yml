@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "scripts/audit_artistas.py"
+      - "scripts/audit_artist_identity.py"
       - ".github/workflows/artistas-audit.yml"
   workflow_dispatch:
 
@@ -38,20 +39,23 @@ jobs:
       - name: Apply current live YesStreaming history
         run: python live/sync_history.py --require-min 7000
 
-      - name: Run audit against current deploy data
+      - name: Run completeness audit
         run: python scripts/audit_artistas.py
 
-      - name: Save audit report only
+      - name: Run identity audit
+        run: python scripts/audit_artist_identity.py
+
+      - name: Save audit reports only
         shell: bash
         run: |
           git checkout -- data/artists.json
           git config user.name "louder-artistas-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add diagnostics/artistas-audit.json diagnostics/artistas-audit.md
+          git add diagnostics/artistas-audit.json diagnostics/artistas-audit.md diagnostics/artist-identity-review.json diagnostics/artist-identity-review.md
           if git diff --cached --quiet; then
             echo "Audit unchanged"
           else
-            git commit -m "Update Artistas completeness audit"
+            git commit -m "Update Artistas audits"
             git pull --rebase origin main
             git push
           fi
