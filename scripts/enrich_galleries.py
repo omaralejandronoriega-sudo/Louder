@@ -25,6 +25,7 @@ from urllib.parse import quote
 
 import requests
 
+import build_artists as ba
 import enrichment_state as es
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -552,7 +553,7 @@ def main() -> int:
             active_rank = 1
         else:
             active_rank = 2
-        date_key = __import__("build_artists").history_date_key(a.get("last_played"))
+        date_key = ba.history_date_key(a.get("last_played"))
         recent_score = 0 if date_key[0] >= 9998 else (
             date_key[0] * 10**10 + date_key[1] * 10**8 + date_key[2] * 10**6
             + date_key[3] * 10**4 + date_key[4] * 10**2 + date_key[5]
