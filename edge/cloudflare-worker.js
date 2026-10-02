@@ -1,5 +1,5 @@
-const PAGES_ORIGIN = "https://artistas.loudermx.com";
-const PAGES_BASE = "";
+const PAGES_ORIGIN = "https://omaralejandronoriega-sudo.github.io";
+const PAGES_BASE = "/Louder";
 const GITHUB_OWNER = "omaralejandronoriega-sudo";
 
 function githubUrl(requestUrl) {
