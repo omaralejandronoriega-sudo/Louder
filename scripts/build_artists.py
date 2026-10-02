@@ -18,6 +18,7 @@ ALBUM_ART = ROOT / "data" / "album_art.json"
 ARTIST_REVIEW = ROOT / "data" / "artist_review_overrides.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
+GSC_VERIFY_DIR = ROOT / "search-console"
 PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
 
 
@@ -994,6 +995,9 @@ def main() -> int:
             shutil.move(str(tmp_media), str(DOCS / "media"))
 
     (DOCS / "artistas" / "_assets").mkdir(parents=True, exist_ok=True)
+    if GSC_VERIFY_DIR.exists():
+        for verify_file in GSC_VERIFY_DIR.glob("google*.html"):
+            shutil.copy2(verify_file, DOCS / verify_file.name)
     shutil.copy2(ASSETS / "artistas.css", DOCS / "artistas" / "_assets" / "artistas.css")
     shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
     shutil.copy2(ASSETS / "logo_louder.png", DOCS / "artistas" / "_assets" / "logo_louder.png")
