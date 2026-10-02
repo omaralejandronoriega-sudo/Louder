@@ -217,7 +217,8 @@ def wikipedia_profile(
 
     need_bio = not str(profile.get("bio_es") or profile.get("bio_en") or "").strip()
     need_image = not images
-    if not need_bio and not need_image:
+    need_data = not str(profile.get("lastfm_url") or "").strip()
+    if not need_bio and not need_image and not need_data:
         return images, profile
 
     search = client.get_json(
@@ -382,7 +383,11 @@ def discogs_profile(
     profile: dict[str, Any],
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Optional Discogs fallback for difficult/legacy artists."""
-    if not token or images:
+    if not token:
+        return images, profile
+    need_image = not images
+    need_data = not str(profile.get("website") or "").strip()
+    if not need_image and not need_data:
         return images, profile
     headers = {"User-Agent": UA, "Authorization": f"Discogs token={token}"}
     try:
@@ -405,13 +410,14 @@ def discogs_profile(
         d = requests.get(str(hit["resource_url"]), headers=headers, timeout=25)
         d.raise_for_status()
         detail = d.json()
-        for item in detail.get("images") or []:
-            if not isinstance(item, dict):
-                continue
-            url = str(item.get("uri") or item.get("resource_url") or "").strip()
-            if url.startswith("https://"):
-                add_image(images, {x.get("url", "") for x in images}, url, "Discogs", "portrait", url)
-                break
+        if need_image:
+            for item in detail.get("images") or []:
+                if not isinstance(item, dict):
+                    continue
+                url = str(item.get("uri") or item.get("resource_url") or "").strip()
+                if url.startswith("https://"):
+                    add_image(images, {x.get("url", "") for x in images}, url, "Discogs", "portrait", url)
+                    break
         urls = detail.get("urls") or []
         if urls and not profile.get("website"):
             profile["website"] = str(urls[0] or "").strip()
