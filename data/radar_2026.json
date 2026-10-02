@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "updated_at": "2026-10-02T12:35:18.641682+00:00",
-  "scan_cursor": 1200,
+  "updated_at": "2026-10-02T22:14:50.712186+00:00",
+  "scan_cursor": 1260,
   "rules": {
     "original_release_year": 2026,
     "reject_reissues": true,
@@ -10,6 +10,28 @@
     "reject_pre_2026_originals": true
   },
   "tracks": [
+    {
+      "id": "mb:82ac7e1b-ebd5-4979-8940-e2d8d05b17a8",
+      "artist": "Yesteban & Peter Doherty",
+      "title": "Grab",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/82ac7e1b-ebd5-4979-8940-e2d8d05b17a8"
+      },
+      "discovered_at": "2026-10-02T22:13:16.388631+00:00"
+    },
     {
       "id": "mb:3cc137ad-795f-4ef2-b5f6-85c332951196",
       "artist": "Twin Atlantic",
@@ -3906,6 +3928,182 @@
       "discovered_at": "2026-09-28T13:52:47.035562+00:00"
     },
     {
+      "id": "mb:66c4d399-5a70-4479-8ebc-583758e001c0",
+      "artist": "Blondshell",
+      "title": "Two Fried",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/66c4d399-5a70-4479-8ebc-583758e001c0"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775210+00:00"
+    },
+    {
+      "id": "mb:3854bcc6-046a-4279-8bde-f864fd074073",
+      "artist": "Blondshell",
+      "title": "Stone Fruit",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3854bcc6-046a-4279-8bde-f864fd074073"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775158+00:00"
+    },
+    {
+      "id": "mb:9881a532-388f-4e55-9281-bb5c4987b317",
+      "artist": "Blondshell",
+      "title": "Sea Legs",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9881a532-388f-4e55-9281-bb5c4987b317"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775101+00:00"
+    },
+    {
+      "id": "mb:d6174de5-af53-4ffa-9a5f-0cdb8a7ff365",
+      "artist": "Blondshell",
+      "title": "Reinstall",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d6174de5-af53-4ffa-9a5f-0cdb8a7ff365"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775171+00:00"
+    },
+    {
+      "id": "mb:690fa3c2-86ec-4331-93a2-de1c26b2825c",
+      "artist": "Blondshell",
+      "title": "New Shape",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/690fa3c2-86ec-4331-93a2-de1c26b2825c"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775197+00:00"
+    },
+    {
+      "id": "mb:aa0a9e50-a41a-4d4f-ab8a-fc7d34965e70",
+      "artist": "Blondshell",
+      "title": "New Age Trojan Horse",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aa0a9e50-a41a-4d4f-ab8a-fc7d34965e70"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775118+00:00"
+    },
+    {
+      "id": "mb:07df5f90-afba-4642-ba6a-a9c066b1ba19",
+      "artist": "Blondshell",
+      "title": "Lucky",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/07df5f90-afba-4642-ba6a-a9c066b1ba19"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775143+00:00"
+    },
+    {
+      "id": "mb:3db9533b-e3cb-42ea-b445-064476622885",
+      "artist": "Blondshell",
+      "title": "Knotted",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3db9533b-e3cb-42ea-b445-064476622885"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775131+00:00"
+    },
+    {
       "id": "mb:b1e58a97-bf27-44e9-b1a4-cb09739af971",
       "artist": "Alanis Morissette",
       "title": "Season of the Witch",
@@ -5649,9 +5847,9 @@
       "title": "Onteora Lake",
       "original_release_date": "2026-09-18",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -7954,6 +8152,270 @@
       "discovered_at": "2026-09-27T16:57:42.107978+00:00"
     },
     {
+      "id": "mb:98c86d5f-573d-40ba-9a50-ee980259a651",
+      "artist": "The Proclaimers",
+      "title": "You May Offend",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/98c86d5f-573d-40ba-9a50-ee980259a651"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522269+00:00"
+    },
+    {
+      "id": "mb:289fdf55-7282-4b9d-ad20-c2446826484d",
+      "artist": "The Proclaimers",
+      "title": "When You Get There",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/289fdf55-7282-4b9d-ad20-c2446826484d"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522426+00:00"
+    },
+    {
+      "id": "mb:a600673b-0cc5-4e83-a884-77474780111d",
+      "artist": "The Proclaimers",
+      "title": "Till the Ink Dries",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a600673b-0cc5-4e83-a884-77474780111d"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522411+00:00"
+    },
+    {
+      "id": "mb:0bec72b5-4b9c-41c0-9eca-15aadb0830ad",
+      "artist": "The Proclaimers",
+      "title": "There’s No Plan",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0bec72b5-4b9c-41c0-9eca-15aadb0830ad"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522354+00:00"
+    },
+    {
+      "id": "mb:3e323216-0208-441d-a839-fafb3d18d7c7",
+      "artist": "The Proclaimers",
+      "title": "The Talent Show",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3e323216-0208-441d-a839-fafb3d18d7c7"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522383+00:00"
+    },
+    {
+      "id": "mb:73aaeb13-91a0-4f7b-9852-405a4acdd3df",
+      "artist": "The Proclaimers",
+      "title": "The Grooming",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/73aaeb13-91a0-4f7b-9852-405a4acdd3df"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522333+00:00"
+    },
+    {
+      "id": "mb:35f16729-32ce-4869-a737-91122d84dc3f",
+      "artist": "The Proclaimers",
+      "title": "Knock It Down",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/35f16729-32ce-4869-a737-91122d84dc3f"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522397+00:00"
+    },
+    {
+      "id": "mb:2999d5d9-c1a2-4692-aa6c-353e067c6b0c",
+      "artist": "The Proclaimers",
+      "title": "In a Year or Two",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2999d5d9-c1a2-4692-aa6c-353e067c6b0c"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522303+00:00"
+    },
+    {
+      "id": "mb:a0662855-0237-4fe9-9ff0-4fc3ed521255",
+      "artist": "The Proclaimers",
+      "title": "Easy Rhyme",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a0662855-0237-4fe9-9ff0-4fc3ed521255"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522439+00:00"
+    },
+    {
+      "id": "mb:1a3cb3c8-59cb-4673-81b2-fc65330d7ee9",
+      "artist": "The Proclaimers",
+      "title": "But It Is",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1a3cb3c8-59cb-4673-81b2-fc65330d7ee9"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522369+00:00"
+    },
+    {
+      "id": "mb:a5b410b2-ea37-4944-925d-02c83a01c8ea",
+      "artist": "The Proclaimers",
+      "title": "Anything",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a5b410b2-ea37-4944-925d-02c83a01c8ea"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522318+00:00"
+    },
+    {
+      "id": "mb:4c005c33-e654-4e8d-b421-9725adda7e63",
+      "artist": "The Proclaimers",
+      "title": "A Little Bit Late",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4c005c33-e654-4e8d-b421-9725adda7e63"
+      },
+      "discovered_at": "2026-10-02T22:13:58.522453+00:00"
+    },
+    {
       "id": "mb:2d006007-58a8-436d-93d6-788bb1c1333d",
       "artist": "Sylvan Esso",
       "title": "Sledge",
@@ -9450,6 +9912,28 @@
       "discovered_at": "2026-09-28T13:53:45.847057+00:00"
     },
     {
+      "id": "mb:7ab1317e-a402-43d2-83c8-de736ab12fb7",
+      "artist": "Super Furry Animals",
+      "title": "The Man Don't Give a Fuck",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7ab1317e-a402-43d2-83c8-de736ab12fb7"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186527+00:00"
+    },
+    {
       "id": "mb:8fbd1679-3f06-4182-9888-f8f1cfd01429",
       "artist": "Sensuous Enemy",
       "title": "Resistance",
@@ -10378,6 +10862,50 @@
       "discovered_at": "2026-09-29T22:15:56.921326+00:00"
     },
     {
+      "id": "mb:578cb878-547e-4e96-89a5-4d049a2cbc66",
+      "artist": "Ben Folds Five",
+      "title": "Underground (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/578cb878-547e-4e96-89a5-4d049a2cbc66"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535080+00:00"
+    },
+    {
+      "id": "mb:9244857a-526c-4ec8-a7e6-062d2b8dd9e1",
+      "artist": "Ben Folds Five",
+      "title": "Underground (30th Anniversary)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9244857a-526c-4ec8-a7e6-062d2b8dd9e1"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535022+00:00"
+    },
+    {
       "id": "mb:8e9dc7aa-85f9-4c54-b681-a8867404f81c",
       "artist": "Ben Folds Five",
       "title": "Underground",
@@ -10444,6 +10972,50 @@
       "discovered_at": "2026-09-29T22:15:56.921570+00:00"
     },
     {
+      "id": "mb:b1e6e398-08e1-4795-b17b-08baebbf3054",
+      "artist": "Ben Folds Five",
+      "title": "Uncle Walter",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b1e6e398-08e1-4795-b17b-08baebbf3054"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534685+00:00"
+    },
+    {
+      "id": "mb:2595d198-693f-4c6f-966d-1ae060995c45",
+      "artist": "Ben Folds Five",
+      "title": "Uncle Walter",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2595d198-693f-4c6f-966d-1ae060995c45"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534735+00:00"
+    },
+    {
       "id": "mb:d2c380ad-584e-4588-905d-3226ce3155a0",
       "artist": "Ben Folds Five",
       "title": "The Last Polka (Shelved First Attempt)",
@@ -10464,6 +11036,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/d2c380ad-584e-4588-905d-3226ce3155a0"
       },
       "discovered_at": "2026-09-29T22:15:56.921624+00:00"
+    },
+    {
+      "id": "mb:73019642-865d-4951-ae6e-648eeda6c37e",
+      "artist": "Ben Folds Five",
+      "title": "The Last Polka (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/73019642-865d-4951-ae6e-648eeda6c37e"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535002+00:00"
+    },
+    {
+      "id": "mb:c10a25a8-c437-4ed4-a54e-e5b1cd0cca32",
+      "artist": "Ben Folds Five",
+      "title": "The Last Polka",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c10a25a8-c437-4ed4-a54e-e5b1cd0cca32"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534750+00:00"
+    },
+    {
+      "id": "mb:f6e1e7cd-15d5-4b66-ac7f-adaa8ebfb17d",
+      "artist": "Ben Folds Five",
+      "title": "The Last Polka",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f6e1e7cd-15d5-4b66-ac7f-adaa8ebfb17d"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534778+00:00"
     },
     {
       "id": "mb:0f5e55b2-63d7-4c17-b77a-2dec2f0aa91d",
@@ -10598,6 +11236,72 @@
       "discovered_at": "2026-09-29T22:15:56.921491+00:00"
     },
     {
+      "id": "mb:4e8f5a85-6ea9-479c-aed3-d226d2285cdd",
+      "artist": "Ben Folds Five",
+      "title": "Evaporated (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4e8f5a85-6ea9-479c-aed3-d226d2285cdd"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535131+00:00"
+    },
+    {
+      "id": "mb:92345f65-6f34-4c75-b6ba-1f360624b6ce",
+      "artist": "Ben Folds Five",
+      "title": "Evaporated",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/92345f65-6f34-4c75-b6ba-1f360624b6ce"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534718+00:00"
+    },
+    {
+      "id": "mb:59a31540-5f51-447e-9a98-790919faedf6",
+      "artist": "Ben Folds Five",
+      "title": "Emaline (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/59a31540-5f51-447e-9a98-790919faedf6"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535060+00:00"
+    },
+    {
       "id": "mb:eb53677f-f210-47df-b8cf-24a5786a9308",
       "artist": "Ben Folds Five",
       "title": "Emaline",
@@ -10618,6 +11322,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/eb53677f-f210-47df-b8cf-24a5786a9308"
       },
       "discovered_at": "2026-09-29T22:15:56.921431+00:00"
+    },
+    {
+      "id": "mb:05129282-3e86-4f9a-8ea9-fffd3f7cef83",
+      "artist": "Ben Folds Five",
+      "title": "Emaline",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/05129282-3e86-4f9a-8ea9-fffd3f7cef83"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534808+00:00"
     },
     {
       "id": "mb:9b59658a-e471-4118-94a9-9706a56860e3",
@@ -10642,6 +11368,28 @@
       "discovered_at": "2026-09-29T22:15:56.921403+00:00"
     },
     {
+      "id": "mb:0ad06620-2d74-494d-b90b-b81472e661b3",
+      "artist": "Ben Folds Five",
+      "title": "Dick Holster (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0ad06620-2d74-494d-b90b-b81472e661b3"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535042+00:00"
+    },
+    {
       "id": "mb:c177a80a-51a1-4713-9e9c-959d50388a88",
       "artist": "Ben Folds Five",
       "title": "Dick Holster",
@@ -10662,6 +11410,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/c177a80a-51a1-4713-9e9c-959d50388a88"
       },
       "discovered_at": "2026-09-29T22:15:56.921389+00:00"
+    },
+    {
+      "id": "mb:a43b3b14-de23-4e39-9053-c2465f5151e0",
+      "artist": "Ben Folds Five",
+      "title": "Dick Holster",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a43b3b14-de23-4e39-9053-c2465f5151e0"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535113+00:00"
     },
     {
       "id": "mb:be7a36ec-35d2-4658-ac95-17f21de2c11b",
@@ -10706,6 +11476,116 @@
         "musicbrainz": "https://musicbrainz.org/recording/e2f158e1-e823-4822-bdb7-8bf8e3b4a236"
       },
       "discovered_at": "2026-09-29T22:15:56.921646+00:00"
+    },
+    {
+      "id": "mb:3bffb6b9-dfe6-4a95-a074-c42f3a073806",
+      "artist": "Ben Folds Five",
+      "title": "Best Imitation of Myself",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3bffb6b9-dfe6-4a95-a074-c42f3a073806"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534794+00:00"
+    },
+    {
+      "id": "mb:01a3df42-3ec3-4e2b-8672-e19fb9a5a5ff",
+      "artist": "Ben Folds Five",
+      "title": "Alice Childress (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/01a3df42-3ec3-4e2b-8672-e19fb9a5a5ff"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534962+00:00"
+    },
+    {
+      "id": "mb:374f607f-3875-4e58-8824-91f8fbb1aef3",
+      "artist": "Ben Folds Five",
+      "title": "Alice Childress (Shelved First Attempt)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/374f607f-3875-4e58-8824-91f8fbb1aef3"
+      },
+      "discovered_at": "2026-10-02T22:13:49.535099+00:00"
+    },
+    {
+      "id": "mb:9623c618-b7e9-4dad-ab8b-1a42cb8b4d71",
+      "artist": "Ben Folds Five",
+      "title": "Alice Childress (30th Anniversary)",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9623c618-b7e9-4dad-ab8b-1a42cb8b4d71"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534982+00:00"
+    },
+    {
+      "id": "mb:a6dbe387-8dcd-494e-a741-c4af2ed097df",
+      "artist": "Ben Folds Five",
+      "title": "Alice Childress",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a6dbe387-8dcd-494e-a741-c4af2ed097df"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534764+00:00"
     },
     {
       "id": "mb:5b0e5766-2609-45f0-93b5-e97f94487ac4",
@@ -11566,6 +12446,50 @@
       "discovered_at": "2026-09-27T21:21:26.272655+00:00"
     },
     {
+      "id": "mb:7c18ba7f-b0ce-446e-b766-ba456b59223b",
+      "artist": "Nirvana & Meat Puppets",
+      "title": "[jam]",
+      "original_release_date": "2026-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7c18ba7f-b0ce-446e-b766-ba456b59223b"
+      },
+      "discovered_at": "2026-10-02T22:13:46.223375+00:00"
+    },
+    {
+      "id": "mb:fd60ed68-decb-4b5d-9ae3-a543ac1ee078",
+      "artist": "Nirvana & Meat Puppets",
+      "title": "[jam]",
+      "original_release_date": "2026-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/fd60ed68-decb-4b5d-9ae3-a543ac1ee078"
+      },
+      "discovered_at": "2026-10-02T22:13:46.223393+00:00"
+    },
+    {
       "id": "mb:8bb71828-511f-4023-bef5-5f40da13d5ac",
       "artist": "Nirvana",
       "title": "Plateau",
@@ -11872,6 +12796,248 @@
         "musicbrainz": "https://musicbrainz.org/recording/38fd856a-a794-4699-b6ed-a5ced66bfd13"
       },
       "discovered_at": "2026-09-30T22:16:32.792333+00:00"
+    },
+    {
+      "id": "mb:4ffa037a-4bf2-42fc-bf8c-a9f6c03ba0a1",
+      "artist": "Train",
+      "title": "What If We Try",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4ffa037a-4bf2-42fc-bf8c-a9f6c03ba0a1"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809939+00:00"
+    },
+    {
+      "id": "mb:13e6a1d0-42c9-4584-b12b-58f09bb14f90",
+      "artist": "Train",
+      "title": "To Gloria",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/13e6a1d0-42c9-4584-b12b-58f09bb14f90"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809887+00:00"
+    },
+    {
+      "id": "mb:175490c7-3b9a-43e5-b316-403c761d16c0",
+      "artist": "Train",
+      "title": "Tired of Looking Down",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/175490c7-3b9a-43e5-b316-403c761d16c0"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809982+00:00"
+    },
+    {
+      "id": "mb:86be7b04-7256-42f2-b8cf-812fc0742427",
+      "artist": "Train",
+      "title": "The Weekend",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/86be7b04-7256-42f2-b8cf-812fc0742427"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810076+00:00"
+    },
+    {
+      "id": "mb:0d547386-e68e-49e7-bd8f-9a3509d23c39",
+      "artist": "Train",
+      "title": "Princess of the Night",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0d547386-e68e-49e7-bd8f-9a3509d23c39"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810050+00:00"
+    },
+    {
+      "id": "mb:d4949a0c-c3b1-4913-83fc-94cba301641f",
+      "artist": "Train",
+      "title": "Pennsylvania Turnpike",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d4949a0c-c3b1-4913-83fc-94cba301641f"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809920+00:00"
+    },
+    {
+      "id": "mb:fca6b736-117b-454c-a03f-db676195816f",
+      "artist": "Train",
+      "title": "No Matter What",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/fca6b736-117b-454c-a03f-db676195816f"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809953+00:00"
+    },
+    {
+      "id": "mb:6374abe4-7a2b-4bfe-9c5c-5db6834e3219",
+      "artist": "Train",
+      "title": "Kid In The Crown",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6374abe4-7a2b-4bfe-9c5c-5db6834e3219"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809996+00:00"
+    },
+    {
+      "id": "mb:b7d08a6a-160b-4ba6-938d-dbd8f6bf2b20",
+      "artist": "Train",
+      "title": "Half A Heart",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b7d08a6a-160b-4ba6-938d-dbd8f6bf2b20"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810036+00:00"
+    },
+    {
+      "id": "mb:f4ce685f-1fac-41ad-9d7f-1761b305539f",
+      "artist": "Train",
+      "title": "City of Angels",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f4ce685f-1fac-41ad-9d7f-1761b305539f"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810089+00:00"
+    },
+    {
+      "id": "mb:d5a56090-ba20-4b23-b9e8-1b4b43b40959",
+      "artist": "Train",
+      "title": "Blue Brush-Footed Butterfly",
+      "original_release_date": "2026-08-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d5a56090-ba20-4b23-b9e8-1b4b43b40959"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810104+00:00"
     },
     {
       "id": "mb:a801a957-b8e9-4641-9e44-fd7f4fa9ad28",
@@ -12275,9 +13441,9 @@
       "title": "Straight Into the Night",
       "original_release_date": "2026-08-28",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -16494,6 +17660,28 @@
       "discovered_at": "2026-09-27T16:57:39.240287+00:00"
     },
     {
+      "id": "mb:6e1b8205-77bb-4ce4-b0c7-d19478dae412",
+      "artist": "Blondshell",
+      "title": "Fur Elise",
+      "original_release_date": "2026-08-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6e1b8205-77bb-4ce4-b0c7-d19478dae412"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775184+00:00"
+    },
+    {
       "id": "mb:32fa5cd9-a169-4a4b-89f3-c7d3c2be27f2",
       "artist": "Bloc Party",
       "title": "Now We Can’t Be Friends",
@@ -18722,9 +19910,9 @@
       "title": "Learn How to Lose",
       "original_release_date": "2026-08-13",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -20101,6 +21289,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/7b089d99-62e1-4f5f-9550-d45a66d4bc7c"
       },
       "discovered_at": "2026-10-02T12:34:12.010679+00:00"
+    },
+    {
+      "id": "mb:5feb4403-6b82-4e40-afda-eba63ba08b11",
+      "artist": "Dom Malin",
+      "title": "Lost in the Fog",
+      "original_release_date": "2026-08-07",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5feb4403-6b82-4e40-afda-eba63ba08b11"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841628+00:00"
+    },
+    {
+      "id": "mb:391c3513-744e-4c54-a0f6-386799ab5eac",
+      "artist": "Dom Malin",
+      "title": "Blackhole",
+      "original_release_date": "2026-08-07",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/391c3513-744e-4c54-a0f6-386799ab5eac"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841640+00:00"
     },
     {
       "id": "mb:55320c0f-4a3b-4b2f-80ed-8a81d2092625",
@@ -22413,6 +23645,28 @@
       "discovered_at": "2026-09-29T12:51:20.597536+00:00"
     },
     {
+      "id": "mb:e0148474-6b37-48e3-8f96-803b8f860b46",
+      "artist": "Train",
+      "title": "Mad Dog in the Fog",
+      "original_release_date": "2026-07-30",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e0148474-6b37-48e3-8f96-803b8f860b46"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810064+00:00"
+    },
+    {
       "id": "mb:17b3ef2f-b3cf-4b86-80ae-8338fd30dc90",
       "artist": "Siddhartha",
       "title": "Si tú te vas",
@@ -22594,9 +23848,9 @@
       "title": "The Stars Below",
       "original_release_date": "2026-07-30",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -25494,6 +26748,50 @@
       "discovered_at": "2026-09-27T05:18:10.396915+00:00"
     },
     {
+      "id": "mb:1d3988e4-9047-4786-97f8-e3e68ca0782e",
+      "artist": "Ben Folds Five",
+      "title": "Sledge Slide (Roboto)",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1d3988e4-9047-4786-97f8-e3e68ca0782e"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534854+00:00"
+    },
+    {
+      "id": "mb:2c936e20-a4f4-47c7-a837-f2f29b706b96",
+      "artist": "Ben Folds Five",
+      "title": "Philosophy",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2c936e20-a4f4-47c7-a837-f2f29b706b96"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534822+00:00"
+    },
+    {
       "id": "mb:6f154d27-26e5-46f5-9a13-03aa242b9079",
       "artist": "Ben Folds Five",
       "title": "Narcolepsy",
@@ -25516,6 +26814,94 @@
       "discovered_at": "2026-09-29T22:15:56.921261+00:00"
     },
     {
+      "id": "mb:b04a7aa1-7e8c-409a-8663-7481d0f15c2f",
+      "artist": "Ben Folds Five",
+      "title": "Missing the War",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b04a7aa1-7e8c-409a-8663-7481d0f15c2f"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534938+00:00"
+    },
+    {
+      "id": "mb:dca22403-47af-4374-8734-204dc906d6ef",
+      "artist": "Ben Folds Five",
+      "title": "Magic",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/dca22403-47af-4374-8734-204dc906d6ef"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534923+00:00"
+    },
+    {
+      "id": "mb:24cb9ff5-15c3-44a7-ba64-07ee25560cc5",
+      "artist": "Ben Folds Five",
+      "title": "Jackson Cannery",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/24cb9ff5-15c3-44a7-ba64-07ee25560cc5"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534911+00:00"
+    },
+    {
+      "id": "mb:bee58d68-1f60-47d4-a57d-d23885826ea8",
+      "artist": "Ben Folds Five",
+      "title": "Fair",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bee58d68-1f60-47d4-a57d-d23885826ea8"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534835+00:00"
+    },
+    {
       "id": "mb:9bf2fe15-d136-49d7-b78a-e0237e0c92bb",
       "artist": "Ben Folds Five",
       "title": "Don't Change Your Plans",
@@ -25536,6 +26922,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/9bf2fe15-d136-49d7-b78a-e0237e0c92bb"
       },
       "discovered_at": "2026-09-29T22:15:56.921232+00:00"
+    },
+    {
+      "id": "mb:737175c9-34aa-4648-943d-bde84b392091",
+      "artist": "Ben Folds Five",
+      "title": "Battle of Who Could Care Less",
+      "original_release_date": "2026-07-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/737175c9-34aa-4648-943d-bde84b392091"
+      },
+      "discovered_at": "2026-10-02T22:13:49.534894+00:00"
     },
     {
       "id": "mb:1ba29340-49b6-4190-8448-537dff6f061e",
@@ -26856,6 +28264,116 @@
         "musicbrainz": "https://musicbrainz.org/recording/18b95e26-b63d-48d8-a027-8f77bf2b340d"
       },
       "discovered_at": "2026-09-26T21:09:53.394964+00:00"
+    },
+    {
+      "id": "mb:a2c4bbb3-5502-4669-a0b5-1a9ba577fb4f",
+      "artist": "DOM",
+      "title": "DOMINI SUM IDEO FACIAM",
+      "original_release_date": "2026-07-17",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a2c4bbb3-5502-4669-a0b5-1a9ba577fb4f"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841370+00:00"
+    },
+    {
+      "id": "mb:3d2edf3f-d44a-4446-aaaf-35c338829f69",
+      "artist": "DOM",
+      "title": "DOCTORS WINE",
+      "original_release_date": "2026-07-17",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3d2edf3f-d44a-4446-aaaf-35c338829f69"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841337+00:00"
+    },
+    {
+      "id": "mb:5f594c1e-cd6d-4942-b920-586aee469225",
+      "artist": "DOM",
+      "title": "DEVIL IN THE DETAILS",
+      "original_release_date": "2026-07-17",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5f594c1e-cd6d-4942-b920-586aee469225"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841432+00:00"
+    },
+    {
+      "id": "mb:48cc9ef7-f972-4668-8560-c3d940ed3cff",
+      "artist": "DOM",
+      "title": "CUBE IN THE FLOWER",
+      "original_release_date": "2026-07-17",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/48cc9ef7-f972-4668-8560-c3d940ed3cff"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841387+00:00"
+    },
+    {
+      "id": "mb:7bd0a97f-5f64-4028-979d-4f0162c67cab",
+      "artist": "DOM",
+      "title": "1116 HZ (PROTECTION)",
+      "original_release_date": "2026-07-17",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7bd0a97f-5f64-4028-979d-4f0162c67cab"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841447+00:00"
     },
     {
       "id": "mb:d7419013-d4ea-4907-aa05-09865c592130",
@@ -30290,6 +31808,94 @@
       "discovered_at": "2026-09-27T21:21:40.070424+00:00"
     },
     {
+      "id": "mb:5ff17e9b-3cfc-4024-b186-86457d5a0de8",
+      "artist": "Dan Croll",
+      "title": "Try Try Try",
+      "original_release_date": "2026-07-10",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5ff17e9b-3cfc-4024-b186-86457d5a0de8"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985254+00:00"
+    },
+    {
+      "id": "mb:f16861f7-af43-4bee-82b3-d1083c1c8b0c",
+      "artist": "Dan Croll",
+      "title": "Hail Mary",
+      "original_release_date": "2026-07-10",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f16861f7-af43-4bee-82b3-d1083c1c8b0c"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985286+00:00"
+    },
+    {
+      "id": "mb:e5b42213-b0a7-4dea-bb68-c085a168888b",
+      "artist": "Dan Croll",
+      "title": "California",
+      "original_release_date": "2026-07-10",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e5b42213-b0a7-4dea-bb68-c085a168888b"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985339+00:00"
+    },
+    {
+      "id": "mb:a8b2c400-280e-451d-9fe4-b3cac725763a",
+      "artist": "Dan Croll",
+      "title": "All to Be Loved by You",
+      "original_release_date": "2026-07-10",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a8b2c400-280e-451d-9fe4-b3cac725763a"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985273+00:00"
+    },
+    {
       "id": "mb:4aa96e8c-2b14-47a3-89b8-2a9107bf34df",
       "artist": "Chris Porter",
       "title": "Sadness Is O.K.",
@@ -30889,9 +32495,9 @@
       "title": "Endless Summer",
       "original_release_date": "2026-07-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -36627,6 +38233,28 @@
       "discovered_at": "2026-09-25T21:32:06.194471+00:00"
     },
     {
+      "id": "mb:050de005-5041-4731-a579-f79510df2870",
+      "artist": "Blondshell",
+      "title": "Violins",
+      "original_release_date": "2026-06-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/050de005-5041-4731-a579-f79510df2870"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775044+00:00"
+    },
+    {
       "id": "mb:6496d87b-656a-4549-83bb-2a2ac011a2bf",
       "artist": "scumlings",
       "title": ">t>s>m>g>o>",
@@ -39404,6 +41032,182 @@
       "discovered_at": "2026-09-27T12:02:18.448279+00:00"
     },
     {
+      "id": "mb:4799313d-0b12-4802-ab1f-77c1d9a2192e",
+      "artist": "Graham Coxon",
+      "title": "When You Find Out",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4799313d-0b12-4802-ab1f-77c1d9a2192e"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261931+00:00"
+    },
+    {
+      "id": "mb:c8ebc3fa-0202-4d96-bf43-28f816cd9646",
+      "artist": "Graham Coxon",
+      "title": "There’s a Little House",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c8ebc3fa-0202-4d96-bf43-28f816cd9646"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261879+00:00"
+    },
+    {
+      "id": "mb:c2a0717e-b90e-4a56-b676-51d6eb3ab455",
+      "artist": "Graham Coxon",
+      "title": "Mélodie Pour Christine",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c2a0717e-b90e-4a56-b676-51d6eb3ab455"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261761+00:00"
+    },
+    {
+      "id": "mb:490a55cf-c20d-4694-be15-9f5d48acd650",
+      "artist": "Graham Coxon",
+      "title": "Isn’t It Funny",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/490a55cf-c20d-4694-be15-9f5d48acd650"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261830+00:00"
+    },
+    {
+      "id": "mb:00edf989-e14b-4193-a883-0b1b66108d60",
+      "artist": "Graham Coxon",
+      "title": "Forget Today",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/00edf989-e14b-4193-a883-0b1b66108d60"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261912+00:00"
+    },
+    {
+      "id": "mb:72eae9b2-eeea-45d8-9a6d-4a279ede7404",
+      "artist": "Graham Coxon",
+      "title": "Easy",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/72eae9b2-eeea-45d8-9a6d-4a279ede7404"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261777+00:00"
+    },
+    {
+      "id": "mb:53e14ac0-f4a5-40dc-b7b1-47e55a573d73",
+      "artist": "Graham Coxon",
+      "title": "Dripping Soul",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/53e14ac0-f4a5-40dc-b7b1-47e55a573d73"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261946+00:00"
+    },
+    {
+      "id": "mb:4b117006-672a-4b93-9613-a45f6a45cdab",
+      "artist": "Graham Coxon",
+      "title": "All the Rage",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4b117006-672a-4b93-9613-a45f6a45cdab"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261898+00:00"
+    },
+    {
       "id": "mb:49c1f4bd-75d8-4fce-8d9a-2a29ce958b2a",
       "artist": "Duran Duran",
       "title": "Careless Memorie",
@@ -39424,6 +41228,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/49c1f4bd-75d8-4fce-8d9a-2a29ce958b2a"
       },
       "discovered_at": "2026-10-02T12:34:12.010695+00:00"
+    },
+    {
+      "id": "mb:6611d010-6b10-4c63-b9be-ffdbb58d7153",
+      "artist": "Dom T.",
+      "title": "Ferry (original)",
+      "original_release_date": "2026-06-19",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6611d010-6b10-4c63-b9be-ffdbb58d7153"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841540+00:00"
     },
     {
       "id": "mb:ddc9c3bc-ebe7-4a0e-b0a6-4caf0414212a",
@@ -40194,6 +42020,138 @@
         "musicbrainz": "https://musicbrainz.org/recording/ca0669af-c652-465c-b53d-fdc1499ca38e"
       },
       "discovered_at": "2026-09-25T21:32:11.179515+00:00"
+    },
+    {
+      "id": "mb:bfb96603-3a8f-4863-8210-df32edf17b8b",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Symphony in D Major, AJR I:17: IV. Finale. Allegro vivace",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bfb96603-3a8f-4863-8210-df32edf17b8b"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438661+00:00"
+    },
+    {
+      "id": "mb:2e831d96-a016-49ff-8b18-bd6ee8f54396",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Symphony in D Major, AJR I:17: III. Menuetto. Allegro vivace",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2e831d96-a016-49ff-8b18-bd6ee8f54396"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438785+00:00"
+    },
+    {
+      "id": "mb:3df195d4-2672-45ad-b213-b61050312c89",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Symphony in D Major, AJR I:17: II. Andante",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3df195d4-2672-45ad-b213-b61050312c89"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438759+00:00"
+    },
+    {
+      "id": "mb:0b0ebe6b-c651-4083-a673-49799216f046",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Symphony in D Major, AJR I:17: I. Allegro maestoso",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0b0ebe6b-c651-4083-a673-49799216f046"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438711+00:00"
+    },
+    {
+      "id": "mb:0bf0ffda-b585-4b3b-92b1-63e8f38f56ca",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Overture in D Major, AJR I:8a",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0bf0ffda-b585-4b3b-92b1-63e8f38f56ca"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438734+00:00"
+    },
+    {
+      "id": "mb:7665d4da-d4d6-4882-9a97-368c47065729",
+      "artist": "Antoine Reicha, Valentin Egel & Munich Radio Orchestra",
+      "title": "Overture in C Major, AJR I:2",
+      "original_release_date": "2026-06-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7665d4da-d4d6-4882-9a97-368c47065729"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438683+00:00"
     },
     {
       "id": "mb:a6a8f358-b87a-4892-a9eb-f16a6f81cfc4",
@@ -43098,6 +45056,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/d16d713f-fae0-400e-b6f3-cacc45f3b203"
       },
       "discovered_at": "2026-09-30T12:34:09.899913+00:00"
+    },
+    {
+      "id": "mb:aadc9b5e-f957-4942-a403-3ba4d7697d14",
+      "artist": "Train",
+      "title": "The Weekend",
+      "original_release_date": "2026-06-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aadc9b5e-f957-4942-a403-3ba4d7697d14"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810009+00:00"
+    },
+    {
+      "id": "mb:7935c105-7ba2-4c32-8c19-5b10b3d4e2af",
+      "artist": "Train",
+      "title": "Pennsylvania Turnpike",
+      "original_release_date": "2026-06-11",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7935c105-7ba2-4c32-8c19-5b10b3d4e2af"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810023+00:00"
     },
     {
       "id": "mb:31482b36-45b2-4538-aa78-12da6b2f6a00",
@@ -46444,6 +48446,28 @@
       "discovered_at": "2026-10-01T05:51:27.421673+00:00"
     },
     {
+      "id": "mb:01dfe6f9-6ddb-4cbe-89b9-9892498f479c",
+      "artist": "Dom Innarella",
+      "title": "Pieces",
+      "original_release_date": "2026-06-05",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/01dfe6f9-6ddb-4cbe-89b9-9892498f479c"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841486+00:00"
+    },
+    {
       "id": "mb:0726aa78-d6c9-4e86-ad2e-55341aebe1fe",
       "artist": "Disidente",
       "title": "Superabismo",
@@ -49047,6 +51071,28 @@
       "discovered_at": "2026-09-25T21:35:36.065230+00:00"
     },
     {
+      "id": "mb:cd481b42-e428-423a-bb48-2318b5b82632",
+      "artist": "Violet Grohl",
+      "title": "Pool of My Dreams",
+      "original_release_date": "2026-05-29",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:tag:alternative rock"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cd481b42-e428-423a-bb48-2318b5b82632"
+      },
+      "discovered_at": "2026-10-02T22:14:41.941881+00:00"
+    },
+    {
       "id": "mb:6e83bd0b-3654-484a-8b10-ef886c238aad",
       "artist": "Violet Grohl",
       "title": "Often Others",
@@ -50675,6 +52721,28 @@
       "discovered_at": "2026-09-27T16:58:11.185555+00:00"
     },
     {
+      "id": "mb:4b3991a2-db6e-40de-89dd-01df9913c356",
+      "artist": "Dom",
+      "title": "Brimful In Vain (The Clash vs. Cornershop)",
+      "original_release_date": "2026-05-28",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4b3991a2-db6e-40de-89dd-01df9913c356"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841416+00:00"
+    },
+    {
       "id": "mb:19839ecb-2e67-437a-a77d-97edfa5e5b08",
       "artist": "Digitalism",
       "title": "Starburst",
@@ -50915,6 +52983,292 @@
         "musicbrainz": "https://musicbrainz.org/recording/65f2ea3b-d05e-4fca-9a26-f6d0b0e934da"
       },
       "discovered_at": "2026-09-28T13:54:12.992871+00:00"
+    },
+    {
+      "id": "mb:97051c06-ac6e-429d-a12a-1486208aa36b",
+      "artist": "Yuksek",
+      "title": "MATA Thème (extended)",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/97051c06-ac6e-429d-a12a-1486208aa36b"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737589+00:00"
+    },
+    {
+      "id": "mb:3fcb1662-944c-4e38-9a27-5235df84b72a",
+      "artist": "Yuksek",
+      "title": "MATA Thème",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3fcb1662-944c-4e38-9a27-5235df84b72a"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737605+00:00"
+    },
+    {
+      "id": "mb:d6464b0c-1364-4a10-879d-e236b70796dc",
+      "artist": "Yuksek",
+      "title": "MATA & ANTOINE",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d6464b0c-1364-4a10-879d-e236b70796dc"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737527+00:00"
+    },
+    {
+      "id": "mb:6904b93a-7d17-449a-9ef7-e6fa79991c36",
+      "artist": "Yuksek",
+      "title": "FILATURE, Pt. 2",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6904b93a-7d17-449a-9ef7-e6fa79991c36"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737619+00:00"
+    },
+    {
+      "id": "mb:5cfd54a8-bedf-465d-aff0-7b4ee6b4d312",
+      "artist": "Yuksek",
+      "title": "FILATURE, Pt. 1",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5cfd54a8-bedf-465d-aff0-7b4ee6b4d312"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737564+00:00"
+    },
+    {
+      "id": "mb:ba9688a6-de0a-4c07-bdac-2d5a22394008",
+      "artist": "Yuksek",
+      "title": "DOJO",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ba9688a6-de0a-4c07-bdac-2d5a22394008"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737551+00:00"
+    },
+    {
+      "id": "mb:b99f3eeb-ed94-4b79-8ad4-312407559832",
+      "artist": "Yuksek",
+      "title": "DEPART ALPES",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b99f3eeb-ed94-4b79-8ad4-312407559832"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737514+00:00"
+    },
+    {
+      "id": "mb:cbbaaccf-1e4c-46f1-9d09-de6096d3bdc5",
+      "artist": "Yuksek",
+      "title": "CHAQUE MINUTE",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cbbaaccf-1e4c-46f1-9d09-de6096d3bdc5"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737477+00:00"
+    },
+    {
+      "id": "mb:8da1c417-6a6a-446c-b4fe-0a2dd41fc663",
+      "artist": "Yuksek",
+      "title": "CARNAVAL",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8da1c417-6a6a-446c-b4fe-0a2dd41fc663"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737502+00:00"
+    },
+    {
+      "id": "mb:90b50c92-2f77-463f-a72c-a78d9d0ec64c",
+      "artist": "Yuksek",
+      "title": "CAMARADE",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/90b50c92-2f77-463f-a72c-a78d9d0ec64c"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737459+00:00"
+    },
+    {
+      "id": "mb:442408c2-ab32-4183-9613-fe1e885e54b0",
+      "artist": "Yuksek",
+      "title": "C'EST PARTI",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/442408c2-ab32-4183-9613-fe1e885e54b0"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737540+00:00"
+    },
+    {
+      "id": "mb:db67c140-28bb-4156-8cb8-8736071d8bb4",
+      "artist": "Yuksek",
+      "title": "ANTOINE",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/db67c140-28bb-4156-8cb8-8736071d8bb4"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737490+00:00"
+    },
+    {
+      "id": "mb:9243c9c0-a129-475b-ae32-5bd98f5f15f9",
+      "artist": "Yuksek",
+      "title": "ACCES",
+      "original_release_date": "2026-05-27",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9243c9c0-a129-475b-ae32-5bd98f5f15f9"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737428+00:00"
     },
     {
       "id": "mb:8929b0ee-9749-490a-b503-b910c2dbe825",
@@ -52259,6 +54613,358 @@
       "discovered_at": "2026-09-26T21:10:55.723429+00:00"
     },
     {
+      "id": "mb:5341466a-1bed-4871-b5bf-07ee3a18aa0f",
+      "artist": "Twin Peaks",
+      "title": "You Don't",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5341466a-1bed-4871-b5bf-07ee3a18aa0f"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453156+00:00"
+    },
+    {
+      "id": "mb:1428bf08-3813-4fe2-a52a-545e451c5829",
+      "artist": "Twin Peaks",
+      "title": "Who's It Gonna Be?",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1428bf08-3813-4fe2-a52a-545e451c5829"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453371+00:00"
+    },
+    {
+      "id": "mb:31199323-9025-4628-b60f-7092509aaf2b",
+      "artist": "Twin Peaks",
+      "title": "Wanted You",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/31199323-9025-4628-b60f-7092509aaf2b"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453355+00:00"
+    },
+    {
+      "id": "mb:8a847726-09ff-4d1e-bd9e-8a6076b7031f",
+      "artist": "Twin Peaks",
+      "title": "Walk To The One You Love",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8a847726-09ff-4d1e-bd9e-8a6076b7031f"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453285+00:00"
+    },
+    {
+      "id": "mb:fd0186fa-eeca-4119-9fa2-1c3b07b76b4f",
+      "artist": "Twin Peaks",
+      "title": "Stain",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/fd0186fa-eeca-4119-9fa2-1c3b07b76b4f"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453226+00:00"
+    },
+    {
+      "id": "mb:d97a1f8e-6eab-444f-aedd-b0022cd0c2e2",
+      "artist": "Twin Peaks",
+      "title": "My Boys",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d97a1f8e-6eab-444f-aedd-b0022cd0c2e2"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453298+00:00"
+    },
+    {
+      "id": "mb:707ecc56-ed0b-42d6-b7e3-da64f9c98644",
+      "artist": "Twin Peaks",
+      "title": "Lolisa",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/707ecc56-ed0b-42d6-b7e3-da64f9c98644"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453240+00:00"
+    },
+    {
+      "id": "mb:8d21f1dd-a249-4372-8c0b-06bbf3c666f6",
+      "artist": "Twin Peaks",
+      "title": "Keep It Together",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8d21f1dd-a249-4372-8c0b-06bbf3c666f6"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453256+00:00"
+    },
+    {
+      "id": "mb:41b26bc0-b693-453c-8be3-8ba40caff5d6",
+      "artist": "Twin Peaks",
+      "title": "I Don't Wanna Miss You",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/41b26bc0-b693-453c-8be3-8ba40caff5d6"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453176+00:00"
+    },
+    {
+      "id": "mb:544d39ee-fcf5-486d-a0a0-57fc414061b5",
+      "artist": "Twin Peaks",
+      "title": "Holding Roses",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/544d39ee-fcf5-486d-a0a0-57fc414061b5"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453192+00:00"
+    },
+    {
+      "id": "mb:1d0d8ed9-6c76-42df-99e4-137a0ed5e67b",
+      "artist": "Twin Peaks",
+      "title": "Heavenly Showers",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1d0d8ed9-6c76-42df-99e4-137a0ed5e67b"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453340+00:00"
+    },
+    {
+      "id": "mb:9dde1434-a6eb-458d-a6e7-bea3e453e5e9",
+      "artist": "Twin Peaks",
+      "title": "Have You Ever?",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9dde1434-a6eb-458d-a6e7-bea3e453e5e9"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453317+00:00"
+    },
+    {
+      "id": "mb:6468571a-f8fc-4349-ab8b-ad823a1d6105",
+      "artist": "Twin Peaks",
+      "title": "Getting Better",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6468571a-f8fc-4349-ab8b-ad823a1d6105"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453386+00:00"
+    },
+    {
+      "id": "mb:93c25a94-806d-45ba-a708-8157ce82f7bb",
+      "artist": "Twin Peaks",
+      "title": "Disappear",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/93c25a94-806d-45ba-a708-8157ce82f7bb"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453269+00:00"
+    },
+    {
+      "id": "mb:28a78070-33fb-488a-afc5-cbc152e58b0e",
+      "artist": "Twin Peaks",
+      "title": "Cold Lips",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/28a78070-33fb-488a-afc5-cbc152e58b0e"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453121+00:00"
+    },
+    {
+      "id": "mb:ea545ddd-17c0-4d87-abf2-a90f3a1908cd",
+      "artist": "Twin Peaks",
+      "title": "Back Door",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ea545ddd-17c0-4d87-abf2-a90f3a1908cd"
+      },
+      "discovered_at": "2026-10-02T22:13:21.453211+00:00"
+    },
+    {
       "id": "mb:722a069a-f6ff-40f3-ae49-9eb594c2e973",
       "artist": "Tune-Yards",
       "title": "You Don't Have a Plan?",
@@ -52785,6 +55491,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/c17d65a7-37c9-45ea-8563-218a49ceebd0"
       },
       "discovered_at": "2026-10-02T05:35:53.046304+00:00"
+    },
+    {
+      "id": "mb:f7a70975-7adc-41bc-a0c0-e012fdb783b5",
+      "artist": "Thievery Corporation",
+      "title": "Shaolin Satellite (Mixed)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f7a70975-7adc-41bc-a0c0-e012fdb783b5"
+      },
+      "discovered_at": "2026-10-02T22:13:28.274103+00:00"
+    },
+    {
+      "id": "mb:aa3e0de1-bd5a-4816-99a2-2632fa8cb82b",
+      "artist": "Thievery Corporation",
+      "title": "Shaolin Satellite",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aa3e0de1-bd5a-4816-99a2-2632fa8cb82b"
+      },
+      "discovered_at": "2026-10-02T22:13:28.274063+00:00"
+    },
+    {
+      "id": "mb:ed6eb4e0-af26-4436-ab8d-7a555581f62b",
+      "artist": "Thievery Corporation",
+      "title": "Shaolin Satellite",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ed6eb4e0-af26-4436-ab8d-7a555581f62b"
+      },
+      "discovered_at": "2026-10-02T22:13:28.274122+00:00"
     },
     {
       "id": "mb:6b583c69-b6b2-4a2f-8ea3-ba88832a4cf3",
@@ -54019,6 +56791,28 @@
       "discovered_at": "2026-09-30T22:15:47.999777+00:00"
     },
     {
+      "id": "mb:f9166360-f489-4d70-8904-016a37e5531d",
+      "artist": "Luvcat feat. Peter Doherty",
+      "title": "Electric Chair",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f9166360-f489-4d70-8904-016a37e5531d"
+      },
+      "discovered_at": "2026-10-02T22:13:16.388594+00:00"
+    },
+    {
       "id": "mb:ccb3670e-acef-430e-ad2e-a13cc34e96ae",
       "artist": "King Gizzard & the Lizard Wizard",
       "title": "K.K. Tetrachromacy",
@@ -54303,6 +57097,270 @@
         "musicbrainz": "https://musicbrainz.org/recording/62f9e7a3-b95f-4d1d-afb5-e4bf7547bed6"
       },
       "discovered_at": "2026-09-29T12:52:17.960536+00:00"
+    },
+    {
+      "id": "mb:c3546d00-ff62-412d-acc0-cd8087528a5d",
+      "artist": "IAMX & Chris Corner",
+      "title": "War of Words (orchestral rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c3546d00-ff62-412d-acc0-cd8087528a5d"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720702+00:00"
+    },
+    {
+      "id": "mb:122e175c-361c-48cb-8529-c0e79fe6e74c",
+      "artist": "IAMX & Chris Corner",
+      "title": "In Bondage (Art Bleeds Money rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/122e175c-361c-48cb-8529-c0e79fe6e74c"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720681+00:00"
+    },
+    {
+      "id": "mb:c0dfc2e8-1355-4132-84ab-fd0c4ba87c1c",
+      "artist": "IAMX & Chris Corner",
+      "title": "Grass Before the Scythe (ArtBleedsMoney rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c0dfc2e8-1355-4132-84ab-fd0c4ba87c1c"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720641+00:00"
+    },
+    {
+      "id": "mb:3be8f82d-a843-43b3-a42a-5bf7ebc9fe0d",
+      "artist": "IAMX",
+      "title": "There Will Be Times When I Will Need to Hurt You",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3be8f82d-a843-43b3-a42a-5bf7ebc9fe0d"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720598+00:00"
+    },
+    {
+      "id": "mb:0fa5a02b-ed9c-4f51-af48-13d175e5c7ed",
+      "artist": "IAMX",
+      "title": "The X ID (clubdrugs rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0fa5a02b-ed9c-4f51-af48-13d175e5c7ed"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720562+00:00"
+    },
+    {
+      "id": "mb:3c88d82b-f674-4b0f-ae5a-19d4c5108afb",
+      "artist": "IAMX",
+      "title": "The X ID (Carrellee rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3c88d82b-f674-4b0f-ae5a-19d4c5108afb"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720530+00:00"
+    },
+    {
+      "id": "mb:cfd946c1-2b02-4480-946d-ae6366960a40",
+      "artist": "IAMX",
+      "title": "The Truth (Mimetic Hexes rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cfd946c1-2b02-4480-946d-ae6366960a40"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720616+00:00"
+    },
+    {
+      "id": "mb:b78bd855-5bab-4f11-b84e-28c62a427976",
+      "artist": "IAMX",
+      "title": "Thanatos (Damn the Witch Siren rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b78bd855-5bab-4f11-b84e-28c62a427976"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720472+00:00"
+    },
+    {
+      "id": "mb:0cd143a8-89ec-4dff-b9e1-8638a4fce74c",
+      "artist": "IAMX",
+      "title": "Radical Self Love",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0cd143a8-89ec-4dff-b9e1-8638a4fce74c"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720545+00:00"
+    },
+    {
+      "id": "mb:29a934ee-d9e7-4cc4-94d1-c2d23e02b732",
+      "artist": "IAMX",
+      "title": "Infinite Fear Jets (Nigen rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/29a934ee-d9e7-4cc4-94d1-c2d23e02b732"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720494+00:00"
+    },
+    {
+      "id": "mb:59aac3c1-0e6f-42cc-90d2-eab211c0ab2d",
+      "artist": "IAMX",
+      "title": "Infinite Fear Jets (Mimetic Hexes rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/59aac3c1-0e6f-42cc-90d2-eab211c0ab2d"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720431+00:00"
+    },
+    {
+      "id": "mb:8c3c1c2d-35a5-4bfb-b9e1-33990392f9b3",
+      "artist": "IAMX",
+      "title": "Disciple (Holy Braille rework)",
+      "original_release_date": "2026-05-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8c3c1c2d-35a5-4bfb-b9e1-33990392f9b3"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720512+00:00"
     },
     {
       "id": "mb:ee0ac45c-41a9-497c-a483-f7cf776e2ca7",
@@ -56041,6 +59099,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/41496878-2e31-4937-8816-63738f4c94a2"
       },
       "discovered_at": "2026-10-01T05:52:23.014435+00:00"
+    },
+    {
+      "id": "mb:1fed5294-86c5-4a76-9c74-3882a365da63",
+      "artist": "Blondshell",
+      "title": "Heart Has to Work So Hard",
+      "original_release_date": "2026-05-18",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1fed5294-86c5-4a76-9c74-3882a365da63"
+      },
+      "discovered_at": "2026-10-02T22:14:06.775084+00:00"
     },
     {
       "id": "mb:692e5ef4-78b9-4d7a-8b66-4a282b9fd62e",
@@ -59060,6 +62140,28 @@
       "discovered_at": "2026-09-27T16:57:17.936802+00:00"
     },
     {
+      "id": "mb:dc52488d-bc3c-40cb-ad9c-bbe5613babc9",
+      "artist": "Graham Coxon",
+      "title": "Alright",
+      "original_release_date": "2026-05-12",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/dc52488d-bc3c-40cb-ad9c-bbe5613babc9"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261844+00:00"
+    },
+    {
       "id": "mb:b216b545-66ef-408d-9eb9-c1345d8041a5",
       "artist": "Blood Red Shoes",
       "title": "Dead Air",
@@ -59256,6 +62358,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/7aadae70-4007-4a22-a23f-78718c6b0ce7"
       },
       "discovered_at": "2026-09-25T21:32:06.194499+00:00"
+    },
+    {
+      "id": "mb:8d176647-c7f5-48af-bf44-d53809d7ae63",
+      "artist": "Vundabar",
+      "title": "I Need U",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8d176647-c7f5-48af-bf44-d53809d7ae63"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622984+00:00"
     },
     {
       "id": "mb:faf3e0ea-c2d3-454f-94fd-f437a50d84a1",
@@ -60114,6 +63238,138 @@
         "musicbrainz": "https://musicbrainz.org/recording/320c31d1-b1fa-44fe-bc92-8c6f8cd1513d"
       },
       "discovered_at": "2026-09-28T05:23:07.409309+00:00"
+    },
+    {
+      "id": "mb:7f3f6048-b750-4023-b77b-e5a3adf6c703",
+      "artist": "Super Furry Animals",
+      "title": "Pocket Sam",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7f3f6048-b750-4023-b77b-e5a3adf6c703"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186421+00:00"
+    },
+    {
+      "id": "mb:190643b6-74e3-4665-8d32-edcc2761f2f8",
+      "artist": "Super Furry Animals",
+      "title": "Pam V?",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/190643b6-74e3-4665-8d32-edcc2761f2f8"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186497+00:00"
+    },
+    {
+      "id": "mb:aaec9197-dd6d-4165-ad12-465b7e4dd874",
+      "artist": "Super Furry Animals",
+      "title": "Of No Fixed Identity",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aaec9197-dd6d-4165-ad12-465b7e4dd874"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186484+00:00"
+    },
+    {
+      "id": "mb:24671937-0d2a-4cbe-a55d-61d7858e738d",
+      "artist": "Super Furry Animals",
+      "title": "God! Show Me Magic",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/24671937-0d2a-4cbe-a55d-61d7858e738d"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186450+00:00"
+    },
+    {
+      "id": "mb:788c6865-84f9-4e16-ac14-0367939ed33e",
+      "artist": "Super Furry Animals",
+      "title": "Fix Idris",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/788c6865-84f9-4e16-ac14-0367939ed33e"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186511+00:00"
+    },
+    {
+      "id": "mb:c9da8e3a-9c40-428b-bccf-76efaa2d457c",
+      "artist": "Super Furry Animals",
+      "title": "AK Serenade (2026 Redux)",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c9da8e3a-9c40-428b-bccf-76efaa2d457c"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186469+00:00"
     },
     {
       "id": "mb:4e8c1270-ad90-4caa-8af4-817f5535ee4b",
@@ -63636,6 +66892,116 @@
       "availability": "released"
     },
     {
+      "id": "mb:79cf9f69-be59-4e21-9525-78d10e4a2147",
+      "artist": "Super Furry Animals",
+      "title": "Rise ’n’ Shine (2026 redux)",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/79cf9f69-be59-4e21-9525-78d10e4a2147"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186332+00:00"
+    },
+    {
+      "id": "mb:015db3c9-bd9b-46e0-adc9-593e52ae2808",
+      "artist": "Super Furry Animals",
+      "title": "Quest (2026 redux)",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/015db3c9-bd9b-46e0-adc9-593e52ae2808"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186372+00:00"
+    },
+    {
+      "id": "mb:8fa995f1-f8a6-42fe-ba57-e53149b76acd",
+      "artist": "Super Furry Animals",
+      "title": "Fine Time (2026 redux)",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8fa995f1-f8a6-42fe-ba57-e53149b76acd"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186353+00:00"
+    },
+    {
+      "id": "mb:99249d3b-7bed-4eae-8a22-818e1ecba526",
+      "artist": "Super Furry Animals",
+      "title": "Dim Brys, Dim Chwys",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/99249d3b-7bed-4eae-8a22-818e1ecba526"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186292+00:00"
+    },
+    {
+      "id": "mb:48be404f-d791-4488-b4ee-8a35a08606d0",
+      "artist": "Super Furry Animals",
+      "title": "Choking on Your Lust",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/48be404f-d791-4488-b4ee-8a35a08606d0"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186606+00:00"
+    },
+    {
       "id": "mb:3795146e-da60-48f9-b1b8-5761a17244a2",
       "artist": "Skillet Licorice",
       "title": "Texas Gals",
@@ -64120,6 +67486,248 @@
       "discovered_at": "2026-10-01T05:51:36.184789+00:00"
     },
     {
+      "id": "mb:155462a4-23e5-4bdd-9aef-2827f838328b",
+      "artist": "Maya Hawke",
+      "title": "Terms of Estrangement",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/155462a4-23e5-4bdd-9aef-2827f838328b"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692946+00:00"
+    },
+    {
+      "id": "mb:4c883892-9cfc-4a86-9af2-0ad0a3c6f9cf",
+      "artist": "Maya Hawke",
+      "title": "Slacker in the Rye",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4c883892-9cfc-4a86-9af2-0ad0a3c6f9cf"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692850+00:00"
+    },
+    {
+      "id": "mb:9de1a9f0-161a-4eec-9a7b-e023e02fa0e3",
+      "artist": "Maya Hawke",
+      "title": "Maitreya and the Way Back",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9de1a9f0-161a-4eec-9a7b-e023e02fa0e3"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692834+00:00"
+    },
+    {
+      "id": "mb:bcb16573-6c0c-4247-9cd5-f843a0ba3249",
+      "artist": "Maya Hawke",
+      "title": "Love of My Life",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bcb16573-6c0c-4247-9cd5-f843a0ba3249"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692986+00:00"
+    },
+    {
+      "id": "mb:f8add00e-181b-489c-9349-a28e07b371ef",
+      "artist": "Maya Hawke",
+      "title": "Lioness",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f8add00e-181b-489c-9349-a28e07b371ef"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692972+00:00"
+    },
+    {
+      "id": "mb:d9630136-5e2c-476b-add2-a9a136036851",
+      "artist": "Maya Hawke",
+      "title": "Last Thoughts on Morning Star",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d9630136-5e2c-476b-add2-a9a136036851"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692796+00:00"
+    },
+    {
+      "id": "mb:9083aa1a-905a-48da-a2cf-6e28ad2abc12",
+      "artist": "Maya Hawke",
+      "title": "Last Living Lost Cause",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9083aa1a-905a-48da-a2cf-6e28ad2abc12"
+      },
+      "discovered_at": "2026-10-02T22:14:10.693000+00:00"
+    },
+    {
+      "id": "mb:4e965826-1d42-4566-a0ac-106bbcc971ef",
+      "artist": "Maya Hawke",
+      "title": "Heavy Rain",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4e965826-1d42-4566-a0ac-106bbcc971ef"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692959+00:00"
+    },
+    {
+      "id": "mb:1ab8f483-3dba-48f0-abf5-ad73ad2d35fe",
+      "artist": "Maya Hawke",
+      "title": "Green Dragon",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1ab8f483-3dba-48f0-abf5-ad73ad2d35fe"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692817+00:00"
+    },
+    {
+      "id": "mb:63911bf2-68cd-4c71-923b-a8a3d149a159",
+      "artist": "Maya Hawke",
+      "title": "Great Minds",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/63911bf2-68cd-4c71-923b-a8a3d149a159"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692930+00:00"
+    },
+    {
+      "id": "mb:99337f33-aa75-489f-b6c8-a1df6ad1ac21",
+      "artist": "Maya Hawke",
+      "title": "Dream House",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/99337f33-aa75-489f-b6c8-a1df6ad1ac21"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692880+00:00"
+    },
+    {
       "id": "mb:0b627ec4-7697-49a9-afd7-a4190b6ab409",
       "artist": "Marshmello & Portugal. The Man",
       "title": "Phoenix",
@@ -64294,6 +67902,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/efd2525e-a780-49b1-b968-c95b6e7de456"
       },
       "discovered_at": "2026-09-25T21:32:06.194146+00:00"
+    },
+    {
+      "id": "mb:285320a4-0e78-4bb8-85b3-7a4582b2c740",
+      "artist": "HUNT3R DOM",
+      "title": "Oltre Il Fango",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/285320a4-0e78-4bb8-85b3-7a4582b2c740"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841614+00:00"
     },
     {
       "id": "mb:8901bad7-1a7a-429f-b23d-b42db552579c",
@@ -65616,6 +69246,28 @@
       "discovered_at": "2026-09-27T16:57:42.107908+00:00"
     },
     {
+      "id": "mb:67ee5a94-85f4-445b-9405-323a33374a1d",
+      "artist": "TrillyVanilly feat. Munich Sound Apartment",
+      "title": "Soultrain",
+      "original_release_date": "2026-04-29",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/67ee5a94-85f4-445b-9405-323a33374a1d"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438545+00:00"
+    },
+    {
       "id": "mb:96572698-5086-4c35-90e5-1fde20af4b4a",
       "artist": "Mish Molotov",
       "title": "Revitude",
@@ -65636,6 +69288,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/96572698-5086-4c35-90e5-1fde20af4b4a"
       },
       "discovered_at": "2026-09-28T05:22:47.006088+00:00"
+    },
+    {
+      "id": "mb:0496aff7-fa86-476b-b891-2576711e1f99",
+      "artist": "Maya Hawke",
+      "title": "Lioness",
+      "original_release_date": "2026-04-29",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0496aff7-fa86-476b-b891-2576711e1f99"
+      },
+      "discovered_at": "2026-10-02T22:14:10.693025+00:00"
+    },
+    {
+      "id": "mb:919370ac-8f18-488b-b674-1931a3f693fb",
+      "artist": "Maya Hawke",
+      "title": "Devil You Know",
+      "original_release_date": "2026-04-29",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/919370ac-8f18-488b-b674-1931a3f693fb"
+      },
+      "discovered_at": "2026-10-02T22:14:10.693013+00:00"
+    },
+    {
+      "id": "mb:b6accc46-733c-4dcc-b22d-40352ff6f8bf",
+      "artist": "Maya Hawke",
+      "title": "Bring Home My Man",
+      "original_release_date": "2026-04-29",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b6accc46-733c-4dcc-b22d-40352ff6f8bf"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692913+00:00"
     },
     {
       "id": "mb:8549ca64-5671-4ef4-a6a4-1380cb4e68d7",
@@ -66121,6 +69839,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/4aa60b5a-6192-447d-bd3e-723c2600b975"
       },
       "discovered_at": "2026-10-01T05:52:09.820759+00:00"
+    },
+    {
+      "id": "mb:c5fdd850-911e-4382-9925-2b4416e2e92f",
+      "artist": "Graham Coxon",
+      "title": "Shipbuilding",
+      "original_release_date": "2026-04-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c5fdd850-911e-4382-9925-2b4416e2e92f"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261959+00:00"
+    },
+    {
+      "id": "mb:3f4269da-4cd0-4215-9a7a-04f83b9d509f",
+      "artist": "Graham Coxon",
+      "title": "Min Trampolin",
+      "original_release_date": "2026-04-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3f4269da-4cd0-4215-9a7a-04f83b9d509f"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261721+00:00"
+    },
+    {
+      "id": "mb:8426fcb4-3801-4f2b-a3ec-e592194841de",
+      "artist": "Graham Coxon",
+      "title": "Been Smoking Too Long",
+      "original_release_date": "2026-04-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8426fcb4-3801-4f2b-a3ec-e592194841de"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261795+00:00"
     },
     {
       "id": "mb:5f9ccc5b-0834-4dec-b07e-ff98bf7158d9",
@@ -68877,6 +72661,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/ae470fe1-a7f1-4e9d-bd99-abf793c1d94c"
       },
       "discovered_at": "2026-09-25T21:32:06.194422+00:00"
+    },
+    {
+      "id": "mb:c4c33ae8-13fa-4088-9091-8b7d6b65d31f",
+      "artist": "Graham Coxon",
+      "title": "Billy Says",
+      "original_release_date": "2026-04-20",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c4c33ae8-13fa-4088-9091-8b7d6b65d31f"
+      },
+      "discovered_at": "2026-10-02T22:14:27.261809+00:00"
     },
     {
       "id": "mb:0a25e092-45d8-4b20-816c-3c69832252d0",
@@ -72925,6 +76731,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/1b470719-7c04-4d1f-939c-5bcfa36a28d5"
       },
       "discovered_at": "2026-10-01T13:13:48.594495+00:00"
+    },
+    {
+      "id": "mb:407d304e-c17f-4e57-b49d-aa3a4e94cbde",
+      "artist": "Dom Salvador",
+      "title": "Suddenly",
+      "original_release_date": "2026-04-18",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/407d304e-c17f-4e57-b49d-aa3a4e94cbde"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841690+00:00"
     },
     {
       "id": "mb:211b58c2-de65-4d18-881b-a8b6540644a6",
@@ -78405,6 +82233,28 @@
       "discovered_at": "2026-09-27T21:20:38.271563+00:00"
     },
     {
+      "id": "mb:adfd7731-12f9-4246-990b-e9db64b05d50",
+      "artist": "Maya Hawke",
+      "title": "Bring Home My Man",
+      "original_release_date": "2026-04-10",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/adfd7731-12f9-4246-990b-e9db64b05d50"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692898+00:00"
+    },
+    {
       "id": "mb:64f89fe8-4819-46a3-a41f-326261241f15",
       "artist": "Les Louanges",
       "title": "À la nage",
@@ -81935,6 +85785,182 @@
       "discovered_at": "2026-09-28T05:22:45.440476+00:00"
     },
     {
+      "id": "mb:b6167b17-cf87-4356-bd67-a609345773d5",
+      "artist": "Dom Fera",
+      "title": "Wrong With Me",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b6167b17-cf87-4356-bd67-a609345773d5"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841601+00:00"
+    },
+    {
+      "id": "mb:7711ba65-e5bb-40fb-997f-bf835937551a",
+      "artist": "Dom Fera",
+      "title": "Traffic Lights",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7711ba65-e5bb-40fb-997f-bf835937551a"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841576+00:00"
+    },
+    {
+      "id": "mb:e2ba695c-d279-4f45-92bd-3023e98c8094",
+      "artist": "Dom Fera",
+      "title": "Marked",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e2ba695c-d279-4f45-92bd-3023e98c8094"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841503+00:00"
+    },
+    {
+      "id": "mb:94e368f6-832c-430a-96ba-e9beb99be797",
+      "artist": "Dom Fera",
+      "title": "Lore",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/94e368f6-832c-430a-96ba-e9beb99be797"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841563+00:00"
+    },
+    {
+      "id": "mb:a4bcbe62-5c4a-46e9-8ce6-1e12b9fbc5d7",
+      "artist": "Dom Fera",
+      "title": "Lately",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a4bcbe62-5c4a-46e9-8ce6-1e12b9fbc5d7"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841516+00:00"
+    },
+    {
+      "id": "mb:657e9d8e-499b-4cda-a8ba-3f442ae3e635",
+      "artist": "Dom Fera",
+      "title": "Hold Me to the Light",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/657e9d8e-499b-4cda-a8ba-3f442ae3e635"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841668+00:00"
+    },
+    {
+      "id": "mb:9a4e7931-a9af-4af3-9f57-c7ea41edf0e3",
+      "artist": "Dom Fera",
+      "title": "Higher Soon",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9a4e7931-a9af-4af3-9f57-c7ea41edf0e3"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841553+00:00"
+    },
+    {
+      "id": "mb:2c76879b-8b23-43c4-bc3b-136efd85e0f5",
+      "artist": "Dom Fera",
+      "title": "All Day",
+      "original_release_date": "2026-03-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2c76879b-8b23-43c4-bc3b-136efd85e0f5"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841588+00:00"
+    },
+    {
       "id": "mb:a7703f11-08ef-4b6a-9cf8-590d918aa5cd",
       "artist": "Bob Dylan",
       "title": "Soon After Midnight",
@@ -84771,6 +88797,182 @@
         "musicbrainz": "https://musicbrainz.org/recording/73c9124f-29a3-435a-8998-7e69e0fefe70"
       },
       "discovered_at": "2026-09-30T22:15:29.375902+00:00"
+    },
+    {
+      "id": "mb:f747b5fc-a657-4d29-bf31-077b381a9a61",
+      "artist": "Neverland Train",
+      "title": "Tonight Is What It Means to Be Young",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f747b5fc-a657-4d29-bf31-077b381a9a61"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810255+00:00"
+    },
+    {
+      "id": "mb:22445c9f-e46f-4808-bcff-9bee2e5dfaed",
+      "artist": "Neverland Train",
+      "title": "Still Alive",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/22445c9f-e46f-4808-bcff-9bee2e5dfaed"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810118+00:00"
+    },
+    {
+      "id": "mb:7e149519-4ca3-4c75-bcb9-87123bf93534",
+      "artist": "Neverland Train",
+      "title": "Somewhere in This Universe",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7e149519-4ca3-4c75-bcb9-87123bf93534"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810135+00:00"
+    },
+    {
+      "id": "mb:7b455ef6-8130-403c-be98-c0bbd4060697",
+      "artist": "Neverland Train",
+      "title": "Pride",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7b455ef6-8130-403c-be98-c0bbd4060697"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810147+00:00"
+    },
+    {
+      "id": "mb:178c1b65-c5d5-4a38-8535-28a213e4d962",
+      "artist": "Neverland Train",
+      "title": "Not Alone",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/178c1b65-c5d5-4a38-8535-28a213e4d962"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810236+00:00"
+    },
+    {
+      "id": "mb:5809af0f-9bc1-46fe-891f-49da9d76fa9f",
+      "artist": "Neverland Train",
+      "title": "Learn to Live",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5809af0f-9bc1-46fe-891f-49da9d76fa9f"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810161+00:00"
+    },
+    {
+      "id": "mb:05ccc0c2-4488-421d-b42b-1bf971cab7f6",
+      "artist": "Neverland Train",
+      "title": "Ignorance",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/05ccc0c2-4488-421d-b42b-1bf971cab7f6"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810174+00:00"
+    },
+    {
+      "id": "mb:ae0266bf-3efb-4a4b-9e43-2b532d11f394",
+      "artist": "Neverland Train",
+      "title": "End of the Night",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ae0266bf-3efb-4a4b-9e43-2b532d11f394"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810269+00:00"
     },
     {
       "id": "mb:aa9bc271-4eda-494d-8b8d-bb43e22124f6",
@@ -91444,6 +95646,28 @@
       "discovered_at": "2026-09-26T21:10:05.254906+00:00"
     },
     {
+      "id": "mb:a1a49d20-d5db-45c0-b100-623e6ff4503e",
+      "artist": "Glass Battles",
+      "title": "DEVIL DANCE",
+      "original_release_date": "2026-03-13",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a1a49d20-d5db-45c0-b100-623e6ff4503e"
+      },
+      "discovered_at": "2026-10-02T22:13:19.485611+00:00"
+    },
+    {
       "id": "mb:aa61d4f5-06f6-454a-a764-6c306b15d68b",
       "artist": "Ye & Travis Scott",
       "title": "Hands On",
@@ -92390,6 +96614,28 @@
       "discovered_at": "2026-09-25T21:35:20.558806+00:00"
     },
     {
+      "id": "mb:d360b464-0268-4c32-868a-eac118ccef14",
+      "artist": "El Train",
+      "title": "Blush",
+      "original_release_date": "2026-03-10",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d360b464-0268-4c32-868a-eac118ccef14"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810221+00:00"
+    },
+    {
       "id": "mb:e41560aa-747f-44da-995a-7e0ead6f8da9",
       "artist": "Freedom Fry",
       "title": "Mr. Jones - From \"Paradise: Season 2\"",
@@ -93114,6 +97360,270 @@
         "musicbrainz": "https://musicbrainz.org/recording/deeb8403-c2bf-456f-a505-42060bdb2aee"
       },
       "discovered_at": "2026-09-28T05:23:48.842256+00:00"
+    },
+    {
+      "id": "mb:4305d914-c0c1-42d3-987e-5d5476fe1cce",
+      "artist": "Vundabar",
+      "title": "Why Is It So Hard to Say Goodbye?",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4305d914-c0c1-42d3-987e-5d5476fe1cce"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623027+00:00"
+    },
+    {
+      "id": "mb:7fd4947b-70ab-4029-9f01-830989a8960d",
+      "artist": "Vundabar",
+      "title": "The Thing",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7fd4947b-70ab-4029-9f01-830989a8960d"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622968+00:00"
+    },
+    {
+      "id": "mb:13cdc7c9-507c-49d3-b9f5-40015493b10d",
+      "artist": "Vundabar",
+      "title": "Stallion Running",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/13cdc7c9-507c-49d3-b9f5-40015493b10d"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622947+00:00"
+    },
+    {
+      "id": "mb:5a046ca3-d982-4204-a27d-223e9fbd2822",
+      "artist": "Vundabar",
+      "title": "Sky’s Fallin",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5a046ca3-d982-4204-a27d-223e9fbd2822"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623047+00:00"
+    },
+    {
+      "id": "mb:d892a4c6-b794-40b2-83f7-02c764c0de0c",
+      "artist": "Vundabar",
+      "title": "Life Is a Movie",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d892a4c6-b794-40b2-83f7-02c764c0de0c"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623094+00:00"
+    },
+    {
+      "id": "mb:7ced6e95-ddff-4bcd-8857-57d7e0814b2e",
+      "artist": "Vundabar",
+      "title": "Let Me Bleed",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7ced6e95-ddff-4bcd-8857-57d7e0814b2e"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622855+00:00"
+    },
+    {
+      "id": "mb:a8bdefb3-d6ae-4680-b35d-b018b9ece78d",
+      "artist": "Vundabar",
+      "title": "Lately",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a8bdefb3-d6ae-4680-b35d-b018b9ece78d"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622933+00:00"
+    },
+    {
+      "id": "mb:30333ef7-414a-45be-9279-4342dad0db9c",
+      "artist": "Vundabar",
+      "title": "Hurricane",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/30333ef7-414a-45be-9279-4342dad0db9c"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623081+00:00"
+    },
+    {
+      "id": "mb:8bb1f196-5183-4ada-88bd-3a7846abf2ae",
+      "artist": "Vundabar",
+      "title": "Feels Like Forever",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8bb1f196-5183-4ada-88bd-3a7846abf2ae"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622997+00:00"
+    },
+    {
+      "id": "mb:29b8dea2-d499-4fc9-8314-6ee3b5c6549d",
+      "artist": "Vundabar",
+      "title": "Easy Does It",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/29b8dea2-d499-4fc9-8314-6ee3b5c6549d"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623010+00:00"
+    },
+    {
+      "id": "mb:c03df6ef-edbf-409e-93e4-443d7226bbd1",
+      "artist": "Vundabar",
+      "title": "Death Punch",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c03df6ef-edbf-409e-93e4-443d7226bbd1"
+      },
+      "discovered_at": "2026-10-02T22:14:19.622913+00:00"
+    },
+    {
+      "id": "mb:9a14280e-8a18-4a12-adf0-62b6e3200ec8",
+      "artist": "Vundabar",
+      "title": "Beta Fish",
+      "original_release_date": "2026-03-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9a14280e-8a18-4a12-adf0-62b6e3200ec8"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623060+00:00"
     },
     {
       "id": "mb:bb677e6b-2efd-44ea-aff3-e5d4a84ea3f0",
@@ -94855,6 +99365,28 @@
       "availability": "released"
     },
     {
+      "id": "mb:845007bd-a3a7-49c2-af05-a5d05268fd36",
+      "artist": "Train",
+      "title": "The weekend",
+      "original_release_date": "2026-03-05",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/845007bd-a3a7-49c2-af05-a5d05268fd36"
+      },
+      "discovered_at": "2026-10-02T22:14:28.809967+00:00"
+    },
+    {
       "id": "mb:3e85c361-d469-43e3-aa04-689b5145952b",
       "artist": "Slow Crush",
       "title": "Que Du Noir",
@@ -95845,6 +100377,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/a8caf0e1-3fdf-4cee-b7ba-d499468162ad"
       },
       "discovered_at": "2026-10-02T12:35:02.586878+00:00"
+    },
+    {
+      "id": "mb:4c76142a-d57a-4050-a686-76dc93a87e2f",
+      "artist": "Maya Hawke",
+      "title": "Devil You Know",
+      "original_release_date": "2026-03-02",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4c76142a-d57a-4050-a686-76dc93a87e2f"
+      },
+      "discovered_at": "2026-10-02T22:14:10.692757+00:00"
     },
     {
       "id": "mb:382b401c-6853-4919-be29-e7d0736f971d",
@@ -102493,6 +107047,28 @@
       "discovered_at": "2026-09-30T05:32:54.614515+00:00"
     },
     {
+      "id": "mb:aee75e46-2487-404b-a3fd-5addf73840f4",
+      "artist": "IAMX",
+      "title": "Artificial Innocence",
+      "original_release_date": "2026-02-20",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aee75e46-2487-404b-a3fd-5addf73840f4"
+      },
+      "discovered_at": "2026-10-02T22:14:25.720577+00:00"
+    },
+    {
       "id": "mb:69dbb436-1b8a-4a1d-a9f4-b33000aaec5f",
       "artist": "Deep Dish, Nicole Moudaber & Skunk Anansie",
       "title": "Love Someone Else",
@@ -103680,6 +108256,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/d296662c-585f-4257-a426-3ec43dec740a"
       },
       "discovered_at": "2026-10-02T05:35:38.402801+00:00"
+    },
+    {
+      "id": "mb:c50fa14d-1628-46ac-96c5-820281683b8f",
+      "artist": "Wire Train",
+      "title": "Everything’s Turning Up Down Again",
+      "original_release_date": "2026-02-13",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c50fa14d-1628-46ac-96c5-820281683b8f"
+      },
+      "discovered_at": "2026-10-02T22:14:28.810202+00:00"
     },
     {
       "id": "mb:a4da5508-bdb2-4667-a8af-8ab6278b8d3c",
@@ -105090,6 +109688,28 @@
       "discovered_at": "2026-09-28T05:23:52.007572+00:00"
     },
     {
+      "id": "mb:785ce00c-dd98-4b64-8533-f608b6f3194f",
+      "artist": "Meat Puppets",
+      "title": "Plateau",
+      "original_release_date": "2026-02-13",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/785ce00c-dd98-4b64-8533-f608b6f3194f"
+      },
+      "discovered_at": "2026-10-02T22:13:46.223338+00:00"
+    },
+    {
       "id": "mb:6a0f0fef-2b7b-45a9-9b3a-6cb46dc761b7",
       "artist": "Little Low",
       "title": "Argh... I'm a Pirate",
@@ -106188,6 +110808,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/1d3f50b6-e3aa-429c-8ea2-12522da85185"
       },
       "discovered_at": "2026-09-28T05:23:48.842306+00:00"
+    },
+    {
+      "id": "mb:575631b6-378d-4ef5-be47-c575023a2fd4",
+      "artist": "Super Furry Animals",
+      "title": "Pocket Sam",
+      "original_release_date": "2026-02-12",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/575631b6-378d-4ef5-be47-c575023a2fd4"
+      },
+      "discovered_at": "2026-10-02T22:13:25.186620+00:00"
     },
     {
       "id": "mb:295e5e11-9442-4a61-8c9e-9c60856f691c",
@@ -108080,6 +112722,204 @@
         "musicbrainz": "https://musicbrainz.org/recording/1b2fc24c-c28d-4190-8ddf-4cdff14e0011"
       },
       "discovered_at": "2026-10-01T13:13:17.773488+00:00"
+    },
+    {
+      "id": "mb:ce77a5ad-8c40-474f-a91d-6874ca172503",
+      "artist": "Munich Syndrome",
+      "title": "To Whom It May Concern",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ce77a5ad-8c40-474f-a91d-6874ca172503"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438526+00:00"
+    },
+    {
+      "id": "mb:973ccc8c-c88a-4da9-8096-279fc189c618",
+      "artist": "Munich Syndrome",
+      "title": "Sensual West End Girls Ambience",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/973ccc8c-c88a-4da9-8096-279fc189c618"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438408+00:00"
+    },
+    {
+      "id": "mb:ebabab4a-f064-4cf1-827a-857aff87bb8d",
+      "artist": "Munich Syndrome",
+      "title": "Sensual Ambience (Paris Movie)",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ebabab4a-f064-4cf1-827a-857aff87bb8d"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438460+00:00"
+    },
+    {
+      "id": "mb:f1ecd693-60cc-41fb-832a-76db1a1c427d",
+      "artist": "Munich Syndrome",
+      "title": "Quiet Atmosphere",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f1ecd693-60cc-41fb-832a-76db1a1c427d"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438489+00:00"
+    },
+    {
+      "id": "mb:078ff904-d8fa-4bf0-bb78-cc7ddb6f8cf6",
+      "artist": "Munich Syndrome",
+      "title": "Lost in You",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/078ff904-d8fa-4bf0-bb78-cc7ddb6f8cf6"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438475+00:00"
+    },
+    {
+      "id": "mb:1b5e2264-4f84-433b-9e1c-ba5cfee9a481",
+      "artist": "Munich Syndrome",
+      "title": "Fragment (Of a Dream) (Quiet)",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1b5e2264-4f84-433b-9e1c-ba5cfee9a481"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438509+00:00"
+    },
+    {
+      "id": "mb:8d2a7516-a4c7-442d-a0d6-19dc085cdd28",
+      "artist": "Munich Syndrome",
+      "title": "Fragment (Of a Dream) (Electric)",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8d2a7516-a4c7-442d-a0d6-19dc085cdd28"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438354+00:00"
+    },
+    {
+      "id": "mb:b3f252c2-1518-43c7-9235-eebde3bcef74",
+      "artist": "Munich Syndrome",
+      "title": "Cathedral (interlude)",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b3f252c2-1518-43c7-9235-eebde3bcef74"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438441+00:00"
+    },
+    {
+      "id": "mb:4d35ecf5-275c-41cc-a479-1ff0fd2f2f65",
+      "artist": "Munich Syndrome",
+      "title": "A Night in Paris",
+      "original_release_date": "2026-02-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4d35ecf5-275c-41cc-a479-1ff0fd2f2f65"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438388+00:00"
     },
     {
       "id": "mb:d7f74793-4369-435d-9bfa-712941a341e1",
@@ -110700,6 +115540,72 @@
       "discovered_at": "2026-09-25T21:32:02.460647+00:00"
     },
     {
+      "id": "mb:38f740d4-b1d7-4df1-bde6-bff974f67fea",
+      "artist": "Patricia Kopatchinskaja, Munich Chamber Orchestra, Clemens Schuldt",
+      "title": "Vont-tér for Violin and Chamber Orchestra",
+      "original_release_date": "2026-01-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/38f740d4-b1d7-4df1-bde6-bff974f67fea"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438632+00:00"
+    },
+    {
+      "id": "mb:e52aa199-bf86-41b7-b096-8f1da55a36f7",
+      "artist": "Nicolas Altstaedt, Munich Chamber Orchestra, Bas Wiegers",
+      "title": "Sírt-tér for Violoncello and Chamber Orchestra",
+      "original_release_date": "2026-01-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e52aa199-bf86-41b7-b096-8f1da55a36f7"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438599+00:00"
+    },
+    {
+      "id": "mb:d7a832dd-5180-4612-85ac-64d8084cac16",
+      "artist": "Munich Chamber Orchestra, Clemens Schuldt",
+      "title": "Rajzok I for String Orchestra",
+      "original_release_date": "2026-01-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d7a832dd-5180-4612-85ac-64d8084cac16"
+      },
+      "discovered_at": "2026-10-02T22:13:34.438567+00:00"
+    },
+    {
       "id": "mb:30200819-d522-4c0d-a3b2-9527d1622a4d",
       "artist": "MEGARA",
       "title": "Karma",
@@ -110962,6 +115868,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/773daf97-2335-4bbe-bcab-3c45598e554e"
       },
       "discovered_at": "2026-09-27T12:03:03.211736+00:00"
+    },
+    {
+      "id": "mb:76291599-041c-4eca-ab03-a3bc07012118",
+      "artist": "Kaskade & The Moth & The Flame",
+      "title": "Haunt Me",
+      "original_release_date": "2026-01-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/76291599-041c-4eca-ab03-a3bc07012118"
+      },
+      "discovered_at": "2026-10-02T22:14:16.395534+00:00"
     },
     {
       "id": "mb:5da99397-c8e1-4864-ab9c-21fb62649b94",
@@ -113230,6 +118158,28 @@
       "discovered_at": "2026-09-26T21:10:48.900799+00:00"
     },
     {
+      "id": "mb:cf7e4612-43df-48c2-a718-ef3693868e34",
+      "artist": "The Rascals",
+      "title": "I Ain’t Gonna Eat My Heart Out Anymore",
+      "original_release_date": "2026-01-23",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cf7e4612-43df-48c2-a718-ef3693868e34"
+      },
+      "discovered_at": "2026-10-02T22:13:14.400850+00:00"
+    },
+    {
       "id": "mb:ec25e602-33b3-4dbf-bab3-e4746207714f",
       "artist": "The Format",
       "title": "Right Where I Belong",
@@ -113499,9 +118449,9 @@
       "title": "The Dog Told Me",
       "original_release_date": "2026-01-23",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "released",
       "download_status": "review",
       "downloaded_at": null,
@@ -114218,6 +119168,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/146e5a14-2d08-4283-879b-a3ded86946dd"
       },
       "discovered_at": "2026-09-28T13:52:57.749010+00:00"
+    },
+    {
+      "id": "mb:dc677e77-d314-4443-b872-5cbb9ec94ac8",
+      "artist": "Vundabar",
+      "title": "Death Punch",
+      "original_release_date": "2026-01-22",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/dc677e77-d314-4443-b872-5cbb9ec94ac8"
+      },
+      "discovered_at": "2026-10-02T22:14:19.623105+00:00"
     },
     {
       "id": "mb:2b3af329-5130-4d6c-bcee-7bd061324044",
@@ -120798,6 +125770,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/875818c7-12c8-4baf-a518-4af77f71e2ba"
       },
       "discovered_at": "2026-09-28T13:53:16.647646+00:00"
+    },
+    {
+      "id": "mb:85c6793e-1bc2-4191-a886-4942120af209",
+      "artist": "Polo & Pan, Yuksek",
+      "title": "Summer Is Almost Over",
+      "original_release_date": "2026",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/85c6793e-1bc2-4191-a886-4942120af209"
+      },
+      "discovered_at": "2026-10-02T22:13:26.737639+00:00"
     },
     {
       "id": "mb:a958a656-5f5f-40a2-afc8-032e5f13feb0",
@@ -128280,6 +133274,28 @@
       "discovered_at": "2026-10-01T13:13:31.503401+00:00"
     },
     {
+      "id": "mb:4021f316-bbac-416c-b9fa-e95d5b0ec9bd",
+      "artist": "HUNT3R DOM",
+      "title": "Pretty When You Lie",
+      "original_release_date": "2026-10-16",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4021f316-bbac-416c-b9fa-e95d5b0ec9bd"
+      },
+      "discovered_at": "2026-10-02T22:13:29.841654+00:00"
+    },
+    {
       "id": "mb:a275c825-18e8-49a3-985c-2d552a2210dd",
       "artist": "Eels",
       "title": "The Way I Was Made",
@@ -129011,9 +134027,9 @@
       "title": "Swept Away",
       "original_release_date": "2026-10-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "upcoming",
       "download_status": "upcoming",
       "downloaded_at": null,
@@ -129033,9 +134049,9 @@
       "title": "Soda Gun",
       "original_release_date": "2026-10-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "upcoming",
       "download_status": "upcoming",
       "downloaded_at": null,
@@ -129055,9 +134071,9 @@
       "title": "Only in My Mind",
       "original_release_date": "2026-10-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "upcoming",
       "download_status": "upcoming",
       "downloaded_at": null,
@@ -129077,9 +134093,9 @@
       "title": "Hard to Believe",
       "original_release_date": "2026-10-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "upcoming",
       "download_status": "upcoming",
       "downloaded_at": null,
@@ -129099,9 +134115,9 @@
       "title": "Deep Pockets",
       "original_release_date": "2026-10-09",
       "original_release_year": 2026,
-      "originality": "review",
+      "originality": "probable_2026",
       "louder_fit": "review",
-      "in_louder_catalog": false,
+      "in_louder_catalog": true,
       "availability": "upcoming",
       "download_status": "upcoming",
       "downloaded_at": null,
@@ -129160,6 +134176,182 @@
       "discovered_at": "2026-10-01T05:52:23.014358+00:00"
     },
     {
+      "id": "mb:a2de1cb4-f3f5-47d7-9ae2-26dd667ebf17",
+      "artist": "Dan Croll",
+      "title": "Winning Streak",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a2de1cb4-f3f5-47d7-9ae2-26dd667ebf17"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985393+00:00"
+    },
+    {
+      "id": "mb:b6e9bd6f-8b23-4810-8989-031db6d0a964",
+      "artist": "Dan Croll",
+      "title": "Peril and the Pain",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b6e9bd6f-8b23-4810-8989-031db6d0a964"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985314+00:00"
+    },
+    {
+      "id": "mb:63577716-a049-4c57-ac8f-55a9b9bab496",
+      "artist": "Dan Croll",
+      "title": "Peace and Quiet",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/63577716-a049-4c57-ac8f-55a9b9bab496"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985300+00:00"
+    },
+    {
+      "id": "mb:8b044247-d36f-4697-9d47-1fe02f7aacae",
+      "artist": "Dan Croll",
+      "title": "One More Time",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8b044247-d36f-4697-9d47-1fe02f7aacae"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985380+00:00"
+    },
+    {
+      "id": "mb:3e1fa86a-d872-4eff-9b3b-e9a0c50ebc88",
+      "artist": "Dan Croll",
+      "title": "Most of All",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3e1fa86a-d872-4eff-9b3b-e9a0c50ebc88"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985222+00:00"
+    },
+    {
+      "id": "mb:4e3a6f57-e400-455a-9bff-faa27c5b8287",
+      "artist": "Dan Croll",
+      "title": "Estate Planning Advisory",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4e3a6f57-e400-455a-9bff-faa27c5b8287"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985367+00:00"
+    },
+    {
+      "id": "mb:cc979a9c-8006-4945-a0e8-28c3e357cc01",
+      "artist": "Dan Croll",
+      "title": "Birdsong",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cc979a9c-8006-4945-a0e8-28c3e357cc01"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985326+00:00"
+    },
+    {
+      "id": "mb:1adf1ca6-d86c-4b5c-ad87-77d9502c8c72",
+      "artist": "Dan Croll",
+      "title": "Best Laid Plans",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "upcoming",
+      "download_status": "upcoming",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1adf1ca6-d86c-4b5c-ad87-77d9502c8c72"
+      },
+      "discovered_at": "2026-10-02T22:14:37.985353+00:00"
+    },
+    {
       "id": "mb:eee17aa5-7cc3-4437-af23-116d4ee2755f",
       "artist": "Wendy Ble",
       "title": "Yo",
@@ -129205,15 +134397,15 @@
     }
   ],
   "stats": {
-    "total": 5870,
-    "released": 5588,
-    "upcoming": 282,
-    "pending": 3310,
+    "total": 6106,
+    "released": 5815,
+    "upcoming": 291,
+    "pending": 3458,
     "downloaded": 0,
     "programmed": 0,
-    "review_queue": 2278,
+    "review_queue": 2357,
     "discarded": 0,
-    "louder_yes": 3530,
-    "review": 2340
+    "louder_yes": 3686,
+    "review": 2420
   }
 }
