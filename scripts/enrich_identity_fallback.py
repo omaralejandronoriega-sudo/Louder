@@ -13,6 +13,7 @@ from urllib.parse import quote, urlparse, unquote
 
 import requests
 import build_artists as ba
+import enrichment_state as es
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTISTS = ROOT / "data" / "artists.json"
@@ -24,7 +25,7 @@ MB_LOOKUP = "https://musicbrainz.org/ws/2/artist/{mbid}"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/page"
 DEEZER_SEARCH = "https://api.deezer.com/search/artist"
-UA = "LouderMX-Identity-Enrichment/1.0 (+https://loudermx.com)"
+UA = "LouderMX-Identity-Enrichment/2.0 (+https://loudermx.com)"
 
 
 def norm(value: str) -> str:
@@ -181,8 +182,10 @@ def main() -> int:
 
     artists = load(ARTISTS, {"artists": []}).get("artists") or []
     galleries = (load(GALLERIES, {"artists": {}}).get("artists") or {})
-    store = load(OUT, {"version": 1, "updated_at": None, "artists": {}})
+    store = load(OUT, {"version": 2, "updated_at": None, "artists": {}})
+    store["version"] = max(int(store.get("version") or 1), 2)
     out = store.setdefault("artists", {})
+    now = es.utcnow()
 
     pending = []
     for artist in artists:
@@ -190,17 +193,13 @@ def main() -> int:
             continue
         slug = str(artist.get("slug") or "").strip()
         name = str(artist.get("name") or "").strip()
-        if not slug or not name:
-            continue
-        if not ba.is_public_artist_candidate(name):
+        if not slug or not name or not ba.is_public_artist_candidate(name):
             continue
         gallery = galleries.get(slug) or {}
-        has_image = bool(str(artist.get("image") or "").strip()) or bool((gallery.get("images") or []))
-        has_bio = bool(str(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en") or "").strip())
-        if has_image and has_bio:
+        if not es.profile_missing_fields(artist, gallery):
             continue
         existing = out.get(slug) or {}
-        if existing and not args.refresh:
+        if not es.is_due(existing, refresh=args.refresh, now=now):
             continue
         pending.append(artist)
 
@@ -227,68 +226,139 @@ def main() -> int:
     mb = Client(1.1)
     wiki = Client(0.35)
     deezer = Client(0.20)
-    print(f"pending={len(pending)}")
+    print(f"identity_due={len(pending)}")
 
     for i, artist in enumerate(pending, start=1):
         slug = str(artist["slug"])
         name = str(artist["name"])
-        now = datetime.now(timezone.utc).isoformat()
-        row: dict[str, Any] = {
+        attempt = es.utcnow()
+        existing = out.get(slug) or {}
+        row: dict[str, Any] = dict(existing)
+        row.update({
             "name": name,
             "verified": False,
-            "status": "not_found",
-            "checked_at": now,
-        }
+            "profile_checked_at": es.iso(attempt),
+            "checked_at": es.iso(attempt),
+        })
         try:
             match = exact_mb_match(mb, name)
-            if not match:
-                row["status"] = "no_exact_musicbrainz"
-            else:
+            mbid = ""
+            canonical = name
+            official = ""
+            social = {"facebook": "", "twitter": "", "instagram": ""}
+            wikipedia = ""
+            genre = ""
+            verification_source = ""
+
+            if match:
                 mbid = str(match.get("id") or "")
                 canonical = str(match.get("name") or name)
-                detail = mb.get(MB_LOOKUP.format(mbid=mbid), params={"inc": "url-rels+aliases+genres", "fmt": "json"}) or {}
+                detail = mb.get(
+                    MB_LOOKUP.format(mbid=mbid),
+                    params={"inc": "url-rels+aliases+genres", "fmt": "json"},
+                ) or {}
                 official, social, wikipedia = relation_urls(detail)
-                w = wikipedia_data(wiki, canonical, wikipedia)
-                fallback_image = w.get("image", "") or deezer_image(deezer, canonical)
-                image_source = "Wikipedia via MusicBrainz" if w.get("image") else ("Deezer exact artist match" if fallback_image else "")
                 genres = detail.get("genres") or []
-                genre = ""
                 if isinstance(genres, list) and genres:
-                    genres = sorted([g for g in genres if isinstance(g, dict)], key=lambda g: int(g.get("count") or 0), reverse=True)
+                    genres = sorted(
+                        [g for g in genres if isinstance(g, dict)],
+                        key=lambda g: int(g.get("count") or 0),
+                        reverse=True,
+                    )
                     if genres:
                         genre = str(genres[0].get("name") or "")
-                row.update({
-                    "verified": True,
-                    "status": "verified",
-                    "musicbrainz_id": mbid,
-                    "canonical_name": canonical,
-                    "match_score": int(match.get("score") or 0),
-                    "verification_source": "MusicBrainz",
-                    "official_url": official,
-                    "social": social,
-                    "genre": genre,
-                    "bio_en": w.get("bio_en", ""),
-                    "image": fallback_image,
-                    "image_source": image_source,
-                    "wikipedia_url": w.get("wikipedia_url", wikipedia),
-                    "checked_at": now,
-                })
-                if norm(canonical) != norm(name):
-                    row["alias_suggestion"] = canonical
+                verification_source = "MusicBrainz"
+
+            # Wikipedia search is also allowed without a MusicBrainz match so
+            # obscure/legacy artists are not permanently blocked on one source.
+            w = wikipedia_data(wiki, canonical, wikipedia)
+            fallback_image = w.get("image", "") or deezer_image(deezer, canonical)
+            image_source = (
+                "Wikipedia" if w.get("image") else
+                ("Deezer exact artist match" if fallback_image else "")
+            )
+            if fallback_image:
+                ok, final_url, _method = es.validate_remote_image(deezer.session, fallback_image)
+                fallback_image = final_url if ok else ""
+
+            row.update({
+                "verified": bool(match or w),
+                "musicbrainz_id": mbid or existing.get("musicbrainz_id", ""),
+                "canonical_name": canonical,
+                "match_score": int(match.get("score") or 0) if match else int(existing.get("match_score") or 0),
+                "verification_source": verification_source or ("Wikipedia" if w else existing.get("verification_source", "")),
+                "official_url": official or existing.get("official_url", ""),
+                "social": social if any(social.values()) else existing.get("social", {}),
+                "genre": genre or existing.get("genre", ""),
+                "bio_en": w.get("bio_en", "") or existing.get("bio_en", ""),
+                "image": fallback_image or existing.get("image", ""),
+                "image_source": image_source or existing.get("image_source", ""),
+                "wikipedia_url": w.get("wikipedia_url", wikipedia) or existing.get("wikipedia_url", ""),
+            })
+            if match and norm(canonical) != norm(name):
+                row["alias_suggestion"] = canonical
+
+            gallery = dict(galleries.get(slug) or {})
+            if row.get("image"):
+                gallery["images"] = [{
+                    "url": row["image"],
+                    "preview": row["image"],
+                    "source": row.get("image_source") or "Identity fallback",
+                    "kind": "portrait",
+                    "valid": True,
+                    "validated_at": es.iso(attempt),
+                }]
+            if row.get("bio_en") and not gallery.get("bio_en"):
+                gallery["bio_en"] = row["bio_en"]
+            for key in ("musicbrainz_id", "official_url", "genre", "wikipedia_url", "verified"):
+                if row.get(key) and not gallery.get(key):
+                    gallery[key] = row[key]
+            if row.get("social") and not gallery.get("social"):
+                gallery["social"] = row["social"]
+
+            status, missing = es.profile_status(artist, gallery)
+            if not match and not w and not fallback_image and not row.get("bio_en"):
+                status = "not_found"
+            row["profile_status"] = status
+            row["status"] = status
+            row["missing_fields"] = missing
+            row["next_retry_at"] = es.next_retry_at(status, attempt)
+            row["attempt_count"] = int(existing.get("attempt_count") or 0) + 1
+            row.pop("error", None)
             out[slug] = row
-            print(f"{i}/{len(pending)} {name} -> {row['status']} image={'yes' if row.get('image') else 'no'} bio={'yes' if row.get('bio_en') else 'no'}")
+            print(
+                f"{i}/{len(pending)} {name} -> {status} "
+                f"image={'yes' if row.get('image') else 'no'} "
+                f"bio={'yes' if row.get('bio_en') else 'no'} "
+                f"missing={','.join(missing) or 'none'}"
+            )
         except Exception as exc:
-            row["status"] = "error"
+            row["profile_status"] = "retry"
+            row["status"] = "retry"
+            row["next_retry_at"] = es.next_retry_at("retry", attempt)
+            row["attempt_count"] = int(existing.get("attempt_count") or 0) + 1
             row["error"] = str(exc)[:300]
             out[slug] = row
-            print(f"{i}/{len(pending)} {name} ERROR {exc}")
+            print(f"{i}/{len(pending)} {name} -> retry ERROR {exc}")
 
         if i % 25 == 0:
-            store["updated_at"] = datetime.now(timezone.utc).isoformat()
+            store["updated_at"] = es.iso(es.utcnow())
             OUT.write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    store["updated_at"] = datetime.now(timezone.utc).isoformat()
+    store["updated_at"] = es.iso(es.utcnow())
     OUT.write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    counts = {"complete": 0, "partial": 0, "retry": 0, "not_found": 0, "legacy": 0}
+    for value in out.values():
+        if not isinstance(value, dict):
+            continue
+        status = str(value.get("profile_status") or "legacy")
+        counts[status if status in counts else "legacy"] += 1
+    print(
+        "identity_result "
+        f"complete={counts['complete']} partial={counts['partial']} "
+        f"retry={counts['retry']} not_found={counts['not_found']} legacy={counts['legacy']}"
+    )
     return 0
 
 
