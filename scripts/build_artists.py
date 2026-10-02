@@ -11,6 +11,8 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
+import enrichment_state as es
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "artists.json"
 GALLERIES = ROOT / "data" / "galleries.json"
@@ -412,6 +414,8 @@ def apply_identity_fallbacks(galleries: dict[str, Any]) -> dict[str, Any]:
                 "preview": image,
                 "source": str(fallback.get("image_source") or "MusicBrainz/Wikipedia"),
                 "kind": "portrait",
+                "valid": True,
+                "validated_at": str(fallback.get("checked_at") or fallback.get("profile_checked_at") or ""),
             }]
             gallery["image_count"] = 1
 
@@ -480,10 +484,7 @@ def apply_reviewed_profile_overrides(galleries: dict[str, Any]) -> dict[str, Any
 
 
 def gallery_images(gallery: dict[str, Any] | None) -> list[dict[str, Any]]:
-    if not isinstance(gallery, dict):
-        return []
-    images = gallery.get("images") or []
-    return [x for x in images if isinstance(x, dict) and x.get("url")][:5]
+    return es.usable_gallery_images(gallery)
 
 
 def preferred_image(artist: dict[str, Any], gallery: dict[str, Any] | None = None) -> str:
@@ -648,7 +649,16 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
         album = str(track.get("album") or "")
         album_key, album_label = track_album_bucket(track)
         cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
-        artwork = str(track.get("artwork") or cached.get("url") or "")
+        # Never render an unvalidated remote cover. Historical track artwork is
+        # validated by enrich_album_art.py and copied into this cache first.
+        artwork = ""
+        if (
+            isinstance(cached, dict)
+            and cached.get("status") == "complete"
+            and cached.get("validated") is True
+            and cached.get("url")
+        ):
+            artwork = str(cached.get("url") or "")
         fallback_cover = (
             f'<span class="cover-fallback" data-missing-cover '
             f'data-artist="{esc(artist.get("name"))}" data-title="{esc(track.get("title"))}">Louder</span>'
@@ -1098,11 +1108,14 @@ def main() -> int:
     for a in artists:
         artist_name = str(a.get("name") or "")
         for track in a.get("tracks") or []:
-            if track.get("artwork"):
-                continue
             album = str(track.get("album") or "").strip()
             cached = album_art.get(album_art_key(artist_name, album), {}) if album else {}
-            if not cached.get("url"):
+            if not (
+                isinstance(cached, dict)
+                and cached.get("status") == "complete"
+                and cached.get("validated") is True
+                and cached.get("url")
+            ):
                 missing_track_art += 1
     print(
         "public_audit "

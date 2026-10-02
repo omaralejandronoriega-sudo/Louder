@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "scripts/enrich_identity_fallback.py"
+      - "scripts/enrichment_state.py"
       - ".github/workflows/artistas-identity-fallback.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -66,3 +67,6 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Report real remaining gaps
+        run: python scripts/audit_artistas.py

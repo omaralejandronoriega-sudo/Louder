@@ -25,6 +25,8 @@ from urllib.parse import quote
 
 import requests
 
+import enrichment_state as es
+
 ROOT = Path(__file__).resolve().parents[1]
 ARTISTS_FILE = ROOT / "data" / "artists.json"
 GALLERIES_FILE = ROOT / "data" / "galleries.json"
@@ -33,7 +35,10 @@ TADB_BASE = "https://www.theaudiodb.com/api/v1/json/123"
 FANART_BASE = "https://webservice.fanart.tv/v3.2/music"
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/page"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary"
-UA = "LouderMX-Artistas-Gallery/1.0 (+https://loudermx.com)"
+DEEZER_SEARCH = "https://api.deezer.com/search/artist"
+LASTFM_API = "https://ws.audioscrobbler.com/2.0/"
+DISCOGS_SEARCH = "https://api.discogs.com/database/search"
+UA = "LouderMX-Artistas-Gallery/2.0 (+https://loudermx.com)"
 
 
 def norm(value: str) -> str:
@@ -212,7 +217,8 @@ def wikipedia_profile(
 
     need_bio = not str(profile.get("bio_es") or profile.get("bio_en") or "").strip()
     need_image = not images
-    if not need_bio and not need_image:
+    need_data = not str(profile.get("lastfm_url") or "").strip()
+    if not need_bio and not need_image and not need_data:
         return images, profile
 
     search = client.get_json(
@@ -295,6 +301,193 @@ def wikipedia_profile(
     return images[:5], profile
 
 
+def deezer_profile(
+    name: str,
+    images: list[dict[str, Any]],
+    profile: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Exact-name Deezer fallback for artists missed by TheAudioDB/Wikipedia."""
+    if images:
+        return images, profile
+    try:
+        r = requests.get(
+            DEEZER_SEARCH,
+            params={"q": name, "limit": 8},
+            headers={"User-Agent": UA},
+            timeout=25,
+        )
+        r.raise_for_status()
+        wanted = norm(name)
+        for row in r.json().get("data") or []:
+            if not isinstance(row, dict) or norm(row.get("name", "")) != wanted:
+                continue
+            for key in ("picture_xl", "picture_big", "picture_medium", "picture"):
+                url = str(row.get(key) or "").strip()
+                if url.startswith("https://"):
+                    add_image(images, {x.get("url", "") for x in images}, url, "Deezer", "portrait", url)
+                    profile.setdefault("verification_source", "Deezer")
+                    return images[:5], profile
+    except Exception:
+        pass
+    return images, profile
+
+
+def lastfm_profile(
+    name: str,
+    api_key: str,
+    images: list[dict[str, Any]],
+    profile: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Optional Last.fm fallback; only exact artist-name matches are accepted."""
+    if not api_key:
+        return images, profile
+    need_bio = not str(profile.get("bio_es") or profile.get("bio_en") or "").strip()
+    need_image = not images
+    if not need_bio and not need_image:
+        return images, profile
+    try:
+        r = requests.get(
+            LASTFM_API,
+            params={"method": "artist.getinfo", "artist": name, "api_key": api_key, "format": "json", "autocorrect": 0},
+            headers={"User-Agent": UA},
+            timeout=25,
+        )
+        r.raise_for_status()
+        row = r.json().get("artist") or {}
+        if not isinstance(row, dict) or norm(row.get("name", "")) != norm(name):
+            return images, profile
+        if need_bio:
+            raw_bio = str(((row.get("bio") or {}).get("summary")) or "").strip()
+            clean_bio = re.sub(r"<[^>]+>", "", raw_bio).strip()
+            if clean_bio:
+                profile["bio_en"] = clean_bio
+        if need_image:
+            for item in reversed(row.get("image") or []):
+                if not isinstance(item, dict):
+                    continue
+                url = str(item.get("#text") or "").strip()
+                if url.startswith("https://") and "2a96cbd8b46e442fc41c2b86b821562f" not in url:
+                    add_image(images, {x.get("url", "") for x in images}, url, "Last.fm", "portrait", url)
+                    break
+        if row.get("url") and not profile.get("lastfm_url"):
+            profile["lastfm_url"] = str(row.get("url"))
+    except Exception:
+        pass
+    return images[:5], profile
+
+
+def discogs_profile(
+    name: str,
+    token: str,
+    images: list[dict[str, Any]],
+    profile: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Optional Discogs fallback for difficult/legacy artists."""
+    if not token:
+        return images, profile
+    need_image = not images
+    need_data = not str(profile.get("website") or "").strip()
+    if not need_image and not need_data:
+        return images, profile
+    headers = {"User-Agent": UA, "Authorization": f"Discogs token={token}"}
+    try:
+        r = requests.get(
+            DISCOGS_SEARCH,
+            params={"q": name, "type": "artist", "per_page": 8},
+            headers=headers,
+            timeout=25,
+        )
+        r.raise_for_status()
+        wanted = norm(name)
+        hit = None
+        for row in r.json().get("results") or []:
+            title = re.sub(r"\s*\(\d+\)\s*$", "", str(row.get("title") or "")).strip()
+            if norm(title) == wanted:
+                hit = row
+                break
+        if not hit or not hit.get("resource_url"):
+            return images, profile
+        d = requests.get(str(hit["resource_url"]), headers=headers, timeout=25)
+        d.raise_for_status()
+        detail = d.json()
+        if need_image:
+            for item in detail.get("images") or []:
+                if not isinstance(item, dict):
+                    continue
+                url = str(item.get("uri") or item.get("resource_url") or "").strip()
+                if url.startswith("https://"):
+                    add_image(images, {x.get("url", "") for x in images}, url, "Discogs", "portrait", url)
+                    break
+        urls = detail.get("urls") or []
+        if urls and not profile.get("website"):
+            profile["website"] = str(urls[0] or "").strip()
+    except Exception:
+        pass
+    return images[:5], profile
+
+
+def validate_images(images: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep only URLs that currently resolve to actual image bytes."""
+    out: list[dict[str, Any]] = []
+    session = requests.Session()
+    session.headers.update({"User-Agent": UA})
+    seen: set[str] = set()
+    for original in images[:8]:
+        if not isinstance(original, dict):
+            continue
+        item = dict(original)
+        ok, final_url, method = es.validate_remote_image(session, item.get("url"))
+        if not ok or final_url in seen:
+            continue
+        item["url"] = final_url
+        preview = str(item.get("preview") or final_url).strip()
+        if preview != final_url:
+            p_ok, p_final, _ = es.validate_remote_image(session, preview)
+            item["preview"] = p_final if p_ok else final_url
+        else:
+            item["preview"] = final_url
+        item["valid"] = True
+        item["validated_at"] = es.iso(es.utcnow())
+        item["validation_method"] = method
+        out.append(item)
+        seen.add(final_url)
+        if len(out) >= 5:
+            break
+    return out
+
+
+def summarize_real_missing(artists: list[dict[str, Any]], galleries: dict[str, Any]) -> dict[str, int]:
+    counts = {
+        "total": 0,
+        "complete": 0,
+        "partial": 0,
+        "retry": 0,
+        "not_found": 0,
+        "legacy": 0,
+        "real_missing_profiles": 0,
+        "missing_image": 0,
+        "missing_bio": 0,
+        "missing_data": 0,
+    }
+    for artist in artists:
+        if not isinstance(artist, dict) or not artist.get("slug"):
+            continue
+        counts["total"] += 1
+        gallery = galleries.get(str(artist.get("slug"))) or {}
+        status = str(gallery.get("profile_status") or "legacy")
+        if status not in counts:
+            status = "legacy"
+        counts[status] += 1
+        missing = es.profile_missing_fields(artist, gallery)
+        if missing:
+            counts["real_missing_profiles"] += 1
+        for field in missing:
+            key = f"missing_{field}"
+            if key in counts:
+                counts[key] += 1
+    return counts
+
+
 def fallback_gallery(artist: dict[str, Any], current: list[dict[str, str]]) -> list[dict[str, str]]:
     if current:
         return current[:5]
@@ -326,80 +519,143 @@ def main() -> int:
 
     gallery_store = load_json(
         GALLERIES_FILE,
-        {"version": 1, "updated_at": None, "artists": {}},
+        {"version": 2, "updated_at": None, "artists": {}},
     )
+    gallery_store["version"] = max(int(gallery_store.get("version") or 1), 2)
     galleries = gallery_store.setdefault("artists", {})
     fanart_key = os.getenv("FANART_TV_API_KEY", "").strip()
+    lastfm_key = os.getenv("LASTFM_API_KEY", "").strip()
+    discogs_token = os.getenv("DISCOGS_TOKEN", "").strip()
     client = RateClient(2.05)
+    now = es.utcnow()
 
     pending = []
     for artist in artists:
-        slug = artist.get("slug")
+        if not isinstance(artist, dict):
+            continue
+        slug = str(artist.get("slug") or "").strip()
         if not slug:
             continue
         existing = galleries.get(slug) or {}
-        # Version 2 also enriches biography/social metadata. Existing gallery
-        # entries are revisited once if they predate this enrichment.
-        if not args.refresh and existing and existing.get("profile_checked_at"):
+        # profile_checked_at records an attempt only. The terminal condition is
+        # profile_status=complete; partial/retry/not_found remain eligible later.
+        if not es.is_due(existing, refresh=args.refresh, now=now):
             continue
         pending.append(artist)
 
     pending.sort(
         key=lambda a: (
-            bool(str(a.get("image") or "").strip()),
+            0 if "yesstreaming_live" in set(a.get("sources") or []) else 1,
             -int(a.get("plays") or 0),
             norm(a.get("name", "")),
         )
     )
-
     if args.limit > 0:
         pending = pending[: args.limit]
 
-    print(f"artists={len(artists)} pending={len(pending)} fanart_tv={'yes' if fanart_key else 'no'}")
+    before = summarize_real_missing(artists, galleries)
+    print(
+        "profile_queue "
+        f"artists={len(artists)} due={len(pending)} "
+        f"real_missing_profiles={before['real_missing_profiles']} "
+        f"missing_image={before['missing_image']} missing_bio={before['missing_bio']} "
+        f"missing_data={before['missing_data']}"
+    )
+    print(
+        "sources "
+        f"theaudiodb=yes fanart_tv={'yes' if fanart_key else 'no'} "
+        f"wikipedia=yes deezer=yes lastfm={'yes' if lastfm_key else 'no'} "
+        f"discogs={'yes' if discogs_token else 'no'}"
+    )
 
     for i, artist in enumerate(pending, start=1):
-        slug = artist["slug"]
+        slug = str(artist["slug"])
+        name = str(artist.get("name") or "")
+        existing = galleries.get(slug) or {}
+        attempt_time = es.utcnow()
         try:
             images, mbid, profile = tadb_gallery(client, artist)
             images = fanart_gallery(mbid, fanart_key, images)
             images, profile = wikipedia_profile(client, artist, images, profile)
+            images, profile = deezer_profile(name, images, profile)
+            images, profile = lastfm_profile(name, lastfm_key, images, profile)
+            images, profile = discogs_profile(name, discogs_token, images, profile)
             images = fallback_gallery(artist, images)
-            now = datetime.now(timezone.utc).isoformat()
-            galleries[slug] = {
-                "name": artist.get("name", ""),
-                "musicbrainz_id": mbid,
+            images = validate_images(images)
+
+            old_images = es.usable_gallery_images(existing)
+            if not images and old_images:
+                images = old_images
+
+            def keep(new_value: Any, old_key: str) -> Any:
+                if isinstance(new_value, str) and new_value.strip():
+                    return new_value
+                if new_value not in (None, "", [], {}):
+                    return new_value
+                return existing.get(old_key, "")
+
+            old_social = existing.get("social") or {}
+            row: dict[str, Any] = {
+                "name": name,
+                "musicbrainz_id": mbid or existing.get("musicbrainz_id", ""),
                 "images": images[:5],
                 "image_count": min(len(images), 5),
-                "bio_es": profile.get("bio_es", ""),
-                "bio_en": profile.get("bio_en", ""),
-                "official_url": profile.get("website", ""),
+                "bio_es": keep(profile.get("bio_es", ""), "bio_es"),
+                "bio_en": keep(profile.get("bio_en", ""), "bio_en"),
+                "official_url": keep(profile.get("website", ""), "official_url"),
                 "social": {
-                    "facebook": profile.get("facebook", ""),
-                    "twitter": profile.get("twitter", ""),
-                    "instagram": profile.get("instagram", ""),
+                    "facebook": profile.get("facebook") or old_social.get("facebook", ""),
+                    "twitter": profile.get("twitter") or old_social.get("twitter", ""),
+                    "instagram": profile.get("instagram") or old_social.get("instagram", ""),
                 },
-                "genre": profile.get("genre", ""),
-                "style": profile.get("style", ""),
-                "country": profile.get("country", ""),
-                "wikipedia_url": profile.get("wikipedia_url", ""),
-                "verified": bool(profile.get("verified")),
-                "verification_source": profile.get("verification_source", ""),
-                "verification_title": profile.get("verification_title", ""),
-                "profile_checked_at": now,
-                "updated_at": now,
+                "genre": keep(profile.get("genre", ""), "genre"),
+                "style": keep(profile.get("style", ""), "style"),
+                "country": keep(profile.get("country", ""), "country"),
+                "wikipedia_url": keep(profile.get("wikipedia_url", ""), "wikipedia_url"),
+                "lastfm_url": keep(profile.get("lastfm_url", ""), "lastfm_url"),
+                "verified": bool(profile.get("verified") or existing.get("verified")),
+                "verification_source": profile.get("verification_source") or existing.get("verification_source", ""),
+                "verification_title": profile.get("verification_title") or existing.get("verification_title", ""),
+                "profile_checked_at": es.iso(attempt_time),
+                "updated_at": es.iso(attempt_time),
             }
+            status, missing = es.profile_status(artist, row)
+            row["profile_status"] = status
+            row["missing_fields"] = missing
+            row["next_retry_at"] = es.next_retry_at(status, attempt_time)
+            row["attempt_count"] = int(existing.get("attempt_count") or 0) + 1
+            row.pop("last_error", None)
+            galleries[slug] = row
             print(
-                f"{i}/{len(pending)} {artist.get('name')} "
-                f"images={len(images[:5])} mbid={'yes' if mbid else 'no'}"
+                f"{i}/{len(pending)} {name} -> {status} "
+                f"missing={','.join(missing) or 'none'} images={len(images)}"
             )
         except Exception as exc:
-            print(f"{i}/{len(pending)} {artist.get('name')}: ERROR {exc}")
+            row = dict(existing)
+            row["name"] = name
+            row["profile_checked_at"] = es.iso(attempt_time)
+            row["profile_status"] = "retry"
+            row["missing_fields"] = es.profile_missing_fields(artist, row)
+            row["next_retry_at"] = es.next_retry_at("retry", attempt_time)
+            row["attempt_count"] = int(existing.get("attempt_count") or 0) + 1
+            row["last_error"] = str(exc)[:300]
+            row["updated_at"] = es.iso(attempt_time)
+            galleries[slug] = row
+            print(f"{i}/{len(pending)} {name} -> retry ERROR {exc}")
 
         if i % 25 == 0:
             save(gallery_store)
 
     save(gallery_store)
-    print("done")
+    after = summarize_real_missing(artists, galleries)
+    print(
+        "profile_result "
+        f"complete={after['complete']} partial={after['partial']} retry={after['retry']} "
+        f"not_found={after['not_found']} legacy={after['legacy']} "
+        f"real_missing_profiles={after['real_missing_profiles']} "
+        f"missing_image={after['missing_image']} missing_bio={after['missing_bio']} "
+        f"missing_data={after['missing_data']}"
+    )
     return 0
 
 

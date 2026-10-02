@@ -7,6 +7,7 @@ on:
       - "data/wp-export/**"
       - "scripts/merge_history_sources.py"
       - "scripts/enrich_galleries.py"
+      - "scripts/enrichment_state.py"
       - ".github/workflows/artistas-gallery.yml"
   schedule:
     - cron: "23 * * * *"
@@ -50,12 +51,14 @@ jobs:
         shell: bash
         env:
           FANART_TV_API_KEY: ${{ secrets.FANART_TV_API_KEY }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
         run: |
           EXTRA=""
           if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
             EXTRA="--refresh"
           fi
-          python scripts/enrich_galleries.py --limit 600 $EXTRA
+          python scripts/enrich_galleries.py --limit 240 $EXTRA
 
       - name: Save gallery metadata
         shell: bash
@@ -71,3 +74,6 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Report real remaining gaps
+        run: python scripts/audit_artistas.py

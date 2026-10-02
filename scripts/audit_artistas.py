@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import build_artists as ba
+import enrichment_state as es
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTISTS = ROOT / "data" / "artists.json"
@@ -59,13 +60,16 @@ def effective_genre(artist: dict[str, Any], gallery: dict[str, Any]) -> bool:
 
 
 def track_has_artwork(artist_name: str, track: dict[str, Any], album_cache: dict[str, Any]) -> bool:
-    if has_text(track.get("artwork")):
-        return True
     album = str(track.get("album") or "").strip()
     if not album:
         return False
     cached = album_cache.get(ba.album_art_key(artist_name, album)) or {}
-    return isinstance(cached, dict) and has_text(cached.get("url"))
+    return bool(
+        isinstance(cached, dict)
+        and cached.get("status") == "complete"
+        and cached.get("validated") is True
+        and has_text(cached.get("url"))
+    )
 
 
 def artist_case(artist: dict[str, Any], gallery: dict[str, Any], album_cache: dict[str, Any]) -> dict[str, Any]:
@@ -83,6 +87,13 @@ def artist_case(artist: dict[str, Any], gallery: dict[str, Any], album_cache: di
         missing.append("first_played")
     if not has_text(artist.get("last_played")):
         missing.append("last_played")
+    profile_missing = es.profile_missing_fields(artist, gallery)
+    stored_profile_status = str(gallery.get("profile_status") or "")
+    effective_profile_status = (
+        stored_profile_status
+        if stored_profile_status in es.STATUSES
+        else ("complete" if not profile_missing else "legacy")
+    )
     return {
         "name": artist.get("name"),
         "slug": artist.get("slug"),
@@ -110,6 +121,9 @@ def artist_case(artist: dict[str, Any], gallery: dict[str, Any], album_cache: di
         "related": len(artist.get("related") or []),
         "missing_core": missing,
         "core_complete": not missing,
+        "profile_status": effective_profile_status,
+        "profile_missing_fields": profile_missing,
+        "profile_complete": not profile_missing,
     }
 
 
@@ -141,6 +155,11 @@ def main() -> int:
 
     status_counts = Counter()
     source_counts = Counter()
+    profile_status_counts = Counter()
+    profile_complete = 0
+    profile_missing_image = 0
+    profile_missing_bio = 0
+    profile_missing_data = 0
 
     for artist in public:
         gallery = gallery_for(galleries, artist)
@@ -148,6 +167,13 @@ def main() -> int:
         rows.append(row)
 
         status_counts[str(artist.get("catalog_status") or "unknown")] += 1
+        profile_status_counts[str(row.get("profile_status") or "legacy")] += 1
+        if row.get("profile_complete"):
+            profile_complete += 1
+        missing_profile_fields = set(row.get("profile_missing_fields") or [])
+        profile_missing_image += int("image" in missing_profile_fields)
+        profile_missing_bio += int("bio" in missing_profile_fields)
+        profile_missing_data += int("data" in missing_profile_fields)
         for source in artist.get("sources") or []:
             source_counts[str(source)] += 1
 
@@ -233,6 +259,14 @@ def main() -> int:
             "history_merge": artist_store.get("history_merge") or {},
         },
         "profile_enrichment": {
+            "real_profile_complete": profile_complete,
+            "real_profile_missing": total - profile_complete,
+            "real_profile_complete_pct": round((profile_complete / total * 100), 2) if total else 0,
+            "profile_status": dict(profile_status_counts.most_common()),
+            "missing_validated_profile_image": profile_missing_image,
+            "missing_profile_bio": profile_missing_bio,
+            "missing_profile_data": profile_missing_data,
+            "profile_definition": "validated image + bio + identity/profile data",
             "core_complete": core_complete,
             "core_complete_pct": round((core_complete / total * 100), 2) if total else 0,
             "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
@@ -286,6 +320,12 @@ def main() -> int:
         "",
         f"- Artistas crudos: {len(raw)}",
         f"- Artistas públicos normalizados: {total}",
+        f"- Perfiles realmente completos: {profile_complete}/{total} ({pct(profile_complete,total)})",
+        f"- Perfiles con faltantes reales: {total-profile_complete}",
+        f"- Estados de enriquecimiento: {dict(profile_status_counts.most_common())}",
+        f"- Sin imagen validada de perfil: {profile_missing_image}",
+        f"- Sin biografía de perfil: {profile_missing_bio}",
+        f"- Sin datos de identidad/perfil: {profile_missing_data}",
         f"- Fichas core completas: {core_complete}/{total} ({pct(core_complete,total)})",
         f"- Con imagen efectiva: {image_effective}/{total} ({pct(image_effective,total)})",
         f"- Sin imagen: {missing_image}",
@@ -317,6 +357,15 @@ def main() -> int:
     print(json.dumps(report["catalog"], ensure_ascii=False))
     print(json.dumps(report["profile_enrichment"], ensure_ascii=False))
     print(json.dumps(report["tracks"], ensure_ascii=False))
+    print(
+        "ACTION_REAL_MISSING "
+        f"profiles={report['profile_enrichment']['real_profile_missing']} "
+        f"image={report['profile_enrichment']['missing_validated_profile_image']} "
+        f"bio={report['profile_enrichment']['missing_profile_bio']} "
+        f"data={report['profile_enrichment']['missing_profile_data']} "
+        f"track_art={report['tracks']['missing_artwork']} "
+        f"states={report['profile_enrichment']['profile_status']}"
+    )
     print(json.dumps(report["focus"], ensure_ascii=False))
     return 0
 

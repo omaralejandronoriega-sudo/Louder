@@ -19,6 +19,8 @@ from urllib.parse import quote
 
 import requests
 
+import enrichment_state as es
+
 ROOT = Path(__file__).resolve().parents[1]
 ARTISTS_FILE = ROOT / "data" / "artists.json"
 ART_FILE = ROOT / "data" / "album_art.json"
@@ -139,9 +141,18 @@ def itunes_art(session: requests.Session, artist: str, album: str) -> tuple[str,
         return "", ""
 
 
+def validated_art(
+    session: requests.Session,
+    url: str,
+) -> tuple[str, str]:
+    ok, final_url, method = es.validate_remote_image(session, url, timeout=20)
+    return (final_url, method) if ok else ("", method)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=150)
+    parser.add_argument("--limit", type=int, default=350)
+    parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args()
 
     artist_store = load(ARTISTS_FILE, {"artists": []})
@@ -149,79 +160,174 @@ def main() -> int:
     if len(artists) < 500:
         raise SystemExit(f"Base Artistas snapshot is not ready: only {len(artists)} artists.")
 
-    store = load(ART_FILE, {"version": 1, "updated_at": None, "albums": {}})
+    store = load(ART_FILE, {"version": 2, "updated_at": None, "albums": {}})
+    store["version"] = max(int(store.get("version") or 1), 2)
     albums = store.setdefault("albums", {})
+    now = es.utcnow()
 
-    pending: list[tuple[str, str]] = []
-    seen: set[str] = set()
+    candidates: dict[str, dict[str, str]] = {}
     for artist in artists:
-        artist_name = str(artist.get("name") or "")
+        artist_name = str(artist.get("name") or "").strip()
         for track in artist.get("tracks") or []:
-            if track.get("artwork"):
+            if not isinstance(track, dict):
                 continue
             album = str(track.get("album") or "").strip()
             if not album or album in {"Álbum no identificado", "Recién incorporada al historial", "Programación YesStreaming"}:
                 continue
             k = key(artist_name, album)
-            existing = albums.get(k) or {}
-            if not k or k in seen or existing.get("url") or existing.get("status") == "not_found_itunes":
+            if not k:
                 continue
-            seen.add(k)
-            pending.append((artist_name, album))
+            row = candidates.setdefault(k, {"artist": artist_name, "album": album, "track_artwork": ""})
+            track_art = str(track.get("artwork") or "").strip()
+            if track_art and not row["track_artwork"]:
+                row["track_artwork"] = track_art
 
+    pending: list[tuple[str, dict[str, str]]] = []
+    for k, candidate in candidates.items():
+        existing = albums.get(k) or {}
+        if es.is_due(existing, refresh=args.refresh, now=now):
+            pending.append((k, candidate))
+
+    pending.sort(key=lambda item: (norm(item[1]["artist"]), norm(item[1]["album"])))
     if args.limit > 0:
         pending = pending[: args.limit]
 
-    print(f"missing_album_art={len(pending)}")
+    status_counts = {"complete": 0, "partial": 0, "retry": 0, "not_found": 0, "legacy": 0}
+    for value in albums.values():
+        if not isinstance(value, dict):
+            continue
+        status = str(value.get("status") or "legacy")
+        status_counts[status if status in status_counts else "legacy"] += 1
+    real_missing_before = sum(
+        1 for k in candidates
+        if not (
+            isinstance(albums.get(k), dict)
+            and albums[k].get("status") == "complete"
+            and albums[k].get("validated") is True
+            and albums[k].get("url")
+        )
+    )
+    print(
+        f"album_art_queue albums={len(candidates)} due={len(pending)} "
+        f"real_missing_album_art={real_missing_before}"
+    )
+
     mb = MusicBrainz()
     session = requests.Session()
+    session.headers.update({"User-Agent": UA})
 
-    for i, (artist, album) in enumerate(pending, start=1):
-        k = key(artist, album)
+    for i, (k, candidate) in enumerate(pending, start=1):
+        artist = candidate["artist"]
+        album = candidate["album"]
+        track_artwork = candidate.get("track_artwork", "")
+        existing = albums.get(k) or {}
+        attempt = es.utcnow()
         try:
-            mbid = mb.search_release_group(artist, album)
-            if mbid and art_exists(session, mbid):
+            final_url = ""
+            validation_method = ""
+            source = ""
+            mbid = str(existing.get("release_group_mbid") or "")
+            matched_album = album
+
+            if track_artwork:
+                final_url, validation_method = validated_art(session, track_artwork)
+                if final_url:
+                    source = "Historical track artwork"
+
+            if not final_url:
+                mbid = mb.search_release_group(artist, album)
+                if mbid and art_exists(session, mbid):
+                    caa_url = f"{CAA}/{mbid}/front-500"
+                    final_url, validation_method = validated_art(session, caa_url)
+                    if final_url:
+                        source = "Cover Art Archive"
+
+            if not final_url:
+                itunes_url, itunes_album = itunes_art(session, artist, album)
+                if itunes_url:
+                    validated, validation_method = validated_art(session, itunes_url)
+                    if validated:
+                        final_url = validated
+                        matched_album = itunes_album or album
+                        source = "iTunes Search"
+
+            if final_url:
+                albums[k] = {
+                    "artist": artist,
+                    "album": matched_album,
+                    "release_group_mbid": mbid,
+                    "url": final_url,
+                    "source": source,
+                    "status": "complete",
+                    "validated": True,
+                    "validated_at": es.iso(attempt),
+                    "validation_method": validation_method,
+                    "checked_at": es.iso(attempt),
+                    "next_retry_at": "",
+                    "attempt_count": int(existing.get("attempt_count") or 0) + 1,
+                    "updated_at": es.iso(attempt),
+                }
+                print(f"{i}/{len(pending)} complete {artist} — {album} [{source}]")
+            else:
+                status = "partial" if mbid else "not_found"
                 albums[k] = {
                     "artist": artist,
                     "album": album,
                     "release_group_mbid": mbid,
-                    "url": f"{CAA}/{mbid}/front-500",
-                    "source": "Cover Art Archive",
-                    "updated_at": datetime.now(timezone.utc).isoformat(),
+                    "url": "",
+                    "source": "MusicBrainz + Cover Art Archive + iTunes",
+                    "status": status,
+                    "validated": False,
+                    "checked_at": es.iso(attempt),
+                    "next_retry_at": es.next_retry_at(status, attempt),
+                    "attempt_count": int(existing.get("attempt_count") or 0) + 1,
+                    "updated_at": es.iso(attempt),
                 }
-                print(f"{i}/{len(pending)} OK {artist} — {album}")
-            else:
-                itunes_url, itunes_album = itunes_art(session, artist, album)
-                if itunes_url:
-                    albums[k] = {
-                        "artist": artist,
-                        "album": itunes_album or album,
-                        "release_group_mbid": mbid,
-                        "url": itunes_url,
-                        "source": "iTunes Search",
-                        "updated_at": datetime.now(timezone.utc).isoformat(),
-                    }
-                    print(f"{i}/{len(pending)} ITUNES {artist} — {album}")
-                else:
-                    albums[k] = {
-                        "artist": artist,
-                        "album": album,
-                        "release_group_mbid": mbid,
-                        "url": "",
-                        "source": "MusicBrainz + iTunes Search",
-                        "status": "not_found_itunes",
-                        "updated_at": datetime.now(timezone.utc).isoformat(),
-                    }
-                    print(f"{i}/{len(pending)} MISS {artist} — {album}")
+                print(f"{i}/{len(pending)} {status} {artist} — {album}")
         except Exception as exc:
-            print(f"{i}/{len(pending)} ERROR {artist} — {album}: {exc}")
+            row = dict(existing)
+            row.update({
+                "artist": artist,
+                "album": album,
+                "status": "retry",
+                "validated": False,
+                "checked_at": es.iso(attempt),
+                "next_retry_at": es.next_retry_at("retry", attempt),
+                "attempt_count": int(existing.get("attempt_count") or 0) + 1,
+                "last_error": str(exc)[:300],
+                "updated_at": es.iso(attempt),
+            })
+            albums[k] = row
+            print(f"{i}/{len(pending)} retry {artist} — {album}: {exc}")
 
         if i % 25 == 0:
-            store["updated_at"] = datetime.now(timezone.utc).isoformat()
+            store["updated_at"] = es.iso(es.utcnow())
             ART_FILE.write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    store["updated_at"] = datetime.now(timezone.utc).isoformat()
+    store["updated_at"] = es.iso(es.utcnow())
     ART_FILE.write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    counts = {"complete": 0, "partial": 0, "retry": 0, "not_found": 0, "legacy": 0}
+    for value in albums.values():
+        if not isinstance(value, dict):
+            continue
+        status = str(value.get("status") or "legacy")
+        counts[status if status in counts else "legacy"] += 1
+    real_missing_after = sum(
+        1 for k in candidates
+        if not (
+            isinstance(albums.get(k), dict)
+            and albums[k].get("status") == "complete"
+            and albums[k].get("validated") is True
+            and albums[k].get("url")
+        )
+    )
+    print(
+        "album_art_result "
+        f"complete={counts['complete']} partial={counts['partial']} retry={counts['retry']} "
+        f"not_found={counts['not_found']} legacy={counts['legacy']} "
+        f"real_missing_album_art={real_missing_after}"
+    )
     return 0
 
 
