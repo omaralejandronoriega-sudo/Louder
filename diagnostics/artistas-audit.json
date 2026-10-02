@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-02T03:17:05.840851+00:00",
+  "generated_at": "2026-10-02T03:19:21.599522+00:00",
   "source_updates": {
-    "artists": "2026-10-02T03:17:00.754658Z",
+    "artists": "2026-10-02T03:19:16.681071Z",
     "galleries": "2026-10-01T23:57:13.496695+00:00",
     "album_art": "2026-10-02T01:48:36.574660+00:00"
   },
   "catalog": {
     "raw_artists": 8038,
-    "public_artists": 7941,
-    "aliases_normalized": 8019,
-    "with_history": 7832,
-    "with_tracks": 7935,
+    "public_artists": 7940,
+    "aliases_normalized": 8018,
+    "with_history": 7831,
+    "with_tracks": 7934,
     "without_tracks": 6,
     "catalog_status": {
       "wp_draft": 4593,
       "unknown": 1681,
-      "history_only": 1326,
+      "history_only": 1325,
       "programmed_only": 201,
       "programmed_history": 88,
       "live_only": 50,
@@ -23,10 +23,10 @@
     },
     "sources": {
       "wp_db": 6275,
-      "lastfm": 5328,
+      "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1078
+      "yesstreaming_live": 1077
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,25 +39,25 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-02T03:17:00.754658Z"
+      "merged_at": "2026-10-02T03:19:16.681071Z"
     }
   },
   "profile_enrichment": {
     "core_complete": 3575,
-    "core_complete_pct": 45.02,
+    "core_complete_pct": 45.03,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 4645,
-    "effective_image_pct": 58.49,
+    "effective_image_pct": 58.5,
     "image_direct_artist": 1648,
     "image_gallery_fallback": 2997,
-    "missing_image": 3296,
+    "missing_image": 3295,
     "effective_bio": 3964,
     "effective_bio_pct": 49.92,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 254,
     "bio_gallery_en": 2684,
-    "missing_bio": 3977,
-    "gallery_checked": 7891,
+    "missing_bio": 3976,
+    "gallery_checked": 7890,
     "gallery_checked_pct": 99.37,
     "gallery_with_images": 4645,
     "with_social": 3067,
@@ -65,12 +65,12 @@
     "with_related": 1600
   },
   "tracks": {
-    "total": 18174,
+    "total": 18172,
     "with_effective_artwork": 14309,
-    "with_effective_artwork_pct": 78.73,
-    "missing_artwork": 3865,
-    "grouped_as_otras": 5878,
-    "with_first_and_last_dates": 17587,
+    "with_effective_artwork_pct": 78.74,
+    "missing_artwork": 3863,
+    "grouped_as_otras": 5876,
+    "with_first_and_last_dates": 17586,
     "album_art_cache_entries": 3094,
     "album_art_cache_found": 2383,
     "album_art_cache_missed": 711
@@ -109,36 +109,6 @@
     }
   },
   "priority_incomplete": [
-    {
-      "name": "Louder",
-      "slug": "louder",
-      "plays": 507,
-      "first_played": "16 ago 2012",
-      "last_played": "1 oct 2026 · 15:29",
-      "catalog_status": "history_only",
-      "sources": [
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false
-    },
     {
       "name": "Francis International Airport",
       "slug": "francis-international-airport",
@@ -3082,24 +3052,22 @@
         "bio"
       ],
       "core_complete": false
-    }
-  ],
-  "priority_missing_image": [
+    },
     {
-      "name": "Louder",
-      "slug": "louder",
-      "plays": 507,
-      "first_played": "16 ago 2012",
-      "last_played": "1 oct 2026 · 15:29",
-      "catalog_status": "history_only",
+      "name": "Marina & the Diamonds",
+      "slug": "marina-the-diamonds",
+      "plays": 43,
+      "first_played": "16 mar 2013",
+      "last_played": "29 jun 2016 · 23:59",
+      "catalog_status": "wp_draft",
       "sources": [
-        "lastfm",
-        "yesstreaming_live"
+        "wp_db",
+        "lastfm"
       ],
-      "tracks": 2,
+      "tracks": 4,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 4,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3114,7 +3082,9 @@
         "bio"
       ],
       "core_complete": false
-    },
+    }
+  ],
+  "priority_missing_image": [
     {
       "name": "Big Deal",
       "slug": "big-deal",
@@ -6090,19 +6060,16 @@
         "bio"
       ],
       "core_complete": false
-    }
-  ],
-  "priority_missing_bio": [
+    },
     {
-      "name": "Louder",
-      "slug": "louder",
-      "plays": 507,
-      "first_played": "16 ago 2012",
-      "last_played": "1 oct 2026 · 15:29",
-      "catalog_status": "history_only",
+      "name": "Cerati",
+      "slug": "cerati",
+      "plays": 31,
+      "first_played": "16 jul 2012",
+      "last_played": "11 ago 2013 · 18:20",
+      "catalog_status": "wp_draft",
       "sources": [
-        "lastfm",
-        "yesstreaming_live"
+        "wp_db"
       ],
       "tracks": 2,
       "tracks_with_artwork": 0,
@@ -6122,7 +6089,9 @@
         "bio"
       ],
       "core_complete": false
-    },
+    }
+  ],
+  "priority_missing_bio": [
     {
       "name": "Francis International Airport",
       "slug": "francis-international-airport",
@@ -9059,6 +9028,36 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false
+    },
+    {
+      "name": "Dan Deacon",
+      "slug": "dan-deacon",
+      "plays": 42,
+      "first_played": "21 mar 2013",
+      "last_played": "28 nov 2025 · 14:35",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 2,
       "has_social": true,
       "has_genre": true,
       "related": 0,
