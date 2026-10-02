@@ -562,6 +562,18 @@ def album_art_key(artist: str, album: str) -> str:
     return norm(artist) + "|" + norm(album)
 
 
+def track_artwork_key(artist: str, track: dict[str, Any]) -> str:
+    album = str(track.get("album") or "").strip()
+    placeholder = {
+        "", "album no identificado", "album desconocido", "unknown album",
+        "recien incorporada al historial", "sin album", "no album",
+        "programacion yesstreaming", "yesstreaming", "programacion", "programming",
+    }
+    if norm(album) in placeholder:
+        return "track|" + norm(artist) + "|" + norm(str(track.get("title") or ""))
+    return album_art_key(artist, album)
+
+
 def track_album_bucket(track: dict[str, Any]) -> tuple[str, str]:
     """Return a clean album bucket; singles/placeholders/technical labels go to Otras."""
     title = canonical_track_title(str(track.get("title") or "")).strip()
@@ -648,7 +660,7 @@ def tracks_html(artist: dict[str, Any], album_art: dict[str, Any]) -> str:
     for track_index, track in enumerate(tracks):
         album = str(track.get("album") or "")
         album_key, album_label = track_album_bucket(track)
-        cached = album_art.get(album_art_key(str(artist.get("name") or ""), album), {})
+        cached = album_art.get(track_artwork_key(str(artist.get("name") or ""), track), {})
         # Never render an unvalidated remote cover. Historical track artwork is
         # validated by enrich_album_art.py and copied into this cache first.
         artwork = ""
@@ -1109,7 +1121,7 @@ def main() -> int:
         artist_name = str(a.get("name") or "")
         for track in a.get("tracks") or []:
             album = str(track.get("album") or "").strip()
-            cached = album_art.get(album_art_key(artist_name, album), {}) if album else {}
+            cached = album_art.get(track_artwork_key(artist_name, track), {})
             if not (
                 isinstance(cached, dict)
                 and cached.get("status") == "complete"
