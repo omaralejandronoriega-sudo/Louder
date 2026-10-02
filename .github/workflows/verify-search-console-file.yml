@@ -23,7 +23,7 @@ jobs:
           CODE="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 "$URL")"
           printf '%s\n' "$BODY" > diagnostics/search-console-verification-body.txt
           python - <<'PY'
-          import json, pathlib
+          import json, pathlib, requests
           import xml.etree.ElementTree as ET
           body=pathlib.Path("diagnostics/search-console-verification-body.txt").read_text().strip()
           parse_ok=True
@@ -35,12 +35,18 @@ jobs:
           except Exception as e:
               parse_ok=False
               error=str(e)
+          g=requests.get("https://artistas.loudermx.com/sitemap.xml",headers={"User-Agent":"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"},timeout=30,allow_redirects=True)
+          rb=requests.get("https://artistas.loudermx.com/robots.txt",headers={"User-Agent":"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"},timeout=30,allow_redirects=True)
           out={
             "url":"https://artistas.loudermx.com/sitemap.xml",
             "parse_ok":parse_ok,
             "url_count":url_count,
             "error":error,
-            "prefix":body[:200]
+            "prefix":body[:200],
+            "googlebot_status":g.status_code,
+            "googlebot_content_type":g.headers.get("content-type"),
+            "robots_status":rb.status_code,
+            "robots":rb.text[:500]
           }
           pathlib.Path("diagnostics/search-console-verification.json").write_text(json.dumps(out,indent=2)+"\n")
           if not parse_ok or url_count < 1:
