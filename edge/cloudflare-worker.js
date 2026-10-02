@@ -1,4 +1,4 @@
-// Louder AI backend v2
+// Louder AI backend v3 — Cloudflare Workers AI free tier
 const PAGES_ORIGIN = "https://artistas.loudermx.com";
 const PAGES_BASE = "";
 const GITHUB_OWNER = "omaralejandronoriega-sudo";
@@ -102,10 +102,10 @@ async function handleAi(request, env) {
     return jsonResponse({ error: "METHOD_NOT_ALLOWED" }, 405, { allow: "POST" });
   }
 
-  if (!env.OPENAI_API_KEY) {
+  if (!env.AI) {
     return jsonResponse({
       error: "AI_NOT_CONFIGURED",
-      message: "Falta configurar OPENAI_API_KEY como secreto del Worker.",
+      message: "Workers AI no está enlazado al Worker.",
     }, 503);
   }
 
@@ -138,56 +138,41 @@ async function handleAi(request, env) {
     return jsonResponse({ error: "EMPTY_MESSAGE" }, 400);
   }
 
-  const body = {
-    model: env.OPENAI_MODEL || "gpt-6-sol",
-    instructions: louderInstructions(task),
-    input: [...history, { role: "user", content: message }],
-    stream: true,
-    store: false,
-    reasoning: { effort: "medium" },
-    text: { verbosity: "medium" },
-    tools: [{ type: "web_search" }],
-    max_tool_calls: 6,
-    max_output_tokens: 5000,
-    safety_identifier: "louder-control-owner",
-  };
+  const messages = [
+    { role: "system", content: louderInstructions(task) },
+    ...history,
+    { role: "user", content: message },
+  ];
 
-  const clientRequestId = crypto.randomUUID();
-  const upstream = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${env.OPENAI_API_KEY}`,
-      "content-type": "application/json",
-      accept: "text/event-stream",
-      "x-client-request-id": clientRequestId,
-    },
-    body: JSON.stringify(body),
-  });
+  try {
+    const stream = await env.AI.run("@cf/zai-org/glm-4.7-flash", {
+      messages,
+      stream: true,
+      max_tokens: 2600,
+      temperature: 0.25,
+      top_p: 0.9,
+    });
 
-  if (!upstream.ok) {
-    let detail = "";
-    try {
-      const err = await upstream.json();
-      detail = err?.error?.message || err?.message || "";
-    } catch (_) {}
+    return new Response(stream, {
+      status: 200,
+      headers: {
+        "content-type": "text/event-stream; charset=utf-8",
+        "cache-control": "no-store",
+        "x-accel-buffering": "no",
+        "x-louder-ai": "cloudflare-workers-ai",
+        "x-louder-model": "@cf/zai-org/glm-4.7-flash",
+      },
+    });
+  } catch (err) {
+    const detail = String(err?.message || err || "");
+    const quota = /neurons|quota|limit|3040|5035|capacity/i.test(detail);
     return jsonResponse({
-      error: "OPENAI_ERROR",
-      status: upstream.status,
-      message: detail || "OpenAI no pudo procesar la solicitud.",
-      request_id: upstream.headers.get("x-request-id") || clientRequestId,
-    }, upstream.status);
+      error: quota ? "FREE_LIMIT_REACHED" : "CLOUDFLARE_AI_ERROR",
+      message: quota
+        ? "Se alcanzó el límite gratuito diario de Louder IA. Se restablece automáticamente con el siguiente ciclo de Cloudflare."
+        : (detail || "Workers AI no pudo procesar la solicitud."),
+    }, quota ? 429 : 502);
   }
-
-  const headers = new Headers(upstream.headers);
-  headers.set("content-type", "text/event-stream; charset=utf-8");
-  headers.set("cache-control", "no-store");
-  headers.set("x-accel-buffering", "no");
-  headers.set("x-louder-ai", "openai-responses");
-  headers.set("x-louder-client-request-id", clientRequestId);
-  return new Response(upstream.body, {
-    status: 200,
-    headers,
-  });
 }
 
 export default {
