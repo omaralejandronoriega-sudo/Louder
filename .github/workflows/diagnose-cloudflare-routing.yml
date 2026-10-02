@@ -1,0 +1,71 @@
+name: Diagnose Louder Cloudflare Routing
+on:
+  push:
+    paths:
+      - ".github/workflows/diagnose-cloudflare-routing.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect Cloudflare zone routing
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          set -e
+          mkdir -p diagnostics
+          python - <<'PY'
+          import json, os, requests
+          token=(os.environ.get("CF_TOKEN") or "").strip()
+          headers={"Authorization":f"Bearer {token}","Content-Type":"application/json"}
+          out={}
+          zr=requests.get("https://api.cloudflare.com/client/v4/zones",params={"name":"loudermx.com"},headers=headers,timeout=30)
+          out["zone_lookup_status"]=zr.status_code
+          try:
+              zj=zr.json()
+          except Exception:
+              zj={}
+          out["zone_success"]=zj.get("success")
+          zones=zj.get("result") or []
+          if zones:
+              zone_id=zones[0].get("id")
+              out["zone_status"]=zones[0].get("status")
+              out["zone_paused"]=zones[0].get("paused")
+              for host in ["loudermx.com","www.loudermx.com"]:
+                  rr=requests.get(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records",params={"name":host},headers=headers,timeout=30)
+                  recs=[]
+                  try:
+                      data=rr.json()
+                      for x in data.get("result") or []:
+                          recs.append({
+                              "name":x.get("name"),
+                              "type":x.get("type"),
+                              "proxied":x.get("proxied"),
+                              "proxiable":x.get("proxiable"),
+                          })
+                      success=data.get("success")
+                  except Exception:
+                      success=False
+                  out.setdefault("dns",{})[host]={"status":rr.status_code,"success":success,"records":recs}
+              wr=requests.get(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/workers/routes",headers=headers,timeout=30)
+              try:
+                  wj=wr.json()
+                  out["routes"]={"status":wr.status_code,"success":wj.get("success"),"items":[{"pattern":x.get("pattern"),"script":x.get("script")} for x in (wj.get("result") or [])]}
+              except Exception:
+                  out["routes"]={"status":wr.status_code,"success":False}
+          open("diagnostics/cloudflare-routing.json","w",encoding="utf-8").write(json.dumps(out,indent=2)+"\n")
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Persist diagnostic
+        run: |
+          git config user.name "louder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add diagnostics/cloudflare-routing.json
+          git commit -m "chore: diagnose Cloudflare routing" || exit 0
+          git pull --rebase origin main
+          git push
