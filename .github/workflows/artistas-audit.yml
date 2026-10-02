@@ -6,6 +6,8 @@ on:
     paths:
       - "scripts/audit_artistas.py"
       - "scripts/audit_artist_identity.py"
+      - "data/identity_enrichment.json"
+      - "data/artist_review_overrides.json"
       - ".github/workflows/artistas-audit.yml"
   workflow_dispatch:
 
