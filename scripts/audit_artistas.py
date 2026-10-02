@@ -122,6 +122,7 @@ def main() -> int:
     public, aliases = ba.prepare_public_artists(raw)
     galleries = gallery_store.get("artists") or {}
     galleries = ba.apply_identity_fallbacks(galleries)
+    galleries = ba.apply_reviewed_profile_overrides(galleries)
     album_cache = art_store.get("albums") or {}
 
     rows = []
