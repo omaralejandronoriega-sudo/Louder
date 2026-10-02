@@ -997,6 +997,7 @@ def main() -> int:
         artist_key(a.get("name", "")): {
             "name": a.get("name", ""),
             "slug": a.get("slug", ""),
+            "plays": int(a.get("plays") or 0),
         }
         for a in artists
         if a.get("name") and a.get("slug")
