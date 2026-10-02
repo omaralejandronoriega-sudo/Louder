@@ -282,11 +282,18 @@ def main() -> int:
                 fallback_image = final_url if ok else ""
 
             row.update({
-                "verified": bool(match or w),
+                # Deezer is accepted only after an exact normalized artist-name match
+                # and the image URL has passed byte-level validation above.
+                "verified": bool(match or w or fallback_image),
                 "musicbrainz_id": mbid or existing.get("musicbrainz_id", ""),
                 "canonical_name": canonical,
                 "match_score": int(match.get("score") or 0) if match else int(existing.get("match_score") or 0),
-                "verification_source": verification_source or ("Wikipedia" if w else existing.get("verification_source", "")),
+                "verification_source": (
+                    verification_source
+                    or ("Wikipedia" if w else "")
+                    or ("Deezer exact artist match" if fallback_image else "")
+                    or existing.get("verification_source", "")
+                ),
                 "official_url": official or existing.get("official_url", ""),
                 "social": social if any(social.values()) else existing.get("social", {}),
                 "genre": genre or existing.get("genre", ""),
