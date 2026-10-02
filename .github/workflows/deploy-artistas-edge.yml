@@ -59,3 +59,29 @@ jobs:
           else
             echo "OPENAI_API_KEY is not configured; skipping optional AI secret."
           fi
+
+      - name: Smoke test OpenAI Responses API
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp)"
+          code="$(curl -sS -o "$tmp" -w '%{http_code}' https://api.openai.com/v1/responses \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"model":"gpt-6-sol","input":"Reply only with OK","store":false,"max_output_tokens":32}')"
+          if [ "$code" != "200" ]; then
+            cat "$tmp"
+            echo
+            echo "OpenAI smoke test failed with HTTP $code"
+            exit 1
+          fi
+          python - "$tmp" <<'PY'
+          import json,sys
+          data=json.load(open(sys.argv[1],encoding="utf-8"))
+          if data.get("status") not in {"completed","in_progress"}:
+              raise SystemExit(f"Unexpected Responses API status: {data.get('status')!r}")
+          print("OpenAI Responses API smoke test: OK")
+          PY
