@@ -18,6 +18,7 @@ ALBUM_ART = ROOT / "data" / "album_art.json"
 ARTIST_REVIEW = ROOT / "data" / "artist_review_overrides.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
+PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
 
 
 def esc(value: Any) -> str:
@@ -630,10 +631,17 @@ def page_shell(
     description: str = "",
     canonical_path: str = "/artistas/",
     social_image: str = "",
+    structured_data: dict[str, Any] | None = None,
 ) -> str:
     asset_prefix = "_assets/" if depth == 1 else "../_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
-    canonical = "https://artistas.loudermx.com" + canonical_path
+    canonical = PUBLIC_ARTISTS_ORIGIN + canonical_path
+    structured_json = (
+        '<script type="application/ld+json">' +
+        json.dumps(structured_data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") +
+        "</script>"
+        if structured_data else ""
+    )
     return f'''<!doctype html>
 <html lang="es-MX">
 <head>
@@ -654,6 +662,7 @@ def page_shell(
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
 {f'<meta name="twitter:image" content="{esc(social_image)}">' if social_image else ''}
+{structured_json}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -875,18 +884,37 @@ def build_artist(
 
     out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
+    track_count = len(artist.get("tracks") or [])
     description = (
-        f"{name} en Louder: canciones registradas, {plays_label(artist.get('plays'))}, "
-        "biografía, primera y última aparición y artistas relacionados."
+        f"Archivo de {name} en Louder: {track_count} canciones, {plays_label(artist.get('plays'))}; "
+        "primera y última aparición, biografía y artistas relacionados."
     )
+    breadcrumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Artistas",
+                "item": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": name,
+            },
+        ],
+    }
     out.write_text(
         page_shell(
-            f"{name}: canciones, biografía y archivo | Louder",
+            f"{name}: canciones e historial | Louder",
             body,
             depth=2,
             description=description,
             canonical_path=f"/artistas/{artist['slug']}/",
             social_image=image,
+            structured_data=breadcrumbs,
         ),
         encoding="utf-8",
     )
@@ -975,7 +1003,7 @@ def main() -> int:
 
     index_payload = {
         "version": 2,
-        "base_url": "https://artistas.loudermx.com/artistas/",
+        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
         "artists": [
             {
                 "name": a.get("name", ""),
@@ -1367,8 +1395,8 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = ["https://artistas.loudermx.com/artistas/"] + [
-        f"https://artistas.loudermx.com/artistas/{a['slug']}/" for a in artists
+    sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/artistas/"] + [
+        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/{a['slug']}/" for a in artists
     ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
