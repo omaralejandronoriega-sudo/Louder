@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-03T05:39:48.743158+00:00",
+  "generated_at": "2026-10-03T11:57:30.997386+00:00",
   "source_updates": {
-    "artists": "2026-10-03T05:39:44.081112Z",
-    "galleries": "2026-10-03T02:27:29.488034+00:00",
-    "album_art": "2026-10-03T00:44:35.384100+00:00"
+    "artists": "2026-10-03T11:57:24.999934Z",
+    "galleries": "2026-10-03T08:38:13.588626+00:00",
+    "album_art": "2026-10-03T07:05:32.688417+00:00"
   },
   "catalog": {
     "raw_artists": 8038,
     "public_artists": 7940,
     "aliases_normalized": 8018,
-    "with_history": 7841,
+    "with_history": 7842,
     "with_tracks": 7934,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1139
+      "yesstreaming_live": 1153
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,53 +39,53 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-03T05:39:44.081112Z"
+      "merged_at": "2026-10-03T11:57:24.999934Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 1008,
-    "real_profile_missing": 6932,
-    "real_profile_complete_pct": 12.7,
+    "real_profile_complete": 1182,
+    "real_profile_missing": 6758,
+    "real_profile_complete_pct": 14.89,
     "profile_status": {
-      "legacy": 6498,
-      "complete": 983,
-      "partial": 385,
-      "not_found": 74
+      "legacy": 6220,
+      "complete": 1154,
+      "partial": 475,
+      "not_found": 91
     },
-    "missing_validated_profile_image": 6554,
-    "missing_profile_bio": 3934,
-    "missing_profile_data": 2842,
+    "missing_validated_profile_image": 6294,
+    "missing_profile_bio": 3915,
+    "missing_profile_data": 2770,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 1480,
-    "core_complete_pct": 18.64,
+    "core_complete": 1540,
+    "core_complete_pct": 19.4,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 1944,
-    "effective_image_pct": 24.48,
+    "effective_image": 2103,
+    "effective_image_pct": 26.49,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 296,
-    "missing_image": 5996,
-    "effective_bio": 4006,
-    "effective_bio_pct": 50.45,
+    "image_gallery_fallback": 455,
+    "missing_image": 5837,
+    "effective_bio": 4025,
+    "effective_bio_pct": 50.69,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 2725,
-    "missing_bio": 3934,
+    "bio_gallery_en": 2744,
+    "missing_bio": 3915,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.37,
-    "gallery_with_images": 1386,
-    "with_social": 3220,
-    "with_genre": 3355,
+    "gallery_with_images": 1646,
+    "with_social": 3279,
+    "with_genre": 3380,
     "with_related": 1600
   },
   "tracks": {
     "total": 18178,
-    "with_effective_artwork": 3674,
-    "with_effective_artwork_pct": 20.21,
-    "missing_artwork": 14504,
+    "with_effective_artwork": 4116,
+    "with_effective_artwork_pct": 22.64,
+    "missing_artwork": 14062,
     "grouped_as_otras": 5882,
-    "with_first_and_last_dates": 17611,
-    "album_art_cache_entries": 5749,
-    "album_art_cache_found": 5036,
+    "with_first_and_last_dates": 17614,
+    "album_art_cache_entries": 6088,
+    "album_art_cache_found": 5375,
     "album_art_cache_missed": 713
   },
   "focus": {
@@ -346,8 +346,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -382,8 +382,8 @@
         "megaseg"
       ],
       "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -590,43 +590,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Helio Sequence",
-      "slug": "the-helio-sequence",
-      "plays": 79,
-      "first_played": "30 dic 2015",
-      "last_played": "1 may 2026 · 12:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Delay Trees",
       "slug": "delay-trees",
       "plays": 74,
@@ -769,44 +732,6 @@
       "profile_complete": false
     },
     {
-      "name": "Holy Ghost",
-      "slug": "holy-ghost",
-      "plays": 70,
-      "first_played": "24 dic 2015",
-      "last_played": "1 may 2026 · 00:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "My Pet Dragon",
       "slug": "my-pet-dragon",
       "plays": 70,
@@ -831,41 +756,6 @@
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Caroline Polachek",
-      "slug": "caroline-polachek",
-      "plays": 67,
-      "first_played": "28 feb 2025",
-      "last_played": "19 jun 2026 · 23:01",
-      "catalog_status": "history_only",
-      "sources": [
-        "megaseg"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 5,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -973,43 +863,6 @@
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Anteros",
-      "slug": "anteros",
-      "plays": 65,
-      "first_played": "22 may 2016",
-      "last_played": "30 abr 2026 · 18:25",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -1740,8 +1593,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -1845,8 +1698,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 3,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -2374,8 +2227,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -2423,43 +2276,6 @@
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Snakadaktal",
-      "slug": "snakadaktal",
-      "plays": 47,
-      "first_played": "20 mar 2013",
-      "last_played": "1 may 2026 · 10:06",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -2591,8 +2407,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -3102,8 +2918,8 @@
         "lastfm"
       ],
       "tracks": 8,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
+      "tracks_with_artwork": 8,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -3137,8 +2953,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -3428,8 +3244,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -3741,6 +3557,188 @@
         "image"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "Bonsur",
+      "slug": "bonsur",
+      "plays": 43,
+      "first_played": "16 jul 2012",
+      "last_played": "10 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Marina & the Diamonds",
+      "slug": "marina-the-diamonds",
+      "plays": 43,
+      "first_played": "16 mar 2013",
+      "last_played": "29 jun 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 4,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Texas",
+      "slug": "texas",
+      "plays": 43,
+      "first_played": "20 jul 2012",
+      "last_played": "26 feb 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Kills",
+      "slug": "the-kills",
+      "plays": 43,
+      "first_played": "14 jul 2012",
+      "last_played": "23 abr 2026 · 02:36",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 6,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 6,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Psychedelic Furs",
+      "slug": "the-psychedelic-furs",
+      "plays": 43,
+      "first_played": "21 jul 2012",
+      "last_played": "3 sep 2022 · 06:26",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 6,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 6,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_image": [
@@ -3792,8 +3790,8 @@
         "megaseg"
       ],
       "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -3930,43 +3928,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Helio Sequence",
-      "slug": "the-helio-sequence",
-      "plays": 79,
-      "first_played": "30 dic 2015",
-      "last_played": "1 may 2026 · 12:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Fields",
       "slug": "fields",
       "plays": 70,
@@ -4003,79 +3964,6 @@
       "profile_complete": false
     },
     {
-      "name": "Holy Ghost",
-      "slug": "holy-ghost",
-      "plays": 70,
-      "first_played": "24 dic 2015",
-      "last_played": "1 may 2026 · 00:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Caroline Polachek",
-      "slug": "caroline-polachek",
-      "plays": 67,
-      "first_played": "28 feb 2025",
-      "last_played": "19 jun 2026 · 23:01",
-      "catalog_status": "history_only",
-      "sources": [
-        "megaseg"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 5,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Citizens!",
       "slug": "citizens",
       "plays": 66,
@@ -4091,43 +3979,6 @@
       "tracks_with_artwork": 5,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Anteros",
-      "slug": "anteros",
-      "plays": 65,
-      "first_played": "22 may 2016",
-      "last_played": "30 abr 2026 · 18:25",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4906,45 +4757,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Snakadaktal",
-      "slug": "snakadaktal",
-      "plays": 47,
-      "first_played": "20 mar 2013",
-      "last_played": "1 may 2026 · 10:06",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -5052,8 +4866,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -5490,8 +5304,8 @@
         "lastfm"
       ],
       "tracks": 8,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
+      "tracks_with_artwork": 8,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -5525,8 +5339,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -5816,8 +5630,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -6385,43 +6199,6 @@
       "profile_complete": false
     },
     {
-      "name": "Chromatics",
-      "slug": "chromatics",
-      "plays": 42,
-      "first_played": "31 dic 2012",
-      "last_played": "30 abr 2026 · 23:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Dan Deacon",
       "slug": "dan-deacon",
       "plays": 42,
@@ -6470,8 +6247,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6719,8 +6496,8 @@
         "wp_db"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6811,41 +6588,6 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Beth Gibbons",
-      "slug": "beth-gibbons",
-      "plays": 40,
-      "first_played": "2 mar 2025",
-      "last_played": "1 may 2026 · 19:29",
-      "catalog_status": "history_only",
-      "sources": [
-        "megaseg"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -7284,43 +7026,6 @@
       "profile_complete": false
     },
     {
-      "name": "Angus & Julia Stone",
-      "slug": "angus-julia-stone",
-      "plays": 39,
-      "first_played": "20 jul 2012",
-      "last_played": "1 may 2026 · 03:05",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Champions",
       "slug": "champions",
       "plays": 39,
@@ -7354,6 +7059,295 @@
         "image",
         "bio",
         "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Coucheron",
+      "slug": "coucheron",
+      "plays": 39,
+      "first_played": "28 sep 2014",
+      "last_played": "2 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Creed",
+      "slug": "creed",
+      "plays": 39,
+      "first_played": "17 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "David Byrne & St. Vincent",
+      "slug": "david-byrne-st-vincent",
+      "plays": 39,
+      "first_played": "28 dic 2012",
+      "last_played": "28 mar 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Metallica",
+      "slug": "metallica",
+      "plays": 39,
+      "first_played": "3 ago 2012",
+      "last_played": "9 ago 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 15,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 15,
+      "tracks_in_otras": 4,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Panama",
+      "slug": "panama",
+      "plays": 39,
+      "first_played": "29 dic 2012",
+      "last_played": "23 nov 2025 · 15:30",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "megaseg",
+        "wp_db"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 5,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Paul Weller",
+      "slug": "paul-weller",
+      "plays": 39,
+      "first_played": "29 abr 2013",
+      "last_played": "22 jun 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 5,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Sugarplum Fairy",
+      "slug": "sugarplum-fairy",
+      "plays": 39,
+      "first_played": "27 mar 2013",
+      "last_played": "4 mar 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Depreciation Guild",
+      "slug": "the-depreciation-guild",
+      "plays": 39,
+      "first_played": "20 jul 2012",
+      "last_played": "30 jul 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
       ],
       "profile_complete": false
     }
@@ -7516,8 +7510,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -7552,8 +7546,8 @@
         "megaseg"
       ],
       "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -7760,43 +7754,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Helio Sequence",
-      "slug": "the-helio-sequence",
-      "plays": 79,
-      "first_played": "30 dic 2015",
-      "last_played": "1 may 2026 · 12:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Delay Trees",
       "slug": "delay-trees",
       "plays": 74,
@@ -7939,44 +7896,6 @@
       "profile_complete": false
     },
     {
-      "name": "Holy Ghost",
-      "slug": "holy-ghost",
-      "plays": 70,
-      "first_played": "24 dic 2015",
-      "last_played": "1 may 2026 · 00:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "My Pet Dragon",
       "slug": "my-pet-dragon",
       "plays": 70,
@@ -8001,41 +7920,6 @@
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Caroline Polachek",
-      "slug": "caroline-polachek",
-      "plays": 67,
-      "first_played": "28 feb 2025",
-      "last_played": "19 jun 2026 · 23:01",
-      "catalog_status": "history_only",
-      "sources": [
-        "megaseg"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 5,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -8143,43 +8027,6 @@
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Anteros",
-      "slug": "anteros",
-      "plays": 65,
-      "first_played": "22 may 2016",
-      "last_played": "30 abr 2026 · 18:25",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -8774,8 +8621,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -8879,8 +8726,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 3,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -9274,8 +9121,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -9323,43 +9170,6 @@
       "has_genre": true,
       "related": 10,
       "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Snakadaktal",
-      "slug": "snakadaktal",
-      "plays": 47,
-      "first_played": "20 mar 2013",
-      "last_played": "1 may 2026 · 10:06",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
@@ -9491,8 +9301,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -9969,8 +9779,8 @@
         "megaseg"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -10226,8 +10036,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -10727,43 +10537,6 @@
       "profile_complete": false
     },
     {
-      "name": "Chromatics",
-      "slug": "chromatics",
-      "plays": 42,
-      "first_played": "31 dic 2012",
-      "last_played": "30 abr 2026 · 23:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Dan Deacon",
       "slug": "dan-deacon",
       "plays": 42,
@@ -10812,8 +10585,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10978,6 +10751,224 @@
       "profile_missing_fields": [
         "image",
         "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "High Highs",
+      "slug": "high-highs",
+      "plays": 41,
+      "first_played": "21 mar 2013",
+      "last_played": "23 mar 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "wp_db"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Republic of Letters",
+      "slug": "republic-of-letters",
+      "plays": 41,
+      "first_played": "26 mar 2013",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Faith No More",
+      "slug": "faith-no-more",
+      "plays": 40,
+      "first_played": "30 jul 2012",
+      "last_played": "4 ene 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 8,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Givers",
+      "slug": "givers",
+      "plays": 40,
+      "first_played": "21 jul 2012",
+      "last_played": "12 nov 2025 · 00:17",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Jessica Pratt",
+      "slug": "jessica-pratt",
+      "plays": 40,
+      "first_played": "2 mar 2025",
+      "last_played": "23 abr 2026 · 07:40",
+      "catalog_status": "history_only",
+      "sources": [
+        "megaseg"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Mark McGuire",
+      "slug": "mark-mcguire",
+      "plays": 40,
+      "first_played": "27 jul 2012",
+      "last_played": "21 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
       ],
       "profile_complete": false
     }
