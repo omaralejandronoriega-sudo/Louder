@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T21:42:10.514575+00:00",
+  "generated_at": "2026-10-04T06:15:41.276282+00:00",
   "source_updates": {
-    "artists": "2026-10-03T21:42:05.027053Z",
-    "galleries": "2026-10-03T18:24:25.667357+00:00",
-    "album_art": "2026-10-03T20:12:25.007649+00:00"
+    "artists": "2026-10-04T06:15:35.536593Z",
+    "galleries": "2026-10-04T01:06:05.683502+00:00",
+    "album_art": "2026-10-04T02:52:03.387271+00:00"
   },
   "catalog": {
     "raw_artists": 8038,
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1165
+      "yesstreaming_live": 1176
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,53 +39,53 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-03T21:42:05.027053Z"
+      "merged_at": "2026-10-04T06:15:35.536593Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 1486,
-    "real_profile_missing": 6454,
-    "real_profile_complete_pct": 18.72,
+    "real_profile_complete": 1671,
+    "real_profile_missing": 6269,
+    "real_profile_complete_pct": 21.05,
     "profile_status": {
-      "legacy": 5729,
-      "complete": 1434,
-      "partial": 641,
-      "not_found": 136
+      "legacy": 5302,
+      "complete": 1609,
+      "partial": 830,
+      "not_found": 199
     },
-    "missing_validated_profile_image": 5831,
-    "missing_profile_bio": 3861,
-    "missing_profile_data": 2619,
+    "missing_validated_profile_image": 5511,
+    "missing_profile_bio": 3848,
+    "missing_profile_data": 2499,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 1803,
-    "core_complete_pct": 22.71,
+    "core_complete": 1976,
+    "core_complete_pct": 24.89,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 2523,
-    "effective_image_pct": 31.78,
+    "effective_image": 2831,
+    "effective_image_pct": 35.65,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 875,
-    "missing_image": 5417,
-    "effective_bio": 4079,
-    "effective_bio_pct": 51.37,
+    "image_gallery_fallback": 1183,
+    "missing_image": 5109,
+    "effective_bio": 4092,
+    "effective_bio_pct": 51.54,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 2798,
-    "missing_bio": 3861,
+    "bio_gallery_en": 2811,
+    "missing_bio": 3848,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.37,
-    "gallery_with_images": 2109,
-    "with_social": 3413,
-    "with_genre": 3418,
+    "gallery_with_images": 2429,
+    "with_social": 3492,
+    "with_genre": 3442,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18178,
-    "with_effective_artwork": 5442,
-    "with_effective_artwork_pct": 29.94,
-    "missing_artwork": 12736,
-    "grouped_as_otras": 5882,
-    "with_first_and_last_dates": 17620,
-    "album_art_cache_entries": 7107,
-    "album_art_cache_found": 6393,
+    "total": 18179,
+    "with_effective_artwork": 6384,
+    "with_effective_artwork_pct": 35.12,
+    "missing_artwork": 11795,
+    "grouped_as_otras": 5883,
+    "with_first_and_last_dates": 17627,
+    "album_art_cache_entries": 7785,
+    "album_art_cache_found": 7071,
     "album_art_cache_missed": 714
   },
   "focus": {
@@ -134,8 +134,8 @@
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "gallery",
@@ -154,41 +154,6 @@
     }
   },
   "priority_incomplete": [
-    {
-      "name": "Belle and Sebastian",
-      "slug": "belle-and-sebastian",
-      "plays": 275,
-      "first_played": "22 jul 2012",
-      "last_played": "10 nov 2025 · 19:17",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 21,
-      "tracks_with_artwork": 18,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
     {
       "name": "Francis International Airport",
       "slug": "francis-international-airport",
@@ -370,6 +335,44 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker",
+      "slug": "nick-murphy-chet-faker",
+      "plays": 91,
+      "first_played": "14 jul 2022",
+      "last_played": "3 oct 2026 · 16:27",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Unisex",
       "slug": "the-unisex",
       "plays": 91,
@@ -436,44 +439,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker",
-      "slug": "nick-murphy-chet-faker",
-      "plays": 90,
-      "first_played": "14 jul 2022",
-      "last_played": "30 sep 2026 · 13:25",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -563,8 +528,8 @@
         "yesstreaming"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -668,8 +633,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -738,8 +703,8 @@
         "lastfm"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -879,8 +844,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -949,8 +914,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -1126,8 +1091,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -2255,8 +2220,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -2293,8 +2258,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "gallery",
@@ -2706,2334 +2671,6 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Mars Volta",
-      "slug": "the-mars-volta",
-      "plays": 45,
-      "first_played": "22 jul 2012",
-      "last_played": "10 sep 2022 · 02:00",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Alert New London",
-      "slug": "alert-new-london",
-      "plays": 44,
-      "first_played": "14 jul 2012",
-      "last_played": "30 jul 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Brasstronaut",
-      "slug": "brasstronaut",
-      "plays": 44,
-      "first_played": "21 jul 2012",
-      "last_played": "2 dic 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Future Unlimited",
-      "slug": "future-unlimited",
-      "plays": 44,
-      "first_played": "5 sep 2012",
-      "last_played": "24 ago 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Hey Champ",
-      "slug": "hey-champ",
-      "plays": 44,
-      "first_played": "22 jul 2012",
-      "last_played": "27 jul 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "I Blame Coco",
-      "slug": "i-blame-coco",
-      "plays": 44,
-      "first_played": "28 jul 2012",
-      "last_played": "7 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "I Break Horses",
-      "slug": "i-break-horses",
-      "plays": 44,
-      "first_played": "30 oct 2012",
-      "last_played": "26 dic 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "lastfm",
-        "wp_db"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Islands",
-      "slug": "islands",
-      "plays": 44,
-      "first_played": "15 mar 2013",
-      "last_played": "14 jul 2022 · 12:40",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "New Wine",
-      "slug": "new-wine",
-      "plays": 44,
-      "first_played": "23 jul 2012",
-      "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Ski Lodge",
-      "slug": "ski-lodge",
-      "plays": 44,
-      "first_played": "22 mar 2013",
-      "last_played": "22 feb 2017 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "lastfm",
-        "wp_db"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Skillet",
-      "slug": "skillet",
-      "plays": 44,
-      "first_played": "16 jul 2012",
-      "last_played": "22 jul 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Tears for Fears",
-      "slug": "tears-for-fears",
-      "plays": 44,
-      "first_played": "18 ago 2012",
-      "last_played": "3 feb 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bonsur",
-      "slug": "bonsur",
-      "plays": 43,
-      "first_played": "16 jul 2012",
-      "last_played": "10 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Marina & the Diamonds",
-      "slug": "marina-the-diamonds",
-      "plays": 43,
-      "first_played": "16 mar 2013",
-      "last_played": "29 jun 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Texas",
-      "slug": "texas",
-      "plays": 43,
-      "first_played": "20 jul 2012",
-      "last_played": "26 feb 2017 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Psychedelic Furs",
-      "slug": "the-psychedelic-furs",
-      "plays": 43,
-      "first_played": "21 jul 2012",
-      "last_played": "3 sep 2022 · 06:26",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Vacationer",
-      "slug": "vacationer",
-      "plays": 43,
-      "first_played": "29 dic 2012",
-      "last_played": "11 ago 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "A Lull",
-      "slug": "a-lull",
-      "plays": 42,
-      "first_played": "22 jul 2012",
-      "last_played": "6 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Here We Go Magic",
-      "slug": "here-we-go-magic",
-      "plays": 42,
-      "first_played": "26 ago 2012",
-      "last_played": "11 ene 2017 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Los Planetas",
-      "slug": "los-planetas",
-      "plays": 42,
-      "first_played": "20 jul 2012",
-      "last_played": "14 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pepper",
-      "slug": "pepper",
-      "plays": 42,
-      "first_played": "22 jul 2012",
-      "last_played": "20 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Sea Wolf",
-      "slug": "sea-wolf",
-      "plays": 42,
-      "first_played": "14 jul 2012",
-      "last_played": "17 dic 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Asteroids Galaxy Tour",
-      "slug": "the-asteroids-galaxy-tour",
-      "plays": 42,
-      "first_played": "24 jul 2012",
-      "last_played": "26 jul 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Dinosaur Jr.",
-      "slug": "dinosaur-jr",
-      "plays": 41,
-      "first_played": "22 jul 2012",
-      "last_played": "31 dic 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 6,
-      "tracks_with_artwork": 6,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "High Highs",
-      "slug": "high-highs",
-      "plays": 41,
-      "first_played": "21 mar 2013",
-      "last_played": "23 mar 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "lastfm",
-        "wp_db"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Republic of Letters",
-      "slug": "republic-of-letters",
-      "plays": 41,
-      "first_played": "26 mar 2013",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Astro",
-      "slug": "astro",
-      "plays": 40,
-      "first_played": "19 jul 2012",
-      "last_played": "22 mar 2017 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Black Sabbath",
-      "slug": "black-sabbath",
-      "plays": 40,
-      "first_played": "18 ago 2012",
-      "last_played": "12 dic 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 6,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    }
-  ],
-  "priority_missing_image": [
-    {
-      "name": "Belle and Sebastian",
-      "slug": "belle-and-sebastian",
-      "plays": 275,
-      "first_played": "22 jul 2012",
-      "last_played": "10 nov 2025 · 19:17",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 21,
-      "tracks_with_artwork": 18,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker",
-      "slug": "nick-murphy-chet-faker",
-      "plays": 90,
-      "first_played": "14 jul 2022",
-      "last_played": "30 sep 2026 · 13:25",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Noel Gallagher & High Flying Birds",
-      "slug": "noel-gallagher-high-flying-birds",
-      "plays": 82,
-      "first_played": "15 oct 2012",
-      "last_played": "17 dic 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Fields",
-      "slug": "fields",
-      "plays": 70,
-      "first_played": "14 jul 2012",
-      "last_played": "26 nov 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 5,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Popcult",
-      "slug": "popcult",
-      "plays": 63,
-      "first_played": "26 mar 2013",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Michael Franti & Spearhead",
-      "slug": "michael-franti-spearhead",
-      "plays": 62,
-      "first_played": "14 jul 2012",
-      "last_played": "4 mar 2013 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 6,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Eagle Seagull",
-      "slug": "eagle-seagull",
-      "plays": 61,
-      "first_played": "22 jul 2012",
-      "last_played": "13 feb 2017 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "James & Evander",
-      "slug": "james-evander",
-      "plays": 59,
-      "first_played": "21 jul 2012",
-      "last_played": "14 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Los Impostors",
-      "slug": "los-impostors",
-      "plays": 59,
-      "first_played": "21 jul 2012",
-      "last_played": "16 sep 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Your Nature",
-      "slug": "your-nature",
-      "plays": 59,
-      "first_played": "16 jul 2012",
-      "last_played": "4 mar 2013 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 4,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Windupdeads",
-      "slug": "the-windupdeads",
-      "plays": 58,
-      "first_played": "28 mar 2013",
-      "last_played": "15 ene 2015 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bad Lieutenant",
-      "slug": "bad-lieutenant",
-      "plays": 54,
-      "first_played": "20 jul 2012",
-      "last_played": "9 feb 2016 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Broadcast 2000",
-      "slug": "broadcast-2000",
-      "plays": 54,
-      "first_played": "14 jul 2012",
-      "last_played": "4 mar 2013 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CeeLo Green",
-      "slug": "ceelo-green",
-      "plays": 54,
-      "first_played": "16 jul 2012",
-      "last_played": "5 jul 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 4,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Chief Warrant Officer",
-      "slug": "chief-warrant-officer",
-      "plays": 54,
-      "first_played": "22 abr 2013",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 4,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "AC/DC",
-      "slug": "ac-dc",
-      "plays": 52,
-      "first_played": "20 jul 2012",
-      "last_played": "18 feb 2014 · 23:59",
-      "catalog_status": "history_only",
-      "sources": [
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "DC",
-      "slug": "dc",
-      "plays": 52,
-      "first_played": "20 jul 2012",
-      "last_played": "17 feb 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 7,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "A Freudian Slip",
-      "slug": "a-freudian-slip",
-      "plays": 51,
-      "first_played": "16 jul 2012",
-      "last_played": "4 mar 2013 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "April Smith and The Great Picture Show",
-      "slug": "april-smith-and-the-great-picture-show",
-      "plays": 51,
-      "first_played": "16 jul 2012",
-      "last_played": "4 mar 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Enemy",
-      "slug": "enemy",
-      "plays": 51,
-      "first_played": "16 jul 2012",
-      "last_played": "21 feb 2013 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 5,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Teddybears",
-      "slug": "teddybears",
-      "plays": 51,
-      "first_played": "22 jul 2012",
-      "last_played": "6 ago 2016 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "artist",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "[unknown]",
-      "slug": "unknown",
-      "plays": 50,
-      "first_played": "11 dic 2012",
-      "last_played": "22 feb 2017 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 37,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 37,
-      "tracks_in_otras": 37,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": true,
-      "related": 3,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Freelance Whales",
-      "slug": "freelance-whales",
-      "plays": 46,
-      "first_played": "21 jul 2012",
-      "last_played": "29 ene 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Germán Pujol",
-      "slug": "german-pujol",
-      "plays": 46,
-      "first_played": "20 may 2013",
-      "last_played": "14 jun 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Guster",
-      "slug": "guster",
-      "plays": 46,
-      "first_played": "24 jul 2012",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Made in Japan",
-      "slug": "made-in-japan",
-      "plays": 46,
-      "first_played": "22 oct 2012",
-      "last_played": "5 ago 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Plastilina Mosh",
-      "slug": "plastilina-mosh",
-      "plays": 46,
-      "first_played": "28 jul 2012",
-      "last_played": "17 oct 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "School of Seven Bells",
-      "slug": "school-of-seven-bells",
-      "plays": 46,
-      "first_played": "23 jul 2012",
-      "last_played": "11 ene 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Slash",
-      "slug": "slash",
-      "plays": 46,
-      "first_played": "24 jul 2012",
-      "last_played": "30 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 9,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 9,
-      "tracks_in_otras": 7,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Spacehog",
-      "slug": "spacehog",
-      "plays": 46,
-      "first_played": "17 jul 2012",
-      "last_played": "3 ago 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Telefunka",
-      "slug": "telefunka",
-      "plays": 46,
-      "first_played": "13 sep 2012",
-      "last_played": "22 dic 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Fucking Fat Porns",
-      "slug": "the-fucking-fat-porns",
-      "plays": 46,
-      "first_played": "16 ene 2013",
-      "last_played": "17 sep 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
-      "tracks_in_otras": 8,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "BEAT!BEAT!BEAT!",
-      "slug": "beatbeatbeat",
-      "plays": 45,
-      "first_played": "28 jul 2012",
-      "last_played": "24 ene 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Cameras",
-      "slug": "cameras",
-      "plays": 45,
-      "first_played": "5 ago 2012",
-      "last_played": "2 feb 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Guns N' Roses",
-      "slug": "guns-n-roses",
-      "plays": 45,
-      "first_played": "20 jul 2012",
-      "last_played": "4 ene 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 8,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Doors",
-      "slug": "the-doors",
-      "plays": 45,
-      "first_played": "17 ago 2012",
-      "last_played": "2 dic 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 9,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 9,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Mars Volta",
-      "slug": "the-mars-volta",
-      "plays": 45,
-      "first_played": "22 jul 2012",
-      "last_played": "10 sep 2022 · 02:00",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -6054,8 +3691,2300 @@
         "lastfm"
       ],
       "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    }
+  ],
+  "priority_missing_image": [
+    {
+      "name": "Nick Murphy / Chet Faker",
+      "slug": "nick-murphy-chet-faker",
+      "plays": 91,
+      "first_played": "14 jul 2022",
+      "last_played": "3 oct 2026 · 16:27",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Noel Gallagher & High Flying Birds",
+      "slug": "noel-gallagher-high-flying-birds",
+      "plays": 82,
+      "first_played": "15 oct 2012",
+      "last_played": "17 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 4,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Fields",
+      "slug": "fields",
+      "plays": 70,
+      "first_played": "14 jul 2012",
+      "last_played": "26 nov 2014 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 5,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Popcult",
+      "slug": "popcult",
+      "plays": 63,
+      "first_played": "26 mar 2013",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Michael Franti & Spearhead",
+      "slug": "michael-franti-spearhead",
+      "plays": 62,
+      "first_played": "14 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 6,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Eagle Seagull",
+      "slug": "eagle-seagull",
+      "plays": 61,
+      "first_played": "22 jul 2012",
+      "last_played": "13 feb 2017 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "James & Evander",
+      "slug": "james-evander",
+      "plays": 59,
+      "first_played": "21 jul 2012",
+      "last_played": "14 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Los Impostors",
+      "slug": "los-impostors",
+      "plays": 59,
+      "first_played": "21 jul 2012",
+      "last_played": "16 sep 2014 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Your Nature",
+      "slug": "your-nature",
+      "plays": 59,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 4,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Windupdeads",
+      "slug": "the-windupdeads",
+      "plays": 58,
+      "first_played": "28 mar 2013",
+      "last_played": "15 ene 2015 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Bad Lieutenant",
+      "slug": "bad-lieutenant",
+      "plays": 54,
+      "first_played": "20 jul 2012",
+      "last_played": "9 feb 2016 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Broadcast 2000",
+      "slug": "broadcast-2000",
+      "plays": 54,
+      "first_played": "14 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "CeeLo Green",
+      "slug": "ceelo-green",
+      "plays": 54,
+      "first_played": "16 jul 2012",
+      "last_played": "5 jul 2014 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 4,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Chief Warrant Officer",
+      "slug": "chief-warrant-officer",
+      "plays": 54,
+      "first_played": "22 abr 2013",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 4,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 4,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "AC/DC",
+      "slug": "ac-dc",
+      "plays": 52,
+      "first_played": "20 jul 2012",
+      "last_played": "18 feb 2014 · 23:59",
+      "catalog_status": "history_only",
+      "sources": [
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "DC",
+      "slug": "dc",
+      "plays": 52,
+      "first_played": "20 jul 2012",
+      "last_played": "17 feb 2014 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 7,
+      "tracks_in_otras": 7,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "A Freudian Slip",
+      "slug": "a-freudian-slip",
+      "plays": 51,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "April Smith and The Great Picture Show",
+      "slug": "april-smith-and-the-great-picture-show",
+      "plays": 51,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Enemy",
+      "slug": "enemy",
+      "plays": 51,
+      "first_played": "16 jul 2012",
+      "last_played": "21 feb 2013 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 5,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Teddybears",
+      "slug": "teddybears",
+      "plays": 51,
+      "first_played": "22 jul 2012",
+      "last_played": "6 ago 2016 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "artist",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "[unknown]",
+      "slug": "unknown",
+      "plays": 50,
+      "first_played": "11 dic 2012",
+      "last_played": "22 feb 2017 · 23:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 37,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 37,
+      "tracks_in_otras": 37,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": true,
+      "related": 3,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Freelance Whales",
+      "slug": "freelance-whales",
+      "plays": 46,
+      "first_played": "21 jul 2012",
+      "last_played": "29 ene 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Germán Pujol",
+      "slug": "german-pujol",
+      "plays": 46,
+      "first_played": "20 may 2013",
+      "last_played": "14 jun 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Guster",
+      "slug": "guster",
+      "plays": 46,
+      "first_played": "24 jul 2012",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Made in Japan",
+      "slug": "made-in-japan",
+      "plays": 46,
+      "first_played": "22 oct 2012",
+      "last_played": "5 ago 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Plastilina Mosh",
+      "slug": "plastilina-mosh",
+      "plays": 46,
+      "first_played": "28 jul 2012",
+      "last_played": "17 oct 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 5,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "School of Seven Bells",
+      "slug": "school-of-seven-bells",
+      "plays": 46,
+      "first_played": "23 jul 2012",
+      "last_played": "11 ene 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Slash",
+      "slug": "slash",
+      "plays": 46,
+      "first_played": "24 jul 2012",
+      "last_played": "30 oct 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 9,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 9,
+      "tracks_in_otras": 7,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Spacehog",
+      "slug": "spacehog",
+      "plays": 46,
+      "first_played": "17 jul 2012",
+      "last_played": "3 ago 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Telefunka",
+      "slug": "telefunka",
+      "plays": 46,
+      "first_played": "13 sep 2012",
+      "last_played": "22 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Fucking Fat Porns",
+      "slug": "the-fucking-fat-porns",
+      "plays": 46,
+      "first_played": "16 ene 2013",
+      "last_played": "17 sep 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 8,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 8,
+      "tracks_in_otras": 8,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "BEAT!BEAT!BEAT!",
+      "slug": "beatbeatbeat",
+      "plays": 45,
+      "first_played": "28 jul 2012",
+      "last_played": "24 ene 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Cameras",
+      "slug": "cameras",
+      "plays": 45,
+      "first_played": "5 ago 2012",
+      "last_played": "2 feb 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Guns N' Roses",
+      "slug": "guns-n-roses",
+      "plays": 45,
+      "first_played": "20 jul 2012",
+      "last_played": "4 ene 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 8,
+      "tracks_with_artwork": 8,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Doors",
+      "slug": "the-doors",
+      "plays": 45,
+      "first_played": "17 ago 2012",
+      "last_played": "2 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 9,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 9,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Alert New London",
+      "slug": "alert-new-london",
+      "plays": 44,
+      "first_played": "14 jul 2012",
+      "last_played": "30 jul 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Brasstronaut",
+      "slug": "brasstronaut",
+      "plays": 44,
+      "first_played": "21 jul 2012",
+      "last_played": "2 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Future Unlimited",
+      "slug": "future-unlimited",
+      "plays": 44,
+      "first_played": "5 sep 2012",
+      "last_played": "24 ago 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Hey Champ",
+      "slug": "hey-champ",
+      "plays": 44,
+      "first_played": "22 jul 2012",
+      "last_played": "27 jul 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "I Blame Coco",
+      "slug": "i-blame-coco",
+      "plays": 44,
+      "first_played": "28 jul 2012",
+      "last_played": "7 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "I Break Horses",
+      "slug": "i-break-horses",
+      "plays": 44,
+      "first_played": "30 oct 2012",
+      "last_played": "26 dic 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "wp_db"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Islands",
+      "slug": "islands",
+      "plays": 44,
+      "first_played": "15 mar 2013",
+      "last_played": "14 jul 2022 · 12:40",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "New Wine",
+      "slug": "new-wine",
+      "plays": 44,
+      "first_played": "23 jul 2012",
+      "last_played": "27 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Ski Lodge",
+      "slug": "ski-lodge",
+      "plays": 44,
+      "first_played": "22 mar 2013",
+      "last_played": "22 feb 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "wp_db"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Skillet",
+      "slug": "skillet",
+      "plays": 44,
+      "first_played": "16 jul 2012",
+      "last_played": "22 jul 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Tears for Fears",
+      "slug": "tears-for-fears",
+      "plays": 44,
+      "first_played": "18 ago 2012",
+      "last_played": "3 feb 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 5,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Bonsur",
+      "slug": "bonsur",
+      "plays": 43,
+      "first_played": "16 jul 2012",
+      "last_played": "10 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Marina & the Diamonds",
+      "slug": "marina-the-diamonds",
+      "plays": 43,
+      "first_played": "16 mar 2013",
+      "last_played": "29 jun 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 4,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Texas",
+      "slug": "texas",
+      "plays": 43,
+      "first_played": "20 jul 2012",
+      "last_played": "26 feb 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Psychedelic Furs",
+      "slug": "the-psychedelic-furs",
+      "plays": 43,
+      "first_played": "21 jul 2012",
+      "last_played": "3 sep 2022 · 06:26",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg"
+      ],
+      "tracks": 6,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 6,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Vacationer",
+      "slug": "vacationer",
+      "plays": 43,
+      "first_played": "29 dic 2012",
+      "last_played": "11 ago 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "A Lull",
+      "slug": "a-lull",
+      "plays": 42,
+      "first_played": "22 jul 2012",
+      "last_played": "6 oct 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Here We Go Magic",
+      "slug": "here-we-go-magic",
+      "plays": 42,
+      "first_played": "26 ago 2012",
+      "last_played": "11 ene 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Los Planetas",
+      "slug": "los-planetas",
+      "plays": 42,
+      "first_played": "20 jul 2012",
+      "last_played": "14 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Pepper",
+      "slug": "pepper",
+      "plays": 42,
+      "first_played": "22 jul 2012",
+      "last_played": "20 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Sea Wolf",
+      "slug": "sea-wolf",
+      "plays": 42,
+      "first_played": "14 jul 2012",
+      "last_played": "17 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Asteroids Galaxy Tour",
+      "slug": "the-asteroids-galaxy-tour",
+      "plays": 42,
+      "first_played": "24 jul 2012",
+      "last_played": "26 jul 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Dinosaur Jr.",
+      "slug": "dinosaur-jr",
+      "plays": 41,
+      "first_played": "22 jul 2012",
+      "last_played": "31 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 6,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "High Highs",
+      "slug": "high-highs",
+      "plays": 41,
+      "first_played": "21 mar 2013",
+      "last_played": "23 mar 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "lastfm",
+        "wp_db"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Republic of Letters",
+      "slug": "republic-of-letters",
+      "plays": 41,
+      "first_played": "26 mar 2013",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Astro",
+      "slug": "astro",
+      "plays": 40,
+      "first_played": "19 jul 2012",
+      "last_played": "22 mar 2017 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Black Sabbath",
+      "slug": "black-sabbath",
+      "plays": 40,
+      "first_played": "18 ago 2012",
+      "last_played": "12 dic 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 6,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_es",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Faith No More",
+      "slug": "faith-no-more",
+      "plays": 40,
+      "first_played": "30 jul 2012",
+      "last_played": "4 ene 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 8,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Mark McGuire",
+      "slug": "mark-mcguire",
+      "plays": 40,
+      "first_played": "27 jul 2012",
+      "last_played": "21 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6091,8 +6020,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6127,8 +6056,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6493,8 +6422,8 @@
         "lastfm"
       ],
       "tracks": 15,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 15,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 12,
       "tracks_in_otras": 4,
       "has_image": false,
       "image_source": "",
@@ -6815,8 +6744,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7314,6 +7243,80 @@
         "data"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "Mink",
+      "slug": "mink",
+      "plays": 37,
+      "first_played": "6 ago 2012",
+      "last_played": "1 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Models Can't Fuck",
+      "slug": "models-cant-fuck",
+      "plays": 37,
+      "first_played": "14 jul 2012",
+      "last_played": "14 mar 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7498,6 +7501,44 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker",
+      "slug": "nick-murphy-chet-faker",
+      "plays": 91,
+      "first_played": "14 jul 2022",
+      "last_played": "3 oct 2026 · 16:27",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Unisex",
       "slug": "the-unisex",
       "plays": 91,
@@ -7564,44 +7605,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker",
-      "slug": "nick-murphy-chet-faker",
-      "plays": 90,
-      "first_played": "14 jul 2022",
-      "last_played": "30 sep 2026 · 13:25",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -7691,8 +7694,8 @@
         "yesstreaming"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -7796,8 +7799,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
@@ -7866,8 +7869,8 @@
         "lastfm"
       ],
       "tracks": 6,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 6,
+      "tracks_with_artwork": 6,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -8043,8 +8046,8 @@
         "lastfm"
       ],
       "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -8186,8 +8189,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "artist",
@@ -9113,8 +9116,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -9151,8 +9154,8 @@
         "megaseg"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
       "image_source": "gallery",
@@ -9462,43 +9465,6 @@
         "image",
         "bio",
         "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Mars Volta",
-      "slug": "the-mars-volta",
-      "plays": 45,
-      "first_played": "22 jul 2012",
-      "last_played": "10 sep 2022 · 02:00",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -10315,8 +10281,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10352,8 +10318,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10388,8 +10354,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10790,8 +10756,8 @@
         "yesstreaming_live"
       ],
       "tracks": 5,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 5,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "gallery",
@@ -10917,6 +10883,42 @@
       "profile_missing_fields": [
         "image",
         "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": ". Yukimi Nagano",
+      "slug": "yukimi-nagano",
+      "plays": 38,
+      "first_played": "19 jul 2012",
+      "last_played": "15 ene 2015 · 09:47",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
       ],
       "profile_complete": false
     }
