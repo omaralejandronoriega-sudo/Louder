@@ -1,7 +1,7 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
 const store={get:(k,d)=>{try{const v=localStorage.getItem("lcs:"+k);return v?JSON.parse(v):d}catch{return d}},set:(k,v)=>localStorage.setItem("lcs:"+k,JSON.stringify(v))};
-const state={mode:store.get("mode","auto"),queue:store.get("queue",[]),clock:store.get("clock",[]),events:store.get("events",[]),encoders:store.get("encoders",[{name:"YesStreaming Primary",codec:"MP3",bitrate:320,status:"Unknown"}]),history:store.get("history",[]),xf:store.get("xf",{}),dsp:store.get("dsp",{}),api:store.get("api",{url:"",token:""}),library:[],category:"All",selectedQueue:-1,mic:null,micCtx:null,micProcessor:null,micSending:false,voiceWs:null,recorder:null,chunks:[],lastVoiceBlob:null,palStop:false,nodeOnline:false};
+const state={mode:store.get("mode","auto"),queue:store.get("queue",[]),clock:store.get("clock",[]),events:store.get("events",[]),encoders:store.get("encoders",[{name:"YesStreaming Primary",codec:"MP3",bitrate:320,status:"Unknown"}]),history:store.get("history",[]),xf:store.get("xf",{}),dsp:store.get("dsp",{}),api:store.get("api",{url:"",token:""}),library:[],category:"All",selectedQueue:-1,mic:null,micCtx:null,micProcessor:null,micSending:false,voiceWs:null,recorder:null,chunks:[],lastVoiceBlob:null,palStop:false,nodeOnline:false,requests:[],selectedRequest:null,statsSamples:[]};
 const log=m=>{const e=$("#eventLog");if(e){e.textContent+=new Date().toLocaleTimeString()+"  "+m+"\n";e.scrollTop=e.scrollHeight}};
 const fmt=s=>!s?"—":String(s);
 setInterval(()=>$("#clock").textContent=new Date().toLocaleTimeString("es-MX"),500);
@@ -34,6 +34,18 @@ async function loadLibrary(){
  }
  renderCategories();renderLibrary();
 }
+
+async function loadNodeCatalog(){
+ if(!state.nodeOnline)return false;
+ try{
+  const rows=await apiFetch("catalog",{},true);
+  if(!Array.isArray(rows))throw new Error("invalid catalog");
+  state.library=rows.map(x=>({...x,folder:x.category||"Telegram",category:x.category||"Telegram"}));
+  renderCategories();renderLibrary();
+  log("Playable cloud catalog loaded: "+state.library.length+" tracks");
+  return true;
+ }catch(e){log("Cloud catalog failed: "+e.message);return false}
+}
 function cats(){return ["All",...new Set(state.library.map(x=>x.category)),"Station IDs","Jingles","Promos","Sound FX"]}
 function renderCategories(){
  $("#categories").innerHTML=cats().map(c=>'<span class="cat '+(c===state.category?"active":"")+'" data-cat="'+esc(c)+'">'+esc(c)+'</span>').join("");
@@ -48,7 +60,7 @@ function renderLibrary(){
 }
 $("#search").oninput=renderLibrary;$("#clearSearch").onclick=()=>{$("#search").value="";renderLibrary()};
 
-async function saveQueue(){store.set("queue",state.queue);renderQueue();if(state.nodeOnline&&state.queue.every(x=>x.uri)){try{await apiFetch("queue/set",state.queue)}catch(e){log("Queue sync failed: "+e.message)}}}
+async function saveQueue(){store.set("queue",state.queue);renderQueue();if(state.nodeOnline&&state.queue.every(x=>x.uri||x.message_id!=null)){try{await apiFetch("queue/set",state.queue);await syncNodeState()}catch(e){log("Queue sync failed: "+e.message)}}}
 function renderQueue(){
  $("#queueRows").innerHTML=state.queue.map((x,i)=>'<tr data-qi="'+i+'" class="'+(state.selectedQueue===i?"selected":"")+'"><td>'+(i+1)+'</td><td>—</td><td>'+esc(x.artist)+'</td><td>'+esc(x.title)+'</td></tr>').join("");
  $("#qCount").textContent=state.queue.length;
@@ -105,21 +117,36 @@ $("#palValidate").onclick=validatePal;$("#palRun").onclick=async()=>{if(!validat
 
 $("#apiUrl").value=state.api.url||"";$("#apiToken").value=state.api.token||"";
 $("#apiSave").onclick=()=>{state.api={url:$("#apiUrl").value.trim().replace(/\/$/,""),token:$("#apiToken").value};store.set("api",state.api);log("Node API settings saved");refreshNodeButtons()};
-$("#apiTest").onclick=async()=>{state.api={url:$("#apiUrl").value.trim().replace(/\/$/,""),token:$("#apiToken").value};try{const r=await apiFetch("status",{},true);state.nodeOnline=!!r;$("#apiLog").textContent=JSON.stringify(r,null,2);setNode(true);await syncNodeState(r)}catch(e){$("#apiLog").textContent=e.message;setNode(false)}};
+$("#apiTest").onclick=async()=>{state.api={url:$("#apiUrl").value.trim().replace(/\/$/,""),token:$("#apiToken").value};try{const r=await apiFetch("status",{},true);state.nodeOnline=!!r;$("#apiLog").textContent=JSON.stringify(r,null,2);setNode(true);await syncNodeState(r);await loadNodeCatalog();await refreshRequests();await refreshStats()}catch(e){$("#apiLog").textContent=e.message;setNode(false)}};
 async function apiFetch(path,payload={},get=false){if(!state.api.url)throw new Error("No node API configured");const opt={method:get?"GET":"POST",headers:{"Content-Type":"application/json"}};if(state.api.token)opt.headers.Authorization="Bearer "+state.api.token;if(!get)opt.body=JSON.stringify(payload);const r=await fetch(state.api.url+"/"+path,opt);if(!r.ok)throw new Error("Node HTTP "+r.status);return r.headers.get("content-type")?.includes("json")?r.json():r.text()}
 function setNode(on){state.nodeOnline=on;$("#nodeState").textContent=on?"NODE ONLINE":"NODE OFFLINE";$("#nodeState").classList.toggle("online",on);$("#nodeText").textContent=on?"ONLINE":"OFFLINE";refreshNodeButtons();if(state.mic){$("#ptt").disabled=!on;$("#micLatch").disabled=!on}$("#vtStore").disabled=!on||!state.lastVoiceBlob}
-async function syncNodeState(r=null){const s=r||await apiFetch("status",{},true);if(Array.isArray(s.queue)&&s.queue.length){state.queue=s.queue;store.set("queue",state.queue);renderQueue()}if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(s.mode){state.mode=s.mode;$(".mode").forEach(x=>x.classList.toggle("active",x.dataset.mode===state.mode))}return s}
+async function syncNodeState(r=null){const s=r||await apiFetch("status",{},true);if(Array.isArray(s.queue)){state.queue=s.queue;store.set("queue",state.queue);renderQueue()}if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(s.mode){state.mode=s.mode;$(".mode").forEach(x=>x.classList.toggle("active",x.dataset.mode===state.mode))}return s}
 function refreshNodeButtons(){$$("[data-node],[data-node-range]").forEach(x=>x.disabled=!state.nodeOnline)}
 async function nodeAction(path,payload={}){if(!state.nodeOnline){log(path+" blocked: node offline");return}try{await apiFetch(path,payload);log(path+" OK")}catch(e){log(path+" failed: "+e.message);setNode(false)}}
 $("[data-node]").forEach(b=>b.onclick=()=>{let payload={};if(b.dataset.node==="crossfade/apply")payload=collectXf();if(b.dataset.node==="dsp/apply")payload={processors:collectDsp()};nodeAction(b.dataset.node,payload)});
-async function loadDeck(deck){const item=state.queue[state.selectedQueue];if(!item){log("Select a queue item first");return}if(!item.uri){log("Track has no cloud play URI yet");return}try{await apiFetch("deck/"+deck+"/load",{uri:item.uri});$("#"+deck+"Artist").textContent=item.artist||"Unknown";$("#"+deck+"Title").textContent=item.title||"Loaded";log("Loaded Deck "+deck.toUpperCase()+": "+(item.artist||"")+" - "+(item.title||""))}catch(e){log("Deck load failed: "+e.message)}}
+async function loadDeck(deck){const item=state.queue[state.selectedQueue];if(!item){log("Select a queue item first");return}if(!item.uri&&item.message_id==null){log("Track is not in the playable cloud catalog yet");return}try{await apiFetch("deck/"+deck+"/load",item);$("#"+deck+"Artist").textContent=item.artist||"Unknown";$("#"+deck+"Title").textContent=item.title||"Loaded";log("Loaded Deck "+deck.toUpperCase()+": "+(item.artist||"")+" - "+(item.title||""))}catch(e){log("Deck load failed: "+e.message)}}
 $("#loadA").onclick=()=>loadDeck("a");$("#loadB").onclick=()=>loadDeck("b");
 $$("[data-node-range]").forEach(x=>x.onchange=()=>nodeAction(x.dataset.nodeRange,{value:+x.value}));
+
+$("#vaultSync").onclick=async()=>{if(!state.nodeOnline){log("Vault sync requires NODE ONLINE");return}$("#vaultSync").disabled=true;try{const r=await apiFetch("vault/sync",{limit:25000,category:"Telegram"});log("Telegram Vault synced: "+r.count+" tracks");await loadNodeCatalog()}catch(e){log("Vault sync failed: "+e.message)}finally{$("#vaultSync").disabled=false}};
+
+function renderRequests(){
+ $("#requestRows").innerHTML=state.requests.map(r=>{const t=r.track||{};return '<tr data-rid="'+esc(r.id)+'" class="'+(state.selectedRequest===r.id?"selected":"")+'"><td>'+esc(t.artist||"")+'</td><td>'+esc(t.title||"")+'</td><td>'+esc(r.requested_by||"")+'</td><td>'+esc(r.status||"")+'</td></tr>'}).join("");
+ $("[data-rid]").forEach(row=>row.onclick=()=>{state.selectedRequest=row.dataset.rid;renderRequests()});
+}
+async function refreshRequests(){if(!state.nodeOnline)return;try{state.requests=await apiFetch("requests",{},true);renderRequests()}catch(e){log("Requests failed: "+e.message)}}
+$("#requestRefresh").onclick=refreshRequests;
+async function decideRequest(action){if(!state.selectedRequest)return;try{await apiFetch("requests/"+encodeURIComponent(state.selectedRequest)+"/"+action,{});await refreshRequests();await syncNodeState();log("Request "+action)}catch(e){log("Request action failed: "+e.message)}}
+$("#requestApprove").onclick=()=>decideRequest("approve");$("#requestReject").onclick=()=>decideRequest("reject");
+
+function drawStats(){const canvas=$("#stats"),ctx=canvas.getContext("2d");ctx.clearRect(0,0,canvas.width,canvas.height);ctx.strokeStyle="#45c3ff";ctx.lineWidth=2;ctx.beginPath();const rows=state.statsSamples;if(!rows.length){ctx.fillStyle="#8fa7b5";ctx.fillText("Waiting for relay statistics...",12,22);return}const max=Math.max(1,...rows.map(x=>x.listeners||0));rows.forEach((row,i)=>{const x=rows.length===1?0:i/(rows.length-1)*(canvas.width-12)+6;const y=canvas.height-8-((row.listeners||0)/max)*(canvas.height-20);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke()}
+async function refreshStats(){if(!state.nodeOnline)return;try{const s=await apiFetch("stats",{},true);$("#listeners").textContent=s.listeners??"—";$("#peak").textContent=s.peak??"—";if(s.listeners!=null){state.statsSamples.push({t:Date.now(),listeners:s.listeners});state.statsSamples=state.statsSamples.slice(-120)}drawStats()}catch(e){$("#listeners").textContent="—";$("#peak").textContent="—"}}
 
 $("#logClear").onclick=()=>$("#eventLog").textContent="";
 function renderHistory(){$("#historyRows").innerHTML=state.history.slice(-100).reverse().map(x=>'<tr><td>'+esc(x.time)+'</td><td>'+esc(x.artist)+'</td><td>'+esc(x.title)+'</td></tr>').join("")}
 
-function drawStats(){const c=$("#stats"),ctx=c.getContext("2d");ctx.clearRect(0,0,c.width,c.height);ctx.strokeStyle="#45c3ff";ctx.beginPath();for(let x=0;x<c.width;x+=25){const y=95+Math.sin(x/60)*30+(Math.random()*8);x?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.stroke()}drawStats();
+drawStats();
 
 restoreXf();restoreDsp();renderQueue();renderEncoders();renderClock();renderEvents();renderFx();renderHistory();refreshNodeButtons();loadLibrary();log("Louder Cloud Studio ready");
-setInterval(async()=>{if(!state.nodeOnline)return;try{const s=await apiFetch("status",{},true);setNode(true);if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(Array.isArray(s.encoders)){$("#encoderRows").querySelectorAll("tr").forEach(()=>{});state.encoders=s.encoders.map(e=>({name:e.name||e.id,codec:e.format||"MP3",bitrate:e.bitrate||320,status:e.status||"unknown"}));renderEncoders()}}catch(e){setNode(false)}},5000);
+setInterval(async()=>{if(!state.nodeOnline)return;try{const s=await apiFetch("status",{},true);setNode(true);if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(Array.isArray(s.encoders)){state.encoders=s.encoders.map(e=>({name:e.name||e.id,codec:e.format||"MP3",bitrate:e.bitrate||320,status:e.status||"unknown"}));renderEncoders()}await refreshStats()}catch(e){setNode(false)}},5000);
+setInterval(refreshRequests,15000);
