@@ -1,0 +1,27 @@
+name: Agencia Louder Command Processor
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  route:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'agencia-orden')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Route command
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const who = (body.match(/Responsable:\s*(.+)/i)||[])[1] || 'Valeria Cruz';
+            const priority = (body.match(/Prioridad:\s*(.+)/i)||[])[1] || 'Normal';
+            await github.rest.issues.createComment({
+              ...context.repo, issue_number: issue.number,
+              body: '### Valeria Cruz (Directora editorial)\nOrden recibida y registrada.\n\n**Responsable inicial:** '+who+'\n**Prioridad:** '+priority+'\n**Estado:** Asignada'
+            });
+            await github.rest.issues.addLabels({...context.repo, issue_number: issue.number, labels:['agencia-asignada']});
