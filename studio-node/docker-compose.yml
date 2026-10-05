@@ -16,8 +16,6 @@ services:
       - louder_data:/data
     ports:
       - "8787:8787"
-    depends_on:
-      - liquidsoap
 
   liquidsoap:
     build: ./liquidsoap
