@@ -577,22 +577,52 @@ async def crossfade_apply(request: web.Request) -> web.Response:
     fade_in = raw_in / 1000.0 if raw_in > 50 else raw_in
     fade_out = raw_out / 1000.0 if raw_out > 50 else raw_out
 
+    overlap_db = float(data.get("overlapDb", -9))
+    silence_db = float(data.get("silenceDb", -48))
+    silence_raw = float(data.get("silenceMs", 900))
+    silence_max = silence_raw / 1000.0 if silence_raw > 50 else silence_raw
+
     cfg = {
+        "enabled": bool(data.get("enable", True)),
         "duration": max(0.0, min(20.0, duration)),
         "fade_in": max(0.0, min(20.0, fade_in)),
         "fade_out": max(0.0, min(20.0, fade_out)),
+        "overlap_db": max(-60.0, min(0.0, overlap_db)),
+        "gap_killer": bool(data.get("gapKiller", True)),
+        "silence_db": max(-80.0, min(-10.0, silence_db)),
+        "silence_max": max(0.1, min(30.0, silence_max)),
+        "respect_cue": bool(data.get("respectCue", True)),
+        "crossfade_jingles": bool(data.get("jingles", False)),
     }
     state["crossfade"] = cfg
     await save_state()
+
+    commands = [
+        ("xf_enabled", "true" if cfg["enabled"] else "false"),
+        ("xf_duration", cfg["duration"]),
+        ("xf_in", cfg["fade_in"]),
+        ("xf_out", cfg["fade_out"]),
+        ("xf_overlap_db", cfg["overlap_db"]),
+        ("xf_jingles", "true" if cfg["crossfade_jingles"] else "false"),
+        ("gap_enabled", "true" if cfg["gap_killer"] else "false"),
+        ("gap_threshold", cfg["silence_db"]),
+        ("gap_max", cfg["silence_max"]),
+    ]
+    results = []
+    for name, value in commands:
+        try:
+            results.append(await liq(f"var.set {name} = {value}"))
+        except Exception as exc:
+            results.append(str(exc))
 
     return web.json_response(
         {
             "ok": True,
             "crossfade": cfg,
-            "applies": "next resolved tracks via Liquidsoap metadata overrides",
+            "result": results,
+            "applies": "live",
         }
     )
-
 
 async def dsp_apply(request: web.Request) -> web.Response:
     data = await request.json()
