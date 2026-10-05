@@ -9,7 +9,8 @@ ROOT=pathlib.Path(os.getenv("LOUDER_DATA_DIR","/data"))
 ROOT.mkdir(parents=True,exist_ok=True)
 STATE_FILE=ROOT/"studio-state.json"
 AUTO_POOL_FILE=ROOT/"auto-pool.json"
-VOICE_DIR=ROOT/"voice-tracks"; VOICE_DIR.mkdir(exist_ok=True)\nFX_DIR=ROOT/"sound-fx"; FX_DIR.mkdir(exist_ok=True)
+VOICE_DIR=ROOT/"voice-tracks"; VOICE_DIR.mkdir(exist_ok=True)
+FX_DIR=ROOT/"sound-fx"; FX_DIR.mkdir(exist_ok=True)
 API_TOKEN=os.getenv("LOUDER_API_TOKEN","").strip()
 INTERNAL_KEY=os.getenv("LOUDER_INTERNAL_KEY","").strip() or secrets.token_urlsafe(24)
 LIQ_HOST=os.getenv("LIQUIDSOAP_HOST","liquidsoap")
