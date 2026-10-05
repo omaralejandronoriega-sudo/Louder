@@ -27,9 +27,15 @@ ys_password = environment.get("YESSTREAMING_PASSWORD")
 studio_mode = interactive.string("studio_mode", "auto")
 manual_deck = interactive.string("manual_deck", "none")
 
+xf_enabled = interactive.bool("xf_enabled", true)
 xf_duration = interactive.float("xf_duration", min=0., max=20., 4.5)
 xf_in = interactive.float("xf_in", min=0., max=20., 1.2)
 xf_out = interactive.float("xf_out", min=0., max=20., 2.8)
+xf_overlap_db = interactive.float("xf_overlap_db", min=(-60.), max=0., (-9.))
+xf_jingles = interactive.bool("xf_jingles", false)
+gap_enabled = interactive.bool("gap_enabled", true)
+gap_threshold = interactive.float("gap_threshold", min=(-80.), max=(-10.), (-48.))
+gap_max = interactive.float("gap_max", min=0.1, max=30., 0.9)
 
 deck_a_gain = interactive.float("deck_a_gain", min=0., max=1.5, 1.)
 deck_b_gain = interactive.float("deck_b_gain", min=0., max=1.5, 1.)
@@ -68,12 +74,53 @@ def next_request() =
 end
 
 auto_raw = request.dynamic(id="auto", prefetch=2, timeout=60., next_request)
-auto = crossfade(
-  id="auto_crossfade",
-  duration=4.5,
-  fade_in=1.2,
-  fade_out=2.8,
+
+# Dynamic gap killer. Threshold and maximum blank duration are controlled
+# from Cloud Studio without restarting Liquidsoap.
+auto_detected = blank.detect(
+  id="auto_blank_detector",
+  max_blank=gap_max,
+  threshold=gap_threshold,
   auto_raw
+)
+def on_auto_blank() =
+  if gap_enabled() then
+    auto_raw.skip()
+  end
+end
+auto_detected.on_blank(synchronous=false, on_auto_blank)
+
+# SAM-style Crossfade Rules. The transition is evaluated at each track change,
+# so all interactive values below can change live.
+def louder_transition(a, b) =
+  category_a = a.metadata["category"]
+  category_b = b.metadata["category"]
+  special =
+    category_a == "Jingles" or category_a == "Station IDs" or
+    category_b == "Jingles" or category_b == "Station IDs"
+
+  if not xf_enabled() then
+    sequence([a.source, b.source])
+  elsif special and not xf_jingles() then
+    sequence([a.source, b.source])
+  elsif a.db_level >= xf_overlap_db() or b.db_level >= xf_overlap_db() then
+    # Loud endings/starts are kept back-to-back to avoid muddy overlap.
+    sequence([a.source, b.source])
+  else
+    cross.simple(
+      fade_in=xf_in(),
+      fade_out=xf_out(),
+      a.source,
+      b.source
+    )
+  end
+end
+
+auto = cross(
+  id="auto_crossfade",
+  duration=xf_duration,
+  louder_transition,
+  auto_detected
 )
 
 # Manual SAM-style decks.
