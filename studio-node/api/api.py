@@ -11,7 +11,7 @@ import secrets
 import time
 from typing import Any
 
-from aiohttp import web, WSMsgType
+from aiohttp import web, WSMsgType, ClientSession
 
 
 ROOT = pathlib.Path(os.getenv("LOUDER_DATA_DIR", "/data"))
@@ -32,6 +32,8 @@ VOICE_HARBOR_PORT = int(os.getenv("VOICE_HARBOR_PORT", "8005"))
 VOICE_HARBOR_PASSWORD = os.getenv("VOICE_HARBOR_PASSWORD", "change-me")
 CORS = os.getenv("LOUDER_CORS_ORIGIN", "*")
 EMERGENCY_URI = os.getenv("EMERGENCY_URI", "").strip()
+VAULT_BASE_URL = os.getenv("TELEGRAM_VAULT_BASE_URL", "http://vault:8765").rstrip("/")
+VAULT_TOKEN = os.getenv("TELEGRAM_VAULT_TOKEN", "").strip()
 
 DEFAULT_STATE: dict[str, Any] = {
     "mode": "auto",
@@ -689,6 +691,59 @@ async def fx_play(request: web.Request) -> web.Response:
     return web.json_response({"ok": True, "result": result})
 
 
+async def get_catalog(request: web.Request) -> web.Response:
+    return web.json_response(load_json(AUTO_POOL_FILE, []))
+
+
+async def vault_sync(request: web.Request) -> web.Response:
+    data = await request.json() if request.can_read_body else {}
+    limit = max(1, min(5000, int(data.get("limit", 5000))))
+    default_category = str(data.get("category", "Telegram")).strip() or "Telegram"
+
+    if not VAULT_TOKEN:
+        raise web.HTTPServiceUnavailable(text="TELEGRAM_VAULT_TOKEN is not configured")
+
+    existing = load_json(AUTO_POOL_FILE, [])
+    categories = {
+        int(item.get("message_id")): item.get("category")
+        for item in existing
+        if item.get("message_id") is not None
+    }
+
+    url = f"{VAULT_BASE_URL}/index?limit={limit}&token={VAULT_TOKEN}"
+    async with ClientSession() as session:
+        async with session.get(url, timeout=120) as response:
+            if response.status != 200:
+                raise web.HTTPServiceUnavailable(
+                    text=f"vault returned HTTP {response.status}"
+                )
+            payload = await response.json()
+
+    pool = []
+    for item in payload.get("items", []):
+        message_id = int(item["message_id"])
+        pool.append(
+            {
+                "message_id": message_id,
+                "artist": item.get("artist", ""),
+                "title": item.get("title", "") or item.get("filename", ""),
+                "filename": item.get("filename", ""),
+                "size": item.get("size"),
+                "mime": item.get("mime"),
+                "category": categories.get(message_id) or default_category,
+                "uri": (
+                    f"{VAULT_BASE_URL}/media/{message_id}"
+                    f"?token={VAULT_TOKEN}"
+                ),
+            }
+        )
+
+    tmp = AUTO_POOL_FILE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(pool, ensure_ascii=False, indent=2), "utf-8")
+    tmp.replace(AUTO_POOL_FILE)
+    return web.json_response({"ok": True, "count": len(pool)})
+
+
 async def get_clockwheel(request: web.Request) -> web.Response:
     return web.json_response(state.get("clockwheel", []))
 
@@ -919,6 +974,8 @@ app.router.add_get("/ws/voice", voice_ws)
 app.router.add_post("/voice-track", voice_track_upload)
 app.router.add_post("/fx/upload", fx_upload)
 app.router.add_post("/fx/play", fx_play)
+app.router.add_get("/catalog", get_catalog)
+app.router.add_post("/vault/sync", vault_sync)
 app.router.add_get("/clockwheel", get_clockwheel)
 app.router.add_post("/clockwheel", set_clockwheel)
 app.router.add_get("/schedule", get_schedule)
