@@ -1,0 +1,31 @@
+name: Studio Node CI
+on:
+  push:
+    branches: [cloud-studio-v1]
+    paths:
+      - "studio-node/**"
+      - ".github/workflows/studio-node-ci.yml"
+  pull_request:
+    paths:
+      - "studio-node/**"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Python syntax
+        run: python -m py_compile studio-node/api/api.py
+      - name: Build API image
+        run: docker build -t louder-api studio-node/api
+      - name: Build Liquidsoap image
+        run: docker build -t louder-liquidsoap studio-node/liquidsoap
+      - name: Liquidsoap typecheck
+        run: |
+          docker run --rm             -e LOUDER_NEXT_URL=http://api:8787/internal/next?key=test             -e VOICE_HARBOR_PASSWORD=test             -e YESSTREAMING_HOST=127.0.0.1             -e YESSTREAMING_PORT=2720             -e YESSTREAMING_MOUNT=/stream             -e YESSTREAMING_USER=source             -e YESSTREAMING_PASSWORD=test             -v "$PWD/studio-node/liquidsoap/radio.liq:/radio.liq:ro"             louder-liquidsoap --check /radio.liq
+      - name: Compose validation
+        run: |
+          cp studio-node/.env.example studio-node/.env
+          docker compose -f studio-node/docker-compose.yml config >/dev/null
