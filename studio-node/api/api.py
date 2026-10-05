@@ -65,6 +65,8 @@ DEFAULT_STATE: dict[str, Any] = {
         }
     ],
     "clockwheel": [],
+    "clock_index": 0,
+    "selection_cursors": {},
     "schedule": [],
     "pal_scripts": {},
     "requests": [],
@@ -166,27 +168,30 @@ def recent_conflict(item: dict[str, Any]) -> bool:
     return False
 
 
-def current_clock_category() -> str | None:
-    blocks = state.get("clockwheel", [])
-    if not blocks:
-        return None
+def last_played_times() -> tuple[dict[str, float], dict[tuple[str, str], float]]:
+    artists: dict[str, float] = {}
+    tracks: dict[tuple[str, str], float] = {}
+    for row in state.get("history", []):
+        ts = float(row.get("ts", 0) or 0)
+        artist = str(row.get("artist", "")).casefold().strip()
+        title = str(row.get("title", "")).casefold().strip()
+        if artist:
+            artists[artist] = max(ts, artists.get(artist, 0.0))
+        if artist and title:
+            key = (artist, title)
+            tracks[key] = max(ts, tracks.get(key, 0.0))
+    return artists, tracks
 
-    minute = time.localtime().tm_min
-    cursor = 0
-    for block in blocks:
-        span = max(0, int(block.get("min", 0) or 0))
-        if cursor <= minute < cursor + span:
-            category = str(block.get("category", "")).strip()
-            return category or None
-        cursor += span
-    return None
 
-
-def choose_auto(category: str | None = None) -> dict[str, Any] | None:
+def choose_auto(
+    category: str | None = None,
+    selection: str = "random",
+    enforce_rules: bool = True,
+) -> dict[str, Any] | None:
     pool = load_json(AUTO_POOL_FILE, [])
-    wanted = category or current_clock_category()
+    wanted = (category or "").strip()
 
-    eligible = [
+    candidates = [
         item
         for item in pool
         if item.get("uri")
@@ -194,29 +199,108 @@ def choose_auto(category: str | None = None) -> dict[str, Any] | None:
             not wanted
             or str(item.get("category", "")).casefold() == wanted.casefold()
         )
-        and not recent_conflict(item)
     ]
+    if not candidates and wanted:
+        candidates = [item for item in pool if item.get("uri")]
 
+    eligible = (
+        [item for item in candidates if not recent_conflict(item)]
+        if enforce_rules
+        else list(candidates)
+    )
     if not eligible:
-        eligible = [
-            item
-            for item in pool
-            if item.get("uri")
-            and (
-                not wanted
-                or str(item.get("category", "")).casefold() == wanted.casefold()
-            )
-        ]
-
+        eligible = candidates
     if not eligible:
-        eligible = [
-            item for item in pool if item.get("uri") and not recent_conflict(item)
-        ]
+        return None
 
-    if not eligible:
-        eligible = [item for item in pool if item.get("uri")]
+    method = str(selection or "random").lower().replace(" ", "_")
+    artists, tracks = last_played_times()
 
-    return random.choice(eligible) if eligible else None
+    if method in {"least_recent_song", "lrp_song", "least_recently_played_song"}:
+        return min(
+            eligible,
+            key=lambda item: tracks.get(
+                (
+                    str(item.get("artist", "")).casefold().strip(),
+                    str(item.get("title", "")).casefold().strip(),
+                ),
+                0.0,
+            ),
+        )
+
+    if method in {"least_recent_artist", "lrp_artist", "least_recently_played_artist"}:
+        return min(
+            eligible,
+            key=lambda item: artists.get(
+                str(item.get("artist", "")).casefold().strip(),
+                0.0,
+            ),
+        )
+
+    if method in {"sequential", "sequence"}:
+        ordered = sorted(
+            eligible,
+            key=lambda item: (
+                str(item.get("artist", "")).casefold(),
+                str(item.get("title", "")).casefold(),
+            ),
+        )
+        key = wanted.casefold() or "__all__"
+        cursors = state.setdefault("selection_cursors", {})
+        index = int(cursors.get(key, 0) or 0) % len(ordered)
+        cursors[key] = index + 1
+        return ordered[index]
+
+    if method in {"weighted", "weighted_random"}:
+        weights = []
+        for item in eligible:
+            try:
+                weights.append(max(0.01, float(item.get("weight", 1.0))))
+            except Exception:
+                weights.append(1.0)
+        return random.choices(eligible, weights=weights, k=1)[0]
+
+    return random.choice(eligible)
+
+
+def choose_clock_item() -> dict[str, Any] | None:
+    wheel = state.get("clockwheel", [])
+    if not isinstance(wheel, list) or not wheel:
+        return None
+
+    # Advance through comments/non-audio slots until a playable entry is found.
+    for _ in range(len(wheel)):
+        index = int(state.get("clock_index", 0) or 0) % len(wheel)
+        state["clock_index"] = (index + 1) % len(wheel)
+        entry = wheel[index] if isinstance(wheel[index], dict) else {}
+        kind = str(entry.get("kind", "category")).lower()
+
+        if kind == "comment":
+            continue
+
+        if kind == "request":
+            for row in state.get("requests", []):
+                if row.get("status") != "pending":
+                    continue
+                try:
+                    item = resolve_item(row.get("track", {}))
+                except ValueError:
+                    continue
+                if entry.get("enforce_rules", True) and recent_conflict(item):
+                    continue
+                row["status"] = "approved"
+                row["reason"] = "selected by clockwheel"
+                return item
+            continue
+
+        category = str(entry.get("category", "")).strip()
+        selection = str(entry.get("selection", "random"))
+        enforce = bool(entry.get("enforce_rules", True))
+        item = choose_auto(category, selection, enforce)
+        if item:
+            return item
+
+    return None
 
 
 def catalog_pool() -> list[dict[str, Any]]:
@@ -262,7 +346,7 @@ async def internal_next(request: web.Request) -> web.Response:
         if queue:
             item = queue.pop(0)
         elif mode in ("auto", "recovery"):
-            item = choose_auto()
+            item = choose_clock_item() or choose_auto()
 
         if item:
             state["now"] = item
@@ -1109,17 +1193,38 @@ async def set_clockwheel(request: web.Request) -> web.Response:
     if not isinstance(data, list):
         raise web.HTTPBadRequest()
 
-    total = sum(
-        max(0, int(item.get("min", 0) or 0))
-        for item in data
-        if isinstance(item, dict)
-    )
-    if total > 60:
-        raise web.HTTPBadRequest(text="clock exceeds 60 minutes")
+    if len(data) > 250:
+        raise web.HTTPBadRequest(text="clock has too many entries")
 
-    state["clockwheel"] = data
+    allowed_kinds = {"category", "request", "comment", "directory"}
+    allowed_selection = {
+        "random", "weighted", "least_recent_song",
+        "least_recent_artist", "sequential"
+    }
+    normalized = []
+    for raw in data:
+        if not isinstance(raw, dict):
+            raise web.HTTPBadRequest(text="invalid clock entry")
+        kind = str(raw.get("kind", "category")).lower()
+        if kind not in allowed_kinds:
+            raise web.HTTPBadRequest(text="invalid clock entry kind")
+        selection = str(raw.get("selection", "random")).lower()
+        if selection not in allowed_selection:
+            selection = "random"
+        normalized.append(
+            {
+                "kind": kind,
+                "category": str(raw.get("category", ""))[:120],
+                "selection": selection,
+                "enforce_rules": bool(raw.get("enforce_rules", True)),
+                "comment": str(raw.get("comment", ""))[:240],
+            }
+        )
+
+    state["clockwheel"] = normalized
+    state["clock_index"] = 0
     await save_state()
-    return web.json_response({"ok": True, "minutes": total})
+    return web.json_response({"ok": True, "entries": len(normalized)})
 
 
 async def get_schedule(request: web.Request) -> web.Response:
