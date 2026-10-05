@@ -9,7 +9,7 @@ ROOT=pathlib.Path(os.getenv("LOUDER_DATA_DIR","/data"))
 ROOT.mkdir(parents=True,exist_ok=True)
 STATE_FILE=ROOT/"studio-state.json"
 AUTO_POOL_FILE=ROOT/"auto-pool.json"
-VOICE_DIR=ROOT/"voice-tracks"; VOICE_DIR.mkdir(exist_ok=True)
+VOICE_DIR=ROOT/"voice-tracks"; VOICE_DIR.mkdir(exist_ok=True)\nFX_DIR=ROOT/"sound-fx"; FX_DIR.mkdir(exist_ok=True)
 API_TOKEN=os.getenv("LOUDER_API_TOKEN","").strip()
 INTERNAL_KEY=os.getenv("LOUDER_INTERNAL_KEY","").strip() or secrets.token_urlsafe(24)
 LIQ_HOST=os.getenv("LIQUIDSOAP_HOST","liquidsoap")
@@ -92,9 +92,24 @@ def recent_conflict(item:dict)->bool:
    if now-ts < state.get("track_separation_hours",120)*3600:return True
  return False
 
-def choose_auto()->dict|None:
+def current_clock_category()->str|None:
+ blocks=state.get("clockwheel",[])
+ if not blocks:return None
+ minute=time.localtime().tm_min
+ cursor=0
+ for b in blocks:
+  span=max(0,int(b.get("min",0) or 0))
+  if cursor <= minute < cursor+span:return str(b.get("category","")).strip() or None
+  cursor+=span
+ return None
+
+def choose_auto(category:str|None=None)->dict|None:
  pool=load_json(AUTO_POOL_FILE,[])
- eligible=[x for x in pool if x.get("uri") and not recent_conflict(x)]
+ wanted=category or current_clock_category()
+ eligible=[x for x in pool if x.get("uri") and (not wanted or str(x.get("category","")).casefold()==wanted.casefold()) and not recent_conflict(x)]
+ if not eligible:
+  eligible=[x for x in pool if x.get("uri") and (not wanted or str(x.get("category","")).casefold()==wanted.casefold())]
+ if not eligible: eligible=[x for x in pool if x.get("uri") and not recent_conflict(x)]
  if not eligible: eligible=[x for x in pool if x.get("uri")]
  return random.choice(eligible) if eligible else None
 
@@ -175,23 +190,26 @@ async def queue_clear(request):
 
 async def deck_action(request):
  deck=request.match_info["deck"]; action=request.match_info["action"]
- if deck not in ("a","b") or action not in ("play","pause","stop","cue","air","skip","volume"):raise web.HTTPNotFound()
+ if deck not in ("a","b") or action not in ("load","play","pause","stop","cue","air","skip","volume"):raise web.HTTPNotFound()
  data={}
  if request.can_read_body:
   try:data=await request.json()
   except Exception:data={}
  try:
-  if action=="skip": out=await liq(f"deck_{deck}.skip")
+  if action=="load":
+   uri=str(data.get("uri","")).strip()
+   if not uri: raise web.HTTPBadRequest(text="uri required")
+   out=await liq(f"deck_{deck}.push {uri}")
+  elif action=="skip": out=await liq(f"deck_{deck}.skip")
   elif action=="volume":
    v=max(0.0,min(1.5,float(data.get("value",100))/100.0));out=await liq(f"var.set deck_{deck}_gain = {v}")
-  elif action=="air":
-   out=await liq(f"var.set manual_deck = {deck}")
-  elif action=="play":
+  elif action in ("air","play"):
    out=await liq(f"var.set manual_deck = {deck}")
   elif action in ("stop","pause"):
    out=await liq("var.set manual_deck = none")
-  else: out="cue is local preview"
+  else: out="cue handled by browser preview"
   return web.json_response({"ok":True,"result":out})
+ except web.HTTPException: raise
  except Exception as e:raise web.HTTPServiceUnavailable(text=str(e))
 
 async def encoder_action(request):
@@ -286,6 +304,262 @@ async def voice_track_upload(request):
    if not chunk:break
    f.write(chunk)
  return web.json_response({"ok":True,"path":str(dest),"uri":"file://"+str(dest)})
+
+
+async def fx_upload(request):
+ reader=await request.multipart(); field=await reader.next()
+ if field is None:raise web.HTTPBadRequest(text="file required")
+ name=re.sub(r"[^A-Za-z0-9_.-]+","_",field.filename or f"fx-{int(time.time())}.mp3")
+ dest=FX_DIR/f"{int(time.time())}-{name}"
+ with dest.open("wb") as f:
+  while True:
+   chunk=await field.read_chunk(1024*256)
+   if not chunk:break
+   f.write(chunk)
+ return web.json_response({"ok":True,"name":name,"path":str(dest),"uri":"file://"+str(dest)})
+
+async def fx_play(request):
+ d=await request.json();uri=str(d.get("uri","")).strip()
+ if not uri:raise web.HTTPBadRequest(text="uri required")
+ try:out=await liq(f"fx.push {uri}")
+ except Exception as e:raise web.HTTPServiceUnavailable(text=str(e))
+ return web.json_response({"ok":True,"result":out})
+
+async def get_clockwheel(request):return web.json_response(state.get("clockwheel",[]))
+async def set_clockwheel(request):
+ d=await request.json()
+ if not isinstance(d,list):raise web.HTTPBadRequest()
+ total=sum(max(0,int(x.get("min",0) or 0)) for x in d if isinstance(x,dict))
+ if total>60:raise web.HTTPBadRequest(text="clock exceeds 60 minutes")
+ state["clockwheel"]=d;await save_state();return web.json_response({"ok":True,"minutes":total})
+
+async def get_schedule(request):return web.json_response(state.get("schedule",[]))
+async def set_schedule(request):
+ d=await request.json()
+ if not isinstance(d,list):raise web.HTTPBadRequest()
+ state["schedule"]=d;await save_state();return web.json_response({"ok":True,"count":len(d)})
+
+async def execute_pal(script:str,log:list[str]|None=None):
+ out=log if log is not None else []
+ stopped=False
+ for raw in script.splitlines():
+  line=raw.strip()
+  if not line or line.startswith("#"):continue
+  m=re.match(r'^LOG\s+"(.*)"
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/fx/upload",fx_upload);app.router.add_post("/fx/play",fx_play)
+app.router.add_get("/clockwheel",get_clockwheel);app.router.add_post("/clockwheel",set_clockwheel)
+app.router.add_get("/schedule",get_schedule);app.router.add_post("/schedule",set_schedule)
+app.router.add_post("/pal/run",pal_run)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+app.on_startup.append(on_startup);app.on_cleanup.append(on_cleanup)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:out.append(m.group(1));continue
+  m=re.match(r'^WAIT\s+(\d+(?:\.\d+)?)
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:await asyncio.sleep(min(3600,float(m.group(1))));continue
+  m=re.match(r'^MODE\s+(AUTO|QUEUE|MANUAL|RECOVERY)
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:
+   state["mode"]=m.group(1).lower();await save_state();out.append("MODE "+m.group(1).upper());continue
+  m=re.match(r'^QUEUE\s+CATEGORY\s+"(.*)"\s+(\d+)
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:
+   n=min(100,int(m.group(2)));added=0
+   for _ in range(n):
+    item=choose_auto(m.group(1))
+    if item:state.setdefault("queue",[]).append(item);added+=1
+   await save_state();out.append(f"QUEUED {added} {m.group(1)}");continue
+  m=re.match(r'^QUEUE\s+URI\s+"(.*)"
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:
+   state.setdefault("queue",[]).append({"artist":"","title":"PAL URI","uri":m.group(1),"category":"PAL"});await save_state();out.append("QUEUED URI");continue
+  m=re.match(r'^ENCODER\s+(START|STOP|RESTART)
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:
+   action=m.group(1).lower()
+   if action=="restart":await liq("out.stop");await asyncio.sleep(.3);await liq("out.start")
+   else:await liq("out."+action)
+   out.append("ENCODER "+m.group(1).upper());continue
+  m=re.match(r'^SKIP
+ d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
+ state.setdefault("history",[]).append(item);state["history"]=state["history"][-5000:];state["now"]=d;await save_state()
+ return web.json_response({"ok":True})
+
+app=web.Application(middlewares=[cors_auth],client_max_size=64*1024*1024)
+app.router.add_get("/",lambda r:web.json_response({"name":"Louder Playout Node","ok":True}))
+app.router.add_get("/health",health);app.router.add_get("/status",status)
+app.router.add_post("/mode",set_mode)
+app.router.add_get("/queue",get_queue);app.router.add_post("/queue/add",queue_add);app.router.add_post("/queue/set",queue_set)
+app.router.add_post("/queue/move",queue_move);app.router.add_post("/queue/remove",queue_remove);app.router.add_post("/queue/clear",queue_clear)
+app.router.add_post("/deck/{deck}/{action}",deck_action)
+app.router.add_post("/encoder/{action}",encoder_action)
+app.router.add_post("/crossfade/apply",crossfade_apply);app.router.add_post("/dsp/apply",dsp_apply)
+app.router.add_post("/voice/ptt",voice_ptt);app.router.add_get("/ws/voice",voice_ws);app.router.add_post("/voice-track",voice_track_upload)
+app.router.add_post("/history",history_event)
+app.router.add_get("/internal/next",internal_next)
+
+if __name__=="__main__":
+ web.run_app(app,host=os.getenv("LOUDER_API_BIND","0.0.0.0"),port=int(os.getenv("LOUDER_API_PORT","8787")))
+,line,re.I)
+  if m:
+   await liq("auto.skip");out.append("SKIP");continue
+  raise ValueError("Unsupported PAL command: "+line)
+ return out
+
+async def pal_run(request):
+ d=await request.json();script=str(d.get("script",""))
+ try:log=await execute_pal(script,[])
+ except Exception as e:return web.json_response({"ok":False,"error":str(e)},status=400)
+ return web.json_response({"ok":True,"log":log})
+
+async def run_scheduled_event(event:dict):
+ action=str(event.get("action","")).lower()
+ if action in ("run pal","pal"):
+  await execute_pal(str(event.get("script") or event.get("payload") or ""),[])
+ elif action in ("queue category","category"):
+  cat=str(event.get("category") or event.get("payload") or "")
+  n=int(event.get("count",1) or 1)
+  for _ in range(max(0,min(n,100))):
+   item=choose_auto(cat)
+   if item:state.setdefault("queue",[]).append(item)
+  await save_state()
+ elif action in ("load clock","clock"):
+  if isinstance(event.get("clock"),list):state["clockwheel"]=event["clock"];await save_state()
+ elif action in ("station id","id"):
+  uri=str(event.get("uri",""))
+  if uri:state.setdefault("queue",[]).insert(0,{"artist":"Louder","title":"Station ID","uri":uri,"category":"Station IDs"});await save_state()
+
+async def scheduler_loop(app):
+ while True:
+  now=time.localtime();hhmm=f"{now.tm_hour:02d}:{now.tm_min:02d}";day=time.strftime("%Y-%m-%d",now)
+  changed=False
+  for e in state.get("schedule",[]):
+   if str(e.get("time",""))==hhmm and e.get("_last")!=day:
+    try:await run_scheduled_event(e)
+    except Exception as ex:print("scheduler:",ex,flush=True)
+    e["_last"]=day;changed=True
+  if changed:await save_state()
+  await asyncio.sleep(15)
+
+async def on_startup(app):
+ app["scheduler_task"]=asyncio.create_task(scheduler_loop(app))
+
+async def on_cleanup(app):
+ task=app.get("scheduler_task")
+ if task:task.cancel()
 
 async def history_event(request):
  d=await request.json(); item={"ts":time.time(),"time":time.strftime("%H:%M:%S"),**d}
