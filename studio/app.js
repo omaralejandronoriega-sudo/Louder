@@ -143,8 +143,23 @@ $("#apiUrl").value=state.api.url||"";$("#apiToken").value=state.api.token||"";
 $("#apiSave").onclick=()=>{state.api={url:$("#apiUrl").value.trim().replace(/\/$/,""),token:$("#apiToken").value};store.set("api",state.api);log("Node API settings saved");refreshNodeButtons()};
 $("#apiTest").onclick=async()=>{state.api={url:$("#apiUrl").value.trim().replace(/\/$/,""),token:$("#apiToken").value};try{const r=await apiFetch("status",{},true);state.nodeOnline=!!r;$("#apiLog").textContent=JSON.stringify(r,null,2);setNode(true);await syncNodeState(r);await loadNodeCatalog();await refreshRequests();await refreshPalScripts();await refreshStats()}catch(e){$("#apiLog").textContent=e.message;setNode(false)}};
 async function apiFetch(path,payload={},get=false){if(!state.api.url)throw new Error("No node API configured");const opt={method:get?"GET":"POST",headers:{"Content-Type":"application/json"}};if(state.api.token)opt.headers.Authorization="Bearer "+state.api.token;if(!get)opt.body=JSON.stringify(payload);const r=await fetch(state.api.url+"/"+path,opt);if(!r.ok)throw new Error("Node HTTP "+r.status);return r.headers.get("content-type")?.includes("json")?r.json():r.text()}
+function fmtSeconds(value){if(value==null||!Number.isFinite(+value)||+value<0)return"—";const s=+value,m=Math.floor(s/60),sec=s-m*60;return String(m).padStart(2,"0")+":"+sec.toFixed(1).padStart(4,"0")}
+function dbHeight(db){if(db==null||!Number.isFinite(+db))return 2;return Math.max(2,Math.min(100,((+db+60)/66)*100))}
+function renderTelemetry(s){
+ const timing=s?.timing||{},meters=s?.meters||{};
+ [["a",timing.a],["b",timing.b]].forEach(([d,t])=>{
+   if(!t)return;
+   $("#"+d+"Elapsed").textContent=fmtSeconds(t.elapsed);
+   $("#"+d+"Remaining").textContent=t.remaining==null?"—":"-"+fmtSeconds(t.remaining);
+   const total=(+t.elapsed||0)+(+t.remaining||0),pct=total>0?Math.max(0,Math.min(100,(+t.elapsed||0)/total*100)):0;
+   const fill=$("#"+d+"Wave i");if(fill)fill.style.width=pct+"%";
+ });
+ [["a",meters.a_db],["b",meters.b_db]].forEach(([d,db])=>{
+   const h=dbHeight(db);$("#"+d+"Vu")?.querySelectorAll("i").forEach((bar,i)=>bar.style.height=Math.max(2,h-(i*2))+"%");
+ });
+}
 function setNode(on){state.nodeOnline=on;$("#nodeState").textContent=on?"NODE ONLINE":"NODE OFFLINE";$("#nodeState").classList.toggle("online",on);$("#nodeText").textContent=on?"ONLINE":"OFFLINE";refreshNodeButtons();if(state.mic){$("#ptt").disabled=!on;$("#micLatch").disabled=!on}$("#vtStore").disabled=!on||!state.lastVoiceBlob}
-async function syncNodeState(r=null){const s=r||await apiFetch("status",{},true);if(Array.isArray(s.queue)){state.queue=s.queue;store.set("queue",state.queue);renderQueue()}if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(s.mode){state.mode=s.mode;$(".mode").forEach(x=>x.classList.toggle("active",x.dataset.mode===state.mode))}return s}
+async function syncNodeState(r=null){const s=r||await apiFetch("status",{},true);if(Array.isArray(s.queue)){state.queue=s.queue;store.set("queue",state.queue);renderQueue()}if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(s.mode){state.mode=s.mode;$(".mode").forEach(x=>x.classList.toggle("active",x.dataset.mode===state.mode))}renderTelemetry(s);return s}
 function refreshNodeButtons(){$$("[data-node],[data-node-range]").forEach(x=>x.disabled=!state.nodeOnline)}
 async function nodeAction(path,payload={}){if(!state.nodeOnline){log(path+" blocked: node offline");return}try{await apiFetch(path,payload);log(path+" OK")}catch(e){log(path+" failed: "+e.message);setNode(false)}}
 $("[data-node]").forEach(b=>b.onclick=()=>{let payload={};if(b.dataset.node==="crossfade/apply")payload=collectXf();if(b.dataset.node==="dsp/apply")payload={processors:collectDsp()};nodeAction(b.dataset.node,payload)});
@@ -174,5 +189,5 @@ function renderHistory(){$("#historyRows").innerHTML=state.history.slice(-100).r
 drawStats();
 
 restoreXf();restoreDsp();renderQueue();renderEncoders();renderClock();renderEvents();renderFx();renderHistory();refreshNodeButtons();loadLibrary();log("Louder Cloud Studio ready");
-setInterval(async()=>{if(!state.nodeOnline)return;try{const s=await apiFetch("status",{},true);setNode(true);if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}if(Array.isArray(s.encoders)){state.encoders=s.encoders.map(e=>({name:e.name||e.id,codec:e.format||"MP3",bitrate:e.bitrate||320,status:e.status||"unknown"}));renderEncoders()}await refreshStats()}catch(e){setNode(false)}},5000);
+setInterval(async()=>{if(!state.nodeOnline)return;try{const s=await apiFetch("status",{},true);setNode(true);if(s.now){$("#aArtist").textContent=s.now.artist||"Unknown";$("#aTitle").textContent=s.now.title||"Current track"}renderTelemetry(s);if(Array.isArray(s.encoders)){state.encoders=s.encoders.map(e=>({name:e.name||e.id,codec:e.format||"MP3",bitrate:e.bitrate||320,status:e.status||"unknown"}));renderEncoders()}await refreshStats()}catch(e){setNode(false)}},5000);
 setInterval(refreshRequests,15000);
