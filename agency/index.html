@@ -11,17 +11,21 @@ h2{font:900 20px Georgia,serif}.team{display:grid;grid-template-columns:repeat(4
 .board{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}.column{min-width:0}.column h3{text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--muted)}.task{padding:13px;margin-bottom:10px}.task b{display:block}.meta{font-size:12px;color:var(--muted);margin:7px 0}.tag{display:inline-block;background:#eee;border-radius:99px;padding:4px 7px;font-size:11px;font-weight:800}.proof{margin-top:9px;font-size:11px}.panel{padding:16px;margin-top:20px}.row{display:grid;grid-template-columns:160px 1fr 140px 110px;gap:10px;border-top:1px solid #eee;padding:10px 0;align-items:center;font-size:13px}.hidden{display:none}
 @media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.metrics,.team,.board{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}@media(max-width:650px){main{padding:16px}.metrics,.team,.board{grid-template-columns:1fr}}
 </style></head><body><div class="app"><aside><div class="logo">AGENCIA <b>LOUDER</b></div><nav>
-<button class="active" data-view="today">◉ Hoy</button><button data-view="command">⌁ Centro de Mando</button><button data-view="ephemeris">◷ Efemérides</button><button>▦ Calendario</button><button>✓ Contenido</button><button>⚙ Automatizaciones</button><button>! Incidencias</button><button>↗ Publicado</button>
+<div style="padding:8px 10px 4px;font-size:11px;font-weight:900;opacity:.55;text-transform:uppercase">Marcas</div>
+<button class="brandBtn active" data-brand="louder">● Louder</button>
+<button class="brandBtn" data-brand="tbc">● The British Corner</button>
+<div style="padding:12px 10px 4px;font-size:11px;font-weight:900;opacity:.55;text-transform:uppercase">Agencia</div>
+<button data-view="today">◉ Hoy</button><button data-view="command">⌁ Centro de Mando</button><button data-view="ephemeris">◷ Efemérides</button><button>▦ Calendario</button><button>✓ Contenido</button><button>⚙ Automatizaciones</button><button>! Incidencias</button><button>↗ Publicado</button>
 </nav></aside><main>
 <div class="head"><div><h1>Buenos días, Omar.</h1><div style="color:var(--muted)">Tu equipo digital y sus entregas de hoy.</div></div><div class="live" id="global">● Supervisando</div></div>
 <section id="ephemerisPanel" class="panel hidden">
-<h2>Efemérides · Mesa editorial</h2>
+<h2>Efemérides · <span id="ephemBrand">Louder</span></h2>
 <div class="meta">Próximos aniversarios y oportunidades para convertir en contenido.</div>
 <div style="display:flex;gap:8px;margin:12px 0;flex-wrap:wrap"><button class="tag" onclick="loadEphemeris(0)">Hoy</button><button class="tag" onclick="loadEphemeris(7)">Próximos 7 días</button><button class="tag" onclick="loadEphemeris(30)">Próximos 30 días</button></div>
 <div id="ephemerisList"><div class="meta">Cargando calendario editorial…</div></div>
 </section>
 <section id="commandCenter" class="panel hidden">
-<h2>Centro de Mando</h2>
+<h2>Centro de Mando · <span id="commandBrand">Louder</span></h2>
 <div style="display:grid;grid-template-columns:220px 160px 1fr;gap:10px;margin-bottom:10px">
 <select id="cmdTo" style="padding:12px;border:1px solid var(--line);border-radius:9px"><option value="valeria">Valeria Cruz (Directora editorial)</option><option value="team">Todo el equipo</option></select>
 <select id="cmdPriority" style="padding:12px;border:1px solid var(--line);border-radius:9px"><option>Normal</option><option>Urgente</option><option>Alta</option></select>
@@ -55,9 +59,13 @@ const people=[{id:'valeria',name:'Valeria Cruz',initials:'VC',role:'Directora ed
 {id:'bruno',name:'Bruno Leal',initials:'BL',role:'Webmaster · Louder',area:'loudermx.com',desc:'Recibe las notas aprobadas, publica en la web y entrega la URL final a Sofía.',repo:'omaralejandronoriega-sudo/Louder',workflow:'wordpress-cron.yml'}
 ];
 people.forEach(p=>{const s=document.getElementById('cmdTo');if(s&&!s.querySelector('[value="'+p.id+'"]')){const o=document.createElement('option');o.value=p.id;o.textContent=p.name+' ('+p.role+')';s.appendChild(o)}})
+let activeBrand=localStorage.getItem('agenciaBrand')||'louder';
+const brandNames={louder:'Louder',tbc:'The British Corner',antena_radio:'Antena Radio',antena_noticias:'Antena Noticias'};
+function setBrand(b){activeBrand=b;localStorage.setItem('agenciaBrand',b);document.querySelectorAll('.brandBtn').forEach(x=>x.classList.toggle('active',x.dataset.brand===b));['commandBrand','ephemBrand'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=brandNames[b]||b});renderCommands();}
+document.querySelectorAll('.brandBtn').forEach(b=>b.onclick=()=>setBrand(b.dataset.brand));
 const commands=JSON.parse(localStorage.getItem('agenciaLouderCommands')||'[]');
-function renderCommands(){const el=document.getElementById('cmdLog');if(!el)return;el.innerHTML='<h2>Órdenes recientes</h2>'+commands.slice().reverse().map(x=>'<div class="row"><b>'+x.to+'</b><span>'+x.text+'</span><span class="tag">'+x.priority+'</span><span>'+x.status+'</span></div>').join('')}
-document.getElementById('sendCmd').onclick=()=>{const to=document.getElementById('cmdTo'),txt=document.getElementById('cmdText');if(!txt.value.trim())return;commands.push({id:Date.now(),to:to.options[to.selectedIndex].text,text:txt.value.trim(),priority:document.getElementById('cmdPriority').value,deadline:document.getElementById('cmdDeadline').value,status:'Asignada a Valeria',created:new Date().toISOString()});localStorage.setItem('agenciaLouderCommands',JSON.stringify(commands));txt.value='';renderCommands();};
+function renderCommands(){const el=document.getElementById('cmdLog');if(!el)return;el.innerHTML='<h2>Órdenes recientes</h2>'+commands.filter(x=>(x.brand||'louder')===activeBrand).slice().reverse().map(x=>'<div class="row"><b>'+x.to+'</b><span>'+x.text+'</span><span class="tag">'+x.priority+'</span><span>'+x.status+'</span></div>').join('')}
+document.getElementById('sendCmd').onclick=()=>{const to=document.getElementById('cmdTo'),txt=document.getElementById('cmdText');if(!txt.value.trim())return;commands.push({id:Date.now(),brand:activeBrand,to:to.options[to.selectedIndex].text,text:txt.value.trim(),priority:document.getElementById('cmdPriority').value,deadline:document.getElementById('cmdDeadline').value,status:'Asignada a Valeria',created:new Date().toISOString()});localStorage.setItem('agenciaLouderCommands',JSON.stringify(commands));txt.value='';renderCommands();};
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('commandCenter').classList.toggle('hidden',b.dataset.view!=='command');document.getElementById('ephemerisPanel').classList.toggle('hidden',b.dataset.view!=='ephemeris');if(b.dataset.view==='ephemeris')loadEphemeris(7)});
 renderCommands();
 async function loadEphemeris(days=7){const el=document.getElementById('ephemerisList');try{const r=await fetch('../data/radar_2026.json');const j=await r.json();const arr=Array.isArray(j)?j:(j.items||j.releases||j.albums||[]);const now=new Date(), end=new Date(now);end.setDate(end.getDate()+days);const rows=arr.filter(x=>{const ds=x.date||x.release_date||x.released||x.fecha; if(!ds)return false;const d=new Date(ds);const y=now.getFullYear();const a=new Date(y,d.getMonth(),d.getDate());return a>=new Date(y,now.getMonth(),now.getDate())&&a<=end}).slice(0,80);el.innerHTML=rows.map((x,i)=>{const artist=x.artist||x.artist_name||x.band||'Artista';const album=x.album||x.title||x.name||'Lanzamiento';const date=x.date||x.release_date||x.released||x.fecha||'';return '<div class="row"><b>'+artist+'</b><span>'+album+' · '+date+'</span><span class="tag">Efeméride</span><button onclick="assignEphemeris('+i+')" data-artist="'+artist.replace(/"/g,'&quot;')+'" data-album="'+album.replace(/"/g,'&quot;')+'" class="tag">Mandar a diseño + community</button></div>'}).join('')||'<div class="meta">Sin coincidencias en este periodo.</div>';window.ephemRows=rows}catch(e){el.innerHTML='<div class="meta">Sincronizando fuente de efemérides…</div>'}}
