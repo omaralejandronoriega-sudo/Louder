@@ -143,6 +143,24 @@ async def liq(command: str, timeout: float = 3.0) -> str:
             pass
 
 
+async def liq_float(command: str) -> float | None:
+    try:
+        raw = await liq(command)
+        first = raw.splitlines()[0].strip() if raw else ""
+        return float(first)
+    except Exception:
+        return None
+
+
+def linear_to_db(value: float | None) -> float | None:
+    if value is None:
+        return None
+    if value <= 0:
+        return -60.0
+    import math
+    return max(-60.0, min(6.0, 20.0 * math.log10(value)))
+
+
 def liq_annotation_value(value: Any) -> str:
     text = str(value if value is not None else "")
     return text.replace("\\", "\\\\").replace('"', '\\"')
@@ -415,16 +433,26 @@ async def health(request: web.Request) -> web.Response:
 async def status(request: web.Request) -> web.Response:
     liquidsoap_ok = False
     metadata = ""
-    remaining = ""
     output_status = "unknown"
 
     try:
         metadata = await liq("auto.metadata")
-        remaining = await liq("auto.remaining")
         output_status = await liq("out.status")
         liquidsoap_ok = True
     except Exception:
         pass
+
+    auto_elapsed, auto_remaining, a_elapsed, a_remaining, b_elapsed, b_remaining, a_rms, b_rms, program_rms = await asyncio.gather(
+        liq_float("auto.elapsed"),
+        liq_float("auto.remaining"),
+        liq_float("deck_a.elapsed"),
+        liq_float("deck_a.remaining"),
+        liq_float("deck_b.elapsed"),
+        liq_float("deck_b.remaining"),
+        liq_float("deck_a_meter.rms"),
+        liq_float("deck_b_meter.rms"),
+        liq_float("program_meter.rms"),
+    )
 
     encoders = list(state.get("encoders", []))
     if encoders:
@@ -444,10 +472,18 @@ async def status(request: web.Request) -> web.Response:
             "dsp": state.get("dsp"),
             "voice": state.get("voice"),
             "liquidsoap_metadata": metadata,
-            "remaining": remaining,
+            "timing": {
+                "auto": {"elapsed": auto_elapsed, "remaining": auto_remaining},
+                "a": {"elapsed": a_elapsed, "remaining": a_remaining},
+                "b": {"elapsed": b_elapsed, "remaining": b_remaining},
+            },
+            "meters": {
+                "a_db": linear_to_db(a_rms),
+                "b_db": linear_to_db(b_rms),
+                "program_db": linear_to_db(program_rms),
+            },
         }
     )
-
 
 async def set_mode(request: web.Request) -> web.Response:
     data = await request.json()
