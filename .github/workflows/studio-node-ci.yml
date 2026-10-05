@@ -17,9 +17,13 @@ jobs:
         with:
           python-version: "3.12"
       - name: Python syntax
-        run: python -m py_compile studio-node/api/api.py
+        run: |
+          python -m py_compile studio-node/api/api.py
+          python -m py_compile studio-node/vault/vault.py
       - name: Build API image
         run: docker build -t louder-api studio-node/api
+      - name: Build Vault image
+        run: docker build -t louder-vault studio-node/vault
       - name: Build Liquidsoap image
         run: docker build -t louder-liquidsoap studio-node/liquidsoap
       - name: Liquidsoap typecheck
