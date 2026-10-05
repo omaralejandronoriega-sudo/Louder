@@ -35,6 +35,7 @@ deck_a_gain = interactive.float("deck_a_gain", min=0., max=1.5, 1.)
 deck_b_gain = interactive.float("deck_b_gain", min=0., max=1.5, 1.)
 music_gain = interactive.float("music_gain", min=0., max=1.5, 1.)
 voice_gain = interactive.float("voice_gain", min=0., max=2., 1.)
+voice_active = interactive.bool("voice_active", false)
 aux_1_gain = interactive.float("aux_1_gain", min=0., max=2., 1.)
 aux_2_gain = interactive.float("aux_2_gain", min=0., max=2., 1.)
 aux_3_gain = interactive.float("aux_3_gain", min=0., max=2., 1.)
@@ -112,6 +113,11 @@ voice = input.harbor(
   max=2.0
 )
 voice = amplify(voice_gain, voice)
+voice = switch(
+  id="voice_gate",
+  track_sensitive=false,
+  [({voice_active()}, voice), ({true}, blank())]
+)
 music = amplify(music_gain, program)
 
 # SAM-style Auxiliary Decks.
