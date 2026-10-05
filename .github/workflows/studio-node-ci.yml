@@ -46,6 +46,7 @@ jobs:
         run: |
           set -eux
           docker network create louder-test
+          docker volume create louder-test-data
 
           docker run -d --name louder-api-test             --network louder-test             -p 8787:8787             -e LOUDER_API_TOKEN=test-token             -e LOUDER_INTERNAL_KEY=test-internal             -e LIQUIDSOAP_HOST=louder-liquidsoap-test             -e LIQUIDSOAP_PORT=1234             -e VOICE_HARBOR_HOST=louder-liquidsoap-test             -e VOICE_HARBOR_PORT=8005             -e VOICE_HARBOR_PASSWORD=test-voice             louder-api
 
@@ -74,3 +75,4 @@ jobs:
         run: |
           docker rm -f louder-api-test louder-liquidsoap-test || true
           docker network rm louder-test || true
+          docker volume rm louder-test-data || true
