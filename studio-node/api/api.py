@@ -633,41 +633,94 @@ async def dsp_apply(request: web.Request) -> web.Response:
         if isinstance(item, dict)
     }
 
-    def slider(name: str, index: int, default: float = 50.0) -> float:
-        try:
-            return float(by_name.get(name, {}).get("values", [default])[index])
-        except Exception:
-            return default
+    def enabled(name: str, default: bool = True) -> bool:
+        return bool(by_name.get(name, {}).get("on", default))
 
-    bass_values = by_name.get("bass eq", {}).get("values", [])
-    comp_values = by_name.get("compressor", {}).get("values", [])
+    def values(name: str) -> list[float]:
+        raw = by_name.get(name, {}).get("values", [])
+        result: list[float] = []
+        for value in raw:
+            try:
+                result.append(float(value))
+            except Exception:
+                result.append(50.0)
+        return result
+
+    def at(name: str, index: int, default: float = 50.0) -> float:
+        row = values(name)
+        return row[index] if index < len(row) else default
+
+    # Sliders use SAM-like 0..100 center-at-50 values in the browser.
+    mixer_input = max(0.0, min(2.0, at("mixer", 0) / 50.0))
+    mixer_output = max(0.0, min(2.0, at("mixer", 1) / 50.0))
+
+    eq_low = max(-12.0, min(12.0, (at("eq", 0) - 50.0) * 0.24))
+    eq_mid = max(-12.0, min(12.0, (at("eq", 1) - 50.0) * 0.24))
+    eq_high = max(-12.0, min(12.0, (at("eq", 2) - 50.0) * 0.24))
+
+    agc_target = -24.0 + (at("agc", 0) / 100.0) * 18.0
+    speed = max(0.0, min(100.0, at("agc", 1)))
+    agc_up = 30.0 - (speed / 100.0) * 29.9
+    agc_down = 5.0 - (speed / 100.0) * 4.98
+
+    stereo_width = max(-1.0, min(1.0, (at("stereo expander", 0) - 50.0) / 50.0))
+
+    bass_frequency = 60.0 + (at("bass eq", 0) / 100.0) * 340.0
+    bass_gain = max(-12.0, min(12.0, (at("bass eq", 1) - 50.0) * 0.24))
+
+    comp_threshold = -40.0 + (at("compressor", 0) / 100.0) * 35.0
+    comp_ratio = 1.0 + (at("compressor", 1) / 100.0) * 9.0
+
+    limiter_threshold = -6.0 + (at("limiter", 0) / 100.0) * 5.9
 
     cfg = {
-        "agc": bool(by_name.get("agc", {}).get("on", True)),
-        "target": -24.0 + (slider("agc", 0) / 100.0) * 18.0,
-        "stereo_width": (slider("stereo expander", 0) - 50.0) / 50.0,
-        "bass_gain": (float(bass_values[1]) - 50.0) / 5.0
-        if len(bass_values) > 1
-        else 0.0,
-        "compressor": bool(by_name.get("compressor", {}).get("on", True)),
-        "threshold": -40.0 + (slider("compressor", 0) / 100.0) * 35.0,
-        "ratio": 1.0 + (float(comp_values[1]) / 100.0) * 9.0
-        if len(comp_values) > 1
-        else 2.0,
-        "limiter": bool(by_name.get("limiter", {}).get("on", True)),
+        "mixer": enabled("mixer", True),
+        "mixer_input_gain": mixer_input,
+        "mixer_output_gain": mixer_output,
+        "eq": enabled("eq", True),
+        "eq_low": eq_low,
+        "eq_mid": eq_mid,
+        "eq_high": eq_high,
+        "agc": enabled("agc", True),
+        "agc_target": agc_target,
+        "agc_up": agc_up,
+        "agc_down": agc_down,
+        "stereo": enabled("stereo expander", False),
+        "stereo_width": stereo_width,
+        "bass": enabled("bass eq", False),
+        "bass_frequency": bass_frequency,
+        "bass_gain": bass_gain,
+        "compressor": enabled("compressor", True),
+        "comp_threshold": comp_threshold,
+        "comp_ratio": comp_ratio,
+        "limiter": enabled("limiter", True),
+        "limiter_threshold": limiter_threshold,
     }
     state["dsp"] = cfg
     await save_state()
 
     commands = [
+        ("mixer_enabled", "true" if cfg["mixer"] else "false"),
+        ("mixer_input_gain", cfg["mixer_input_gain"]),
+        ("mixer_output_gain", cfg["mixer_output_gain"]),
+        ("eq_enabled", "true" if cfg["eq"] else "false"),
+        ("eq_low", cfg["eq_low"]),
+        ("eq_mid", cfg["eq_mid"]),
+        ("eq_high", cfg["eq_high"]),
         ("agc_enabled", "true" if cfg["agc"] else "false"),
-        ("agc_target", cfg["target"]),
+        ("agc_target", cfg["agc_target"]),
+        ("agc_up", cfg["agc_up"]),
+        ("agc_down", cfg["agc_down"]),
+        ("stereo_enabled", "true" if cfg["stereo"] else "false"),
         ("stereo_width", cfg["stereo_width"]),
+        ("bass_enabled", "true" if cfg["bass"] else "false"),
+        ("bass_frequency", cfg["bass_frequency"]),
         ("bass_gain", cfg["bass_gain"]),
         ("comp_enabled", "true" if cfg["compressor"] else "false"),
-        ("comp_threshold", cfg["threshold"]),
-        ("comp_ratio", cfg["ratio"]),
+        ("comp_threshold", cfg["comp_threshold"]),
+        ("comp_ratio", cfg["comp_ratio"]),
         ("limiter_enabled", "true" if cfg["limiter"] else "false"),
+        ("limiter_threshold", cfg["limiter_threshold"]),
     ]
 
     results = []
