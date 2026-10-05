@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "timezone": "America/Mexico_City",
+  "director": {
+    "id": "valeria",
+    "name": "Valeria Cruz",
+    "role": "Directora editorial"
+  },
+  "stages": [
+    {
+      "id": "research",
+      "label": "Investigación",
+      "owners": [
+        "elena",
+        "tomas"
+      ],
+      "output": "Tema documentado y fuentes"
+    },
+    {
+      "id": "writing",
+      "label": "Redacción",
+      "owners": [
+        "tomas"
+      ],
+      "output": "Nota y copies listos"
+    },
+    {
+      "id": "production",
+      "label": "Producción",
+      "owners": [
+        "gael"
+      ],
+      "output": "Paquete de formatos definido"
+    },
+    {
+      "id": "design",
+      "label": "Diseño",
+      "owners": [
+        "renata",
+        "ines",
+        "mara"
+      ],
+      "output": "Arte final"
+    },
+    {
+      "id": "video",
+      "label": "Video",
+      "owners": [
+        "diego",
+        "mateo"
+      ],
+      "output": "Video vertical final"
+    },
+    {
+      "id": "publishing",
+      "label": "Publicación",
+      "owners": [
+        "sofia",
+        "arthur",
+        "nico",
+        "bruno"
+      ],
+      "output": "Publicación enviada"
+    },
+    {
+      "id": "verification",
+      "label": "Verificación",
+      "owners": [
+        "leo"
+      ],
+      "output": "URL o ID remoto verificado"
+    },
+    {
+      "id": "analytics",
+      "label": "Métricas",
+      "owners": [
+        "camila"
+      ],
+      "output": "Resultado y aprendizaje"
+    }
+  ],
+  "routing": {
+    "Louder web": [
+      "elena",
+      "tomas",
+      "gael",
+      "renata",
+      "bruno",
+      "leo",
+      "camila"
+    ],
+    "Louder redes": [
+      "elena",
+      "tomas",
+      "gael",
+      "renata",
+      "diego",
+      "sofia",
+      "leo",
+      "camila"
+    ],
+    "TikTok Louder": [
+      "elena",
+      "gael",
+      "mateo",
+      "sofia",
+      "leo",
+      "camila"
+    ],
+    "The British Corner": [
+      "tomas",
+      "gael",
+      "ines",
+      "arthur",
+      "leo",
+      "camila"
+    ],
+    "Threads": [
+      "elena",
+      "tomas",
+      "mara",
+      "nico",
+      "leo",
+      "camila"
+    ]
+  },
+  "rules": [
+    "Valeria asigna y prioriza",
+    "Una tarea no avanza sin entregable",
+    "Publicado requiere URL o ID remoto",
+    "Leo reabre cualquier publicación no verificada",
+    "Camila analiza sólo piezas verificadas"
+  ]
+}
