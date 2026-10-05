@@ -62,9 +62,9 @@ end
 auto_raw = request.dynamic(id="auto", prefetch=2, timeout=60., next_request)
 auto = crossfade(
   id="auto_crossfade",
-  duration=xf_duration,
-  fade_in=xf_in,
-  fade_out=xf_out,
+  duration=4.5,
+  fade_in=1.2,
+  fade_out=2.8,
   auto_raw
 )
 
