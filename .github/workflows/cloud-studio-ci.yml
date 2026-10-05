@@ -1,0 +1,27 @@
+name: Cloud Studio CI
+on:
+  push:
+    branches: [cloud-studio-v1]
+    paths: ["studio/**", ".github/workflows/cloud-studio-ci.yml"]
+  pull_request:
+    paths: ["studio/**"]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax check
+        run: node --check studio/app.js
+      - name: Required modules
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("studio/index.html").read_text()
+          required=["Voice FX / Microphone","Encoders","PAL Scripts","Clockwheel","Event Scheduler","Crossfade Rules","Audio Mixer Pipeline","Sound FX","Deck A","Deck B"]
+          missing=[x for x in required if x not in s]
+          if missing: raise SystemExit("Missing: "+", ".join(missing))
+          print("All required studio modules present.")
+          PY
