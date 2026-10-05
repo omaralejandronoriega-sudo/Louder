@@ -104,7 +104,7 @@ async def health(request: web.Request) -> web.Response:
 
 async def index(request: web.Request) -> web.Response:
     auth(request)
-    limit = max(1, min(5000, int(request.query.get("limit", "1000"))))
+    limit = max(1, min(25000, int(request.query.get("limit", "25000"))))
     items = []
 
     async for message in client.iter_messages(CHAT_ID, limit=limit):
