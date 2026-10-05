@@ -144,7 +144,7 @@ radio = dry_wet(limit_wet, radio, limited)
 # Metadata/historical event hooks are available from the command server.
 radio.on_metadata(
   synchronous=false,
-  fun(m) -> log.info("LOUDER_METADATA #{m}") end
+  fun (m) -> log.info("LOUDER_METADATA #{m}")
 )
 
 # Final source: YesStreaming only receives the finished 320 kbps signal.
