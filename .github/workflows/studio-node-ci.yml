@@ -1,4 +1,5 @@
 name: Studio Node CI
+
 on:
   push:
     branches: [cloud-studio-v1]
@@ -15,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,7 +37,7 @@ jobs:
 
       - name: Liquidsoap typecheck
         run: |
-          docker run --rm             -e LOUDER_NEXT_URL=http://api:8787/internal/next?key=test             -e LOUDER_HISTORY_URL=http://api:8787/internal/history?key=test             -e VOICE_HARBOR_PASSWORD=test             -e YESSTREAMING_HOST=127.0.0.1             -e YESSTREAMING_PORT=2720             -e YESSTREAMING_MOUNT=/stream             -e YESSTREAMING_USER=source             -e YESSTREAMING_PASSWORD=test             -v "$PWD/studio-node/liquidsoap/radio.liq:/radio.liq:ro"             louder-liquidsoap --check /radio.liq
+          docker run --rm             -e LOUDER_NEXT_URL='http://api:8787/internal/next?key=test'             -e LOUDER_HISTORY_URL='http://api:8787/internal/history?key=test'             -e VOICE_HARBOR_PASSWORD=test             -e YESSTREAMING_HOST=127.0.0.1             -e YESSTREAMING_PORT=2720             -e YESSTREAMING_MOUNT=/stream             -e YESSTREAMING_USER=source             -e YESSTREAMING_PASSWORD=test             -v "$PWD/studio-node/liquidsoap/radio.liq:/radio.liq:ro"             louder-liquidsoap --check /radio.liq
 
       - name: Compose validation
         run: |
@@ -45,14 +47,15 @@ jobs:
       - name: Runtime smoke test
         run: |
           set -eux
+
           docker network create louder-test
           docker volume create louder-test-data
 
-          docker run -d --name louder-api-test             --network louder-test             -p 8787:8787             -e LOUDER_API_TOKEN=test-token             -e LOUDER_INTERNAL_KEY=test-internal             -e LIQUIDSOAP_HOST=louder-liquidsoap-test             -e LIQUIDSOAP_PORT=1234             -e VOICE_HARBOR_HOST=louder-liquidsoap-test             -e VOICE_HARBOR_PORT=8005             -e VOICE_HARBOR_PASSWORD=test-voice             louder-api
+          docker run -d             --name louder-api-test             --network louder-test             -v louder-test-data:/data             -p 8787:8787             -e LOUDER_API_TOKEN=test-token             -e LOUDER_INTERNAL_KEY=test-internal             -e LIQUIDSOAP_HOST=louder-liquidsoap-test             -e LIQUIDSOAP_PORT=1234             -e VOICE_HARBOR_HOST=louder-liquidsoap-test             -e VOICE_HARBOR_PORT=8005             -e VOICE_HARBOR_PASSWORD=test-voice             louder-api
 
-          docker run -d --name louder-liquidsoap-test             --network louder-test             -e LOUDER_NEXT_URL='http://louder-api-test:8787/internal/next?key=test-internal'             -e LOUDER_HISTORY_URL='http://louder-api-test:8787/internal/history?key=test-internal'             -e VOICE_HARBOR_PASSWORD=test-voice             -e YESSTREAMING_HOST=127.0.0.1             -e YESSTREAMING_PORT=2720             -e YESSTREAMING_MOUNT=/stream             -e YESSTREAMING_USER=source             -e YESSTREAMING_PASSWORD=test             -v "$PWD/studio-node/liquidsoap/radio.liq:/radio.liq:ro"             louder-liquidsoap /radio.liq
+          docker run -d             --name louder-liquidsoap-test             --network louder-test             -v louder-test-data:/data             -v "$PWD/studio-node/liquidsoap/radio.liq:/radio.liq:ro"             -e LOUDER_NEXT_URL='http://louder-api-test:8787/internal/next?key=test-internal'             -e LOUDER_HISTORY_URL='http://louder-api-test:8787/internal/history?key=test-internal'             -e VOICE_HARBOR_PASSWORD=test-voice             -e YESSTREAMING_HOST=127.0.0.1             -e YESSTREAMING_PORT=2720             -e YESSTREAMING_MOUNT=/stream             -e YESSTREAMING_USER=source             -e YESSTREAMING_PASSWORD=test             louder-liquidsoap /radio.liq
 
-          for i in $(seq 1 30); do
+          for i in $(seq 1 45); do
             if curl -fsS http://127.0.0.1:8787/health | grep -q '"liquidsoap": true'; then
               break
             fi
@@ -60,9 +63,10 @@ jobs:
           done
 
           curl -fsS http://127.0.0.1:8787/health | grep -q '"liquidsoap": true'
-          curl -fsS -H 'Authorization: Bearer test-token'             http://127.0.0.1:8787/status | grep -q '"node": "online"'
 
-          curl -fsS -X POST             -H 'Authorization: Bearer test-token'             -H 'Content-Type: application/json'             -d '{"mode":"manual"}'             http://127.0.0.1:8787/mode | grep -q '"ok": true'
+          curl -fsS             -H 'Authorization: Bearer test-token'             http://127.0.0.1:8787/status | grep -q '"node": "online"'
+
+          curl -fsS             -X POST             -H 'Authorization: Bearer test-token'             -H 'Content-Type: application/json'             -d '{"mode":"manual"}'             http://127.0.0.1:8787/mode | grep -q '"ok": true'
 
       - name: Runtime logs on failure
         if: failure()
