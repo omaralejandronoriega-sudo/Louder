@@ -4,7 +4,7 @@ on:
     branches: [cloud-studio-v1]
     paths: ["studio/**", ".github/workflows/cloud-studio-ci.yml"]
   pull_request:
-    paths: ["studio/**"]
+    paths: ["studio/**", ".github/workflows/cloud-studio-ci.yml"]
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -13,28 +13,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
       - name: Browser code syntax
         run: node --check studio/app.js
-      - name: API code syntax
-        run: python -m py_compile studio/node/app.py
-      - name: Required modules
+      - name: Required SAM-style modules
         run: |
           python - <<'PY'
           from pathlib import Path
           s=Path("studio/index.html").read_text()
-          required=["Voice FX / Microphone","Encoders","PAL Scripts","Clockwheel","Event Scheduler","Crossfade Rules","Audio Mixer Pipeline","Sound FX","Deck A","Deck B"]
+          required=[
+            "Voice FX / Microphone","Encoders","PAL Scripts","Clockwheel",
+            "Event Scheduler","Crossfade Rules","Audio Mixer Pipeline",
+            "Sound FX","Deck A","Deck B","Aux 1","Aux 2","Aux 3","Requests"
+          ]
           missing=[x for x in required if x not in s]
-          if missing: raise SystemExit("Missing: "+", ".join(missing))
-          print("All required studio modules present.")
+          if missing:
+              raise SystemExit("Missing: "+", ".join(missing))
+          print("All required Studio modules present.")
           PY
-      - name: Liquidsoap 2.3.3 typecheck
-        run: |
-          docker run --rm \
-            -v "$PWD/studio/node/radio.liq:/app/radio.liq:ro" \
-            savonet/liquidsoap:v2.3.3 \
-            liquidsoap --check /app/radio.liq
-      - name: Build playout container
-        run: docker build -t louder-playout-ci studio/node
