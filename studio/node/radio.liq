@@ -34,8 +34,8 @@ deck_b = amplify(deck_b_volume, deck_b_raw)
 # Crossfade is applied to the automation queue. Values are live interactive getters.
 auto = crossfade(
   duration=xf_duration,
-  fade_in=xf_in,
-  fade_out=xf_out,
+  fade_in=1.2,
+  fade_out=2.8,
   auto_raw
 )
 
