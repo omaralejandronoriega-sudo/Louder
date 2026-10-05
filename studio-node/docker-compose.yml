@@ -39,6 +39,7 @@ services:
     restart: unless-stopped
     environment:
       LOUDER_NEXT_URL: http://api:8787/internal/next?key=${LOUDER_INTERNAL_KEY}
+      LOUDER_HISTORY_URL: http://api:8787/internal/history?key=${LOUDER_INTERNAL_KEY}
       YESSTREAMING_HOST: ${YESSTREAMING_HOST}
       YESSTREAMING_PORT: ${YESSTREAMING_PORT}
       YESSTREAMING_MOUNT: ${YESSTREAMING_MOUNT}
