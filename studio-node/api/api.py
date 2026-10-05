@@ -754,7 +754,7 @@ async def get_catalog(request: web.Request) -> web.Response:
 
 async def vault_sync(request: web.Request) -> web.Response:
     data = await request.json() if request.can_read_body else {}
-    limit = max(1, min(5000, int(data.get("limit", 5000))))
+    limit = max(1, min(25000, int(data.get("limit", 25000))))
     default_category = str(data.get("category", "Telegram")).strip() or "Telegram"
 
     if not VAULT_TOKEN:
