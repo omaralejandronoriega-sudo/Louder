@@ -1,4 +1,16 @@
 services:
+  vault:
+    build: ./vault
+    restart: unless-stopped
+    environment:
+      TELEGRAM_API_ID: ${TELEGRAM_API_ID}
+      TELEGRAM_API_HASH: ${TELEGRAM_API_HASH}
+      TELEGRAM_SESSION: ${TELEGRAM_SESSION}
+      TELEGRAM_VAULT_CHAT_ID: ${TELEGRAM_VAULT_CHAT_ID}
+      TELEGRAM_VAULT_TOKEN: ${TELEGRAM_VAULT_TOKEN}
+    expose:
+      - "8765"
+
   api:
     build: ./api
     restart: unless-stopped
@@ -11,11 +23,15 @@ services:
       VOICE_HARBOR_HOST: liquidsoap
       VOICE_HARBOR_PORT: 8005
       VOICE_HARBOR_PASSWORD: ${VOICE_HARBOR_PASSWORD}
+      TELEGRAM_VAULT_BASE_URL: http://vault:8765
+      TELEGRAM_VAULT_TOKEN: ${TELEGRAM_VAULT_TOKEN}
       EMERGENCY_URI: ${EMERGENCY_URI:-}
     volumes:
       - louder_data:/data
     ports:
       - "8787:8787"
+    depends_on:
+      - vault
 
   liquidsoap:
     build: ./liquidsoap
