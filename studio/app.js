@@ -89,14 +89,33 @@ function renderEncoders(){$("#encoderRows").innerHTML=state.encoders.map((e,i)=>
 $("#encAdd").onclick=()=>{state.encoders.push({name:$("#encName").value||"Encoder",codec:$("#encCodec").value,bitrate:+$("#encBitrate").value,status:"Configured"});store.set("encoders",state.encoders);renderEncoders();log("Encoder added")};
 
 function renderClock(){
- const total=state.clock.reduce((a,b)=>a+(+b.min||0),0);
- $("#clockBlocks").innerHTML=state.clock.map((x,i)=>'<div class="clockblock"><span>'+(i+1)+'. '+esc(x.category)+' — '+x.min+' min</span><button data-dc="'+i+'">×</button></div>').join("")||"<p>No blocks yet.</p>";
- const colors=["#3b88c7","#e0a13c","#5daf68","#9a63b0","#c84e57","#4eaaa0"];let acc=0,parts=[];
- state.clock.forEach((x,i)=>{const s=acc/60*100;acc+=+x.min||0;const e=Math.min(100,acc/60*100);parts.push(colors[i%colors.length]+" "+s+"% "+e+"%")});
- $("#clockFace").style.background=parts.length?"conic-gradient("+parts.join(",")+")":"#c9cfd4";$("#clockFace b").textContent=total+"/60";
+ const colors=["#3b88c7","#e0a13c","#5daf68","#9a63b0","#c84e57","#4eaaa0"];
+ $("#clockBlocks").innerHTML=state.clock.map((x,i)=>{
+   const label=x.kind==="comment"?(x.comment||"Comment"):x.kind==="request"?"Listener Request":(x.category||x.comment||"Directory");
+   const detail=x.kind==="category"||x.kind==="directory"?" · "+(x.selection||"random")+(x.enforce_rules===false?" · rules off":""):"";
+   return '<div class="clockblock"><span>'+(i+1)+'. '+esc((x.kind||"category").toUpperCase())+' — '+esc(label)+esc(detail)+'</span><span><button data-cu="'+i+'">▲</button><button data-cd="'+i+'">▼</button><button data-dc="'+i+'">×</button></span></div>'
+ }).join("")||"<p>No clockwheel entries yet.</p>";
+ const n=state.clock.length,parts=[];
+ state.clock.forEach((x,i)=>{const s=i/Math.max(1,n)*100,e=(i+1)/Math.max(1,n)*100;parts.push(colors[i%colors.length]+" "+s+"% "+e+"%")});
+ $("#clockFace").style.background=parts.length?"conic-gradient("+parts.join(",")+")":"#c9cfd4";
+ $("#clockFace b").textContent=n+" slot"+(n===1?"":"s");
  $$("[data-dc]").forEach(b=>b.onclick=()=>{state.clock.splice(+b.dataset.dc,1);renderClock()});
+ $$("[data-cu]").forEach(b=>b.onclick=()=>{const i=+b.dataset.cu;if(i>0){[state.clock[i-1],state.clock[i]]=[state.clock[i],state.clock[i-1]];renderClock()}});
+ $$("[data-cd]").forEach(b=>b.onclick=()=>{const i=+b.dataset.cd;if(i<state.clock.length-1){[state.clock[i+1],state.clock[i]]=[state.clock[i],state.clock[i+1]];renderClock()}});
 }
-$("#clockAdd").onclick=()=>{state.clock.push({category:$("#clockCat").value,min:+$("#clockMin").value});renderClock()};$("#clockSave").onclick=async()=>{store.set("clock",state.clock);if(state.nodeOnline){try{await apiFetch("clockwheel",state.clock)}catch(e){log("Clock sync failed: "+e.message)}}log("Clockwheel saved")};
+$("#clockAdd").onclick=()=>{
+ const kind=$("#clockKind").value;
+ state.clock.push({
+   kind,
+   category:(kind==="category"||kind==="directory")?$("#clockCat").value:"",
+   selection:$("#clockSelection").value,
+   enforce_rules:$("#clockRules").checked,
+   comment:$("#clockComment").value.trim()
+ });
+ $("#clockComment").value="";
+ renderClock()
+};
+$("#clockSave").onclick=async()=>{store.set("clock",state.clock);if(state.nodeOnline){try{await apiFetch("clockwheel",state.clock);log("Clockwheel synced to playout node")}catch(e){log("Clock sync failed: "+e.message)}}else log("Clockwheel saved locally")};
 
 function renderEvents(){$("#eventRows").innerHTML=state.events.sort((a,b)=>a.time.localeCompare(b.time)).map((e,i)=>'<tr><td>'+e.time+'</td><td>'+esc(e.name)+'</td><td>'+esc(e.action)+'</td><td><button data-de="'+i+'">×</button></td></tr>').join("");$$("[data-de]").forEach(b=>b.onclick=()=>{state.events.splice(+b.dataset.de,1);store.set("events",state.events);renderEvents()})}
 $("#eventAdd").onclick=async()=>{if(!$("#eventTime").value||!$("#eventName").value)return;state.events.push({time:$("#eventTime").value,name:$("#eventName").value,action:$("#eventAction").value,last:""});store.set("events",state.events);renderEvents();if(state.nodeOnline){try{await apiFetch("schedule",state.events)}catch(e){log("Schedule sync failed: "+e.message)}}log("Event scheduled")};
