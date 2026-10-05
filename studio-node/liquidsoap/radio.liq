@@ -147,6 +147,8 @@ deck_a_raw = request.queue(id="deck_a", prefetch=1)
 deck_b_raw = request.queue(id="deck_b", prefetch=1)
 deck_a = amplify(deck_a_gain, deck_a_raw)
 deck_b = amplify(deck_b_gain, deck_b_raw)
+deck_a = rms.smooth(id="deck_a_meter", duration=0.1, deck_a)
+deck_b = rms.smooth(id="deck_b_meter", duration=0.1, deck_b)
 
 manual = switch(
   id="manual",
@@ -259,6 +261,9 @@ limit_wet = {if limiter_enabled() then 1. else 0. end}
 limited = limit(id="limiter", threshold=limiter_threshold, ratio=20., radio)
 radio = dry_wet(limit_wet, radio, limited)
 radio = amplify(mixer_out, radio)
+
+# Real program meter used by the SAM-style VU display.
+radio = rms.smooth(id="program_meter", duration=0.1, radio)
 
 # Real played-track history. This callback fires when metadata reaches the
 # final program signal, not when a future request is merely prefetched.
