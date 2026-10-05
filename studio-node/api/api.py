@@ -1495,14 +1495,117 @@ async def scheduler_loop(app: web.Application) -> None:
         await asyncio.sleep(15)
 
 
+async def restore_liquidsoap_state() -> None:
+    """Re-apply persisted Studio settings once Liquidsoap is accepting commands."""
+    for _ in range(60):
+        try:
+            await liq("version")
+            break
+        except Exception:
+            await asyncio.sleep(1)
+    else:
+        return
+
+    commands: list[tuple[str, Any]] = []
+
+    mode = str(state.get("mode", "auto")).lower()
+    commands.append(("studio_mode", mode))
+
+    xf = state.get("crossfade", {}) if isinstance(state.get("crossfade"), dict) else {}
+    commands.extend(
+        [
+            ("xf_enabled", str(bool(xf.get("enabled", True))).lower()),
+            ("xf_smart", str(str(xf.get("mode", "smart")).lower() == "smart").lower()),
+            ("xf_duration", float(xf.get("duration", 4.5))),
+            ("xf_in", float(xf.get("fade_in", 1.2))),
+            ("xf_out", float(xf.get("fade_out", 2.8))),
+            ("xf_overlap_db", float(xf.get("overlap_db", -9.0))),
+            ("xf_jingles", str(bool(xf.get("crossfade_jingles", False))).lower()),
+            ("gap_enabled", str(bool(xf.get("gap_killer", True))).lower()),
+            ("gap_threshold", float(xf.get("silence_db", -48.0))),
+            ("gap_max", float(xf.get("silence_max", 0.9))),
+        ]
+    )
+
+    dsp = state.get("dsp", {}) if isinstance(state.get("dsp"), dict) else {}
+    dsp_defaults = {
+        "mixer": True,
+        "mixer_input_gain": 1.0,
+        "mixer_output_gain": 1.0,
+        "eq": True,
+        "eq_low": 0.0,
+        "eq_mid": 0.0,
+        "eq_high": 0.0,
+        "agc": bool(dsp.get("agc", True)),
+        "agc_target": float(dsp.get("target", -14.0)),
+        "agc_up": 10.0,
+        "agc_down": 0.1,
+        "stereo": False,
+        "stereo_width": float(dsp.get("stereo_width", 0.0)),
+        "bass": False,
+        "bass_frequency": 180.0,
+        "bass_gain": float(dsp.get("bass_gain", 0.0)),
+        "compressor": bool(dsp.get("compressor", True)),
+        "comp_threshold": float(dsp.get("threshold", -10.0)),
+        "comp_ratio": float(dsp.get("ratio", 2.0)),
+        "limiter": bool(dsp.get("limiter", True)),
+        "limiter_threshold": -1.0,
+    }
+    dsp_defaults.update(dsp)
+
+    mapping = [
+        ("mixer_enabled", "mixer", True),
+        ("mixer_input_gain", "mixer_input_gain", 1.0),
+        ("mixer_output_gain", "mixer_output_gain", 1.0),
+        ("eq_enabled", "eq", True),
+        ("eq_low", "eq_low", 0.0),
+        ("eq_mid", "eq_mid", 0.0),
+        ("eq_high", "eq_high", 0.0),
+        ("agc_enabled", "agc", True),
+        ("agc_target", "agc_target", -14.0),
+        ("agc_up", "agc_up", 10.0),
+        ("agc_down", "agc_down", 0.1),
+        ("stereo_enabled", "stereo", False),
+        ("stereo_width", "stereo_width", 0.0),
+        ("bass_enabled", "bass", False),
+        ("bass_frequency", "bass_frequency", 180.0),
+        ("bass_gain", "bass_gain", 0.0),
+        ("comp_enabled", "compressor", True),
+        ("comp_threshold", "comp_threshold", -10.0),
+        ("comp_ratio", "comp_ratio", 2.0),
+        ("limiter_enabled", "limiter", True),
+        ("limiter_threshold", "limiter_threshold", -1.0),
+    ]
+    for var_name, key, default in mapping:
+        value = dsp_defaults.get(key, default)
+        if isinstance(default, bool):
+            value = str(bool(value)).lower()
+        commands.append((var_name, value))
+
+    voice = state.get("voice", {}) if isinstance(state.get("voice"), dict) else {}
+    active = bool(voice.get("active", False))
+    duck_db = float(voice.get("duck_db", -8.0))
+    commands.append(("voice_active", str(active).lower()))
+    commands.append(("music_gain", db_to_gain(duck_db) if active else 1.0))
+
+    for name, value in commands:
+        try:
+            await liq(f"var.set {name} = {value}")
+        except Exception:
+            # A single unavailable optional variable must not prevent startup.
+            pass
+
+
 async def on_startup(app: web.Application) -> None:
     app["scheduler_task"] = asyncio.create_task(scheduler_loop(app))
+    app["restore_task"] = asyncio.create_task(restore_liquidsoap_state())
 
 
 async def on_cleanup(app: web.Application) -> None:
-    task = app.get("scheduler_task")
-    if task:
-        task.cancel()
+    for key in ("scheduler_task", "restore_task"):
+        task = app.get(key)
+        if task:
+            task.cancel()
 
 
 async def history_event(request: web.Request) -> web.Response:
