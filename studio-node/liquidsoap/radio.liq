@@ -28,6 +28,7 @@ studio_mode = interactive.string("studio_mode", "auto")
 manual_deck = interactive.string("manual_deck", "none")
 
 xf_enabled = interactive.bool("xf_enabled", true)
+xf_smart = interactive.bool("xf_smart", true)
 xf_duration = interactive.float("xf_duration", min=0., max=20., 4.5)
 xf_in = interactive.float("xf_in", min=0., max=20., 1.2)
 xf_out = interactive.float("xf_out", min=0., max=20., 2.8)
@@ -122,16 +123,15 @@ def louder_transition(a, b) =
     sequence([a.source, b.source])
   elsif special and not xf_jingles() then
     sequence([a.source, b.source])
-  elsif a.db_level >= xf_overlap_db() or b.db_level >= xf_overlap_db() then
-    # Loud endings/starts are kept back-to-back to avoid muddy overlap.
+  elsif xf_smart() and (a.db_level >= xf_overlap_db() or b.db_level >= xf_overlap_db()) then
+    # Smart mode keeps loud endings/starts back-to-back to avoid muddy overlap.
     sequence([a.source, b.source])
   else
-    cross.simple(
-      fade_in=xf_in(),
-      fade_out=xf_out(),
-      a.source,
-      b.source
-    )
+    # fade.in/out honor liq_fade_*_type and liq_fade_*_curve metadata,
+    # so the browser's SAM-style curve controls are real.
+    ending = fade.out(duration=xf_out(), a.source)
+    starting = fade.in(duration=xf_in(), b.source)
+    add(normalize=false, [ending, starting])
   end
 end
 
