@@ -288,6 +288,9 @@ async def internal_next(request: web.Request) -> web.Response:
     title = liq_annotation_value(item.get("title", ""))
     category = liq_annotation_value(item.get("category", ""))
     message_id = liq_annotation_value(item.get("message_id", ""))
+    fade_in_type = liq_annotation_value(xf.get("fade_in_type", "lin"))
+    fade_out_type = liq_annotation_value(xf.get("fade_out_type", "lin"))
+    curve = float(xf.get("curve", 10.0))
     annotated = (
         "annotate:"
         f'artist="{artist}",'
@@ -296,7 +299,11 @@ async def internal_next(request: web.Request) -> web.Response:
         f'message_id="{message_id}",'
         f"liq_cross_duration={duration},"
         f"liq_fade_in={fade_in},"
-        f"liq_fade_out={fade_out}:"
+        f"liq_fade_out={fade_out},"
+        f'liq_fade_in_type="{fade_in_type}",'
+        f'liq_fade_out_type="{fade_out_type}",'
+        f"liq_fade_in_curve={curve},"
+        f"liq_fade_out_curve={curve}:"
         f"{uri}"
     )
     return web.Response(text=annotated, content_type="text/plain")
@@ -582,11 +589,26 @@ async def crossfade_apply(request: web.Request) -> web.Response:
     silence_raw = float(data.get("silenceMs", 900))
     silence_max = silence_raw / 1000.0 if silence_raw > 50 else silence_raw
 
+    fade_types = {"lin", "sin", "log", "exp"}
+    fade_in_type = str(data.get("fadeInType", "lin")).lower()
+    fade_out_type = str(data.get("fadeOutType", "lin")).lower()
+    if fade_in_type not in fade_types:
+        fade_in_type = "lin"
+    if fade_out_type not in fade_types:
+        fade_out_type = "lin"
+    mode = str(data.get("mode", "smart")).lower()
+    if mode not in {"smart", "always"}:
+        mode = "smart"
+
     cfg = {
         "enabled": bool(data.get("enable", True)),
+        "mode": mode,
         "duration": max(0.0, min(20.0, duration)),
         "fade_in": max(0.0, min(20.0, fade_in)),
         "fade_out": max(0.0, min(20.0, fade_out)),
+        "fade_in_type": fade_in_type,
+        "fade_out_type": fade_out_type,
+        "curve": max(1.0, min(100.0, float(data.get("curve", 10)))),
         "overlap_db": max(-60.0, min(0.0, overlap_db)),
         "gap_killer": bool(data.get("gapKiller", True)),
         "silence_db": max(-80.0, min(-10.0, silence_db)),
@@ -599,6 +621,7 @@ async def crossfade_apply(request: web.Request) -> web.Response:
 
     commands = [
         ("xf_enabled", "true" if cfg["enabled"] else "false"),
+        ("xf_smart", "true" if cfg["mode"] == "smart" else "false"),
         ("xf_duration", cfg["duration"]),
         ("xf_in", cfg["fade_in"]),
         ("xf_out", cfg["fade_out"]),
