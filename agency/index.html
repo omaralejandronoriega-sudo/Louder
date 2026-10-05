@@ -1,65 +1,52 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Agencia Louder · Control de automatizaciones</title>
+<title>Agencia Louder</title>
 <style>
-:root{--bg:#09090b;--panel:#131316;--line:#2a2a31;--text:#f5f5f5;--muted:#9999a3;--green:#7dff4f;--purple:#a970ff;--red:#ff5c6c;--amber:#ffcb45}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}.wrap{max-width:1450px;margin:auto;padding:24px}
-header{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:22px}.brand{font-family:Georgia,serif;font-weight:900;font-size:30px}.brand b{color:var(--green)}.muted{color:var(--muted)}.live{border:1px solid #315d25;background:#142111;color:var(--green);padding:8px 12px;border-radius:999px;font-weight:800}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.metric,.card,.run{background:var(--panel);border:1px solid var(--line);border-radius:14px}.metric{padding:16px}.metric strong{display:block;font-size:27px;margin-top:6px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:1px solid var(--line);background:#111;color:#ddd;border-radius:9px;padding:9px 12px;cursor:pointer}.tab.active{background:var(--green);color:#071006;border-color:var(--green);font-weight:900}
-.board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.col h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 9px}.card{padding:14px;margin-bottom:10px}.top{display:flex;justify-content:space-between;gap:12px}.name{font-weight:900}.repo{font-size:11px;color:var(--muted);margin-top:4px}.pill{font-size:11px;font-weight:900;border-radius:999px;padding:5px 8px;height:max-content}.ok{background:#183516;color:var(--green)}.bad{background:#3b1519;color:var(--red)}.wait{background:#3b3114;color:var(--amber)}.skip{background:#24242a;color:#bbb}
-.detail{font-size:13px;color:#c9c9cf;margin:13px 0 8px}.actions{display:flex;gap:7px}.btn{display:inline-block;text-decoration:none;color:#fff;border:1px solid #3b3b44;padding:7px 9px;border-radius:8px;font-size:12px}.btn:hover{border-color:var(--purple)}
-.feed{margin-top:20px}.run{display:grid;grid-template-columns:140px 1fr 120px 150px;gap:12px;padding:11px 13px;margin:7px 0;align-items:center;font-size:13px}
-.alert{border-left:4px solid var(--red);background:#1a1012;padding:13px 15px;border-radius:8px;margin:0 0 18px}.hidden{display:none}
-@media(max-width:900px){.metrics,.board{grid-template-columns:1fr}.run{grid-template-columns:1fr}.wrap{padding:15px}header{align-items:start;flex-direction:column}}
-</style></head><body><div class="wrap">
-<header><div><div class="brand">AGENCIA <b>LOUDER</b></div><div class="muted">Centro de control editorial y automatizaciones</div></div><div class="live" id="sync">● Sincronizando GitHub</div></header>
-<div id="alert"></div>
-<section class="metrics"><div class="metric"><span class="muted">Automatizaciones vigiladas</span><strong id="mTotal">—</strong></div><div class="metric"><span class="muted">Correctas</span><strong id="mOk">—</strong></div><div class="metric"><span class="muted">Requieren atención</span><strong id="mBad">—</strong></div><div class="metric"><span class="muted">Última revisión</span><strong id="mTime" style="font-size:18px">—</strong></div></section>
-<div class="tabs"><button class="tab active" data-filter="all">Todo</button><button class="tab" data-filter="Louder">Louder</button><button class="tab" data-filter="TikTok">TikTok</button><button class="tab" data-filter="Threads">Threads</button><button class="tab" data-filter="TBC">The British Corner</button><button class="tab" data-filter="Prensa">Prensa</button></div>
-<section class="board"><div class="col"><h2>✓ Funcionando</h2><div id="ok"></div></div><div class="col"><h2>◷ En proceso / espera</h2><div id="wait"></div></div><div class="col"><h2>! Requiere atención</h2><div id="bad"></div></div></section>
-<section class="feed"><h2>Supervisión</h2><div id="supervisor"></div></section>
-<section class="feed"><h2>Actividad reciente</h2><div id="feed"></div></section>
-</div><script>
-const repos=[
-{key:'Louder',repo:'omaralejandronoriega-sudo/Louder'},
-{key:'TikTok',repo:'omaralejandronoriega-sudo/louder-tiktok-capture'},
-{key:'TikTok',repo:'omaralejandronoriega-sudo/louder-tiktok-automation'},
-{key:'Threads',repo:'omaralejandronoriega-sudo/louder-threads-hourly'},
-{key:'Prensa',repo:'omaralejandronoriega-sudo/louder-prensa'},
-{key:'TBC',repo:'omaralejandronoriega-sudo/the-british-corner'}];
-let rows=[],filter='all',registry=[];
-const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function state(r){if(['failure','timed_out','cancelled','action_required'].includes(r.conclusion))return'bad';if(['queued','in_progress','waiting','pending','requested'].includes(r.status))return'wait';return'ok'}
-function label(r){if(r.status!=='completed')return r.status||'pendiente';return r.conclusion==='success'?'correcto':r.conclusion==='skipped'?'omitido':r.conclusion||'sin resultado'}
-function supervisor(){
- const box=document.getElementById('supervisor'); if(!box)return;
- box.innerHTML=registry.map(x=>{
-   const rr=rows.filter(r=>r.repo===x.repo && (r.path||'').endsWith(x.publisher));
-   const last=rr[0]; let s='bad',msg='Sin ejecución reciente';
-   if(last){const age=(Date.now()-new Date(last.created_at))/60000; const limit=x.expected==='hourly'?75:x.expected==='daily'?1500:Math.max(90,x.grace_minutes*3); s=age<=limit?'ok':'bad';msg=age<=limit?'Cubierto':'Ejecución vencida';}
-   return '<div class="run"><b>'+esc(x.label)+'</b><span>'+esc(x.expected)+' · tolerancia '+x.grace_minutes+' min</span><span class="pill '+s+'">'+msg+'</span><a class="btn" target="_blank" href="https://github.com/'+x.repo+'/actions">Supervisar</a></div>'
- }).join('');
-}
+:root{--bg:#f4f2ed;--ink:#111;--card:#fff;--line:#d8d5ce;--green:#6cff3e;--purple:#7a3cff;--red:#d83b4b;--amber:#d58a00;--muted:#6d6a65}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+aside{background:#0c0c0d;color:#fff;padding:24px 16px}.logo{font:900 23px Georgia,serif;margin-bottom:28px}.logo b{color:var(--green)}nav button{display:block;width:100%;text-align:left;background:none;border:0;color:#aaa;padding:12px;border-radius:9px;margin:3px 0;font-weight:700}nav button.active{background:#202024;color:#fff}
+main{padding:28px;max-width:1500px;width:100%}.head{display:flex;justify-content:space-between;gap:20px;align-items:center}.head h1{font:900 34px Georgia,serif;margin:0}.live{background:#e7f8df;border:1px solid #b5dda6;padding:9px 12px;border-radius:999px;font-weight:800}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.metric,.person,.task,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px}.metric{padding:16px}.metric strong{display:block;font-size:27px;margin-top:5px}
+h2{font:900 20px Georgia,serif}.team{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.person{padding:15px}.avatar{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--green);font-weight:900}.role{color:var(--purple);font-weight:900;font-size:12px;text-transform:uppercase;margin:10px 0 5px}.person p{font-size:13px;color:var(--muted);min-height:48px}.status{font-size:12px;font-weight:900}.ok{color:#258113}.bad{color:var(--red)}.wait{color:var(--amber)}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}.column{min-width:0}.column h3{text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--muted)}.task{padding:13px;margin-bottom:10px}.task b{display:block}.meta{font-size:12px;color:var(--muted);margin:7px 0}.tag{display:inline-block;background:#eee;border-radius:99px;padding:4px 7px;font-size:11px;font-weight:800}.proof{margin-top:9px;font-size:11px}.panel{padding:16px;margin-top:20px}.row{display:grid;grid-template-columns:160px 1fr 140px 110px;gap:10px;border-top:1px solid #eee;padding:10px 0;align-items:center;font-size:13px}.hidden{display:none}
+@media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.metrics,.team,.board{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}@media(max-width:650px){main{padding:16px}.metrics,.team,.board{grid-template-columns:1fr}}
+</style></head><body><div class="app"><aside><div class="logo">AGENCIA <b>LOUDER</b></div><nav>
+<button class="active">◉ Hoy</button><button>▦ Calendario</button><button>✓ Contenido</button><button>⚙ Automatizaciones</button><button>! Incidencias</button><button>↗ Publicado</button>
+</nav></aside><main>
+<div class="head"><div><h1>Buenos días, Omar.</h1><div style="color:var(--muted)">Tu equipo digital y sus entregas de hoy.</div></div><div class="live" id="global">● Supervisando</div></div>
+<section class="metrics"><div class="metric">Tareas de hoy<strong id="tasks">—</strong></div><div class="metric">Completadas<strong id="done">—</strong></div><div class="metric">En curso<strong id="doing">—</strong></div><div class="metric">Incidencias<strong id="issues">—</strong></div></section>
+<h2>Equipo de la agencia</h2><section class="team" id="team"></section>
+<div class="panel"><h2>Tablero de producción de hoy</h2><section class="board"><div class="column"><h3>Por preparar</h3><div id="todo"></div></div><div class="column"><h3>En producción</h3><div id="production"></div></div><div class="column"><h3>Programado</h3><div id="scheduled"></div></div><div class="column"><h3>Publicado y verificado</h3><div id="published"></div></div></section></div>
+<div class="panel"><h2>Salud de operaciones</h2><div id="ops"></div></div>
+</main></div>
+<script>
+const people=[
+{id:'mateo',name:'Mateo Ríos',initials:'MR',role:'Editor de video · TikTok',area:'TikTok Louder',desc:'Recibe la pieza del día, edita el video vertical y deja el archivo listo para publicación.',repo:'omaralejandronoriega-sudo/louder-tiktok-capture',workflow:'capture.yml'},
+{id:'ines',name:'Inés Beaumont',initials:'IB',role:'Diseñadora · The British Corner',area:'The British Corner',desc:'Crea la pieza gráfica de cada publicación con identidad editorial británica.',repo:'omaralejandronoriega-sudo/the-british-corner',workflow:'facebook-production.yml'},
+{id:'arthur',name:'Arthur Vega',initials:'AV',role:'Community Manager · The British Corner',area:'The British Corner',desc:'Recibe diseños y copy, programa los cuatro slots y comprueba cada publicación.',repo:'omaralejandronoriega-sudo/the-british-corner',workflow:'facebook-slot-publisher.yml'},
+{id:'mara',name:'Mara Vértiz',initials:'MV',role:'Diseñadora · Threads',area:'Louder Threads',desc:'Prepara recursos visuales cuando la publicación de Threads requiere imagen.',repo:'omaralejandronoriega-sudo/louder-threads-hourly',workflow:'newsroom-v2.yml'},
+{id:'nico',name:'Nico Ferrer',initials:'NF',role:'Community Manager · Threads',area:'Louder Threads',desc:'Gestiona la salida horaria, variedad editorial y comprobación de cada post.',repo:'omaralejandronoriega-sudo/louder-threads-hourly',workflow:'hourly.yml'},
+{id:'renata',name:'Renata Solís',initials:'RS',role:'Diseñadora · Louder',area:'Redes Louder',desc:'Produce artes de noticias, efemérides, discos, programación y piezas especiales.',repo:'omaralejandronoriega-sudo/Louder',workflow:'radar-2026.yml'},
+{id:'diego',name:'Diego Lunares',initials:'DL',role:'Editor de video · Louder',area:'Redes Louder',desc:'Produce reels, noticias en video y formatos verticales para redes de Louder.',repo:'omaralejandronoriega-sudo/louder-tiktok-capture',workflow:'capture.yml'},
+{id:'sofia',name:'Sofía Alcázar',initials:'SA',role:'Community Manager · Louder',area:'Redes Louder',desc:'Coordina publicaciones, horarios y comprobantes en las redes de Louder.',repo:'omaralejandronoriega-sudo/louder-threads-hourly',workflow:'threads-native.yml'},
+{id:'bruno',name:'Bruno Leal',initials:'BL',role:'Webmaster · Louder',area:'loudermx.com',desc:'Recibe las notas aprobadas, publica en la web y entrega la URL final a Sofía.',repo:'omaralejandronoriega-sudo/Louder',workflow:'wordpress-cron.yml'}
+];
+const repos=[...new Set(people.map(p=>p.repo)), 'omaralejandronoriega-sudo/louder-prensa'];
+let runs=[];
+const state=r=>!r?'wait':(['failure','cancelled','timed_out'].includes(r.conclusion)?'bad':(r.status!=='completed'?'wait':(r.conclusion==='success'?'ok':'wait')));
+const label=s=>s==='ok'?'En orden':s==='bad'?'Incidencia':'Trabajando';
+function latest(p){return runs.find(r=>r.repo===p.repo && (r.path||'').endsWith(p.workflow))}
 function draw(){
- const latest={}; rows.forEach(r=>{const k=r.repo+'|'+r.name;if(!latest[k])latest[k]=r});
- const cards=Object.values(latest).filter(r=>filter==='all'||r.key===filter);
- ['ok','wait','bad'].forEach(s=>document.getElementById(s).innerHTML='');
- cards.forEach(r=>{const s=state(r),d=document.createElement('div');d.className='card';d.dataset.key=r.key;
- d.innerHTML='<div class="top"><div><div class="name">'+esc(r.name)+'</div><div class="repo">'+esc(r.repo.split('/')[1])+'</div></div><span class="pill '+s+'">'+esc(label(r))+'</span></div><div class="detail">Última ejecución: '+new Date(r.created_at).toLocaleString('es-MX')+'</div><div class="actions"><a class="btn" target="_blank" href="'+r.html_url+'">Ver ejecución</a><a class="btn" target="_blank" href="https://github.com/'+r.repo+'/actions">Historial</a></div>';
- document.getElementById(s).appendChild(d)});
- const bad=cards.filter(x=>state(x)==='bad').length, ok=cards.filter(x=>state(x)==='ok').length;
- document.getElementById('mTotal').textContent=cards.length;document.getElementById('mOk').textContent=ok;document.getElementById('mBad').textContent=bad;
- document.getElementById('alert').innerHTML=bad?'<div class="alert"><b>'+bad+' automatización(es) requieren atención.</b> Están concentradas aquí para que no tengas que revisar repositorio por repositorio.</div>':'';
- supervisor();
- document.getElementById('feed').innerHTML=rows.filter(r=>filter==='all'||r.key===filter).slice(0,30).map(r=>'<div class="run"><b>'+esc(r.key)+'</b><span>'+esc(r.name)+'</span><span class="pill '+state(r)+'">'+esc(label(r))+'</span><a class="btn" target="_blank" href="'+r.html_url+'">'+new Date(r.created_at).toLocaleString('es-MX')+'</a></div>').join('');
+ const t=document.getElementById('team');t.innerHTML=people.map(p=>{let s=state(latest(p));return '<article class="person"><div class="avatar">'+p.initials+'</div><div class="role">'+p.role+'</div><b>'+p.name+'</b><div class="meta">'+p.area+'</div><p>'+p.desc+'</p><span class="status '+s+'">● '+label(s)+'</span></article>'}).join('');
+ const items=people.map(p=>({p,r:latest(p),s:state(latest(p))}));
+ const bad=items.filter(x=>x.s==='bad').length,doing=items.filter(x=>x.s==='wait').length,done=items.filter(x=>x.s==='ok').length;
+ tasks.textContent=items.length;document.getElementById('done').textContent=done;document.getElementById('doing').textContent=doing;issues.textContent=bad;
+ const buckets={todo:[],production:[],scheduled:[],published:[]};
+ items.forEach(x=>{const dest=x.s==='ok'?'published':x.s==='bad'?'production':'scheduled';buckets[dest].push(x)});
+ Object.keys(buckets).forEach(k=>document.getElementById(k).innerHTML=buckets[k].map(x=>'<div class="task"><b>'+x.p.area+'</b><div class="meta">'+x.p.name+' · '+x.p.role+'</div><span class="tag">'+label(x.s)+'</span><div class="proof">'+(x.r?'Última actividad: '+new Date(x.r.created_at).toLocaleString('es-MX'):'Esperando primera actividad')+'</div></div>').join('')||'<div class="meta">Sin tareas aquí.</div>');
+ document.getElementById('ops').innerHTML=items.map(x=>'<div class="row"><b>'+x.p.name+'</b><span>'+x.p.area+'</span><span class="status '+x.s+'">● '+label(x.s)+'</span><span>'+(x.r?new Date(x.r.created_at).toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'}):'—')+'</span></div>').join('');
+ global.textContent=bad?'● '+bad+' incidencia(s) en recuperación':'● Operación supervisada';
 }
-async function load(){
- try{registry=(await (await fetch('./automations.json?'+Date.now())).json()).projects||[]}catch(e){registry=[]}
-
- let all=[];for(const x of repos){try{const q=await fetch('https://api.github.com/repos/'+x.repo+'/actions/runs?per_page=15',{headers:{Accept:'application/vnd.github+json'}});const j=await q.json();(j.workflow_runs||[]).forEach(r=>all.push({...r,key:x.key,repo:x.repo}))}catch(e){}}
- rows=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw();document.getElementById('mTime').textContent=new Date().toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'});
- document.getElementById('sync').textContent='● GitHub sincronizado';}
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;draw()});
+async function load(){let all=[];for(const repo of repos){try{let j=await (await fetch('https://api.github.com/repos/'+repo+'/actions/runs?per_page=40')).json();(j.workflow_runs||[]).forEach(r=>all.push({...r,repo}))}catch(e){}}runs=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw()}
 load();setInterval(load,60000);
 </script></body></html>
