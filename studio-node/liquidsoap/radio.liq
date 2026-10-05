@@ -49,14 +49,33 @@ aux_1_active = interactive.bool("aux_1_active", false)
 aux_2_active = interactive.bool("aux_2_active", false)
 aux_3_active = interactive.bool("aux_3_active", false)
 
+mixer_enabled = interactive.bool("mixer_enabled", true)
+mixer_input_gain = interactive.float("mixer_input_gain", min=0., max=2., 1.)
+mixer_output_gain = interactive.float("mixer_output_gain", min=0., max=2., 1.)
+
+eq_enabled = interactive.bool("eq_enabled", true)
+eq_low = interactive.float("eq_low", min=(-12.), max=12., 0.)
+eq_mid = interactive.float("eq_mid", min=(-12.), max=12., 0.)
+eq_high = interactive.float("eq_high", min=(-12.), max=12., 0.)
+
 agc_enabled = interactive.bool("agc_enabled", true)
 agc_target = interactive.float("agc_target", min=(-30.), max=(-3.), (-14.))
+agc_up = interactive.float("agc_up", min=0.1, max=30., 10.)
+agc_down = interactive.float("agc_down", min=0.02, max=5., 0.1)
+
+stereo_enabled = interactive.bool("stereo_enabled", false)
 stereo_width_value = interactive.float("stereo_width", min=(-1.), max=1., 0.)
+
+bass_enabled = interactive.bool("bass_enabled", false)
+bass_frequency = interactive.float("bass_frequency", min=60., max=400., 180.)
 bass_gain = interactive.float("bass_gain", min=(-12.), max=12., 0.)
+
 comp_enabled = interactive.bool("comp_enabled", true)
 comp_threshold = interactive.float("comp_threshold", min=(-50.), max=0., (-10.))
 comp_ratio = interactive.float("comp_ratio", min=1., max=20., 2.)
+
 limiter_enabled = interactive.bool("limiter_enabled", true)
+limiter_threshold = interactive.float("limiter_threshold", min=(-6.), max=(-0.1), (-1.))
 
 # Persist runtime mixer settings across restarts.
 interactive.persistent("/data/liquidsoap-vars.json")
@@ -192,16 +211,38 @@ radio = add(
   [music, voice, aux_1, aux_2, aux_3, fx]
 )
 
-# Audio processing pipeline.
+# Audio processing pipeline. Every visible Cloud Studio control below maps to
+# a real interactive DSP parameter.
+mixer_in = {if mixer_enabled() then mixer_input_gain() else 1. end}
+mixer_out = {if mixer_enabled() then mixer_output_gain() else 1. end}
+radio = amplify(mixer_in, radio)
+
+low_gain = {if eq_enabled() then eq_low() else 0. end}
+mid_gain = {if eq_enabled() then eq_mid() else 0. end}
+high_gain = {if eq_enabled() then eq_high() else 0. end}
+radio = filter.iir.eq.peak(id="eq_low", frequency=120., gain=low_gain, q=0.8, radio)
+radio = filter.iir.eq.peak(id="eq_mid", frequency=1200., gain=mid_gain, q=1.0, radio)
+radio = filter.iir.eq.peak(id="eq_high", frequency=8500., gain=high_gain, q=0.8, radio)
+
 radio = normalize(
   id="agc",
   enabled=agc_enabled,
   target=agc_target,
+  up=agc_up,
+  down=agc_down,
   lufs=true,
   radio
 )
-radio = stereo.width(id="stereo_width_processor", stereo_width_value, radio)
-radio = bass_boost(gain=bass_gain, frequency=180., radio)
+
+width = {if stereo_enabled() then stereo_width_value() else 0. end}
+radio = stereo.width(id="stereo_width_processor", width, radio)
+
+bass_effective_gain = {if bass_enabled() then bass_gain() else 0. end}
+radio = bass_boost(
+  frequency=bass_frequency,
+  gain=bass_effective_gain,
+  radio
+)
 
 comp_wet = {if comp_enabled() then 1. else 0. end}
 compressed = compress(
@@ -215,8 +256,9 @@ compressed = compress(
 radio = dry_wet(comp_wet, radio, compressed)
 
 limit_wet = {if limiter_enabled() then 1. else 0. end}
-limited = limit(id="limiter", threshold=(-1.), ratio=20., radio)
+limited = limit(id="limiter", threshold=limiter_threshold, ratio=20., radio)
 radio = dry_wet(limit_wet, radio, limited)
+radio = amplify(mixer_out, radio)
 
 # Real played-track history. This callback fires when metadata reaches the
 # final program signal, not when a future request is merely prefetched.
