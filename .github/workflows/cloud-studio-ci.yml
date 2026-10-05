@@ -13,8 +13,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Syntax check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Browser code syntax
         run: node --check studio/app.js
+      - name: API code syntax
+        run: python -m py_compile studio/node/app.py
       - name: Required modules
         run: |
           python - <<'PY'
@@ -25,3 +30,11 @@ jobs:
           if missing: raise SystemExit("Missing: "+", ".join(missing))
           print("All required studio modules present.")
           PY
+      - name: Liquidsoap 2.3.3 typecheck
+        run: |
+          docker run --rm \
+            -v "$PWD/studio/node/radio.liq:/app/radio.liq:ro" \
+            savonet/liquidsoap:v2.3.3 \
+            liquidsoap --check /app/radio.liq
+      - name: Build playout container
+        run: docker build -t louder-playout-ci studio/node
