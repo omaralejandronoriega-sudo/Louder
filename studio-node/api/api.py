@@ -1144,6 +1144,480 @@ async def pal_run(request: web.Request) -> web.Response:
     return web.json_response({"ok": True, "log": log})
 
 
+async def pal_scripts_list(request: web.Request) -> web.Response:
+    scripts = state.get("pal_scripts", {})
+    return web.json_response(
+        [
+            {"name": name, "script": script}
+            for name, script in sorted(scripts.items(), key=lambda item: item[0].casefold())
+        ]
+    )
+
+
+async def pal_script_get(request: web.Request) -> web.Response:
+    name = request.match_info["name"]
+    scripts = state.get("pal_scripts", {})
+    if name not in scripts:
+        raise web.HTTPNotFound()
+    return web.json_response({"name": name, "script": scripts[name]})
+
+
+async def pal_script_save(request: web.Request) -> web.Response:
+    name = request.match_info["name"].strip()
+    if not name or len(name) > 80:
+        raise web.HTTPBadRequest(text="invalid script name")
+    data = await request.json()
+    script = str(data.get("script", ""))
+    # Validate syntax by running only the parser checks without executing long waits.
+    for raw in script.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if not (
+            re.match(r'^LOG\s+".*"
+
+async def run_scheduled_event(event: dict[str, Any]) -> None:
+    action = str(event.get("action", "")).lower()
+
+    if action in ("run pal", "pal"):
+        script_name = str(event.get("script_name") or "").strip()
+        if script_name:
+            script = str(state.get("pal_scripts", {}).get(script_name, ""))
+            if not script:
+                raise ValueError("PAL script not found: " + script_name)
+        else:
+            script = str(event.get("script") or event.get("payload") or "")
+        await execute_pal(script, [])
+        return
+
+    if action in ("queue category", "category"):
+        category = str(event.get("category") or event.get("payload") or "")
+        count = int(event.get("count", 1) or 1)
+        for _ in range(max(0, min(count, 100))):
+            item = choose_auto(category)
+            if item:
+                state.setdefault("queue", []).append(item)
+        await save_state()
+        return
+
+    if action in ("load clock", "clock"):
+        if isinstance(event.get("clock"), list):
+            state["clockwheel"] = event["clock"]
+            await save_state()
+        return
+
+    if action in ("station id", "id"):
+        uri = str(event.get("uri", ""))
+        if uri:
+            state.setdefault("queue", []).insert(
+                0,
+                {
+                    "artist": "Louder",
+                    "title": "Station ID",
+                    "uri": uri,
+                    "category": "Station IDs",
+                },
+            )
+            await save_state()
+
+
+async def scheduler_loop(app: web.Application) -> None:
+    while True:
+        now = time.localtime()
+        hhmm = f"{now.tm_hour:02d}:{now.tm_min:02d}"
+        day = time.strftime("%Y-%m-%d", now)
+        changed = False
+
+        for event in state.get("schedule", []):
+            if str(event.get("time", "")) == hhmm and event.get("_last") != day:
+                try:
+                    await run_scheduled_event(event)
+                except Exception as exc:
+                    print("scheduler:", exc, flush=True)
+                event["_last"] = day
+                changed = True
+
+        if changed:
+            await save_state()
+
+        await asyncio.sleep(15)
+
+
+async def on_startup(app: web.Application) -> None:
+    app["scheduler_task"] = asyncio.create_task(scheduler_loop(app))
+
+
+async def on_cleanup(app: web.Application) -> None:
+    task = app.get("scheduler_task")
+    if task:
+        task.cancel()
+
+
+async def history_event(request: web.Request) -> web.Response:
+    data = await request.json()
+    item = {
+        "ts": time.time(),
+        "time": time.strftime("%H:%M:%S"),
+        **data,
+    }
+    state.setdefault("history", []).append(item)
+    state["history"] = state["history"][-5000:]
+    state["now"] = data
+    await save_state()
+    return web.json_response({"ok": True})
+
+
+app = web.Application(
+    middlewares=[cors_auth],
+    client_max_size=64 * 1024 * 1024,
+)
+app.router.add_get(
+    "/",
+    lambda request: web.json_response({"name": "Louder Playout Node", "ok": True}),
+)
+app.router.add_get("/health", health)
+app.router.add_get("/status", status)
+app.router.add_post("/mode", set_mode)
+app.router.add_get("/queue", get_queue)
+app.router.add_post("/queue/add", queue_add)
+app.router.add_post("/queue/set", queue_set)
+app.router.add_post("/queue/move", queue_move)
+app.router.add_post("/queue/remove", queue_remove)
+app.router.add_post("/queue/clear", queue_clear)
+app.router.add_post("/deck/{deck}/{action}", deck_action)
+app.router.add_post("/aux/{deck}/{action}", aux_action)
+app.router.add_post("/encoder/{action}", encoder_action)
+app.router.add_post("/crossfade/apply", crossfade_apply)
+app.router.add_post("/dsp/apply", dsp_apply)
+app.router.add_post("/voice/ptt", voice_ptt)
+app.router.add_get("/ws/voice", voice_ws)
+app.router.add_post("/voice-track", voice_track_upload)
+app.router.add_post("/fx/upload", fx_upload)
+app.router.add_post("/fx/play", fx_play)
+app.router.add_get("/catalog", get_catalog)
+app.router.add_post("/vault/sync", vault_sync)
+app.router.add_get("/stats", relay_stats)
+app.router.add_get("/requests", get_requests)
+app.router.add_post("/requests/add", request_add)
+app.router.add_post("/requests/{request_id}/{action}", request_decide)
+app.router.add_get("/clockwheel", get_clockwheel)
+app.router.add_post("/clockwheel", set_clockwheel)
+app.router.add_get("/schedule", get_schedule)
+app.router.add_post("/schedule", set_schedule)
+app.router.add_post("/pal/run", pal_run)
+app.router.add_get("/pal/scripts", pal_scripts_list)
+app.router.add_get("/pal/scripts/{name}", pal_script_get)
+app.router.add_post("/pal/scripts/{name}", pal_script_save)
+app.router.add_delete("/pal/scripts/{name}", pal_script_delete)
+app.router.add_post("/history", history_event)
+app.router.add_post("/internal/history", history_event)
+app.router.add_get("/internal/next", internal_next)
+app.on_startup.append(on_startup)
+app.on_cleanup.append(on_cleanup)
+
+if __name__ == "__main__":
+    web.run_app(
+        app,
+        host=os.getenv("LOUDER_API_BIND", "0.0.0.0"),
+        port=int(os.getenv("LOUDER_API_PORT", "8787")),
+    )
+, line, re.I)
+            or re.match(r"^WAIT\s+\d+(?:\.\d+)?$", line, re.I)
+            or re.match(r"^MODE\s+(AUTO|QUEUE|MANUAL|RECOVERY)$", line, re.I)
+            or re.match(r'^QUEUE\s+CATEGORY\s+".*"\s+\d+
+
+async def run_scheduled_event(event: dict[str, Any]) -> None:
+    action = str(event.get("action", "")).lower()
+
+    if action in ("run pal", "pal"):
+        await execute_pal(str(event.get("script") or event.get("payload") or ""), [])
+        return
+
+    if action in ("queue category", "category"):
+        category = str(event.get("category") or event.get("payload") or "")
+        count = int(event.get("count", 1) or 1)
+        for _ in range(max(0, min(count, 100))):
+            item = choose_auto(category)
+            if item:
+                state.setdefault("queue", []).append(item)
+        await save_state()
+        return
+
+    if action in ("load clock", "clock"):
+        if isinstance(event.get("clock"), list):
+            state["clockwheel"] = event["clock"]
+            await save_state()
+        return
+
+    if action in ("station id", "id"):
+        uri = str(event.get("uri", ""))
+        if uri:
+            state.setdefault("queue", []).insert(
+                0,
+                {
+                    "artist": "Louder",
+                    "title": "Station ID",
+                    "uri": uri,
+                    "category": "Station IDs",
+                },
+            )
+            await save_state()
+
+
+async def scheduler_loop(app: web.Application) -> None:
+    while True:
+        now = time.localtime()
+        hhmm = f"{now.tm_hour:02d}:{now.tm_min:02d}"
+        day = time.strftime("%Y-%m-%d", now)
+        changed = False
+
+        for event in state.get("schedule", []):
+            if str(event.get("time", "")) == hhmm and event.get("_last") != day:
+                try:
+                    await run_scheduled_event(event)
+                except Exception as exc:
+                    print("scheduler:", exc, flush=True)
+                event["_last"] = day
+                changed = True
+
+        if changed:
+            await save_state()
+
+        await asyncio.sleep(15)
+
+
+async def on_startup(app: web.Application) -> None:
+    app["scheduler_task"] = asyncio.create_task(scheduler_loop(app))
+
+
+async def on_cleanup(app: web.Application) -> None:
+    task = app.get("scheduler_task")
+    if task:
+        task.cancel()
+
+
+async def history_event(request: web.Request) -> web.Response:
+    data = await request.json()
+    item = {
+        "ts": time.time(),
+        "time": time.strftime("%H:%M:%S"),
+        **data,
+    }
+    state.setdefault("history", []).append(item)
+    state["history"] = state["history"][-5000:]
+    state["now"] = data
+    await save_state()
+    return web.json_response({"ok": True})
+
+
+app = web.Application(
+    middlewares=[cors_auth],
+    client_max_size=64 * 1024 * 1024,
+)
+app.router.add_get(
+    "/",
+    lambda request: web.json_response({"name": "Louder Playout Node", "ok": True}),
+)
+app.router.add_get("/health", health)
+app.router.add_get("/status", status)
+app.router.add_post("/mode", set_mode)
+app.router.add_get("/queue", get_queue)
+app.router.add_post("/queue/add", queue_add)
+app.router.add_post("/queue/set", queue_set)
+app.router.add_post("/queue/move", queue_move)
+app.router.add_post("/queue/remove", queue_remove)
+app.router.add_post("/queue/clear", queue_clear)
+app.router.add_post("/deck/{deck}/{action}", deck_action)
+app.router.add_post("/aux/{deck}/{action}", aux_action)
+app.router.add_post("/encoder/{action}", encoder_action)
+app.router.add_post("/crossfade/apply", crossfade_apply)
+app.router.add_post("/dsp/apply", dsp_apply)
+app.router.add_post("/voice/ptt", voice_ptt)
+app.router.add_get("/ws/voice", voice_ws)
+app.router.add_post("/voice-track", voice_track_upload)
+app.router.add_post("/fx/upload", fx_upload)
+app.router.add_post("/fx/play", fx_play)
+app.router.add_get("/catalog", get_catalog)
+app.router.add_post("/vault/sync", vault_sync)
+app.router.add_get("/stats", relay_stats)
+app.router.add_get("/requests", get_requests)
+app.router.add_post("/requests/add", request_add)
+app.router.add_post("/requests/{request_id}/{action}", request_decide)
+app.router.add_get("/clockwheel", get_clockwheel)
+app.router.add_post("/clockwheel", set_clockwheel)
+app.router.add_get("/schedule", get_schedule)
+app.router.add_post("/schedule", set_schedule)
+app.router.add_post("/pal/run", pal_run)
+app.router.add_post("/history", history_event)
+app.router.add_post("/internal/history", history_event)
+app.router.add_get("/internal/next", internal_next)
+app.on_startup.append(on_startup)
+app.on_cleanup.append(on_cleanup)
+
+if __name__ == "__main__":
+    web.run_app(
+        app,
+        host=os.getenv("LOUDER_API_BIND", "0.0.0.0"),
+        port=int(os.getenv("LOUDER_API_PORT", "8787")),
+    )
+, line, re.I)
+            or re.match(r'^QUEUE\s+URI\s+".*"
+
+async def run_scheduled_event(event: dict[str, Any]) -> None:
+    action = str(event.get("action", "")).lower()
+
+    if action in ("run pal", "pal"):
+        await execute_pal(str(event.get("script") or event.get("payload") or ""), [])
+        return
+
+    if action in ("queue category", "category"):
+        category = str(event.get("category") or event.get("payload") or "")
+        count = int(event.get("count", 1) or 1)
+        for _ in range(max(0, min(count, 100))):
+            item = choose_auto(category)
+            if item:
+                state.setdefault("queue", []).append(item)
+        await save_state()
+        return
+
+    if action in ("load clock", "clock"):
+        if isinstance(event.get("clock"), list):
+            state["clockwheel"] = event["clock"]
+            await save_state()
+        return
+
+    if action in ("station id", "id"):
+        uri = str(event.get("uri", ""))
+        if uri:
+            state.setdefault("queue", []).insert(
+                0,
+                {
+                    "artist": "Louder",
+                    "title": "Station ID",
+                    "uri": uri,
+                    "category": "Station IDs",
+                },
+            )
+            await save_state()
+
+
+async def scheduler_loop(app: web.Application) -> None:
+    while True:
+        now = time.localtime()
+        hhmm = f"{now.tm_hour:02d}:{now.tm_min:02d}"
+        day = time.strftime("%Y-%m-%d", now)
+        changed = False
+
+        for event in state.get("schedule", []):
+            if str(event.get("time", "")) == hhmm and event.get("_last") != day:
+                try:
+                    await run_scheduled_event(event)
+                except Exception as exc:
+                    print("scheduler:", exc, flush=True)
+                event["_last"] = day
+                changed = True
+
+        if changed:
+            await save_state()
+
+        await asyncio.sleep(15)
+
+
+async def on_startup(app: web.Application) -> None:
+    app["scheduler_task"] = asyncio.create_task(scheduler_loop(app))
+
+
+async def on_cleanup(app: web.Application) -> None:
+    task = app.get("scheduler_task")
+    if task:
+        task.cancel()
+
+
+async def history_event(request: web.Request) -> web.Response:
+    data = await request.json()
+    item = {
+        "ts": time.time(),
+        "time": time.strftime("%H:%M:%S"),
+        **data,
+    }
+    state.setdefault("history", []).append(item)
+    state["history"] = state["history"][-5000:]
+    state["now"] = data
+    await save_state()
+    return web.json_response({"ok": True})
+
+
+app = web.Application(
+    middlewares=[cors_auth],
+    client_max_size=64 * 1024 * 1024,
+)
+app.router.add_get(
+    "/",
+    lambda request: web.json_response({"name": "Louder Playout Node", "ok": True}),
+)
+app.router.add_get("/health", health)
+app.router.add_get("/status", status)
+app.router.add_post("/mode", set_mode)
+app.router.add_get("/queue", get_queue)
+app.router.add_post("/queue/add", queue_add)
+app.router.add_post("/queue/set", queue_set)
+app.router.add_post("/queue/move", queue_move)
+app.router.add_post("/queue/remove", queue_remove)
+app.router.add_post("/queue/clear", queue_clear)
+app.router.add_post("/deck/{deck}/{action}", deck_action)
+app.router.add_post("/aux/{deck}/{action}", aux_action)
+app.router.add_post("/encoder/{action}", encoder_action)
+app.router.add_post("/crossfade/apply", crossfade_apply)
+app.router.add_post("/dsp/apply", dsp_apply)
+app.router.add_post("/voice/ptt", voice_ptt)
+app.router.add_get("/ws/voice", voice_ws)
+app.router.add_post("/voice-track", voice_track_upload)
+app.router.add_post("/fx/upload", fx_upload)
+app.router.add_post("/fx/play", fx_play)
+app.router.add_get("/catalog", get_catalog)
+app.router.add_post("/vault/sync", vault_sync)
+app.router.add_get("/stats", relay_stats)
+app.router.add_get("/requests", get_requests)
+app.router.add_post("/requests/add", request_add)
+app.router.add_post("/requests/{request_id}/{action}", request_decide)
+app.router.add_get("/clockwheel", get_clockwheel)
+app.router.add_post("/clockwheel", set_clockwheel)
+app.router.add_get("/schedule", get_schedule)
+app.router.add_post("/schedule", set_schedule)
+app.router.add_post("/pal/run", pal_run)
+app.router.add_post("/history", history_event)
+app.router.add_post("/internal/history", history_event)
+app.router.add_get("/internal/next", internal_next)
+app.on_startup.append(on_startup)
+app.on_cleanup.append(on_cleanup)
+
+if __name__ == "__main__":
+    web.run_app(
+        app,
+        host=os.getenv("LOUDER_API_BIND", "0.0.0.0"),
+        port=int(os.getenv("LOUDER_API_PORT", "8787")),
+    )
+, line, re.I)
+            or re.match(r"^ENCODER\s+(START|STOP|RESTART)$", line, re.I)
+            or re.match(r"^SKIP$", line, re.I)
+        ):
+            raise web.HTTPBadRequest(text="Unsupported PAL command: " + line)
+
+    state.setdefault("pal_scripts", {})[name] = script
+    await save_state()
+    return web.json_response({"ok": True, "name": name})
+
+
+async def pal_script_delete(request: web.Request) -> web.Response:
+    name = request.match_info["name"]
+    scripts = state.setdefault("pal_scripts", {})
+    if name not in scripts:
+        raise web.HTTPNotFound()
+    del scripts[name]
+    await save_state()
+    return web.json_response({"ok": True})
+
+
 async def run_scheduled_event(event: dict[str, Any]) -> None:
     action = str(event.get("action", "")).lower()
 
