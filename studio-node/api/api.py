@@ -34,6 +34,7 @@ CORS = os.getenv("LOUDER_CORS_ORIGIN", "*")
 EMERGENCY_URI = os.getenv("EMERGENCY_URI", "").strip()
 VAULT_BASE_URL = os.getenv("TELEGRAM_VAULT_BASE_URL", "http://vault:8765").rstrip("/")
 VAULT_TOKEN = os.getenv("TELEGRAM_VAULT_TOKEN", "").strip()
+YESSTREAMING_STATUS_URL = os.getenv("YESSTREAMING_STATUS_URL", "").strip()
 
 DEFAULT_STATE: dict[str, Any] = {
     "mode": "auto",
@@ -66,6 +67,7 @@ DEFAULT_STATE: dict[str, Any] = {
     "clockwheel": [],
     "schedule": [],
     "pal_scripts": {},
+    "requests": [],
 }
 _lock = asyncio.Lock()
 
@@ -212,6 +214,40 @@ def choose_auto(category: str | None = None) -> dict[str, Any] | None:
     return random.choice(eligible) if eligible else None
 
 
+def catalog_pool() -> list[dict[str, Any]]:
+    value = load_json(AUTO_POOL_FILE, [])
+    return value if isinstance(value, list) else []
+
+
+def resolve_item(item: dict[str, Any]) -> dict[str, Any]:
+    """Resolve browser-safe catalog references to an internal playable item."""
+    if item.get("uri"):
+        return dict(item)
+
+    message_id = item.get("message_id")
+    if message_id is not None:
+        for candidate in catalog_pool():
+            if int(candidate.get("message_id", -1)) == int(message_id):
+                resolved = dict(candidate)
+                # Keep browser-side metadata edits without allowing a URI override.
+                for key in ("artist", "title", "category"):
+                    if item.get(key):
+                        resolved[key] = item[key]
+                return resolved
+
+    raise ValueError("track is not present in the playable catalog")
+
+
+def public_item(item: dict[str, Any] | None) -> dict[str, Any] | None:
+    """Never leak internal vault URLs/tokens back to the browser."""
+    if not item:
+        return item
+    safe = dict(item)
+    safe.pop("uri", None)
+    safe["playable"] = bool(item.get("uri"))
+    return safe
+
+
 async def internal_next(request: web.Request) -> web.Response:
     mode = state.get("mode", "auto")
     item: dict[str, Any] | None = None
@@ -296,9 +332,9 @@ async def status(request: web.Request) -> web.Response:
             "node": "online",
             "liquidsoap": liquidsoap_ok,
             "mode": state.get("mode"),
-            "queue": state.get("queue", []),
+            "queue": [public_item(item) for item in state.get("queue", [])],
             "queue_count": len(state.get("queue", [])),
-            "now": state.get("now"),
+            "now": public_item(state.get("now")),
             "encoders": encoders,
             "crossfade": state.get("crossfade"),
             "dsp": state.get("dsp"),
@@ -327,7 +363,7 @@ async def set_mode(request: web.Request) -> web.Response:
 
 
 async def get_queue(request: web.Request) -> web.Response:
-    return web.json_response(state.get("queue", []))
+    return web.json_response([public_item(item) for item in state.get("queue", [])])
 
 
 async def queue_add(request: web.Request) -> web.Response:
@@ -339,9 +375,13 @@ async def queue_add(request: web.Request) -> web.Response:
         raise web.HTTPBadRequest()
 
     for item in items:
-        if not isinstance(item, dict) or not item.get("uri"):
-            raise web.HTTPBadRequest(text="queue item requires uri")
-        state.setdefault("queue", []).append(item)
+        if not isinstance(item, dict):
+            raise web.HTTPBadRequest(text="invalid queue item")
+        try:
+            resolved = resolve_item(item)
+        except ValueError as exc:
+            raise web.HTTPBadRequest(text=str(exc)) from exc
+        state.setdefault("queue", []).append(resolved)
 
     await save_state()
     return web.json_response({"ok": True, "count": len(state["queue"])})
@@ -349,12 +389,18 @@ async def queue_add(request: web.Request) -> web.Response:
 
 async def queue_set(request: web.Request) -> web.Response:
     data = await request.json()
-    if not isinstance(data, list) or any(
-        not isinstance(item, dict) or not item.get("uri") for item in data
-    ):
-        raise web.HTTPBadRequest(text="array with uri required")
+    if not isinstance(data, list):
+        raise web.HTTPBadRequest(text="array required")
 
-    state["queue"] = data
+    try:
+        resolved = [resolve_item(item) for item in data if isinstance(item, dict)]
+    except ValueError as exc:
+        raise web.HTTPBadRequest(text=str(exc)) from exc
+
+    if len(resolved) != len(data):
+        raise web.HTTPBadRequest(text="invalid queue item")
+
+    state["queue"] = resolved
     await save_state()
     return web.json_response({"ok": True})
 
@@ -416,9 +462,11 @@ async def deck_action(request: web.Request) -> web.Response:
 
     try:
         if action == "load":
-            uri = str(data.get("uri", "")).strip()
-            if not uri:
-                raise web.HTTPBadRequest(text="uri required")
+            try:
+                item = resolve_item(data)
+            except ValueError as exc:
+                raise web.HTTPBadRequest(text=str(exc)) from exc
+            uri = str(item.get("uri", "")).strip()
             result = await liq(f"deck_{deck}.push {uri}")
         elif action == "skip":
             result = await liq(f"deck_{deck}.skip")
@@ -701,7 +749,7 @@ async def fx_play(request: web.Request) -> web.Response:
 
 
 async def get_catalog(request: web.Request) -> web.Response:
-    return web.json_response(load_json(AUTO_POOL_FILE, []))
+    return web.json_response([public_item(item) for item in catalog_pool()])
 
 
 async def vault_sync(request: web.Request) -> web.Response:
@@ -751,6 +799,132 @@ async def vault_sync(request: web.Request) -> web.Response:
     tmp.write_text(json.dumps(pool, ensure_ascii=False, indent=2), "utf-8")
     tmp.replace(AUTO_POOL_FILE)
     return web.json_response({"ok": True, "count": len(pool)})
+
+
+async def relay_stats(request: web.Request) -> web.Response:
+    if not YESSTREAMING_STATUS_URL:
+        return web.json_response(
+            {"configured": False, "listeners": None, "peak": None, "sources": []}
+        )
+
+    try:
+        async with ClientSession() as session:
+            async with session.get(YESSTREAMING_STATUS_URL, timeout=10) as response:
+                if response.status != 200:
+                    raise RuntimeError(f"status HTTP {response.status}")
+                payload = await response.json(content_type=None)
+
+        ice = payload.get("icestats", payload) if isinstance(payload, dict) else {}
+        sources = ice.get("source", []) if isinstance(ice, dict) else []
+        if isinstance(sources, dict):
+            sources = [sources]
+
+        cleaned = []
+        listeners = 0
+        peak = 0
+        for source in sources if isinstance(sources, list) else []:
+            if not isinstance(source, dict):
+                continue
+            current = int(source.get("listeners", 0) or 0)
+            source_peak = int(source.get("listener_peak", 0) or 0)
+            listeners += current
+            peak = max(peak, source_peak)
+            cleaned.append(
+                {
+                    "listenurl": source.get("listenurl"),
+                    "server_name": source.get("server_name"),
+                    "server_description": source.get("server_description"),
+                    "title": source.get("title"),
+                    "listeners": current,
+                    "peak": source_peak,
+                    "bitrate": source.get("bitrate"),
+                }
+            )
+
+        return web.json_response(
+            {
+                "configured": True,
+                "listeners": listeners,
+                "peak": peak,
+                "sources": cleaned,
+            }
+        )
+    except Exception as exc:
+        return web.json_response(
+            {"configured": True, "error": str(exc), "listeners": None, "peak": None},
+            status=502,
+        )
+
+
+async def get_requests(request: web.Request) -> web.Response:
+    return web.json_response(state.get("requests", []))
+
+
+async def request_add(request: web.Request) -> web.Response:
+    data = await request.json()
+    message_id = data.get("message_id")
+    match = None
+
+    if message_id is not None:
+        for item in catalog_pool():
+            if int(item.get("message_id", -1)) == int(message_id):
+                match = item
+                break
+    else:
+        artist = str(data.get("artist", "")).casefold().strip()
+        title = str(data.get("title", "")).casefold().strip()
+        for item in catalog_pool():
+            if (
+                str(item.get("artist", "")).casefold().strip() == artist
+                and str(item.get("title", "")).casefold().strip() == title
+            ):
+                match = item
+                break
+
+    if not match:
+        raise web.HTTPNotFound(text="track not found")
+
+    conflict = recent_conflict(match)
+    row = {
+        "id": secrets.token_hex(8),
+        "created_at": int(time.time()),
+        "requested_by": str(data.get("requested_by", "listener"))[:80],
+        "track": public_item(match),
+        "status": "blocked" if conflict else "pending",
+        "reason": "separation rule" if conflict else "",
+    }
+    state.setdefault("requests", []).append(row)
+    state["requests"] = state["requests"][-500:]
+    await save_state()
+    return web.json_response(row)
+
+
+async def request_decide(request: web.Request) -> web.Response:
+    request_id = request.match_info["request_id"]
+    action = request.match_info["action"]
+    if action not in ("approve", "reject"):
+        raise web.HTTPNotFound()
+
+    row = next(
+        (item for item in state.get("requests", []) if item.get("id") == request_id),
+        None,
+    )
+    if not row:
+        raise web.HTTPNotFound()
+
+    if action == "approve":
+        try:
+            resolved = resolve_item(row.get("track", {}))
+        except ValueError as exc:
+            raise web.HTTPBadRequest(text=str(exc)) from exc
+        state.setdefault("queue", []).append(resolved)
+        row["status"] = "approved"
+        row["reason"] = ""
+    else:
+        row["status"] = "rejected"
+
+    await save_state()
+    return web.json_response({"ok": True, "request": row})
 
 
 async def get_clockwheel(request: web.Request) -> web.Response:
@@ -985,6 +1159,10 @@ app.router.add_post("/fx/upload", fx_upload)
 app.router.add_post("/fx/play", fx_play)
 app.router.add_get("/catalog", get_catalog)
 app.router.add_post("/vault/sync", vault_sync)
+app.router.add_get("/stats", relay_stats)
+app.router.add_get("/requests", get_requests)
+app.router.add_post("/requests/add", request_add)
+app.router.add_post("/requests/{request_id}/{action}", request_decide)
 app.router.add_get("/clockwheel", get_clockwheel)
 app.router.add_post("/clockwheel", set_clockwheel)
 app.router.add_get("/schedule", get_schedule)
