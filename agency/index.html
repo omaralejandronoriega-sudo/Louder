@@ -16,6 +16,7 @@ h2{font:900 20px Georgia,serif}.team{display:grid;grid-template-columns:repeat(4
 <div class="head"><div><h1>Buenos días, Omar.</h1><div style="color:var(--muted)">Tu equipo digital y sus entregas de hoy.</div></div><div class="live" id="global">● Supervisando</div></div>
 <section class="metrics"><div class="metric">Tareas de hoy<strong id="tasks">—</strong></div><div class="metric">Completadas<strong id="done">—</strong></div><div class="metric">En curso<strong id="doing">—</strong></div><div class="metric">Incidencias<strong id="issues">—</strong></div></section>
 <h2>Equipo de la agencia</h2><section class="team" id="team"></section>
+<div class="panel"><h2>Flujo de la agencia</h2><div id="flow" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
 <div class="panel"><h2>Tablero de producción de hoy</h2><section class="board"><div class="column"><h3>Por preparar</h3><div id="todo"></div></div><div class="column"><h3>En producción</h3><div id="production"></div></div><div class="column"><h3>Programado</h3><div id="scheduled"></div></div><div class="column"><h3>Publicado y verificado</h3><div id="published"></div></div></section></div>
 <div class="panel"><h2>Salud de operaciones</h2><div id="ops"></div></div>
 </main></div>
@@ -52,6 +53,7 @@ function draw(){
  document.getElementById('ops').innerHTML=items.map(x=>'<div class="row"><b>'+x.p.name+'</b><span>'+x.p.area+'</span><span class="status '+x.s+'">● '+label(x.s)+'</span><span>'+(x.r?new Date(x.r.created_at).toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'}):'—')+'</span></div>').join('');
  global.textContent=bad?'● '+bad+' incidencia(s) en recuperación':'● Operación supervisada';
 }
-async function load(){let all=[];for(const repo of repos){try{let j=await (await fetch('https://api.github.com/repos/'+repo+'/actions/runs?per_page=40')).json();(j.workflow_runs||[]).forEach(r=>all.push({...r,repo}))}catch(e){}}runs=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw()}
+async function loadFlow(){try{const w=await (await fetch('./workflow.json')).json();document.getElementById('flow').innerHTML=w.stages.map((s,i)=>'<div class="task" style="flex:1;min-width:135px"><div class="meta">0'+(i+1)+'</div><b>'+s.label+'</b><div class="meta">'+s.output+'</div><span class="tag">'+s.owners.map(id=>{const p=people.find(x=>x.id===id);return p?p.name:'—'}).join(' · ')+'</span></div>').join('')}catch(e){}}
+async function load(){loadFlow();let all=[];for(const repo of repos){try{let j=await (await fetch('https://api.github.com/repos/'+repo+'/actions/runs?per_page=40')).json();(j.workflow_runs||[]).forEach(r=>all.push({...r,repo}))}catch(e){}}runs=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw()}
 load();setInterval(load,60000);
 </script></body></html>
