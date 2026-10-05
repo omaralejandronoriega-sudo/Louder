@@ -1149,7 +1149,10 @@ async def pal_scripts_list(request: web.Request) -> web.Response:
     return web.json_response(
         [
             {"name": name, "script": script}
-            for name, script in sorted(scripts.items(), key=lambda item: item[0].casefold())
+            for name, script in sorted(
+                scripts.items(),
+                key=lambda item: item[0].casefold(),
+            )
         ]
     )
 
@@ -1162,19 +1165,50 @@ async def pal_script_get(request: web.Request) -> web.Response:
     return web.json_response({"name": name, "script": scripts[name]})
 
 
-async def pal_script_save(request: web.Request) -> web.Response:
-    name = request.match_info["name"].strip()
-    if not name or len(name) > 80:
-        raise web.HTTPBadRequest(text="invalid script name")
-    data = await request.json()
-    script = str(data.get("script", ""))
-    # Validate syntax by running only the parser checks without executing long waits.
+def validate_pal_script(script: str) -> None:
+    patterns = [
+        r'^LOG\s+".*"$',
+        r"^WAIT\s+\d+(?:\.\d+)?$",
+        r"^MODE\s+(AUTO|QUEUE|MANUAL|RECOVERY)$",
+        r'^QUEUE\s+CATEGORY\s+".*"\s+\d+$',
+        r'^QUEUE\s+URI\s+".*"$',
+        r"^ENCODER\s+(START|STOP|RESTART)$",
+        r"^SKIP$",
+    ]
     for raw in script.splitlines():
         line = raw.strip()
         if not line or line.startswith("#"):
             continue
-        if not (
-            re.match(r'^LOG\s+".*"
+        if not any(re.match(pattern, line, re.I) for pattern in patterns):
+            raise ValueError("Unsupported PAL command: " + line)
+
+
+async def pal_script_save(request: web.Request) -> web.Response:
+    name = request.match_info["name"].strip()
+    if not name or len(name) > 80:
+        raise web.HTTPBadRequest(text="invalid script name")
+
+    data = await request.json()
+    script = str(data.get("script", ""))
+    try:
+        validate_pal_script(script)
+    except ValueError as exc:
+        raise web.HTTPBadRequest(text=str(exc)) from exc
+
+    state.setdefault("pal_scripts", {})[name] = script
+    await save_state()
+    return web.json_response({"ok": True, "name": name})
+
+
+async def pal_script_delete(request: web.Request) -> web.Response:
+    name = request.match_info["name"]
+    scripts = state.setdefault("pal_scripts", {})
+    if name not in scripts:
+        raise web.HTTPNotFound()
+    del scripts[name]
+    await save_state()
+    return web.json_response({"ok": True})
+
 
 async def run_scheduled_event(event: dict[str, Any]) -> None:
     action = str(event.get("action", "")).lower()
