@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "timezone": "America/Mexico_City",
+  "projects": [
+    {"id":"threads","label":"Louder · Threads","repo":"omaralejandronoriega-sudo/louder-threads-hourly","publisher":"hourly.yml","watchdog":"threads-watchdog.yml","expected":"hourly","grace_minutes":15},
+    {"id":"tiktok","label":"Louder · TikTok","repo":"omaralejandronoriega-sudo/louder-tiktok-capture","publisher":"tiktok-direct-publish.yml","watchdog":"tiktok-watchdog.yml","expected":"daily","grace_minutes":20},
+    {"id":"tbc","label":"The British Corner · Facebook","repo":"omaralejandronoriega-sudo/the-british-corner","publisher":"facebook-slot-publisher.yml","watchdog":"facebook-watchdog.yml","expected":"4 daily slots","grace_minutes":15},
+    {"id":"prensa","label":"Louder Prensa · Inbox","repo":"omaralejandronoriega-sudo/louder-prensa","publisher":"revisar-correo.yml","watchdog":null,"expected":"recurring scan","grace_minutes":60},
+    {"id":"louder","label":"Louder · Web","repo":"omaralejandronoriega-sudo/Louder","publisher":"wordpress-cron.yml","watchdog":"web-health.yml","expected":"recurring","grace_minutes":30}
+  ]
+}
