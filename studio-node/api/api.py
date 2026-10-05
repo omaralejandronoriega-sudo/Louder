@@ -16,7 +16,8 @@ from aiohttp import web, WSMsgType, ClientSession
 
 ROOT = pathlib.Path(os.getenv("LOUDER_DATA_DIR", "/data"))
 ROOT.mkdir(parents=True, exist_ok=True)
-STATE_FILE = ROOT / "studio-state.json"
+
+# Liquidsoap runs as an unprivileged user in its own container but shares this\n# volume for persisted interactive values. Seed the file with safe write\n# permissions so the engine never needs to run as root.\nLIQUIDSOAP_VARS_FILE = ROOT / "liquidsoap-vars.json"\nif not LIQUIDSOAP_VARS_FILE.exists():\n    LIQUIDSOAP_VARS_FILE.write_text("{}", encoding="utf-8")\ntry:\n    LIQUIDSOAP_VARS_FILE.chmod(0o666)\nexcept OSError:\n    pass\n\nSTATE_FILE = ROOT / "studio-state.json"
 AUTO_POOL_FILE = ROOT / "auto-pool.json"
 VOICE_DIR = ROOT / "voice-tracks"
 VOICE_DIR.mkdir(exist_ok=True)
