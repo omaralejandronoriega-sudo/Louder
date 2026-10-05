@@ -668,6 +668,7 @@ async def voice_ptt(request: web.Request) -> web.Response:
     gain = db_to_gain(duck) if active and data.get("autoDuck", True) else 1.0
     try:
         await liq(f"var.set music_gain = {gain}")
+        await liq(f"var.set voice_active = {'true' if active else 'false'}")
     except Exception:
         pass
 
@@ -678,6 +679,12 @@ async def voice_ws(request: web.Request) -> web.WebSocketResponse:
     ws = web.WebSocketResponse(max_msg_size=2 * 1024 * 1024, heartbeat=20)
     await ws.prepare(request)
 
+    try:
+        input_rate = int(request.query.get("rate", "48000"))
+    except ValueError:
+        input_rate = 48000
+    input_rate = max(8000, min(96000, input_rate))
+
     command = [
         "ffmpeg",
         "-hide_banner",
@@ -686,7 +693,7 @@ async def voice_ws(request: web.Request) -> web.WebSocketResponse:
         "-f",
         "f32le",
         "-ar",
-        "48000",
+        str(input_rate),
         "-ac",
         "1",
         "-i",
