@@ -18,6 +18,7 @@ header{display:flex;justify-content:space-between;gap:18px;align-items:end;margi
 <section class="metrics"><div class="metric"><span class="muted">Automatizaciones vigiladas</span><strong id="mTotal">—</strong></div><div class="metric"><span class="muted">Correctas</span><strong id="mOk">—</strong></div><div class="metric"><span class="muted">Requieren atención</span><strong id="mBad">—</strong></div><div class="metric"><span class="muted">Última revisión</span><strong id="mTime" style="font-size:18px">—</strong></div></section>
 <div class="tabs"><button class="tab active" data-filter="all">Todo</button><button class="tab" data-filter="Louder">Louder</button><button class="tab" data-filter="TikTok">TikTok</button><button class="tab" data-filter="Threads">Threads</button><button class="tab" data-filter="TBC">The British Corner</button><button class="tab" data-filter="Prensa">Prensa</button></div>
 <section class="board"><div class="col"><h2>✓ Funcionando</h2><div id="ok"></div></div><div class="col"><h2>◷ En proceso / espera</h2><div id="wait"></div></div><div class="col"><h2>! Requiere atención</h2><div id="bad"></div></div></section>
+<section class="feed"><h2>Supervisión</h2><div id="supervisor"></div></section>
 <section class="feed"><h2>Actividad reciente</h2><div id="feed"></div></section>
 </div><script>
 const repos=[
@@ -27,10 +28,19 @@ const repos=[
 {key:'Threads',repo:'omaralejandronoriega-sudo/louder-threads-hourly'},
 {key:'Prensa',repo:'omaralejandronoriega-sudo/louder-prensa'},
 {key:'TBC',repo:'omaralejandronoriega-sudo/the-british-corner'}];
-let rows=[],filter='all';
+let rows=[],filter='all',registry=[];
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function state(r){if(['failure','timed_out','cancelled','action_required'].includes(r.conclusion))return'bad';if(['queued','in_progress','waiting','pending','requested'].includes(r.status))return'wait';return'ok'}
 function label(r){if(r.status!=='completed')return r.status||'pendiente';return r.conclusion==='success'?'correcto':r.conclusion==='skipped'?'omitido':r.conclusion||'sin resultado'}
+function supervisor(){
+ const box=document.getElementById('supervisor'); if(!box)return;
+ box.innerHTML=registry.map(x=>{
+   const rr=rows.filter(r=>r.repo===x.repo && (r.path||'').endsWith(x.publisher));
+   const last=rr[0]; let s='bad',msg='Sin ejecución reciente';
+   if(last){const age=(Date.now()-new Date(last.created_at))/60000; const limit=x.expected==='hourly'?75:x.expected==='daily'?1500:Math.max(90,x.grace_minutes*3); s=age<=limit?'ok':'bad';msg=age<=limit?'Cubierto':'Ejecución vencida';}
+   return '<div class="run"><b>'+esc(x.label)+'</b><span>'+esc(x.expected)+' · tolerancia '+x.grace_minutes+' min</span><span class="pill '+s+'">'+msg+'</span><a class="btn" target="_blank" href="https://github.com/'+x.repo+'/actions">Supervisar</a></div>'
+ }).join('');
+}
 function draw(){
  const latest={}; rows.forEach(r=>{const k=r.repo+'|'+r.name;if(!latest[k])latest[k]=r});
  const cards=Object.values(latest).filter(r=>filter==='all'||r.key===filter);
@@ -41,9 +51,12 @@ function draw(){
  const bad=cards.filter(x=>state(x)==='bad').length, ok=cards.filter(x=>state(x)==='ok').length;
  document.getElementById('mTotal').textContent=cards.length;document.getElementById('mOk').textContent=ok;document.getElementById('mBad').textContent=bad;
  document.getElementById('alert').innerHTML=bad?'<div class="alert"><b>'+bad+' automatización(es) requieren atención.</b> Están concentradas aquí para que no tengas que revisar repositorio por repositorio.</div>':'';
+ supervisor();
  document.getElementById('feed').innerHTML=rows.filter(r=>filter==='all'||r.key===filter).slice(0,30).map(r=>'<div class="run"><b>'+esc(r.key)+'</b><span>'+esc(r.name)+'</span><span class="pill '+state(r)+'">'+esc(label(r))+'</span><a class="btn" target="_blank" href="'+r.html_url+'">'+new Date(r.created_at).toLocaleString('es-MX')+'</a></div>').join('');
 }
 async function load(){
+ try{registry=(await (await fetch('./automations.json?'+Date.now())).json()).projects||[]}catch(e){registry=[]}
+
  let all=[];for(const x of repos){try{const q=await fetch('https://api.github.com/repos/'+x.repo+'/actions/runs?per_page=15',{headers:{Accept:'application/vnd.github+json'}});const j=await q.json();(j.workflow_runs||[]).forEach(r=>all.push({...r,key:x.key,repo:x.repo}))}catch(e){}}
  rows=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw();document.getElementById('mTime').textContent=new Date().toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'});
  document.getElementById('sync').textContent='● GitHub sincronizado';}
