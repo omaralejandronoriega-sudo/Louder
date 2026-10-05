@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "description": "Contrato de órdenes de Agencia Louder",
+  "statuses": [
+    "Recibida",
+    "Asignada",
+    "Trabajando",
+    "Esperando aprobación",
+    "Programada",
+    "Publicada",
+    "Verificada",
+    "Incidencia"
+  ],
+  "fields": [
+    "id",
+    "created_at",
+    "requested_by",
+    "assigned_to",
+    "instruction",
+    "priority",
+    "deadline",
+    "project",
+    "status",
+    "current_owner",
+    "next_owner",
+    "deliverables",
+    "proof_url"
+  ],
+  "routing": {
+    "default": "valeria",
+    "verification": "leo",
+    "analytics": "camila"
+  }
+}
