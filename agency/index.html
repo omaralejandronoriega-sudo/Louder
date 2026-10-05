@@ -20,7 +20,12 @@ h2{font:900 20px Georgia,serif}.team{display:grid;grid-template-columns:repeat(4
 <div class="panel"><h2>Salud de operaciones</h2><div id="ops"></div></div>
 </main></div>
 <script>
-const people=[
+const people=[{id:'valeria',name:'Valeria Cruz',initials:'VC',role:'Directora editorial',area:'Dirección',desc:'Define prioridades, asigna el trabajo del día y supervisa entregas.',repo:'omaralejandronoriega-sudo/Louder',workflow:'web-health.yml'},
+{id:'tomas',name:'Tomás Arriaga',initials:'TA',role:'Redactor / periodista musical',area:'Editorial Louder',desc:'Investiga y redacta notas para el flujo editorial.',repo:'omaralejandronoriega-sudo/louder-prensa',workflow:'revisar-correo.yml'},
+{id:'elena',name:'Elena Vidal',initials:'EV',role:'Curadora musical',area:'Curaduría',desc:'Detecta lanzamientos, efemérides y oportunidades editoriales.',repo:'omaralejandronoriega-sudo/Louder',workflow:'radar-2026.yml'},
+{id:'gael',name:'Gael Robles',initials:'GR',role:'Productor de contenidos',area:'Producción',desc:'Convierte temas en paquetes para web, diseño, video y redes.',repo:'omaralejandronoriega-sudo/Louder',workflow:'wordpress-cron.yml'},
+{id:'leo',name:'Leo Barragán',initials:'LB',role:'Control de calidad y automatizaciones',area:'Operaciones',desc:'Verifica publicaciones, atrasos, recuperación y comprobantes.',repo:'omaralejandronoriega-sudo/Louder',workflow:'web-health.yml'},
+{id:'camila',name:'Camila Ortega',initials:'CO',role:'Analista de audiencia',area:'Métricas',desc:'Analiza resultados y alimenta la planeación de la siguiente jornada.',repo:'omaralejandronoriega-sudo/Louder',workflow:'web-health.yml'},
 {id:'mateo',name:'Mateo Ríos',initials:'MR',role:'Editor de video · TikTok',area:'TikTok Louder',desc:'Recibe la pieza del día, edita el video vertical y deja el archivo listo para publicación.',repo:'omaralejandronoriega-sudo/louder-tiktok-capture',workflow:'capture.yml'},
 {id:'ines',name:'Inés Beaumont',initials:'IB',role:'Diseñadora · The British Corner',area:'The British Corner',desc:'Crea la pieza gráfica de cada publicación con identidad editorial británica.',repo:'omaralejandronoriega-sudo/the-british-corner',workflow:'facebook-production.yml'},
 {id:'arthur',name:'Arthur Vega',initials:'AV',role:'Community Manager · The British Corner',area:'The British Corner',desc:'Recibe diseños y copy, programa los cuatro slots y comprueba cada publicación.',repo:'omaralejandronoriega-sudo/the-british-corner',workflow:'facebook-slot-publisher.yml'},
@@ -43,7 +48,7 @@ function draw(){
  tasks.textContent=items.length;document.getElementById('done').textContent=done;document.getElementById('doing').textContent=doing;issues.textContent=bad;
  const buckets={todo:[],production:[],scheduled:[],published:[]};
  items.forEach(x=>{const dest=x.s==='ok'?'published':x.s==='bad'?'production':'scheduled';buckets[dest].push(x)});
- Object.keys(buckets).forEach(k=>document.getElementById(k).innerHTML=buckets[k].map(x=>'<div class="task"><b>'+x.p.area+'</b><div class="meta">'+x.p.name+' · '+x.p.role+'</div><span class="tag">'+label(x.s)+'</span><div class="proof">'+(x.r?'Última actividad: '+new Date(x.r.created_at).toLocaleString('es-MX'):'Esperando primera actividad')+'</div></div>').join('')||'<div class="meta">Sin tareas aquí.</div>');
+ Object.keys(buckets).forEach(k=>document.getElementById(k).innerHTML=buckets[k].map(x=>'<div class="task"><b>'+x.p.area+'</b><div class="meta">'+x.p.name+' ('+x.p.role+')'+'</div><span class="tag">'+label(x.s)+'</span><div class="proof">'+(x.r?'Última actividad: '+new Date(x.r.created_at).toLocaleString('es-MX'):'Esperando primera actividad')+'</div></div>').join('')||'<div class="meta">Sin tareas aquí.</div>');
  document.getElementById('ops').innerHTML=items.map(x=>'<div class="row"><b>'+x.p.name+'</b><span>'+x.p.area+'</span><span class="status '+x.s+'">● '+label(x.s)+'</span><span>'+(x.r?new Date(x.r.created_at).toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'}):'—')+'</span></div>').join('');
  global.textContent=bad?'● '+bad+' incidencia(s) en recuperación':'● Operación supervisada';
 }
