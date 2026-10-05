@@ -1,0 +1,67 @@
+{
+  "agency": {
+    "id": "agencia_louder",
+    "name": "Agencia Louder",
+    "role": "Agencia matriz"
+  },
+  "brands": [
+    {
+      "id": "louder",
+      "name": "Louder",
+      "status": "active",
+      "teams": [
+        "editorial",
+        "music",
+        "design",
+        "video",
+        "social",
+        "web",
+        "qa",
+        "analytics"
+      ],
+      "modules": [
+        "today",
+        "calendar",
+        "ephemeris",
+        "content",
+        "automations",
+        "incidents",
+        "published"
+      ]
+    },
+    {
+      "id": "tbc",
+      "name": "The British Corner",
+      "status": "active",
+      "teams": [
+        "editorial",
+        "design",
+        "social",
+        "qa",
+        "analytics"
+      ],
+      "modules": [
+        "today",
+        "calendar",
+        "content",
+        "automations",
+        "incidents",
+        "published"
+      ]
+    },
+    {
+      "id": "antena_radio",
+      "name": "Antena Radio",
+      "status": "planned",
+      "teams": [],
+      "modules": []
+    },
+    {
+      "id": "antena_noticias",
+      "name": "Antena Noticias",
+      "status": "planned",
+      "teams": [],
+      "modules": []
+    }
+  ]
+}
