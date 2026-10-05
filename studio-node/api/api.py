@@ -236,7 +236,21 @@ async def internal_next(request: web.Request) -> web.Response:
     uri = str(item.get("uri", "")).strip()
     if not uri:
         return web.Response(status=204)
-    return web.Response(text=uri, content_type="text/plain")
+
+    # Crossfade rules are attached as request metadata, so changes made in
+    # Cloud Studio apply to newly resolved tracks without restarting Liquidsoap.
+    xf = state.get("crossfade", {})
+    duration = float(xf.get("duration", 4.5))
+    fade_in = float(xf.get("fade_in", 1.2))
+    fade_out = float(xf.get("fade_out", 2.8))
+    annotated = (
+        "annotate:"
+        f"liq_cross_duration={duration},"
+        f"liq_fade_in={fade_in},"
+        f"liq_fade_out={fade_out}:"
+        f"{uri}"
+    )
+    return web.Response(text=annotated, content_type="text/plain")
 
 
 async def health(request: web.Request) -> web.Response:
@@ -463,18 +477,13 @@ async def crossfade_apply(request: web.Request) -> web.Response:
     state["crossfade"] = cfg
     await save_state()
 
-    results = []
-    for name, value in (
-        ("xf_duration", cfg["duration"]),
-        ("xf_in", cfg["fade_in"]),
-        ("xf_out", cfg["fade_out"]),
-    ):
-        try:
-            results.append(await liq(f"var.set {name} = {value}"))
-        except Exception as exc:
-            results.append(str(exc))
-
-    return web.json_response({"ok": True, "crossfade": cfg, "result": results})
+    return web.json_response(
+        {
+            "ok": True,
+            "crossfade": cfg,
+            "applies": "next resolved tracks via Liquidsoap metadata overrides",
+        }
+    )
 
 
 async def dsp_apply(request: web.Request) -> web.Response:
