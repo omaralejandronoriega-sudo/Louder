@@ -61,7 +61,8 @@ const people=[{id:'valeria',name:'Valeria Cruz',initials:'VC',role:'Directora ed
 people.forEach(p=>{const s=document.getElementById('cmdTo');if(s&&!s.querySelector('[value="'+p.id+'"]')){const o=document.createElement('option');o.value=p.id;o.textContent=p.name+' ('+p.role+')';s.appendChild(o)}})
 let activeBrand=localStorage.getItem('agenciaBrand')||'louder';
 const brandNames={louder:'Louder',tbc:'The British Corner',antena_radio:'Antena Radio',antena_noticias:'Antena Noticias'};
-function setBrand(b){activeBrand=b;localStorage.setItem('agenciaBrand',b);document.querySelectorAll('.brandBtn').forEach(x=>x.classList.toggle('active',x.dataset.brand===b));['commandBrand','ephemBrand'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=brandNames[b]||b});renderCommands();}
+function setBrand(b){activeBrand=b;localStorage.setItem('agenciaBrand',b);document.querySelectorAll('.brandBtn').forEach(x=>x.classList.toggle('active',x.dataset.brand===b));['commandBrand','ephemBrand'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=brandNames[b]||b});renderCommands();renderTeamBrand();}
+function renderTeamBrand(){const allowed=activeBrand==='tbc'?['valeria','tomas','gael','leo','camila','ines','arthur']:people.filter(p=>!p.area.includes('The British Corner')).map(p=>p.id);document.querySelectorAll('#team .person').forEach(x=>x.style.display=allowed.includes(x.dataset.person)?'block':'none');}
 document.querySelectorAll('.brandBtn').forEach(b=>b.onclick=()=>setBrand(b.dataset.brand));
 const commands=JSON.parse(localStorage.getItem('agenciaLouderCommands')||'[]');
 function renderCommands(){const el=document.getElementById('cmdLog');if(!el)return;el.innerHTML='<h2>Órdenes recientes</h2>'+commands.filter(x=>(x.brand||'louder')===activeBrand).slice().reverse().map(x=>'<div class="row"><b>'+x.to+'</b><span>'+x.text+'</span><span class="tag">'+x.priority+'</span><span>'+x.status+'</span></div>').join('')}
