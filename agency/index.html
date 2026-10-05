@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agencia Louder · Control de automatizaciones</title>
+<style>
+:root{--bg:#09090b;--panel:#131316;--line:#2a2a31;--text:#f5f5f5;--muted:#9999a3;--green:#7dff4f;--purple:#a970ff;--red:#ff5c6c;--amber:#ffcb45}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}.wrap{max-width:1450px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:22px}.brand{font-family:Georgia,serif;font-weight:900;font-size:30px}.brand b{color:var(--green)}.muted{color:var(--muted)}.live{border:1px solid #315d25;background:#142111;color:var(--green);padding:8px 12px;border-radius:999px;font-weight:800}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.metric,.card,.run{background:var(--panel);border:1px solid var(--line);border-radius:14px}.metric{padding:16px}.metric strong{display:block;font-size:27px;margin-top:6px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:1px solid var(--line);background:#111;color:#ddd;border-radius:9px;padding:9px 12px;cursor:pointer}.tab.active{background:var(--green);color:#071006;border-color:var(--green);font-weight:900}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.col h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 9px}.card{padding:14px;margin-bottom:10px}.top{display:flex;justify-content:space-between;gap:12px}.name{font-weight:900}.repo{font-size:11px;color:var(--muted);margin-top:4px}.pill{font-size:11px;font-weight:900;border-radius:999px;padding:5px 8px;height:max-content}.ok{background:#183516;color:var(--green)}.bad{background:#3b1519;color:var(--red)}.wait{background:#3b3114;color:var(--amber)}.skip{background:#24242a;color:#bbb}
+.detail{font-size:13px;color:#c9c9cf;margin:13px 0 8px}.actions{display:flex;gap:7px}.btn{display:inline-block;text-decoration:none;color:#fff;border:1px solid #3b3b44;padding:7px 9px;border-radius:8px;font-size:12px}.btn:hover{border-color:var(--purple)}
+.feed{margin-top:20px}.run{display:grid;grid-template-columns:140px 1fr 120px 150px;gap:12px;padding:11px 13px;margin:7px 0;align-items:center;font-size:13px}
+.alert{border-left:4px solid var(--red);background:#1a1012;padding:13px 15px;border-radius:8px;margin:0 0 18px}.hidden{display:none}
+@media(max-width:900px){.metrics,.board{grid-template-columns:1fr}.run{grid-template-columns:1fr}.wrap{padding:15px}header{align-items:start;flex-direction:column}}
+</style></head><body><div class="wrap">
+<header><div><div class="brand">AGENCIA <b>LOUDER</b></div><div class="muted">Centro de control editorial y automatizaciones</div></div><div class="live" id="sync">● Sincronizando GitHub</div></header>
+<div id="alert"></div>
+<section class="metrics"><div class="metric"><span class="muted">Automatizaciones vigiladas</span><strong id="mTotal">—</strong></div><div class="metric"><span class="muted">Correctas</span><strong id="mOk">—</strong></div><div class="metric"><span class="muted">Requieren atención</span><strong id="mBad">—</strong></div><div class="metric"><span class="muted">Última revisión</span><strong id="mTime" style="font-size:18px">—</strong></div></section>
+<div class="tabs"><button class="tab active" data-filter="all">Todo</button><button class="tab" data-filter="Louder">Louder</button><button class="tab" data-filter="TikTok">TikTok</button><button class="tab" data-filter="Threads">Threads</button><button class="tab" data-filter="TBC">The British Corner</button><button class="tab" data-filter="Prensa">Prensa</button></div>
+<section class="board"><div class="col"><h2>✓ Funcionando</h2><div id="ok"></div></div><div class="col"><h2>◷ En proceso / espera</h2><div id="wait"></div></div><div class="col"><h2>! Requiere atención</h2><div id="bad"></div></div></section>
+<section class="feed"><h2>Actividad reciente</h2><div id="feed"></div></section>
+</div><script>
+const repos=[
+{key:'Louder',repo:'omaralejandronoriega-sudo/Louder'},
+{key:'TikTok',repo:'omaralejandronoriega-sudo/louder-tiktok-capture'},
+{key:'TikTok',repo:'omaralejandronoriega-sudo/louder-tiktok-automation'},
+{key:'Threads',repo:'omaralejandronoriega-sudo/louder-threads-hourly'},
+{key:'Prensa',repo:'omaralejandronoriega-sudo/louder-prensa'},
+{key:'TBC',repo:'omaralejandronoriega-sudo/the-british-corner'}];
+let rows=[],filter='all';
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function state(r){if(['failure','timed_out','cancelled','action_required'].includes(r.conclusion))return'bad';if(['queued','in_progress','waiting','pending','requested'].includes(r.status))return'wait';return'ok'}
+function label(r){if(r.status!=='completed')return r.status||'pendiente';return r.conclusion==='success'?'correcto':r.conclusion==='skipped'?'omitido':r.conclusion||'sin resultado'}
+function draw(){
+ const latest={}; rows.forEach(r=>{const k=r.repo+'|'+r.name;if(!latest[k])latest[k]=r});
+ const cards=Object.values(latest).filter(r=>filter==='all'||r.key===filter);
+ ['ok','wait','bad'].forEach(s=>document.getElementById(s).innerHTML='');
+ cards.forEach(r=>{const s=state(r),d=document.createElement('div');d.className='card';d.dataset.key=r.key;
+ d.innerHTML='<div class="top"><div><div class="name">'+esc(r.name)+'</div><div class="repo">'+esc(r.repo.split('/')[1])+'</div></div><span class="pill '+s+'">'+esc(label(r))+'</span></div><div class="detail">Última ejecución: '+new Date(r.created_at).toLocaleString('es-MX')+'</div><div class="actions"><a class="btn" target="_blank" href="'+r.html_url+'">Ver ejecución</a><a class="btn" target="_blank" href="https://github.com/'+r.repo+'/actions">Historial</a></div>';
+ document.getElementById(s).appendChild(d)});
+ const bad=cards.filter(x=>state(x)==='bad').length, ok=cards.filter(x=>state(x)==='ok').length;
+ document.getElementById('mTotal').textContent=cards.length;document.getElementById('mOk').textContent=ok;document.getElementById('mBad').textContent=bad;
+ document.getElementById('alert').innerHTML=bad?'<div class="alert"><b>'+bad+' automatización(es) requieren atención.</b> Están concentradas aquí para que no tengas que revisar repositorio por repositorio.</div>':'';
+ document.getElementById('feed').innerHTML=rows.filter(r=>filter==='all'||r.key===filter).slice(0,30).map(r=>'<div class="run"><b>'+esc(r.key)+'</b><span>'+esc(r.name)+'</span><span class="pill '+state(r)+'">'+esc(label(r))+'</span><a class="btn" target="_blank" href="'+r.html_url+'">'+new Date(r.created_at).toLocaleString('es-MX')+'</a></div>').join('');
+}
+async function load(){
+ let all=[];for(const x of repos){try{const q=await fetch('https://api.github.com/repos/'+x.repo+'/actions/runs?per_page=15',{headers:{Accept:'application/vnd.github+json'}});const j=await q.json();(j.workflow_runs||[]).forEach(r=>all.push({...r,key:x.key,repo:x.repo}))}catch(e){}}
+ rows=all.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));draw();document.getElementById('mTime').textContent=new Date().toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'});
+ document.getElementById('sync').textContent='● GitHub sincronizado';}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;draw()});
+load();setInterval(load,60000);
+</script></body></html>
