@@ -13,6 +13,7 @@ settings.server.telnet.port := 1234
 settings.harbor.bind_addrs := ["0.0.0.0"]
 
 next_url = environment.get("LOUDER_NEXT_URL")
+history_url = environment.get(default="", "LOUDER_HISTORY_URL")
 voice_password = environment.get("VOICE_HARBOR_PASSWORD")
 
 # Final transport destination. YesStreaming is output-only.
@@ -141,11 +142,22 @@ limit_wet = {if limiter_enabled() then 1. else 0. end}
 limited = limit(id="limiter", threshold=(-1.), ratio=20., radio)
 radio = dry_wet(limit_wet, radio, limited)
 
-# Metadata/historical event hooks are available from the command server.
-radio.on_metadata(
-  synchronous=false,
-  fun (m) -> log.info("LOUDER_METADATA #{m}")
-)
+# Real played-track history. This callback fires when metadata reaches the
+# final program signal, not when a future request is merely prefetched.
+def report_history(m) =
+  log.info("LOUDER_METADATA #{m}")
+  if history_url != "" then
+    payload = metadata.json.stringify(compact=true, m)
+    _ = http.post(
+      headers=[("Content-Type", "application/json")],
+      data=payload,
+      timeout=5.,
+      history_url
+    )
+  end
+end
+
+radio.on_metadata(synchronous=false, report_history)
 
 # Final source: YesStreaming only receives the finished 320 kbps signal.
 output.icecast(
