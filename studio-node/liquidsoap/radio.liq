@@ -78,8 +78,9 @@ comp_ratio = interactive.float("comp_ratio", min=1., max=20., 2.)
 limiter_enabled = interactive.bool("limiter_enabled", true)
 limiter_threshold = interactive.float("limiter_threshold", min=(-6.), max=(-0.1), (-1.))
 
-# Persist runtime mixer settings across restarts.
-interactive.persistent("/data/liquidsoap-vars.json")
+# Runtime values are restored by the Control API from /data/studio-state.json.
+# We intentionally avoid interactive.persistent here because the API is the
+# single source of truth for persisted settings.
 
 # Auto engine: ask Louder Director for the next playable URI.
 def next_request() =
