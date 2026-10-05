@@ -107,8 +107,13 @@ voice = input.harbor(
 voice = amplify(voice_gain, voice)
 music = amplify(music_gain, program)
 
-# Talk-over mix. When voice is absent, music continues alone.
-radio = add(id="voice_mix", normalize=false, [music, voice])
+# SAM-style Sound FX bus. Files are uploaded by the control API into /data.
+fx = request.queue(id="fx", prefetch=1)
+fx_gain = interactive.float("fx_gain", min=0., max=2., 1.)
+fx = amplify(fx_gain, fx)
+
+# Talk-over + FX mix. When voice/FX are absent, music continues alone.
+radio = add(id="voice_fx_mix", normalize=false, [music, voice, fx])
 
 # Audio processing pipeline.
 radio = normalize(
