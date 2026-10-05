@@ -488,10 +488,57 @@ async def deck_action(request: web.Request) -> web.Response:
             result = await liq(f"var.set deck_{deck}_gain = {value}")
         elif action in ("air", "play"):
             result = await liq(f"var.set manual_deck = {deck}")
-        elif action in ("stop", "pause"):
+        elif action == "pause":
             result = await liq("var.set manual_deck = none")
+        elif action == "stop":
+            first = await liq("var.set manual_deck = none")
+            second = await liq(f"deck_{deck}.skip")
+            result = first + "\n" + second
         else:
             result = "cue handled by browser preview"
+
+        return web.json_response({"ok": True, "result": result})
+    except web.HTTPException:
+        raise
+    except Exception as exc:
+        raise web.HTTPServiceUnavailable(text=str(exc)) from exc
+
+
+async def aux_action(request: web.Request) -> web.Response:
+    deck = request.match_info["deck"]
+    action = request.match_info["action"]
+    if deck not in ("1", "2", "3") or action not in (
+        "load", "play", "pause", "stop", "skip", "volume"
+    ):
+        raise web.HTTPNotFound()
+
+    data: dict[str, Any] = {}
+    if request.can_read_body:
+        try:
+            data = await request.json()
+        except Exception:
+            data = {}
+
+    try:
+        if action == "load":
+            try:
+                item = resolve_item(data)
+            except ValueError as exc:
+                raise web.HTTPBadRequest(text=str(exc)) from exc
+            result = await liq(f"aux_{deck}.push {item['uri']}")
+        elif action == "play":
+            result = await liq(f"var.set aux_{deck}_active = true")
+        elif action == "pause":
+            result = await liq(f"var.set aux_{deck}_active = false")
+        elif action == "stop":
+            first = await liq(f"var.set aux_{deck}_active = false")
+            second = await liq(f"aux_{deck}.skip")
+            result = first + "\n" + second
+        elif action == "skip":
+            result = await liq(f"aux_{deck}.skip")
+        else:
+            value = max(0.0, min(2.0, float(data.get("value", 100)) / 100.0))
+            result = await liq(f"var.set aux_{deck}_gain = {value}")
 
         return web.json_response({"ok": True, "result": result})
     except web.HTTPException:
@@ -1162,6 +1209,7 @@ app.router.add_post("/queue/move", queue_move)
 app.router.add_post("/queue/remove", queue_remove)
 app.router.add_post("/queue/clear", queue_clear)
 app.router.add_post("/deck/{deck}/{action}", deck_action)
+app.router.add_post("/aux/{deck}/{action}", aux_action)
 app.router.add_post("/encoder/{action}", encoder_action)
 app.router.add_post("/crossfade/apply", crossfade_apply)
 app.router.add_post("/dsp/apply", dsp_apply)
