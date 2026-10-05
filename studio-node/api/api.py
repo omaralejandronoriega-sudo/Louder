@@ -141,6 +141,11 @@ async def liq(command: str, timeout: float = 3.0) -> str:
             pass
 
 
+def liq_annotation_value(value: Any) -> str:
+    text = str(value if value is not None else "")
+    return text.replace("\\", "\\\\").replace('"', '\\"')
+
+
 def recent_conflict(item: dict[str, Any]) -> bool:
     now = time.time()
     artist = str(item.get("artist", "")).casefold().strip()
@@ -279,8 +284,16 @@ async def internal_next(request: web.Request) -> web.Response:
     duration = float(xf.get("duration", 4.5))
     fade_in = float(xf.get("fade_in", 1.2))
     fade_out = float(xf.get("fade_out", 2.8))
+    artist = liq_annotation_value(item.get("artist", ""))
+    title = liq_annotation_value(item.get("title", ""))
+    category = liq_annotation_value(item.get("category", ""))
+    message_id = liq_annotation_value(item.get("message_id", ""))
     annotated = (
         "annotate:"
+        f'artist="{artist}",'
+        f'title="{title}",'
+        f'category="{category}",'
+        f'message_id="{message_id}",'
         f"liq_cross_duration={duration},"
         f"liq_fade_in={fade_in},"
         f"liq_fade_out={fade_out}:"
@@ -1169,6 +1182,7 @@ app.router.add_get("/schedule", get_schedule)
 app.router.add_post("/schedule", set_schedule)
 app.router.add_post("/pal/run", pal_run)
 app.router.add_post("/history", history_event)
+app.router.add_post("/internal/history", history_event)
 app.router.add_get("/internal/next", internal_next)
 app.on_startup.append(on_startup)
 app.on_cleanup.append(on_cleanup)
