@@ -35,6 +35,12 @@ deck_a_gain = interactive.float("deck_a_gain", min=0., max=1.5, 1.)
 deck_b_gain = interactive.float("deck_b_gain", min=0., max=1.5, 1.)
 music_gain = interactive.float("music_gain", min=0., max=1.5, 1.)
 voice_gain = interactive.float("voice_gain", min=0., max=2., 1.)
+aux_1_gain = interactive.float("aux_1_gain", min=0., max=2., 1.)
+aux_2_gain = interactive.float("aux_2_gain", min=0., max=2., 1.)
+aux_3_gain = interactive.float("aux_3_gain", min=0., max=2., 1.)
+aux_1_active = interactive.bool("aux_1_active", false)
+aux_2_active = interactive.bool("aux_2_active", false)
+aux_3_active = interactive.bool("aux_3_active", false)
 
 agc_enabled = interactive.bool("agc_enabled", true)
 agc_target = interactive.float("agc_target", min=(-30.), max=(-3.), (-14.))
@@ -108,13 +114,30 @@ voice = input.harbor(
 voice = amplify(voice_gain, voice)
 music = amplify(music_gain, program)
 
+# SAM-style Auxiliary Decks.
+aux_1_queue = request.queue(id="aux_1", prefetch=1)
+aux_2_queue = request.queue(id="aux_2", prefetch=1)
+aux_3_queue = request.queue(id="aux_3", prefetch=1)
+
+aux_1_source = amplify(aux_1_gain, aux_1_queue)
+aux_2_source = amplify(aux_2_gain, aux_2_queue)
+aux_3_source = amplify(aux_3_gain, aux_3_queue)
+
+aux_1 = switch(track_sensitive=false, [({aux_1_active()}, aux_1_source), ({true}, blank())])
+aux_2 = switch(track_sensitive=false, [({aux_2_active()}, aux_2_source), ({true}, blank())])
+aux_3 = switch(track_sensitive=false, [({aux_3_active()}, aux_3_source), ({true}, blank())])
+
 # SAM-style Sound FX bus. Files are uploaded by the control API into /data.
 fx = request.queue(id="fx", prefetch=1)
 fx_gain = interactive.float("fx_gain", min=0., max=2., 1.)
 fx = amplify(fx_gain, fx)
 
-# Talk-over + FX mix. When voice/FX are absent, music continues alone.
-radio = add(id="voice_fx_mix", normalize=false, [music, voice, fx])
+# Talk-over + auxiliary players + FX mix.
+radio = add(
+  id="voice_aux_fx_mix",
+  normalize=false,
+  [music, voice, aux_1, aux_2, aux_3, fx]
+)
 
 # Audio processing pipeline.
 radio = normalize(
