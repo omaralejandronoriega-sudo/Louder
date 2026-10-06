@@ -61,7 +61,16 @@ jobs:
         env:
           COPILOT_GITHUB_TOKEN: ${{ github.token }}
 
+      - name: Registrar incidencia del motor
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:'## Incidencia · motor de producción\n\nEl ejecutor Copilot no pudo completar la producción. Revisar la credencial `COPILOT_PAT` del repositorio. La orden permanece bloqueada y no suma avance.'});
+            await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-incidencia']});
+
       - name: Guardar entrega en expediente
+        if: success()
         uses: actions/github-script@v7
         env:
           RESULT: ${{ steps.ai.outputs.response }}
