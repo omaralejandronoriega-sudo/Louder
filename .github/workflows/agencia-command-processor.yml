@@ -6,6 +6,7 @@ permissions:
   contents: read
   issues: write
   models: read
+  copilot-requests: write
 concurrency:
   group: agencia-issue-${{ github.event.issue.number }}
   cancel-in-progress: true
@@ -66,7 +67,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:'## Incidencia · motor de producción\n\nEl ejecutor Copilot no pudo completar la producción. Revisar la credencial `COPILOT_PAT` del repositorio. La orden permanece bloqueada y no suma avance.'});
+            await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:'## Incidencia · motor de producción\n\nEl ejecutor Copilot no pudo completar la producción. Revisar la autorización de Copilot CLI para GitHub Actions. La orden permanece bloqueada y no suma avance.'});
             await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-incidencia']});
 
       - name: Guardar entrega en expediente
