@@ -39,17 +39,16 @@ jobs:
               ej=json.loads(eph)
               eph=json.dumps([x for x in ej.get("items",[]) if x.get("day")=="10-06"],ensure_ascii=False)
           except: eph=eph[:12000]
-          prompt="""Produce el paquete editorial Louder para FECHA OBJETIVO 2026-10-06. Devuelve SOLO JSON valido, sin markdown ni explicaciones.
-No uses actualidad no incluida en los datos. No inventes noticias. Si no hay noticia comprobada, no incluyas noticias.
-Usa las efemerides del 6 de octubre y prioriza fit_score y stock_plays.
-Crea exactamente 4 piezas variadas: 1 efemeride principal, 1 programacion/radio, 1 contenido propio basado en catalogo/efemerides y 1 pieza vertical.
-Cada pieza debe tener copy final natural en espanol mexicano, sin hashtags en Instagram, sin lenguaje generico de IA.
-Esquema obligatorio:
-{"summary":"", "pieces":[{"id":"p1","title":"","type":"","owner":"","contributors":[],"publish_date":"2026-10-06","publish_time":"HH:MM","networks":[],"research":"","source_basis":[],"copy":{"instagram":"","facebook":"","x":"","threads":"","web":""},"visual":{"type":"graphic|video","headline":"","subhead":"","brief":""},"video_script":"","missing_assets":[],"review_status":"Produccion","approval":"Pendiente de Omar"}],"notifications":[{"worker":"","message":""}]}
-No marques Lista: el sistema generara el material visual despues y Valeria revisara. approval siempre Pendiente de Omar.
-
-ORDEN:
-"""+order+"\n\nREGLAS LOUDER:\n"+core+"\n\nEFEMERIDES 6 OCTUBRE:\n"+eph
+          prompt=("Produce el paquete editorial Louder para FECHA OBJETIVO 2026-10-06. Devuelve SOLO JSON valido, sin markdown ni explicaciones.\n"
+                  "No inventes noticias ni actualidad. Usa solo los datos incluidos.\n"
+                  "Usa las efemerides del 6 de octubre y prioriza fit_score y stock_plays.\n"
+                  "Crea exactamente 4 piezas: efemeride principal, programacion/radio, contenido propio y pieza vertical.\n"
+                  "Copy final natural en espanol mexicano; Instagram sin hashtags; respeta las reglas Louder.\n"
+                  "JSON: summary, pieces y notifications. Cada piece: id,title,type,owner,contributors,publish_date,publish_time,networks,research,source_basis,copy,visual,video_script,missing_assets,review_status,approval.\n"
+                  "copy contiene instagram,facebook,x,threads,web. visual contiene type,headline,subhead,brief.\n"
+                  "publish_date=2026-10-06; review_status=Produccion; approval=Pendiente de Omar.\n"
+                  "No marques Lista: el sistema genera material visual y Valeria revisa despues.\n\nORDEN:\n"+order+
+                  "\n\nREGLAS LOUDER:\n"+core+"\n\nEFEMERIDES 6 OCTUBRE:\n"+eph)
           open("agencia-prompt.txt","w").write(prompt)
           PY
 
