@@ -53,7 +53,7 @@ jobs:
 
       - name: Ejecutar equipo editorial con Copilot
         id: ai
-        uses: actions/ai-inference@v1
+        uses: actions/ai-inference@main
         with:
           prompt-file: ./agencia-prompt.txt
           model: gpt-4.1
