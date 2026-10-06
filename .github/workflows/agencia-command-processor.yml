@@ -94,6 +94,7 @@ jobs:
           RESULT: ${{ steps.ai.outputs.response }}
         with:
           script: |
+            const fs=require('fs');
             const result=fs.existsSync(process.env.RESULT_FILE)?fs.readFileSync(process.env.RESULT_FILE,'utf8'):'INCIDENCIA: el ejecutor no devolvio contenido.';
             const body='## Entrega del equipo Louder\n\n'+result+'\n\n---\n**Publicacion bloqueada:** requiere autorizacion manual de Omar en Agencia.';
             await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:body.slice(0,65000)});
