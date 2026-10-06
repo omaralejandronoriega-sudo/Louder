@@ -30,18 +30,26 @@ jobs:
           order=os.environ.get("ORDER_BODY","")
           core=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/agencia/main/knowledge/louder-core.json")
           eph=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/agencia/main/data/ephemerides.json")
-          radar=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/Louder/main/data/radar_2026.json")
-          prompt="""Eres el equipo real de produccion editorial de Louder. Ejecuta la orden, no expliques un plan.
-          Respeta el conocimiento Louder y evita lenguaje generico de IA.
-          No inventes noticias ni datos actuales: si no estan sustentados, marca REQUIERE VERIFICACION.
-          Para cada pieza entrega: titulo, responsable, colaboradores, investigacion/criterio, copy final separado por red,
-          brief visual o guion de video, redes, hora sugerida, fuentes/base usada, materiales que faltan y estado.
-          Una pieza NO esta LISTA si falta imagen, video, copy, revision o fuente.
-          Termina con una seccion AVISOS AL DIRECTOR: un aviso individual por trabajador que haya terminado una entrega.
-          Ninguna pieza queda autorizada para publicar: todas deben decir APROBACION OMAR: PENDIENTE.
-          
-          ORDEN:
-          """+order+"\n\nCONOCIMIENTO LOUDER:\n"+core[:30000]+"\n\nEFEMERIDES:\n"+eph[:30000]+"\n\nRADAR:\n"+radar[:25000]
+          import json
+          try:
+              corej=json.loads(core)
+              core=json.dumps({k:corej.get(k) for k in ["identity","music_policy","editorial","design","training"] if k in corej},ensure_ascii=False)
+          except: core=core[:18000]
+          try:
+              ej=json.loads(eph)
+              eph=json.dumps([x for x in ej.get("items",[]) if x.get("day")=="10-06"],ensure_ascii=False)
+          except: eph=eph[:12000]
+          prompt="""Produce el paquete editorial Louder para FECHA OBJETIVO 2026-10-06. Devuelve SOLO JSON valido, sin markdown ni explicaciones.
+No uses actualidad no incluida en los datos. No inventes noticias. Si no hay noticia comprobada, no incluyas noticias.
+Usa las efemerides del 6 de octubre y prioriza fit_score y stock_plays.
+Crea exactamente 4 piezas variadas: 1 efemeride principal, 1 programacion/radio, 1 contenido propio basado en catalogo/efemerides y 1 pieza vertical.
+Cada pieza debe tener copy final natural en espanol mexicano, sin hashtags en Instagram, sin lenguaje generico de IA.
+Esquema obligatorio:
+{"summary":"", "pieces":[{"id":"p1","title":"","type":"","owner":"","contributors":[],"publish_date":"2026-10-06","publish_time":"HH:MM","networks":[],"research":"","source_basis":[],"copy":{"instagram":"","facebook":"","x":"","threads":"","web":""},"visual":{"type":"graphic|video","headline":"","subhead":"","brief":""},"video_script":"","missing_assets":[],"review_status":"Produccion","approval":"Pendiente de Omar"}],"notifications":[{"worker":"","message":""}]}
+No marques Lista: el sistema generara el material visual despues y Valeria revisara. approval siempre Pendiente de Omar.
+
+ORDEN:
+"""+order+"\n\nREGLAS LOUDER:\n"+core+"\n\nEFEMERIDES 6 OCTUBRE:\n"+eph
           open("agencia-prompt.txt","w").write(prompt)
           PY
 
@@ -71,7 +79,7 @@ jobs:
           python - <<'PY'
           import json,urllib.request
           prompt=open("agencia-prompt.txt").read()
-          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"options":{"temperature":0.25,"num_predict":5000}}).encode()
+          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.2,"num_predict":5000}}).encode()
           req=urllib.request.Request("http://127.0.0.1:11434/api/generate",data=body,headers={"Content-Type":"application/json"})
           data=json.loads(urllib.request.urlopen(req,timeout=600).read())
           out=data.get("response","").strip()
