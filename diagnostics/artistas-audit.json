@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T06:47:36.940741+00:00",
+  "generated_at": "2026-10-06T09:10:21.461722+00:00",
   "source_updates": {
-    "artists": "2026-10-06T06:47:32.434396Z",
+    "artists": "2026-10-06T09:10:16.917418Z",
     "galleries": "2026-10-06T03:26:11.567878+00:00",
     "album_art": "2026-10-06T03:20:40.332837+00:00"
   },
@@ -9,7 +9,7 @@
     "raw_artists": 8039,
     "public_artists": 7941,
     "aliases_normalized": 8019,
-    "with_history": 7858,
+    "with_history": 7860,
     "with_tracks": 7935,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1223
+      "yesstreaming_live": 1227
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-06T06:47:32.434396Z"
+      "merged_at": "2026-10-06T09:10:16.917418Z"
     }
   },
   "profile_enrichment": {
@@ -56,8 +56,8 @@
     "missing_profile_bio": 3694,
     "missing_profile_data": 2084,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 2770,
-    "core_complete_pct": 34.88,
+    "core_complete": 2771,
+    "core_complete_pct": 34.89,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 4193,
     "effective_image_pct": 52.8,
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 58.55,
     "missing_artwork": 7539,
     "grouped_as_otras": 5891,
-    "with_first_and_last_dates": 17665,
+    "with_first_and_last_dates": 17671,
     "album_art_cache_entries": 10866,
     "album_art_cache_found": 10153,
     "album_art_cache_missed": 713
