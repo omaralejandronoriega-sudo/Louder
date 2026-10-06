@@ -128,7 +128,26 @@
     "Valeria asigna y prioriza",
     "Una tarea no avanza sin entregable",
     "Publicado requiere URL o ID remoto",
-    "Leo reabre cualquier publicación no verificada",
+    "Leo supervisa toda la agencia, reabre publicaciones no verificadas y escala incidencias a Valeria",
     "Camila analiza sólo piezas verificadas"
-  ]
+  ],
+  "supervision": {
+    "owner": "leo",
+    "role": "Supervisor General de Operaciones",
+    "scope": [
+      "louder",
+      "tbc",
+      "antena_radio",
+      "antena_noticias"
+    ],
+    "checks": [
+      "tareas atrasadas",
+      "automatizaciones",
+      "publicaciones pendientes",
+      "comprobantes URL/ID",
+      "incidencias",
+      "recuperación"
+    ],
+    "escalates_to": "valeria"
+  }
 }
