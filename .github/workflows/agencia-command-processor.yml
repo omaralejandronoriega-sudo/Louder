@@ -41,6 +41,10 @@ jobs:
           except: eph=eph[:12000]
           prompt=("Produce el paquete editorial Louder para FECHA OBJETIVO 2026-10-06. Devuelve SOLO JSON valido, sin markdown ni explicaciones.\n"
                   "No inventes noticias ni actualidad. Usa solo los datos incluidos.\n"
+                  "HECHO VERIFICADO: Oasis - Dig Out Your Soul es el septimo y ultimo album de estudio de Oasis y fue publicado el 6 de octubre de 2008 por Big Brother Recordings. Fuente oficial: https://oasisinet.com/music/dig-out-your-soul/ .\n"
+                  "TRACKLIST OFICIAL disponible para programacion: Bag It Up; The Turning; Waiting For The Rapture; The Shock Of The Lightning; I'm Outta Time; (Get Off Your) High Horse Lady; Falling Down; To Be Where There's Life; Ain't Got Nothin'; The Nature Of Reality; Soldier On.\n"
+                  "ADVERTENCIA: otros registros del calendario del 6 de octubre son candidatos internos y NO deben presentarse como aniversarios confirmados sin fuente primaria.\n"
+                  "No existe noticia actual verificada en este paquete; no inventes una.\n"
                   "Usa las efemerides del 6 de octubre y prioriza fit_score y stock_plays.\n"
                   "Crea exactamente 4 piezas: efemeride principal, programacion/radio, contenido propio y pieza vertical.\n"
                   "Copy final natural en espanol mexicano; Instagram sin hashtags; respeta las reglas Louder.\n"
