@@ -149,5 +149,62 @@
       "recuperación"
     ],
     "escalates_to": "valeria"
+  },
+  "accreditations": {
+    "brand": "louder",
+    "team": [
+      {
+        "id": "paula",
+        "name": "Paula Serrano",
+        "role": "Relaciones de Prensa",
+        "responsibilities": [
+          "detectar oportunidades",
+          "preparar solicitud",
+          "contactar promotora/agencia",
+          "registrar datos"
+        ]
+      },
+      {
+        "id": "mariana",
+        "name": "Mariana Vélez",
+        "role": "Coordinadora de Acreditaciones",
+        "responsibilities": [
+          "dar seguimiento",
+          "controlar fechas límite",
+          "registrar respuesta",
+          "coordinar cobertura",
+          "reunir testigos"
+        ]
+      }
+    ],
+    "supervisor": "leo",
+    "stages": [
+      "Por solicitar",
+      "Solicitud enviada",
+      "Esperando respuesta",
+      "Seguimiento",
+      "Aprobada",
+      "Cobertura programada",
+      "Cubierta",
+      "Testigos enviados",
+      "Cerrada"
+    ],
+    "fields": [
+      "evento",
+      "artista",
+      "promotora/agencia",
+      "fecha",
+      "tipo",
+      "contacto",
+      "correo",
+      "fecha solicitud",
+      "último seguimiento",
+      "próximo seguimiento",
+      "respuesta",
+      "integrantes/cargos",
+      "cobertura",
+      "URLs",
+      "capturas/testigos"
+    ]
   }
 }
