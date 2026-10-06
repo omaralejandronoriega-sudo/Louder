@@ -44,13 +44,22 @@ jobs:
           open("agencia-prompt.txt","w").write(prompt)
           PY
 
-      - name: Ejecutar equipo editorial
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Instalar Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Ejecutar equipo editorial con Copilot
         id: ai
-        uses: actions/ai-inference@v2
+        uses: actions/ai-inference@v1
         with:
           prompt-file: ./agencia-prompt.txt
-          model: gpt-4o
-          max-tokens: 5000
+          model: gpt-4.1
+          system-prompt: "Eres el equipo operativo de Louder. Produce entregables concretos. No autorices publicaciones."
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ github.token }}
 
       - name: Guardar entrega en expediente
         uses: actions/github-script@v7
