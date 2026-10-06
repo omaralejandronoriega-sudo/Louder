@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-05T14:51:33.890252+00:00",
+  "updated_at": "2026-10-06T00:13:45.022572+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -3685,10 +3685,10 @@
     },
     "big-deal": {
       "name": "Big Deal",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:25.831417+00:00",
-      "profile_checked_at": "2026-10-02T22:16:25.831417+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:15.564796+00:00",
+      "profile_checked_at": "2026-10-06T00:05:15.564796+00:00",
       "musicbrainz_id": "c3867418-f669-4952-9384-ce68ee04c5cd",
       "canonical_name": "Big Deal",
       "match_score": 100,
@@ -3704,18 +3704,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/620fee9970a21ee926c7360da861042a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:25.831417+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:15.564796+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Deal&limit=8"
     },
     "post-war-years": {
       "name": "Post War Years",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:29.667049+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:21.287579+00:00",
       "musicbrainz_id": "eaf01524-f10e-4db7-90e1-ad5cc424eec5",
       "canonical_name": "Post War Years",
       "match_score": 100,
@@ -3731,19 +3732,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/da3488c1a49fffe8a9abc86c0170c1ea/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:29.667049+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:21.287579+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:29.667049+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:21.287579+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Post+War+Years&limit=8"
     },
     "new-navy": {
       "name": "New Navy",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:35.689961+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:28.317490+00:00",
       "musicbrainz_id": "367f0aa0-d84d-4a6c-a516-dbed44a5bc67",
       "canonical_name": "New Navy",
       "match_score": 100,
@@ -3759,13 +3761,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/19e7abb3392a117e6994af98b236202e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:35.689961+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:28.317490+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:35.689961+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:28.317490+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=New+Navy&limit=8"
     },
     "mitski": {
       "name": "Mitski",
@@ -3816,9 +3819,9 @@
     },
     "big-fear": {
       "name": "Big Fear",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:40.902820+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:32.143368+00:00",
       "musicbrainz_id": "3846c440-8cfb-4253-a638-49a9089dfc73",
       "canonical_name": "Big Fear",
       "match_score": 100,
@@ -3834,19 +3837,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8c3674d7b6925712adac77f78bed940a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:40.902820+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:32.143368+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:40.902820+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:32.143368+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Fear&limit=8"
     },
     "radio-free-alice": {
       "name": "Radio Free Alice",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:43.729186+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:35.638308+00:00",
       "musicbrainz_id": "8af999e2-b2f7-4095-af72-ba91b2683a16",
       "canonical_name": "Radio Free Alice",
       "match_score": 100,
@@ -3862,19 +3866,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/23979d9d73fbf69665c9eabec286e10f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:43.729186+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:35.638308+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:43.729186+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:35.638308+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Radio+Free+Alice&limit=8"
     },
     "saint-clair": {
       "name": "Saint Clair",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:45.808689+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:41.127049+00:00",
       "musicbrainz_id": "bd20539c-8de5-45a4-939c-bd4b13e3d0c5",
       "canonical_name": "Saint Clair",
       "match_score": 100,
@@ -3890,13 +3895,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/11072090fcd89e560044efdd54a35bfe/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:45.808689+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:41.127049+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:45.808689+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:41.127049+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Saint+Clair&limit=8"
     },
     "sophie-cates": {
       "name": "Sophie Cates",
@@ -3926,9 +3932,9 @@
     },
     "sports": {
       "name": "Sports",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:56.590370+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:44.019513+00:00",
       "musicbrainz_id": "2338cede-17d7-40ef-9ea1-a16416908eeb",
       "canonical_name": "Sports",
       "match_score": 92,
@@ -3944,19 +3950,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/a6d1477644c128dc332bece109af37c1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:56.590370+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:44.019513+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:56.590370+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:44.019513+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Sports&limit=8"
     },
     "georgia-gets-by": {
       "name": "Georgia Gets By",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:16:59.600165+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:46.758224+00:00",
       "musicbrainz_id": "cb1db28d-6618-40fe-bf29-32b694964ff0",
       "canonical_name": "Georgia Gets By",
       "match_score": 100,
@@ -3972,19 +3979,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6532c729b0efa3c5272e6bf2371aff84/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:16:59.600165+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:46.758224+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:16:59.600165+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:46.758224+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Georgia+Gets+By&limit=8"
     },
     "gurriers": {
       "name": "Gurriers",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:02.209031+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:49.433502+00:00",
       "musicbrainz_id": "b3e28883-d118-4180-b458-568a18bc239d",
       "canonical_name": "Gurriers",
       "match_score": 100,
@@ -4000,19 +4008,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/faec998e2ded51932ca8266b03c3a474/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:02.209031+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:49.433502+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:02.209031+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:49.433502+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Gurriers&limit=8"
     },
     "khai-dreams": {
       "name": "khai dreams",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:06.850030+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:51.981843+00:00",
       "musicbrainz_id": "ca0cc3c4-924f-4755-a7d4-a7b260ce34da",
       "canonical_name": "khai dreams",
       "match_score": 100,
@@ -4028,19 +4037,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7e89438b6e9c22377286e802fb92bc21/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:06.850030+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:51.981843+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:06.850030+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:51.981843+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=khai+dreams&limit=8"
     },
     "this-is-lorelei": {
       "name": "This Is Lorelei",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:08.871332+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:54.676650+00:00",
       "musicbrainz_id": "a2d140d8-ae17-4d72-b680-b89c77f1ed52",
       "canonical_name": "This Is Lorelei",
       "match_score": 100,
@@ -4056,19 +4066,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e7a1ebe7fe5cd7654ae73b4f8775bddf/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:08.871332+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:54.676650+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:08.871332+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:54.676650+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=This+Is+Lorelei&limit=8"
     },
     "mercy-kelly": {
       "name": "Mercy Kelly",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:10.020163+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:57.410536+00:00",
       "musicbrainz_id": "131218aa-e248-496b-96d9-14284cd371ce",
       "canonical_name": "Mercy Kelly",
       "match_score": 100,
@@ -4084,19 +4095,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ccc2b16680fd775c9468820390dd2ad4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:10.020163+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:57.410536+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:10.020163+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:57.410536+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mercy+Kelly&limit=8"
     },
     "swiims": {
       "name": "SWiiMS",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:14.025596+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:05:58.703585+00:00",
       "musicbrainz_id": "a271dede-fa9e-4df9-ba58-b5c1884accf9",
       "canonical_name": "SWiiMS",
       "match_score": 100,
@@ -4112,19 +4124,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/a1642410d2f27a209ae26b937ae567cc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:14.025596+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:05:58.703585+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:14.025596+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:05:58.703585+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=SWiiMS&limit=8"
     },
     "catastrophe-cure": {
       "name": "Catastrophe & Cure",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:17.560575+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:02.529564+00:00",
       "musicbrainz_id": "a9bbe9f3-aa1e-4e0b-9193-a63596f6d333",
       "canonical_name": "Catastrophe & Cure",
       "match_score": 100,
@@ -4140,19 +4153,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/74cfe16eac3612c00586e38ae82e56f2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:17.560575+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:02.529564+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:17.560575+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:02.529564+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Catastrophe+%26+Cure&limit=8"
     },
     "company-ink": {
       "name": "Company Ink",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:21.365429+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:06.379722+00:00",
       "musicbrainz_id": "1ec13be8-aa27-416b-8c8b-3f0498d3344f",
       "canonical_name": "Company Ink",
       "match_score": 100,
@@ -4168,19 +4182,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/42df188afb544c1f68aa8fa88fb89e3a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:21.365429+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:06.379722+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:21.365429+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:06.379722+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Company+Ink&limit=8"
     },
     "cruush": {
       "name": "Cruush",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:22.566545+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:07.655659+00:00",
       "musicbrainz_id": "435365b9-2a50-41e6-9611-e44b0eebbcda",
       "canonical_name": "Cruush",
       "match_score": 100,
@@ -4196,19 +4211,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/392882bbc3014abaa27d92b62f54a127/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:22.566545+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:07.655659+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:22.566545+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:07.655659+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Cruush&limit=8"
     },
     "grazer": {
       "name": "Grazer",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:24.984093+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:10.318073+00:00",
       "musicbrainz_id": "77a85d58-875c-46de-b5bf-0239d1ae4584",
       "canonical_name": "Grazer",
       "match_score": 100,
@@ -4224,13 +4240,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/5b9a77659d7cd812cd837edf1e7feadc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:24.984093+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:10.318073+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:24.984093+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:10.318073+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Grazer&limit=8"
     },
     "jay-som-soft-glas": {
       "name": "Jay Som, Soft Glas",
@@ -4259,9 +4276,9 @@
     },
     "slow-quit": {
       "name": "slow quit",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:29.967793+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:12.943498+00:00",
       "musicbrainz_id": "3e307695-6de1-4630-8fb4-cad1b6b95462",
       "canonical_name": "Slow Quit",
       "match_score": 100,
@@ -4277,19 +4294,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/fbb3ee69b2a8f3a1af8e78b42b9477fb/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:29.967793+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:12.943498+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:29.967793+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:12.943498+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Slow+Quit&limit=8"
     },
     "wait-what-did-you-say": {
       "name": "Wait What Did You Say?",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:33.077184+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:16.435294+00:00",
       "musicbrainz_id": "a47d9f79-6103-4bbd-b231-036fc7deb0cf",
       "canonical_name": "Wait, What Did You Say?",
       "match_score": 100,
@@ -4305,19 +4323,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7c44c59d3d44a2a4884ee465555d919a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:33.077184+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:16.435294+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:33.077184+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:16.435294+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Wait%2C+What+Did+You+Say%3F&limit=8"
     },
     "callum-pitt": {
       "name": "Callum Pitt",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:36.671028+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:19.987453+00:00",
       "musicbrainz_id": "bd8aa299-a8e8-44e1-9174-3231299c55ed",
       "canonical_name": "Callum Pitt",
       "match_score": 100,
@@ -4333,19 +4352,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1c7853bdd1451e4c619ee4955cc62d79/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:36.671028+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:19.987453+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:36.671028+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:19.987453+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Callum+Pitt&limit=8"
     },
     "chai-khat": {
       "name": "Chai Khat",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:39.346660+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:23.443175+00:00",
       "musicbrainz_id": "061eeec7-47be-41ae-b042-032ceeae724c",
       "canonical_name": "Chai Khat",
       "match_score": 100,
@@ -4361,13 +4381,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8d3d301ec24e1f3d1231241533e62390/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:39.346660+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:23.443175+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:39.346660+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:23.443175+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Chai+Khat&limit=8"
     },
     "cheetah-nia-archives": {
       "name": "Cheetah, Nia Archives",
@@ -4396,9 +4417,9 @@
     },
     "feet": {
       "name": "FEET",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:42.845817+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:26.126773+00:00",
       "musicbrainz_id": "e9e02b3f-67d1-42de-9fd4-ef351da13aca",
       "canonical_name": "FEET",
       "match_score": 90,
@@ -4414,19 +4435,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6384ae852dd232a8666777cb5e560caa/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:42.845817+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:26.126773+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:42.845817+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:26.126773+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=FEET&limit=8"
     },
     "naina": {
       "name": "Naina",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:45.728301+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:28.770579+00:00",
       "musicbrainz_id": "9fde63c4-41a5-44ba-82ce-b747be6a6599",
       "canonical_name": "NAINA",
       "match_score": 100,
@@ -4442,19 +4464,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/941b50a13d57a0ce39115e534d224c59/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:45.728301+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:28.770579+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:45.728301+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:28.770579+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=NAINA&limit=8"
     },
     "polyverso": {
       "name": "Polyverso",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:48.247586+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:31.829656+00:00",
       "musicbrainz_id": "c52242a7-0509-441b-9a03-1a48b512dab6",
       "canonical_name": "Polyverso",
       "match_score": 100,
@@ -4470,13 +4493,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/64d738a9adf604fe11034a0dedd3876b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:48.247586+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:31.829656+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:48.247586+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:31.829656+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Polyverso&limit=8"
     },
     "ronnie-stone-healng": {
       "name": "Ronnie Stone, Healng",
@@ -4506,9 +4530,9 @@
     },
     "the-hails": {
       "name": "The Hails",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:51.637471+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:34.929329+00:00",
       "musicbrainz_id": "f0cc2b82-e502-4eef-b113-f8deb4a2a3ea",
       "canonical_name": "The Hails",
       "match_score": 100,
@@ -4524,13 +4548,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b2a5cf2fd138da1da4ed2a759974b58f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:51.637471+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:34.929329+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:51.637471+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:34.929329+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Hails&limit=8"
     },
     "family-stereo": {
       "name": "Family Stereo",
@@ -4691,9 +4716,9 @@
     },
     "mashmellow": {
       "name": "Mashmellow",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:17:57.362351+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:37.829442+00:00",
       "musicbrainz_id": "167f4b57-1741-4082-b4b1-801fdfe6d1c9",
       "canonical_name": "Mashmellow",
       "match_score": 100,
@@ -4709,20 +4734,21 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6341e3a377371c008bb3fdf9bb5c83da/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:17:57.362351+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:37.829442+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:17:57.362351+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:37.829442+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mashmellow&limit=8"
     },
     "colour-tongues": {
       "name": "Colour Tongues",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:18:00.228816+00:00",
-      "profile_checked_at": "2026-10-02T22:18:00.228816+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:41.547567+00:00",
+      "profile_checked_at": "2026-10-06T00:06:41.547567+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Colour Tongues",
       "match_score": 0,
@@ -4734,18 +4760,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/9d92be30f8e7ee6e73b4541194db24d6/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:00.228816+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:41.547567+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Colour+Tongues&limit=8"
     },
     "peli-gene": {
       "name": "Peli Gene",
-      "verified": true,
-      "status": "partial",
-      "checked_at": "2026-10-02T22:18:01.423832+00:00",
+      "verified": false,
+      "status": "retry",
+      "checked_at": "2026-10-06T00:06:42.931394+00:00",
       "musicbrainz_id": "018ee55d-2ac2-47c1-8946-2c7c342dd979",
       "canonical_name": "Peli Gene",
       "match_score": 100,
@@ -4761,13 +4788,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/368c91a1c0714f906e0835d558c36675/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-02T22:18:01.423832+00:00",
-      "profile_status": "partial",
+      "profile_checked_at": "2026-10-06T00:06:42.931394+00:00",
+      "profile_status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:01.423832+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:42.931394+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Peli+Gene&limit=8"
     },
     "i-jordan-ashwarya": {
       "name": "I. JORDAN, ASHWARYA",
@@ -11082,9 +11110,9 @@
     },
     "tablefox": {
       "name": "Tablefox",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:07.488499+00:00",
-      "checked_at": "2026-10-02T22:18:07.488499+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:45.402821+00:00",
+      "checked_at": "2026-10-06T00:06:45.402821+00:00",
       "musicbrainz_id": "d8fdf6e7-9f0c-4f79-b27c-4edee95d24f2",
       "canonical_name": "Tablefox",
       "match_score": 100,
@@ -11096,19 +11124,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e83813e89839143576008b4fb8e30597/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:07.488499+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:45.402821+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tablefox&limit=8"
     },
     "rosa-damask": {
       "name": "Rosa Damask",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:10.646650+00:00",
-      "checked_at": "2026-10-02T22:18:10.646650+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:48.518846+00:00",
+      "checked_at": "2026-10-06T00:06:48.518846+00:00",
       "musicbrainz_id": "f86ffd06-e66b-4c0c-a315-191c41c182ca",
       "canonical_name": "Rosa Damask",
       "match_score": 100,
@@ -11124,13 +11153,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:10.646650+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:48.518846+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Rosa+Damask&limit=8"
     },
     "damon-albarn-grian-chatten-kae-tempest-war-child-records": {
       "name": "Damon Albarn, Grian Chatten, Kae Tempest, War Child Records",
@@ -11159,9 +11189,9 @@
     },
     "tourists": {
       "name": "Tourists",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:14.100090+00:00",
-      "checked_at": "2026-10-02T22:18:14.100090+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:49.881383+00:00",
+      "checked_at": "2026-10-06T00:06:49.881383+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Tourists",
       "match_score": 0,
@@ -11173,19 +11203,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/808d6eaa59ab6c4f5c610659e68d8a86/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:14.100090+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:49.881383+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tourists&limit=8"
     },
     "hallows": {
       "name": "Hallows",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:15.892448+00:00",
-      "checked_at": "2026-10-02T22:18:15.892448+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:52.631137+00:00",
+      "checked_at": "2026-10-06T00:06:52.631137+00:00",
       "musicbrainz_id": "d77d72f2-02f2-4ff0-8751-50dcc20a546a",
       "canonical_name": "Hallows",
       "match_score": 100,
@@ -11201,19 +11232,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/45f9238ad28475c5aa90308abd2bd449/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:15.892448+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:52.631137+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Hallows&limit=8"
     },
     "the-undercover-dream-lovers": {
       "name": "The Undercover Dream Lovers",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:17.967107+00:00",
-      "checked_at": "2026-10-02T22:18:17.967107+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:53.844507+00:00",
+      "checked_at": "2026-10-06T00:06:53.844507+00:00",
       "musicbrainz_id": "6487f9be-6802-467a-9f17-7d0900ae5660",
       "canonical_name": "The Undercover Dream Lovers",
       "match_score": 100,
@@ -11229,19 +11261,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e34d2aca3c7b92d104e629b2088e0a62/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:17.967107+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:53.844507+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Undercover+Dream+Lovers&limit=8"
     },
     "darkroom-data": {
       "name": "Darkroom Data",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:20.798461+00:00",
-      "checked_at": "2026-10-02T22:18:20.798461+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:56.593356+00:00",
+      "checked_at": "2026-10-06T00:06:56.593356+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Darkroom Data",
       "match_score": 0,
@@ -11253,19 +11286,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c244eee728b363d2f2654af8ff53051d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:20.798461+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:56.593356+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Darkroom+Data&limit=8"
     },
     "bikini-fatal": {
       "name": "Bikini Fatal",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:22.187021+00:00",
-      "checked_at": "2026-10-02T22:18:22.187021+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:57.977784+00:00",
+      "checked_at": "2026-10-06T00:06:57.977784+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Bikini Fatal",
       "match_score": 0,
@@ -11277,13 +11311,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0c9b7b779b61d737f6ef940f0d22c011/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:22.187021+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:57.977784+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Bikini+Fatal&limit=8"
     },
     "waves-crashing-beatrix-sky": {
       "name": "Waves Crashing, Beatrix Sky",
@@ -11313,9 +11348,9 @@
     },
     "wingtips": {
       "name": "WINGTIPS",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:24.080919+00:00",
-      "checked_at": "2026-10-02T22:18:24.080919+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:06:59.187050+00:00",
+      "checked_at": "2026-10-06T00:06:59.187050+00:00",
       "musicbrainz_id": "0d6ba8ae-2c2c-4f01-bd56-a3971bfcfc03",
       "canonical_name": "Wingtips",
       "match_score": 100,
@@ -11331,13 +11366,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/da1e033ff837d773d2552ce9fe5a48f8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:24.080919+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:06:59.187050+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Wingtips&limit=8"
     },
     "c-y-m-day-wave": {
       "name": "C.Y.M., Day Wave",
@@ -11366,9 +11402,9 @@
     },
     "still-ruins": {
       "name": "Still Ruins",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:28.178926+00:00",
-      "checked_at": "2026-10-02T22:18:28.178926+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:02.041021+00:00",
+      "checked_at": "2026-10-06T00:07:02.041021+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Still Ruins",
       "match_score": 0,
@@ -11380,19 +11416,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c8b0a6eb8f7dbe1fef26287ce059bbf3/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:28.178926+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:02.041021+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Still+Ruins&limit=8"
     },
     "kindest-cuts": {
       "name": "Kindest Cuts",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:29.903094+00:00",
-      "checked_at": "2026-10-02T22:18:29.903094+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:05.120642+00:00",
+      "checked_at": "2026-10-06T00:07:05.120642+00:00",
       "musicbrainz_id": "062d00e7-4795-4f86-a225-b94ca8a51ff4",
       "canonical_name": "Kindest Cuts",
       "match_score": 100,
@@ -11408,13 +11445,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/20a81a193f7e4617114fed8a434bcccd/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:29.903094+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:05.120642+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kindest+Cuts&limit=8"
     },
     "nite-rosegarden-funeral-party": {
       "name": "NiTE, Rosegarden Funeral Party",
@@ -11444,9 +11482,9 @@
     },
     "lynks": {
       "name": "Lynks",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:33.146926+00:00",
-      "checked_at": "2026-10-02T22:18:33.146926+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:08.890527+00:00",
+      "checked_at": "2026-10-06T00:07:08.890527+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Lynks",
       "match_score": 0,
@@ -11458,19 +11496,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:33.146926+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:08.890527+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lynks&limit=8"
     },
     "nnhmn": {
       "name": "NNHMN",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:34.366790+00:00",
-      "checked_at": "2026-10-02T22:18:34.366790+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:12.664033+00:00",
+      "checked_at": "2026-10-06T00:07:12.664033+00:00",
       "musicbrainz_id": "c06fa245-39c4-416d-8faa-6044353e9fae",
       "canonical_name": "NNHMN",
       "match_score": 100,
@@ -11486,19 +11525,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/41753e0dedf5be3d4debfe9cacbdc6b2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:34.366790+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:12.664033+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=NNHMN&limit=8"
     },
     "mrm": {
       "name": "M!R!M",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:37.330448+00:00",
-      "checked_at": "2026-10-02T22:18:37.330448+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:16.277835+00:00",
+      "checked_at": "2026-10-06T00:07:16.277835+00:00",
       "musicbrainz_id": "91858562-9d12-48af-8970-45ab0eb45e83",
       "canonical_name": "M!R!M",
       "match_score": 100,
@@ -11514,13 +11554,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/40c8fe4e4b8e0110b756b2083a899117/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:37.330448+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:16.277835+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=M%21R%21M&limit=8"
     },
     "olan-monk-maria-somerville": {
       "name": "Olan Monk, Maria Somerville",
@@ -11550,9 +11591,9 @@
     },
     "tsaffire": {
       "name": "Tsaffire",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:41.039768+00:00",
-      "checked_at": "2026-10-02T22:18:41.039768+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:19.434735+00:00",
+      "checked_at": "2026-10-06T00:07:19.434735+00:00",
       "musicbrainz_id": "d9912887-f818-426b-bb6c-f9f79f3bf58d",
       "canonical_name": "Tsaffire",
       "match_score": 100,
@@ -11564,19 +11605,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/41a348d2079dd2b0f124e752358d3b0b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:41.039768+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:19.434735+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tsaffire&limit=8"
     },
     "silque": {
       "name": "Silque",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:44.482205+00:00",
-      "checked_at": "2026-10-02T22:18:44.482205+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:22.649890+00:00",
+      "checked_at": "2026-10-06T00:07:22.649890+00:00",
       "musicbrainz_id": "af705f03-42fe-4037-9f6b-3dff609810cb",
       "canonical_name": "Silque",
       "match_score": 100,
@@ -11592,19 +11634,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c23a2a6ddf4f9d08b63c3fe559d07889/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:44.482205+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:22.649890+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Silque&limit=8"
     },
     "kidsmoke": {
       "name": "(Kidsmoke)",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:48.100571+00:00",
-      "checked_at": "2026-10-02T22:18:48.100571+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:23.896286+00:00",
+      "checked_at": "2026-10-06T00:07:23.896286+00:00",
       "musicbrainz_id": "5bfa3343-5a3a-467d-ba93-62f85a473502",
       "canonical_name": "Kidsmoke",
       "match_score": 100,
@@ -11620,19 +11663,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d46fba40fe33d37c3b44e0b9f0ed6a9d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:48.100571+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:23.896286+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kidsmoke&limit=8"
     },
     "color-palette": {
       "name": "Color Palette",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:51.821813+00:00",
-      "checked_at": "2026-10-02T22:18:51.821813+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:27.123862+00:00",
+      "checked_at": "2026-10-06T00:07:27.123862+00:00",
       "musicbrainz_id": "c22975ec-f886-42ea-a2f1-f84b0e6ae778",
       "canonical_name": "Color Palette",
       "match_score": 100,
@@ -11648,19 +11692,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/4cd90ac3e2a36b89e76c9e523738b7f8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:51.821813+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:27.123862+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Color+Palette&limit=8"
     },
     "awfultune": {
       "name": "awfultune",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:55.101961+00:00",
-      "checked_at": "2026-10-02T22:18:55.101961+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:30.197649+00:00",
+      "checked_at": "2026-10-06T00:07:30.197649+00:00",
       "musicbrainz_id": "b0979956-e40d-4a35-89b1-124af2288354",
       "canonical_name": "awfultune",
       "match_score": 100,
@@ -11676,19 +11721,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ee5ce2c1fa5512da385763127c57b902/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:55.101961+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:30.197649+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=awfultune&limit=8"
     },
     "automatic": {
       "name": "Automatic",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:18:57.254431+00:00",
-      "checked_at": "2026-10-02T22:18:57.254431+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:33.157324+00:00",
+      "checked_at": "2026-10-06T00:07:33.157324+00:00",
       "musicbrainz_id": "9b627d78-b041-4b23-bb70-3534e61afc7e",
       "canonical_name": "Automatic",
       "match_score": 100,
@@ -11704,19 +11750,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/349ba353032a6f0a8ed597d422cf54ee/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:18:57.254431+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:33.157324+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Automatic&limit=8"
     },
     "ebbb": {
       "name": "Ebbb",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:00.560211+00:00",
-      "checked_at": "2026-10-02T22:19:00.560211+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:36.663275+00:00",
+      "checked_at": "2026-10-06T00:07:36.663275+00:00",
       "musicbrainz_id": "efaf62b6-0f94-4a1b-a82a-dc386a7fd947",
       "canonical_name": "Ebbb",
       "match_score": 100,
@@ -11732,13 +11779,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8ee8251091ba497d057de3bc590bfa2d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:00.560211+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:36.663275+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ebbb&limit=8"
     },
     "sam-fender-olivia-dean": {
       "name": "Sam Fender, Olivia Dean",
@@ -11767,9 +11815,9 @@
     },
     "b7lanket": {
       "name": "b7lanket",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:04.073092+00:00",
-      "checked_at": "2026-10-02T22:19:04.073092+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:40.391109+00:00",
+      "checked_at": "2026-10-06T00:07:40.391109+00:00",
       "musicbrainz_id": "57c20dbb-fc15-4f31-a666-b75292ba9177",
       "canonical_name": "b7lanket",
       "match_score": 100,
@@ -11781,19 +11829,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1c93390f3da7026dd3f966433a21ffff/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:04.073092+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:40.391109+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=b7lanket&limit=8"
     },
     "don-leisure": {
       "name": "Don Leisure",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:07.144383+00:00",
-      "checked_at": "2026-10-02T22:19:07.144383+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:45.508521+00:00",
+      "checked_at": "2026-10-06T00:07:45.508521+00:00",
       "musicbrainz_id": "5e718d3a-d54b-44d8-a475-2f1dc7ddca05",
       "canonical_name": "Don Leisure",
       "match_score": 100,
@@ -11805,19 +11854,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/85fef73ac08bc262c3cb2e424d67ec85/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:07.144383+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:45.508521+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Don+Leisure&limit=8"
     },
     "honeymoan": {
       "name": "HONEYMOAN",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:09.818368+00:00",
-      "checked_at": "2026-10-02T22:19:09.818368+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:48.320555+00:00",
+      "checked_at": "2026-10-06T00:07:48.320555+00:00",
       "musicbrainz_id": "ec07a6c0-e79c-4e33-a6ed-e50477cb3698",
       "canonical_name": "HONEYMOAN",
       "match_score": 100,
@@ -11833,19 +11883,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/78445037b1612e2cf757bfbb80e1d1f7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:09.818368+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:48.320555+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=HONEYMOAN&limit=8"
     },
     "argonaut-wasp": {
       "name": "Argonaut & Wasp",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:12.028296+00:00",
-      "checked_at": "2026-10-02T22:19:12.028296+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:51.942574+00:00",
+      "checked_at": "2026-10-06T00:07:51.942574+00:00",
       "musicbrainz_id": "a0f0f532-df75-4ab4-bb86-f279e3b541bb",
       "canonical_name": "Argonaut & Wasp",
       "match_score": 100,
@@ -11861,13 +11912,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c8e85745251fd46f2c9dcf230add2537/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:12.028296+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:51.942574+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Argonaut+%26+Wasp&limit=8"
     },
     "dev-lemons": {
       "name": "Dev Lemons",
@@ -11897,9 +11949,9 @@
     },
     "oskar-haag": {
       "name": "Oskar Haag",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:18.317101+00:00",
-      "checked_at": "2026-10-02T22:19:18.317101+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:54.783999+00:00",
+      "checked_at": "2026-10-06T00:07:54.783999+00:00",
       "musicbrainz_id": "dad4f1f1-bf53-4a8a-8057-eb217763e34c",
       "canonical_name": "Oskar Haag",
       "match_score": 100,
@@ -11915,19 +11967,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0d3db6fa701ed9ce142fd16b8bc1bad7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:18.317101+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:54.783999+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Oskar+Haag&limit=8"
     },
     "strongboi": {
       "name": "strongboi",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:21.143394+00:00",
-      "checked_at": "2026-10-02T22:19:21.143394+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:55.956606+00:00",
+      "checked_at": "2026-10-06T00:07:55.956606+00:00",
       "musicbrainz_id": "fbf6f72f-c8dd-465d-b13e-593bfd9a92c7",
       "canonical_name": "strongboi",
       "match_score": 100,
@@ -11943,19 +11996,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/a5bcc6f60c456204e8b8584a98c3595b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:21.143394+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:55.956606+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=strongboi&limit=8"
     },
     "the-technicolors": {
       "name": "The Technicolors",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:23.859711+00:00",
-      "checked_at": "2026-10-02T22:19:23.859711+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:07:59.254262+00:00",
+      "checked_at": "2026-10-06T00:07:59.254262+00:00",
       "musicbrainz_id": "dbd44897-b9e6-445d-8aca-25e1c2405f51",
       "canonical_name": "The Technicolors",
       "match_score": 100,
@@ -11971,13 +12025,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/bb42538e7d814dcd97bd922c57463f23/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:23.859711+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:07:59.254262+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Technicolors&limit=8"
     },
     "ufos-braxe-falcon-phoenix-alan-braxe": {
       "name": "UFOs, Braxe + Falcon, Phoenix, Alan Braxe",
@@ -12057,9 +12112,9 @@
     },
     "joyer": {
       "name": "Joyer",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:30.721688+00:00",
-      "checked_at": "2026-10-02T22:19:30.721688+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:01.965707+00:00",
+      "checked_at": "2026-10-06T00:08:01.965707+00:00",
       "musicbrainz_id": "d2696295-991d-4c20-aaa8-886b5748d79f",
       "canonical_name": "Joyer",
       "match_score": 100,
@@ -12075,19 +12130,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7fba154ee594b63485d70714bdf23cab/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:30.721688+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:01.965707+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Joyer&limit=8"
     },
     "mass-minor": {
       "name": "Mass Minor",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:33.848085+00:00",
-      "checked_at": "2026-10-02T22:19:33.848085+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:04.712933+00:00",
+      "checked_at": "2026-10-06T00:08:04.712933+00:00",
       "musicbrainz_id": "47f01094-4fbb-433a-880c-78b5c3bf2758",
       "canonical_name": "Mass Minor",
       "match_score": 100,
@@ -12099,13 +12155,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/48acacbe40e8e732904823998628dc75/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:33.848085+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:04.712933+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mass+Minor&limit=8"
     },
     "sacred-skin-srsq": {
       "name": "Sacred Skin, SRSQ",
@@ -12185,9 +12242,9 @@
     },
     "detects": {
       "name": "DETECTS",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:39.690370+00:00",
-      "checked_at": "2026-10-02T22:19:39.690370+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:05.968421+00:00",
+      "checked_at": "2026-10-06T00:08:05.968421+00:00",
       "musicbrainz_id": "4bd01508-3e7f-4b1c-8aca-47f60ce760fa",
       "canonical_name": "Detects",
       "match_score": 100,
@@ -12203,19 +12260,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b9ceb4cf25c5c05be69ea8ddf62dfa04/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:39.690370+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:05.968421+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Detects&limit=8"
     },
     "fragrance": {
       "name": "Fragrance",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:42.702175+00:00",
-      "checked_at": "2026-10-02T22:19:42.702175+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:09.063433+00:00",
+      "checked_at": "2026-10-06T00:08:09.063433+00:00",
       "musicbrainz_id": "0e40a8b6-278e-4734-ab15-3912770c8bbb",
       "canonical_name": "Fragrance.",
       "match_score": 100,
@@ -12231,13 +12289,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ec6b83c95f7eb5b4f09143a2b9e7357e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:42.702175+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:09.063433+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Fragrance.&limit=8"
     },
     "mount-palomar-pip-blom": {
       "name": "Mount Palomar, Pip Blom",
@@ -12266,9 +12325,9 @@
     },
     "ritual-howls": {
       "name": "Ritual Howls",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:45.988650+00:00",
-      "checked_at": "2026-10-02T22:19:45.988650+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:11.649237+00:00",
+      "checked_at": "2026-10-06T00:08:11.649237+00:00",
       "musicbrainz_id": "a706b2d4-684e-483e-b323-477c06e65b05",
       "canonical_name": "Ritual Howls",
       "match_score": 100,
@@ -12284,19 +12343,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/eb4551b35f7566bcc3db7a600fd80066/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:45.988650+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:11.649237+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ritual+Howls&limit=8"
     },
     "the-slashes": {
       "name": "The Slashes",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:49.346061+00:00",
-      "checked_at": "2026-10-02T22:19:49.346061+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:14.368036+00:00",
+      "checked_at": "2026-10-06T00:08:14.368036+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The Slashes",
       "match_score": 0,
@@ -12308,19 +12368,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c0e3c006c35108e190e108ea766089b1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:49.346061+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:14.368036+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Slashes&limit=8"
     },
     "holy-holy": {
       "name": "Holy Holy",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:50.572934+00:00",
-      "checked_at": "2026-10-02T22:19:50.572934+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:15.750666+00:00",
+      "checked_at": "2026-10-06T00:08:15.750666+00:00",
       "musicbrainz_id": "e0bbec7a-7a81-466f-ba0f-08240dd4980e",
       "canonical_name": "Holy Holy",
       "match_score": 100,
@@ -12336,19 +12397,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d6664e29cc218e2df1a0d12d48fdddd5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:50.572934+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:15.750666+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Holy+Holy&limit=8"
     },
     "levin-goes-lightly": {
       "name": "Levin Goes Lightly",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:19:54.101900+00:00",
-      "checked_at": "2026-10-02T22:19:54.101900+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:18.637365+00:00",
+      "checked_at": "2026-10-06T00:08:18.637365+00:00",
       "musicbrainz_id": "b20b8919-3489-44f2-85cf-bdf400f4406d",
       "canonical_name": "Levin Goes Lightly",
       "match_score": 100,
@@ -12364,19 +12426,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/865523c4d581d2eaa44c0f7d4ba7cb2f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:19:54.101900+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:18.637365+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Levin+Goes+Lightly&limit=8"
     },
     "armbite": {
       "name": "armbite",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:00.018099+00:00",
-      "checked_at": "2026-10-02T22:20:00.018099+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:21.200538+00:00",
+      "checked_at": "2026-10-06T00:08:21.200538+00:00",
       "musicbrainz_id": "da61ff44-a495-45c0-9816-d9d9e9e63c9c",
       "canonical_name": "armbite",
       "match_score": 100,
@@ -12392,13 +12455,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/79ca943f6887e4ff0695b616fe6b0eec/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:00.018099+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:21.200538+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=armbite&limit=8"
     },
     "pulp-war-child-records": {
       "name": "Pulp, War Child Records",
@@ -12451,9 +12515,9 @@
     },
     "traitrs": {
       "name": "TRAITRS",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:04.768674+00:00",
-      "checked_at": "2026-10-02T22:20:04.768674+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:23.738779+00:00",
+      "checked_at": "2026-10-06T00:08:23.738779+00:00",
       "musicbrainz_id": "0ef1dab1-4419-418e-90e7-14ce7a56bec7",
       "canonical_name": "TRAITRS",
       "match_score": 100,
@@ -12469,19 +12533,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/67e1bd9bf278f64f5a45ef4fce583f67/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:04.768674+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:23.738779+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=TRAITRS&limit=8"
     },
     "deathsport": {
       "name": "Deathsport",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:07.242470+00:00",
-      "checked_at": "2026-10-02T22:20:07.242470+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:26.321342+00:00",
+      "checked_at": "2026-10-06T00:08:26.321342+00:00",
       "musicbrainz_id": "79d7b63a-0531-410b-948a-f45b186f98a8",
       "canonical_name": "Deathsport",
       "match_score": 100,
@@ -12497,19 +12562,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d83aa34f7e3dfd64bb675dcfef83d143/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:07.242470+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:26.321342+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Deathsport&limit=8"
     },
     "darkroads": {
       "name": "Darkroads",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:10.507071+00:00",
-      "checked_at": "2026-10-02T22:20:10.507071+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:30.171135+00:00",
+      "checked_at": "2026-10-06T00:08:30.171135+00:00",
       "musicbrainz_id": "88bfa650-f499-4352-99c7-dd20f12c7c2f",
       "canonical_name": "Darkroads",
       "match_score": 100,
@@ -12521,13 +12587,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/392caf479c00f0c2bc1831238781d579/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:10.507071+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:30.171135+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Darkroads&limit=8"
     },
     "annabelle-dinda": {
       "name": "Annabelle Dinda",
@@ -12557,9 +12624,9 @@
     },
     "divebar-youth": {
       "name": "DIVEBAR YOUTH",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:18.450370+00:00",
-      "checked_at": "2026-10-02T22:20:18.450370+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:34.173743+00:00",
+      "checked_at": "2026-10-06T00:08:34.173743+00:00",
       "musicbrainz_id": "1f4c6de4-dcd5-4e3d-8375-65737ac32887",
       "canonical_name": "Divebar Youth",
       "match_score": 100,
@@ -12575,19 +12642,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/f0bcd4df83207acdc3693b469624568e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:18.450370+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:34.173743+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Divebar+Youth&limit=8"
     },
     "the-sweet-serenades": {
       "name": "The Sweet Serenades",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:21.139447+00:00",
-      "checked_at": "2026-10-02T22:20:21.139447+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:37.893586+00:00",
+      "checked_at": "2026-10-06T00:08:37.893586+00:00",
       "musicbrainz_id": "7b6bf6fc-6fec-44a3-9719-942267a58b7f",
       "canonical_name": "The Sweet Serenades",
       "match_score": 100,
@@ -12603,19 +12671,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8e6353a74c2542439d01ca9e965fb70b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:21.139447+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:37.893586+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Sweet+Serenades&limit=8"
     },
     "pastel-coast": {
       "name": "Pastel Coast",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:25.721172+00:00",
-      "checked_at": "2026-10-02T22:20:25.721172+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:40.699704+00:00",
+      "checked_at": "2026-10-06T00:08:40.699704+00:00",
       "musicbrainz_id": "589daacb-df91-474b-a7d4-2387502e99e8",
       "canonical_name": "Pastel Coast",
       "match_score": 100,
@@ -12627,19 +12696,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/9a84adb4c078494f2b7387e4468b3f82/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:25.721172+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:40.699704+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Pastel+Coast&limit=8"
     },
     "current-joys": {
       "name": "Current Joys",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:28.298528+00:00",
-      "checked_at": "2026-10-02T22:20:28.298528+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:43.692912+00:00",
+      "checked_at": "2026-10-06T00:08:43.692912+00:00",
       "musicbrainz_id": "680a0350-cee3-49d4-a85d-7c9f4657fb97",
       "canonical_name": "Current Joys",
       "match_score": 100,
@@ -12655,19 +12725,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/5890d003f9365b8ac1800fd39b21eb11/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:28.298528+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:43.692912+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Current+Joys&limit=8"
     },
     "the-creem": {
       "name": "The Creem",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:30.598207+00:00",
-      "checked_at": "2026-10-02T22:20:30.598207+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:47.370321+00:00",
+      "checked_at": "2026-10-06T00:08:47.370321+00:00",
       "musicbrainz_id": "eb8e8ad3-ec87-4789-b23f-08d1e0cfb79a",
       "canonical_name": "The Creem",
       "match_score": 100,
@@ -12683,19 +12754,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/62dc542f45e88a32e5d4ef086ba928c7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:30.598207+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:47.370321+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Creem&limit=8"
     },
     "acopia": {
       "name": "Acopia",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:33.692146+00:00",
-      "checked_at": "2026-10-02T22:20:33.692146+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:49.918662+00:00",
+      "checked_at": "2026-10-06T00:08:49.918662+00:00",
       "musicbrainz_id": "e4513864-b6e8-431e-8b82-bfdb22714444",
       "canonical_name": "Acopia",
       "match_score": 100,
@@ -12711,13 +12783,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/3004968e3888ec9e130d4af02985567e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:33.692146+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:49.918662+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Acopia&limit=8"
     },
     "dj-seinfeld-ts-graye": {
       "name": "DJ Seinfeld, TS Graye",
@@ -12747,9 +12820,9 @@
     },
     "selofan": {
       "name": "Selofan",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:37.060973+00:00",
-      "checked_at": "2026-10-02T22:20:37.060973+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:51.161274+00:00",
+      "checked_at": "2026-10-06T00:08:51.161274+00:00",
       "musicbrainz_id": "ec84e56f-9fbe-40d3-9979-bc084359d79c",
       "canonical_name": "Selofan",
       "match_score": 100,
@@ -12765,19 +12838,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/91ef2b79e0ec7b1c1e7f20d12ecac921/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:37.060973+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:51.161274+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Selofan&limit=8"
     },
     "stray-fossa": {
       "name": "Stray Fossa",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:40.424556+00:00",
-      "checked_at": "2026-10-02T22:20:40.424556+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:54.943514+00:00",
+      "checked_at": "2026-10-06T00:08:54.943514+00:00",
       "musicbrainz_id": "75d367b0-3def-4a7a-a37d-1d2255ed6a72",
       "canonical_name": "Stray Fossa",
       "match_score": 100,
@@ -12793,19 +12867,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c414643a7f23baad8de59eace5436a36/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:40.424556+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:54.943514+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Stray+Fossa&limit=8"
     },
     "the-guest-list": {
       "name": "The Guest List",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:42.703210+00:00",
-      "checked_at": "2026-10-02T22:20:42.703210+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:56.260634+00:00",
+      "checked_at": "2026-10-06T00:08:56.260634+00:00",
       "musicbrainz_id": "bcddbf54-6438-4a2d-af3b-e5d04d4724b2",
       "canonical_name": "The Guest List",
       "match_score": 100,
@@ -12821,13 +12896,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/4706174da355e80f8cdc719b70e1dae2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:42.703210+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:56.260634+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Guest+List&limit=8"
     },
     "daniel-avery-cecile-believe": {
       "name": "Daniel Avery, Cecile Believe",
@@ -12956,9 +13032,9 @@
     },
     "kios": {
       "name": "Kios",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:20:54.475885+00:00",
-      "checked_at": "2026-10-02T22:20:54.475885+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:08:59.092086+00:00",
+      "checked_at": "2026-10-06T00:08:59.092086+00:00",
       "musicbrainz_id": "f1a12ea5-42eb-462a-9d5c-7ed493e7d633",
       "canonical_name": "Kios",
       "match_score": 100,
@@ -12970,13 +13046,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/80eb526346febd6cddf55d67e88cf9a8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:20:54.475885+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:08:59.092086+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kios&limit=8"
     },
     "mark-william-lewis": {
       "name": "Mark William Lewis",
@@ -13006,9 +13083,9 @@
     },
     "s-y-z-y-g-y-x": {
       "name": "S Y Z Y G Y X",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:04.085180+00:00",
-      "checked_at": "2026-10-02T22:21:04.085180+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:02.642629+00:00",
+      "checked_at": "2026-10-06T00:09:02.642629+00:00",
       "musicbrainz_id": "dfbfa041-757c-43d3-afb5-e55996a68832",
       "canonical_name": "S Y Z Y G Y X",
       "match_score": 100,
@@ -13024,19 +13101,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/94a320b4097754e26db7dbfbc195abe6/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:04.085180+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:02.642629+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=S+Y+Z+Y+G+Y+X&limit=8"
     },
     "the-howl-the-hum": {
       "name": "The Howl & The Hum",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:06.986503+00:00",
-      "checked_at": "2026-10-02T22:21:06.986503+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:06.300763+00:00",
+      "checked_at": "2026-10-06T00:09:06.300763+00:00",
       "musicbrainz_id": "67641bdf-e8aa-4da9-b742-c9e056d180ce",
       "canonical_name": "The Howl & The Hum",
       "match_score": 100,
@@ -13052,13 +13130,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d843e0eaa49cff1603baad5aa2a84a68/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:06.986503+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:06.300763+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Howl+%26+The+Hum&limit=8"
     },
     "yhwh-nailgun": {
       "name": "YHWH Nailgun",
@@ -13088,9 +13167,9 @@
     },
     "ashrr": {
       "name": "ASHRR",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:11.740659+00:00",
-      "checked_at": "2026-10-02T22:21:11.740659+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:08.825198+00:00",
+      "checked_at": "2026-10-06T00:09:08.825198+00:00",
       "musicbrainz_id": "62e0c238-899e-4023-8154-80d27b51b9c3",
       "canonical_name": "ASHRR",
       "match_score": 100,
@@ -13106,14 +13185,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:11.740659+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:08.825198+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=ASHRR&limit=8"
     },
     "daniel-avery": {
       "name": "Daniel Avery",
@@ -13143,9 +13223,9 @@
     },
     "go-hawaii": {
       "name": "Go Hawaii",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:17.193907+00:00",
-      "checked_at": "2026-10-02T22:21:17.193907+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:11.675210+00:00",
+      "checked_at": "2026-10-06T00:09:11.675210+00:00",
       "musicbrainz_id": "745a04ff-e530-49c9-bf32-15695a515986",
       "canonical_name": "Go Hawaii",
       "match_score": 100,
@@ -13157,19 +13237,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6d23974edb153826e4f08275b7c80603/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:17.193907+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:11.675210+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Go+Hawaii&limit=8"
     },
     "lathe-of-heaven": {
       "name": "Lathe of Heaven",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:22.541260+00:00",
-      "checked_at": "2026-10-02T22:21:22.541260+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:14.301073+00:00",
+      "checked_at": "2026-10-06T00:09:14.301073+00:00",
       "musicbrainz_id": "de8bfb19-8320-4078-b750-27195ea0378c",
       "canonical_name": "Lathe of Heaven",
       "match_score": 100,
@@ -13185,13 +13266,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/398343bc23affc3b8bbe66ca7ef77222/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:22.541260+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:14.301073+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lathe+of+Heaven&limit=8"
     },
     "maruja": {
       "name": "Maruja",
@@ -13221,9 +13303,9 @@
     },
     "saytr-play": {
       "name": "Saytr Play",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:29.011597+00:00",
-      "checked_at": "2026-10-02T22:21:29.011597+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:16.915689+00:00",
+      "checked_at": "2026-10-06T00:09:16.915689+00:00",
       "musicbrainz_id": "3111c5c7-7ae9-4781-a35a-cf9cca8b433f",
       "canonical_name": "Saytr Play",
       "match_score": 100,
@@ -13239,19 +13321,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/49d82097c28332f80c71ece43a924921/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:29.011597+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:16.915689+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Saytr+Play&limit=8"
     },
     "secret-shame": {
       "name": "Secret Shame",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:31.830575+00:00",
-      "checked_at": "2026-10-02T22:21:31.830575+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:19.425121+00:00",
+      "checked_at": "2026-10-06T00:09:19.425121+00:00",
       "musicbrainz_id": "a72aca26-c712-4263-a885-4833d2edd7cb",
       "canonical_name": "Secret Shame",
       "match_score": 100,
@@ -13267,19 +13350,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:31.830575+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:19.425121+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Secret+Shame&limit=8"
     },
     "gans": {
       "name": "Gans",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:21:34.610628+00:00",
-      "checked_at": "2026-10-02T22:21:34.610628+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:22.053386+00:00",
+      "checked_at": "2026-10-06T00:09:22.053386+00:00",
       "musicbrainz_id": "8e5c16ed-5bd1-4614-bede-41f594abf8d8",
       "canonical_name": "GANS",
       "match_score": 100,
@@ -13295,13 +13379,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/fe82706349d45c514454f350f73d6b85/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:21:34.610628+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:22.053386+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Gans&limit=8"
     },
     "bullion-carly-rae-jepsen": {
       "name": "Bullion/Carly Rae Jepsen",
@@ -13561,9 +13646,9 @@
     },
     "nick-cave-the-bad-seeds": {
       "name": "Nick Cave & the Bad Seeds",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:02.245907+00:00",
-      "checked_at": "2026-10-02T22:22:02.245907+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:23.255750+00:00",
+      "checked_at": "2026-10-06T00:09:23.255750+00:00",
       "musicbrainz_id": "172e1f1a-504d-4488-b053-6344ba63e6d0",
       "canonical_name": "Nick Cave & the Bad Seeds",
       "match_score": 100,
@@ -13579,13 +13664,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c81acb9b05e8b29b4699f2c2bd05213b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:02.245907+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:23.255750+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Nick+Cave+%26+the+Bad+Seeds&limit=8"
     },
     "weezer-wednesday": {
       "name": "Weezer, Wednesday",
@@ -13613,9 +13699,9 @@
     },
     "french-police": {
       "name": "French Police",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:05.787099+00:00",
-      "checked_at": "2026-10-02T22:22:05.787099+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:26.401108+00:00",
+      "checked_at": "2026-10-06T00:09:26.401108+00:00",
       "musicbrainz_id": "90cf1e25-ffc0-4637-a0fe-205736f9ce10",
       "canonical_name": "French Police",
       "match_score": 100,
@@ -13627,13 +13713,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b568549b611e9c2d109819689e1f3efc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:05.787099+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:26.401108+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=French+Police&limit=8"
     },
     "shout-out-louds": {
       "name": "Shout Out Louds",
@@ -13689,9 +13776,9 @@
     },
     "yuno": {
       "name": "Yuno",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:14.890554+00:00",
-      "checked_at": "2026-10-02T22:22:14.890554+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:28.999660+00:00",
+      "checked_at": "2026-10-06T00:09:28.999660+00:00",
       "musicbrainz_id": "55218b0a-6375-4284-baed-087a10eece49",
       "canonical_name": "Yuno",
       "match_score": 100,
@@ -13707,13 +13794,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7a468eaa1b19179001477e4362e6c8d1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:14.890554+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:28.999660+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Yuno&limit=8"
     },
     "amyl-and-the-sniffers": {
       "name": "Amyl and The Sniffers",
@@ -13743,9 +13831,9 @@
     },
     "ghost-fetish": {
       "name": "Ghost Fetish",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:20.136034+00:00",
-      "checked_at": "2026-10-02T22:22:20.136034+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:31.685084+00:00",
+      "checked_at": "2026-10-06T00:09:31.685084+00:00",
       "musicbrainz_id": "d9e8b5e0-520f-4eb9-a459-937496a0d3cb",
       "canonical_name": "Ghost Fetish",
       "match_score": 100,
@@ -13757,19 +13845,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0d6b1e5becbf9f4210355caaf5d2f72f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:20.136034+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:31.685084+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ghost+Fetish&limit=8"
     },
     "bright-eyes-felice-county-fair": {
       "name": "Bright Eyes, Felice County Fair",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:22.472286+00:00",
-      "checked_at": "2026-10-02T22:22:22.472286+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:34.393846+00:00",
+      "checked_at": "2026-10-06T00:09:34.393846+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Bright Eyes, Felice County Fair",
       "match_score": 0,
@@ -13781,19 +13870,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:22.472286+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:34.393846+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Bright+Eyes%2C+Felice+County+Fair&limit=8"
     },
     "welcome-strawberry": {
       "name": "Welcome Strawberry",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:23.359510+00:00",
-      "checked_at": "2026-10-02T22:22:23.359510+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:35.960635+00:00",
+      "checked_at": "2026-10-06T00:09:35.960635+00:00",
       "musicbrainz_id": "b71678b5-7d80-4e6e-a227-66606cc20a72",
       "canonical_name": "Welcome Strawberry",
       "match_score": 100,
@@ -13805,13 +13895,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ab3b6fcc8f02e26ff27edf4caaa1ed2f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:23.359510+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:35.960635+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Welcome+Strawberry&limit=8"
     },
     "london-grammar": {
       "name": "London Grammar",
@@ -14071,9 +14162,9 @@
     },
     "boxboys": {
       "name": "BoxBoys",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:22:53.712122+00:00",
-      "checked_at": "2026-10-02T22:22:53.712122+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:38.473004+00:00",
+      "checked_at": "2026-10-06T00:09:38.473004+00:00",
       "musicbrainz_id": "59345e97-83bf-45be-9f6e-c9dcc428836a",
       "canonical_name": "boxboys",
       "match_score": 100,
@@ -14089,13 +14180,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7b083a33d036fa3ef5d1a8422df4d1e4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:22:53.712122+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:38.473004+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=boxboys&limit=8"
     },
     "cathedral-bells": {
       "name": "Cathedral Bells",
@@ -14173,9 +14265,9 @@
     },
     "n0v3l": {
       "name": "N0V3L",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:02.336952+00:00",
-      "checked_at": "2026-10-02T22:23:02.336952+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:41.136040+00:00",
+      "checked_at": "2026-10-06T00:09:41.136040+00:00",
       "musicbrainz_id": "9de2a005-3490-4061-b3cf-209bbfb4e778",
       "canonical_name": "N0V3L",
       "match_score": 100,
@@ -14187,19 +14279,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/cade38b33616d8cf08e6e0beb21218af/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:02.336952+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:41.136040+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=N0V3L&limit=8"
     },
     "rosegarden-funeral-party": {
       "name": "Rosegarden Funeral Party",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:05.147217+00:00",
-      "checked_at": "2026-10-02T22:23:05.147217+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:43.605696+00:00",
+      "checked_at": "2026-10-06T00:09:43.605696+00:00",
       "musicbrainz_id": "03fc75f0-eada-439a-8cf2-0185be70c13e",
       "canonical_name": "Rosegarden Funeral Party",
       "match_score": 100,
@@ -14215,13 +14308,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1823812041f7d6b1de8364ceb596dfc2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:05.147217+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:43.605696+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Rosegarden+Funeral+Party&limit=8"
     },
     "sailor-honeymoon": {
       "name": "Sailor Honeymoon",
@@ -14251,9 +14345,9 @@
     },
     "sea-lemon": {
       "name": "Sea Lemon",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:09.677192+00:00",
-      "checked_at": "2026-10-02T22:23:09.677192+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:46.246469+00:00",
+      "checked_at": "2026-10-06T00:09:46.246469+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Sea Lemon",
       "match_score": 0,
@@ -14265,19 +14359,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/10a4deeea6549841b413eafc54c56ae1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:09.677192+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:46.246469+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Sea+Lemon&limit=8"
     },
     "shelly": {
       "name": "Shelly",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:11.169601+00:00",
-      "checked_at": "2026-10-02T22:23:11.169601+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:49.299969+00:00",
+      "checked_at": "2026-10-06T00:09:49.299969+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Shelly",
       "match_score": 0,
@@ -14289,19 +14384,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/f9836c78115051b9db7a715560907778/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:11.169601+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:49.299969+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Shelly&limit=8"
     },
     "tele-novella": {
       "name": "Tele Novella",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:12.869839+00:00",
-      "checked_at": "2026-10-02T22:23:12.869839+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:50.530056+00:00",
+      "checked_at": "2026-10-06T00:09:50.530056+00:00",
       "musicbrainz_id": "e2c42d76-43ac-4f6b-9d04-a9929094b98e",
       "canonical_name": "Tele Novella",
       "match_score": 100,
@@ -14317,13 +14413,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/3260152414f61b70c0a81c79db01e0f5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:12.869839+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:50.530056+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tele+Novella&limit=8"
     },
     "cate-le-bon-st-vincent": {
       "name": "Cate Le Bon, St. Vincent",
@@ -14531,9 +14628,9 @@
     },
     "moaning": {
       "name": "Moaning",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:33.952730+00:00",
-      "checked_at": "2026-10-02T22:23:33.952730+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:54.914247+00:00",
+      "checked_at": "2026-10-06T00:09:54.914247+00:00",
       "musicbrainz_id": "d5d4af51-8c20-45ed-9cc4-f8bbbb28289d",
       "canonical_name": "Moaning",
       "match_score": 100,
@@ -14549,19 +14646,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b5cf7b5adaf9943fbc8a99f26483532c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:33.952730+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:54.914247+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Moaning&limit=8"
     },
     "special-features": {
       "name": "Special Features",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:36.763745+00:00",
-      "checked_at": "2026-10-02T22:23:36.763745+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:57.121141+00:00",
+      "checked_at": "2026-10-06T00:09:57.121141+00:00",
       "musicbrainz_id": "81f1b826-8f3c-45f9-8102-ddd901b5a8a1",
       "canonical_name": "Special Features",
       "match_score": 100,
@@ -14573,13 +14671,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c74d199bc36695225e9215f00cb60731/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:36.763745+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:57.121141+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Special+Features&limit=8"
     },
     "spiritual-cramp": {
       "name": "Spiritual Cramp",
@@ -14635,9 +14734,9 @@
     },
     "the-seance": {
       "name": "The Séance",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:44.182636+00:00",
-      "checked_at": "2026-10-02T22:23:44.182636+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:09:58.454786+00:00",
+      "checked_at": "2026-10-06T00:09:58.454786+00:00",
       "musicbrainz_id": "5a922ceb-ebae-4bda-a75e-a8d52a689e1d",
       "canonical_name": "The Seance",
       "match_score": 100,
@@ -14649,13 +14748,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/40d55090babeca5b3502503da384dc4d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:44.182636+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:09:58.454786+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Seance&limit=8"
     },
     "ttssfu": {
       "name": "TTSSFU",
@@ -14759,9 +14859,9 @@
     },
     "callow-youth": {
       "name": "Callow Youth",
-      "verified": true,
-      "profile_checked_at": "2026-10-02T22:23:56.384583+00:00",
-      "checked_at": "2026-10-02T22:23:56.384583+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:01.662076+00:00",
+      "checked_at": "2026-10-06T00:10:01.662076+00:00",
       "musicbrainz_id": "29108adc-4fa3-4898-9720-1e36c0d5f47f",
       "canonical_name": "Callow Youth",
       "match_score": 100,
@@ -14777,13 +14877,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-05T22:23:56.384583+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-06T06:10:01.662076+00:00",
+      "attempt_count": 2,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Callow+Youth&limit=8"
     },
     "kiss-of-the-whip": {
       "name": "KISS OF THE WHIP",
@@ -53507,6 +53608,970 @@
       ],
       "next_retry_at": "2026-10-08T14:51:30.949576+00:00",
       "attempt_count": 1
+    },
+    "new-poltics": {
+      "name": "New Poltics",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:04.029868+00:00",
+      "checked_at": "2026-10-06T00:10:04.029868+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:04.029868+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=New+Poltics&limit=8"
+    },
+    "the-week-that-was": {
+      "name": "The Week That Was",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:05.425512+00:00",
+      "checked_at": "2026-10-06T00:10:05.425512+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:05.425512+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Week+That+Was&limit=8"
+    },
+    "the-ceremonies": {
+      "name": "The Ceremonies",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:08.276433+00:00",
+      "checked_at": "2026-10-06T00:10:08.276433+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:08.276433+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Ceremonies&limit=8"
+    },
+    "we-are-knights": {
+      "name": "We Are Knights",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:10.797983+00:00",
+      "checked_at": "2026-10-06T00:10:10.797983+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:10.797983+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=We+Are+Knights&limit=8"
+    },
+    "champs": {
+      "name": "Champs",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:10:13.431819+00:00",
+      "checked_at": "2026-10-06T00:10:13.431819+00:00",
+      "musicbrainz_id": "bbaa7a18-98ff-4540-9973-8f8340a83d3b",
+      "canonical_name": "The Champs",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "rock and roll",
+      "bio_en": "The Champs were an American rock and roll band, most famous for their Latin-tinged 1958 instrumental single \"Tequila\". The group took their name from that of Gene Autry's horse, Champion, and was formed by studio executives at Autry's Challenge Records to record a B-side for the Dave Burgess single \"Train to Nowhere\". The intended throwaway track became more famous than its A-side, as \"Tequila\" went to number one in just three weeks, and the band became the first group to go to the top spot with an instrumental that was their first release. The song was recorded at Gold Star Studios in fall 1957, and in 1959 won the Grammy Award for Best R&B Performance. It sold over one million copies, and was awarded a gold disc by the Recording Industry Association of America.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/The_Champs_1958.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Champs",
+      "alias_suggestion": "The Champs",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "modern-rivals": {
+      "name": "Modern Rivals",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:18.237803+00:00",
+      "checked_at": "2026-10-06T00:10:18.237803+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:18.237803+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Modern+Rivals&limit=8"
+    },
+    "the-sonic-faith": {
+      "name": "The Sonic Faith",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:22.741466+00:00",
+      "checked_at": "2026-10-06T00:10:22.741466+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:22.741466+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Sonic+Faith&limit=8"
+    },
+    "boy-girl-party": {
+      "name": "Boy Girl Party",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:26.722178+00:00",
+      "checked_at": "2026-10-06T00:10:26.722178+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:26.722178+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Boy+Girl+Party&limit=8"
+    },
+    "jjamz": {
+      "name": "JJAMZ",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:33.634336+00:00",
+      "checked_at": "2026-10-06T00:10:33.634336+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:33.634336+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=JJAMZ&limit=8"
+    },
+    "lucy-the-cloud-parade": {
+      "name": "Lucy & The Cloud Parade",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:39.835582+00:00",
+      "checked_at": "2026-10-06T00:10:39.835582+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:39.835582+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lucy+%26+The+Cloud+Parade&limit=8"
+    },
+    "pandr-eyez": {
+      "name": "Pandr Eyez",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:45.293148+00:00",
+      "checked_at": "2026-10-06T00:10:45.293148+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:45.293148+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Pandr+Eyez&limit=8"
+    },
+    "roscoe": {
+      "name": "Roscoe",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:47.740992+00:00",
+      "checked_at": "2026-10-06T00:10:47.740992+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:47.740992+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Roscoe&limit=8"
+    },
+    "beatbeatbeat": {
+      "name": "BEAT!BEAT!BEAT!",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:50.432034+00:00",
+      "checked_at": "2026-10-06T00:10:50.432034+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:50.432034+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Beat+Beat+Beat&limit=8"
+    },
+    "champions": {
+      "name": "Champions",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:55.688693+00:00",
+      "checked_at": "2026-10-06T00:10:55.688693+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:55.688693+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Champions&limit=8"
+    },
+    "maps": {
+      "name": "Maps",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:10:59.199483+00:00",
+      "checked_at": "2026-10-06T00:10:59.199483+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:10:59.199483+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Maps&limit=8"
+    },
+    "no": {
+      "name": "No",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:02.737782+00:00",
+      "checked_at": "2026-10-06T00:11:02.737782+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:02.737782+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=No&limit=8"
+    },
+    "young-man": {
+      "name": "Young Man",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:04.110247+00:00",
+      "checked_at": "2026-10-06T00:11:04.110247+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:04.110247+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Young+Man&limit=8"
+    },
+    "alpaca-sports": {
+      "name": "Alpaca Sports",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:07.889842+00:00",
+      "checked_at": "2026-10-06T00:11:07.889842+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:07.889842+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Alpaca+Sports&limit=8"
+    },
+    "ephemerals": {
+      "name": "Ephemerals",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:11.753071+00:00",
+      "checked_at": "2026-10-06T00:11:11.753071+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:11.753071+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ephemerals&limit=8"
+    },
+    "mazes": {
+      "name": "Mazes",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:14.378464+00:00",
+      "checked_at": "2026-10-06T00:11:14.378464+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:14.378464+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mazes&limit=8"
+    },
+    "port-isla": {
+      "name": "Port Isla",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:16.945982+00:00",
+      "checked_at": "2026-10-06T00:11:16.945982+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:16.945982+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Port+Isla&limit=8"
+    },
+    "fairchild": {
+      "name": "FAIRCHILD",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:19.835142+00:00",
+      "checked_at": "2026-10-06T00:11:19.835142+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:19.835142+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=FAIRCHILD&limit=8"
+    },
+    "naive-thieves": {
+      "name": "Naive Thieves",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:22.498851+00:00",
+      "checked_at": "2026-10-06T00:11:22.498851+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:22.498851+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Naive+Thieves&limit=8"
+    },
+    "goldroom-ft-mammals": {
+      "name": "Goldroom Ft. Mammals",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:26.728886+00:00",
+      "checked_at": "2026-10-06T00:11:26.728886+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:26.728886+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Goldroom+Ft.+Mammals&limit=8"
+    },
+    "goldroom": {
+      "name": "Goldroom",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:27.917278+00:00",
+      "checked_at": "2026-10-06T00:11:27.917278+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:27.917278+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Goldroom&limit=8"
+    },
+    "mammals": {
+      "name": ". Mammals",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:31.629437+00:00",
+      "checked_at": "2026-10-06T00:11:31.629437+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:31.629437+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=.+Mammals&limit=8"
+    },
+    "heavenly-beat": {
+      "name": "Heavenly Beat",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:32.701876+00:00",
+      "checked_at": "2026-10-06T00:11:32.701876+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:32.701876+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Heavenly+Beat&limit=8"
+    },
+    "o-children": {
+      "name": "O. Children",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:35.245418+00:00",
+      "checked_at": "2026-10-06T00:11:35.245418+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:35.245418+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=O.+Children&limit=8"
+    },
+    "man-without-country": {
+      "name": "Man Without Country",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:38.138426+00:00",
+      "checked_at": "2026-10-06T00:11:38.138426+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:38.138426+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Man+Without+Country&limit=8"
+    },
+    "flint-eastwood": {
+      "name": "Flint Eastwood",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:42.066726+00:00",
+      "checked_at": "2026-10-06T00:11:42.066726+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:42.066726+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Flint+Eastwood&limit=8"
+    },
+    "magou-dakar-transit": {
+      "name": "Magou & Dakar Transit",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:44.807521+00:00",
+      "checked_at": "2026-10-06T00:11:44.807521+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:44.807521+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Magou+%26+Dakar+Transit&limit=8"
+    },
+    "tyla": {
+      "name": "Tyla",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:11:47.773091+00:00",
+      "checked_at": "2026-10-06T00:11:47.773091+00:00",
+      "musicbrainz_id": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
+      "canonical_name": "Tyla",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "",
+      "social": {},
+      "genre": "",
+      "bio_en": "Tyla Laura Seethal is a South African singer and songwriter. Dubbed the \"Queen of Popiano\", her musical style is characterised by a fusion of pop and amapiano.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Tyla_at_2026_Montreux_Jazz_Festival_8.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tyla",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "damien-jurado": {
+      "name": "Damien Jurado",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:11:51.062141+00:00",
+      "checked_at": "2026-10-06T00:11:51.062141+00:00",
+      "musicbrainz_id": "f4805b9d-68f8-438e-8f13-ec7bcb4c8581",
+      "canonical_name": "Damien Jurado",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.damienjurado.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/jurado.damien",
+        "twitter": "https://twitter.com/damienjurado",
+        "instagram": "https://www.instagram.com/damienjuradomusic/"
+      },
+      "genre": "indie folk",
+      "bio_en": "Damien Troy Jurado is an American singer-songwriter from Seattle, Washington, United States. Over the years, he has released albums on Sub Pop, Secretly Canadian, Loose, and is currently on his own label, Maraqopa Records.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Damien_Jurado-6_%2816587099722%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damien_Jurado",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "munch-munch": {
+      "name": "Munch Munch",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:53.891176+00:00",
+      "checked_at": "2026-10-06T00:11:53.891176+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:53.891176+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Munch+Munch&limit=8"
+    },
+    "the-draymin": {
+      "name": "The Draymin",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:57.085117+00:00",
+      "checked_at": "2026-10-06T00:11:57.085117+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:57.085117+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Draymin&limit=8"
+    },
+    "burning-hearts": {
+      "name": "Burning Hearts",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:11:59.941993+00:00",
+      "checked_at": "2026-10-06T00:11:59.941993+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:11:59.941993+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Burning+Hearts&limit=8"
+    },
+    "paws": {
+      "name": "Paws",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:03.008359+00:00",
+      "checked_at": "2026-10-06T00:12:03.008359+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:03.008359+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=PAWS&limit=8"
+    },
+    "frazey-ford": {
+      "name": "Frazey Ford",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:12:06.057994+00:00",
+      "checked_at": "2026-10-06T00:12:06.057994+00:00",
+      "musicbrainz_id": "c455e254-994c-40d3-a953-4ff6954c3557",
+      "canonical_name": "Frazey Ford",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://frazeyford.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/frazeyford",
+        "twitter": "https://twitter.com/frazeyford",
+        "instagram": ""
+      },
+      "genre": "americana",
+      "bio_en": "Frazey Obadiah Ford is a Canadian singer-songwriter and actress. She joined the Be Good Tanyas in their first year. Her solo debut Obadiah was released on Nettwerk on July 20, 2010.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Frazey_Ford_at_Hillside_Festival_2015_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frazey_Ford",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "the-hundreds-and-thousands": {
+      "name": "The Hundreds and Thousands",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:10.080845+00:00",
+      "checked_at": "2026-10-06T00:12:10.080845+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:10.080845+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Hundreds+and+Thousands&limit=8"
+    },
+    "young-stadium-club": {
+      "name": "Young Stadium Club",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:12.691502+00:00",
+      "checked_at": "2026-10-06T00:12:12.691502+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:12.691502+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Young+Stadium+Club&limit=8"
+    },
+    "chinawoman": {
+      "name": "Chinawoman",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:13.904765+00:00",
+      "checked_at": "2026-10-06T00:12:13.904765+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:13.904765+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Chinawoman&limit=8"
+    },
+    "haus": {
+      "name": "HAUS",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:16.589002+00:00",
+      "checked_at": "2026-10-06T00:12:16.589002+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:16.589002+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=HAUS&limit=8"
+    },
+    "cathedrals": {
+      "name": "Cathedrals",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:17.849171+00:00",
+      "checked_at": "2026-10-06T00:12:17.849171+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:17.849171+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Cathedrals&limit=8"
+    },
+    "talisco": {
+      "name": "Talisco",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:20.926997+00:00",
+      "checked_at": "2026-10-06T00:12:20.926997+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:20.926997+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Talisco&limit=8"
+    },
+    "paul-mcdonald-nikki-reed": {
+      "name": "Paul McDonald & Nikki Reed",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:23.632068+00:00",
+      "checked_at": "2026-10-06T00:12:23.632068+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:23.632068+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Paul+McDonald+%26+Nikki+Reed&limit=8"
+    },
+    "caleb-hawley": {
+      "name": "Caleb Hawley",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:25.015308+00:00",
+      "checked_at": "2026-10-06T00:12:25.015308+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:25.015308+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Caleb+Hawley&limit=8"
+    },
+    "slaves": {
+      "name": "Slaves",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:28.002552+00:00",
+      "checked_at": "2026-10-06T00:12:28.002552+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:28.002552+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Slaves&limit=8"
+    },
+    "public-access-tv": {
+      "name": "Public Access TV",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:32.034401+00:00",
+      "checked_at": "2026-10-06T00:12:32.034401+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:32.034401+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Public+Access+TV&limit=8"
+    },
+    "zibra": {
+      "name": "Zibra",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:32.897092+00:00",
+      "checked_at": "2026-10-06T00:12:32.897092+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:32.897092+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=ZIBRA&limit=8"
+    },
+    "outfit": {
+      "name": "Outfit",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:37.197207+00:00",
+      "checked_at": "2026-10-06T00:12:37.197207+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:37.197207+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Outfit&limit=8"
+    },
+    "as-elephants-are": {
+      "name": "As Elephants Are",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:39.215910+00:00",
+      "checked_at": "2026-10-06T00:12:39.215910+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:39.215910+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=As+Elephants+Are&limit=8"
+    },
+    "wavves-x-cloud-nothings": {
+      "name": "Wavves X Cloud Nothings",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:42.217552+00:00",
+      "checked_at": "2026-10-06T00:12:42.217552+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:42.217552+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Wavves+X+Cloud+Nothings&limit=8"
+    },
+    "orson": {
+      "name": "Orson",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:43.380050+00:00",
+      "checked_at": "2026-10-06T00:12:43.380050+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:43.380050+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Orson&limit=8"
+    },
+    "air-review": {
+      "name": "Air Review",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:44.681059+00:00",
+      "checked_at": "2026-10-06T00:12:44.681059+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:44.681059+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Air+Review&limit=8"
+    },
+    "lincoln-jesser": {
+      "name": "Lincoln Jesser",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:47.865179+00:00",
+      "checked_at": "2026-10-06T00:12:47.865179+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:47.865179+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lincoln+Jesser&limit=8"
+    },
+    "matthew-and-the-atlas": {
+      "name": "Matthew and the Atlas",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:50.693364+00:00",
+      "checked_at": "2026-10-06T00:12:50.693364+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:50.693364+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Matthew+and+the+Atlas&limit=8"
+    },
+    "errors": {
+      "name": "Errors",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:52.029181+00:00",
+      "checked_at": "2026-10-06T00:12:52.029181+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:52.029181+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Errors&limit=8"
+    },
+    "flyying-colours": {
+      "name": "Flyying Colours",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:54.639372+00:00",
+      "checked_at": "2026-10-06T00:12:54.639372+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:54.639372+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Flyying+Colours&limit=8"
+    },
+    "the-good-natured": {
+      "name": "The Good Natured",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:57.214233+00:00",
+      "checked_at": "2026-10-06T00:12:57.214233+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:57.214233+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Good+Natured&limit=8"
+    },
+    "devan-dubois": {
+      "name": "Devan DuBois",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:12:59.955653+00:00",
+      "checked_at": "2026-10-06T00:12:59.955653+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:12:59.955653+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Devan+DuBois&limit=8"
+    },
+    "peaches-feat-nick-zinner": {
+      "name": "Peaches feat. Nick Zinner",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:02.422399+00:00",
+      "checked_at": "2026-10-06T00:13:02.422399+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:02.422399+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Peaches+feat.+Nick+Zinner&limit=8"
+    },
+    "woods": {
+      "name": "Woods",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:03.661584+00:00",
+      "checked_at": "2026-10-06T00:13:03.661584+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:03.661584+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Woods&limit=8"
+    },
+    "afghan-whigs": {
+      "name": "Afghan Whigs",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:13:04.962476+00:00",
+      "checked_at": "2026-10-06T00:13:04.962476+00:00",
+      "musicbrainz_id": "2feb192c-2363-46d6-b476-1c88a25cb294",
+      "canonical_name": "The Afghan Whigs",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://theafghanwhigs.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/TheAfghanWhigsOfficial",
+        "twitter": "https://twitter.com/theafghanwhigs",
+        "instagram": "https://www.instagram.com/theafghanwhigs/"
+      },
+      "genre": "alternative rock",
+      "bio_en": "The Afghan Whigs are an American rock band from Cincinnati, Ohio. They were active from 1986 to 2001, reformed briefly in 2006 and again from 2011 to present.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Afghan_Whigs_-_Haldern_Pop_Festival_2017_-_Alexander_Kellner_-_5.jpg/3840px-The_Afghan_Whigs_-_Haldern_Pop_Festival_2017_-_Alexander_Kellner_-_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Afghan_Whigs",
+      "alias_suggestion": "The Afghan Whigs",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "miamigo": {
+      "name": "Miamigo",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:08.306806+00:00",
+      "checked_at": "2026-10-06T00:13:08.306806+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:08.306806+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Miamigo&limit=8"
+    },
+    "the-hundred-days": {
+      "name": "The Hundred Days",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:08.888625+00:00",
+      "checked_at": "2026-10-06T00:13:08.888625+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:08.888625+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Hundred+Days&limit=8"
+    },
+    "fever-the-ghost": {
+      "name": "Fever The Ghost",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:11.946040+00:00",
+      "checked_at": "2026-10-06T00:13:11.946040+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:11.946040+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Fever+the+Ghost&limit=8"
+    },
+    "boxed-wine": {
+      "name": "Boxed Wine",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:14.623141+00:00",
+      "checked_at": "2026-10-06T00:13:14.623141+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:14.623141+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Boxed+Wine&limit=8"
+    },
+    "ghost-culture": {
+      "name": "Ghost Culture",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:17.260614+00:00",
+      "checked_at": "2026-10-06T00:13:17.260614+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:17.260614+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ghost+Culture&limit=8"
+    },
+    "mauracher": {
+      "name": "Mauracher",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:20.124789+00:00",
+      "checked_at": "2026-10-06T00:13:20.124789+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:20.124789+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mauracher&limit=8"
+    },
+    "marlon-roudette": {
+      "name": "Marlon Roudette",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:13:22.602470+00:00",
+      "checked_at": "2026-10-06T00:13:22.602470+00:00",
+      "musicbrainz_id": "a1ac5cd2-d23f-4735-8cbb-fdb42eab2b70",
+      "canonical_name": "Marlon Roudette",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.marlonroudette.com/",
+      "social": {},
+      "genre": "pop",
+      "bio_en": "Marlon Roudette is an English singer, songwriter, and record producer. He is the former front man for the duo Mattafix who had their first number 1, \"Big City Life\", in 2006. After the group split, Roudette embarked on a solo career with two number one singles in Europe, \"New Age\" and \"When the Beat Drops Out\"; the latter made it to number 7 on the UK Singles Chart and is certified platinum. In recent years, he is also known for his co-writing work for artists, including Sinéad Harnett and his half-sister, Mabel. He co-wrote Mabel's hit singles \"Finders Keepers\" and \"Fine Line\", as well as the Not3s single \"My Lover\" and Jax Jones' hit \"Ring Ring\". He has also co-written tracks featuring Wiley, Tory Lanez, Kranium, Bad Gyal and Busy Signal.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Marlon_Roudette.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marlon_Roudette",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "lowell": {
+      "name": "Lowell",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:25.607812+00:00",
+      "checked_at": "2026-10-06T00:13:25.607812+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:25.607812+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lowell&limit=8"
+    },
+    "evil-arrows": {
+      "name": "Evil arrows",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:26.651763+00:00",
+      "checked_at": "2026-10-06T00:13:26.651763+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:26.651763+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Evil+Arrows&limit=8"
+    },
+    "big-big-love": {
+      "name": "Big Big Love",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:29.158378+00:00",
+      "checked_at": "2026-10-06T00:13:29.158378+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:29.158378+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Big+Love&limit=8"
+    },
+    "ayer": {
+      "name": "Ayer",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:31.841760+00:00",
+      "checked_at": "2026-10-06T00:13:31.841760+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:31.841760+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=AYER&limit=8"
+    },
+    "santogold-pharrel-williams-julian-casablancas": {
+      "name": "Santogold, Pharrel Williams & Julian Casablancas",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:34.383623+00:00",
+      "checked_at": "2026-10-06T00:13:34.383623+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:34.383623+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Santogold%2C+Pharrel+Williams+%26+Julian+Casablancas&limit=8"
+    },
+    "liam-bailey": {
+      "name": "Liam Bailey",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T00:13:35.632441+00:00",
+      "checked_at": "2026-10-06T00:13:35.632441+00:00",
+      "musicbrainz_id": "f0301343-059a-4f68-a0b0-c6c447680c8d",
+      "canonical_name": "Liam Bailey",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.liambaileymusic.co.uk/",
+      "social": {
+        "facebook": "https://www.facebook.com/liambaileymusic",
+        "twitter": "https://twitter.com/liambailey",
+        "instagram": "https://www.instagram.com/liambailey.music/"
+      },
+      "genre": "blues",
+      "bio_en": "Liam Bailey is an English singer-songwriter from Nottingham. He is noted for his soul, reggae, and blues-influenced vocal style.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Liam_Bailey_Rough_Trade_24_February_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "image_source": "Wikipedia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liam_Bailey",
+      "profile_status": "complete",
+      "status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "santigold-pharrel-williams-julian-casablancas": {
+      "name": "Santigold, Pharrel Williams & Julian Casablancas",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:38.736613+00:00",
+      "checked_at": "2026-10-06T00:13:38.736613+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:38.736613+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Santigold%2C+Pharrel+Williams+%26+Julian+Casablancas&limit=8"
+    },
+    "lief-hall": {
+      "name": "Lief Hall",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:39.600455+00:00",
+      "checked_at": "2026-10-06T00:13:39.600455+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:39.600455+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lief+Hall&limit=8"
+    },
+    "philipp-gorbachev": {
+      "name": "Philipp Gorbachev",
+      "verified": false,
+      "profile_checked_at": "2026-10-06T00:13:42.398285+00:00",
+      "checked_at": "2026-10-06T00:13:42.398285+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-10-06T06:13:42.398285+00:00",
+      "attempt_count": 1,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Philipp+Gorbachev&limit=8"
     }
   }
 }
