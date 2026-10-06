@@ -1,27 +1,64 @@
-name: Agencia Louder Command Processor
+name: Agencia Louder - Produccion IA
 on:
   issues:
     types: [opened, labeled]
-  workflow_dispatch:
 permissions:
   contents: read
   issues: write
+  models: read
+concurrency:
+  group: agencia-issue-${{ github.event.issue.number }}
+  cancel-in-progress: true
 jobs:
-  route:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'agencia-orden')
+  producir:
+    if: contains(github.event.issue.labels.*.name, 'agencia-orden')
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Route command
-        if: github.event_name == 'issues'
+      - uses: actions/checkout@v4
+
+      - name: Preparar contexto Louder
+        env:
+          ORDER_BODY: ${{ github.event.issue.body }}
+        run: |
+          python - <<'PY'
+          import os, urllib.request
+          def read(url):
+              try: return urllib.request.urlopen(url, timeout=20).read().decode("utf-8")
+              except Exception as e: return "FUENTE NO DISPONIBLE: "+str(e)
+          order=os.environ.get("ORDER_BODY","")
+          core=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/agencia/main/knowledge/louder-core.json")
+          eph=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/agencia/main/data/ephemerides.json")
+          radar=read("https://raw.githubusercontent.com/omaralejandronoriega-sudo/Louder/main/data/radar_2026.json")
+          prompt="""Eres el equipo real de produccion editorial de Louder. Ejecuta la orden, no expliques un plan.
+          Respeta el conocimiento Louder y evita lenguaje generico de IA.
+          No inventes noticias ni datos actuales: si no estan sustentados, marca REQUIERE VERIFICACION.
+          Para cada pieza entrega: titulo, responsable, colaboradores, investigacion/criterio, copy final separado por red,
+          brief visual o guion de video, redes, hora sugerida, fuentes/base usada, materiales que faltan y estado.
+          Una pieza NO esta LISTA si falta imagen, video, copy, revision o fuente.
+          Termina con una seccion AVISOS AL DIRECTOR: un aviso individual por trabajador que haya terminado una entrega.
+          Ninguna pieza queda autorizada para publicar: todas deben decir APROBACION OMAR: PENDIENTE.
+          
+          ORDEN:
+          """+order+"\n\nCONOCIMIENTO LOUDER:\n"+core[:30000]+"\n\nEFEMERIDES:\n"+eph[:30000]+"\n\nRADAR:\n"+radar[:25000]
+          open("/tmp/agencia-prompt.txt","w").write(prompt)
+          PY
+
+      - name: Ejecutar equipo editorial
+        id: ai
+        uses: actions/ai-inference@v2
+        with:
+          prompt-file: /tmp/agencia-prompt.txt
+          model: gpt-4.1
+          max-tokens: 7000
+
+      - name: Guardar entrega en expediente
         uses: actions/github-script@v7
+        env:
+          RESULT: ${{ steps.ai.outputs.response }}
         with:
           script: |
-            const issue = context.payload.issue;
-            const body = issue.body || '';
-            const who = (body.match(/Responsable:\s*(.+)/i)||[])[1] || 'Valeria Cruz';
-            const priority = (body.match(/Prioridad:\s*(.+)/i)||[])[1] || 'Normal';
-            await github.rest.issues.createComment({
-              ...context.repo, issue_number: issue.number,
-              body: '### Valeria Cruz (Directora editorial)\nOrden recibida y registrada.\n\n**Responsable inicial:** '+who+'\n**Prioridad:** '+priority+'\n**Estado:** Asignada'
-            });
-            await github.rest.issues.addLabels({...context.repo, issue_number: issue.number, labels:['agencia-asignada']});
+            const result=process.env.RESULT || 'INCIDENCIA: el ejecutor no devolvio contenido.';
+            const body='## Entrega del equipo Louder\n\n'+result+'\n\n---\n**Publicacion bloqueada:** requiere autorizacion manual de Omar en Agencia.';
+            await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:body.slice(0,65000)});
+            await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-produccion']});
