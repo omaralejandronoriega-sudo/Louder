@@ -54,14 +54,33 @@ jobs:
 
       - name: Ejecutar equipo editorial con Copilot
         id: ai
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           copilot -p "$(cat agencia-prompt.txt)" -s --no-ask-user --model gpt-4.1 > agencia-result.txt
           test -s agencia-result.txt
 
+      - name: Respaldo local sin API
+        if: steps.ai.outcome == 'failure'
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve >/tmp/ollama.log 2>&1 &
+          sleep 4
+          ollama pull qwen3:1.7b
+          python - <<'PY'
+          import json,urllib.request
+          prompt=open("agencia-prompt.txt").read()
+          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"options":{"temperature":0.25,"num_predict":5000}}).encode()
+          req=urllib.request.Request("http://127.0.0.1:11434/api/generate",data=body,headers={"Content-Type":"application/json"})
+          data=json.loads(urllib.request.urlopen(req,timeout=600).read())
+          out=data.get("response","").strip()
+          if not out: raise SystemExit("El motor local no devolvio contenido")
+          open("agencia-result.txt","w").write(out)
+          PY
+
       - name: Registrar incidencia del motor
-        if: failure()
+        if: failure() && !hashFiles('agencia-result.txt')
         uses: actions/github-script@v7
         with:
           script: |
@@ -69,7 +88,7 @@ jobs:
             await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-incidencia']});
 
       - name: Guardar entrega en expediente
-        if: success()
+        if: hashFiles('agencia-result.txt') != ''
         uses: actions/github-script@v7
         env:
           RESULT: ${{ steps.ai.outputs.response }}
