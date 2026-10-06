@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-06T00:13:45.022572+00:00",
+  "updated_at": "2026-10-06T06:31:26.571431+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -3685,10 +3685,10 @@
     },
     "big-deal": {
       "name": "Big Deal",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:15.564796+00:00",
-      "profile_checked_at": "2026-10-06T00:05:15.564796+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:11.191901+00:00",
+      "profile_checked_at": "2026-10-06T06:24:11.191901+00:00",
       "musicbrainz_id": "c3867418-f669-4952-9384-ce68ee04c5cd",
       "canonical_name": "Big Deal",
       "match_score": 100,
@@ -3704,19 +3704,18 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/620fee9970a21ee926c7360da861042a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:15.564796+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Deal&limit=8"
+      "next_retry_at": "2026-10-09T06:24:11.191901+00:00",
+      "attempt_count": 3
     },
     "post-war-years": {
       "name": "Post War Years",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:21.287579+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:14.282872+00:00",
       "musicbrainz_id": "eaf01524-f10e-4db7-90e1-ad5cc424eec5",
       "canonical_name": "Post War Years",
       "match_score": 100,
@@ -3732,20 +3731,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/da3488c1a49fffe8a9abc86c0170c1ea/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:21.287579+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:14.282872+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:21.287579+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Post+War+Years&limit=8"
+      "next_retry_at": "2026-10-09T06:24:14.282872+00:00",
+      "attempt_count": 3
     },
     "new-navy": {
       "name": "New Navy",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:28.317490+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:16.711927+00:00",
       "musicbrainz_id": "367f0aa0-d84d-4a6c-a516-dbed44a5bc67",
       "canonical_name": "New Navy",
       "match_score": 100,
@@ -3761,14 +3759,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/19e7abb3392a117e6994af98b236202e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:28.317490+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:16.711927+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:28.317490+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=New+Navy&limit=8"
+      "next_retry_at": "2026-10-09T06:24:16.711927+00:00",
+      "attempt_count": 3
     },
     "mitski": {
       "name": "Mitski",
@@ -3819,9 +3816,9 @@
     },
     "big-fear": {
       "name": "Big Fear",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:32.143368+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:18.745886+00:00",
       "musicbrainz_id": "3846c440-8cfb-4253-a638-49a9089dfc73",
       "canonical_name": "Big Fear",
       "match_score": 100,
@@ -3837,20 +3834,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8c3674d7b6925712adac77f78bed940a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:32.143368+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:18.745886+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:32.143368+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Fear&limit=8"
+      "next_retry_at": "2026-10-09T06:24:18.745886+00:00",
+      "attempt_count": 3
     },
     "radio-free-alice": {
       "name": "Radio Free Alice",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:35.638308+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:21.614977+00:00",
       "musicbrainz_id": "8af999e2-b2f7-4095-af72-ba91b2683a16",
       "canonical_name": "Radio Free Alice",
       "match_score": 100,
@@ -3866,20 +3862,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/23979d9d73fbf69665c9eabec286e10f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:35.638308+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:21.614977+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:35.638308+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Radio+Free+Alice&limit=8"
+      "next_retry_at": "2026-10-09T06:24:21.614977+00:00",
+      "attempt_count": 3
     },
     "saint-clair": {
       "name": "Saint Clair",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:41.127049+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:24.219969+00:00",
       "musicbrainz_id": "bd20539c-8de5-45a4-939c-bd4b13e3d0c5",
       "canonical_name": "Saint Clair",
       "match_score": 100,
@@ -3895,14 +3890,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/11072090fcd89e560044efdd54a35bfe/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:41.127049+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:24.219969+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:41.127049+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Saint+Clair&limit=8"
+      "next_retry_at": "2026-10-09T06:24:24.219969+00:00",
+      "attempt_count": 3
     },
     "sophie-cates": {
       "name": "Sophie Cates",
@@ -3932,9 +3926,9 @@
     },
     "sports": {
       "name": "Sports",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:44.019513+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:27.171631+00:00",
       "musicbrainz_id": "2338cede-17d7-40ef-9ea1-a16416908eeb",
       "canonical_name": "Sports",
       "match_score": 92,
@@ -3947,23 +3941,22 @@
       },
       "genre": "indie rock",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/a6d1477644c128dc332bece109af37c1/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ac24e341d0556b34aeccd759d07d37cd/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:44.019513+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:27.171631+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:44.019513+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Sports&limit=8"
+      "next_retry_at": "2026-10-09T06:24:27.171631+00:00",
+      "attempt_count": 3
     },
     "georgia-gets-by": {
       "name": "Georgia Gets By",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:46.758224+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:29.147583+00:00",
       "musicbrainz_id": "cb1db28d-6618-40fe-bf29-32b694964ff0",
       "canonical_name": "Georgia Gets By",
       "match_score": 100,
@@ -3979,20 +3972,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6532c729b0efa3c5272e6bf2371aff84/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:46.758224+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:29.147583+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:46.758224+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Georgia+Gets+By&limit=8"
+      "next_retry_at": "2026-10-09T06:24:29.147583+00:00",
+      "attempt_count": 3
     },
     "gurriers": {
       "name": "Gurriers",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:49.433502+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:32.009528+00:00",
       "musicbrainz_id": "b3e28883-d118-4180-b458-568a18bc239d",
       "canonical_name": "Gurriers",
       "match_score": 100,
@@ -4008,20 +4000,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/faec998e2ded51932ca8266b03c3a474/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:49.433502+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:32.009528+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:49.433502+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Gurriers&limit=8"
+      "next_retry_at": "2026-10-09T06:24:32.009528+00:00",
+      "attempt_count": 3
     },
     "khai-dreams": {
       "name": "khai dreams",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:51.981843+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:34.676190+00:00",
       "musicbrainz_id": "ca0cc3c4-924f-4755-a7d4-a7b260ce34da",
       "canonical_name": "khai dreams",
       "match_score": 100,
@@ -4037,24 +4028,23 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7e89438b6e9c22377286e802fb92bc21/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:51.981843+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:34.676190+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:51.981843+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=khai+dreams&limit=8"
+      "next_retry_at": "2026-10-09T06:24:34.676190+00:00",
+      "attempt_count": 3
     },
     "this-is-lorelei": {
       "name": "This Is Lorelei",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:54.676650+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:37.183473+00:00",
       "musicbrainz_id": "a2d140d8-ae17-4d72-b680-b89c77f1ed52",
       "canonical_name": "This Is Lorelei",
       "match_score": 100,
-      "verification_source": "Deezer exact artist match",
+      "verification_source": "MusicBrainz",
       "official_url": "https://thisislorelei.com/",
       "social": {
         "facebook": "",
@@ -4066,20 +4056,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e7a1ebe7fe5cd7654ae73b4f8775bddf/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:54.676650+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:37.183473+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:54.676650+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=This+Is+Lorelei&limit=8"
+      "next_retry_at": "2026-10-09T06:24:37.183473+00:00",
+      "attempt_count": 3
     },
     "mercy-kelly": {
       "name": "Mercy Kelly",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:57.410536+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:39.348307+00:00",
       "musicbrainz_id": "131218aa-e248-496b-96d9-14284cd371ce",
       "canonical_name": "Mercy Kelly",
       "match_score": 100,
@@ -4095,20 +4084,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ccc2b16680fd775c9468820390dd2ad4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:57.410536+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:39.348307+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:57.410536+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mercy+Kelly&limit=8"
+      "next_retry_at": "2026-10-09T06:24:39.348307+00:00",
+      "attempt_count": 3
     },
     "swiims": {
       "name": "SWiiMS",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:05:58.703585+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:42.381939+00:00",
       "musicbrainz_id": "a271dede-fa9e-4df9-ba58-b5c1884accf9",
       "canonical_name": "SWiiMS",
       "match_score": 100,
@@ -4124,20 +4112,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/a1642410d2f27a209ae26b937ae567cc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:05:58.703585+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:42.381939+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:05:58.703585+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=SWiiMS&limit=8"
+      "next_retry_at": "2026-10-09T06:24:42.381939+00:00",
+      "attempt_count": 3
     },
     "catastrophe-cure": {
       "name": "Catastrophe & Cure",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:02.529564+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:44.922184+00:00",
       "musicbrainz_id": "a9bbe9f3-aa1e-4e0b-9193-a63596f6d333",
       "canonical_name": "Catastrophe & Cure",
       "match_score": 100,
@@ -4153,24 +4140,23 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/74cfe16eac3612c00586e38ae82e56f2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:02.529564+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:44.922184+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:02.529564+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Catastrophe+%26+Cure&limit=8"
+      "next_retry_at": "2026-10-09T06:24:44.922184+00:00",
+      "attempt_count": 3
     },
     "company-ink": {
       "name": "Company Ink",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:06.379722+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:47.391650+00:00",
       "musicbrainz_id": "1ec13be8-aa27-416b-8c8b-3f0498d3344f",
       "canonical_name": "Company Ink",
       "match_score": 100,
-      "verification_source": "Deezer exact artist match",
+      "verification_source": "MusicBrainz",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -4182,20 +4168,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/42df188afb544c1f68aa8fa88fb89e3a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:06.379722+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:47.391650+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:06.379722+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Company+Ink&limit=8"
+      "next_retry_at": "2026-10-09T06:24:47.391650+00:00",
+      "attempt_count": 3
     },
     "cruush": {
       "name": "Cruush",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:07.655659+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:49.856437+00:00",
       "musicbrainz_id": "435365b9-2a50-41e6-9611-e44b0eebbcda",
       "canonical_name": "Cruush",
       "match_score": 100,
@@ -4211,20 +4196,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/392882bbc3014abaa27d92b62f54a127/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:07.655659+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:49.856437+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:07.655659+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Cruush&limit=8"
+      "next_retry_at": "2026-10-09T06:24:49.856437+00:00",
+      "attempt_count": 3
     },
     "grazer": {
       "name": "Grazer",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:10.318073+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:52.200841+00:00",
       "musicbrainz_id": "77a85d58-875c-46de-b5bf-0239d1ae4584",
       "canonical_name": "Grazer",
       "match_score": 100,
@@ -4240,14 +4224,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/5b9a77659d7cd812cd837edf1e7feadc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:10.318073+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:52.200841+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:10.318073+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Grazer&limit=8"
+      "next_retry_at": "2026-10-09T06:24:52.200841+00:00",
+      "attempt_count": 3
     },
     "jay-som-soft-glas": {
       "name": "Jay Som, Soft Glas",
@@ -4276,9 +4259,9 @@
     },
     "slow-quit": {
       "name": "slow quit",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:12.943498+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:54.719300+00:00",
       "musicbrainz_id": "3e307695-6de1-4630-8fb4-cad1b6b95462",
       "canonical_name": "Slow Quit",
       "match_score": 100,
@@ -4294,20 +4277,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/fbb3ee69b2a8f3a1af8e78b42b9477fb/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:12.943498+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:54.719300+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:12.943498+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Slow+Quit&limit=8"
+      "next_retry_at": "2026-10-09T06:24:54.719300+00:00",
+      "attempt_count": 3
     },
     "wait-what-did-you-say": {
       "name": "Wait What Did You Say?",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:16.435294+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:57.253890+00:00",
       "musicbrainz_id": "a47d9f79-6103-4bbd-b231-036fc7deb0cf",
       "canonical_name": "Wait, What Did You Say?",
       "match_score": 100,
@@ -4323,20 +4305,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7c44c59d3d44a2a4884ee465555d919a/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:16.435294+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:57.253890+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:16.435294+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Wait%2C+What+Did+You+Say%3F&limit=8"
+      "next_retry_at": "2026-10-09T06:24:57.253890+00:00",
+      "attempt_count": 3
     },
     "callum-pitt": {
       "name": "Callum Pitt",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:19.987453+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:24:59.765498+00:00",
       "musicbrainz_id": "bd8aa299-a8e8-44e1-9174-3231299c55ed",
       "canonical_name": "Callum Pitt",
       "match_score": 100,
@@ -4352,20 +4333,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1c7853bdd1451e4c619ee4955cc62d79/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:19.987453+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:24:59.765498+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:19.987453+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Callum+Pitt&limit=8"
+      "next_retry_at": "2026-10-09T06:24:59.765498+00:00",
+      "attempt_count": 3
     },
     "chai-khat": {
       "name": "Chai Khat",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:23.443175+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:02.200352+00:00",
       "musicbrainz_id": "061eeec7-47be-41ae-b042-032ceeae724c",
       "canonical_name": "Chai Khat",
       "match_score": 100,
@@ -4381,14 +4361,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8d3d301ec24e1f3d1231241533e62390/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:23.443175+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:02.200352+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:23.443175+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Chai+Khat&limit=8"
+      "next_retry_at": "2026-10-09T06:25:02.200352+00:00",
+      "attempt_count": 3
     },
     "cheetah-nia-archives": {
       "name": "Cheetah, Nia Archives",
@@ -4417,9 +4396,9 @@
     },
     "feet": {
       "name": "FEET",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:26.126773+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:04.780980+00:00",
       "musicbrainz_id": "e9e02b3f-67d1-42de-9fd4-ef351da13aca",
       "canonical_name": "FEET",
       "match_score": 90,
@@ -4435,20 +4414,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6384ae852dd232a8666777cb5e560caa/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:26.126773+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:04.780980+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:26.126773+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=FEET&limit=8"
+      "next_retry_at": "2026-10-09T06:25:04.780980+00:00",
+      "attempt_count": 3
     },
     "naina": {
       "name": "Naina",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:28.770579+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:07.115330+00:00",
       "musicbrainz_id": "9fde63c4-41a5-44ba-82ce-b747be6a6599",
       "canonical_name": "NAINA",
       "match_score": 100,
@@ -4464,20 +4442,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/941b50a13d57a0ce39115e534d224c59/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:28.770579+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:07.115330+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:28.770579+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=NAINA&limit=8"
+      "next_retry_at": "2026-10-09T06:25:07.115330+00:00",
+      "attempt_count": 3
     },
     "polyverso": {
       "name": "Polyverso",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:31.829656+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:09.705559+00:00",
       "musicbrainz_id": "c52242a7-0509-441b-9a03-1a48b512dab6",
       "canonical_name": "Polyverso",
       "match_score": 100,
@@ -4493,14 +4470,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/64d738a9adf604fe11034a0dedd3876b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:31.829656+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:09.705559+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:31.829656+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Polyverso&limit=8"
+      "next_retry_at": "2026-10-09T06:25:09.705559+00:00",
+      "attempt_count": 3
     },
     "ronnie-stone-healng": {
       "name": "Ronnie Stone, Healng",
@@ -4530,9 +4506,9 @@
     },
     "the-hails": {
       "name": "The Hails",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:34.929329+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:12.255580+00:00",
       "musicbrainz_id": "f0cc2b82-e502-4eef-b113-f8deb4a2a3ea",
       "canonical_name": "The Hails",
       "match_score": 100,
@@ -4548,14 +4524,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b2a5cf2fd138da1da4ed2a759974b58f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:34.929329+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:12.255580+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:34.929329+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Hails&limit=8"
+      "next_retry_at": "2026-10-09T06:25:12.255580+00:00",
+      "attempt_count": 3
     },
     "family-stereo": {
       "name": "Family Stereo",
@@ -4716,9 +4691,9 @@
     },
     "mashmellow": {
       "name": "Mashmellow",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:37.829442+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:14.872434+00:00",
       "musicbrainz_id": "167f4b57-1741-4082-b4b1-801fdfe6d1c9",
       "canonical_name": "Mashmellow",
       "match_score": 100,
@@ -4734,21 +4709,20 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6341e3a377371c008bb3fdf9bb5c83da/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:37.829442+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:14.872434+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:37.829442+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mashmellow&limit=8"
+      "next_retry_at": "2026-10-09T06:25:14.872434+00:00",
+      "attempt_count": 3
     },
     "colour-tongues": {
       "name": "Colour Tongues",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:41.547567+00:00",
-      "profile_checked_at": "2026-10-06T00:06:41.547567+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:17.170281+00:00",
+      "profile_checked_at": "2026-10-06T06:25:17.170281+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Colour Tongues",
       "match_score": 0,
@@ -4760,19 +4734,18 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/9d92be30f8e7ee6e73b4541194db24d6/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:41.547567+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Colour+Tongues&limit=8"
+      "next_retry_at": "2026-10-09T06:25:17.170281+00:00",
+      "attempt_count": 3
     },
     "peli-gene": {
       "name": "Peli Gene",
-      "verified": false,
-      "status": "retry",
-      "checked_at": "2026-10-06T00:06:42.931394+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-10-06T06:25:18.559377+00:00",
       "musicbrainz_id": "018ee55d-2ac2-47c1-8946-2c7c342dd979",
       "canonical_name": "Peli Gene",
       "match_score": 100,
@@ -4788,14 +4761,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/368c91a1c0714f906e0835d558c36675/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-10-06T00:06:42.931394+00:00",
-      "profile_status": "retry",
+      "profile_checked_at": "2026-10-06T06:25:18.559377+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:42.931394+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Peli+Gene&limit=8"
+      "next_retry_at": "2026-10-09T06:25:18.559377+00:00",
+      "attempt_count": 3
     },
     "i-jordan-ashwarya": {
       "name": "I. JORDAN, ASHWARYA",
@@ -11110,9 +11082,9 @@
     },
     "tablefox": {
       "name": "Tablefox",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:45.402821+00:00",
-      "checked_at": "2026-10-06T00:06:45.402821+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:21.234830+00:00",
+      "checked_at": "2026-10-06T06:25:21.234830+00:00",
       "musicbrainz_id": "d8fdf6e7-9f0c-4f79-b27c-4edee95d24f2",
       "canonical_name": "Tablefox",
       "match_score": 100,
@@ -11124,20 +11096,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e83813e89839143576008b4fb8e30597/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:45.402821+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tablefox&limit=8"
+      "next_retry_at": "2026-10-09T06:25:21.234830+00:00",
+      "attempt_count": 3
     },
     "rosa-damask": {
       "name": "Rosa Damask",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:48.518846+00:00",
-      "checked_at": "2026-10-06T00:06:48.518846+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:23.768718+00:00",
+      "checked_at": "2026-10-06T06:25:23.768718+00:00",
       "musicbrainz_id": "f86ffd06-e66b-4c0c-a315-191c41c182ca",
       "canonical_name": "Rosa Damask",
       "match_score": 100,
@@ -11153,14 +11124,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:48.518846+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Rosa+Damask&limit=8"
+      "next_retry_at": "2026-10-09T06:25:23.768718+00:00",
+      "attempt_count": 3
     },
     "damon-albarn-grian-chatten-kae-tempest-war-child-records": {
       "name": "Damon Albarn, Grian Chatten, Kae Tempest, War Child Records",
@@ -11189,34 +11159,37 @@
     },
     "tourists": {
       "name": "Tourists",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:49.881383+00:00",
-      "checked_at": "2026-10-06T00:06:49.881383+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:26.109806+00:00",
+      "checked_at": "2026-10-06T06:25:26.109806+00:00",
+      "musicbrainz_id": "18c89aea-883a-42db-b471-35d4f7b79e32",
       "canonical_name": "Tourists",
-      "match_score": 0,
-      "verification_source": "Deezer exact artist match",
-      "official_url": "",
-      "social": {},
+      "match_score": 97,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.touristsband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/touristsband",
+        "twitter": "https://twitter.com/touristsuk",
+        "instagram": ""
+      },
       "genre": "",
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/808d6eaa59ab6c4f5c610659e68d8a86/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:49.881383+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tourists&limit=8"
+      "next_retry_at": "2026-10-09T06:25:26.109806+00:00",
+      "attempt_count": 3
     },
     "hallows": {
       "name": "Hallows",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:52.631137+00:00",
-      "checked_at": "2026-10-06T00:06:52.631137+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:29.503424+00:00",
+      "checked_at": "2026-10-06T06:25:29.503424+00:00",
       "musicbrainz_id": "d77d72f2-02f2-4ff0-8751-50dcc20a546a",
       "canonical_name": "Hallows",
       "match_score": 100,
@@ -11232,20 +11205,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/45f9238ad28475c5aa90308abd2bd449/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:52.631137+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Hallows&limit=8"
+      "next_retry_at": "2026-10-09T06:25:29.503424+00:00",
+      "attempt_count": 3
     },
     "the-undercover-dream-lovers": {
       "name": "The Undercover Dream Lovers",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:53.844507+00:00",
-      "checked_at": "2026-10-06T00:06:53.844507+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:32.017753+00:00",
+      "checked_at": "2026-10-06T06:25:32.017753+00:00",
       "musicbrainz_id": "6487f9be-6802-467a-9f17-7d0900ae5660",
       "canonical_name": "The Undercover Dream Lovers",
       "match_score": 100,
@@ -11261,20 +11233,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/e34d2aca3c7b92d104e629b2088e0a62/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:53.844507+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Undercover+Dream+Lovers&limit=8"
+      "next_retry_at": "2026-10-09T06:25:32.017753+00:00",
+      "attempt_count": 3
     },
     "darkroom-data": {
       "name": "Darkroom Data",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:56.593356+00:00",
-      "checked_at": "2026-10-06T00:06:56.593356+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:34.567542+00:00",
+      "checked_at": "2026-10-06T06:25:34.567542+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Darkroom Data",
       "match_score": 0,
@@ -11286,20 +11257,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c244eee728b363d2f2654af8ff53051d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:56.593356+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Darkroom+Data&limit=8"
+      "next_retry_at": "2026-10-09T06:25:34.567542+00:00",
+      "attempt_count": 3
     },
     "bikini-fatal": {
       "name": "Bikini Fatal",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:57.977784+00:00",
-      "checked_at": "2026-10-06T00:06:57.977784+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:35.852513+00:00",
+      "checked_at": "2026-10-06T06:25:35.852513+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Bikini Fatal",
       "match_score": 0,
@@ -11311,14 +11281,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0c9b7b779b61d737f6ef940f0d22c011/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:57.977784+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Bikini+Fatal&limit=8"
+      "next_retry_at": "2026-10-09T06:25:35.852513+00:00",
+      "attempt_count": 3
     },
     "waves-crashing-beatrix-sky": {
       "name": "Waves Crashing, Beatrix Sky",
@@ -11348,9 +11317,9 @@
     },
     "wingtips": {
       "name": "WINGTIPS",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:06:59.187050+00:00",
-      "checked_at": "2026-10-06T00:06:59.187050+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:36.977939+00:00",
+      "checked_at": "2026-10-06T06:25:36.977939+00:00",
       "musicbrainz_id": "0d6ba8ae-2c2c-4f01-bd56-a3971bfcfc03",
       "canonical_name": "Wingtips",
       "match_score": 100,
@@ -11366,14 +11335,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/da1e033ff837d773d2552ce9fe5a48f8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:06:59.187050+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Wingtips&limit=8"
+      "next_retry_at": "2026-10-09T06:25:36.977939+00:00",
+      "attempt_count": 3
     },
     "c-y-m-day-wave": {
       "name": "C.Y.M., Day Wave",
@@ -11402,13 +11370,13 @@
     },
     "still-ruins": {
       "name": "Still Ruins",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:02.041021+00:00",
-      "checked_at": "2026-10-06T00:07:02.041021+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:39.028000+00:00",
+      "checked_at": "2026-10-06T06:25:39.028000+00:00",
+      "musicbrainz_id": "a0082a61-7d2a-448e-bde9-2b1ef547d883",
       "canonical_name": "Still Ruins",
-      "match_score": 0,
-      "verification_source": "Deezer exact artist match",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
       "official_url": "",
       "social": {},
       "genre": "",
@@ -11416,20 +11384,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c8b0a6eb8f7dbe1fef26287ce059bbf3/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:02.041021+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Still+Ruins&limit=8"
+      "next_retry_at": "2026-10-09T06:25:39.028000+00:00",
+      "attempt_count": 3
     },
     "kindest-cuts": {
       "name": "Kindest Cuts",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:05.120642+00:00",
-      "checked_at": "2026-10-06T00:07:05.120642+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:41.969414+00:00",
+      "checked_at": "2026-10-06T06:25:41.969414+00:00",
       "musicbrainz_id": "062d00e7-4795-4f86-a225-b94ca8a51ff4",
       "canonical_name": "Kindest Cuts",
       "match_score": 100,
@@ -11445,14 +11412,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/20a81a193f7e4617114fed8a434bcccd/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:05.120642+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kindest+Cuts&limit=8"
+      "next_retry_at": "2026-10-09T06:25:41.969414+00:00",
+      "attempt_count": 3
     },
     "nite-rosegarden-funeral-party": {
       "name": "NiTE, Rosegarden Funeral Party",
@@ -11482,34 +11448,37 @@
     },
     "lynks": {
       "name": "Lynks",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:08.890527+00:00",
-      "checked_at": "2026-10-06T00:07:08.890527+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:44.410496+00:00",
+      "checked_at": "2026-10-06T06:25:44.410496+00:00",
+      "musicbrainz_id": "d51a314e-e09e-45a7-a1fe-b45fabf78804",
       "canonical_name": "Lynks",
-      "match_score": 0,
-      "verification_source": "Deezer exact artist match",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
       "official_url": "",
-      "social": {},
-      "genre": "",
+      "social": {
+        "facebook": "https://www.facebook.com/lynkslynkslynkslynks",
+        "twitter": "https://twitter.com/LynksLynksLynks",
+        "instagram": "https://www.instagram.com/lynkslynkslynks/"
+      },
+      "genre": "electropunk",
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:08.890527+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lynks&limit=8"
+      "next_retry_at": "2026-10-09T06:25:44.410496+00:00",
+      "attempt_count": 3
     },
     "nnhmn": {
       "name": "NNHMN",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:12.664033+00:00",
-      "checked_at": "2026-10-06T00:07:12.664033+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:46.550512+00:00",
+      "checked_at": "2026-10-06T06:25:46.550512+00:00",
       "musicbrainz_id": "c06fa245-39c4-416d-8faa-6044353e9fae",
       "canonical_name": "NNHMN",
       "match_score": 100,
@@ -11525,20 +11494,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/41753e0dedf5be3d4debfe9cacbdc6b2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:12.664033+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=NNHMN&limit=8"
+      "next_retry_at": "2026-10-09T06:25:46.550512+00:00",
+      "attempt_count": 3
     },
     "mrm": {
       "name": "M!R!M",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:16.277835+00:00",
-      "checked_at": "2026-10-06T00:07:16.277835+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:49.397447+00:00",
+      "checked_at": "2026-10-06T06:25:49.397447+00:00",
       "musicbrainz_id": "91858562-9d12-48af-8970-45ab0eb45e83",
       "canonical_name": "M!R!M",
       "match_score": 100,
@@ -11554,14 +11522,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/40c8fe4e4b8e0110b756b2083a899117/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:16.277835+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=M%21R%21M&limit=8"
+      "next_retry_at": "2026-10-09T06:25:49.397447+00:00",
+      "attempt_count": 3
     },
     "olan-monk-maria-somerville": {
       "name": "Olan Monk, Maria Somerville",
@@ -11591,9 +11558,9 @@
     },
     "tsaffire": {
       "name": "Tsaffire",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:19.434735+00:00",
-      "checked_at": "2026-10-06T00:07:19.434735+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:52.223047+00:00",
+      "checked_at": "2026-10-06T06:25:52.223047+00:00",
       "musicbrainz_id": "d9912887-f818-426b-bb6c-f9f79f3bf58d",
       "canonical_name": "Tsaffire",
       "match_score": 100,
@@ -11605,20 +11572,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/41a348d2079dd2b0f124e752358d3b0b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:19.434735+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tsaffire&limit=8"
+      "next_retry_at": "2026-10-09T06:25:52.223047+00:00",
+      "attempt_count": 3
     },
     "silque": {
       "name": "Silque",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:22.649890+00:00",
-      "checked_at": "2026-10-06T00:07:22.649890+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:54.571525+00:00",
+      "checked_at": "2026-10-06T06:25:54.571525+00:00",
       "musicbrainz_id": "af705f03-42fe-4037-9f6b-3dff609810cb",
       "canonical_name": "Silque",
       "match_score": 100,
@@ -11634,20 +11600,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c23a2a6ddf4f9d08b63c3fe559d07889/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:22.649890+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Silque&limit=8"
+      "next_retry_at": "2026-10-09T06:25:54.571525+00:00",
+      "attempt_count": 3
     },
     "kidsmoke": {
       "name": "(Kidsmoke)",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:23.896286+00:00",
-      "checked_at": "2026-10-06T00:07:23.896286+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:57.188827+00:00",
+      "checked_at": "2026-10-06T06:25:57.188827+00:00",
       "musicbrainz_id": "5bfa3343-5a3a-467d-ba93-62f85a473502",
       "canonical_name": "Kidsmoke",
       "match_score": 100,
@@ -11663,20 +11628,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d46fba40fe33d37c3b44e0b9f0ed6a9d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:23.896286+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kidsmoke&limit=8"
+      "next_retry_at": "2026-10-09T06:25:57.188827+00:00",
+      "attempt_count": 3
     },
     "color-palette": {
       "name": "Color Palette",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:27.123862+00:00",
-      "checked_at": "2026-10-06T00:07:27.123862+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:25:59.529085+00:00",
+      "checked_at": "2026-10-06T06:25:59.529085+00:00",
       "musicbrainz_id": "c22975ec-f886-42ea-a2f1-f84b0e6ae778",
       "canonical_name": "Color Palette",
       "match_score": 100,
@@ -11692,20 +11656,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/4cd90ac3e2a36b89e76c9e523738b7f8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:27.123862+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Color+Palette&limit=8"
+      "next_retry_at": "2026-10-09T06:25:59.529085+00:00",
+      "attempt_count": 3
     },
     "awfultune": {
       "name": "awfultune",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:30.197649+00:00",
-      "checked_at": "2026-10-06T00:07:30.197649+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:02.139379+00:00",
+      "checked_at": "2026-10-06T06:26:02.139379+00:00",
       "musicbrainz_id": "b0979956-e40d-4a35-89b1-124af2288354",
       "canonical_name": "awfultune",
       "match_score": 100,
@@ -11721,20 +11684,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ee5ce2c1fa5512da385763127c57b902/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:30.197649+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=awfultune&limit=8"
+      "next_retry_at": "2026-10-09T06:26:02.139379+00:00",
+      "attempt_count": 3
     },
     "automatic": {
       "name": "Automatic",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:33.157324+00:00",
-      "checked_at": "2026-10-06T00:07:33.157324+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:04.590919+00:00",
+      "checked_at": "2026-10-06T06:26:04.590919+00:00",
       "musicbrainz_id": "9b627d78-b041-4b23-bb70-3534e61afc7e",
       "canonical_name": "Automatic",
       "match_score": 100,
@@ -11750,20 +11712,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/349ba353032a6f0a8ed597d422cf54ee/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:33.157324+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Automatic&limit=8"
+      "next_retry_at": "2026-10-09T06:26:04.590919+00:00",
+      "attempt_count": 3
     },
     "ebbb": {
       "name": "Ebbb",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:36.663275+00:00",
-      "checked_at": "2026-10-06T00:07:36.663275+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:07.322406+00:00",
+      "checked_at": "2026-10-06T06:26:07.322406+00:00",
       "musicbrainz_id": "efaf62b6-0f94-4a1b-a82a-dc386a7fd947",
       "canonical_name": "Ebbb",
       "match_score": 100,
@@ -11779,14 +11740,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8ee8251091ba497d057de3bc590bfa2d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:36.663275+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ebbb&limit=8"
+      "next_retry_at": "2026-10-09T06:26:07.322406+00:00",
+      "attempt_count": 3
     },
     "sam-fender-olivia-dean": {
       "name": "Sam Fender, Olivia Dean",
@@ -11815,9 +11775,9 @@
     },
     "b7lanket": {
       "name": "b7lanket",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:40.391109+00:00",
-      "checked_at": "2026-10-06T00:07:40.391109+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:09.881848+00:00",
+      "checked_at": "2026-10-06T06:26:09.881848+00:00",
       "musicbrainz_id": "57c20dbb-fc15-4f31-a666-b75292ba9177",
       "canonical_name": "b7lanket",
       "match_score": 100,
@@ -11829,20 +11789,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1c93390f3da7026dd3f966433a21ffff/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:40.391109+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=b7lanket&limit=8"
+      "next_retry_at": "2026-10-09T06:26:09.881848+00:00",
+      "attempt_count": 3
     },
     "don-leisure": {
       "name": "Don Leisure",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:45.508521+00:00",
-      "checked_at": "2026-10-06T00:07:45.508521+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:12.083498+00:00",
+      "checked_at": "2026-10-06T06:26:12.083498+00:00",
       "musicbrainz_id": "5e718d3a-d54b-44d8-a475-2f1dc7ddca05",
       "canonical_name": "Don Leisure",
       "match_score": 100,
@@ -11854,20 +11813,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/85fef73ac08bc262c3cb2e424d67ec85/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:45.508521+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Don+Leisure&limit=8"
+      "next_retry_at": "2026-10-09T06:26:12.083498+00:00",
+      "attempt_count": 3
     },
     "honeymoan": {
       "name": "HONEYMOAN",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:48.320555+00:00",
-      "checked_at": "2026-10-06T00:07:48.320555+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:14.865444+00:00",
+      "checked_at": "2026-10-06T06:26:14.865444+00:00",
       "musicbrainz_id": "ec07a6c0-e79c-4e33-a6ed-e50477cb3698",
       "canonical_name": "HONEYMOAN",
       "match_score": 100,
@@ -11883,20 +11841,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/78445037b1612e2cf757bfbb80e1d1f7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:48.320555+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=HONEYMOAN&limit=8"
+      "next_retry_at": "2026-10-09T06:26:14.865444+00:00",
+      "attempt_count": 3
     },
     "argonaut-wasp": {
       "name": "Argonaut & Wasp",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:51.942574+00:00",
-      "checked_at": "2026-10-06T00:07:51.942574+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:17.254945+00:00",
+      "checked_at": "2026-10-06T06:26:17.254945+00:00",
       "musicbrainz_id": "a0f0f532-df75-4ab4-bb86-f279e3b541bb",
       "canonical_name": "Argonaut & Wasp",
       "match_score": 100,
@@ -11912,14 +11869,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c8e85745251fd46f2c9dcf230add2537/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:51.942574+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Argonaut+%26+Wasp&limit=8"
+      "next_retry_at": "2026-10-09T06:26:17.254945+00:00",
+      "attempt_count": 3
     },
     "dev-lemons": {
       "name": "Dev Lemons",
@@ -11949,13 +11905,13 @@
     },
     "oskar-haag": {
       "name": "Oskar Haag",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:54.783999+00:00",
-      "checked_at": "2026-10-06T00:07:54.783999+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:19.901668+00:00",
+      "checked_at": "2026-10-06T06:26:19.901668+00:00",
       "musicbrainz_id": "dad4f1f1-bf53-4a8a-8057-eb217763e34c",
       "canonical_name": "Oskar Haag",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {
         "facebook": "https://www.facebook.com/oskar.haag.18",
@@ -11967,20 +11923,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0d3db6fa701ed9ce142fd16b8bc1bad7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:54.783999+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Oskar+Haag&limit=8"
+      "next_retry_at": "2026-10-09T06:26:19.901668+00:00",
+      "attempt_count": 3
     },
     "strongboi": {
       "name": "strongboi",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:55.956606+00:00",
-      "checked_at": "2026-10-06T00:07:55.956606+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:20.966555+00:00",
+      "checked_at": "2026-10-06T06:26:20.966555+00:00",
       "musicbrainz_id": "fbf6f72f-c8dd-465d-b13e-593bfd9a92c7",
       "canonical_name": "strongboi",
       "match_score": 100,
@@ -11996,20 +11951,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/a5bcc6f60c456204e8b8584a98c3595b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:55.956606+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=strongboi&limit=8"
+      "next_retry_at": "2026-10-09T06:26:20.966555+00:00",
+      "attempt_count": 3
     },
     "the-technicolors": {
       "name": "The Technicolors",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:07:59.254262+00:00",
-      "checked_at": "2026-10-06T00:07:59.254262+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:23.033382+00:00",
+      "checked_at": "2026-10-06T06:26:23.033382+00:00",
       "musicbrainz_id": "dbd44897-b9e6-445d-8aca-25e1c2405f51",
       "canonical_name": "The Technicolors",
       "match_score": 100,
@@ -12022,17 +11976,16 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/bb42538e7d814dcd97bd922c57463f23/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/62abd068a13cca89eb42eceb194fbedd/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:07:59.254262+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Technicolors&limit=8"
+      "next_retry_at": "2026-10-09T06:26:23.033382+00:00",
+      "attempt_count": 3
     },
     "ufos-braxe-falcon-phoenix-alan-braxe": {
       "name": "UFOs, Braxe + Falcon, Phoenix, Alan Braxe",
@@ -12112,9 +12065,9 @@
     },
     "joyer": {
       "name": "Joyer",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:01.965707+00:00",
-      "checked_at": "2026-10-06T00:08:01.965707+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:26.046118+00:00",
+      "checked_at": "2026-10-06T06:26:26.046118+00:00",
       "musicbrainz_id": "d2696295-991d-4c20-aaa8-886b5748d79f",
       "canonical_name": "Joyer",
       "match_score": 100,
@@ -12130,20 +12083,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7fba154ee594b63485d70714bdf23cab/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:01.965707+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Joyer&limit=8"
+      "next_retry_at": "2026-10-09T06:26:26.046118+00:00",
+      "attempt_count": 3
     },
     "mass-minor": {
       "name": "Mass Minor",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:04.712933+00:00",
-      "checked_at": "2026-10-06T00:08:04.712933+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:28.617141+00:00",
+      "checked_at": "2026-10-06T06:26:28.617141+00:00",
       "musicbrainz_id": "47f01094-4fbb-433a-880c-78b5c3bf2758",
       "canonical_name": "Mass Minor",
       "match_score": 100,
@@ -12155,14 +12107,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/48acacbe40e8e732904823998628dc75/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:04.712933+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Mass+Minor&limit=8"
+      "next_retry_at": "2026-10-09T06:26:28.617141+00:00",
+      "attempt_count": 3
     },
     "sacred-skin-srsq": {
       "name": "Sacred Skin, SRSQ",
@@ -12242,9 +12193,9 @@
     },
     "detects": {
       "name": "DETECTS",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:05.968421+00:00",
-      "checked_at": "2026-10-06T00:08:05.968421+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:31.106393+00:00",
+      "checked_at": "2026-10-06T06:26:31.106393+00:00",
       "musicbrainz_id": "4bd01508-3e7f-4b1c-8aca-47f60ce760fa",
       "canonical_name": "Detects",
       "match_score": 100,
@@ -12260,20 +12211,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b9ceb4cf25c5c05be69ea8ddf62dfa04/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:05.968421+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Detects&limit=8"
+      "next_retry_at": "2026-10-09T06:26:31.106393+00:00",
+      "attempt_count": 3
     },
     "fragrance": {
       "name": "Fragrance",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:09.063433+00:00",
-      "checked_at": "2026-10-06T00:08:09.063433+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:33.759759+00:00",
+      "checked_at": "2026-10-06T06:26:33.759759+00:00",
       "musicbrainz_id": "0e40a8b6-278e-4734-ab15-3912770c8bbb",
       "canonical_name": "Fragrance.",
       "match_score": 100,
@@ -12289,14 +12239,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ec6b83c95f7eb5b4f09143a2b9e7357e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:09.063433+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Fragrance.&limit=8"
+      "next_retry_at": "2026-10-09T06:26:33.759759+00:00",
+      "attempt_count": 3
     },
     "mount-palomar-pip-blom": {
       "name": "Mount Palomar, Pip Blom",
@@ -12325,9 +12274,9 @@
     },
     "ritual-howls": {
       "name": "Ritual Howls",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:11.649237+00:00",
-      "checked_at": "2026-10-06T00:08:11.649237+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:36.521611+00:00",
+      "checked_at": "2026-10-06T06:26:36.521611+00:00",
       "musicbrainz_id": "a706b2d4-684e-483e-b323-477c06e65b05",
       "canonical_name": "Ritual Howls",
       "match_score": 100,
@@ -12343,20 +12292,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/eb4551b35f7566bcc3db7a600fd80066/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:11.649237+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ritual+Howls&limit=8"
+      "next_retry_at": "2026-10-09T06:26:36.521611+00:00",
+      "attempt_count": 3
     },
     "the-slashes": {
       "name": "The Slashes",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:14.368036+00:00",
-      "checked_at": "2026-10-06T00:08:14.368036+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:38.302531+00:00",
+      "checked_at": "2026-10-06T06:26:38.302531+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The Slashes",
       "match_score": 0,
@@ -12368,20 +12316,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c0e3c006c35108e190e108ea766089b1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:14.368036+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Slashes&limit=8"
+      "next_retry_at": "2026-10-09T06:26:38.302531+00:00",
+      "attempt_count": 3
     },
     "holy-holy": {
       "name": "Holy Holy",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:15.750666+00:00",
-      "checked_at": "2026-10-06T00:08:15.750666+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:40.023345+00:00",
+      "checked_at": "2026-10-06T06:26:40.023345+00:00",
       "musicbrainz_id": "e0bbec7a-7a81-466f-ba0f-08240dd4980e",
       "canonical_name": "Holy Holy",
       "match_score": 100,
@@ -12397,20 +12344,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d6664e29cc218e2df1a0d12d48fdddd5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:15.750666+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Holy+Holy&limit=8"
+      "next_retry_at": "2026-10-09T06:26:40.023345+00:00",
+      "attempt_count": 3
     },
     "levin-goes-lightly": {
       "name": "Levin Goes Lightly",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:18.637365+00:00",
-      "checked_at": "2026-10-06T00:08:18.637365+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:42.582034+00:00",
+      "checked_at": "2026-10-06T06:26:42.582034+00:00",
       "musicbrainz_id": "b20b8919-3489-44f2-85cf-bdf400f4406d",
       "canonical_name": "Levin Goes Lightly",
       "match_score": 100,
@@ -12426,20 +12372,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/865523c4d581d2eaa44c0f7d4ba7cb2f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:18.637365+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Levin+Goes+Lightly&limit=8"
+      "next_retry_at": "2026-10-09T06:26:42.582034+00:00",
+      "attempt_count": 3
     },
     "armbite": {
       "name": "armbite",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:21.200538+00:00",
-      "checked_at": "2026-10-06T00:08:21.200538+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:45.076603+00:00",
+      "checked_at": "2026-10-06T06:26:45.076603+00:00",
       "musicbrainz_id": "da61ff44-a495-45c0-9816-d9d9e9e63c9c",
       "canonical_name": "armbite",
       "match_score": 100,
@@ -12455,14 +12400,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/79ca943f6887e4ff0695b616fe6b0eec/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:21.200538+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=armbite&limit=8"
+      "next_retry_at": "2026-10-09T06:26:45.076603+00:00",
+      "attempt_count": 3
     },
     "pulp-war-child-records": {
       "name": "Pulp, War Child Records",
@@ -12515,9 +12459,9 @@
     },
     "traitrs": {
       "name": "TRAITRS",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:23.738779+00:00",
-      "checked_at": "2026-10-06T00:08:23.738779+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:47.528446+00:00",
+      "checked_at": "2026-10-06T06:26:47.528446+00:00",
       "musicbrainz_id": "0ef1dab1-4419-418e-90e7-14ce7a56bec7",
       "canonical_name": "TRAITRS",
       "match_score": 100,
@@ -12533,20 +12477,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/67e1bd9bf278f64f5a45ef4fce583f67/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:23.738779+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=TRAITRS&limit=8"
+      "next_retry_at": "2026-10-09T06:26:47.528446+00:00",
+      "attempt_count": 3
     },
     "deathsport": {
       "name": "Deathsport",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:26.321342+00:00",
-      "checked_at": "2026-10-06T00:08:26.321342+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:49.537080+00:00",
+      "checked_at": "2026-10-06T06:26:49.537080+00:00",
       "musicbrainz_id": "79d7b63a-0531-410b-948a-f45b186f98a8",
       "canonical_name": "Deathsport",
       "match_score": 100,
@@ -12562,20 +12505,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d83aa34f7e3dfd64bb675dcfef83d143/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:26.321342+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Deathsport&limit=8"
+      "next_retry_at": "2026-10-09T06:26:49.537080+00:00",
+      "attempt_count": 3
     },
     "darkroads": {
       "name": "Darkroads",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:30.171135+00:00",
-      "checked_at": "2026-10-06T00:08:30.171135+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:52.624298+00:00",
+      "checked_at": "2026-10-06T06:26:52.624298+00:00",
       "musicbrainz_id": "88bfa650-f499-4352-99c7-dd20f12c7c2f",
       "canonical_name": "Darkroads",
       "match_score": 100,
@@ -12587,14 +12529,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/392caf479c00f0c2bc1831238781d579/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:30.171135+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Darkroads&limit=8"
+      "next_retry_at": "2026-10-09T06:26:52.624298+00:00",
+      "attempt_count": 3
     },
     "annabelle-dinda": {
       "name": "Annabelle Dinda",
@@ -12624,9 +12565,9 @@
     },
     "divebar-youth": {
       "name": "DIVEBAR YOUTH",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:34.173743+00:00",
-      "checked_at": "2026-10-06T00:08:34.173743+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:55.125558+00:00",
+      "checked_at": "2026-10-06T06:26:55.125558+00:00",
       "musicbrainz_id": "1f4c6de4-dcd5-4e3d-8375-65737ac32887",
       "canonical_name": "Divebar Youth",
       "match_score": 100,
@@ -12642,20 +12583,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/f0bcd4df83207acdc3693b469624568e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:34.173743+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Divebar+Youth&limit=8"
+      "next_retry_at": "2026-10-09T06:26:55.125558+00:00",
+      "attempt_count": 3
     },
     "the-sweet-serenades": {
       "name": "The Sweet Serenades",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:37.893586+00:00",
-      "checked_at": "2026-10-06T00:08:37.893586+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:26:57.472859+00:00",
+      "checked_at": "2026-10-06T06:26:57.472859+00:00",
       "musicbrainz_id": "7b6bf6fc-6fec-44a3-9719-942267a58b7f",
       "canonical_name": "The Sweet Serenades",
       "match_score": 100,
@@ -12671,20 +12611,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8e6353a74c2542439d01ca9e965fb70b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:37.893586+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Sweet+Serenades&limit=8"
+      "next_retry_at": "2026-10-09T06:26:57.472859+00:00",
+      "attempt_count": 3
     },
     "pastel-coast": {
       "name": "Pastel Coast",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:40.699704+00:00",
-      "checked_at": "2026-10-06T00:08:40.699704+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:00.115572+00:00",
+      "checked_at": "2026-10-06T06:27:00.115572+00:00",
       "musicbrainz_id": "589daacb-df91-474b-a7d4-2387502e99e8",
       "canonical_name": "Pastel Coast",
       "match_score": 100,
@@ -12696,20 +12635,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/9a84adb4c078494f2b7387e4468b3f82/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:40.699704+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Pastel+Coast&limit=8"
+      "next_retry_at": "2026-10-09T06:27:00.115572+00:00",
+      "attempt_count": 3
     },
     "current-joys": {
       "name": "Current Joys",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:43.692912+00:00",
-      "checked_at": "2026-10-06T00:08:43.692912+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:02.507951+00:00",
+      "checked_at": "2026-10-06T06:27:02.507951+00:00",
       "musicbrainz_id": "680a0350-cee3-49d4-a85d-7c9f4657fb97",
       "canonical_name": "Current Joys",
       "match_score": 100,
@@ -12725,20 +12663,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/5890d003f9365b8ac1800fd39b21eb11/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:43.692912+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Current+Joys&limit=8"
+      "next_retry_at": "2026-10-09T06:27:02.507951+00:00",
+      "attempt_count": 3
     },
     "the-creem": {
       "name": "The Creem",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:47.370321+00:00",
-      "checked_at": "2026-10-06T00:08:47.370321+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:05.032083+00:00",
+      "checked_at": "2026-10-06T06:27:05.032083+00:00",
       "musicbrainz_id": "eb8e8ad3-ec87-4789-b23f-08d1e0cfb79a",
       "canonical_name": "The Creem",
       "match_score": 100,
@@ -12754,20 +12691,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/62dc542f45e88a32e5d4ef086ba928c7/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:47.370321+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Creem&limit=8"
+      "next_retry_at": "2026-10-09T06:27:05.032083+00:00",
+      "attempt_count": 3
     },
     "acopia": {
       "name": "Acopia",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:49.918662+00:00",
-      "checked_at": "2026-10-06T00:08:49.918662+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:07.631797+00:00",
+      "checked_at": "2026-10-06T06:27:07.631797+00:00",
       "musicbrainz_id": "e4513864-b6e8-431e-8b82-bfdb22714444",
       "canonical_name": "Acopia",
       "match_score": 100,
@@ -12780,17 +12716,16 @@
       },
       "genre": "ambient",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/3004968e3888ec9e130d4af02985567e/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e9024ed6ce8094cbcbca378f786542a5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:49.918662+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Acopia&limit=8"
+      "next_retry_at": "2026-10-09T06:27:07.631797+00:00",
+      "attempt_count": 3
     },
     "dj-seinfeld-ts-graye": {
       "name": "DJ Seinfeld, TS Graye",
@@ -12820,9 +12755,9 @@
     },
     "selofan": {
       "name": "Selofan",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:51.161274+00:00",
-      "checked_at": "2026-10-06T00:08:51.161274+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:10.002966+00:00",
+      "checked_at": "2026-10-06T06:27:10.002966+00:00",
       "musicbrainz_id": "ec84e56f-9fbe-40d3-9979-bc084359d79c",
       "canonical_name": "Selofan",
       "match_score": 100,
@@ -12838,20 +12773,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/91ef2b79e0ec7b1c1e7f20d12ecac921/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:51.161274+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Selofan&limit=8"
+      "next_retry_at": "2026-10-09T06:27:10.002966+00:00",
+      "attempt_count": 3
     },
     "stray-fossa": {
       "name": "Stray Fossa",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:54.943514+00:00",
-      "checked_at": "2026-10-06T00:08:54.943514+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:12.795828+00:00",
+      "checked_at": "2026-10-06T06:27:12.795828+00:00",
       "musicbrainz_id": "75d367b0-3def-4a7a-a37d-1d2255ed6a72",
       "canonical_name": "Stray Fossa",
       "match_score": 100,
@@ -12867,20 +12801,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c414643a7f23baad8de59eace5436a36/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:54.943514+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Stray+Fossa&limit=8"
+      "next_retry_at": "2026-10-09T06:27:12.795828+00:00",
+      "attempt_count": 3
     },
     "the-guest-list": {
       "name": "The Guest List",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:56.260634+00:00",
-      "checked_at": "2026-10-06T00:08:56.260634+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:15.439559+00:00",
+      "checked_at": "2026-10-06T06:27:15.439559+00:00",
       "musicbrainz_id": "bcddbf54-6438-4a2d-af3b-e5d04d4724b2",
       "canonical_name": "The Guest List",
       "match_score": 100,
@@ -12896,14 +12829,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/4706174da355e80f8cdc719b70e1dae2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:56.260634+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Guest+List&limit=8"
+      "next_retry_at": "2026-10-09T06:27:15.439559+00:00",
+      "attempt_count": 3
     },
     "daniel-avery-cecile-believe": {
       "name": "Daniel Avery, Cecile Believe",
@@ -13032,9 +12964,9 @@
     },
     "kios": {
       "name": "Kios",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:08:59.092086+00:00",
-      "checked_at": "2026-10-06T00:08:59.092086+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:17.757770+00:00",
+      "checked_at": "2026-10-06T06:27:17.757770+00:00",
       "musicbrainz_id": "f1a12ea5-42eb-462a-9d5c-7ed493e7d633",
       "canonical_name": "Kios",
       "match_score": 100,
@@ -13046,14 +12978,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/80eb526346febd6cddf55d67e88cf9a8/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:08:59.092086+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Kios&limit=8"
+      "next_retry_at": "2026-10-09T06:27:17.757770+00:00",
+      "attempt_count": 3
     },
     "mark-william-lewis": {
       "name": "Mark William Lewis",
@@ -13083,9 +13014,9 @@
     },
     "s-y-z-y-g-y-x": {
       "name": "S Y Z Y G Y X",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:02.642629+00:00",
-      "checked_at": "2026-10-06T00:09:02.642629+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:20.374994+00:00",
+      "checked_at": "2026-10-06T06:27:20.374994+00:00",
       "musicbrainz_id": "dfbfa041-757c-43d3-afb5-e55996a68832",
       "canonical_name": "S Y Z Y G Y X",
       "match_score": 100,
@@ -13101,20 +13032,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/94a320b4097754e26db7dbfbc195abe6/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:02.642629+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=S+Y+Z+Y+G+Y+X&limit=8"
+      "next_retry_at": "2026-10-09T06:27:20.374994+00:00",
+      "attempt_count": 3
     },
     "the-howl-the-hum": {
       "name": "The Howl & The Hum",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:06.300763+00:00",
-      "checked_at": "2026-10-06T00:09:06.300763+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:23.092616+00:00",
+      "checked_at": "2026-10-06T06:27:23.092616+00:00",
       "musicbrainz_id": "67641bdf-e8aa-4da9-b742-c9e056d180ce",
       "canonical_name": "The Howl & The Hum",
       "match_score": 100,
@@ -13130,14 +13060,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d843e0eaa49cff1603baad5aa2a84a68/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:06.300763+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Howl+%26+The+Hum&limit=8"
+      "next_retry_at": "2026-10-09T06:27:23.092616+00:00",
+      "attempt_count": 3
     },
     "yhwh-nailgun": {
       "name": "YHWH Nailgun",
@@ -13167,9 +13096,9 @@
     },
     "ashrr": {
       "name": "ASHRR",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:08.825198+00:00",
-      "checked_at": "2026-10-06T00:09:08.825198+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:25.530524+00:00",
+      "checked_at": "2026-10-06T06:27:25.530524+00:00",
       "musicbrainz_id": "62e0c238-899e-4023-8154-80d27b51b9c3",
       "canonical_name": "ASHRR",
       "match_score": 100,
@@ -13185,15 +13114,13 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
-        "image",
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:08.825198+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=ASHRR&limit=8"
+      "next_retry_at": "2026-10-09T06:27:25.530524+00:00",
+      "attempt_count": 3
     },
     "daniel-avery": {
       "name": "Daniel Avery",
@@ -13223,9 +13150,9 @@
     },
     "go-hawaii": {
       "name": "Go Hawaii",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:11.675210+00:00",
-      "checked_at": "2026-10-06T00:09:11.675210+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:27.466137+00:00",
+      "checked_at": "2026-10-06T06:27:27.466137+00:00",
       "musicbrainz_id": "745a04ff-e530-49c9-bf32-15695a515986",
       "canonical_name": "Go Hawaii",
       "match_score": 100,
@@ -13237,20 +13164,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6d23974edb153826e4f08275b7c80603/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:11.675210+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Go+Hawaii&limit=8"
+      "next_retry_at": "2026-10-09T06:27:27.466137+00:00",
+      "attempt_count": 3
     },
     "lathe-of-heaven": {
       "name": "Lathe of Heaven",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:14.301073+00:00",
-      "checked_at": "2026-10-06T00:09:14.301073+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:30.467676+00:00",
+      "checked_at": "2026-10-06T06:27:30.467676+00:00",
       "musicbrainz_id": "de8bfb19-8320-4078-b750-27195ea0378c",
       "canonical_name": "Lathe of Heaven",
       "match_score": 100,
@@ -13266,14 +13192,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/398343bc23affc3b8bbe66ca7ef77222/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:14.301073+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lathe+of+Heaven&limit=8"
+      "next_retry_at": "2026-10-09T06:27:30.467676+00:00",
+      "attempt_count": 3
     },
     "maruja": {
       "name": "Maruja",
@@ -13303,9 +13228,9 @@
     },
     "saytr-play": {
       "name": "Saytr Play",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:16.915689+00:00",
-      "checked_at": "2026-10-06T00:09:16.915689+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:32.881416+00:00",
+      "checked_at": "2026-10-06T06:27:32.881416+00:00",
       "musicbrainz_id": "3111c5c7-7ae9-4781-a35a-cf9cca8b433f",
       "canonical_name": "Saytr Play",
       "match_score": 100,
@@ -13321,20 +13246,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/49d82097c28332f80c71ece43a924921/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:16.915689+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Saytr+Play&limit=8"
+      "next_retry_at": "2026-10-09T06:27:32.881416+00:00",
+      "attempt_count": 3
     },
     "secret-shame": {
       "name": "Secret Shame",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:19.425121+00:00",
-      "checked_at": "2026-10-06T00:09:19.425121+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:35.347574+00:00",
+      "checked_at": "2026-10-06T06:27:35.347574+00:00",
       "musicbrainz_id": "a72aca26-c712-4263-a885-4833d2edd7cb",
       "canonical_name": "Secret Shame",
       "match_score": 100,
@@ -13350,20 +13274,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:19.425121+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Secret+Shame&limit=8"
+      "next_retry_at": "2026-10-09T06:27:35.347574+00:00",
+      "attempt_count": 3
     },
     "gans": {
       "name": "Gans",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:22.053386+00:00",
-      "checked_at": "2026-10-06T00:09:22.053386+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:37.883285+00:00",
+      "checked_at": "2026-10-06T06:27:37.883285+00:00",
       "musicbrainz_id": "8e5c16ed-5bd1-4614-bede-41f594abf8d8",
       "canonical_name": "GANS",
       "match_score": 100,
@@ -13379,14 +13302,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/fe82706349d45c514454f350f73d6b85/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:22.053386+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Gans&limit=8"
+      "next_retry_at": "2026-10-09T06:27:37.883285+00:00",
+      "attempt_count": 3
     },
     "bullion-carly-rae-jepsen": {
       "name": "Bullion/Carly Rae Jepsen",
@@ -13646,9 +13568,9 @@
     },
     "nick-cave-the-bad-seeds": {
       "name": "Nick Cave & the Bad Seeds",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:23.255750+00:00",
-      "checked_at": "2026-10-06T00:09:23.255750+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:40.349030+00:00",
+      "checked_at": "2026-10-06T06:27:40.349030+00:00",
       "musicbrainz_id": "172e1f1a-504d-4488-b053-6344ba63e6d0",
       "canonical_name": "Nick Cave & the Bad Seeds",
       "match_score": 100,
@@ -13664,14 +13586,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c81acb9b05e8b29b4699f2c2bd05213b/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:23.255750+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Nick+Cave+%26+the+Bad+Seeds&limit=8"
+      "next_retry_at": "2026-10-09T06:27:40.349030+00:00",
+      "attempt_count": 3
     },
     "weezer-wednesday": {
       "name": "Weezer, Wednesday",
@@ -13699,9 +13620,9 @@
     },
     "french-police": {
       "name": "French Police",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:26.401108+00:00",
-      "checked_at": "2026-10-06T00:09:26.401108+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:42.591751+00:00",
+      "checked_at": "2026-10-06T06:27:42.591751+00:00",
       "musicbrainz_id": "90cf1e25-ffc0-4637-a0fe-205736f9ce10",
       "canonical_name": "French Police",
       "match_score": 100,
@@ -13713,14 +13634,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b568549b611e9c2d109819689e1f3efc/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:26.401108+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=French+Police&limit=8"
+      "next_retry_at": "2026-10-09T06:27:42.591751+00:00",
+      "attempt_count": 3
     },
     "shout-out-louds": {
       "name": "Shout Out Louds",
@@ -13776,9 +13696,9 @@
     },
     "yuno": {
       "name": "Yuno",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:28.999660+00:00",
-      "checked_at": "2026-10-06T00:09:28.999660+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:45.173452+00:00",
+      "checked_at": "2026-10-06T06:27:45.173452+00:00",
       "musicbrainz_id": "55218b0a-6375-4284-baed-087a10eece49",
       "canonical_name": "Yuno",
       "match_score": 100,
@@ -13794,14 +13714,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7a468eaa1b19179001477e4362e6c8d1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:28.999660+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Yuno&limit=8"
+      "next_retry_at": "2026-10-09T06:27:45.173452+00:00",
+      "attempt_count": 3
     },
     "amyl-and-the-sniffers": {
       "name": "Amyl and The Sniffers",
@@ -13831,9 +13750,9 @@
     },
     "ghost-fetish": {
       "name": "Ghost Fetish",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:31.685084+00:00",
-      "checked_at": "2026-10-06T00:09:31.685084+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:47.981254+00:00",
+      "checked_at": "2026-10-06T06:27:47.981254+00:00",
       "musicbrainz_id": "d9e8b5e0-520f-4eb9-a459-937496a0d3cb",
       "canonical_name": "Ghost Fetish",
       "match_score": 100,
@@ -13845,20 +13764,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/0d6b1e5becbf9f4210355caaf5d2f72f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:31.685084+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Ghost+Fetish&limit=8"
+      "next_retry_at": "2026-10-09T06:27:47.981254+00:00",
+      "attempt_count": 3
     },
     "bright-eyes-felice-county-fair": {
       "name": "Bright Eyes, Felice County Fair",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:34.393846+00:00",
-      "checked_at": "2026-10-06T00:09:34.393846+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:50.459702+00:00",
+      "checked_at": "2026-10-06T06:27:50.459702+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Bright Eyes, Felice County Fair",
       "match_score": 0,
@@ -13870,20 +13788,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:34.393846+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Bright+Eyes%2C+Felice+County+Fair&limit=8"
+      "next_retry_at": "2026-10-09T06:27:50.459702+00:00",
+      "attempt_count": 3
     },
     "welcome-strawberry": {
       "name": "Welcome Strawberry",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:35.960635+00:00",
-      "checked_at": "2026-10-06T00:09:35.960635+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:51.343358+00:00",
+      "checked_at": "2026-10-06T06:27:51.343358+00:00",
       "musicbrainz_id": "b71678b5-7d80-4e6e-a227-66606cc20a72",
       "canonical_name": "Welcome Strawberry",
       "match_score": 100,
@@ -13895,14 +13812,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/ab3b6fcc8f02e26ff27edf4caaa1ed2f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:35.960635+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Welcome+Strawberry&limit=8"
+      "next_retry_at": "2026-10-09T06:27:51.343358+00:00",
+      "attempt_count": 3
     },
     "london-grammar": {
       "name": "London Grammar",
@@ -14162,9 +14078,9 @@
     },
     "boxboys": {
       "name": "BoxBoys",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:38.473004+00:00",
-      "checked_at": "2026-10-06T00:09:38.473004+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:54.152263+00:00",
+      "checked_at": "2026-10-06T06:27:54.152263+00:00",
       "musicbrainz_id": "59345e97-83bf-45be-9f6e-c9dcc428836a",
       "canonical_name": "boxboys",
       "match_score": 100,
@@ -14180,14 +14096,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/7b083a33d036fa3ef5d1a8422df4d1e4/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:38.473004+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=boxboys&limit=8"
+      "next_retry_at": "2026-10-09T06:27:54.152263+00:00",
+      "attempt_count": 3
     },
     "cathedral-bells": {
       "name": "Cathedral Bells",
@@ -14265,9 +14180,9 @@
     },
     "n0v3l": {
       "name": "N0V3L",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:41.136040+00:00",
-      "checked_at": "2026-10-06T00:09:41.136040+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:56.915878+00:00",
+      "checked_at": "2026-10-06T06:27:56.915878+00:00",
       "musicbrainz_id": "9de2a005-3490-4061-b3cf-209bbfb4e778",
       "canonical_name": "N0V3L",
       "match_score": 100,
@@ -14279,20 +14194,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/cade38b33616d8cf08e6e0beb21218af/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:41.136040+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=N0V3L&limit=8"
+      "next_retry_at": "2026-10-09T06:27:56.915878+00:00",
+      "attempt_count": 3
     },
     "rosegarden-funeral-party": {
       "name": "Rosegarden Funeral Party",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:43.605696+00:00",
-      "checked_at": "2026-10-06T00:09:43.605696+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:27:59.276027+00:00",
+      "checked_at": "2026-10-06T06:27:59.276027+00:00",
       "musicbrainz_id": "03fc75f0-eada-439a-8cf2-0185be70c13e",
       "canonical_name": "Rosegarden Funeral Party",
       "match_score": 100,
@@ -14308,14 +14222,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/1823812041f7d6b1de8364ceb596dfc2/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:43.605696+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Rosegarden+Funeral+Party&limit=8"
+      "next_retry_at": "2026-10-09T06:27:59.276027+00:00",
+      "attempt_count": 3
     },
     "sailor-honeymoon": {
       "name": "Sailor Honeymoon",
@@ -14345,34 +14258,33 @@
     },
     "sea-lemon": {
       "name": "Sea Lemon",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:46.246469+00:00",
-      "checked_at": "2026-10-06T00:09:46.246469+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:01.815772+00:00",
+      "checked_at": "2026-10-06T06:28:01.815772+00:00",
+      "musicbrainz_id": "4799fba1-5a7f-4f0e-b341-90da2838fb5a",
       "canonical_name": "Sea Lemon",
-      "match_score": 0,
-      "verification_source": "Deezer exact artist match",
-      "official_url": "",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "https://www.sealemonmusic.com/",
       "social": {},
-      "genre": "",
+      "genre": "dream pop",
       "bio_en": "",
       "image": "https://cdn-images.dzcdn.net/images/artist/10a4deeea6549841b413eafc54c56ae1/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:46.246469+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Sea+Lemon&limit=8"
+      "next_retry_at": "2026-10-09T06:28:01.815772+00:00",
+      "attempt_count": 3
     },
     "shelly": {
       "name": "Shelly",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:49.299969+00:00",
-      "checked_at": "2026-10-06T00:09:49.299969+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:05.347534+00:00",
+      "checked_at": "2026-10-06T06:28:05.347534+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Shelly",
       "match_score": 0,
@@ -14381,23 +14293,22 @@
       "social": {},
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/f9836c78115051b9db7a715560907778/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a5449872fea8a53174bd7b0963fbf342/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:49.299969+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Shelly&limit=8"
+      "next_retry_at": "2026-10-09T06:28:05.347534+00:00",
+      "attempt_count": 3
     },
     "tele-novella": {
       "name": "Tele Novella",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:50.530056+00:00",
-      "checked_at": "2026-10-06T00:09:50.530056+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:06.513956+00:00",
+      "checked_at": "2026-10-06T06:28:06.513956+00:00",
       "musicbrainz_id": "e2c42d76-43ac-4f6b-9d04-a9929094b98e",
       "canonical_name": "Tele Novella",
       "match_score": 100,
@@ -14413,14 +14324,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/3260152414f61b70c0a81c79db01e0f5/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:50.530056+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Tele+Novella&limit=8"
+      "next_retry_at": "2026-10-09T06:28:06.513956+00:00",
+      "attempt_count": 3
     },
     "cate-le-bon-st-vincent": {
       "name": "Cate Le Bon, St. Vincent",
@@ -14628,9 +14538,9 @@
     },
     "moaning": {
       "name": "Moaning",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:54.914247+00:00",
-      "checked_at": "2026-10-06T00:09:54.914247+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:09.016058+00:00",
+      "checked_at": "2026-10-06T06:28:09.016058+00:00",
       "musicbrainz_id": "d5d4af51-8c20-45ed-9cc4-f8bbbb28289d",
       "canonical_name": "Moaning",
       "match_score": 100,
@@ -14646,20 +14556,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/b5cf7b5adaf9943fbc8a99f26483532c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:54.914247+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Moaning&limit=8"
+      "next_retry_at": "2026-10-09T06:28:09.016058+00:00",
+      "attempt_count": 3
     },
     "special-features": {
       "name": "Special Features",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:57.121141+00:00",
-      "checked_at": "2026-10-06T00:09:57.121141+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:11.654726+00:00",
+      "checked_at": "2026-10-06T06:28:11.654726+00:00",
       "musicbrainz_id": "81f1b826-8f3c-45f9-8102-ddd901b5a8a1",
       "canonical_name": "Special Features",
       "match_score": 100,
@@ -14671,14 +14580,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c74d199bc36695225e9215f00cb60731/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:57.121141+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Special+Features&limit=8"
+      "next_retry_at": "2026-10-09T06:28:11.654726+00:00",
+      "attempt_count": 3
     },
     "spiritual-cramp": {
       "name": "Spiritual Cramp",
@@ -14734,9 +14642,9 @@
     },
     "the-seance": {
       "name": "The Séance",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:09:58.454786+00:00",
-      "checked_at": "2026-10-06T00:09:58.454786+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:14.121548+00:00",
+      "checked_at": "2026-10-06T06:28:14.121548+00:00",
       "musicbrainz_id": "5a922ceb-ebae-4bda-a75e-a8d52a689e1d",
       "canonical_name": "The Seance",
       "match_score": 100,
@@ -14748,14 +14656,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/40d55090babeca5b3502503da384dc4d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:09:58.454786+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Seance&limit=8"
+      "next_retry_at": "2026-10-09T06:28:14.121548+00:00",
+      "attempt_count": 3
     },
     "ttssfu": {
       "name": "TTSSFU",
@@ -14859,9 +14766,9 @@
     },
     "callow-youth": {
       "name": "Callow Youth",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T00:10:01.662076+00:00",
-      "checked_at": "2026-10-06T00:10:01.662076+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-06T06:28:16.837671+00:00",
+      "checked_at": "2026-10-06T06:28:16.837671+00:00",
       "musicbrainz_id": "29108adc-4fa3-4898-9720-1e36c0d5f47f",
       "canonical_name": "Callow Youth",
       "match_score": 100,
@@ -14877,20 +14784,19 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T06:10:01.662076+00:00",
-      "attempt_count": 2,
-      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Callow+Youth&limit=8"
+      "next_retry_at": "2026-10-09T06:28:16.837671+00:00",
+      "attempt_count": 3
     },
     "kiss-of-the-whip": {
       "name": "KISS OF THE WHIP",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:20.728446+00:00",
-      "checked_at": "2026-10-03T05:21:20.728446+00:00",
+      "profile_checked_at": "2026-10-06T06:28:19.047909+00:00",
+      "checked_at": "2026-10-06T06:28:19.047909+00:00",
       "musicbrainz_id": "13fdd476-cfdb-4a1c-93d0-2797b2fccee9",
       "canonical_name": "Kiss of the Whip",
       "match_score": 100,
@@ -14911,8 +14817,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:20.728446+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:19.047909+00:00",
+      "attempt_count": 2
     },
     "mount-palomar-makeshift-art-bar": {
       "name": "Mount Palomar, Makeshift Art Bar",
@@ -14968,8 +14874,8 @@
     "quiet-husband": {
       "name": "Quiet Husband",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:26.406489+00:00",
-      "checked_at": "2026-10-03T05:21:26.406489+00:00",
+      "profile_checked_at": "2026-10-06T06:28:21.551636+00:00",
+      "checked_at": "2026-10-06T06:28:21.551636+00:00",
       "musicbrainz_id": "0791f341-1a88-41dd-ab20-e59072511b80",
       "canonical_name": "Quiet Husband",
       "match_score": 100,
@@ -14986,8 +14892,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:26.406489+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:21.551636+00:00",
+      "attempt_count": 2
     },
     "sexores-seatemples": {
       "name": "Sexores, Seatemples",
@@ -15018,8 +14924,8 @@
     "terror-forms": {
       "name": "Terror Forms",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:30.374992+00:00",
-      "checked_at": "2026-10-03T05:21:30.374992+00:00",
+      "profile_checked_at": "2026-10-06T06:28:24.032729+00:00",
+      "checked_at": "2026-10-06T06:28:24.032729+00:00",
       "musicbrainz_id": "652cc23f-faf4-4d98-8109-5ad61fb2d92c",
       "canonical_name": "Terror Forms",
       "match_score": 100,
@@ -15040,8 +14946,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:30.374992+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:24.032729+00:00",
+      "attempt_count": 2
     },
     "patrick-wolf": {
       "name": "Patrick Wolf",
@@ -15098,8 +15004,8 @@
     "hypoluxo": {
       "name": "Hypoluxo",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:38.648646+00:00",
-      "checked_at": "2026-10-03T05:21:38.648646+00:00",
+      "profile_checked_at": "2026-10-06T06:28:26.488294+00:00",
+      "checked_at": "2026-10-06T06:28:26.488294+00:00",
       "musicbrainz_id": "d251af17-ab9c-456e-bdd7-a8b6e9ea07c7",
       "canonical_name": "Hypoluxo",
       "match_score": 100,
@@ -15116,8 +15022,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:38.648646+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:26.488294+00:00",
+      "attempt_count": 2
     },
     "illuminati-hotties-cavetown": {
       "name": "illuminati hotties/Cavetown",
@@ -15148,8 +15054,8 @@
     "deeper": {
       "name": "Deeper",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:42.591623+00:00",
-      "checked_at": "2026-10-03T05:21:42.591623+00:00",
+      "profile_checked_at": "2026-10-06T06:28:28.952001+00:00",
+      "checked_at": "2026-10-06T06:28:28.952001+00:00",
       "musicbrainz_id": "2145fa2e-0d25-408b-9a63-3c99e012d7d4",
       "canonical_name": "Deeper",
       "match_score": 100,
@@ -15170,14 +15076,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:42.591623+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:28.952001+00:00",
+      "attempt_count": 2
     },
     "llora": {
       "name": "Llora",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:45.570638+00:00",
-      "checked_at": "2026-10-03T05:21:45.570638+00:00",
+      "profile_checked_at": "2026-10-06T06:28:31.768794+00:00",
+      "checked_at": "2026-10-06T06:28:31.768794+00:00",
       "musicbrainz_id": "b9732668-add3-43b3-9852-9b38e9d02794",
       "canonical_name": "LLORA",
       "match_score": 100,
@@ -15186,7 +15092,7 @@
       "social": {},
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4533db2adf32562725b6bce0456f142c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "partial",
@@ -15194,14 +15100,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:45.570638+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:31.768794+00:00",
+      "attempt_count": 2
     },
     "wet-world": {
       "name": "Wet World",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:48.439110+00:00",
-      "checked_at": "2026-10-03T05:21:48.439110+00:00",
+      "profile_checked_at": "2026-10-06T06:28:34.260095+00:00",
+      "checked_at": "2026-10-06T06:28:34.260095+00:00",
       "musicbrainz_id": "d1e301c3-cd59-4ced-9566-7ae49b691c2b",
       "canonical_name": "Wet World",
       "match_score": 100,
@@ -15222,14 +15128,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:48.439110+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:34.260095+00:00",
+      "attempt_count": 2
     },
     "fool-nelson": {
       "name": "Fool Nelson",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:51.267222+00:00",
-      "checked_at": "2026-10-03T05:21:51.267222+00:00",
+      "profile_checked_at": "2026-10-06T06:28:36.975667+00:00",
+      "checked_at": "2026-10-06T06:28:36.975667+00:00",
       "musicbrainz_id": "5713c8ef-108e-47e8-bf41-598b2ea1e9dc",
       "canonical_name": "Fool Nelson",
       "match_score": 100,
@@ -15250,14 +15156,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:51.267222+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:36.975667+00:00",
+      "attempt_count": 2
     },
     "girlhood": {
       "name": "Girlhood",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:53.684209+00:00",
-      "checked_at": "2026-10-03T05:21:53.684209+00:00",
+      "profile_checked_at": "2026-10-06T06:28:39.239453+00:00",
+      "checked_at": "2026-10-06T06:28:39.239453+00:00",
       "musicbrainz_id": "6d4b789a-fb82-41d1-9852-d23d20145d91",
       "canonical_name": "Girlhood",
       "match_score": 100,
@@ -15274,14 +15180,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:53.684209+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:39.239453+00:00",
+      "attempt_count": 2
     },
     "tycho-jones": {
       "name": "Tycho Jones",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:56.422232+00:00",
-      "checked_at": "2026-10-03T05:21:56.422232+00:00",
+      "profile_checked_at": "2026-10-06T06:28:41.707282+00:00",
+      "checked_at": "2026-10-06T06:28:41.707282+00:00",
       "musicbrainz_id": "8b4c1df0-94b2-4eb3-b628-4fcefeb6c9df",
       "canonical_name": "Tycho Jones",
       "match_score": 100,
@@ -15302,14 +15208,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:56.422232+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:41.707282+00:00",
+      "attempt_count": 2
     },
     "begging-dog": {
       "name": "Begging Dog",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:21:59.001528+00:00",
-      "checked_at": "2026-10-03T05:21:59.001528+00:00",
+      "profile_checked_at": "2026-10-06T06:28:44.213271+00:00",
+      "checked_at": "2026-10-06T06:28:44.213271+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Begging Dog",
       "match_score": 0,
@@ -15326,14 +15232,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:21:59.001528+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:44.213271+00:00",
+      "attempt_count": 2
     },
     "yndling": {
       "name": "Yndling",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:00.177971+00:00",
-      "checked_at": "2026-10-03T05:22:00.177971+00:00",
+      "profile_checked_at": "2026-10-06T06:28:45.389157+00:00",
+      "checked_at": "2026-10-06T06:28:45.389157+00:00",
       "musicbrainz_id": "126b0d48-fe25-4052-946c-cf150f1b50c6",
       "canonical_name": "Yndling",
       "match_score": 100,
@@ -15354,14 +15260,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:00.177971+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:45.389157+00:00",
+      "attempt_count": 2
     },
     "crying-vessel": {
       "name": "Crying Vessel",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:02.765989+00:00",
-      "checked_at": "2026-10-03T05:22:02.765989+00:00",
+      "profile_checked_at": "2026-10-06T06:28:47.943437+00:00",
+      "checked_at": "2026-10-06T06:28:47.943437+00:00",
       "musicbrainz_id": "7fbaecaa-4607-4cd2-8595-51e7a8bf0501",
       "canonical_name": "Crying Vessel",
       "match_score": 100,
@@ -15382,14 +15288,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:02.765989+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:47.943437+00:00",
+      "attempt_count": 2
     },
     "spinn": {
       "name": "SPINN",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:05.496871+00:00",
-      "checked_at": "2026-10-03T05:22:05.496871+00:00",
+      "profile_checked_at": "2026-10-06T06:28:50.938510+00:00",
+      "checked_at": "2026-10-06T06:28:50.938510+00:00",
       "musicbrainz_id": "b494f6a5-8b0c-4ada-b3d9-6b209aba7734",
       "canonical_name": "SPINN",
       "match_score": 100,
@@ -15410,14 +15316,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:05.496871+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:50.938510+00:00",
+      "attempt_count": 2
     },
     "ultra-sunn": {
       "name": "ULTRA SUNN",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:08.032332+00:00",
-      "checked_at": "2026-10-03T05:22:08.032332+00:00",
+      "profile_checked_at": "2026-10-06T06:28:53.148819+00:00",
+      "checked_at": "2026-10-06T06:28:53.148819+00:00",
       "musicbrainz_id": "62aa007a-3cd2-4305-a978-b452c87c1fbd",
       "canonical_name": "Ultra Sunn",
       "match_score": 100,
@@ -15438,14 +15344,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:08.032332+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:53.148819+00:00",
+      "attempt_count": 2
     },
     "corbeau-hangs": {
       "name": "Corbeau Hangs",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:11.010393+00:00",
-      "checked_at": "2026-10-03T05:22:11.010393+00:00",
+      "profile_checked_at": "2026-10-06T06:28:55.554877+00:00",
+      "checked_at": "2026-10-06T06:28:55.554877+00:00",
       "musicbrainz_id": "d427bd4a-911c-4bac-b6c4-e7465142e44f",
       "canonical_name": "Corbeau Hangs",
       "match_score": 100,
@@ -15466,14 +15372,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:11.010393+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:55.554877+00:00",
+      "attempt_count": 2
     },
     "kissing-on-camera": {
       "name": "Kissing on Camera",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:13.544569+00:00",
-      "checked_at": "2026-10-03T05:22:13.544569+00:00",
+      "profile_checked_at": "2026-10-06T06:28:58.065571+00:00",
+      "checked_at": "2026-10-06T06:28:58.065571+00:00",
       "musicbrainz_id": "fc5dbf89-3f94-481d-a151-ea222c63fbd0",
       "canonical_name": "Kissing On Camera",
       "match_score": 100,
@@ -15494,14 +15400,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:13.544569+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:28:58.065571+00:00",
+      "attempt_count": 2
     },
     "sonic-blume": {
       "name": "Sonic Blume",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:17.027653+00:00",
-      "checked_at": "2026-10-03T05:22:17.027653+00:00",
+      "profile_checked_at": "2026-10-06T06:29:00.635158+00:00",
+      "checked_at": "2026-10-06T06:29:00.635158+00:00",
       "musicbrainz_id": "255b778a-86f9-45c5-8c4c-014c5a6f1c66",
       "canonical_name": "Sonic Blume",
       "match_score": 100,
@@ -15522,14 +15428,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:17.027653+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:00.635158+00:00",
+      "attempt_count": 2
     },
     "taxi-girls": {
       "name": "Taxi Girls",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:19.277318+00:00",
-      "checked_at": "2026-10-03T05:22:19.277318+00:00",
+      "profile_checked_at": "2026-10-06T06:29:03.381539+00:00",
+      "checked_at": "2026-10-06T06:29:03.381539+00:00",
       "musicbrainz_id": "86dbabd1-5eef-455e-af14-e0a97b877963",
       "canonical_name": "Taxi Girls",
       "match_score": 100,
@@ -15550,14 +15456,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:19.277318+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:03.381539+00:00",
+      "attempt_count": 2
     },
     "the-wants": {
       "name": "The Wants",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:21.813716+00:00",
-      "checked_at": "2026-10-03T05:22:21.813716+00:00",
+      "profile_checked_at": "2026-10-06T06:29:05.671753+00:00",
+      "checked_at": "2026-10-06T06:29:05.671753+00:00",
       "musicbrainz_id": "c90e0b5c-fd79-4b5a-b539-1297a0f1dc38",
       "canonical_name": "The Wants",
       "match_score": 100,
@@ -15578,14 +15484,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:21.813716+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:05.671753+00:00",
+      "attempt_count": 2
     },
     "transportna": {
       "name": "Transportna",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:24.663069+00:00",
-      "checked_at": "2026-10-03T05:22:24.663069+00:00",
+      "profile_checked_at": "2026-10-06T06:29:08.441577+00:00",
+      "checked_at": "2026-10-06T06:29:08.441577+00:00",
       "musicbrainz_id": "688b8b82-e4a0-4c47-ba7e-33953a0dcf62",
       "canonical_name": "Transportna",
       "match_score": 100,
@@ -15603,8 +15509,8 @@
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:24.663069+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:08.441577+00:00",
+      "attempt_count": 2
     },
     "iron-wine-fiona-apple": {
       "name": "Iron & Wine/Fiona Apple",
@@ -15687,8 +15593,8 @@
     "dantevilles": {
       "name": "Dantevilles",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:35.915959+00:00",
-      "checked_at": "2026-10-03T05:22:35.915959+00:00",
+      "profile_checked_at": "2026-10-06T06:29:10.254933+00:00",
+      "checked_at": "2026-10-06T06:29:10.254933+00:00",
       "musicbrainz_id": "5d4208cd-5fb5-4c36-bdb7-0fc46cc1a6ed",
       "canonical_name": "Dantevilles",
       "match_score": 100,
@@ -15709,14 +15615,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:35.915959+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:10.254933+00:00",
+      "attempt_count": 2
     },
     "sarpa-salpa": {
       "name": "Sarpa Salpa",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:38.740728+00:00",
-      "checked_at": "2026-10-03T05:22:38.740728+00:00",
+      "profile_checked_at": "2026-10-06T06:29:12.987195+00:00",
+      "checked_at": "2026-10-06T06:29:12.987195+00:00",
       "musicbrainz_id": "551f78d5-7325-4632-895e-ffd199926f1f",
       "canonical_name": "Sarpa Salpa",
       "match_score": 100,
@@ -15737,14 +15643,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:38.740728+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:12.987195+00:00",
+      "attempt_count": 2
     },
     "nautics": {
       "name": "Nautics",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:41.614088+00:00",
-      "checked_at": "2026-10-03T05:22:41.614088+00:00",
+      "profile_checked_at": "2026-10-06T06:29:15.555808+00:00",
+      "checked_at": "2026-10-06T06:29:15.555808+00:00",
       "musicbrainz_id": "9da388b5-7437-4b49-b30e-c1174f4801bb",
       "canonical_name": "Nautics",
       "match_score": 100,
@@ -15765,14 +15671,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:41.614088+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:15.555808+00:00",
+      "attempt_count": 2
     },
     "susannah-joffe": {
       "name": "Susannah Joffe",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:43.737349+00:00",
-      "checked_at": "2026-10-03T05:22:43.737349+00:00",
+      "profile_checked_at": "2026-10-06T06:29:18.285425+00:00",
+      "checked_at": "2026-10-06T06:29:18.285425+00:00",
       "musicbrainz_id": "02452937-d06b-4e9f-966d-8477bae38ddc",
       "canonical_name": "Susannah Joffe",
       "match_score": 100,
@@ -15793,14 +15699,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:43.737349+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:18.285425+00:00",
+      "attempt_count": 2
     },
     "phoebe-green": {
       "name": "Phoebe Green",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:46.425705+00:00",
-      "checked_at": "2026-10-03T05:22:46.425705+00:00",
+      "profile_checked_at": "2026-10-06T06:29:20.146454+00:00",
+      "checked_at": "2026-10-06T06:29:20.146454+00:00",
       "musicbrainz_id": "1f5e9abf-e61a-4ac8-bb5b-677bae08f38c",
       "canonical_name": "Phoebe Green",
       "match_score": 100,
@@ -15821,14 +15727,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:46.425705+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:20.146454+00:00",
+      "attempt_count": 2
     },
     "mumrunner": {
       "name": "Mumrunner",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:48.951665+00:00",
-      "checked_at": "2026-10-03T05:22:48.951665+00:00",
+      "profile_checked_at": "2026-10-06T06:29:23.170399+00:00",
+      "checked_at": "2026-10-06T06:29:23.170399+00:00",
       "musicbrainz_id": "46315333-a116-4487-86a2-b6e33f79b773",
       "canonical_name": "Mumrunner",
       "match_score": 100,
@@ -15849,14 +15755,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:48.951665+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:23.170399+00:00",
+      "attempt_count": 2
     },
     "really-big-really-clever": {
       "name": "really big really clever",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:51.660086+00:00",
-      "checked_at": "2026-10-03T05:22:51.660086+00:00",
+      "profile_checked_at": "2026-10-06T06:29:25.446012+00:00",
+      "checked_at": "2026-10-06T06:29:25.446012+00:00",
       "musicbrainz_id": "e4397bc9-cea3-429e-8647-6bb3b7b21187",
       "canonical_name": "Really Big Really Clever",
       "match_score": 100,
@@ -15877,8 +15783,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:51.660086+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:25.446012+00:00",
+      "attempt_count": 2
     },
     "buck-meek": {
       "name": "Buck Meek",
@@ -15909,8 +15815,8 @@
     "tongues": {
       "name": "Tongues.",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:57.509097+00:00",
-      "checked_at": "2026-10-03T05:22:57.509097+00:00",
+      "profile_checked_at": "2026-10-06T06:29:28.175831+00:00",
+      "checked_at": "2026-10-06T06:29:28.175831+00:00",
       "musicbrainz_id": "07ab36c9-2c8b-43c8-84c3-39e030ea0eef",
       "canonical_name": "Tongues",
       "match_score": 95,
@@ -15931,14 +15837,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:57.509097+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:28.175831+00:00",
+      "attempt_count": 2
     },
     "tyler-ballgame": {
       "name": "Tyler Ballgame",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:22:59.773264+00:00",
-      "checked_at": "2026-10-03T05:22:59.773264+00:00",
+      "profile_checked_at": "2026-10-06T06:29:30.547950+00:00",
+      "checked_at": "2026-10-06T06:29:30.547950+00:00",
       "musicbrainz_id": "b354fdfa-5d8e-46ef-b76e-5bd1ed05a59c",
       "canonical_name": "Tyler Ballgame",
       "match_score": 100,
@@ -15959,14 +15865,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:22:59.773264+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:30.547950+00:00",
+      "attempt_count": 2
     },
     "girl-scout": {
       "name": "Girl Scout",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:02.493403+00:00",
-      "checked_at": "2026-10-03T05:23:02.493403+00:00",
+      "profile_checked_at": "2026-10-06T06:29:33.069553+00:00",
+      "checked_at": "2026-10-06T06:29:33.069553+00:00",
       "musicbrainz_id": "6d5ce39c-2508-44ab-a83c-2bb5ce4315f3",
       "canonical_name": "Girl Scout",
       "match_score": 100,
@@ -15987,14 +15893,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:02.493403+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:33.069553+00:00",
+      "attempt_count": 2
     },
     "introspekt": {
       "name": "Introspekt",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:05.831375+00:00",
-      "checked_at": "2026-10-03T05:23:05.831375+00:00",
+      "profile_checked_at": "2026-10-06T06:29:35.823154+00:00",
+      "checked_at": "2026-10-06T06:29:35.823154+00:00",
       "musicbrainz_id": "ee4fae76-0f8e-4985-8f29-e5b869bffa34",
       "canonical_name": "Introspekt",
       "match_score": 100,
@@ -16015,8 +15921,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:05.831375+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:35.823154+00:00",
+      "attempt_count": 2
     },
     "kaptan": {
       "name": "Kaptan",
@@ -16073,8 +15979,8 @@
     "jawdropped": {
       "name": "Jawdropped",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:12.296647+00:00",
-      "checked_at": "2026-10-03T05:23:12.296647+00:00",
+      "profile_checked_at": "2026-10-06T06:29:38.244978+00:00",
+      "checked_at": "2026-10-06T06:29:38.244978+00:00",
       "musicbrainz_id": "6c6f75db-49b3-4454-b808-936de5057d1d",
       "canonical_name": "Jawdropped",
       "match_score": 100,
@@ -16091,14 +15997,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:12.296647+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:38.244978+00:00",
+      "attempt_count": 2
     },
     "soft-riot": {
       "name": "Soft Riot",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:15.185063+00:00",
-      "checked_at": "2026-10-03T05:23:15.185063+00:00",
+      "profile_checked_at": "2026-10-06T06:29:40.696819+00:00",
+      "checked_at": "2026-10-06T06:29:40.696819+00:00",
       "musicbrainz_id": "7fa348d0-d99c-4d3e-a13a-d8771526730d",
       "canonical_name": "Soft Riot",
       "match_score": 100,
@@ -16119,8 +16025,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:15.185063+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:40.696819+00:00",
+      "attempt_count": 2
     },
     "torturetwinn-sculpture-club": {
       "name": "TORTURETWINN, Sculpture Club",
@@ -16151,8 +16057,8 @@
     "the-criticals": {
       "name": "The Criticals",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:18.820081+00:00",
-      "checked_at": "2026-10-03T05:23:18.820081+00:00",
+      "profile_checked_at": "2026-10-06T06:29:43.349098+00:00",
+      "checked_at": "2026-10-06T06:29:43.349098+00:00",
       "musicbrainz_id": "4f68897c-f168-4873-8a55-c2dcfe64cb7d",
       "canonical_name": "The Criticals",
       "match_score": 100,
@@ -16173,14 +16079,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:18.820081+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:43.349098+00:00",
+      "attempt_count": 2
     },
     "soviet-soviet": {
       "name": "Soviet Soviet",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:22.004128+00:00",
-      "checked_at": "2026-10-03T05:23:22.004128+00:00",
+      "profile_checked_at": "2026-10-06T06:29:45.906200+00:00",
+      "checked_at": "2026-10-06T06:29:45.906200+00:00",
       "musicbrainz_id": "31cfeb33-1cad-4015-89d2-2dde5a1e12b5",
       "canonical_name": "Soviet Soviet",
       "match_score": 100,
@@ -16201,8 +16107,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:22.004128+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:45.906200+00:00",
+      "attempt_count": 2
     },
     "empress-of-muna": {
       "name": "Empress Of/MUNA",
@@ -16258,8 +16164,8 @@
     "stilla-havet": {
       "name": "Stilla Havet",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:27.546386+00:00",
-      "checked_at": "2026-10-03T05:23:27.546386+00:00",
+      "profile_checked_at": "2026-10-06T06:29:48.418288+00:00",
+      "checked_at": "2026-10-06T06:29:48.418288+00:00",
       "musicbrainz_id": "0e538fa4-42e6-46b7-95f1-1f1bcd30856e",
       "canonical_name": "Stilla Havet",
       "match_score": 100,
@@ -16280,14 +16186,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:27.546386+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:48.418288+00:00",
+      "attempt_count": 2
     },
     "haim-bon-iver": {
       "name": "HAIM, Bon Iver",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:30.446665+00:00",
-      "checked_at": "2026-10-03T05:23:30.446665+00:00",
+      "profile_checked_at": "2026-10-06T06:29:50.925043+00:00",
+      "checked_at": "2026-10-06T06:29:50.925043+00:00",
       "musicbrainz_id": "",
       "canonical_name": "HAIM, Bon Iver",
       "match_score": 0,
@@ -16296,7 +16202,7 @@
       "social": {},
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "partial",
@@ -16304,14 +16210,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:30.446665+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:50.925043+00:00",
+      "attempt_count": 2
     },
     "the-letrasets": {
       "name": "The Letrasets",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:31.563359+00:00",
-      "checked_at": "2026-10-03T05:23:31.563359+00:00",
+      "profile_checked_at": "2026-10-06T06:29:51.672840+00:00",
+      "checked_at": "2026-10-06T06:29:51.672840+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The Letrasets",
       "match_score": 0,
@@ -16328,14 +16234,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:31.563359+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:51.672840+00:00",
+      "attempt_count": 2
     },
     "the-oceans": {
       "name": "The Oceans",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:33.007868+00:00",
-      "checked_at": "2026-10-03T05:23:33.007868+00:00",
+      "profile_checked_at": "2026-10-06T06:29:53.393592+00:00",
+      "checked_at": "2026-10-06T06:29:53.393592+00:00",
       "musicbrainz_id": "79318bbb-fef0-4049-b6e9-8f42f1ae5e18",
       "canonical_name": "The Oceans",
       "match_score": 100,
@@ -16352,14 +16258,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:33.007868+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:53.393592+00:00",
+      "attempt_count": 2
     },
     "miloe": {
       "name": "Miloe",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:35.967645+00:00",
-      "checked_at": "2026-10-03T05:23:35.967645+00:00",
+      "profile_checked_at": "2026-10-06T06:29:55.874500+00:00",
+      "checked_at": "2026-10-06T06:29:55.874500+00:00",
       "musicbrainz_id": "875a42fa-4205-48ea-a9f3-259e3882d793",
       "canonical_name": "Miloe",
       "match_score": 100,
@@ -16376,14 +16282,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:35.967645+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:55.874500+00:00",
+      "attempt_count": 2
     },
     "ethan-tasch": {
       "name": "Ethan Tasch",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:38.347003+00:00",
-      "checked_at": "2026-10-03T05:23:38.347003+00:00",
+      "profile_checked_at": "2026-10-06T06:29:58.294883+00:00",
+      "checked_at": "2026-10-06T06:29:58.294883+00:00",
       "musicbrainz_id": "b1820e7b-001c-4bf7-b33b-cc15830b4552",
       "canonical_name": "Ethan Tasch",
       "match_score": 100,
@@ -16404,8 +16310,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:38.347003+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:29:58.294883+00:00",
+      "attempt_count": 2
     },
     "billy-nomates": {
       "name": "Billy Nomates",
@@ -16436,8 +16342,8 @@
     "beau-x": {
       "name": "Beau x",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:43.727561+00:00",
-      "checked_at": "2026-10-03T05:23:43.727561+00:00",
+      "profile_checked_at": "2026-10-06T06:30:00.662498+00:00",
+      "checked_at": "2026-10-06T06:30:00.662498+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Beau x",
       "match_score": 0,
@@ -16454,14 +16360,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:43.727561+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:00.662498+00:00",
+      "attempt_count": 2
     },
     "double-virgo": {
       "name": "Double Virgo",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:44.875826+00:00",
-      "checked_at": "2026-10-03T05:23:44.875826+00:00",
+      "profile_checked_at": "2026-10-06T06:30:02.063847+00:00",
+      "checked_at": "2026-10-06T06:30:02.063847+00:00",
       "musicbrainz_id": "7f2154ea-b00c-4833-a009-328ec214b4ab",
       "canonical_name": "Double Virgo",
       "match_score": 100,
@@ -16478,18 +16384,18 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:44.875826+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:02.063847+00:00",
+      "attempt_count": 2
     },
     "glazyhaze": {
       "name": "Glazyhaze",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:47.387837+00:00",
-      "checked_at": "2026-10-03T05:23:47.387837+00:00",
+      "profile_checked_at": "2026-10-06T06:30:04.561188+00:00",
+      "checked_at": "2026-10-06T06:30:04.561188+00:00",
       "musicbrainz_id": "dc11bae7-96a5-4e60-a1e1-41902b0b7d60",
       "canonical_name": "Glazyhaze",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "https://glazyhaze.com/",
       "social": {
         "facebook": "",
@@ -16506,14 +16412,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:47.387837+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:04.561188+00:00",
+      "attempt_count": 2
     },
     "its-for-us": {
       "name": "It's for us",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:50.010380+00:00",
-      "checked_at": "2026-10-03T05:23:50.010380+00:00",
+      "profile_checked_at": "2026-10-06T06:30:05.672517+00:00",
+      "checked_at": "2026-10-06T06:30:05.672517+00:00",
       "musicbrainz_id": "f1a7d962-6c57-43cb-a765-f34317a85fa1",
       "canonical_name": "It’s for Us",
       "match_score": 100,
@@ -16534,8 +16440,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:50.010380+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:05.672517+00:00",
+      "attempt_count": 2
     },
     "mount-palomar-naomi-banks": {
       "name": "Mount Palomar, Naomi Banks",
@@ -16616,8 +16522,8 @@
     "the-sophs": {
       "name": "The Sophs",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:23:56.354375+00:00",
-      "checked_at": "2026-10-03T05:23:56.354375+00:00",
+      "profile_checked_at": "2026-10-06T06:30:08.526482+00:00",
+      "checked_at": "2026-10-06T06:30:08.526482+00:00",
       "musicbrainz_id": "c564ca3a-cf3b-4192-807e-b3a46c26cc5e",
       "canonical_name": "The Sophs",
       "match_score": 100,
@@ -16638,8 +16544,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:23:56.354375+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:08.526482+00:00",
+      "attempt_count": 2
     },
     "bombay-bicycle-club-matilda-mann": {
       "name": "Bombay Bicycle Club/Matilda Mann",
@@ -16696,8 +16602,8 @@
     "mudi-sama": {
       "name": "mudi sama",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:01.411634+00:00",
-      "checked_at": "2026-10-03T05:24:01.411634+00:00",
+      "profile_checked_at": "2026-10-06T06:30:10.603003+00:00",
+      "checked_at": "2026-10-06T06:30:10.603003+00:00",
       "musicbrainz_id": "dfc40aee-b568-4438-988f-6fff4b4f5951",
       "canonical_name": "mudi sama",
       "match_score": 100,
@@ -16718,18 +16624,18 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:01.411634+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:10.603003+00:00",
+      "attempt_count": 2
     },
     "wine-lips": {
       "name": "Wine Lips",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:04.230656+00:00",
-      "checked_at": "2026-10-03T05:24:04.230656+00:00",
+      "profile_checked_at": "2026-10-06T06:30:13.594551+00:00",
+      "checked_at": "2026-10-06T06:30:13.594551+00:00",
       "musicbrainz_id": "2ddac23f-58b9-4cad-9549-9c6be4d0bf17",
       "canonical_name": "Wine Lips",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {
         "facebook": "https://www.facebook.com/winelipsband",
@@ -16746,14 +16652,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:04.230656+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:13.594551+00:00",
+      "attempt_count": 2
     },
     "the-manatees": {
       "name": "The Manatees",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:07.001691+00:00",
-      "checked_at": "2026-10-03T05:24:07.001691+00:00",
+      "profile_checked_at": "2026-10-06T06:30:14.442359+00:00",
+      "checked_at": "2026-10-06T06:30:14.442359+00:00",
       "musicbrainz_id": "aa97db63-9c50-43ca-8aa6-30bdea395b62",
       "canonical_name": "The Manatees",
       "match_score": 100,
@@ -16770,14 +16676,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:07.001691+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:14.442359+00:00",
+      "attempt_count": 2
     },
     "greedi": {
       "name": "Greedi",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:09.383651+00:00",
-      "checked_at": "2026-10-03T05:24:09.383651+00:00",
+      "profile_checked_at": "2026-10-06T06:30:17.355892+00:00",
+      "checked_at": "2026-10-06T06:30:17.355892+00:00",
       "musicbrainz_id": "c5f24d75-178e-4d6d-a5ea-1c5222bfa5af",
       "canonical_name": "Greedi",
       "match_score": 100,
@@ -16798,14 +16704,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:09.383651+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:17.355892+00:00",
+      "attempt_count": 2
     },
     "laveda": {
       "name": "LaVeda",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:12.256712+00:00",
-      "checked_at": "2026-10-03T05:24:12.256712+00:00",
+      "profile_checked_at": "2026-10-06T06:30:19.696693+00:00",
+      "checked_at": "2026-10-06T06:30:19.696693+00:00",
       "musicbrainz_id": "5a5deb41-cfce-4918-abfe-c4a238da94bb",
       "canonical_name": "Laveda",
       "match_score": 100,
@@ -16826,14 +16732,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:12.256712+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:19.696693+00:00",
+      "attempt_count": 2
     },
     "minimal-schlager": {
       "name": "Minimal Schlager",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:14.759545+00:00",
-      "checked_at": "2026-10-03T05:24:14.759545+00:00",
+      "profile_checked_at": "2026-10-06T06:30:22.829405+00:00",
+      "checked_at": "2026-10-06T06:30:22.829405+00:00",
       "musicbrainz_id": "795d4d30-c20b-4376-a13c-354e80c9986f",
       "canonical_name": "Minimal Schlager",
       "match_score": 100,
@@ -16854,14 +16760,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:14.759545+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:22.829405+00:00",
+      "attempt_count": 2
     },
     "deserta": {
       "name": "Deserta",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:17.465756+00:00",
-      "checked_at": "2026-10-03T05:24:17.465756+00:00",
+      "profile_checked_at": "2026-10-06T06:30:25.031666+00:00",
+      "checked_at": "2026-10-06T06:30:25.031666+00:00",
       "musicbrainz_id": "07fc4101-8996-48c5-a7ff-33ac50af3a31",
       "canonical_name": "Deserta",
       "match_score": 100,
@@ -16882,8 +16788,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:17.465756+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:25.031666+00:00",
+      "attempt_count": 2
     },
     "dina-summer-kalipo-local-suicide": {
       "name": "Dina Summer, Kalipo, Local Suicide",
@@ -16914,8 +16820,8 @@
     "last-grasp": {
       "name": "Last Grasp",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:21.043578+00:00",
-      "checked_at": "2026-10-03T05:24:21.043578+00:00",
+      "profile_checked_at": "2026-10-06T06:30:27.566193+00:00",
+      "checked_at": "2026-10-06T06:30:27.566193+00:00",
       "musicbrainz_id": "5d326070-3f0d-4211-ae5d-494a10375754",
       "canonical_name": "Last Grasp",
       "match_score": 100,
@@ -16932,14 +16838,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:21.043578+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:27.566193+00:00",
+      "attempt_count": 2
     },
     "letters-to-lions": {
       "name": "Letters to Lions",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:23.983678+00:00",
-      "checked_at": "2026-10-03T05:24:23.983678+00:00",
+      "profile_checked_at": "2026-10-06T06:30:30.052239+00:00",
+      "checked_at": "2026-10-06T06:30:30.052239+00:00",
       "musicbrainz_id": "b1f7620e-47fa-4c1d-ac0b-4ed1f60b1ead",
       "canonical_name": "Letters to Lions",
       "match_score": 100,
@@ -16960,14 +16866,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:23.983678+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:30.052239+00:00",
+      "attempt_count": 2
     },
     "midding": {
       "name": "Midding",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:26.483166+00:00",
-      "checked_at": "2026-10-03T05:24:26.483166+00:00",
+      "profile_checked_at": "2026-10-06T06:30:32.755009+00:00",
+      "checked_at": "2026-10-06T06:30:32.755009+00:00",
       "musicbrainz_id": "19216164-e5f4-46ba-8a12-21ba34fe2f33",
       "canonical_name": "Midding",
       "match_score": 100,
@@ -16980,7 +16886,7 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/43c2c14b178bdf0769010dba27c6c039/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "partial",
@@ -16988,14 +16894,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:26.483166+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:32.755009+00:00",
+      "attempt_count": 2
     },
     "the-city-gates": {
       "name": "The City Gates",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:29.436930+00:00",
-      "checked_at": "2026-10-03T05:24:29.436930+00:00",
+      "profile_checked_at": "2026-10-06T06:30:35.338157+00:00",
+      "checked_at": "2026-10-06T06:30:35.338157+00:00",
       "musicbrainz_id": "ba799df3-8890-498e-9468-53ac76653732",
       "canonical_name": "The City Gates",
       "match_score": 100,
@@ -17012,8 +16918,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:29.436930+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:35.338157+00:00",
+      "attempt_count": 2
     },
     "oliver-sim": {
       "name": "Oliver Sim",
@@ -17044,8 +16950,8 @@
     "zack-villere": {
       "name": "Zack Villere",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:34.773294+00:00",
-      "checked_at": "2026-10-03T05:24:34.773294+00:00",
+      "profile_checked_at": "2026-10-06T06:30:37.843504+00:00",
+      "checked_at": "2026-10-06T06:30:37.843504+00:00",
       "musicbrainz_id": "34c310c9-6bd4-4879-ab27-20e266180a5c",
       "canonical_name": "Zack Villere",
       "match_score": 100,
@@ -17062,8 +16968,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:34.773294+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:37.843504+00:00",
+      "attempt_count": 2
     },
     "heems-unknown-mortal-orchestra": {
       "name": "Heems, Unknown Mortal Orchestra",
@@ -17094,8 +17000,8 @@
     "cold-comfort": {
       "name": "Cold Comfort",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:38.478838+00:00",
-      "checked_at": "2026-10-03T05:24:38.478838+00:00",
+      "profile_checked_at": "2026-10-06T06:30:40.023593+00:00",
+      "checked_at": "2026-10-06T06:30:40.023593+00:00",
       "musicbrainz_id": "1d7993b5-c4ae-4018-8136-c9916604e829",
       "canonical_name": "Cold Comfort",
       "match_score": 100,
@@ -17116,8 +17022,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:38.478838+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:40.023593+00:00",
+      "attempt_count": 2
     },
     "deus-ex-lumina-antipole": {
       "name": "Deus Ex Lumina, Antipole",
@@ -17147,12 +17053,12 @@
     "family-of-things": {
       "name": "Family of Things",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:42.248499+00:00",
-      "checked_at": "2026-10-03T05:24:42.248499+00:00",
+      "profile_checked_at": "2026-10-06T06:30:42.812793+00:00",
+      "checked_at": "2026-10-06T06:30:42.812793+00:00",
       "musicbrainz_id": "8e689a1c-dd7e-43e8-b126-c479c27a3d73",
       "canonical_name": "Family of Things",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "http://familyofthingsmusic.com/",
       "social": {
         "facebook": "",
@@ -17169,8 +17075,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:42.248499+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:42.812793+00:00",
+      "attempt_count": 2
     },
     "jjerome87-alt-j": {
       "name": "JJerome87, alt-J",
@@ -17201,8 +17107,8 @@
     "the-final-sound": {
       "name": "The Final Sound",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:46.112078+00:00",
-      "checked_at": "2026-10-03T05:24:46.112078+00:00",
+      "profile_checked_at": "2026-10-06T06:30:44.150258+00:00",
+      "checked_at": "2026-10-06T06:30:44.150258+00:00",
       "musicbrainz_id": "b0f154a8-eb7b-4f1c-b57e-478f7f455c32",
       "canonical_name": "The Final Sound",
       "match_score": 100,
@@ -17223,14 +17129,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:46.112078+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:44.150258+00:00",
+      "attempt_count": 2
     },
     "vacios-cuerpos": {
       "name": "Vacíos Cuerpos",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:49.043860+00:00",
-      "checked_at": "2026-10-03T05:24:49.043860+00:00",
+      "profile_checked_at": "2026-10-06T06:30:46.691100+00:00",
+      "checked_at": "2026-10-06T06:30:46.691100+00:00",
       "musicbrainz_id": "0689b90a-800b-441b-a839-0f161d1ce8c7",
       "canonical_name": "Vacíos Cuerpos",
       "match_score": 100,
@@ -17247,14 +17153,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:49.043860+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:46.691100+00:00",
+      "attempt_count": 2
     },
     "venus-the-flytraps": {
       "name": "Venus & the Flytraps",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:51.361263+00:00",
-      "checked_at": "2026-10-03T05:24:51.361263+00:00",
+      "profile_checked_at": "2026-10-06T06:30:48.922200+00:00",
+      "checked_at": "2026-10-06T06:30:48.922200+00:00",
       "musicbrainz_id": "fb3b933a-ddbe-4173-8b62-8a9c216ddc11",
       "canonical_name": "Venus & the Flytraps",
       "match_score": 100,
@@ -17275,14 +17181,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:51.361263+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:48.922200+00:00",
+      "attempt_count": 2
     },
     "we-cults": {
       "name": "We Cults",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:24:54.096120+00:00",
-      "checked_at": "2026-10-03T05:24:54.096120+00:00",
+      "profile_checked_at": "2026-10-06T06:30:51.464290+00:00",
+      "checked_at": "2026-10-06T06:30:51.464290+00:00",
       "musicbrainz_id": "a4cb0f5b-d96b-43ea-b732-a879fea59474",
       "canonical_name": "We Cults",
       "match_score": 100,
@@ -17291,7 +17197,7 @@
       "social": {},
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/46afe966df1fafb1cc70784b1af3211d/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "partial",
@@ -17299,8 +17205,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:24:54.096120+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:51.464290+00:00",
+      "attempt_count": 2
     },
     "arlo-parks-lous-and-the-yakuza": {
       "name": "Arlo Parks/Lous and The Yakuza",
@@ -17382,8 +17288,8 @@
     "micra": {
       "name": "Micra",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:00.259397+00:00",
-      "checked_at": "2026-10-03T05:25:00.259397+00:00",
+      "profile_checked_at": "2026-10-06T06:30:53.949034+00:00",
+      "checked_at": "2026-10-06T06:30:53.949034+00:00",
       "musicbrainz_id": "6989299a-eeb6-451f-b104-92b11b6dc144",
       "canonical_name": "Micra",
       "match_score": 100,
@@ -17404,14 +17310,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:00.259397+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:53.949034+00:00",
+      "attempt_count": 2
     },
     "blxckflamingo": {
       "name": "Blxckflamingo",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:03.137366+00:00",
-      "checked_at": "2026-10-03T05:25:03.137366+00:00",
+      "profile_checked_at": "2026-10-06T06:30:57.178642+00:00",
+      "checked_at": "2026-10-06T06:30:57.178642+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Blxckflamingo",
       "match_score": 0,
@@ -17428,8 +17334,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:03.137366+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:57.178642+00:00",
+      "attempt_count": 2
     },
     "cerrone-christine-and-the-queens": {
       "name": "Cerrone, Christine and the Queens",
@@ -17484,8 +17390,8 @@
     "j-laser": {
       "name": "J. Laser",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:06.728628+00:00",
-      "checked_at": "2026-10-03T05:25:06.728628+00:00",
+      "profile_checked_at": "2026-10-06T06:30:58.162504+00:00",
+      "checked_at": "2026-10-06T06:30:58.162504+00:00",
       "musicbrainz_id": "e0344f5d-ee3a-40a5-9944-48d567f219cb",
       "canonical_name": "J. Laser",
       "match_score": 100,
@@ -17506,18 +17412,18 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:06.728628+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:30:58.162504+00:00",
+      "attempt_count": 2
     },
     "krakow-loves-adana": {
       "name": "Kraków Loves Adana",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:09.735108+00:00",
-      "checked_at": "2026-10-03T05:25:09.735108+00:00",
+      "profile_checked_at": "2026-10-06T06:31:00.867425+00:00",
+      "checked_at": "2026-10-06T06:31:00.867425+00:00",
       "musicbrainz_id": "55b9627f-7167-4abf-84ca-0998fc62559b",
       "canonical_name": "Kraków Loves Adana",
       "match_score": 100,
-      "verification_source": "MusicBrainz",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {
         "facebook": "https://www.facebook.com/krakowlovesadana",
@@ -17534,8 +17440,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:09.735108+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:00.867425+00:00",
+      "attempt_count": 2
     },
     "mareux-riki": {
       "name": "Mareux, Riki",
@@ -17591,8 +17497,8 @@
     "traits": {
       "name": "Traits",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:14.816879+00:00",
-      "checked_at": "2026-10-03T05:25:14.816879+00:00",
+      "profile_checked_at": "2026-10-06T06:31:02.098033+00:00",
+      "checked_at": "2026-10-06T06:31:02.098033+00:00",
       "musicbrainz_id": "55b081b8-47c2-4da1-82f2-8e4828405a87",
       "canonical_name": "Traits",
       "match_score": 100,
@@ -17609,14 +17515,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:14.816879+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:02.098033+00:00",
+      "attempt_count": 2
     },
     "vacant-windows": {
       "name": "Vacant Windows",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:17.352495+00:00",
-      "checked_at": "2026-10-03T05:25:17.352495+00:00",
+      "profile_checked_at": "2026-10-06T06:31:04.723958+00:00",
+      "checked_at": "2026-10-06T06:31:04.723958+00:00",
       "musicbrainz_id": "64affb3e-261c-4669-86d7-c0cdf0a8ff52",
       "canonical_name": "Vacant Windows",
       "match_score": 100,
@@ -17633,14 +17539,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:17.352495+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:04.723958+00:00",
+      "attempt_count": 2
     },
     "vogue-noir": {
       "name": "Vogue.Noir",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:20.073338+00:00",
-      "checked_at": "2026-10-03T05:25:20.073338+00:00",
+      "profile_checked_at": "2026-10-06T06:31:07.271943+00:00",
+      "checked_at": "2026-10-06T06:31:07.271943+00:00",
       "musicbrainz_id": "980e6b04-31a4-4265-b5fc-40e785948394",
       "canonical_name": "Vogue.Noir",
       "match_score": 100,
@@ -17657,8 +17563,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:20.073338+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:07.271943+00:00",
+      "attempt_count": 2
     },
     "django-django-man-power": {
       "name": "Django Django, Man Power",
@@ -17688,8 +17594,8 @@
     "kaelan-mikla": {
       "name": "Kaelan Mikla",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:23.546784+00:00",
-      "checked_at": "2026-10-03T05:25:23.546784+00:00",
+      "profile_checked_at": "2026-10-06T06:31:09.889251+00:00",
+      "checked_at": "2026-10-06T06:31:09.889251+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Kaelan Mikla",
       "match_score": 0,
@@ -17706,14 +17612,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:23.546784+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:09.889251+00:00",
+      "attempt_count": 2
     },
     "noelle-sucks": {
       "name": "Noelle Sucks",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:24.871769+00:00",
-      "checked_at": "2026-10-03T05:25:24.871769+00:00",
+      "profile_checked_at": "2026-10-06T06:31:11.148505+00:00",
+      "checked_at": "2026-10-06T06:31:11.148505+00:00",
       "musicbrainz_id": "ed4fd689-c26b-4ccd-a11f-9d6268729b23",
       "canonical_name": "Noelle Sucks",
       "match_score": 100,
@@ -17734,14 +17640,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:24.871769+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:11.148505+00:00",
+      "attempt_count": 2
     },
     "panic-priest": {
       "name": "Panic Priest",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:27.516469+00:00",
-      "checked_at": "2026-10-03T05:25:27.516469+00:00",
+      "profile_checked_at": "2026-10-06T06:31:13.831764+00:00",
+      "checked_at": "2026-10-06T06:31:13.831764+00:00",
       "musicbrainz_id": "9cb33c48-2138-4f00-800d-4283427679fb",
       "canonical_name": "Panic Priest",
       "match_score": 100,
@@ -17762,8 +17668,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:27.516469+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:13.831764+00:00",
+      "attempt_count": 2
     },
     "norah-jones-remi-wolf": {
       "name": "Norah Jones/Remi Wolf",
@@ -17794,8 +17700,8 @@
     "ciel": {
       "name": "CIEL",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:31.308548+00:00",
-      "checked_at": "2026-10-03T05:25:31.308548+00:00",
+      "profile_checked_at": "2026-10-06T06:31:16.219673+00:00",
+      "checked_at": "2026-10-06T06:31:16.219673+00:00",
       "musicbrainz_id": "1a46fe16-73f4-4c17-a827-0f60d4f8de24",
       "canonical_name": "CIEL",
       "match_score": 92,
@@ -17808,7 +17714,7 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "https://cdn-images.dzcdn.net/images/artist/c9a8b2259c98fe85b7712600e453e447/1000x1000-000000-80-0-0.jpg",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a7ef807a7f5bc1137017b0ac760521f9/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
       "profile_status": "partial",
@@ -17816,8 +17722,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:31.308548+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:16.219673+00:00",
+      "attempt_count": 2
     },
     "cate-le-bon": {
       "name": "Cate Le Bon",
@@ -17848,8 +17754,8 @@
     "beach-vacation": {
       "name": "Beach Vacation",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:37.190341+00:00",
-      "checked_at": "2026-10-03T05:25:37.190341+00:00",
+      "profile_checked_at": "2026-10-06T06:31:18.914697+00:00",
+      "checked_at": "2026-10-06T06:31:18.914697+00:00",
       "musicbrainz_id": "a89df1d6-b386-4141-878a-c778b8d5452e",
       "canonical_name": "Beach Vacation",
       "match_score": 100,
@@ -17870,14 +17776,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:37.190341+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:18.914697+00:00",
+      "attempt_count": 2
     },
     "pixx": {
       "name": "Pixx",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:40.239257+00:00",
-      "checked_at": "2026-10-03T05:25:40.239257+00:00",
+      "profile_checked_at": "2026-10-06T06:31:21.347179+00:00",
+      "checked_at": "2026-10-06T06:31:21.347179+00:00",
       "musicbrainz_id": "90165cd6-f56e-4b26-9efa-fc30a1d05141",
       "canonical_name": "Pixx",
       "match_score": 100,
@@ -17898,14 +17804,14 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:40.239257+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:21.347179+00:00",
+      "attempt_count": 2
     },
     "glass-caves": {
       "name": "Glass Caves",
       "verified": true,
-      "profile_checked_at": "2026-10-03T05:25:42.632073+00:00",
-      "checked_at": "2026-10-03T05:25:42.632073+00:00",
+      "profile_checked_at": "2026-10-06T06:31:24.173272+00:00",
+      "checked_at": "2026-10-06T06:31:24.173272+00:00",
       "musicbrainz_id": "a26b5da3-a6e7-4a09-8877-3df2ec94f5a3",
       "canonical_name": "Glass Caves",
       "match_score": 100,
@@ -17922,8 +17828,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-06T05:25:42.632073+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-09T06:31:24.173272+00:00",
+      "attempt_count": 2
     },
     "60-juno-seatape": {
       "name": "60 juno, SEATAPE",
