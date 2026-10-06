@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T00:16:43.346594+00:00",
+  "generated_at": "2026-10-06T06:47:36.940741+00:00",
   "source_updates": {
-    "artists": "2026-10-06T00:16:37.647180Z",
-    "galleries": "2026-10-05T23:07:04.815665+00:00",
-    "album_art": "2026-10-05T22:55:23.602981+00:00"
+    "artists": "2026-10-06T06:47:32.434396Z",
+    "galleries": "2026-10-06T03:26:11.567878+00:00",
+    "album_art": "2026-10-06T03:20:40.332837+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1219
+      "yesstreaming_live": 1223
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,53 +39,53 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-06T00:16:37.647180Z"
+      "merged_at": "2026-10-06T06:47:32.434396Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 2661,
-    "real_profile_missing": 5280,
-    "real_profile_complete_pct": 33.51,
+    "real_profile_complete": 2696,
+    "real_profile_missing": 5245,
+    "real_profile_complete_pct": 33.95,
     "profile_status": {
-      "legacy": 3604,
-      "complete": 2550,
-      "partial": 1458,
-      "not_found": 329
+      "legacy": 3535,
+      "complete": 2585,
+      "partial": 1485,
+      "not_found": 336
     },
-    "missing_validated_profile_image": 3949,
-    "missing_profile_bio": 3696,
-    "missing_profile_data": 2099,
+    "missing_validated_profile_image": 3888,
+    "missing_profile_bio": 3694,
+    "missing_profile_data": 2084,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 2747,
-    "core_complete_pct": 34.59,
+    "core_complete": 2770,
+    "core_complete_pct": 34.88,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 4144,
-    "effective_image_pct": 52.18,
+    "effective_image": 4193,
+    "effective_image_pct": 52.8,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 2496,
-    "missing_image": 3797,
-    "effective_bio": 4245,
-    "effective_bio_pct": 53.46,
+    "image_gallery_fallback": 2545,
+    "missing_image": 3748,
+    "effective_bio": 4247,
+    "effective_bio_pct": 53.48,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 2964,
-    "missing_bio": 3696,
+    "bio_gallery_en": 2966,
+    "missing_bio": 3694,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 3992,
-    "with_social": 3710,
-    "with_genre": 3502,
+    "gallery_with_images": 4053,
+    "with_social": 3733,
+    "with_genre": 3506,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18186,
-    "with_effective_artwork": 10174,
-    "with_effective_artwork_pct": 55.94,
-    "missing_artwork": 8012,
-    "grouped_as_otras": 5890,
-    "with_first_and_last_dates": 17661,
-    "album_art_cache_entries": 10521,
-    "album_art_cache_found": 9808,
+    "total": 18187,
+    "with_effective_artwork": 10648,
+    "with_effective_artwork_pct": 58.55,
+    "missing_artwork": 7539,
+    "grouped_as_otras": 5891,
+    "with_first_and_last_dates": 17665,
+    "album_art_cache_entries": 10866,
+    "album_art_cache_found": 10153,
     "album_art_cache_missed": 713
   },
   "focus": {
@@ -249,7 +249,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": false,
+      "has_social": true,
       "has_genre": true,
       "related": 10,
       "missing_core": [
@@ -1045,8 +1045,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "gallery",
@@ -2695,23 +2695,21 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
         "bio",
         "data"
       ],
@@ -4646,43 +4644,6 @@
       "profile_complete": false
     },
     {
-      "name": "Bonsur",
-      "slug": "bonsur",
-      "plays": 43,
-      "first_played": "16 jul 2012",
-      "last_played": "10 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "A Lull",
       "slug": "a-lull",
       "plays": 42,
@@ -6100,42 +6061,6 @@
       "profile_complete": false
     },
     {
-      "name": "Said the Whale",
-      "slug": "said-the-whale",
-      "plays": 36,
-      "first_played": "29 oct 2012",
-      "last_played": "10 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 5,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Silver Swans",
       "slug": "silver-swans",
       "plays": 36,
@@ -6584,8 +6509,8 @@
         "lastfm"
       ],
       "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 2,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -7298,6 +7223,79 @@
         "data"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "Mr. Little Jeans",
+      "slug": "mr-little-jeans",
+      "plays": 33,
+      "first_played": "8 jun 2013",
+      "last_played": "1 dic 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 4,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio",
+        "data"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Now, Now",
+      "slug": "now-now",
+      "plays": 33,
+      "first_played": "19 jul 2012",
+      "last_played": "27 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7396,7 +7394,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": false,
+      "has_social": true,
       "has_genre": true,
       "related": 10,
       "missing_core": [
@@ -8124,8 +8122,8 @@
         "lastfm"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "gallery",
@@ -9538,23 +9536,21 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
         "bio",
         "data"
       ],
