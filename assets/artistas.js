@@ -2,7 +2,6 @@
   "use strict";
 
   const ARTISTS_ORIGIN = "https://artistas.loudermx.com";
-  const INTEGRATED_ARTISTS_URL = "https://loudermx.com/musica/artistas/";
   const q = (s, root = document) => root.querySelector(s);
   const qa = (s, root = document) => Array.from(root.querySelectorAll(s));
 
@@ -387,7 +386,7 @@
       const index = await artistIndex();
       const slug = artistSlugFor(meta.artist, index);
       radio.artistLink.hidden = !slug;
-      if (slug) radio.artistLink.href = INTEGRATED_ARTISTS_URL + "?artista=" + encodeURIComponent(slug);
+      if (slug) radio.artistLink.href = ARTISTS_ORIGIN + "/artistas/" + encodeURIComponent(slug) + "/";
     }
 
     if (radio.art && radio.fallback) {
