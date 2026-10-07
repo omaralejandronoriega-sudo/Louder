@@ -1570,8 +1570,8 @@ def main() -> int:
     (DOCS / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (DOCS / "artistas" / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (DOCS / "robots.txt").write_text(
-        "User-agent: *\\nAllow: /\\n" +
-        f"Sitemap: {PUBLIC_ARTISTS_ORIGIN}/sitemap.xml\\n",
+        "User-agent: *\nAllow: /\n" +
+        f"Sitemap: {PUBLIC_ARTISTS_ORIGIN}/sitemap.xml\n",
         encoding="utf-8",
     )
 
