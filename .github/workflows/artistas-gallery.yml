@@ -58,7 +58,7 @@ jobs:
           if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
             EXTRA="--refresh"
           fi
-          python scripts/enrich_galleries.py --limit 60 $EXTRA
+          python scripts/enrich_galleries.py --limit 1 $EXTRA
 
       - name: Save gallery metadata
         shell: bash
