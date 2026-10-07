@@ -10,7 +10,7 @@ on:
       - "scripts/enrichment_state.py"
       - ".github/workflows/artistas-gallery.yml"
   schedule:
-    - cron: "8,38 * * * *"
+    - cron: "8,18,28,38,48,58 * * * *"
   workflow_dispatch:
     inputs:
       refresh:
@@ -58,7 +58,7 @@ jobs:
           if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
             EXTRA="--refresh"
           fi
-          python scripts/enrich_galleries.py --limit 720 $EXTRA
+          python scripts/enrich_galleries.py --limit 60 $EXTRA
 
       - name: Save gallery metadata
         shell: bash
