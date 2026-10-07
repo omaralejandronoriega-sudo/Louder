@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T09:05:22.512957+00:00",
+  "updated_at": "2026-10-07T09:06:11.666458+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -11429,31 +11429,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/eqqwlt1764278309.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/eqqwlt1764278309.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:06:09.961560+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/5mt3d21764278438.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/5mt3d21764278438.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:06:10.403573+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/j3yc6n1764278332.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/j3yc6n1764278332.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:06:10.850096+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/2y43xe1764278452.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/2y43xe1764278452.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:06:11.336629+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/zsqyb01764279986.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/zsqyb01764279986.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:06:11.665545+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -11468,12 +11483,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "Mexico City, Mexico",
-      "wikipedia_url": "",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caifanes",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "TheAudioDB",
-      "verification_title": "",
-      "profile_checked_at": "2026-10-01T06:11:24.352197+00:00",
-      "updated_at": "2026-10-01T06:11:24.352197+00:00"
+      "verification_source": "Wikipedia",
+      "verification_title": "Caifanes",
+      "profile_checked_at": "2026-10-07T09:06:04.425795+00:00",
+      "updated_at": "2026-10-07T09:06:04.425795+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "cajun-dance-party": {
       "name": "Cajun Dance Party",
