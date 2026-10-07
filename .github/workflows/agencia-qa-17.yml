@@ -1,13 +1,13 @@
 name: Agencia QA 17 trabajadores
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/agencia-qa-17.yml'
+  schedule:
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 permissions:
   issues: write
   contents: read
+env:
+  QA_MARKER: AGENCIA_QA_17_V2
 jobs:
   validar:
     runs-on: ubuntu-latest
