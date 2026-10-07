@@ -1,7 +1,7 @@
 name: Agencia Louder - Produccion IA
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened, labeled, edited, reopened]
 permissions:
   contents: read
   issues: write
@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   producir:
-    if: contains(github.event.issue.labels.*.name, 'agencia-orden')
+    if: contains(github.event.issue.labels.*.name, 'agencia-orden') && !contains(github.event.issue.labels.*.name, 'agencia-produccion')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -110,3 +110,4 @@ jobs:
             const body='## Entrega del equipo Louder\n\n'+result+'\n\n---\n**Publicacion bloqueada:** requiere autorizacion manual de Omar en Agencia.';
             await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:body.slice(0,65000)});
             await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-produccion']});
+            await github.rest.issues.removeLabel({...context.repo,issue_number:context.issue.number,name:'agencia-orden'}).catch(()=>{});
