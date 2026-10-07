@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T09:19:11.692322+00:00",
+  "updated_at": "2026-10-07T09:32:52.915017+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -52351,31 +52351,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/quyyuw1437344792.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/quyyuw1437344792.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:39.626487+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/trrxvp1389105601.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/trrxvp1389105601.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:40.025364+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vwvwrw1439752086.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vwvwrw1439752086.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:40.426916+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/1f82lt1628509530.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/1f82lt1628509530.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:40.844777+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/ysvwtv1526045791.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/ysvwtv1526045791.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:41.200365+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -52390,12 +52405,17 @@
       "genre": "Hip-Hop",
       "style": "Urban/R&B",
       "country": "New York, USA",
-      "wikipedia_url": "",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nas",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "TheAudioDB",
-      "verification_title": "",
-      "profile_checked_at": "2026-10-01T07:04:57.110635+00:00",
-      "updated_at": "2026-10-01T07:04:57.110635+00:00"
+      "verification_source": "Wikipedia",
+      "verification_title": "Nas",
+      "profile_checked_at": "2026-10-07T09:28:34.654622+00:00",
+      "updated_at": "2026-10-07T09:28:34.654622+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "nation-of-language": {
       "name": "Nation of Language",
@@ -98220,8 +98240,18 @@
     "bermuda-bonnie": {
       "name": "Bermuda Bonnie",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/f5308d7f2e8fb3be1ec56331060ea618/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/f5308d7f2e8fb3be1ec56331060ea618/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:51.956514+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -98233,8 +98263,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:24:01.293644+00:00",
-      "updated_at": "2026-09-28T23:24:01.293644+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:27:48.591455+00:00",
+      "updated_at": "2026-10-07T09:27:48.591455+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:27:48.591455+00:00",
+      "attempt_count": 1
     },
     "chikita-violenta": {
       "name": "Chikita Violenta",
@@ -99581,36 +99622,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/r9cdnz1660315957.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/r9cdnz1660315957.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:05.207477+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-551bd4036432d.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-551bd4036432d.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:05.722910+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-4ee2a333e59a5.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-4ee2a333e59a5.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:06.569253+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-613c742fd2d43.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/hollywood-undead-613c742fd2d43.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:07.487979+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/yabbuu1660316487.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/yabbuu1660316487.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:08.335951+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Hollywood Undead is an American rap rock band from Los Angeles, California, formed in 2005. All of the band members use pseudonyms and previously wore their own unique mask, most of which were based on the common hockey goaltender design. The band currently consists of five members: J-Dog, Funny Man, Johnny 3 Tears, Charlie Scene, and Danny. They released their debut album, Swan Songs, on September 2, 2008, and their live CD/DVD Desperate Measures, on November 10, 2009. Their second studio album, American Tragedy, was released April 5, 2011. Their third studio album, titled Notes from the Underground, was released on January 8, 2013.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -99620,8 +99676,17 @@
       "genre": "Rap Metal",
       "style": "Rock/Pop",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:24:58.310069+00:00",
-      "updated_at": "2026-09-28T23:24:58.310069+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Undead",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Hollywood Undead",
+      "profile_checked_at": "2026-10-07T09:28:00.209609+00:00",
+      "updated_at": "2026-10-07T09:28:00.209609+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "keaton-henson": {
       "name": "Keaton Henson",
@@ -100259,31 +100324,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wqtyxw1352290054.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wqtyxw1352290054.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:57.678932+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/svtrwv1352290062.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/svtrwv1352290062.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:58.259388+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/urvryv1352290082.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/urvryv1352290082.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:58.667026+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/l1nolz1627661756.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/l1nolz1627661756.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:59.117443+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/swqspw1524494384.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/swqspw1524494384.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:27:59.403810+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -100298,8 +100378,17 @@
       "genre": "Rock",
       "style": "Rock/Pop",
       "country": "Houston, Texas, USA",
-      "profile_checked_at": "2026-09-28T23:25:24.634439+00:00",
-      "updated_at": "2026-09-28T23:25:24.634439+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/ZZ_Top",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "ZZ Top",
+      "profile_checked_at": "2026-10-07T09:27:52.693836+00:00",
+      "updated_at": "2026-10-07T09:27:52.693836+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "ash": {
       "name": "Ash",
@@ -100443,10 +100532,20 @@
     "ben-sollee-daniel-martin-moore": {
       "name": "Ben Sollee & Daniel Martin Moore",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Ben_Sollee_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Ben_Sollee_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:24.487514+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Ben Sollee is an American cellist, singer-songwriter, and composer known for his political activism. His music incorporates banjo, guitar, and mandolin along with percussion and unusual cello techniques. His songs exhibit a mix of folk, bluegrass, jazz, and R&B elements. Sollee has also composed longer instrumental pieces for dance ensembles and for film.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -100456,8 +100555,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:31.218543+00:00",
-      "updated_at": "2026-09-28T23:25:31.218543+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Sollee",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Ben Sollee",
+      "profile_checked_at": "2026-10-07T09:28:14.900202+00:00",
+      "updated_at": "2026-10-07T09:28:14.900202+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "chromeo": {
       "name": "Chromeo",
@@ -100579,13 +100687,19 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/yyxrvy1365403854.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/yyxrvy1365403854.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:30.164304+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wxswpv1365403667.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wxswpv1365403667.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:30.624795+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
@@ -100600,8 +100714,17 @@
       "genre": "Folk",
       "style": "Folk",
       "country": "A Coruña, Spain",
-      "profile_checked_at": "2026-09-28T23:25:37.801378+00:00",
-      "updated_at": "2026-09-28T23:25:37.801378+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:28:25.203204+00:00",
+      "updated_at": "2026-10-07T09:28:25.203204+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "disdente": {
       "name": "Disdente",
@@ -100619,16 +100742,38 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:39.993598+00:00",
-      "updated_at": "2026-09-28T23:25:39.993598+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:28:31.318652+00:00",
+      "updated_at": "2026-10-07T09:28:31.318652+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:28:31.318652+00:00",
+      "attempt_count": 1
     },
     "eldia": {
       "name": "EldIA",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Frachter_ELLINORA_%28griech.%29_%28Kiel_67.187%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Frachter_ELLINORA_%28griech.%29_%28Kiel_67.187%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:05.301606+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Eldia was a steel freighter which was blown ashore in East Orleans, Massachusetts on March 29, 1984. The ship, which was owned by the Greek company Thenamaris Inc. and registered in Malta, was refloated two months later by the salvage company Donjon Marine who received title to the ship as payment. A year later the ship was scrapped.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -100638,8 +100783,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:42.190946+00:00",
-      "updated_at": "2026-09-28T23:25:42.190946+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eldia",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Eldia",
+      "profile_checked_at": "2026-10-07T09:28:58.550479+00:00",
+      "updated_at": "2026-10-07T09:28:58.550479+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "george-ezra": {
       "name": "George Ezra",
@@ -100875,12 +101029,15 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/5zv64m1781695390.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/5zv64m1781695390.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:57.836538+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Ivyrise are a British rock band originating in Portsmouth, England formed by Ben Falinski in 2009.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -100890,8 +101047,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:53.160176+00:00",
-      "updated_at": "2026-09-28T23:25:53.160176+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivyrise",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Ivyrise",
+      "profile_checked_at": "2026-10-07T09:28:52.900352+00:00",
+      "updated_at": "2026-10-07T09:28:52.900352+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "little-moe-and-the-atomic-two-tones": {
       "name": "Little Moe and The Atomic Two-Tones",
@@ -100909,16 +101075,38 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:55.354677+00:00",
-      "updated_at": "2026-09-28T23:25:55.354677+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:28:41.971381+00:00",
+      "updated_at": "2026-10-07T09:28:41.971381+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:28:41.971381+00:00",
+      "attempt_count": 1
     },
     "los-concorde": {
       "name": "Los Concorde",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/f4a4ab995360685f358d60bad149fd1c/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/f4a4ab995360685f358d60bad149fd1c/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:14.187051+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Los Concorde is a Mexican alternative rock band that brings together well-known and experienced musicians, which is why it is considered a “supergroup.” The band allows members the freedom to come and go, with the only condition being that they leave their mark.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -100928,8 +101116,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:25:57.549389+00:00",
-      "updated_at": "2026-09-28T23:25:57.549389+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Concorde",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Los Concorde",
+      "profile_checked_at": "2026-10-07T09:28:09.087992+00:00",
+      "updated_at": "2026-10-07T09:28:09.087992+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "no": {
       "name": "No",
@@ -101286,8 +101483,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:12.896878+00:00",
-      "updated_at": "2026-09-28T23:26:12.896878+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:29:05.986096+00:00",
+      "updated_at": "2026-10-07T09:29:05.986096+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:29:05.986096+00:00",
+      "attempt_count": 1
     },
     "toploader": {
       "name": "Toploader",
@@ -101297,24 +101506,33 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qyysts1469335610.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qyysts1469335610.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:50.686075+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vtwyqu1469337019.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vtwyqu1469337019.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:51.472865+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/toploader-5148b0781e788.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/toploader-5148b0781e788.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:28:52.159074+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Toploader are an English rock band from Eastbourne, East Sussex, formed in 1997, with over two million album sales and several top-20 hits both home and abroad. Their debut album, Onka's Big Moka, sold over one million copies and peaked in the top five of the UK Albums Chart, where it remained for six months; it earned them four nominations at the 2001 Brit Awards. Their 2000 cover of Boffalongo's song \"Dancing in the Moonlight\" reached the top ten in the music charts in the United Kingdom and Ireland. Their second album, Magic Hotel, reached no. three on the UK Albums Chart. The band broke up in 2003, after the release of their second album, but they reformed in 2009.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -101324,8 +101542,17 @@
       "genre": "Pop",
       "style": "Rock/Pop",
       "country": "Eastbourne, England, UK",
-      "profile_checked_at": "2026-09-28T23:26:15.090580+00:00",
-      "updated_at": "2026-09-28T23:26:15.090580+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toploader",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Toploader",
+      "profile_checked_at": "2026-10-07T09:28:45.505013+00:00",
+      "updated_at": "2026-10-07T09:28:45.505013+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "various-cruelties": {
       "name": "Various Cruelties",
@@ -101442,10 +101669,20 @@
     "weed": {
       "name": "Weed",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Stairs_with_weed.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/4/47/Stairs_with_weed.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:14.099206+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "A weed is a plant considered undesirable in a particular situation, growing where it conflicts with human preferences, needs, or goals. Plants with characteristics that make them hazardous, aesthetically unappealing, difficult to control in managed environments, or otherwise unwanted in farm land, orchards, gardens, lawns, parks, recreational spaces, residential and industrial areas, may all be considered weeds. The concept of weeds is particularly significant in agriculture, where the presence of weeds in fields used to grow crops may cause major losses in yields. Invasive species, plants introduced to an environment where their presence negatively impacts the overall functioning and biodiversity of the ecosystem, may also sometimes be considered weeds.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -101455,8 +101692,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:21.671556+00:00",
-      "updated_at": "2026-09-28T23:26:21.671556+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weed",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Weed",
+      "profile_checked_at": "2026-10-07T09:29:09.533674+00:00",
+      "updated_at": "2026-10-07T09:29:09.533674+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "aqualung": {
       "name": "Aqualung",
@@ -101510,8 +101756,18 @@
     "ben-browning": {
       "name": "Ben Browning",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/fd86330f05cf8f6ea8907f777ba8695e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/fd86330f05cf8f6ea8907f777ba8695e/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:17.643172+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -101523,8 +101779,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:26.056172+00:00",
-      "updated_at": "2026-09-28T23:26:26.056172+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:29:14.812366+00:00",
+      "updated_at": "2026-10-07T09:29:14.812366+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:29:14.812366+00:00",
+      "attempt_count": 1
     },
     "bipolar-sunshine": {
       "name": "Bipolar Sunshine",
@@ -101646,30 +101913,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f4d0a582.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f4d0a582.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:47.064751+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f019462a.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f019462a.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:47.594630+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f3538ec8.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/deer-tick-4eeb1f3538ec8.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:47.995856+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/deer-tick-510348cfa8dd3.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/deer-tick-510348cfa8dd3.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:48.469428+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Deer Tick is an American alternative rock-folk band from Providence, Rhode Island, composed of singer-songwriter John J. McCauley, guitarist Ian O'Neil, bassist Christopher Ryan and drummer Dennis Ryan.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -101679,8 +101958,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "Providence, Rhode Island, USA",
-      "profile_checked_at": "2026-09-28T23:26:32.641338+00:00",
-      "updated_at": "2026-09-28T23:26:32.641338+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Tick_(band)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Deer Tick (band)",
+      "profile_checked_at": "2026-10-07T09:29:41.945454+00:00",
+      "updated_at": "2026-10-07T09:29:41.945454+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "deftones": {
       "name": "Deftones",
@@ -101848,8 +102136,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:39.215901+00:00",
-      "updated_at": "2026-09-28T23:26:39.215901+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:29:33.019805+00:00",
+      "updated_at": "2026-10-07T09:29:33.019805+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:29:33.019805+00:00",
+      "attempt_count": 1
     },
     "girls-in-hawaii": {
       "name": "Girls in Hawaii",
@@ -101906,18 +102206,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/intergalactic-lovers-5160367a4ae93.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/intergalactic-lovers-5160367a4ae93.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:54.304467+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/swwrvw1517404919.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/swwrvw1517404919.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:54.937581+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Intergalactic Lovers is a Belgian indie rock band consisting of Lara Chedraoui, Brendan Corbey, Maarten Huygens and Raf De Mey.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -101927,8 +102233,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:43.602267+00:00",
-      "updated_at": "2026-09-28T23:26:43.602267+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Intergalactic_Lovers",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Intergalactic Lovers",
+      "profile_checked_at": "2026-10-07T09:29:49.189936+00:00",
+      "updated_at": "2026-10-07T09:29:49.189936+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "lush": {
       "name": "Lush",
@@ -102020,8 +102335,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:26:47.985540+00:00",
-      "updated_at": "2026-09-28T23:26:47.985540+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:29:38.604180+00:00",
+      "updated_at": "2026-10-07T09:29:38.604180+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:29:38.604180+00:00",
+      "attempt_count": 1
     },
     "morningbell": {
       "name": "Morningbell",
@@ -102100,36 +102427,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xxxuts1347476280.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xxxuts1347476280.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:28.814709+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/syqtyt1347476292.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/syqtyt1347476292.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:29.268543+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/tywswu1347476302.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/tywswu1347476302.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:29.790293+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ipox1s1640107837.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ipox1s1640107837.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:31.564646+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/ttxyus1525948203.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/ttxyus1525948203.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:32.141360+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Benjamin Paul Ballance-Drew, better known by his stage name Plan B, is an English rapper, singer, songwriter, actor and filmmaker. He first emerged as a rapper, releasing his debut studio album, Who Needs Actions When You Got Words, in 2006. His second studio album, The Defamation of Strickland Banks (2010), was a soul and R&B album, and debuted at number one on the UK Albums Chart. He has also collaborated with other artists such as Chase & Status, most notably on the 2009 top ten single \"End Credits\".",
       "official_url": "www.time4planb.co.uk",
       "social": {
         "facebook": "www.facebook.com/planbmusic",
@@ -102139,8 +102481,17 @@
       "genre": "Hip-Hop",
       "style": "Urban/R&B",
       "country": "London, England",
-      "profile_checked_at": "2026-09-28T23:26:54.560117+00:00",
-      "updated_at": "2026-09-28T23:26:54.560117+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Plan_B_(musician)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Plan B (musician)",
+      "profile_checked_at": "2026-10-07T09:29:23.753360+00:00",
+      "updated_at": "2026-10-07T09:29:23.753360+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "rooney": {
       "name": "Rooney",
@@ -102646,10 +102997,20 @@
     "you-cant-win-charlie-brown": {
       "name": "You Can't Win, Charlie Brown",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/YCWCB_June_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/b/bb/YCWCB_June_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:29:23.015812+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "You Can't Win, Charlie Brown are a Portuguese rock band from Lisbon, formed in 2009. The band consists of Afonso Cabral, David Santos (keyboards), Pedro Branco (guitar), Salvador Menezes, João Gil and Tomás Sousa (drums).",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -102659,8 +103020,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:27:16.483358+00:00",
-      "updated_at": "2026-09-28T23:27:16.483358+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/You_Can't_Win%2C_Charlie_Brown",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "You Can't Win, Charlie Brown",
+      "profile_checked_at": "2026-10-07T09:29:18.350836+00:00",
+      "updated_at": "2026-10-07T09:29:18.350836+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "apparat": {
       "name": "Apparat",
@@ -102670,36 +103040,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/apparat-4ffc47eb976ae.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/apparat-4ffc47eb976ae.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:19.684237+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/apparat-4ffc48278aa95.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/apparat-4ffc48278aa95.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:20.199873+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/7puc9s1646440948.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/7puc9s1646440948.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:20.816864+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/s3f3421646440957.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/s3f3421646440957.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:21.667313+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/ec651a1618601199.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/ec651a1618601199.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:22.261638+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Sascha Ring, better known by the stage name Apparat, is a German electronic musician. He was previously co-owner of Shitkatapult records. Starting out with dancefloor-oriented techno, he shifted focus towards ambient music, becoming \"more interested in designing sounds than beats\".",
       "official_url": "www.apparat.net",
       "social": {
         "facebook": "",
@@ -102709,8 +103094,17 @@
       "genre": "Electronic",
       "style": "Electronic",
       "country": "Germany",
-      "profile_checked_at": "2026-09-28T23:27:18.676930+00:00",
-      "updated_at": "2026-09-28T23:27:18.676930+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Apparat_(musician)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Apparat (musician)",
+      "profile_checked_at": "2026-10-07T09:30:14.769199+00:00",
+      "updated_at": "2026-10-07T09:30:14.769199+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "atoms-for-peace": {
       "name": "Atoms for Peace",
@@ -103029,30 +103423,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/gzkwcv1680993932.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/gzkwcv1680993932.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:09.058144+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/bwlvy71680993835.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/bwlvy71680993835.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:09.539456+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/concrete-blonde-50fbad26169e1.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/concrete-blonde-50fbad26169e1.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:09.979644+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/1wigof1713813099.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/1wigof1713813099.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:10.415640+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Concrete Blonde was an American rock band from Hollywood, California. They were active from 1982 to 1994 and reunited twice: first from 2001 to 2004, then from 2010 to 2012. They were best known for their album Bloodletting (1990), its top-20 single \"Joey\", and Johnette Napolitano's distinctive vocal style.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -103062,8 +103468,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:27:31.848091+00:00",
-      "updated_at": "2026-09-28T23:27:31.848091+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concrete_Blonde",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Concrete Blonde",
+      "profile_checked_at": "2026-10-07T09:30:04.007372+00:00",
+      "updated_at": "2026-10-07T09:30:04.007372+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "fops": {
       "name": "Fops",
@@ -103081,8 +103496,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:27:34.045027+00:00",
-      "updated_at": "2026-09-28T23:27:34.045027+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:30:11.166633+00:00",
+      "updated_at": "2026-10-07T09:30:11.166633+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:30:11.166633+00:00",
+      "attempt_count": 1
     },
     "french-films": {
       "name": "French Films",
@@ -103514,10 +103941,20 @@
     "radical-dads": {
       "name": "Radical Dads",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/RadicalDadsJapan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/1/1a/RadicalDadsJapan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:28.106653+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Radical Dads are an American indie rock band from Brooklyn, New York.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -103527,16 +103964,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:27:53.782153+00:00",
-      "updated_at": "2026-09-28T23:27:53.782153+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Radical_Dads",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Radical Dads",
+      "profile_checked_at": "2026-10-07T09:30:23.005730+00:00",
+      "updated_at": "2026-10-07T09:30:23.005730+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "scattered-trees": {
       "name": "Scattered Trees",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/4f6a6caf5268dca10d08624412b0d777/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/4f6a6caf5268dca10d08624412b0d777/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:34.807926+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Scattered Trees was an American indie rock band from Chicago, Illinois. The band was on the Roll Call/EMI label before their breakup in 2012.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -103546,8 +104002,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:27:55.976822+00:00",
-      "updated_at": "2026-09-28T23:27:55.976822+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scattered_Trees",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Scattered Trees",
+      "profile_checked_at": "2026-10-07T09:30:28.850506+00:00",
+      "updated_at": "2026-10-07T09:30:28.850506+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "semisonic": {
       "name": "Semisonic",
@@ -103672,30 +104137,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sxswty1588085030.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sxswty1588085030.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:01.023928+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xtrtrx1588085014.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xtrtrx1588085014.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:02.056632+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ttyytr1588084720.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ttyytr1588084720.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:02.820789+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wsspuy1588085053.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wsspuy1588085053.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:03.224762+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Ludovic Navarre, known by his stage name St Germain, is a French DJ and musical artist. His style has been described as a combination of house music and nu jazz music.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -103705,8 +104182,17 @@
       "genre": "Lounge",
       "style": "Jazz",
       "country": "France",
-      "profile_checked_at": "2026-09-28T23:28:02.560776+00:00",
-      "updated_at": "2026-09-28T23:28:02.560776+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St_Germain_(musician)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "St Germain (musician)",
+      "profile_checked_at": "2026-10-07T09:29:55.678312+00:00",
+      "updated_at": "2026-10-07T09:29:55.678312+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "technicolor-fabrics": {
       "name": "Technicolor Fabrics",
@@ -104174,8 +104660,18 @@
     "chief": {
       "name": "Chief",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/eded1c95fb70dbddbd25467ea5eba973/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/eded1c95fb70dbddbd25467ea5eba973/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:15.471007+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -104187,8 +104683,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:22.305743+00:00",
-      "updated_at": "2026-09-28T23:28:22.305743+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:31:10.545147+00:00",
+      "updated_at": "2026-10-07T09:31:10.545147+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:31:10.545147+00:00",
+      "attempt_count": 1
     },
     "cocorosie": {
       "name": "CocoRosie",
@@ -104406,10 +104913,20 @@
     "his-boy-elroy": {
       "name": "His Boy Elroy",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_original_His_Boy_Elroy_band_1993.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_original_His_Boy_Elroy_band_1993.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:56.505708+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "His Boy Elroy (HBE) was an American alternative rock band from Seattle, Washington. The band's name is taken from the lyrics to the theme song of the American cartoon The Jetsons, referring to George Jetson's son, Elroy Jetson.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104419,8 +104936,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:31.072030+00:00",
-      "updated_at": "2026-09-28T23:28:31.072030+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/His_Boy_Elroy",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "His Boy Elroy",
+      "profile_checked_at": "2026-10-07T09:30:51.918433+00:00",
+      "updated_at": "2026-10-07T09:30:51.918433+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "me-and-lp": {
       "name": "ME and LP",
@@ -104438,8 +104964,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:33.263848+00:00",
-      "updated_at": "2026-09-28T23:28:33.263848+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:30:42.798178+00:00",
+      "updated_at": "2026-10-07T09:30:42.798178+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:30:42.798178+00:00",
+      "attempt_count": 1
     },
     "night-works": {
       "name": "Night Works",
@@ -104601,36 +105139,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sublime-4fcfe7c1b28af.JPG",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sublime-4fcfe7c1b28af.JPG/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:02.308129+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sublime-4fcfe7dd83520.JPG",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sublime-4fcfe7dd83520.JPG/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:02.774562+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ssyppw1397707442.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ssyppw1397707442.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:03.481417+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ld7m1f1682515596.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ld7m1f1682515596.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:04.046876+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://www.theaudiodb.com/images/media/artist/thumb/3w2mof1789627786.jpg",
           "preview": "https://www.theaudiodb.com/images/media/artist/thumb/3w2mof1789627786.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:04.417887+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Sublime is an American ska punk band from Long Beach, California. Founded in 1988, the band's original lineup consisted of Bradley Nowell, Eric Wilson (bass), and Bud Gaugh (drums). Lou Dog, Nowell's dalmatian, was the mascot of the band. Nowell died of a heroin overdose in 1996, resulting in the band's breakup. In 1997, songs such as \"What I Got\", \"Santeria\", \"Wrong Way\", \"Doin' Time\", and \"April 29, 1992 (Miami)\" were released to U.S. radio.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104640,8 +105193,17 @@
       "genre": "Ska Punk",
       "style": "Reggae",
       "country": "California, USA",
-      "profile_checked_at": "2026-09-28T23:28:42.035639+00:00",
-      "updated_at": "2026-09-28T23:28:42.035639+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sublime_(band)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Sublime (band)",
+      "profile_checked_at": "2026-10-07T09:30:57.311335+00:00",
+      "updated_at": "2026-10-07T09:30:57.311335+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "t-rex": {
       "name": "T. Rex",
@@ -104720,10 +105282,20 @@
     "taddy-porter": {
       "name": "Taddy Porter",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/c381d0b2bd32f6fa4f53f86e7cc37589/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/c381d0b2bd32f6fa4f53f86e7cc37589/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:51.160386+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Taddy Porter is an American rock band formed in 2007 in Stillwater, Oklahoma, United States. The band members are Andy Brewer, Joe Selby, Doug Jones (drums), and Kevin Jones (bass). The band describes their sound as a mix of classic rock and blues in a modern-rock setting.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104733,8 +105305,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:46.434851+00:00",
-      "updated_at": "2026-09-28T23:28:46.434851+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taddy_Porter",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Taddy Porter",
+      "profile_checked_at": "2026-10-07T09:30:46.260287+00:00",
+      "updated_at": "2026-10-07T09:30:46.260287+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-preatures": {
       "name": "The Preatures",
@@ -104804,10 +105385,20 @@
     "the-rest": {
       "name": "The Rest",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Boygenius_-_the_rest.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/en/e/ee/Boygenius_-_the_rest.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:09.811292+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Rest is the second extended play by American indie rock supergroup Boygenius, released through Interscope Records on October 13, 2023. A follow-up to the band's first full-length album The Record, individual songs were revealed one at a time while on tour, eventually performing the entire EP. The EP has received positive reviews from critics.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104817,16 +105408,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:50.820103+00:00",
-      "updated_at": "2026-09-28T23:28:50.820103+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rest_(EP)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Rest (EP)",
+      "profile_checked_at": "2026-10-07T09:31:05.139052+00:00",
+      "updated_at": "2026-10-07T09:31:05.139052+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "trophy-wife": {
       "name": "Trophy Wife",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Cranach_Ill-matched_couple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Cranach_Ill-matched_couple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:30:42.007944+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "A trophy wife is a wife who is regarded as a status symbol for the husband. The term is often used in a derogatory or disparaging way, implying that the wife in question has little personal merit besides her physical attractiveness, requires substantial expense for maintaining her appearance, is often unintelligent or unsophisticated, does very little of substance beyond remaining attractive, and is in some ways synonymous with the term gold digger. A trophy wife is typically relatively young and attractive, and may be a second, third or later wife of an older, wealthier man. A trophy husband is the male equivalent.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104836,8 +105446,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:28:55.207683+00:00",
-      "updated_at": "2026-09-28T23:28:55.207683+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trophy_wife",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Trophy wife",
+      "profile_checked_at": "2026-10-07T09:30:35.639004+00:00",
+      "updated_at": "2026-10-07T09:30:35.639004+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "black-light-burns": {
       "name": "Black Light Burns",
@@ -104847,36 +105466,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vypuqu1487428693.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vypuqu1487428693.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:01.752092+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qysvps1487428721.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qysvps1487428721.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:02.185368+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wtvpwx1487428781.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wtvpwx1487428781.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:02.971341+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/black-light-burns-54d4ee53c75dd.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/black-light-burns-54d4ee53c75dd.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:03.936502+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/rvtwsy1368897034.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/rvtwsy1368897034.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:04.382224+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Black Light Burns was an American industrial rock band fronted by Wes Borland. Founded in 2005 after Borland departed Limp Bizkit, the band's lineup also includes Nick Annis, Dennis Sanders and Dylan Taylor. Their debut album, Cruel Melody, was released in June 2007 to critical acclaim. They released a covers and b-sides CD/DVD combo package in the summer of 2008 titled Cover Your Heart and the Anvil Pants Odyssey. After a temporary hiatus, the band regrouped in 2012 and released their second album, The Moment You Realize You're Going to Fall in August. The band released a concept album, Lotus Island, in January 2013.",
       "official_url": "blacklightburnsofficial.com",
       "social": {
         "facebook": "www.facebook.com/BlackLightBurnsOfficial?fref=ts",
@@ -104886,8 +105520,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "California, USA",
-      "profile_checked_at": "2026-09-28T23:28:57.400789+00:00",
-      "updated_at": "2026-09-28T23:28:57.400789+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Light_Burns",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Black Light Burns",
+      "profile_checked_at": "2026-10-07T09:31:56.650919+00:00",
+      "updated_at": "2026-10-07T09:31:56.650919+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "butthole-surfers": {
       "name": "Butthole Surfers",
@@ -104897,36 +105540,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qvuwus1469554385.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qvuwus1469554385.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:34.396857+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ytytsu1469554394.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ytytsu1469554394.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:35.050421+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qyvuyw1469554403.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qyvuyw1469554403.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:36.110727+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uphr5t1641844124.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uphr5t1641844124.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:36.918412+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vxruww1366186780.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vxruww1366186780.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:37.446471+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Butthole Surfers are an American rock band formed in San Antonio, Texas, by singer Gibby Haynes and guitarist Paul Leary in 1981. The band has had numerous personnel changes, but its core lineup of Haynes, Leary, and drummer King Coffey remained consistent since 1983. Teresa Nervosa served as second drummer, playing alongside Coffey from 1983 to 1985, 1986 to 1989, and 2009. The band had also employed a variety of bass players, most notably Jeff Pinkus.",
       "official_url": "www.buttholesurfers.com",
       "social": {
         "facebook": "",
@@ -104936,8 +105594,17 @@
       "genre": "Experimental",
       "style": "Punk",
       "country": "San Antonio, USA",
-      "profile_checked_at": "2026-09-28T23:28:59.595752+00:00",
-      "updated_at": "2026-09-28T23:28:59.595752+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Butthole_Surfers",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Butthole Surfers",
+      "profile_checked_at": "2026-10-07T09:31:29.389301+00:00",
+      "updated_at": "2026-10-07T09:31:29.389301+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "cerati": {
       "name": "Cerati",
@@ -104945,7 +105612,7 @@
       "images": [],
       "image_count": 0,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Cerati is a surname of Italian origin. It derives from the Italian word cero, meaning 'to curl'. Notable people with the surname include:Antonio Cerati (1738–1816), Italian philologist\nBenito Cerati, Chilean singer\nCarla Cerati (1926–2016), Italian photographer and writer\nCarlo Cerati (1865–1948), Italian sculptor\nCesare Cerati (1899–1969), Italian journalist, veteran, and futurist\nDavide Cerati, Italian photographer\nGustavo Cerati (1959–2014), Argentine musician and singer-songwriter\nJulián Cerati, Argentinian actor\nLino Cerati (1938–2025), Italian sports shooter\nLisa Cerati, Chilean singer\nMario Luigi Cerati (1876–1913), Italian journalist\nUmberto Cerati (1911–1994), Italian long-distance runner\nVincenza Cerati Rivolta (1905–2000), Italian pianist",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -104955,14 +105622,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:01.793018+00:00",
-      "updated_at": "2026-09-28T23:29:01.793018+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cerati_(surname)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Cerati (surname)",
+      "profile_checked_at": "2026-10-07T09:31:19.899354+00:00",
+      "updated_at": "2026-10-07T09:31:19.899354+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-10T09:31:19.899354+00:00",
+      "attempt_count": 1
     },
     "cerati-melero": {
       "name": "Cerati / Melero",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/a639c5aef3b56882275252adbb0b670c/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/a639c5aef3b56882275252adbb0b670c/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:19.093514+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -104974,8 +105662,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:03.988752+00:00",
-      "updated_at": "2026-09-28T23:29:03.988752+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:31:16.240031+00:00",
+      "updated_at": "2026-10-07T09:31:16.240031+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:31:16.240031+00:00",
+      "attempt_count": 1
     },
     "eye-emma-jedi": {
       "name": "Eye Emma Jedi",
@@ -105133,8 +105832,18 @@
     "gross-magic": {
       "name": "Gross Magic",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/1c3801d16368b854f5f604f61e4c8221/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/1c3801d16368b854f5f604f61e4c8221/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:55.818089+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -105146,14 +105855,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:12.777449+00:00",
-      "updated_at": "2026-09-28T23:29:12.777449+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:31:53.038797+00:00",
+      "updated_at": "2026-10-07T09:31:53.038797+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:31:53.038797+00:00",
+      "attempt_count": 1
     },
     "heart-set-self-destruct": {
       "name": "Heart-Set Self-Destruct",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/559cf71e8246c2f5ebd1890dcaabed3f/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/559cf71e8246c2f5ebd1890dcaabed3f/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:08.014055+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -105165,8 +105895,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:14.970942+00:00",
-      "updated_at": "2026-09-28T23:29:14.970942+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:32:05.110091+00:00",
+      "updated_at": "2026-10-07T09:32:05.110091+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:32:05.110091+00:00",
+      "attempt_count": 1
     },
     "melero": {
       "name": "Melero",
@@ -105184,8 +105925,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:17.166624+00:00",
-      "updated_at": "2026-09-28T23:29:17.166624+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:31:25.913002+00:00",
+      "updated_at": "2026-10-07T09:31:25.913002+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:31:25.913002+00:00",
+      "attempt_count": 1
     },
     "randy-travis": {
       "name": "Randy Travis",
@@ -105195,36 +105948,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qpvyrq1364864687.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qpvyrq1364864687.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:43.495200+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/a011t91640187733.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/a011t91640187733.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:44.026474+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/hr1v861640187827.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/hr1v861640187827.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:44.692044+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/pja0911640187920.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/pja0911640187920.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:45.373070+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/txuvwu1532009260.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/txuvwu1532009260.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:45.929732+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Randy Bruce Traywick, known professionally as Randy Travis, is an American country and southern gospel singer and songwriter, as well as a film and television actor. Active since 1979, he has recorded more than 20 studio albums and charted more than 50 singles on Billboard's Hot Country Songs charts, including 16 that reached the number-one position.",
       "official_url": "randy-travis.com",
       "social": {
         "facebook": "",
@@ -105234,8 +106002,17 @@
       "genre": "Country",
       "style": "Country",
       "country": "Marshville, North Carolina, USA",
-      "profile_checked_at": "2026-09-28T23:29:19.356685+00:00",
-      "updated_at": "2026-09-28T23:29:19.356685+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Randy_Travis",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Randy Travis",
+      "profile_checked_at": "2026-10-07T09:31:38.391271+00:00",
+      "updated_at": "2026-10-07T09:31:38.391271+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "saturday-looks-good-to-me": {
       "name": "Saturday Looks Good To Me",
@@ -105324,18 +106101,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/fodwrp1762098691.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/fodwrp1762098691.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:51.687217+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/trrsqq1357773186.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/trrsqq1357773186.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:31:52.287271+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Starflyer 59 is an American alternative rock band from Riverside, California, that was founded in 1993 by Jason Martin, brother of Ronnie Martin of Joy Electric. While Jason Martin has written nearly all of Starflyer 59's songs, the band has included a number of different musicians over the years, including Jeff Cloud, Frank Lenz, and Richard Swift. The band's sound was initially identified as an outgrowth of the shoegaze movement of the early 1990s, but it is considered to have gradually evolved to the point of little resemblance to that of its early days.",
       "official_url": "www.sf59.com",
       "social": {
         "facebook": "",
@@ -105345,8 +106128,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "California, USA",
-      "profile_checked_at": "2026-09-28T23:29:25.933629+00:00",
-      "updated_at": "2026-09-28T23:29:25.933629+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Starflyer_59",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Starflyer 59",
+      "profile_checked_at": "2026-10-07T09:31:46.713329+00:00",
+      "updated_at": "2026-10-07T09:31:46.713329+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-paper-scissors": {
       "name": "The Paper Scissors",
@@ -105714,19 +106506,28 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/hybrid-5134e4ae08f97.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/hybrid-5134e4ae08f97.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:28.532309+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/rtyypx1530186154.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/rtyypx1530186154.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:29.235619+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qrrppp1340410433.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qrrppp1340410433.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:29.823855+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
@@ -105741,16 +106542,37 @@
       "genre": "Breaks",
       "style": "Electronic",
       "country": "Swansea, Wales",
-      "profile_checked_at": "2026-09-28T23:29:43.500280+00:00",
-      "updated_at": "2026-09-28T23:29:43.500280+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:32:23.544470+00:00",
+      "updated_at": "2026-10-07T09:32:23.544470+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:32:23.544470+00:00",
+      "attempt_count": 1
     },
     "kindest-lines": {
       "name": "Kindest Lines",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/922bc4185b38659e3b371e14481f0fcc/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/922bc4185b38659e3b371e14481f0fcc/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:46.163059+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Kindest Lines are a new wave group from New Orleans, Louisiana. The band is made up of vocalist and keyboardist Brittany Terry, guitarist Jack Champagne, keyboardist and drum programmer Justin Blaire Vial.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -105760,8 +106582,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:45.689586+00:00",
-      "updated_at": "2026-09-28T23:29:45.689586+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kindest_Lines",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Kindest Lines",
+      "profile_checked_at": "2026-10-07T09:32:41.318605+00:00",
+      "updated_at": "2026-10-07T09:32:41.318605+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "kula-shaker": {
       "name": "Kula Shaker",
@@ -105840,8 +106671,18 @@
     "mesmer": {
       "name": "Mesmer",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/43fcf8ae415cf4ba192dfeb5a806f367/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/43fcf8ae415cf4ba192dfeb5a806f367/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:52.914476+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -105853,8 +106694,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:50.080464+00:00",
-      "updated_at": "2026-09-28T23:29:50.080464+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:32:46.878478+00:00",
+      "updated_at": "2026-10-07T09:32:46.878478+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:32:46.878478+00:00",
+      "attempt_count": 1
     },
     "negramaro": {
       "name": "Negramaro",
@@ -105938,36 +106790,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vurupr1353683207.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vurupr1353683207.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:35.545717+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uuwrup1342380439.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uuwrup1342380439.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:35.913520+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xstvrx1342380453.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xstvrx1342380453.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:36.457899+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/0donqg1635346555.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/0donqg1635346555.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:36.851742+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/svtxru1526045515.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/svtxru1526045515.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:37.272323+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Nickelback is a Canadian rock band formed in 1995 in Hanna, Alberta, comprising lead guitarist and lead vocalist Chad Kroeger, rhythm guitarist, keyboardist and backing vocalist Ryan Peake, and bassist Mike Kroeger. It went through several drummer changes between 1995 and 2005 before Daniel Adair joined.",
       "official_url": "nickelback.com",
       "social": {
         "facebook": "www.facebook.com/Nickelback",
@@ -105977,8 +106844,17 @@
       "genre": "Hard Rock",
       "style": "Rock/Pop",
       "country": "Alberta, Canada",
-      "profile_checked_at": "2026-09-28T23:29:54.467309+00:00",
-      "updated_at": "2026-09-28T23:29:54.467309+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nickelback",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Nickelback",
+      "profile_checked_at": "2026-10-07T09:32:30.530286+00:00",
+      "updated_at": "2026-10-07T09:32:30.530286+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "northpilot": {
       "name": "Northpilot",
@@ -105996,8 +106872,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:29:56.657824+00:00",
-      "updated_at": "2026-09-28T23:29:56.657824+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:32:38.030030+00:00",
+      "updated_at": "2026-10-07T09:32:38.030030+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:32:38.030030+00:00",
+      "attempt_count": 1
     },
     "only-real": {
       "name": "Only Real",
@@ -106162,36 +107050,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ka3tst1666512320.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ka3tst1666512320.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:13.820053+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/jg7qk61666512329.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/jg7qk61666512329.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:14.388794+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ilwlm41666512449.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ilwlm41666512449.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:14.895278+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/x0bwkm1666512765.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/x0bwkm1666512765.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:15.420266+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/dwc0c91666512343.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/dwc0c91666512343.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:15.826653+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Social Distortion is an American punk rock band formed in 1978 in Fullerton, California. It consists of Mike Ness, Jonny Wickersham (guitar), Brent Harding (bass), and David Hidalgo Jr. (drums).",
       "official_url": "www.socialdistortion.com",
       "social": {
         "facebook": "www.facebook.com/socialdistortion",
@@ -106201,8 +107104,17 @@
       "genre": "Punk Rock",
       "style": "Punk",
       "country": "Fullerton, California, USA",
-      "profile_checked_at": "2026-09-28T23:30:05.435284+00:00",
-      "updated_at": "2026-09-28T23:30:05.435284+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Social_Distortion",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Social Distortion",
+      "profile_checked_at": "2026-10-07T09:32:08.820834+00:00",
+      "updated_at": "2026-10-07T09:32:08.820834+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "stereo-mcs": {
       "name": "Stereo MC's",
@@ -106338,24 +107250,33 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wrsvqq1364146032.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wrsvqq1364146032.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:21.581894+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/t7p5mx1630053349.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/t7p5mx1630053349.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:22.443317+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vvsryv1364145973.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vvsryv1364145973.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:32:22.839029+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Us3 is a British jazz rap group founded by London-based producer Geoff Wilkinson in 1992.",
       "official_url": "www.us3.com",
       "social": {
         "facebook": "www.facebook.com/Us3official",
@@ -106365,8 +107286,17 @@
       "genre": "Hip-Hop",
       "style": "Jazz",
       "country": "London, England",
-      "profile_checked_at": "2026-09-28T23:30:14.200748+00:00",
-      "updated_at": "2026-09-28T23:30:14.200748+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Us3",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Us3",
+      "profile_checked_at": "2026-10-07T09:32:16.568337+00:00",
+      "updated_at": "2026-10-07T09:32:16.568337+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "xtc": {
       "name": "XTC",
