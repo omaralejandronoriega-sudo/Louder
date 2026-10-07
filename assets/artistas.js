@@ -53,7 +53,7 @@
     function makeCard(item) {
       const a = document.createElement("a");
       a.className = "artist-card";
-      a.href = ARTISTS_ORIGIN + "/artistas/" + item.slug + "/";
+      a.href = ARTISTS_ORIGIN + "/artistas/musica/" + item.slug + "/";
       a.dataset.artistCard = "";
       a.dataset.name = normalize(item.name);
       a.dataset.letter = normalize(item.name).slice(0, 1).toUpperCase();
@@ -133,7 +133,7 @@
     q("[data-shuffle]")?.addEventListener("click", () => {
       if (!filtered.length) return;
       const pick = filtered[Math.floor(Math.random() * filtered.length)];
-      window.location.href = ARTISTS_ORIGIN + "/artistas/" + pick.slug + "/";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/musica/" + pick.slug + "/";
     });
 
     fetch(new URL("/artists-index.json", ARTISTS_ORIGIN), { cache:"force-cache" })
