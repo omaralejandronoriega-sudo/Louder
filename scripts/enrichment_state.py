@@ -172,8 +172,6 @@ def profile_missing_fields(artist: dict[str, Any], gallery: dict[str, Any] | Non
         missing.append("image")
     if not has_text(artist.get("bio") or gallery.get("bio_es") or gallery.get("bio_en")):
         missing.append("bio")
-    if not has_profile_data(artist, gallery):
-        missing.append("data")
     return missing
 
 
