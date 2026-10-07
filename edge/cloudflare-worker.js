@@ -2,7 +2,7 @@
 const PAGES_ORIGIN = "https://artistas.loudermx.com";
 const PAGES_BASE = "";
 const GITHUB_OWNER = "omaralejandronoriega-sudo";
-const ARTIST_PUBLIC_ORIGIN = "https://artistas.loudermx.com";
+const ARTIST_PUBLIC_ORIGIN = "https://loudermx.com";
 
 function githubUrl(requestUrl) {
   const incoming = new URL(requestUrl);
@@ -181,13 +181,6 @@ export default {
 
     if (isAiRoute(incoming.pathname)) {
       return handleAi(request, env);
-    }
-
-    if (incoming.pathname === "/artistas" || incoming.pathname.startsWith("/artistas/")) {
-      const target = new URL(ARTIST_PUBLIC_ORIGIN);
-      target.pathname = incoming.pathname;
-      target.search = incoming.search;
-      return Response.redirect(target.toString(), 301);
     }
 
     // Only selected static sections are served from GitHub Pages.
