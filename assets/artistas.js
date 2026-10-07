@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const ARTISTS_ORIGIN = "https://artistas.loudermx.com";
+  const ARTISTS_ORIGIN = "https://loudermx.com";
   const q = (s, root = document) => root.querySelector(s);
   const qa = (s, root = document) => Array.from(root.querySelectorAll(s));
 
@@ -52,7 +52,7 @@
     function makeCard(item) {
       const a = document.createElement("a");
       a.className = "artist-card";
-      a.href = ARTISTS_ORIGIN + "/artistas/musica/" + item.slug + "/";
+      a.href = ARTISTS_ORIGIN + "/artistas/" + item.slug + "/";
       a.dataset.artistCard = "";
       a.dataset.name = normalize(item.name);
       a.dataset.letter = normalize(item.name).slice(0, 1).toUpperCase();
@@ -132,7 +132,7 @@
     q("[data-shuffle]")?.addEventListener("click", () => {
       if (!filtered.length) return;
       const pick = filtered[Math.floor(Math.random() * filtered.length)];
-      window.location.href = ARTISTS_ORIGIN + "/artistas/musica/" + pick.slug + "/";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/" + pick.slug + "/";
     });
 
     fetch(new URL("/artists-index.json", ARTISTS_ORIGIN), { cache:"force-cache" })
@@ -155,7 +155,7 @@
       const rows = (data.artists || []).filter((item) => item.slug && item.slug !== currentSlug);
       if (!rows.length) throw new Error("empty");
       const pick = rows[Math.floor(Math.random() * rows.length)];
-      window.location.href = ARTISTS_ORIGIN + "/artistas/musica/" + pick.slug + "/";
+      window.location.href = ARTISTS_ORIGIN + "/artistas/" + pick.slug + "/";
     } catch (_) {
       window.location.href = ARTISTS_ORIGIN + "/artistas/";
     }
@@ -386,7 +386,7 @@
       const index = await artistIndex();
       const slug = artistSlugFor(meta.artist, index);
       radio.artistLink.hidden = !slug;
-      if (slug) radio.artistLink.href = ARTISTS_ORIGIN + "/artistas/musica/" + encodeURIComponent(slug) + "/";
+      if (slug) radio.artistLink.href = ARTISTS_ORIGIN + "/artistas/" + encodeURIComponent(slug) + "/";
     }
 
     if (radio.art && radio.fallback) {
