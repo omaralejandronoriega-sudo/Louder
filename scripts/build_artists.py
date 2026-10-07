@@ -114,10 +114,7 @@ def is_public_artist_candidate(value: str) -> bool:
         return False
     # Reject obvious import artifacts. Numeric-only names are allowed only
     # when explicitly reviewed as real artists in Louder's catalog.
-    numeric_allowlist = {"424"}
-    if re.fullmatch(r"\\d+", raw) and raw not in numeric_allowlist:
-        return False
-    # Corrupt playlist rows frequently arrive with a leading dot.
+    # Numeric-only imports (001, 002, 424, etc.) are metadata artifacts, not artist identities.\n    # Names beginning with digits plus text, such as 070 Shake, remain valid.\n    if re.fullmatch(r"\\d+", raw):\n        return False\n    # Corrupt playlist rows frequently arrive with a leading dot.
     if raw.startswith("."):
         return False
     # Filename/track-number artifacts such as 01_3_Doors_Down_ are not artists.
