@@ -102,6 +102,7 @@ jobs:
           echo "artist_profiles=$ARTIST_COUNT"
           test "$ARTIST_COUNT" -ge 1000
           test -s docs/control/index.html
+          echo "artist_pages=$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l)"
           test -s docs/control/manifest.webmanifest
           python -m json.tool docs/control/manifest.webmanifest >/dev/null
           node --check docs/control/sw.js
