@@ -22,6 +22,7 @@ on:
       - "scripts/build_control.py"
       - "scripts/build_artist_progress.py"
       - "scripts/enrich_galleries.py"
+      - "data/force_publish.txt"
       - ".github/workflows/artistas-gallery.yml"
       - ".github/workflows/artistas-publish.yml"
   workflow_dispatch:
