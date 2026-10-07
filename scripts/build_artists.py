@@ -118,7 +118,7 @@ def is_public_artist_candidate(value: str) -> bool:
     if re.fullmatch(r"\\d+", raw) and raw not in numeric_allowlist:
         return False
     # Corrupt playlist rows frequently arrive with a leading dot.
-    if re.match(r"^\\.\\s+", raw):
+    if raw.startswith("."):
         return False
     # Filename/track-number artifacts such as 01_3_Doors_Down_ are not artists.
     if re.match(r"^\\d{1,3}_.+_?$", raw):
