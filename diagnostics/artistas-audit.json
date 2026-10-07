@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-07T09:52:21.950415+00:00",
+  "generated_at": "2026-10-07T13:52:19.614211+00:00",
   "source_updates": {
-    "artists": "2026-10-07T09:52:18.159362Z",
-    "galleries": "2026-10-07T09:39:04.386956+00:00",
+    "artists": "2026-10-07T13:52:14.035769Z",
+    "galleries": "2026-10-07T10:25:47.220949+00:00",
     "album_art": "2026-10-07T06:36:47.172365+00:00"
   },
   "catalog": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1253
+      "yesstreaming_live": 1259
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,31 +39,31 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-07T09:52:18.159362Z"
+      "merged_at": "2026-10-07T13:52:14.035769Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4187,
-    "real_profile_missing": 3728,
-    "real_profile_complete_pct": 52.9,
+    "real_profile_complete": 4191,
+    "real_profile_missing": 3724,
+    "real_profile_complete_pct": 52.95,
     "profile_status": {
-      "complete": 4031,
-      "partial": 2072,
-      "legacy": 1281,
-      "not_found": 531
+      "complete": 4020,
+      "partial": 2161,
+      "legacy": 1172,
+      "not_found": 562
     },
-    "missing_validated_profile_image": 1247,
+    "missing_validated_profile_image": 1243,
     "missing_profile_bio": 3470,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4157,
-    "core_complete_pct": 52.52,
+    "core_complete": 4161,
+    "core_complete_pct": 52.57,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6673,
-    "effective_image_pct": 84.31,
+    "effective_image": 6677,
+    "effective_image_pct": 84.36,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5028,
-    "missing_image": 1242,
+    "image_gallery_fallback": 5032,
+    "missing_image": 1238,
     "effective_bio": 4445,
     "effective_bio_pct": 56.16,
     "bio_direct_artist": 1026,
@@ -72,18 +72,18 @@
     "missing_bio": 3470,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 6668,
+    "gallery_with_images": 6672,
     "with_social": 4719,
     "with_genre": 3870,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18151,
+    "total": 18152,
     "with_effective_artwork": 12191,
     "with_effective_artwork_pct": 67.16,
-    "missing_artwork": 5960,
-    "grouped_as_otras": 5861,
-    "with_first_and_last_dates": 17647,
+    "missing_artwork": 5961,
+    "grouped_as_otras": 5862,
+    "with_first_and_last_dates": 17649,
     "album_art_cache_entries": 12892,
     "album_art_cache_found": 10649,
     "album_art_cache_missed": 2243
@@ -5110,7 +5110,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5432,7 +5432,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5468,7 +5468,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5503,7 +5503,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5575,7 +5575,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5753,7 +5753,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5788,7 +5788,7 @@
         "image"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "image"
       ],
@@ -5823,7 +5823,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5968,44 +5968,10 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bauhaus",
-      "slug": "bauhaus",
-      "plays": 17,
-      "first_played": "21 jul 2012",
-      "last_played": "21 dic 2012 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -6145,7 +6111,7 @@
         "image"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "image"
       ],
@@ -6216,7 +6182,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6290,44 +6256,10 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Soulsearcher",
-      "slug": "soulsearcher",
-      "plays": 16,
-      "first_played": "21 jul 2012",
-      "last_played": "21 dic 2012 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -6685,7 +6617,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6906,7 +6838,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6942,7 +6874,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7050,44 +6982,10 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Blind Melon",
-      "slug": "blind-melon",
-      "plays": 13,
-      "first_played": "23 jul 2012",
-      "last_played": "23 dic 2012 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -7120,7 +7018,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7156,7 +7054,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7169,6 +7067,114 @@
       "plays": 13,
       "first_played": "20 may 2013",
       "last_played": "7 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Gelow Foster",
+      "slug": "gelow-foster",
+      "plays": 13,
+      "first_played": "17 jun 2014",
+      "last_played": "27 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Inspired And The Sleep",
+      "slug": "inspired-and-the-sleep",
+      "plays": 13,
+      "first_played": "20 mar 2013",
+      "last_played": "7 feb 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Kalle Kaasinen",
+      "slug": "kalle-kaasinen",
+      "plays": 13,
+      "first_played": "24 mar 2013",
+      "last_played": "29 ene 2016 · 23:59",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
