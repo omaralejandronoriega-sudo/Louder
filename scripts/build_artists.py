@@ -22,7 +22,7 @@ IDENTITY_ENRICHMENT = ROOT / "data" / "identity_enrichment.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 GSC_VERIFY_DIR = ROOT / "search-console"
-PUBLIC_ARTISTS_ORIGIN = "https://loudermx.com/musica/artistas/?artista="
+PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
 
 
 def esc(value: Any) -> str:
@@ -1167,11 +1167,10 @@ def main() -> int:
     shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
     shutil.copy2(ASSETS / "logo_louder.png", DOCS / "artistas" / "_assets" / "logo_louder.png")
 
-    # Individual public profiles live only in WordPress. The static host is data/control only.
-
+    # Static artist documents remain as the WordPress data source; direct visitors are redirected to the canonical WordPress profile.\n    for artist in artists:\n        build_artist(artist, by_slug, galleries, album_art)\n
     index_payload = {
         "version": 2,
-        "base_url": PUBLIC_ARTISTS_ORIGIN,
+        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
         "artists": [
             {
                 "name": a.get("name", ""),
