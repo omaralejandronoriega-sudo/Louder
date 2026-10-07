@@ -1552,8 +1552,8 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/artistas/"] + [
-        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/{a['slug']}/" for a in artists
+    sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/musica/artistas/"] + [
+        f"{PUBLIC_ARTISTS_ORIGIN}/musica/artistas/{a['slug']}" for a in artists
     ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
@@ -1567,7 +1567,7 @@ def main() -> int:
     )
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    (DOCS / "CNAME").write_text("loudermx.com\n", encoding="utf-8")
+    (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
     (DOCS / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./artistas/">'
         '<title>Louder</title><a href="./artistas/">Artistas Louder</a>',
