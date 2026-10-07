@@ -1167,7 +1167,7 @@ def main() -> int:
     shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
     shutil.copy2(ASSETS / "logo_louder.png", DOCS / "artistas" / "_assets" / "logo_louder.png")
 
-    # Static artist documents remain as the WordPress data source; direct visitors are redirected to the canonical WordPress profile.\n    for artist in artists:\n        build_artist(artist, by_slug, galleries, album_art)\n
+    # Static artist documents remain as the WordPress data source.\n    for artist in artists:\n        build_artist(artist, by_slug, galleries, album_art)\n
     index_payload = {
         "version": 2,
         "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
