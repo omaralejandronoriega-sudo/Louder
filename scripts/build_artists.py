@@ -1578,7 +1578,7 @@ def main() -> int:
     )
 
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    (DOCS / "CNAME").write_text("artistas.loudermx.com\n", encoding="utf-8")
+    (DOCS / "CNAME").write_text("loudermx.com\n", encoding="utf-8")
     (DOCS / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./artistas/">'
         '<title>Louder</title><a href="./artistas/">Artistas Louder</a>',
