@@ -39,20 +39,13 @@ jobs:
               ej=json.loads(eph)
               eph=json.dumps([x for x in ej.get("items",[]) if x.get("day")=="10-06"],ensure_ascii=False)
           except: eph=eph[:12000]
-          prompt=("Produce el paquete editorial Louder para FECHA OBJETIVO 2026-10-06. Devuelve SOLO JSON valido, sin markdown ni explicaciones.\n"
-                  "No inventes noticias ni actualidad. Usa solo los datos incluidos.\n"
-                  "HECHO VERIFICADO: Oasis - Dig Out Your Soul es el septimo y ultimo album de estudio de Oasis y fue publicado el 6 de octubre de 2008 por Big Brother Recordings. Fuente oficial: https://oasisinet.com/music/dig-out-your-soul/ .\n"
-                  "TRACKLIST OFICIAL disponible para programacion: Bag It Up; The Turning; Waiting For The Rapture; The Shock Of The Lightning; I'm Outta Time; (Get Off Your) High Horse Lady; Falling Down; To Be Where There's Life; Ain't Got Nothin'; The Nature Of Reality; Soldier On.\n"
-                  "ADVERTENCIA: otros registros del calendario del 6 de octubre son candidatos internos y NO deben presentarse como aniversarios confirmados sin fuente primaria.\n"
-                  "No existe noticia actual verificada en este paquete; no inventes una.\n"
-                  "Usa las efemerides del 6 de octubre y prioriza fit_score y stock_plays.\n"
-                  "Crea exactamente 4 piezas: efemeride principal, programacion/radio, contenido propio y pieza vertical.\n"
-                  "Copy final natural en espanol mexicano; Instagram sin hashtags; respeta las reglas Louder.\n"
-                  "JSON: summary, pieces y notifications. Cada piece: id,title,type,owner,contributors,publish_date,publish_time,networks,research,source_basis,copy,visual,video_script,missing_assets,review_status,approval.\n"
-                  "copy contiene instagram,facebook,x,threads,web. visual contiene type,headline,subhead,brief.\n"
-                  "publish_date=2026-10-06; review_status=Produccion; approval=Pendiente de Omar.\n"
-                  "No marques Lista: el sistema genera material visual y Valeria revisa despues.\n\nORDEN:\n"+order+
-                  "\n\nREGLAS LOUDER:\n"+core+"\n\nEFEMERIDES 6 OCTUBRE:\n"+eph)
+          roster=["Paula Serrano","Mariana Vélez","Valeria Cruz","Tomás Arriaga","Elena Vidal","Gael Robles","Leo Barragán","Camila Ortega","Mateo Ríos","Inés Beaumont","Arthur Vega","Mara Vértiz","Nico Ferrer","Renata Solís","Diego Lunares","Sofía Alcázar","Bruno Leal"]
+          prompt=("Eres el dispatcher operativo de Agencia Louder. Ejecuta literalmente la ORDEN; no reutilices paquetes, fechas o temas anteriores. Devuelve SOLO JSON valido. "
+                  "Si la orden pide varios trabajadores, devuelve una entrada por cada trabajador solicitado. Cada uno trabaja desde su rol y entrega trabajo concreto. "
+                  "No inventes acceso a correo, metricas, WordPress, Canva, Figma, renders, archivos, fuentes ni publicaciones. Si falta un recurso externo, completa lo posible y decláralo en dependencias_reales. "
+                  "Diseño Louder: no imagenes IA; solo fotografia, portada, flyer o material real/autorizado. No publiques nada. Valeria revisa y Omar autoriza manualmente. "
+                  "Esquema: {summary:string,workers:[{worker:string,role:string,tarea_recibida:string,entrega:object,dependencias_reales:array,estado:entregado|bloqueado_parcial}],valeria_review:{status:string,observaciones:array},approval:'Pendiente de Omar'}. "
+                  "EQUIPO: "+json.dumps(roster,ensure_ascii=False)+"\n\nORDEN:\n"+order+"\n\nREGLAS LOUDER:\n"+core)
           open("agencia-prompt.txt","w").write(prompt)
           PY
 
@@ -82,7 +75,7 @@ jobs:
           python - <<'PY'
           import json,urllib.request
           prompt=open("agencia-prompt.txt").read()
-          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.2,"num_predict":5000}}).encode()
+          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.15,"num_predict":9000}}).encode()
           req=urllib.request.Request("http://127.0.0.1:11434/api/generate",data=body,headers={"Content-Type":"application/json"})
           data=json.loads(urllib.request.urlopen(req,timeout=600).read())
           out=data.get("response","").strip()
