@@ -68,8 +68,11 @@ jobs:
           import json
           from pathlib import Path
           data=json.loads(Path("data/artists.json").read_text(encoding="utf-8"))
-          count=len(data.get("artists") or [])
-          print(f"artists={count}")
+          from scripts.build_artists import prepare_public_artists
+          raw=data.get("artists") or []
+          public,_=prepare_public_artists(raw)
+          count=len(public)
+          print(f"raw_artists={len(raw)} public_artists={count}")
           if count < 7000:
               raise SystemExit("Refusing Pages deploy: merged Artistas catalog is incomplete")
           print(data.get("history_merge") or {})
@@ -100,6 +103,7 @@ jobs:
           test -s docs/artistas/index.html
           test -s docs/artists-index.json
           test -s docs/artist-links.js
+          test -s docs/artists-home.js
           ARTIST_COUNT="$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l | tr -d ' ')"
           echo "artist_profiles=$ARTIST_COUNT"
           test "$ARTIST_COUNT" -ge 7000
