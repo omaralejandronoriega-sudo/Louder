@@ -558,7 +558,7 @@ def main() -> int:
             date_key[0] * 10**10 + date_key[1] * 10**8 + date_key[2] * 10**6
             + date_key[3] * 10**4 + date_key[4] * 10**2 + date_key[5]
         )
-        return (active_rank, -recent_score, -int(a.get("plays") or 0), norm(a.get("name", "")))
+        return (-int(a.get("plays") or 0), active_rank, -recent_score, norm(a.get("name", "")))
 
     pending.sort(key=priority)
     if args.limit > 0:
