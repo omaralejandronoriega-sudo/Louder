@@ -34,8 +34,6 @@ GALLERIES_FILE = ROOT / "data" / "galleries.json"
 
 TADB_BASE = "https://www.theaudiodb.com/api/v1/json/123"
 FANART_BASE = "https://webservice.fanart.tv/v3.2/music"
-WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/page"
-WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary"
 DEEZER_SEARCH = "https://api.deezer.com/search/artist"
 LASTFM_API = "https://ws.audioscrobbler.com/2.0/"
 DISCOGS_SEARCH = "https://api.discogs.com/database/search"
@@ -201,113 +199,12 @@ def fanart_gallery(
     return images[:5]
 
 
-def wikipedia_profile(
-    client: RateClient,
-    artist: dict[str, Any],
-    images: list[dict[str, str]],
-    profile: dict[str, Any],
-) -> tuple[list[dict[str, str]], dict[str, Any]]:
-    """Use Wikipedia only when TheAudioDB left bio/image gaps.
-
-    A result must look like a music entity; this prevents album/song/program
-    pages from being accepted as artist profiles.
-    """
-    name = str(artist.get("name") or "").strip()
-    if not name:
-        return images, profile
-
-    need_bio = not str(profile.get("bio_es") or profile.get("bio_en") or "").strip()
-    need_image = not images
-    need_data = not str(profile.get("lastfm_url") or "").strip()
-    if not need_bio and not need_image and not need_data:
-        return images, profile
-
-    search = client.get_json(
-        f"{WIKI_SEARCH}?q={quote(name)}&limit=6"
-    ) or {}
-    pages = search.get("pages") or []
-    if not isinstance(pages, list):
-        return images, profile
-
-    positive = (
-        "band", "musician", "singer", "musical group", "music group", "duo",
-        "trio", "quartet", "singer-songwriter", "record producer", "dj",
-        "composer", "rock group", "electronic music", "indie rock",
-    )
-    negative = (
-        "album", "song", "film", "television", "radio program", "radio programme",
-        "podcast", "magazine", "newspaper", "episode", "novel", "video game",
-    )
-
-    wanted = norm(name)
-    best: dict[str, Any] | None = None
-    best_score = -999
-
-    for page in pages:
-        if not isinstance(page, dict):
-            continue
-        title = str(page.get("title") or "").strip()
-        description = str(page.get("description") or "").strip().lower()
-        if not title:
-            continue
-
-        title_norm = norm(re.sub(r"\s*\([^)]*\)\s*$", "", title))
-        score = 0
-        if title_norm == wanted:
-            score += 80
-        elif wanted and (title_norm.startswith(wanted + " ") or wanted.startswith(title_norm + " ")):
-            score += 35
-
-        if any(word in description for word in positive):
-            score += 70
-        if any(word in description for word in negative):
-            score -= 120
-
-        if score > best_score:
-            best_score = score
-            best = page
-
-    if not best or best_score < 80:
-        return images, profile
-
-    title = str(best.get("title") or "").strip()
-    summary = client.get_json(f"{WIKI_SUMMARY}/{quote(title, safe='')}") or {}
-    if str(summary.get("type") or "").lower() == "disambiguation":
-        return images, profile
-
-    description = str(summary.get("description") or best.get("description") or "").lower()
-    if any(word in description for word in negative):
-        return images, profile
-
-    extract = str(summary.get("extract") or "").strip()
-    if need_bio and extract:
-        profile["bio_en"] = extract
-
-    if need_image:
-        original = summary.get("originalimage") or {}
-        thumb = summary.get("thumbnail") or {}
-        url = str(original.get("source") or thumb.get("source") or "").strip()
-        if url.startswith("https://"):
-            seen = {x.get("url", "") for x in images}
-            add_image(images, seen, url, "Wikipedia", "portrait", url)
-
-    content_urls = summary.get("content_urls") or {}
-    desktop = content_urls.get("desktop") or {}
-    if desktop.get("page"):
-        profile["wikipedia_url"] = str(desktop.get("page"))
-
-    profile["verified"] = True
-    profile["verification_source"] = "Wikipedia"
-    profile["verification_title"] = title
-    return images[:5], profile
-
-
 def deezer_profile(
     name: str,
     images: list[dict[str, Any]],
     profile: dict[str, Any],
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    """Exact-name Deezer fallback for artists missed by TheAudioDB/Wikipedia."""
+    """Exact-name Deezer fallback for artists missed by TheAudioDB."""
     if images:
         return images, profile
     try:
@@ -649,7 +546,6 @@ def main() -> int:
                 "genre": keep(profile.get("genre", ""), "genre"),
                 "style": keep(profile.get("style", ""), "style"),
                 "country": keep(profile.get("country", ""), "country"),
-                "wikipedia_url": keep(profile.get("wikipedia_url", ""), "wikipedia_url"),
                 "lastfm_url": keep(profile.get("lastfm_url", ""), "lastfm_url"),
                 "verified": bool(profile.get("verified") or existing.get("verified")),
                 "verification_source": profile.get("verification_source") or existing.get("verification_source", ""),
