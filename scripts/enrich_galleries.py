@@ -560,7 +560,15 @@ def main() -> int:
         )
         return (-int(a.get("plays") or 0), active_rank, -recent_score, norm(a.get("name", "")))
 
-    pending.sort(key=priority)
+    # Editorial priority: process Louder core artists first, before the long tail.
+    core_names = [
+        "Arctic Monkeys", "The Strokes", "Interpol", "Foals", "Fontaines D.C.",
+        "The Killers", "Radiohead", "Oasis", "Yeah Yeah Yeahs", "Franz Ferdinand",
+        "Bloc Party", "The National", "Vampire Weekend", "LCD Soundsystem",
+        "The Libertines", "The Hives", "Phoenix", "MGMT", "Tame Impala", "Gorillaz"
+    ]
+    core_rank = {norm(name): i for i, name in enumerate(core_names)}
+    pending.sort(key=lambda a: (core_rank.get(norm(a.get("name", "")), 999999),) + priority(a))
     if args.limit > 0:
         pending = pending[: args.limit]
 
