@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T09:01:39.958034+00:00",
+  "updated_at": "2026-10-07T09:05:22.512957+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -2897,10 +2897,13 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://i.scdn.co/image/ab6761610000e5eb8ffce51bd47bfbabba0f8309",
-          "preview": "https://i.scdn.co/image/ab6761610000e5eb8ffce51bd47bfbabba0f8309",
-          "source": "Louder",
-          "kind": "legacy"
+          "url": "https://cdn-images.dzcdn.net/images/artist/463e9f35715b91c2dbdc4090476dda59/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/463e9f35715b91c2dbdc4090476dda59/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:05:22.512104+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -2916,11 +2919,18 @@
       "style": "",
       "country": "",
       "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-01T06:08:26.939344+00:00",
-      "updated_at": "2026-10-01T06:08:26.939344+00:00"
+      "profile_checked_at": "2026-10-07T09:05:16.911540+00:00",
+      "updated_at": "2026-10-07T09:05:16.911540+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:05:16.911540+00:00",
+      "attempt_count": 1
     },
     "angine-de-poitrine": {
       "name": "Angine de Poitrine",
