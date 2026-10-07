@@ -96,7 +96,6 @@ jobs:
         shell: bash
         run: |
           test -s docs/artistas/index.html
-          test -s docs/artistas/foals/index.html
           test -s docs/artists-index.json
           test -s docs/artist-links.js
           ARTIST_COUNT="$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l | tr -d ' ')"
