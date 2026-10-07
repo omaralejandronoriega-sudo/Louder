@@ -95,6 +95,33 @@ jobs:
             await github.rest.issues.createComment({...context.repo,issue_number:context.issue.number,body:'## Incidencia · motor de producción\n\nEl ejecutor Copilot no pudo completar la producción. Revisar la autorización de Copilot CLI para GitHub Actions. La orden permanece bloqueada y no suma avance.'});
             await github.rest.issues.addLabels({...context.repo,issue_number:context.issue.number,labels:['agencia-incidencia']});
 
+      - name: Validar calidad del entregable
+        if: hashFiles('agencia-result.txt') != ''
+        run: |
+          python - <<'PY'
+          import json,re
+          p='agencia-result.txt'
+          try: data=json.load(open(p))
+          except Exception as e: raise SystemExit('JSON invalido: '+str(e))
+          bad=[]
+          workers=data.get('workers',[])
+          if not workers: bad.append('sin workers')
+          generic=re.compile(r'^(nota|brief|copy|copias|plan|paquete|video|diseño|publicaci[oó]n|listado|evidencia).{0,80}(preparad|generad|list|realizad|requerid|optimizado)',re.I)
+          for w in workers:
+            ent=w.get('entrega',{})
+            blob=json.dumps(ent,ensure_ascii=False)
+            if w.get('estado')=='entregado' and len(blob)<180: bad.append(w.get('worker','?')+': artefacto demasiado corto')
+            if w.get('estado')=='entregado' and generic.search(str(next(iter(ent.values()),''))): bad.append(w.get('worker','?')+': descripcion generica marcada como entrega')
+            if not w.get('dependencias_reales') and any(x in (w.get('role','').lower()) for x in ['diseñ','video','webmaster','audiencia','prensa','acredit']): bad.append(w.get('worker','?')+': faltan dependencias reales')
+          data['qa']={'passed':not bad,'errors':bad}
+          if bad:
+            for w in workers:
+              if w.get('estado')=='entregado': w['estado']='bloqueado_parcial'
+            data.setdefault('valeria_review',{})['status']='RECHAZADO_QA'
+            data['valeria_review']['observaciones']=bad
+          open(p,'w').write(json.dumps(data,ensure_ascii=False,indent=2))
+          PY
+
       - name: Guardar entrega en expediente
         if: hashFiles('agencia-result.txt') != ''
         uses: actions/github-script@v7
