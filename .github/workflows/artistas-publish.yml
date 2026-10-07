@@ -96,7 +96,7 @@ jobs:
         shell: bash
         run: |
           test -s docs/control/index.html
-          test -s docs/progreso-artistas/index.html
+          test -s docs/control/artistas/index.html
           test -s docs/artistas/_control/index.html
           test -s docs/control/sw.js
           test -s docs/control/manifest.webmanifest
