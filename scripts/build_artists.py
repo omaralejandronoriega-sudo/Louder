@@ -851,18 +851,7 @@ def page_shell(
   <small>Louder Media © 2026.</small>
  </div>
 </footer>
-<div class="louder-player" id="persistent-louder-radio" aria-label="Louder Radio">
- <button class="player-play" type="button" data-radio-play aria-label="Reproducir Louder Radio">▶</button>
- <div class="player-cover"><img data-radio-art alt="" hidden><span data-radio-fallback>LOUDER</span></div>
- <div class="player-copy">
-  <div class="player-title"><strong>Louder Radio LIVE</strong><span class="player-live">En vivo</span></div>
-  <div class="player-track" data-radio-track>Cargando canción actual…</div>
- </div>
- <a class="player-artist-link" data-radio-artist-link href="/artistas/" hidden>Ver artista</a>
- <a class="player-donate" href="https://ko-fi.com/loudermx" target="_blank" rel="noopener">Donar</a>
- <label class="player-volume" aria-label="Volumen"><span>VOL</span><input type="range" min="0" max="1" step="0.05" value="0.8" data-radio-volume></label>
- <audio data-radio-audio preload="none" src="https://ec1.yesstreaming.net:2725/stream"></audio>
-</div></body>
+</body>
 </html>'''
 
 
@@ -1040,7 +1029,7 @@ def build_artist(
 </section>
 </main>'''
 
-    out = DOCS / "artistas" / "musica" / artist["slug"] / "index.html"
+    out = DOCS / "artistas" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     track_count = len(artist.get("tracks") or [])
     track_label = "1 canción" if track_count == 1 else f"{track_count} canciones"
