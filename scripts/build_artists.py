@@ -112,8 +112,17 @@ def is_public_artist_candidate(value: str) -> bool:
     # produced several variants that must never become public artist profiles.
     if normalized.startswith("the british corner"):
         return False
-    # Do not reject names for being short, numeric or punctuation-based:
-    # A, 424 and !!! are legitimate artist names.
+    # Reject obvious import artifacts. Numeric-only names are allowed only
+    # when explicitly reviewed as real artists in Louder's catalog.
+    numeric_allowlist = {"424"}
+    if re.fullmatch(r"\\d+", raw) and raw not in numeric_allowlist:
+        return False
+    # Corrupt playlist rows frequently arrive with a leading dot.
+    if re.match(r"^\\.\\s+", raw):
+        return False
+    # Filename/track-number artifacts such as 01_3_Doors_Down_ are not artists.
+    if re.match(r"^\\d{1,3}_.+_?$", raw):
+        return False
     return True
 
 
