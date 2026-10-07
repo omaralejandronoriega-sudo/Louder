@@ -40,7 +40,8 @@ jobs:
               ej=json.loads(eph)
               eph=json.dumps([x for x in ej.get("items",[]) if x.get("day")=="10-06"],ensure_ascii=False)
           except: eph=eph[:12000]
-          roster=["Paula Serrano","Mariana Vélez","Valeria Cruz","Tomás Arriaga","Elena Vidal","Gael Robles","Leo Barragán","Camila Ortega","Mateo Ríos","Inés Beaumont","Arthur Vega","Mara Vértiz","Nico Ferrer","Renata Solís","Diego Lunares","Sofía Alcázar","Bruno Leal"]
+          roster={
+"Paula Serrano":"Relaciones de Prensa","Mariana Vélez":"Coordinadora de Acreditaciones","Valeria Cruz":"Directora editorial","Tomás Arriaga":"Periodista musical","Elena Vidal":"Curadora musical","Gael Robles":"Productor de contenidos","Leo Barragán":"Supervisor de operaciones","Camila Ortega":"Analista de audiencia","Mateo Ríos":"Editor TikTok","Inés Beaumont":"Diseñadora TBC","Arthur Vega":"CM TBC","Mara Vértiz":"Diseñadora Threads","Nico Ferrer":"CM Threads","Renata Solís":"Diseñadora Louder","Diego Lunares":"Editor video Louder","Sofía Alcázar":"CM Louder","Bruno Leal":"Webmaster Louder"}
           prompt=("Eres el dispatcher operativo de Agencia Louder. Ejecuta literalmente la ORDEN; no reutilices paquetes, fechas o temas anteriores. Devuelve SOLO JSON valido. "
                   "Si la orden pide varios trabajadores, devuelve una entrada por cada trabajador solicitado. Cada uno trabaja desde su rol y debe incluir el ARTEFACTO COMPLETO dentro de entrega, no una descripcion ni promesa. "
                   "PROHIBIDO marcar estado entregado si entrega solo dice cosas como nota preparada, brief listo, copies listos, publicacion lista, revision hecha o equivalentes sin mostrar el contenido completo. "
@@ -48,7 +49,7 @@ jobs:
                   "No inventes acceso a correo, metricas, WordPress, Canva, Figma, renders, archivos, fuentes ni publicaciones. Si falta un recurso externo, completa lo posible y decláralo en dependencias_reales. "
                   "Diseño Louder: no imagenes IA; solo fotografia, portada, flyer o material real/autorizado. No publiques nada. Valeria revisa y Omar autoriza manualmente. "
                   "Esquema: {summary:string,workers:[{worker:string,role:string,tarea_recibida:string,entrega:object,dependencias_reales:array,estado:entregado|bloqueado_parcial}],valeria_review:{status:string,observaciones:array},approval:'Pendiente de Omar'}. Valeria solo puede aprobar una pieza si el artefacto es visible y revisable en el JSON; si falta contenido debe rechazarla con observaciones concretas. "
-                  "EQUIPO: "+json.dumps(roster,ensure_ascii=False)+"\n\nORDEN:\n"+order+"\n\nREGLAS LOUDER:\n"+core)
+                  "EQUIPO Y ROLES: "+json.dumps(roster,ensure_ascii=False)+"\n\nORDEN:\n"+order+"\n\nREGLAS LOUDER:\n"+core)
           open("agencia-prompt.txt","w").write(prompt)
           PY
 
@@ -74,11 +75,11 @@ jobs:
           curl -fsSL https://ollama.com/install.sh | sh
           ollama serve >/tmp/ollama.log 2>&1 &
           sleep 4
-          ollama pull qwen3:1.7b
+          ollama pull qwen3:4b
           python - <<'PY'
           import json,urllib.request
           prompt=open("agencia-prompt.txt").read()
-          body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.15,"num_predict":9000}}).encode()
+          body=json.dumps({"model":"qwen3:4b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.1,"num_predict":12000}}).encode()
           req=urllib.request.Request("http://127.0.0.1:11434/api/generate",data=body,headers={"Content-Type":"application/json"})
           data=json.loads(urllib.request.urlopen(req,timeout=600).read())
           out=data.get("response","").strip()
