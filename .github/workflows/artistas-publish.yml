@@ -21,6 +21,8 @@ on:
       - "scripts/build_radar_2026.py"
       - "scripts/build_control.py"
       - "scripts/build_artist_progress.py"
+      - "scripts/enrich_galleries.py"
+      - ".github/workflows/artistas-gallery.yml"
       - ".github/workflows/artistas-publish.yml"
   workflow_dispatch:
 
@@ -100,7 +102,7 @@ jobs:
           test -s docs/artist-links.js
           ARTIST_COUNT="$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l | tr -d ' ')"
           echo "artist_profiles=$ARTIST_COUNT"
-          test "$ARTIST_COUNT" -ge 1000
+          test "$ARTIST_COUNT" -ge 7000
           test -s docs/control/index.html
           echo "artist_pages=$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l)"
           test -s docs/control/manifest.webmanifest
