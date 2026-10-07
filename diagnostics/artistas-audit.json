@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-07T06:25:24.993673+00:00",
+  "generated_at": "2026-10-07T09:06:33.468757+00:00",
   "source_updates": {
-    "artists": "2026-10-07T06:25:18.732207Z",
-    "galleries": "2026-10-07T01:58:46.174649+00:00",
-    "album_art": "2026-10-07T01:36:18.959920+00:00"
+    "artists": "2026-10-07T09:06:28.327593Z",
+    "galleries": "2026-10-07T09:05:22.512957+00:00",
+    "album_art": "2026-10-07T06:36:47.172365+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
-    "public_artists": 7918,
-    "aliases_normalized": 7996,
-    "with_history": 7843,
-    "with_tracks": 7912,
+    "public_artists": 7917,
+    "aliases_normalized": 7995,
+    "with_history": 7842,
+    "with_tracks": 7911,
     "without_tracks": 6,
     "catalog_status": {
       "wp_draft": 4571,
-      "unknown": 1680,
+      "unknown": 1679,
       "history_only": 1325,
       "programmed_only": 201,
       "programmed_history": 88,
@@ -22,11 +22,11 @@
       "wp_orphan": 2
     },
     "sources": {
-      "wp_db": 6252,
-      "lastfm": 5322,
+      "wp_db": 6251,
+      "lastfm": 5321,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1247
+      "yesstreaming_live": 1250
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,55 +39,54 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-07T06:25:18.732207Z"
+      "merged_at": "2026-10-07T09:06:28.327593Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 3633,
-    "real_profile_missing": 4285,
-    "real_profile_complete_pct": 45.88,
+    "real_profile_complete": 3636,
+    "real_profile_missing": 4281,
+    "real_profile_complete_pct": 45.93,
     "profile_status": {
-      "complete": 3487,
-      "legacy": 2060,
-      "partial": 1897,
-      "not_found": 473,
-      "retry": 1
+      "complete": 3481,
+      "partial": 2035,
+      "legacy": 1887,
+      "not_found": 514
     },
-    "missing_validated_profile_image": 2093,
-    "missing_profile_bio": 3566,
+    "missing_validated_profile_image": 2090,
+    "missing_profile_bio": 3565,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 3629,
-    "core_complete_pct": 45.83,
+    "core_complete": 3632,
+    "core_complete_pct": 45.88,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 5860,
-    "effective_image_pct": 74.01,
-    "image_direct_artist": 1646,
-    "image_gallery_fallback": 4214,
-    "missing_image": 2058,
+    "effective_image": 5862,
+    "effective_image_pct": 74.04,
+    "image_direct_artist": 1645,
+    "image_gallery_fallback": 4217,
+    "missing_image": 2055,
     "effective_bio": 4352,
-    "effective_bio_pct": 54.96,
+    "effective_bio_pct": 54.97,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
     "bio_gallery_en": 3071,
-    "missing_bio": 3566,
-    "gallery_checked": 7867,
+    "missing_bio": 3565,
+    "gallery_checked": 7866,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 5825,
+    "gallery_with_images": 5827,
     "with_social": 4470,
     "with_genre": 3755,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18158,
-    "with_effective_artwork": 12014,
-    "with_effective_artwork_pct": 66.16,
-    "missing_artwork": 6144,
-    "grouped_as_otras": 5867,
-    "with_first_and_last_dates": 17652,
-    "album_art_cache_entries": 12632,
-    "album_art_cache_found": 10679,
-    "album_art_cache_missed": 1953
+    "total": 18155,
+    "with_effective_artwork": 12192,
+    "with_effective_artwork_pct": 67.16,
+    "missing_artwork": 5963,
+    "grouped_as_otras": 5864,
+    "with_first_and_last_dates": 17650,
+    "album_art_cache_entries": 12892,
+    "album_art_cache_found": 10649,
+    "album_art_cache_missed": 2243
   },
   "focus": {
     "boylife": {
@@ -184,40 +183,6 @@
       ],
       "core_complete": false,
       "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Angel Maldonado",
-      "slug": "angel-maldonado",
-      "plays": 155,
-      "first_played": "28 may 2013",
-      "last_played": "6 feb 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "bio"
       ],
@@ -945,7 +910,7 @@
         "image"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "image"
       ],
@@ -2019,7 +1984,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -2391,7 +2356,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 1,
+      "gallery_images": 2,
       "has_social": true,
       "has_genre": false,
       "related": 0,
@@ -2399,7 +2364,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -3552,7 +3517,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -3586,7 +3551,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -3622,6 +3587,42 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Ben Sollee & Daniel Martin Moore",
+      "slug": "ben-sollee-daniel-martin-moore",
+      "plays": 35,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3763,7 +3764,7 @@
         "image"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "image"
       ],
@@ -4046,7 +4047,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5227,7 +5228,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7253,40 +7254,6 @@
       "profile_complete": false
     },
     {
-      "name": "Angel Maldonado",
-      "slug": "angel-maldonado",
-      "plays": 155,
-      "first_played": "28 may 2013",
-      "last_played": "6 feb 2014 · 23:59",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Big Deal",
       "slug": "big-deal",
       "plays": 138,
@@ -8946,7 +8913,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -9318,7 +9285,7 @@
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 1,
+      "gallery_images": 2,
       "has_social": true,
       "has_genre": false,
       "related": 0,
@@ -9326,7 +9293,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -10445,7 +10412,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -10479,7 +10446,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
       ],
@@ -10678,6 +10645,42 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Los Concorde",
+      "slug": "los-concorde",
+      "plays": 35,
+      "first_played": "22 jul 2012",
+      "last_played": "10 ago 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
