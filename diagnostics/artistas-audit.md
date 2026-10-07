@@ -1,28 +1,28 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-10-07T09:40:59.521549+00:00
+Generada: 2026-10-07T09:52:21.950415+00:00
 
 ## Resumen
 
 - Artistas crudos: 8039
-- Artistas públicos normalizados: 7914
-- Perfiles realmente completos: 4187/7914 (52.91%)
-- Perfiles con faltantes reales: 3727
-- Estados de enriquecimiento: {'complete': 4031, 'partial': 2071, 'legacy': 1281, 'not_found': 531}
+- Artistas públicos normalizados: 7915
+- Perfiles realmente completos: 4187/7915 (52.90%)
+- Perfiles con faltantes reales: 3728
+- Estados de enriquecimiento: {'complete': 4031, 'partial': 2072, 'legacy': 1281, 'not_found': 531}
 - Sin imagen validada de perfil: 1247
-- Sin biografía de perfil: 3469
+- Sin biografía de perfil: 3470
 - Sin datos de identidad/perfil: 0
-- Fichas core completas: 4157/7914 (52.53%)
-- Con imagen efectiva: 6672/7914 (84.31%)
+- Fichas core completas: 4157/7915 (52.52%)
+- Con imagen efectiva: 6673/7915 (84.31%)
 - Sin imagen: 1242
-- Con biografía efectiva: 4445/7914 (56.17%)
-- Sin biografía: 3469
-- Galerías ya revisadas: 7863/7914 (99.36%)
-- Artistas con canciones: 7908/7914
-- Canciones totales: 18148
-- Canciones con portada efectiva: 12191/18148 (67.18%)
-- Canciones sin portada: 5957
-- Canciones agrupadas en Otras: 5858
+- Con biografía efectiva: 4445/7915 (56.16%)
+- Sin biografía: 3470
+- Galerías ya revisadas: 7864/7915 (99.36%)
+- Artistas con canciones: 7909/7915
+- Canciones totales: 18151
+- Canciones con portada efectiva: 12191/18151 (67.16%)
+- Canciones sin portada: 5960
+- Canciones agrupadas en Otras: 5861
 
 ## Casos solicitados
 
