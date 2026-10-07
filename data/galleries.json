@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T09:32:52.915017+00:00",
+  "updated_at": "2026-10-07T09:39:04.386956+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -107567,31 +107567,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qtvurw1363968375.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qtvurw1363968375.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:09.288053+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qtuxtp1425136309.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qtuxtp1425136309.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:09.856128+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/tyvpxt1386337712.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/tyvpxt1386337712.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:10.304946+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/0kg3lg1613988978.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/0kg3lg1613988978.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:10.916596+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/txqxpr1529320542.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/txqxpr1529320542.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:11.463789+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -107606,8 +107621,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "Sale, England, UK",
-      "profile_checked_at": "2026-09-28T23:30:27.356834+00:00",
-      "updated_at": "2026-09-28T23:30:27.356834+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:34:04.009690+00:00",
+      "updated_at": "2026-10-07T09:34:04.009690+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "ed-harcourt": {
       "name": "Ed Harcourt",
@@ -107661,8 +107685,18 @@
     "exitmusic": {
       "name": "Exitmusic",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/97d0b10bd420a4ee2c6fa18b28f263e3/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/97d0b10bd420a4ee2c6fa18b28f263e3/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:33:56.320207+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -107674,8 +107708,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:30:31.741265+00:00",
-      "updated_at": "2026-09-28T23:30:31.741265+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:33:52.457860+00:00",
+      "updated_at": "2026-10-07T09:33:52.457860+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:33:52.457860+00:00",
+      "attempt_count": 1
     },
     "fastball": {
       "name": "Fastball",
@@ -107727,10 +107772,20 @@
     "in-flight-safety": {
       "name": "In-Flight Safety",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/In-Flight_Safety_at_the_Marquee_Club_in_Feb_2014.jpg/3840px-In-Flight_Safety_at_the_Marquee_Club_in_Feb_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "preview": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/In-Flight_Safety_at_the_Marquee_Club_in_Feb_2014.jpg/3840px-In-Flight_Safety_at_the_Marquee_Club_in_Feb_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:17.385281+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "In-Flight Safety is a Canadian indie rock band formed in 2003. In-Flight Safety was nominated for a 2007 Juno Award for Video of the Year for \"Coast Is Clear\". They are currently based in Halifax, Nova Scotia. The group consists of vocalist and guitarist John Mullane, drummer Glen Nicholson and is rounded out by friends who appear in the live show. In-Flight Safety released their second full-length album We Are an Empire, My Dear 27 January 2009 in Canada on their own label Night Danger. The band released their third full-length album, Conversationalist on 9 September 2014.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -107740,8 +107795,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:30:36.125464+00:00",
-      "updated_at": "2026-09-28T23:30:36.125464+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In-Flight_Safety",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "In-Flight Safety",
+      "profile_checked_at": "2026-10-07T09:34:12.431602+00:00",
+      "updated_at": "2026-10-07T09:34:12.431602+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "kate-nash": {
       "name": "Kate Nash",
@@ -108188,10 +108252,20 @@
     "the-hush-now": {
       "name": "The Hush Now",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/fb074180303a54d5145a929377144d6a/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/fb074180303a54d5145a929377144d6a/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:03.025347+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Hush Now is an American indie rock quintet from Boston, Massachusetts.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -108201,8 +108275,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:30:55.872361+00:00",
-      "updated_at": "2026-09-28T23:30:55.872361+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Hush_Now",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Hush Now",
+      "profile_checked_at": "2026-10-07T09:33:57.431027+00:00",
+      "updated_at": "2026-10-07T09:33:57.431027+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-organ": {
       "name": "The Organ",
@@ -108533,8 +108616,18 @@
     "abominables": {
       "name": "Abominables",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/2897b97a28bc3fa62efb6f051fe0a2e7/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/2897b97a28bc3fa62efb6f051fe0a2e7/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:55.166611+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -108546,8 +108639,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:11.219781+00:00",
-      "updated_at": "2026-09-28T23:31:11.219781+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:34:52.260626+00:00",
+      "updated_at": "2026-10-07T09:34:52.260626+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:34:52.260626+00:00",
+      "attempt_count": 1
     },
     "annuals": {
       "name": "Annuals",
@@ -108604,18 +108708,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uytypv1404559896.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uytypv1404559896.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:42.584079+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/utsvpp1404559356.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/utsvpp1404559356.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:43.060320+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Big Audio Dynamite were an English band formed in London in 1984 by Mick Jones, former lead guitarist and co-lead vocalist of the Clash. The band mixed various musical styles, incorporating elements of punk rock, dance music, hip-hop, reggae, and funk. After releasing a number of well-received studio albums and touring extensively during the 1980s and 1990s, Big Audio Dynamite broke up in 1997. In 2011 the band embarked on a reunion tour.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -108625,8 +108735,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "London, England",
-      "profile_checked_at": "2026-09-28T23:31:15.607090+00:00",
-      "updated_at": "2026-09-28T23:31:15.607090+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Big_Audio_Dynamite",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Big Audio Dynamite",
+      "profile_checked_at": "2026-10-07T09:34:36.854070+00:00",
+      "updated_at": "2026-10-07T09:34:36.854070+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "catupecu-machu": {
       "name": "Catupecu Machu",
@@ -108636,30 +108755,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-53e4b81b95a53.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-53e4b81b95a53.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:49.399212+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-5db5f7b48a761.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-5db5f7b48a761.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:49.973279+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-5db5f8ac3a508.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/catupecu-machu-5db5f8ac3a508.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:50.692685+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/catupecu-machu-53e8328447fab.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/catupecu-machu-53e8328447fab.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:51.281456+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Catupecu Machu is an Argentine alternative rock band, consisting of Fernando Ruiz Díaz, Gabriel Ruiz Díaz, Miguel Sosa. It is usually classified as within Rock en Español. Its current band members are Fernando Ruiz Díaz on vocals and guitar; Charlie Noguera on bass guitar; Agustín Rocino and Julian Gondell on drums; and Macabre González on keyboards and samplers.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -108669,87 +108800,30 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:17.800860+00:00",
-      "updated_at": "2026-09-28T23:31:17.800860+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catupecu_Machu",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Catupecu Machu",
+      "profile_checked_at": "2026-10-07T09:34:44.063039+00:00",
+      "updated_at": "2026-10-07T09:34:44.063039+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "deckchair-orange": {
       "name": "Deckchair Orange",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
-      "bio_es": "",
-      "bio_en": "",
-      "official_url": "",
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      },
-      "genre": "",
-      "style": "",
-      "country": "",
-      "profile_checked_at": "2026-09-28T23:31:19.993978+00:00",
-      "updated_at": "2026-09-28T23:31:19.993978+00:00"
-    },
-    "deep-purple": {
-      "name": "Deep Purple",
-      "musicbrainz_id": "79491354-3d83-40e3-9d8e-7592d58d790a",
       "images": [
         {
-          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vrsvvs1521509293.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vrsvvs1521509293.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "fanart"
-        },
-        {
-          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/suvqqx1385556174.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/suvqqx1385556174.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "fanart"
-        },
-        {
-          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xssrxr1342337656.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xssrxr1342337656.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "fanart"
-        },
-        {
-          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ppr8lq1631526561.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ppr8lq1631526561.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "fanart"
-        },
-        {
-          "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/05sm7s1755081507.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/05sm7s1755081507.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "wide"
-        }
-      ],
-      "image_count": 5,
-      "bio_es": "Deep Purple es una banda británica de hard rock formada en Hertford, Reino Unido, en 1968, que está considerada como una de las pioneras del hard rock y el heavy metal, aunque durante su carrera también ha incorporado elementos del rock progresivo, rock sinfónico, rock psicodélico, blues rock y de la música clásica. Deep Purple ha vendido más de 120 millones de discos en todo el mundo. Un concierto realizado en el Rainbow Theatre, de Londres, en julio de 1972, hizo que fueran registrados como \"la banda más ruidosa del planeta\" en los años 70's por el libro Guinness de los récords.\n\nLa banda ha sufrido múltiples cambios en su alineación a lo largo de las décadas, aunque permaneció inactiva desde julio de 1976 hasta su reunión, en abril de 1984. Sus cuatro primeras alineaciones son a menudo etiquetadas como \"Mark I\", \"II\", \"III\" y \"IV\". La \"Mark II\", formada por Ian Gillan (voz), Ritchie Blackmore (guitarra), Jon Lord (teclados), Ian Paice (batería) y Roger Glover (bajo), es considerada la alineación más exitosa, y la que mayores ventas ha cosechado, la cual se mantuvo en activo desde 1969 a 1973, de 1984 a 1989, y nuevamente de 1992 a 1993, cuando la relación entre Blackmore y el resto de los músicos se volvió insostenible. Su alineación actual, que cuenta con Steve Morse en lugar de Blackmore, y con Don Airey en lugar del fallecido Jon Lord, lleva en activo desde 2002.",
-      "bio_en": "",
-      "official_url": "www.deep-purple.com",
-      "social": {
-        "facebook": "www.facebook.com/pages/Deep-Purple/34202381900",
-        "twitter": "1",
-        "instagram": ""
-      },
-      "genre": "Hard Rock",
-      "style": "Rock/Pop",
-      "country": "Hertford, England",
-      "profile_checked_at": "2026-09-28T23:31:22.191111+00:00",
-      "updated_at": "2026-09-28T23:31:22.191111+00:00"
-    },
-    "dld": {
-      "name": "DLD",
-      "musicbrainz_id": "8952cfef-f3b7-44b0-8fc8-8bead5d1561e",
-      "images": [
-        {
-          "url": "https://r2.theaudiodb.com/images/media/artist/thumb/flkej91781697067.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/flkej91781697067.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "portrait"
+          "url": "https://cdn-images.dzcdn.net/images/artist/8a93993befad978b32eade7aa37c2e47/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/8a93993befad978b32eade7aa37c2e47/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:11.182379+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -108764,8 +108838,131 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:24.385074+00:00",
-      "updated_at": "2026-09-28T23:31:24.385074+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:07.736323+00:00",
+      "updated_at": "2026-10-07T09:35:07.736323+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:35:07.736323+00:00",
+      "attempt_count": 1
+    },
+    "deep-purple": {
+      "name": "Deep Purple",
+      "musicbrainz_id": "79491354-3d83-40e3-9d8e-7592d58d790a",
+      "images": [
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vrsvvs1521509293.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vrsvvs1521509293.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:27.570631+00:00",
+          "validation_method": "bytes"
+        },
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/suvqqx1385556174.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/suvqqx1385556174.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:28.043566+00:00",
+          "validation_method": "bytes"
+        },
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xssrxr1342337656.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xssrxr1342337656.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:28.825649+00:00",
+          "validation_method": "bytes"
+        },
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ppr8lq1631526561.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ppr8lq1631526561.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:29.344304+00:00",
+          "validation_method": "bytes"
+        },
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/05sm7s1755081507.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/05sm7s1755081507.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:29.767140+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 5,
+      "bio_es": "Deep Purple es una banda británica de hard rock formada en Hertford, Reino Unido, en 1968, que está considerada como una de las pioneras del hard rock y el heavy metal, aunque durante su carrera también ha incorporado elementos del rock progresivo, rock sinfónico, rock psicodélico, blues rock y de la música clásica. Deep Purple ha vendido más de 120 millones de discos en todo el mundo. Un concierto realizado en el Rainbow Theatre, de Londres, en julio de 1972, hizo que fueran registrados como \"la banda más ruidosa del planeta\" en los años 70's por el libro Guinness de los récords.\n\nLa banda ha sufrido múltiples cambios en su alineación a lo largo de las décadas, aunque permaneció inactiva desde julio de 1976 hasta su reunión, en abril de 1984. Sus cuatro primeras alineaciones son a menudo etiquetadas como \"Mark I\", \"II\", \"III\" y \"IV\". La \"Mark II\", formada por Ian Gillan (voz), Ritchie Blackmore (guitarra), Jon Lord (teclados), Ian Paice (batería) y Roger Glover (bajo), es considerada la alineación más exitosa, y la que mayores ventas ha cosechado, la cual se mantuvo en activo desde 1969 a 1973, de 1984 a 1989, y nuevamente de 1992 a 1993, cuando la relación entre Blackmore y el resto de los músicos se volvió insostenible. Su alineación actual, que cuenta con Steve Morse en lugar de Blackmore, y con Don Airey en lugar del fallecido Jon Lord, lleva en activo desde 2002.",
+      "bio_en": "",
+      "official_url": "www.deep-purple.com",
+      "social": {
+        "facebook": "www.facebook.com/pages/Deep-Purple/34202381900",
+        "twitter": "1",
+        "instagram": ""
+      },
+      "genre": "Hard Rock",
+      "style": "Rock/Pop",
+      "country": "Hertford, England",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deep_Purple",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Deep Purple",
+      "profile_checked_at": "2026-10-07T09:34:22.421786+00:00",
+      "updated_at": "2026-10-07T09:34:22.421786+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
+    },
+    "dld": {
+      "name": "DLD",
+      "musicbrainz_id": "8952cfef-f3b7-44b0-8fc8-8bead5d1561e",
+      "images": [
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/thumb/flkej91781697067.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/flkej91781697067.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:35.884769+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
+      "bio_es": "",
+      "bio_en": "DLD, formerly Dildo, is a Mexican alternative rock band from the State of Mexico, formed in November 1998. The band is composed of Francisco Familiar (vocals), Erik Neville Linares (guitar), Edgar \"Pijey\" Hansen Otero (bass), Gil Santiago Rangel (drums), and Sergio Vela (keyboards).",
+      "official_url": "",
+      "social": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "",
+      "style": "",
+      "country": "",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DLD_(band)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "DLD (band)",
+      "profile_checked_at": "2026-10-07T09:34:30.744914+00:00",
+      "updated_at": "2026-10-07T09:34:30.744914+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "fatboy-slim-bootsy-collins": {
       "name": "Fatboy Slim/Bootsy Collins",
@@ -109083,8 +109280,18 @@
     "post-modern-team": {
       "name": "Post Modern Team",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/808dd71788ec32f2cb91cca203c2990f/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/808dd71788ec32f2cb91cca203c2990f/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:34:21.440155+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -109096,16 +109303,37 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:41.938745+00:00",
-      "updated_at": "2026-09-28T23:31:41.938745+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:34:18.361159+00:00",
+      "updated_at": "2026-10-07T09:34:18.361159+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:34:18.361159+00:00",
+      "attempt_count": 1
     },
     "shirley-manson-and-serj-tankian": {
       "name": "Shirley Manson and Serj Tankian",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Shirley_Manson_screenshot.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Shirley_Manson_screenshot.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:00.930059+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Shirley Ann Manson is a Scottish singer, songwriter, and musician who is the lead vocalist of the rock band Garbage. Deemed a \"Godmother of Rock\" by The New York Times, she is noted for her distinctive deep voice, forthright style, and rebellious attitude. As of 2017, Garbage have sold over 17 million records; her accolades with the band include nominations for two Brit Awards and seven Grammy Awards.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -109115,8 +109343,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:44.129740+00:00",
-      "updated_at": "2026-09-28T23:31:44.129740+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shirley_Manson",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Shirley Manson",
+      "profile_checked_at": "2026-10-07T09:34:56.158339+00:00",
+      "updated_at": "2026-10-07T09:34:56.158339+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "tapes-n-tapes": {
       "name": "Tapes 'n Tapes",
@@ -109168,10 +109405,20 @@
     "the-whigs": {
       "name": "The Whigs",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Whigs_in_the_dark_press_shot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Whigs_in_the_dark_press_shot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:06.747514+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Whigs are an American garage rock band from Athens, Georgia, consisting of lead singer and guitarist Parker Gispert, drummer Julian Dorio and bassist Timothy Deaux.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -109181,8 +109428,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:48.516274+00:00",
-      "updated_at": "2026-09-28T23:31:48.516274+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Whigs_(band)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Whigs (band)",
+      "profile_checked_at": "2026-10-07T09:35:01.916783+00:00",
+      "updated_at": "2026-10-07T09:35:01.916783+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "tre-allegri-ragazzi-morti": {
       "name": "Tre allegri ragazzi morti",
@@ -109192,30 +109448,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ysxqtv1385140528.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ysxqtv1385140528.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:17.550410+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rxwpyw1385140542.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rxwpyw1385140542.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:18.365142+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vuwwwu1385140581.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vuwwwu1385140581.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:19.075668+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/uxrpxp1385140374.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/uxrpxp1385140374.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:19.560865+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Tre allegri ragazzi morti is an Italian indie rock band formed in Pordenone, Friuli-Venezia Giulia, in 1994.",
       "official_url": "www.treallegriragazzimorti.it",
       "social": {
         "facebook": "",
@@ -109225,8 +109493,17 @@
       "genre": "Indie",
       "style": "Rock/Pop",
       "country": "Pordenone, Italy",
-      "profile_checked_at": "2026-09-28T23:31:50.705924+00:00",
-      "updated_at": "2026-09-28T23:31:50.705924+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tre_Allegri_Ragazzi_Morti",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Tre Allegri Ragazzi Morti",
+      "profile_checked_at": "2026-10-07T09:35:12.168553+00:00",
+      "updated_at": "2026-10-07T09:35:12.168553+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "young-man": {
       "name": "Young Man",
@@ -109272,8 +109549,18 @@
     "agua-de-annique": {
       "name": "Agua de Annique",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/d3868e30037a191d6d2b5422eeff6ffc/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d3868e30037a191d6d2b5422eeff6ffc/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:27.523059+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -109285,8 +109572,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:55.089293+00:00",
-      "updated_at": "2026-09-28T23:31:55.089293+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:24.553766+00:00",
+      "updated_at": "2026-10-07T09:35:24.553766+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:35:24.553766+00:00",
+      "attempt_count": 1
     },
     "casa-del-mirto": {
       "name": "Casa Del Mirto",
@@ -109337,13 +109635,19 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uxpquw1375500223.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uxpquw1375500223.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:28.163419+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/yqqpys1367364536.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/yqqpys1367364536.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:28.949348+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
@@ -109358,8 +109662,19 @@
       "genre": "Indie",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:31:59.477813+00:00",
-      "updated_at": "2026-09-28T23:31:59.477813+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:22.879420+00:00",
+      "updated_at": "2026-10-07T09:36:22.879420+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:36:22.879420+00:00",
+      "attempt_count": 1
     },
     "deep-sea-arcade": {
       "name": "Deep Sea Arcade",
@@ -109449,8 +109764,18 @@
     "diagram-of-the-heart": {
       "name": "Diagram Of The Heart",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/ebedead8df2ed79c6970efd6963e2f2c/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/ebedead8df2ed79c6970efd6963e2f2c/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:37.634636+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -109462,8 +109787,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:06.098809+00:00",
-      "updated_at": "2026-09-28T23:32:06.098809+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:34.293937+00:00",
+      "updated_at": "2026-10-07T09:35:34.293937+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:35:34.293937+00:00",
+      "attempt_count": 1
     },
     "die-antwoord": {
       "name": "Die Antwoord",
@@ -109728,31 +110064,15 @@
     "egotrip": {
       "name": "Ego:Trip",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
-      "bio_es": "",
-      "bio_en": "",
-      "official_url": "",
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      },
-      "genre": "",
-      "style": "",
-      "country": "",
-      "profile_checked_at": "2026-09-28T23:32:17.063838+00:00",
-      "updated_at": "2026-09-28T23:32:17.063838+00:00"
-    },
-    "electric-owls": {
-      "name": "Electric Owls",
-      "musicbrainz_id": "cd75ce8a-cb49-4a44-b047-848417041079",
       "images": [
         {
-          "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vryxts1432365219.jpg",
-          "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vryxts1432365219.jpg/medium",
-          "source": "TheAudioDB",
-          "kind": "portrait"
+          "url": "https://cdn-images.dzcdn.net/images/artist/5b2be905c7d6fcbf81ff8e6e8de2fa4d/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/5b2be905c7d6fcbf81ff8e6e8de2fa4d/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:04.924661+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -109767,8 +110087,59 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:19.257733+00:00",
-      "updated_at": "2026-09-28T23:32:19.257733+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:58.964830+00:00",
+      "updated_at": "2026-10-07T09:35:58.964830+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:35:58.964830+00:00",
+      "attempt_count": 1
+    },
+    "electric-owls": {
+      "name": "Electric Owls",
+      "musicbrainz_id": "cd75ce8a-cb49-4a44-b047-848417041079",
+      "images": [
+        {
+          "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vryxts1432365219.jpg",
+          "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vryxts1432365219.jpg/medium",
+          "source": "TheAudioDB",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:09.030334+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
+      "bio_es": "",
+      "bio_en": "",
+      "official_url": "",
+      "social": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": ""
+      },
+      "genre": "",
+      "style": "",
+      "country": "",
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:05.918141+00:00",
+      "updated_at": "2026-10-07T09:36:05.918141+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:36:05.918141+00:00",
+      "attempt_count": 1
     },
     "fall-out-boy": {
       "name": "Fall Out Boy",
@@ -109847,8 +110218,18 @@
     "fprf": {
       "name": "FPRF",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/e617d82dcbad696bdcbacfe3868b1213/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/e617d82dcbad696bdcbacfe3868b1213/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:50.972951+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -109860,8 +110241,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:23.638769+00:00",
-      "updated_at": "2026-09-28T23:32:23.638769+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:47.431746+00:00",
+      "updated_at": "2026-10-07T09:35:47.431746+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:35:47.431746+00:00",
+      "attempt_count": 1
     },
     "friska-viljor": {
       "name": "Friska Viljor",
@@ -110204,8 +110596,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:41.196706+00:00",
-      "updated_at": "2026-09-28T23:32:41.196706+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:35:20.540484+00:00",
+      "updated_at": "2026-10-07T09:35:20.540484+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:35:20.540484+00:00",
+      "attempt_count": 1
     },
     "modjo": {
       "name": "Modjo",
@@ -110527,18 +110931,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/spirit-of-the-west-4fd309e87b66e.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/spirit-of-the-west-4fd309e87b66e.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:57.418100+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/tqytut1395330967.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/tqytut1395330967.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:57.977056+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Spirit of the West were a Canadian folk rock band from North Vancouver, active from 1983 to 2016. They were popular on the Canadian folk music scene in the 1980s before evolving a blend of hard rock, Britpop, and Celtic folk influences which made them one of Canada's most successful alternative rock acts in the 1990s.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -110548,16 +110958,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:56.556422+00:00",
-      "updated_at": "2026-09-28T23:32:56.556422+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spirit_of_the_West",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Spirit of the West",
+      "profile_checked_at": "2026-10-07T09:35:51.961293+00:00",
+      "updated_at": "2026-10-07T09:35:51.961293+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-ambience-affair": {
       "name": "The Ambience Affair",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Ambience_Affair_at_Vicar_St.%2C_Dublin_December_2011.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "preview": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Ambience_Affair_at_Vicar_St.%2C_Dublin_December_2011.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+          "source": "Wikipedia",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:33.321061+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Ambience Affair are an Irish band from Dublin who formed in 2009. The band consists of vocalist and lead guitarist Jamie Clarke, drummer Marc Gallagher, and bass player Yvonne Ryan.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -110567,8 +110996,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:32:58.747726+00:00",
-      "updated_at": "2026-09-28T23:32:58.747726+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ambience_Affair",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Ambience Affair",
+      "profile_checked_at": "2026-10-07T09:35:28.504524+00:00",
+      "updated_at": "2026-10-07T09:35:28.504524+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-cult": {
       "name": "The Cult",
@@ -110652,36 +111090,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/yusrus1359668055.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/yusrus1359668055.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:15.375526+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rpssus1359702284.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rpssus1359702284.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:15.947778+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/c71qtn1762188835.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/c71qtn1762188835.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:16.513022+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/1vsunw1762189011.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/1vsunw1762189011.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:17.455135+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qwytps1359667989.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qwytps1359667989.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:18.045796+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Dears are a Canadian indie rock band from Montreal, Quebec. The band is led by the husband-and-wife duo of singer-guitarist Murray Lightburn and keyboardist Natalia Yanchak.",
       "official_url": "www.thedears.org",
       "social": {
         "facebook": "",
@@ -110691,8 +111144,17 @@
       "genre": "Indie",
       "style": "Rock/Pop",
       "country": "Montreal, Quebec",
-      "profile_checked_at": "2026-09-28T23:33:03.132264+00:00",
-      "updated_at": "2026-09-28T23:33:03.132264+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Dears",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Dears",
+      "profile_checked_at": "2026-10-07T09:36:10.004524+00:00",
+      "updated_at": "2026-10-07T09:36:10.004524+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-domino-state": {
       "name": "The Domino State",
@@ -110748,8 +111210,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:33:07.515481+00:00",
-      "updated_at": "2026-09-28T23:33:07.515481+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "TheAudioDB",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:19.022291+00:00",
+      "updated_at": "2026-10-07T09:36:19.022291+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:36:19.022291+00:00",
+      "attempt_count": 1
     },
     "the-pretty-reckless": {
       "name": "The Pretty Reckless",
@@ -110759,31 +111233,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/the-pretty-reckless-4f429b98988f5.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/the-pretty-reckless-4f429b98988f5.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:43.804691+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/suv45o1755282477.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/suv45o1755282477.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:44.310982+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qxvwpy1414766299.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qxvwpy1414766299.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:44.920501+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/7ogobx1613146567.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/7ogobx1613146567.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:45.622937+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/4pzvug1755282134.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/4pzvug1755282134.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:35:46.446940+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -110798,8 +111287,17 @@
       "genre": "Hard Rock",
       "style": "Rock/Pop",
       "country": "New York, USA",
-      "profile_checked_at": "2026-09-28T23:33:09.710650+00:00",
-      "updated_at": "2026-09-28T23:33:09.710650+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pretty_Reckless",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Pretty Reckless",
+      "profile_checked_at": "2026-10-07T09:35:38.602138+00:00",
+      "updated_at": "2026-10-07T09:35:38.602138+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-shoes-anthonin-ternant": {
       "name": "The Shoes/ANTHONIN TERNANT",
@@ -111094,30 +111592,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e395a97bf5e7.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e395a97bf5e7.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:59.775528+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e395aa3b1d5d.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e395aa3b1d5d.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:00.534176+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e3963c7ce1df.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ben-folds-4e3963c7ce1df.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:01.421929+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/folds-ben-50612805f2de2.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/folds-ben-50612805f2de2.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:01.854852+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Benjamin Scott Folds is an American singer-songwriter. After playing in several small independent bands from the late 1980s through the early '90s, Folds came to prominence as the frontman and pianist of the alternative rock trio Ben Folds Five from 1993 to 2000, and again during their reunion from 2011 to 2013. Folds has recorded a number of solo albums, most recently Ben Folds Live with the National Symphony Orchestra (2025). He has also collaborated with musicians such as Regina Spektor, \"Weird Al\" Yankovic and yMusic, and undertaken experimental songwriting projects with actor William Shatner and authors such as Nick Hornby and Neil Gaiman. Folds was the artistic advisor to the National Symphony Orchestra at the Kennedy Center in Washington, D.C. from 2017 until 2025.",
       "official_url": "benfolds.com",
       "social": {
         "facebook": "www.facebook.com/BenFolds",
@@ -111127,8 +111637,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "Nashville, USA",
-      "profile_checked_at": "2026-09-28T23:33:25.061347+00:00",
-      "updated_at": "2026-09-28T23:33:25.061347+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Folds",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Ben Folds",
+      "profile_checked_at": "2026-10-07T09:36:54.610700+00:00",
+      "updated_at": "2026-10-07T09:36:54.610700+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "brian-borcherdt": {
       "name": "Brian Borcherdt",
@@ -111138,12 +111657,15 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vvfhsw1781695288.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vvfhsw1781695288.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:32.029574+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Brian Borcherdt is a Canadian musician who has been both a solo artist and a member of Burnt Black, Trephines, Hot Carl, By Divine Right, Holy Fuck, Lids, and Dusted.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -111153,8 +111675,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:33:27.255975+00:00",
-      "updated_at": "2026-09-28T23:33:27.255975+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brian_Borcherdt",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Brian Borcherdt",
+      "profile_checked_at": "2026-10-07T09:37:26.613368+00:00",
+      "updated_at": "2026-10-07T09:37:26.613368+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "chester-french": {
       "name": "Chester French",
@@ -111164,18 +111695,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/svtyvr1375370629.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/svtyvr1375370629.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:08.094419+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/ypwqqp1375370587.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/ypwqqp1375370587.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:08.630624+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Chester French was an American indie pop band consisting of lead vocalist and songwriter David-Andrew 'D.A.' Wallach, and multi-instrumentalist Maxwell Drummey. They met as college students at Harvard University, naming their band after sculptor Daniel Chester French, who designed the statue at the Lincoln Memorial, the John Harvard statue, as well as the Minuteman statue at the Lexington/Concord battlegrounds in Massachusetts.",
       "official_url": "home.chesterfrench.com",
       "social": {
         "facebook": "www.facebook.com/chesterfrench",
@@ -111185,8 +111722,17 @@
       "genre": "",
       "style": "Rock/Pop",
       "country": "Cambridge",
-      "profile_checked_at": "2026-09-28T23:33:29.451280+00:00",
-      "updated_at": "2026-09-28T23:33:29.451280+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chester_French",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Chester French",
+      "profile_checked_at": "2026-10-07T09:37:02.864378+00:00",
+      "updated_at": "2026-10-07T09:37:02.864378+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "coma-cinema": {
       "name": "Coma Cinema",
@@ -111348,7 +111894,7 @@
       "images": [],
       "image_count": 0,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Elevator music is a type of background music played in elevators, in rooms where many people come together for reasons other than listening to music, and during telephone calls when placed on hold. Before the emergence of the Internet, such music was often \"piped\" to businesses and homes through telephone lines, private networks or targeted radio broadcasting.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -111358,8 +111904,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:33:40.406758+00:00",
-      "updated_at": "2026-09-28T23:33:40.406758+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elevator_music",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Elevator music",
+      "profile_checked_at": "2026-10-07T09:37:33.016158+00:00",
+      "updated_at": "2026-10-07T09:37:33.016158+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-10T09:37:33.016158+00:00",
+      "attempt_count": 1
     },
     "francisco-the-man": {
       "name": "Francisco the Man",
@@ -111592,8 +112149,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:33:53.565821+00:00",
-      "updated_at": "2026-09-28T23:33:53.565821+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:35.893137+00:00",
+      "updated_at": "2026-10-07T09:36:35.893137+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:36:35.893137+00:00",
+      "attempt_count": 1
     },
     "majical-cloudz": {
       "name": "Majical Cloudz",
@@ -111700,12 +112269,15 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wpuusx1550237731.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wpuusx1550237731.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:14.791652+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Matt Pond PA is a New York–based band formed in Philadelphia by singer-songwriter Matt Pond. It has released numerous LPs, EPs, and singles.",
       "official_url": "www.mattpondpa.com",
       "social": {
         "facebook": "",
@@ -111715,8 +112287,17 @@
       "genre": "Indie Rock",
       "style": "Rock/Pop",
       "country": "Philadelphia, Pennsylvania, USA",
-      "profile_checked_at": "2026-09-28T23:34:00.152123+00:00",
-      "updated_at": "2026-09-28T23:34:00.152123+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matt_Pond_PA",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Matt Pond PA",
+      "profile_checked_at": "2026-10-07T09:37:09.617827+00:00",
+      "updated_at": "2026-10-07T09:37:09.617827+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "mazes": {
       "name": "Mazes",
@@ -111766,18 +112347,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/meat-puppets-507aa08785df0.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/meat-puppets-507aa08785df0.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:53.193114+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/srwwtv1362249150.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/srwwtv1362249150.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:53.620399+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Meat Puppets are an American rock band formed in January 1980 in Phoenix, Arizona. The group's original lineup was Curt Kirkwood (guitar/vocals), his brother Cris Kirkwood, and Derrick Bostrom (drums). The Kirkwood brothers met Bostrom while attending Brophy Prep High School in Phoenix. The three then moved to Tempe, Arizona, where the Kirkwood brothers purchased two adjacent houses, one of which had a shed in the back where they regularly practiced.",
       "official_url": "www.themeatpuppets.com",
       "social": {
         "facebook": "",
@@ -111787,8 +112374,17 @@
       "genre": "Alternative Rock",
       "style": "Rock/Pop",
       "country": "Phoenix, Arizona, USA",
-      "profile_checked_at": "2026-09-28T23:34:04.539622+00:00",
-      "updated_at": "2026-09-28T23:34:04.539622+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meat_Puppets",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Meat Puppets",
+      "profile_checked_at": "2026-10-07T09:36:47.974557+00:00",
+      "updated_at": "2026-10-07T09:36:47.974557+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "munich": {
       "name": "Munich",
@@ -111836,18 +112432,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/twwvuu1573610155.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/twwvuu1573610155.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:20.893835+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/uuwvsu1569696092.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/uuwvsu1569696092.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:21.317190+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Paul Harold Westerberg is an American musician, best known as the lead singer, guitarist, and songwriter for the Replacements. Following the breakup of the Replacements, Westerberg launched a solo career that saw him release three albums on two major record labels.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -111857,8 +112459,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:08.930008+00:00",
-      "updated_at": "2026-09-28T23:34:08.930008+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paul_Westerberg",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Paul Westerberg",
+      "profile_checked_at": "2026-10-07T09:37:15.767928+00:00",
+      "updated_at": "2026-10-07T09:37:15.767928+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "peter-doherty": {
       "name": "Peter Doherty",
@@ -111910,8 +112521,18 @@
     "prietto-viaja-al-cosmos-con-mariano": {
       "name": "Prietto Viaja al Cosmos con Mariano",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/f1bd8817fb4dcec3b9862bb257ddde04/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/f1bd8817fb4dcec3b9862bb257ddde04/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:25.630023+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -111923,8 +112544,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:13.321574+00:00",
-      "updated_at": "2026-09-28T23:34:13.321574+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:37:22.295139+00:00",
+      "updated_at": "2026-10-07T09:37:22.295139+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:37:22.295139+00:00",
+      "attempt_count": 1
     },
     "primal-scream-kate-moss": {
       "name": "Primal Scream/Kate Moss",
@@ -111967,10 +112599,20 @@
     "pulseprogramming": {
       "name": "Pulseprogramming",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/431153a52d16ea3eb1e09aa11c38a13c/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/431153a52d16ea3eb1e09aa11c38a13c/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:34.901076+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Pulseprogramming is an American electronic musical group and multimedia art project founded by Marc Hellner and Joel Kriske in Portland, Oregon in 1998. The band is currently centered on Marc Hellner and new member Chanel Pease. It has also included art directors John Schacter and Hans Seeger, video artist Eric David Johnson, and poet Joel Craig. The collective began releasing intelligent dance music on Chicago label Aesthetics in 1999 and followed with releases on the same label in 2001 and 2003. The 2003 release Tulsa for One Second was described by Pitchfork Media as \"Lap-pop\".",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -111980,8 +112622,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:17.709368+00:00",
-      "updated_at": "2026-09-28T23:34:17.709368+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulseprogramming",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Pulseprogramming",
+      "profile_checked_at": "2026-10-07T09:36:29.905512+00:00",
+      "updated_at": "2026-10-07T09:36:29.905512+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "somebody-s-child": {
       "name": "Somebody's Child",
@@ -112048,8 +112699,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:22.098084+00:00",
-      "updated_at": "2026-09-28T23:34:22.098084+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:44.191814+00:00",
+      "updated_at": "2026-10-07T09:36:44.191814+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:36:44.191814+00:00",
+      "attempt_count": 1
     },
     "spanish-prisoners": {
       "name": "Spanish Prisoners",
@@ -112168,8 +112831,18 @@
     "the-berndt": {
       "name": "The Berndt",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/a89028accf6ed4aae226a9d8b34208fb/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/a89028accf6ed4aae226a9d8b34208fb/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:36:43.209048+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -112181,8 +112854,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:28.674961+00:00",
-      "updated_at": "2026-09-28T23:34:28.674961+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:36:39.765531+00:00",
+      "updated_at": "2026-10-07T09:36:39.765531+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:36:39.765531+00:00",
+      "attempt_count": 1
     },
     "the-boy-least-likely-to": {
       "name": "The Boy Least Likely To",
@@ -112342,36 +113026,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-4ff75cec611a5.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-4ff75cec611a5.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:45.271044+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sstsqp1534443748.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sstsqp1534443748.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:46.053014+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-51c45d0dbd806.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-51c45d0dbd806.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:46.771112+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-51c45d0dbf511.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/proclaimers-the-51c45d0dbf511.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:47.408566+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/rpssus1534443715.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/rpssus1534443715.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:48.087963+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Proclaimers are a Scottish rock duo formed in 1983 by the twin brothers Craig and Charlie Reid. They came to attention with their 1987 single \"Letter from America\", which reached No. 3 in the United Kingdom, and the 1988 single \"I'm Gonna Be \", which topped the charts in Australia, Iceland and New Zealand. The duo's biggest album, Sunshine on Leith (1988) has been certified multi-Platinum in Australia and Canada, selling over two million copies worldwide, including around 700,000 in the United States. The Proclaimers have sold over five million albums worldwide.",
       "official_url": "www.proclaimers.co.uk",
       "social": {
         "facebook": "",
@@ -112381,8 +113080,17 @@
       "genre": "Folk",
       "style": "Folk",
       "country": "Leith, Scotland, UK",
-      "profile_checked_at": "2026-09-28T23:34:37.449297+00:00",
-      "updated_at": "2026-09-28T23:34:37.449297+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Proclaimers",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Proclaimers",
+      "profile_checked_at": "2026-10-07T09:37:40.078933+00:00",
+      "updated_at": "2026-10-07T09:37:40.078933+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-rascals": {
       "name": "The Rascals",
@@ -112625,24 +113333,33 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vqxqwp1461824650.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vqxqwp1461824650.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:04.959846+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/y8pwa91779030367.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/y8pwa91779030367.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:05.740204+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/xuuxuy1461824755.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/xuuxuy1461824755.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:06.609108+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Adorable were an English alternative rock band, formed in Coventry in 1990. The band consisted of vocalist and guitarist Pete Fijalkowski, guitarist Robert Dillam, bassist Stephen 'Wil' Williams and drummer Kevin Gritton.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -112652,8 +113369,17 @@
       "genre": "Indie Rock",
       "style": "Rock/Pop",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:48.417903+00:00",
-      "updated_at": "2026-09-28T23:34:48.417903+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adorable_(band)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Adorable (band)",
+      "profile_checked_at": "2026-10-07T09:37:59.773979+00:00",
+      "updated_at": "2026-10-07T09:37:59.773979+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "alpine": {
       "name": "Alpine",
@@ -112861,8 +113587,18 @@
     "big-tree": {
       "name": "Big Tree",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/1274a7272ea741ea6e3f11368d5a3f85/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/1274a7272ea741ea6e3f11368d5a3f85/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:20.677274+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -112874,8 +113610,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:34:59.377287+00:00",
-      "updated_at": "2026-09-28T23:34:59.377287+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:38:15.068997+00:00",
+      "updated_at": "2026-10-07T09:38:15.068997+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:38:15.068997+00:00",
+      "attempt_count": 1
     },
     "black-city-lights": {
       "name": "Black City Lights",
@@ -112976,8 +113723,18 @@
     "darkness-falls": {
       "name": "Darkness Falls",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/966619441aeb21bbd308eb532d341447/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/966619441aeb21bbd308eb532d341447/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:37:54.965645+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -112989,8 +113746,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:05.950749+00:00",
-      "updated_at": "2026-09-28T23:35:05.950749+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:37:49.068680+00:00",
+      "updated_at": "2026-10-07T09:37:49.068680+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:37:49.068680+00:00",
+      "attempt_count": 1
     },
     "de-vito": {
       "name": "De Vito",
@@ -113008,8 +113776,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:08.150337+00:00",
-      "updated_at": "2026-09-28T23:35:08.150337+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:38:41.127518+00:00",
+      "updated_at": "2026-10-07T09:38:41.127518+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:38:41.127518+00:00",
+      "attempt_count": 1
     },
     "dead-letter-circus": {
       "name": "Dead Letter Circus",
@@ -113237,12 +114017,15 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/yuvput1474102829.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/yuvput1474102829.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:40.139814+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Jasper Patterson, better known by his stage name Groundislava, is an electronic musician and music producer based in Los Angeles, California. He is one of the founding members of the LA-based music collective Wedidit.",
       "official_url": "",
       "social": {
         "facebook": "",
@@ -113252,8 +114035,17 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:19.124963+00:00",
-      "updated_at": "2026-09-28T23:35:19.124963+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groundislava",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Groundislava",
+      "profile_checked_at": "2026-10-07T09:38:34.399713+00:00",
+      "updated_at": "2026-10-07T09:38:34.399713+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "hey-rosetta": {
       "name": "Hey Rosetta!",
@@ -113332,8 +114124,18 @@
     "how-i-became-the-bomb": {
       "name": "How I Became the Bomb",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/2632288740494402820f5a61d5249072/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/2632288740494402820f5a61d5249072/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:25.138295+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -113345,8 +114147,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:23.506107+00:00",
-      "updated_at": "2026-09-28T23:35:23.506107+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:38:21.651252+00:00",
+      "updated_at": "2026-10-07T09:38:21.651252+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:38:21.651252+00:00",
+      "attempt_count": 1
     },
     "iamx": {
       "name": "IAMX",
@@ -113557,8 +114370,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:34.471787+00:00",
-      "updated_at": "2026-09-28T23:35:34.471787+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:37:55.943045+00:00",
+      "updated_at": "2026-10-07T09:37:55.943045+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:37:55.943045+00:00",
+      "attempt_count": 1
     },
     "morningwood": {
       "name": "Morningwood",
@@ -113660,8 +114485,18 @@
     "raleigh": {
       "name": "Raleigh",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/d78d7c202b3d2afb2f8d5762d5821f66/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d78d7c202b3d2afb2f8d5762d5821f66/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:52.115439+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -113673,8 +114508,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:41.047745+00:00",
-      "updated_at": "2026-09-28T23:35:41.047745+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "Deezer",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:38:44.997046+00:00",
+      "updated_at": "2026-10-07T09:38:44.997046+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-10T09:38:44.997046+00:00",
+      "attempt_count": 1
     },
     "she-him": {
       "name": "She & Him",
@@ -113766,8 +114612,20 @@
       "genre": "",
       "style": "",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:45.432327+00:00",
-      "updated_at": "2026-09-28T23:35:45.432327+00:00"
+      "wikipedia_url": "",
+      "lastfm_url": "",
+      "verified": false,
+      "verification_source": "",
+      "verification_title": "",
+      "profile_checked_at": "2026-10-07T09:38:53.085356+00:00",
+      "updated_at": "2026-10-07T09:38:53.085356+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-21T09:38:53.085356+00:00",
+      "attempt_count": 1
     },
     "sufjan-stevens-angelo-de-augustine": {
       "name": "Sufjan Stevens / Angelo De Augustine",
@@ -113853,18 +114711,24 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qxxxuq1408404469.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qxxxuq1408404469.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:13.271309+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/yypxus1408404454.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/yypxus1408404454.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:14.095626+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "The Grates were an Australian indie rock band, which formed in Brisbane, Queensland in 2002 with Patience Hodgson on lead vocals, John Patterson on guitars and backing vocals and Alana Skyring on drums. Their first two albums, Gravity Won't Get You High (2006) and Teeth Lost, Hearts Won (2008), both reached the ARIA Albums Chart top 10. The third studio album, Secret Rituals (2011), peaked at No. 11. Their highest charting singles \"Science Is Golden\" (2006) and \"Burn Bridges\" (2008) reached the ARIA top 100. A video album, Til Death Do Us Party: Live at the Forum (2007), peaked in the ARIA Top 40 Music DVDs chart. Hodgson and Patterson married in November 2012 and were proprietors of Southside Tea Room in Morningside from 2012 to 2019. The Grates disbanded in 2020.",
       "official_url": "www.thegrates.com",
       "social": {
         "facebook": "www.facebook.com/thegrates",
@@ -113874,8 +114738,17 @@
       "genre": "Indie",
       "style": "Rock/Pop",
       "country": "",
-      "profile_checked_at": "2026-09-28T23:35:52.006686+00:00",
-      "updated_at": "2026-09-28T23:35:52.006686+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Grates",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "The Grates",
+      "profile_checked_at": "2026-10-07T09:38:07.594828+00:00",
+      "updated_at": "2026-10-07T09:38:07.594828+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-polyphonic-spree": {
       "name": "The Polyphonic Spree",
@@ -114071,30 +114944,42 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/svxwxp1449528504.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/svxwxp1449528504.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:31.403422+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qrysxx1449528540.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qrysxx1449528540.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:32.170993+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qttppp1449528571.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qttppp1449528571.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:32.954087+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/rrptvu1364396195.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/rrptvu1364396195.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:38:33.402196+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "Bulelwa Mkutukana, known by her stage name Zahara, was a South African singer, songwriter and guitarist. Her music was classified loosely as \"Afro-soul\", and she sang in Xhosa, her native language, as well as in English.",
       "official_url": "www.laparejatoxica.com",
       "social": {
         "facebook": "",
@@ -114104,8 +114989,17 @@
       "genre": "Pop",
       "style": "Rock/Pop",
       "country": "Úbeda, Jaén, Spain",
-      "profile_checked_at": "2026-09-28T23:36:00.782166+00:00",
-      "updated_at": "2026-09-28T23:36:00.782166+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zahara_(South_African_musician)",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "Zahara (South African musician)",
+      "profile_checked_at": "2026-10-07T09:38:26.105866+00:00",
+      "updated_at": "2026-10-07T09:38:26.105866+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "air-gordon-tracks": {
       "name": "Air/Gordon Tracks",
@@ -115298,36 +116192,51 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/q8iupv1615033215.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/q8iupv1615033215.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:39:02.156675+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/ytuyqy1399389093.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/ytuyqy1399389093.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:39:02.674012+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qvutrs1399389109.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qvutrs1399389109.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:39:03.393345+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rc7bge1630923184.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rc7bge1630923184.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:39:03.973132+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/1j6o8v1736420832.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/1j6o8v1736420832.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:39:04.386178+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
       "bio_es": "",
-      "bio_en": "",
+      "bio_en": "John Clayton Mayer is an American singer, songwriter, and guitarist. He attended Berklee College of Music in Boston, but he left for Atlanta in 1997 with fellow guitarist Clay Cook, with whom he formed the short-lived rock duo Lo-Fi Masters. After their split, Mayer continued to play at local clubs, refining his skills and gaining a minor following. He performed at the 2000 South by Southwest festival, and was subsequently signed by Aware Records, an imprint of Columbia Records through which he released his debut extended play (EP), Inside Wants Out (1999). His first two studio albums—Room for Squares (2001) and Heavier Things (2003)—were both met with critical and commercial success. The former album spawned the single \"Your Body Is a Wonderland\", which won Best Male Pop Vocal Performance at the 45th Annual Grammy Awards, while the latter album peaked atop the Billboard 200.",
       "official_url": "www.johnmayer.com",
       "social": {
         "facebook": "",
@@ -115337,8 +116246,17 @@
       "genre": "Indie",
       "style": "Rock/Pop",
       "country": "Bridgeport, Connecticut, USA",
-      "profile_checked_at": "2026-09-28T23:36:57.881631+00:00",
-      "updated_at": "2026-09-28T23:36:57.881631+00:00"
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Mayer",
+      "lastfm_url": "",
+      "verified": true,
+      "verification_source": "Wikipedia",
+      "verification_title": "John Mayer",
+      "profile_checked_at": "2026-10-07T09:38:56.912406+00:00",
+      "updated_at": "2026-10-07T09:38:56.912406+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "jonas-alaska": {
       "name": "Jonas Alaska",
