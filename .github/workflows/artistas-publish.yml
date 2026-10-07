@@ -20,6 +20,7 @@ on:
       - "scripts/enrich_identity_fallback.py"
       - "scripts/build_radar_2026.py"
       - "scripts/build_control.py"
+      - "scripts/build_artist_progress.py"
       - ".github/workflows/artistas-publish.yml"
   workflow_dispatch:
 
@@ -89,11 +90,13 @@ jobs:
           python scripts/build_artists.py
           python scripts/build_radar_2026.py
           python scripts/build_control.py
+          python scripts/build_artist_progress.py
 
       - name: Validate Louder Control PWA
         shell: bash
         run: |
           test -s docs/control/index.html
+          test -s docs/progreso-artistas/index.html
           test -s docs/artistas/_control/index.html
           test -s docs/control/sw.js
           test -s docs/control/manifest.webmanifest
