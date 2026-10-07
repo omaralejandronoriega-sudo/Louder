@@ -1563,7 +1563,9 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = []
+    sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/artistas/"] + [
+        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/musica/{a['slug']}/" for a in artists
+    ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
     ) + "</urlset>\n"
