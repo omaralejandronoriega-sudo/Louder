@@ -59,8 +59,8 @@ jobs:
           if [ "${{ github.event.inputs.refresh }}" = "true" ]; then
             EXTRA="--refresh"
           fi
-          for i in $(seq 1 50); do
-            echo "=== Artist $i/50 ==="
+          for i in $(seq 1 51); do
+            echo "=== Artist $i/51 ==="
             python scripts/enrich_galleries.py --limit 1 $EXTRA
           done
 
