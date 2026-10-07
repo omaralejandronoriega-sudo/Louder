@@ -538,6 +538,9 @@ def main() -> int:
         if not slug:
             continue
         existing = galleries.get(slug) or {}
+        # Never spend queue capacity reprocessing an already complete profile.
+        if str(existing.get("profile_status") or "") == "complete":
+            continue
         # profile_checked_at records an attempt only. The terminal condition is
         # profile_status=complete; partial/retry/not_found remain eligible later.
         if not es.is_due(existing, refresh=args.refresh, now=now):
