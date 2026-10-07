@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T22:47:02.195567+00:00",
+  "generated_at": "2026-10-07T01:28:17.649750+00:00",
   "source_updates": {
-    "artists": "2026-10-06T22:46:56.337741Z",
+    "artists": "2026-10-07T01:28:13.026940Z",
     "galleries": "2026-10-06T21:44:15.242911+00:00",
-    "album_art": "2026-10-06T21:04:36.336862+00:00"
+    "album_art": "2026-10-07T00:48:29.141289+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5327,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1241
+      "yesstreaming_live": 1244
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,55 +39,55 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-06T22:46:56.337741Z"
+      "merged_at": "2026-10-07T01:28:13.026940Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 3099,
-    "real_profile_missing": 4842,
-    "real_profile_complete_pct": 39.03,
+    "real_profile_complete": 3158,
+    "real_profile_missing": 4783,
+    "real_profile_complete_pct": 39.77,
     "profile_status": {
-      "complete": 2958,
-      "legacy": 2712,
+      "complete": 3016,
+      "legacy": 2654,
       "partial": 1822,
       "not_found": 448,
       "retry": 1
     },
-    "missing_validated_profile_image": 3180,
-    "missing_profile_bio": 3625,
-    "missing_profile_data": 1761,
+    "missing_validated_profile_image": 3058,
+    "missing_profile_bio": 3619,
+    "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 3136,
-    "core_complete_pct": 39.49,
+    "core_complete": 3191,
+    "core_complete_pct": 40.18,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 4855,
-    "effective_image_pct": 61.14,
+    "effective_image": 4969,
+    "effective_image_pct": 62.57,
     "image_direct_artist": 1648,
-    "image_gallery_fallback": 3207,
-    "missing_image": 3086,
-    "effective_bio": 4316,
-    "effective_bio_pct": 54.35,
+    "image_gallery_fallback": 3321,
+    "missing_image": 2972,
+    "effective_bio": 4322,
+    "effective_bio_pct": 54.43,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 3035,
-    "missing_bio": 3625,
+    "bio_gallery_en": 3041,
+    "missing_bio": 3619,
     "gallery_checked": 7890,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 4761,
-    "with_social": 3942,
-    "with_genre": 3575,
+    "gallery_with_images": 4883,
+    "with_social": 4064,
+    "with_genre": 3603,
     "with_related": 1600
   },
   "tracks": {
-    "total": 18188,
-    "with_effective_artwork": 11545,
-    "with_effective_artwork_pct": 63.48,
-    "missing_artwork": 6643,
-    "grouped_as_otras": 5892,
-    "with_first_and_last_dates": 17679,
-    "album_art_cache_entries": 12090,
-    "album_art_cache_found": 10646,
-    "album_art_cache_missed": 1444
+    "total": 18189,
+    "with_effective_artwork": 11780,
+    "with_effective_artwork_pct": 64.76,
+    "missing_artwork": 6409,
+    "grouped_as_otras": 5893,
+    "with_first_and_last_dates": 17680,
+    "album_art_cache_entries": 12362,
+    "album_art_cache_found": 10655,
+    "album_art_cache_missed": 1707
   },
   "focus": {
     "boylife": {
@@ -220,8 +220,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -366,8 +365,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -1535,8 +1533,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -1572,8 +1569,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -1642,8 +1638,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -1958,8 +1953,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -2069,40 +2063,6 @@
       "profile_complete": false
     },
     {
-      "name": "Slash",
-      "slug": "slash",
-      "plays": 46,
-      "first_played": "24 jul 2012",
-      "last_played": "30 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 9,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 7,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Telefunka",
       "slug": "telefunka",
       "plays": 46,
@@ -2168,8 +2128,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -2307,8 +2266,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -2481,8 +2439,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -2728,8 +2685,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -2905,8 +2861,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3257,8 +3212,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3294,8 +3248,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3314,25 +3267,22 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
       "profile_status": "legacy",
       "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3440,8 +3390,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3477,8 +3426,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3514,8 +3462,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3619,8 +3566,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -3656,8 +3602,43 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Police Academy 6",
+      "slug": "police-academy-6",
+      "plays": 37,
+      "first_played": "22 jul 2012",
+      "last_played": "12 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
       ],
       "profile_complete": false
     }
@@ -3696,8 +3677,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4043,8 +4023,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4080,8 +4059,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4151,8 +4129,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4193,40 +4170,6 @@
       "profile_complete": false
     },
     {
-      "name": "Slash",
-      "slug": "slash",
-      "plays": 46,
-      "first_played": "24 jul 2012",
-      "last_played": "30 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 9,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 7,
-      "tracks_in_otras": 7,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_es",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "The Fucking Fat Porns",
       "slug": "the-fucking-fat-porns",
       "plays": 46,
@@ -4258,8 +4201,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4329,8 +4271,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4366,8 +4307,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4511,8 +4451,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4620,8 +4559,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4834,8 +4772,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -4871,45 +4808,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Forest & The Trees",
-      "slug": "the-forest-the-trees",
-      "plays": 38,
-      "first_played": "27 jul 2012",
-      "last_played": "11 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
         "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
       ],
       "profile_complete": false
     },
@@ -5017,8 +4916,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5054,8 +4952,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5091,8 +4988,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5128,8 +5024,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5165,8 +5060,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5202,8 +5096,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5237,42 +5130,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Superhumanoids",
-      "slug": "superhumanoids",
-      "plays": 37,
-      "first_played": "28 abr 2013",
-      "last_played": "23 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "lastfm",
-        "wp_db"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5383,8 +5240,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5454,8 +5310,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5525,8 +5380,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5562,8 +5416,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5635,8 +5488,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5672,8 +5524,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5709,8 +5560,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5782,8 +5632,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5819,8 +5668,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5892,8 +5740,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -5964,8 +5811,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6000,8 +5846,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6109,8 +5954,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6254,8 +6098,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6291,8 +6134,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6328,8 +6170,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6381,8 +6222,8 @@
         "lastfm"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -6401,8 +6242,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6438,8 +6278,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6477,8 +6316,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6514,8 +6352,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6551,8 +6388,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6624,8 +6460,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6661,8 +6496,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6697,8 +6531,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6734,8 +6567,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6842,8 +6674,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6878,8 +6709,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6917,8 +6747,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6954,8 +6783,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -6991,8 +6819,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -7027,8 +6854,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -7172,8 +6998,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -7209,8 +7034,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -7282,8 +7106,115 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Orgy",
+      "slug": "orgy",
+      "plays": 30,
+      "first_played": "27 jul 2012",
+      "last_played": "7 jul 2014 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Social Distortion",
+      "slug": "social-distortion",
+      "plays": 30,
+      "first_played": "23 jul 2012",
+      "last_played": "18 oct 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Us3",
+      "slug": "us3",
+      "plays": 30,
+      "first_played": "16 jul 2012",
+      "last_played": "4 mar 2013 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
       ],
       "profile_complete": false
     }
@@ -7354,8 +7285,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -7500,8 +7430,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -8467,8 +8396,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -8504,8 +8432,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -8540,8 +8467,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -8856,8 +8782,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -9032,8 +8957,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -9137,8 +9061,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -9311,8 +9234,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -9558,8 +9480,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -9735,8 +9656,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10053,8 +9973,7 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10090,8 +10009,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10110,25 +10028,22 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
       "profile_status": "legacy",
       "profile_missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10236,8 +10151,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10273,8 +10187,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10310,8 +10223,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10415,8 +10327,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10452,8 +10363,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10489,8 +10399,7 @@
       "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
       "profile_complete": false
     },
@@ -10545,23 +10454,21 @@
       "tracks_with_artwork": 4,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
+      "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
       "related": 0,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
       "profile_status": "legacy",
       "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
