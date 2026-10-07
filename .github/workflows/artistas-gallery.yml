@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "data/wp-export/**"
+      - "data/galleries.json"
       - "scripts/merge_history_sources.py"
       - "scripts/enrich_galleries.py"
       - "scripts/enrichment_state.py"
