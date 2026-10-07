@@ -22,7 +22,7 @@ IDENTITY_ENRICHMENT = ROOT / "data" / "identity_enrichment.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 GSC_VERIFY_DIR = ROOT / "search-console"
-PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
+PUBLIC_ARTISTS_ORIGIN = "https://loudermx.com/musica/artistas/?artista="
 
 
 def esc(value: Any) -> str:
@@ -1167,13 +1167,11 @@ def main() -> int:
     shutil.copy2(ASSETS / "artistas.js", DOCS / "artistas" / "_assets" / "artistas.js")
     shutil.copy2(ASSETS / "logo_louder.png", DOCS / "artistas" / "_assets" / "logo_louder.png")
 
-    build_index(artists, galleries)
-    for artist in artists:
-        build_artist(artist, by_slug, galleries, album_art)
+    # Individual public profiles live only in WordPress. The static host is data/control only.
 
     index_payload = {
         "version": 2,
-        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
+        "base_url": PUBLIC_ARTISTS_ORIGIN,
         "artists": [
             {
                 "name": a.get("name", ""),
@@ -1565,9 +1563,7 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/artistas/"] + [
-        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/{a['slug']}/" for a in artists
-    ]
+    sitemap_urls = []
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
     ) + "</urlset>\n"
