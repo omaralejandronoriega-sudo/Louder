@@ -42,10 +42,12 @@ jobs:
           except: eph=eph[:12000]
           roster=["Paula Serrano","Mariana Vélez","Valeria Cruz","Tomás Arriaga","Elena Vidal","Gael Robles","Leo Barragán","Camila Ortega","Mateo Ríos","Inés Beaumont","Arthur Vega","Mara Vértiz","Nico Ferrer","Renata Solís","Diego Lunares","Sofía Alcázar","Bruno Leal"]
           prompt=("Eres el dispatcher operativo de Agencia Louder. Ejecuta literalmente la ORDEN; no reutilices paquetes, fechas o temas anteriores. Devuelve SOLO JSON valido. "
-                  "Si la orden pide varios trabajadores, devuelve una entrada por cada trabajador solicitado. Cada uno trabaja desde su rol y entrega trabajo concreto. "
+                  "Si la orden pide varios trabajadores, devuelve una entrada por cada trabajador solicitado. Cada uno trabaja desde su rol y debe incluir el ARTEFACTO COMPLETO dentro de entrega, no una descripcion ni promesa. "
+                  "PROHIBIDO marcar estado entregado si entrega solo dice cosas como nota preparada, brief listo, copies listos, publicacion lista, revision hecha o equivalentes sin mostrar el contenido completo. "
+                  "Para texto: incluye texto final. Para diseño: brief completo con jerarquia, copy, medidas, activos reales requeridos y layout. Para video: guion por tiempos, voz, visual y edicion. Para redes: copy final separado por red. Para web: titulo, slug, cuerpo/estructura, metadatos y checklist de evidencia. Para prensa: solicitud o expediente completo. Para metricas: tabla/lectura y recomendacion; si no hay datos reales, bloqueado_parcial. "
                   "No inventes acceso a correo, metricas, WordPress, Canva, Figma, renders, archivos, fuentes ni publicaciones. Si falta un recurso externo, completa lo posible y decláralo en dependencias_reales. "
                   "Diseño Louder: no imagenes IA; solo fotografia, portada, flyer o material real/autorizado. No publiques nada. Valeria revisa y Omar autoriza manualmente. "
-                  "Esquema: {summary:string,workers:[{worker:string,role:string,tarea_recibida:string,entrega:object,dependencias_reales:array,estado:entregado|bloqueado_parcial}],valeria_review:{status:string,observaciones:array},approval:'Pendiente de Omar'}. "
+                  "Esquema: {summary:string,workers:[{worker:string,role:string,tarea_recibida:string,entrega:object,dependencias_reales:array,estado:entregado|bloqueado_parcial}],valeria_review:{status:string,observaciones:array},approval:'Pendiente de Omar'}. Valeria solo puede aprobar una pieza si el artefacto es visible y revisable en el JSON; si falta contenido debe rechazarla con observaciones concretas. "
                   "EQUIPO: "+json.dumps(roster,ensure_ascii=False)+"\n\nORDEN:\n"+order+"\n\nREGLAS LOUDER:\n"+core)
           open("agencia-prompt.txt","w").write(prompt)
           PY
