@@ -1,0 +1,70 @@
+name: Agencia QA 17 trabajadores
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/agencia-qa-17.yml'
+  workflow_dispatch:
+permissions:
+  issues: write
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Instalar motor local
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve >/tmp/ollama.log 2>&1 &
+          sleep 4
+          ollama pull qwen3:1.7b
+      - name: Probar 17 puestos uno por uno
+        run: |
+          python - <<'PY'
+          import json,urllib.request
+          tests=[
+          ("Paula Serrano","Relaciones de Prensa","Prepara expediente de acreditación de prueba sin inventar contactos."),
+          ("Mariana Vélez","Coordinadora de Acreditaciones","Organiza seguimiento, fechas límite, requisitos y comprobantes."),
+          ("Valeria Cruz","Directora editorial","Coordina una orden editorial y define revisión y responsables."),
+          ("Tomás Arriaga","Periodista musical","Entrega estructura de nota y separa hechos que requieren fuentes."),
+          ("Elena Vidal","Curadora musical","Entrega criterio de curaduría Louder y dependencias de catálogo."),
+          ("Gael Robles","Productor de contenidos","Convierte un brief en paquete web, diseño, video y redes."),
+          ("Leo Barragán","Supervisor de operaciones","Audita flujo, incidencias, dependencias y evidencia."),
+          ("Camila Ortega","Analista de audiencia","Define análisis accionable y métricas reales necesarias."),
+          ("Mateo Ríos","Editor TikTok","Entrega guion técnico y timeline de TikTok de tres canciones."),
+          ("Inés Beaumont","Diseñadora TBC","Entrega brief visual TBC usando material real."),
+          ("Arthur Vega","CM TBC","Entrega plan social TBC sin publicar."),
+          ("Mara Vértiz","Diseñadora Threads","Entrega brief visual Threads y activos reales requeridos."),
+          ("Nico Ferrer","CM Threads","Entrega bloque de Threads y puntos a verificar."),
+          ("Renata Solís","Diseñadora Louder","Entrega brief Louder sin imágenes IA y con activos reales."),
+          ("Diego Lunares","Editor video Louder","Entrega guion técnico y timeline para Final Cut Pro."),
+          ("Sofía Alcázar","CM Louder","Entrega plan de salida por red y evidencia requerida."),
+          ("Bruno Leal","Webmaster Louder","Entrega checklist web, validación de URL y evidencia requerida.")
+          ]
+          results=[]
+          for name,role,task in tests:
+            prompt=f"""Actúa exclusivamente como {name}, {role}, dentro de Agencia Louder. Tarea: {task}
+Entrega trabajo concreto y útil. No inventes accesos, fuentes, correos, métricas, publicaciones, renders ni archivos. Declara bloqueos reales.
+No publiques. Revisión final de Valeria y aprobación manual de Omar.
+Devuelve SOLO JSON con worker, role, tarea_recibida, entrega, dependencias_reales, estado."""
+            body=json.dumps({"model":"qwen3:1.7b","prompt":prompt,"stream":False,"format":"json","think":False,"options":{"temperature":0.15,"num_predict":900}}).encode()
+            req=urllib.request.Request("http://127.0.0.1:11434/api/generate",data=body,headers={"Content-Type":"application/json"})
+            data=json.loads(urllib.request.urlopen(req,timeout=240).read())
+            item=json.loads(data["response"])
+            required=["worker","role","tarea_recibida","entrega","dependencias_reales","estado"]
+            missing=[k for k in required if k not in item]
+            results.append({"expected_worker":name,"pass":not missing and item.get("worker")==name,"missing":missing,"result":item})
+          report={"suite":"17-worker-e2e","passed":sum(1 for x in results if x["pass"]),"total":17,"results":results,"valeria_review":"Pendiente","approval":"Pendiente de Omar","publication_allowed":False}
+          open("qa17.json","w").write(json.dumps(report,ensure_ascii=False,indent=2))
+          if report["passed"]!=17: raise SystemExit(f"Solo {report['passed']}/17 pasaron contrato")
+          PY
+      - name: Publicar evidencia en expediente QA
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs=require('fs');
+            const ok=fs.existsSync('qa17.json');
+            const body=ok?fs.readFileSync('qa17.json','utf8'):'El QA no produjo expediente JSON.';
+            await github.rest.issues.createComment({...context.repo,issue_number:9,body:'## QA 17 trabajadores · ejecución individual\n\n```json\n'+body.slice(0,60000)+'\n```\n\nPublicación bloqueada · aprobación de Omar pendiente.'});
