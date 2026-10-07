@@ -96,7 +96,9 @@ jobs:
         shell: bash
         run: |
           test -s docs/control/index.html
-          test -s docs/artistas/foals/index.html\n          test "$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -ge 1000\n          test -s docs/control/artistas/index.html
+          test -s docs/artistas/foals/index.html
+          test "$(find docs/artistas -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -ge 1000
+          test -s docs/control/artistas/index.html
           test -s docs/artistas/_control/index.html
           test -s docs/control/sw.js
           test -s docs/control/manifest.webmanifest
