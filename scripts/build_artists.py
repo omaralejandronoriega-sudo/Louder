@@ -766,7 +766,7 @@ def page_shell(
     social_image: str = "",
     structured_data: dict[str, Any] | None = None,
 ) -> str:
-    asset_prefix = "_assets/" if depth == 1 else "../_assets/"
+    asset_prefix = ("../" * max(depth - 1, 0)) + "_assets/"
     desc = description or "Archivo de artistas programados en Louder Radio."
     canonical = PUBLIC_ARTISTS_ORIGIN + canonical_path
     structured_json = (
@@ -1043,7 +1043,7 @@ def build_artist(
 </section>
 </main>'''
 
-    out = DOCS / "artistas" / artist["slug"] / "index.html"
+    out = DOCS / "artistas" / "musica" / artist["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     track_count = len(artist.get("tracks") or [])
     track_label = "1 canción" if track_count == 1 else f"{track_count} canciones"
@@ -1072,9 +1072,9 @@ def build_artist(
         page_shell(
             f"{name}: canciones e historial | Louder",
             body,
-            depth=2,
+            depth=3,
             description=description,
-            canonical_path=f"/artistas/{artist['slug']}/",
+            canonical_path=f"/artistas/musica/{artist['slug']}/",
             social_image=image,
             structured_data=breadcrumbs,
         ),
@@ -1174,7 +1174,7 @@ def main() -> int:
 
     index_payload = {
         "version": 2,
-        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
+        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/musica/",
         "artists": [
             {
                 "name": a.get("name", ""),
