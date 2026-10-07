@@ -22,7 +22,7 @@ IDENTITY_ENRICHMENT = ROOT / "data" / "identity_enrichment.json"
 DOCS = ROOT / "docs"
 ASSETS = ROOT / "assets"
 GSC_VERIFY_DIR = ROOT / "search-console"
-PUBLIC_ARTISTS_ORIGIN = "https://artistas.loudermx.com"
+PUBLIC_ARTISTS_ORIGIN = "https://loudermx.com"
 
 
 def esc(value: Any) -> str:
@@ -1071,7 +1071,7 @@ def build_artist(
             body,
             depth=3,
             description=description,
-            canonical_path=f"/artistas/musica/{artist['slug']}/",
+            canonical_path=f"/artistas/{artist['slug']}/",
             social_image=image,
             structured_data=breadcrumbs,
         ),
@@ -1171,7 +1171,7 @@ def main() -> int:
 
     index_payload = {
         "version": 2,
-        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/musica/",
+        "base_url": PUBLIC_ARTISTS_ORIGIN + "/artistas/",
         "artists": [
             {
                 "name": a.get("name", ""),
@@ -1564,7 +1564,7 @@ def main() -> int:
     )
 
     sitemap_urls = [PUBLIC_ARTISTS_ORIGIN + "/artistas/"] + [
-        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/musica/{a['slug']}/" for a in artists
+        f"{PUBLIC_ARTISTS_ORIGIN}/artistas/{a['slug']}/" for a in artists
     ]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{esc(url)}</loc></url>\n" for url in sitemap_urls
