@@ -586,7 +586,7 @@ def main() -> int:
     print(
         "sources "
         f"theaudiodb=yes fanart_tv={'yes' if fanart_key else 'no'} "
-        f"wikipedia=yes deezer=yes lastfm={'yes' if lastfm_key else 'no'} "
+        f"wikipedia=no deezer=yes lastfm={'yes' if lastfm_key else 'no'} "
         f"discogs={'yes' if discogs_token else 'no'}"
     )
 
@@ -598,7 +598,6 @@ def main() -> int:
         try:
             images, mbid, profile = tadb_gallery(client, artist)
             images = fanart_gallery(mbid, fanart_key, images)
-            images, profile = wikipedia_profile(client, artist, images, profile)
             images, profile = deezer_profile(name, images, profile)
             images, profile = lastfm_profile(name, lastfm_key, images, profile)
             images, profile = discogs_profile(name, discogs_token, images, profile)
