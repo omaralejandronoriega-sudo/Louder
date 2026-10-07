@@ -530,6 +530,28 @@ def main() -> int:
     client = RateClient(2.05)
     now = es.utcnow()
 
+    # Editorial priority is part of the queue contract, not a cosmetic sort.
+    # Core Louder artists with an unusable/missing bio or image bypass retry
+    # cooldowns so the public archive cannot leave major artists unfinished
+    # while long-tail profiles are processed.
+    core_names = [
+        "Arctic Monkeys", "The Strokes", "Interpol", "Foals", "Fontaines D.C.",
+        "The Killers", "Radiohead", "Oasis", "Yeah Yeah Yeahs", "Franz Ferdinand",
+        "Bloc Party", "The National", "Vampire Weekend", "LCD Soundsystem",
+        "The Libertines", "The Hives", "Phoenix", "MGMT", "Tame Impala", "Gorillaz",
+        "The Cure", "Depeche Mode", "New Order", "Joy Division", "Blur", "Pulp",
+        "Suede", "Placebo", "Muse", "Kasabian", "Editors", "White Lies",
+        "The Vaccines", "Two Door Cinema Club", "The Kooks", "The Cribs",
+        "The Rapture", "Klaxons", "The Horrors", "The Drums", "Metric",
+        "Arcade Fire", "Modest Mouse", "Death Cab for Cutie", "The Shins",
+        "Spoon", "Wilco", "The War on Drugs", "Beach House", "DIIV",
+        "Slowdive", "Ride", "My Bloody Valentine", "Primal Scream", "Massive Attack",
+        "Portishead", "Underworld", "The Chemical Brothers", "Daft Punk", "M83",
+        "Caribou", "Hot Chip", "Cut Copy", "Friendly Fires", "Metronomy",
+        "IDLES", "Shame", "Wet Leg", "Wolf Alice", "The Last Dinner Party"
+    ]
+    core_rank = {norm(name): i for i, name in enumerate(core_names)}
+
     pending = []
     for artist in artists:
         if not isinstance(artist, dict):
@@ -538,12 +560,15 @@ def main() -> int:
         if not slug:
             continue
         existing = galleries.get(slug) or {}
-        # Never spend queue capacity reprocessing an already complete profile.
-        if str(existing.get("profile_status") or "") == "complete":
+        missing = es.profile_missing_fields(artist, existing)
+        is_core = norm(artist.get("name", "")) in core_rank
+        # Trust "complete" only when the current data still passes the actual
+        # photo+bio checks. This repairs stale status flags.
+        if str(existing.get("profile_status") or "") == "complete" and not missing:
             continue
-        # profile_checked_at records an attempt only. The terminal condition is
-        # profile_status=complete; partial/retry/not_found remain eligible later.
-        if not es.is_due(existing, refresh=args.refresh, now=now):
+        # Core artists with real gaps are always due. Long-tail profiles keep
+        # normal backoff so API failures do not hammer external services.
+        if not is_core and not es.is_due(existing, refresh=args.refresh, now=now):
             continue
         pending.append(artist)
 
@@ -563,14 +588,6 @@ def main() -> int:
         )
         return (-int(a.get("plays") or 0), active_rank, -recent_score, norm(a.get("name", "")))
 
-    # Editorial priority: process Louder core artists first, before the long tail.
-    core_names = [
-        "Arctic Monkeys", "The Strokes", "Interpol", "Foals", "Fontaines D.C.",
-        "The Killers", "Radiohead", "Oasis", "Yeah Yeah Yeahs", "Franz Ferdinand",
-        "Bloc Party", "The National", "Vampire Weekend", "LCD Soundsystem",
-        "The Libertines", "The Hives", "Phoenix", "MGMT", "Tame Impala", "Gorillaz"
-    ]
-    core_rank = {norm(name): i for i, name in enumerate(core_names)}
     pending.sort(key=lambda a: (core_rank.get(norm(a.get("name", "")), 999999),) + priority(a))
     if args.limit > 0:
         pending = pending[: args.limit]
