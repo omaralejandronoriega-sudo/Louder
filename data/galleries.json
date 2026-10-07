@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T09:06:11.666458+00:00",
+  "updated_at": "2026-10-07T09:07:25.038535+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -4508,13 +4508,19 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wvvstx1378168930.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wvvstx1378168930.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-07T09:07:24.366951+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vqrpqw1378168906.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vqrpqw1378168906.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-07T09:07:25.037770+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
@@ -4530,11 +4536,16 @@
       "style": "Rock/Pop",
       "country": "Buenos Aires, Argentina",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Babas%C3%B3nicos",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "Babasónicos",
-      "profile_checked_at": "2026-10-01T06:19:05.666933+00:00",
-      "updated_at": "2026-10-01T06:19:05.666933+00:00"
+      "profile_checked_at": "2026-10-07T09:07:18.363307+00:00",
+      "updated_at": "2026-10-07T09:07:18.363307+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "babehoven": {
       "name": "Babehoven",
