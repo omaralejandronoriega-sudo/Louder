@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T14:02:48.418252+00:00",
+  "generated_at": "2026-10-08T20:05:53.980068+00:00",
   "source_updates": {
-    "artists": "2026-10-08T14:02:42.592641Z",
-    "galleries": "2026-10-08T07:34:50.364746+00:00",
-    "album_art": "2026-10-08T13:28:31.293738+00:00"
+    "artists": "2026-10-08T20:05:49.520855Z",
+    "galleries": "2026-10-08T15:00:43.952586+00:00",
+    "album_art": "2026-10-08T19:32:06.651910+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1287
+      "yesstreaming_live": 1289
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-08T14:02:42.592641Z"
+      "merged_at": "2026-10-08T20:05:49.520855Z"
     }
   },
   "profile_enrichment": {
@@ -47,23 +47,23 @@
     "real_profile_missing": 3539,
     "real_profile_complete_pct": 55.29,
     "profile_status": {
-      "complete": 4189,
-      "partial": 2367,
-      "legacy": 724,
-      "not_found": 635
+      "complete": 4186,
+      "partial": 2419,
+      "not_found": 659,
+      "legacy": 651
     },
-    "missing_validated_profile_image": 983,
+    "missing_validated_profile_image": 981,
     "missing_profile_bio": 3458,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4347,
     "core_complete_pct": 54.92,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6934,
-    "effective_image_pct": 87.61,
+    "effective_image": 6936,
+    "effective_image_pct": 87.63,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5289,
-    "missing_image": 981,
+    "image_gallery_fallback": 5291,
+    "missing_image": 979,
     "effective_bio": 4457,
     "effective_bio_pct": 56.31,
     "bio_direct_artist": 1026,
@@ -72,21 +72,21 @@
     "missing_bio": 3458,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 6932,
+    "gallery_with_images": 6934,
     "with_social": 4779,
-    "with_genre": 3902,
+    "with_genre": 3903,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18159,
-    "with_effective_artwork": 13117,
-    "with_effective_artwork_pct": 72.23,
-    "missing_artwork": 5042,
-    "grouped_as_otras": 5869,
-    "with_first_and_last_dates": 17669,
-    "album_art_cache_entries": 14337,
-    "album_art_cache_found": 10575,
-    "album_art_cache_missed": 3762
+    "total": 18160,
+    "with_effective_artwork": 13220,
+    "with_effective_artwork_pct": 72.8,
+    "missing_artwork": 4940,
+    "grouped_as_otras": 5870,
+    "with_first_and_last_dates": 17672,
+    "album_art_cache_entries": 14667,
+    "album_art_cache_found": 10511,
+    "album_art_cache_missed": 4156
   },
   "focus": {
     "boylife": {
@@ -1395,6 +1395,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 50,
+      "first_played": "29 mar 2016",
+      "last_played": "8 oct 2026 · 10:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 50,
@@ -1419,43 +1456,6 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 49,
-      "first_played": "29 mar 2016",
-      "last_played": "6 oct 2026 · 19:28",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
@@ -4688,19 +4688,20 @@
       "profile_complete": false
     },
     {
-      "name": "MILANO SUN",
-      "slug": "milano-sun",
-      "plays": 27,
-      "first_played": "22 mar 2013",
-      "last_played": "19 feb 2014 · 23:59",
-      "catalog_status": "wp_draft",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 28,
+      "first_played": "15 jul 2022",
+      "last_played": "8 oct 2026 · 09:49",
+      "catalog_status": "programmed_history",
       "sources": [
-        "lastfm",
-        "wp_db"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -4724,20 +4725,19 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "name": "MILANO SUN",
+      "slug": "milano-sun",
       "plays": 27,
-      "first_played": "15 jul 2022",
-      "last_played": "2 oct 2026 · 14:36",
-      "catalog_status": "programmed_history",
+      "first_played": "22 mar 2013",
+      "last_played": "19 feb 2014 · 23:59",
+      "catalog_status": "wp_draft",
       "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "lastfm",
+        "wp_db"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -8380,6 +8380,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 50,
+      "first_played": "29 mar 2016",
+      "last_played": "8 oct 2026 · 10:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 50,
@@ -8404,43 +8441,6 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 49,
-      "first_played": "29 mar 2016",
-      "last_played": "6 oct 2026 · 19:28",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
