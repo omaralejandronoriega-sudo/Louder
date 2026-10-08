@@ -445,7 +445,16 @@ def main() -> int:
         "Slowdive", "Ride", "My Bloody Valentine", "Primal Scream", "Massive Attack",
         "Portishead", "Underworld", "The Chemical Brothers", "Daft Punk", "M83",
         "Caribou", "Hot Chip", "Cut Copy", "Friendly Fires", "Metronomy",
-        "IDLES", "Shame", "Wet Leg", "Wolf Alice", "The Last Dinner Party"
+        "IDLES", "Shame", "Wet Leg", "Wolf Alice", "The Last Dinner Party",
+        "Belle and Sebastian", "Stereophonics", "Manic Street Preachers", "Elbow",
+        "Doves", "The Charlatans", "Supergrass", "The Stone Roses", "Happy Mondays",
+        "The Jesus and Mary Chain", "Echo & the Bunnymen", "The Smiths", "Morrissey",
+        "Pixies", "Sonic Youth", "Dinosaur Jr.", "Pavement", "Built to Spill",
+        "Yo La Tengo", "The Breeders", "The Smashing Pumpkins", "Garbage",
+        "Nine Inch Nails", "The Prodigy", "Air", "Zero 7", "UNKLE", "DJ Shadow",
+        "Boards of Canada", "Four Tet", "Jamie xx", "The xx", "Chromatics",
+        "Yeah Yeah Yeahs", "TV on the Radio", "Grizzly Bear", "Animal Collective",
+        "Broken Social Scene", "The Postal Service", "Bright Eyes", "Beck"
     ]
     core_rank = {norm(name): i for i, name in enumerate(core_names)}
 
