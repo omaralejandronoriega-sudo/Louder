@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T20:05:53.980068+00:00",
+  "generated_at": "2026-10-09T00:37:18.378136+00:00",
   "source_updates": {
-    "artists": "2026-10-08T20:05:49.520855Z",
-    "galleries": "2026-10-08T15:00:43.952586+00:00",
-    "album_art": "2026-10-08T19:32:06.651910+00:00"
+    "artists": "2026-10-09T00:37:14.340620Z",
+    "galleries": "2026-10-08T20:36:06.332927+00:00",
+    "album_art": "2026-10-09T00:04:53.306659+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1289
+      "yesstreaming_live": 1290
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-08T20:05:49.520855Z"
+      "merged_at": "2026-10-09T00:37:14.340620Z"
     }
   },
   "profile_enrichment": {
@@ -47,10 +47,10 @@
     "real_profile_missing": 3539,
     "real_profile_complete_pct": 55.29,
     "profile_status": {
-      "complete": 4186,
-      "partial": 2419,
-      "not_found": 659,
-      "legacy": 651
+      "complete": 4184,
+      "partial": 2434,
+      "not_found": 664,
+      "legacy": 633
     },
     "missing_validated_profile_image": 981,
     "missing_profile_bio": 3458,
@@ -79,14 +79,14 @@
   },
   "tracks": {
     "total": 18160,
-    "with_effective_artwork": 13220,
-    "with_effective_artwork_pct": 72.8,
-    "missing_artwork": 4940,
+    "with_effective_artwork": 13395,
+    "with_effective_artwork_pct": 73.76,
+    "missing_artwork": 4765,
     "grouped_as_otras": 5870,
-    "with_first_and_last_dates": 17672,
-    "album_art_cache_entries": 14667,
-    "album_art_cache_found": 10511,
-    "album_art_cache_missed": 4156
+    "with_first_and_last_dates": 17673,
+    "album_art_cache_entries": 14911,
+    "album_art_cache_found": 10504,
+    "album_art_cache_missed": 4407
   },
   "focus": {
     "boylife": {
@@ -225,9 +225,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 139,
+      "plays": 140,
       "first_played": "22 jul 2012",
-      "last_played": "7 oct 2026 · 16:44",
+      "last_played": "8 oct 2026 · 17:38",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -6096,8 +6096,8 @@
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -6528,8 +6528,8 @@
         "megaseg"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7278,9 +7278,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 139,
+      "plays": 140,
       "first_played": "22 jul 2012",
-      "last_played": "7 oct 2026 · 16:44",
+      "last_played": "8 oct 2026 · 17:38",
       "catalog_status": "",
       "sources": [
         "wp_db",
