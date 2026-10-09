@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-09T15:33:01.413954+00:00",
+  "generated_at": "2026-10-09T21:14:07.771702+00:00",
   "source_updates": {
-    "artists": "2026-10-09T15:32:57.677539Z",
-    "galleries": "2026-10-09T13:55:02.337233+00:00",
-    "album_art": "2026-10-09T13:10:29.942076+00:00"
+    "artists": "2026-10-09T21:14:02.255012Z",
+    "galleries": "2026-10-09T19:20:10.344549+00:00",
+    "album_art": "2026-10-09T18:50:06.653745+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1301
+      "yesstreaming_live": 1305
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,54 +39,54 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-09T15:32:57.677539Z"
+      "merged_at": "2026-10-09T21:14:02.255012Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4376,
-    "real_profile_missing": 3539,
-    "real_profile_complete_pct": 55.29,
+    "real_profile_complete": 4377,
+    "real_profile_missing": 3538,
+    "real_profile_complete_pct": 55.3,
     "profile_status": {
       "complete": 4181,
       "partial": 2462,
       "not_found": 676,
       "legacy": 596
     },
-    "missing_validated_profile_image": 981,
-    "missing_profile_bio": 3458,
+    "missing_validated_profile_image": 980,
+    "missing_profile_bio": 3457,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4348,
-    "core_complete_pct": 54.93,
+    "core_complete": 4349,
+    "core_complete_pct": 54.95,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6936,
-    "effective_image_pct": 87.63,
+    "effective_image": 6937,
+    "effective_image_pct": 87.64,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5291,
-    "missing_image": 979,
-    "effective_bio": 4457,
-    "effective_bio_pct": 56.31,
+    "image_gallery_fallback": 5292,
+    "missing_image": 978,
+    "effective_bio": 4458,
+    "effective_bio_pct": 56.32,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 3176,
-    "missing_bio": 3458,
+    "bio_gallery_en": 3177,
+    "missing_bio": 3457,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 6934,
-    "with_social": 4779,
-    "with_genre": 3903,
+    "gallery_with_images": 6935,
+    "with_social": 4789,
+    "with_genre": 3905,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18163,
-    "with_effective_artwork": 13395,
-    "with_effective_artwork_pct": 73.75,
-    "missing_artwork": 4768,
-    "grouped_as_otras": 5873,
-    "with_first_and_last_dates": 17684,
+    "total": 18164,
+    "with_effective_artwork": 13400,
+    "with_effective_artwork_pct": 73.77,
+    "missing_artwork": 4764,
+    "grouped_as_otras": 5874,
+    "with_first_and_last_dates": 17687,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10504,
-    "album_art_cache_missed": 4407
+    "album_art_cache_found": 10509,
+    "album_art_cache_missed": 4402
   },
   "focus": {
     "boylife": {
@@ -3402,6 +3402,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 34,
+      "first_played": "3 abr 2013",
+      "last_played": "9 oct 2026 · 15:00",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Good Natured",
       "slug": "the-good-natured",
       "plays": 34,
@@ -3571,44 +3607,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 33,
-      "first_played": "25 jul 2022",
-      "last_played": "8 oct 2026 · 20:55",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -6179,7 +6177,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -10391,6 +10389,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 34,
+      "first_played": "3 abr 2013",
+      "last_played": "9 oct 2026 · 15:00",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Good Natured",
       "slug": "the-good-natured",
       "plays": 34,
@@ -10590,42 +10624,6 @@
       "has_social": true,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 33,
-      "first_played": "3 abr 2013",
-      "last_played": "5 oct 2026 · 15:10",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
