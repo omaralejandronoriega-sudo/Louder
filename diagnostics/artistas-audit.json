@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-09T06:44:43.403386+00:00",
+  "generated_at": "2026-10-09T15:33:01.413954+00:00",
   "source_updates": {
-    "artists": "2026-10-09T06:44:37.442019Z",
-    "galleries": "2026-10-09T00:42:37.426881+00:00",
-    "album_art": "2026-10-09T06:02:43.931095+00:00"
+    "artists": "2026-10-09T15:32:57.677539Z",
+    "galleries": "2026-10-09T13:55:02.337233+00:00",
+    "album_art": "2026-10-09T13:10:29.942076+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
     "public_artists": 7915,
     "aliases_normalized": 7993,
-    "with_history": 7849,
+    "with_history": 7852,
     "with_tracks": 7909,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1294
+      "yesstreaming_live": 1301
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-09T06:44:37.442019Z"
+      "merged_at": "2026-10-09T15:32:57.677539Z"
     }
   },
   "profile_enrichment": {
@@ -47,17 +47,17 @@
     "real_profile_missing": 3539,
     "real_profile_complete_pct": 55.29,
     "profile_status": {
-      "complete": 4184,
-      "partial": 2434,
-      "not_found": 664,
-      "legacy": 633
+      "complete": 4181,
+      "partial": 2462,
+      "not_found": 676,
+      "legacy": 596
     },
     "missing_validated_profile_image": 981,
     "missing_profile_bio": 3458,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4347,
-    "core_complete_pct": 54.92,
+    "core_complete": 4348,
+    "core_complete_pct": 54.93,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 6936,
     "effective_image_pct": 87.63,
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 73.75,
     "missing_artwork": 4768,
     "grouped_as_otras": 5873,
-    "with_first_and_last_dates": 17679,
+    "with_first_and_last_dates": 17684,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10504,
     "album_art_cache_missed": 4407
@@ -123,9 +123,9 @@
     "monsune": {
       "name": "Monsune",
       "slug": "monsune",
-      "plays": 12,
+      "plays": 13,
       "first_played": "5 mar 2025",
-      "last_played": "4 oct 2026 · 20:54",
+      "last_played": "9 oct 2026 · 08:15",
       "catalog_status": "",
       "sources": [
         "wp_db",

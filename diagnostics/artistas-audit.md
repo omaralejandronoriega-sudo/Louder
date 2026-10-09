@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-10-09T06:44:43.403386+00:00
+Generada: 2026-10-09T15:33:01.413954+00:00
 
 ## Resumen
 
@@ -8,11 +8,11 @@ Generada: 2026-10-09T06:44:43.403386+00:00
 - Artistas públicos normalizados: 7915
 - Perfiles realmente completos: 4376/7915 (55.29%)
 - Perfiles con faltantes reales: 3539
-- Estados de enriquecimiento: {'complete': 4184, 'partial': 2434, 'not_found': 664, 'legacy': 633}
+- Estados de enriquecimiento: {'complete': 4181, 'partial': 2462, 'not_found': 676, 'legacy': 596}
 - Sin imagen validada de perfil: 981
 - Sin biografía de perfil: 3458
 - Sin datos de identidad/perfil: 0
-- Fichas core completas: 4347/7915 (54.92%)
+- Fichas core completas: 4348/7915 (54.93%)
 - Con imagen efectiva: 6936/7915 (87.63%)
 - Sin imagen: 979
 - Con biografía efectiva: 4457/7915 (56.31%)
@@ -27,5 +27,5 @@ Generada: 2026-10-09T06:44:43.403386+00:00
 ## Casos solicitados
 
 - boylife: plays=10, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
-- Monsune: plays=12, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
+- Monsune: plays=13, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
 - monsun: no localizado entre perfiles públicos normalizados.
