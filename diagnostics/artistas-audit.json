@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-10T15:57:11.435545+00:00",
+  "generated_at": "2026-10-10T20:18:37.752805+00:00",
   "source_updates": {
-    "artists": "2026-10-10T15:57:05.747563Z",
-    "galleries": "2026-10-10T15:15:44.815212+00:00",
-    "album_art": "2026-10-10T15:52:21.960143+00:00"
+    "artists": "2026-10-10T20:18:33.147829Z",
+    "galleries": "2026-10-10T19:24:37.009779+00:00",
+    "album_art": "2026-10-10T20:02:44.805590+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-10T15:57:05.747563Z"
+      "merged_at": "2026-10-10T20:18:33.147829Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 676,
       "legacy": 596
     },
-    "missing_validated_profile_image": 977,
+    "missing_validated_profile_image": 979,
     "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4350,
     "core_complete_pct": 54.96,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6940,
-    "effective_image_pct": 87.68,
+    "effective_image": 6938,
+    "effective_image_pct": 87.66,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5295,
-    "missing_image": 975,
+    "image_gallery_fallback": 5293,
+    "missing_image": 977,
     "effective_bio": 4459,
     "effective_bio_pct": 56.34,
     "bio_direct_artist": 1026,
@@ -72,21 +72,21 @@
     "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 6938,
-    "with_social": 4797,
+    "gallery_with_images": 6936,
+    "with_social": 4794,
     "with_genre": 3905,
     "with_related": 1599
   },
   "tracks": {
     "total": 18165,
-    "with_effective_artwork": 13429,
+    "with_effective_artwork": 13430,
     "with_effective_artwork_pct": 73.93,
-    "missing_artwork": 4736,
+    "missing_artwork": 4735,
     "grouped_as_otras": 5875,
-    "with_first_and_last_dates": 17700,
+    "with_first_and_last_dates": 17701,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10537,
-    "album_art_cache_missed": 4374
+    "album_art_cache_found": 10538,
+    "album_art_cache_missed": 4373
   },
   "focus": {
     "boylife": {
@@ -3263,6 +3263,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 34,
+      "first_played": "14 jul 2022",
+      "last_played": "10 oct 2026 · 13:20",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Edward Sharpe & The Magnetic Zeros",
       "slug": "edward-sharpe-the-magnetic-zeros",
       "plays": 34,
@@ -3502,42 +3538,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 33,
-      "first_played": "14 jul 2022",
-      "last_played": "5 oct 2026 · 16:16",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -4222,6 +4222,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 34,
+      "first_played": "14 jul 2022",
+      "last_played": "10 oct 2026 · 13:20",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -4288,42 +4324,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 33,
-      "first_played": "14 jul 2022",
-      "last_played": "5 oct 2026 · 16:16",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
