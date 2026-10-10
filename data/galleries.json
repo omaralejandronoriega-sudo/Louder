@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-10T19:24:37.009779+00:00",
+  "updated_at": "2026-10-10T22:52:54.038517+00:00",
   "artists": {
     "%d0%b0%d0%bb%d1%8c%d1%8f%d0%bd%d1%81": {
       "name": "Альянс",
@@ -32191,7 +32191,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:52.438821+00:00",
+          "validated_at": "2026-10-10T22:48:35.035490+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -32211,14 +32211,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:27:51.755632+00:00",
-      "updated_at": "2026-10-07T21:27:51.755632+00:00",
+      "profile_checked_at": "2026-10-10T22:48:34.476022+00:00",
+      "updated_at": "2026-10-10T22:48:34.476022+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:27:51.755632+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:34.476022+00:00",
+      "attempt_count": 3
     },
     "hibou": {
       "name": "Hibou",
@@ -35844,10 +35844,13 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Glasto24_28_300624_%28215_of_545%29_%2853838091440%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "preview": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Glasto24_28_300624_%28215_of_545%29_%2853838091440%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "source": "Wikipedia",
-          "kind": "portrait"
+          "url": "https://cdn-images.dzcdn.net/images/artist/6800307e8b704e4287e2c69baea2a8ad/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/6800307e8b704e4287e2c69baea2a8ad/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:20.475312+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -35862,12 +35865,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/James_Murphy_(electronic_musician)",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "James Murphy (electronic musician)",
-      "profile_checked_at": "2026-10-01T14:25:42.193263+00:00",
-      "updated_at": "2026-10-01T14:25:42.193263+00:00"
+      "profile_checked_at": "2026-10-10T22:52:20.036635+00:00",
+      "updated_at": "2026-10-10T22:52:20.036635+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "jamie-lidell": {
       "name": "Jamie Lidell",
@@ -37615,7 +37622,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:56.409021+00:00",
+          "validated_at": "2026-10-10T22:49:21.580338+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -37635,14 +37642,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:55.794544+00:00",
-      "updated_at": "2026-10-07T21:28:55.794544+00:00",
+      "profile_checked_at": "2026-10-10T22:49:20.930629+00:00",
+      "updated_at": "2026-10-10T22:49:20.930629+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:55.794544+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:20.930629+00:00",
+      "attempt_count": 2
     },
     "john-legend": {
       "name": "John Legend",
@@ -38036,7 +38043,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:58.043411+00:00",
+          "validated_at": "2026-10-10T22:49:23.016713+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -38056,14 +38063,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:57.406375+00:00",
-      "updated_at": "2026-10-07T21:28:57.406375+00:00",
+      "profile_checked_at": "2026-10-10T22:49:22.588208+00:00",
+      "updated_at": "2026-10-10T22:49:22.588208+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:57.406375+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:22.588208+00:00",
+      "attempt_count": 2
     },
     "jorja-smith": {
       "name": "Jorja Smith",
@@ -39474,7 +39481,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:00.938442+00:00",
+          "validated_at": "2026-10-10T22:49:24.429345+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -39494,14 +39501,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:00.534319+00:00",
-      "updated_at": "2026-10-07T21:29:00.534319+00:00",
+      "profile_checked_at": "2026-10-10T22:49:24.033414+00:00",
+      "updated_at": "2026-10-10T22:49:24.033414+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:00.534319+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:24.033414+00:00",
+      "attempt_count": 2
     },
     "kasabian": {
       "name": "Kasabian",
@@ -86082,7 +86089,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-04T17:53:10.168630+00:00",
+          "validated_at": "2026-10-10T22:48:36.526686+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -86102,14 +86109,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:27:53.431719+00:00",
-      "updated_at": "2026-10-07T21:27:53.431719+00:00",
+      "profile_checked_at": "2026-10-10T22:48:36.062656+00:00",
+      "updated_at": "2026-10-10T22:48:36.062656+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:27:53.431719+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:36.062656+00:00",
+      "attempt_count": 3
     },
     "unknown-mortal-orchestra": {
       "name": "Unknown Mortal Orchestra",
@@ -91958,12 +91965,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist/616b131e97739a3721ac4da4afe696f6/1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist/616b131e97739a3721ac4da4afe696f6/1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/1af6835ed45ca2253c9c794d4508fb27/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/1af6835ed45ca2253c9c794d4508fb27/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:50.771253+00:00",
+          "validated_at": "2026-10-10T22:48:33.457409+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -91983,14 +91990,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:27:49.610986+00:00",
-      "updated_at": "2026-10-07T21:27:49.610986+00:00",
+      "profile_checked_at": "2026-10-10T22:48:32.482896+00:00",
+      "updated_at": "2026-10-10T22:48:32.482896+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:27:49.610986+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:32.482896+00:00",
+      "attempt_count": 3
     },
     "louder-radio": {
       "name": "Louder Radio",
@@ -94375,7 +94382,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:55.582686+00:00",
+          "validated_at": "2026-10-10T22:48:38.016073+00:00",
           "validation_method": "bytes"
         },
         {
@@ -94384,7 +94391,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:56.073794+00:00",
+          "validated_at": "2026-10-10T22:48:38.526158+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -94404,14 +94411,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:27:54.830437+00:00",
-      "updated_at": "2026-10-07T21:27:54.830437+00:00",
+      "profile_checked_at": "2026-10-10T22:48:37.554150+00:00",
+      "updated_at": "2026-10-10T22:48:37.554150+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:27:54.830437+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:37.554150+00:00",
+      "attempt_count": 3
     },
     "janes-addiction": {
       "name": "Jane's Addiction",
@@ -101833,7 +101840,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:57.639245+00:00",
+          "validated_at": "2026-10-10T22:48:40.315955+00:00",
           "validation_method": "bytes"
         },
         {
@@ -101842,7 +101849,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:58.570052+00:00",
+          "validated_at": "2026-10-10T22:48:40.813297+00:00",
           "validation_method": "bytes"
         },
         {
@@ -101851,7 +101858,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:59.145535+00:00",
+          "validated_at": "2026-10-10T22:48:41.293729+00:00",
           "validation_method": "bytes"
         },
         {
@@ -101860,7 +101867,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:27:59.804321+00:00",
+          "validated_at": "2026-10-10T22:48:41.972931+00:00",
           "validation_method": "bytes"
         },
         {
@@ -101869,7 +101876,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:00.285182+00:00",
+          "validated_at": "2026-10-10T22:48:42.205028+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -101889,14 +101896,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:27:57.068126+00:00",
-      "updated_at": "2026-10-07T21:27:57.068126+00:00",
+      "profile_checked_at": "2026-10-10T22:48:39.575293+00:00",
+      "updated_at": "2026-10-10T22:48:39.575293+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:27:57.068126+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:39.575293+00:00",
+      "attempt_count": 3
     },
     "en-vivo": {
       "name": "EN VIVO",
@@ -105819,7 +105826,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:01.829760+00:00",
+          "validated_at": "2026-10-10T22:48:43.544242+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -105839,14 +105846,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:01.283175+00:00",
-      "updated_at": "2026-10-07T21:28:01.283175+00:00",
+      "profile_checked_at": "2026-10-10T22:48:43.236596+00:00",
+      "updated_at": "2026-10-10T22:48:43.236596+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:01.283175+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:43.236596+00:00",
+      "attempt_count": 3
     },
     "starflyer-59": {
       "name": "Starflyer 59",
@@ -106643,7 +106650,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:03.413387+00:00",
+          "validated_at": "2026-10-10T22:48:45.193221+00:00",
           "validation_method": "bytes"
         },
         {
@@ -106652,7 +106659,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:03.886299+00:00",
+          "validated_at": "2026-10-10T22:48:45.599488+00:00",
           "validation_method": "bytes"
         },
         {
@@ -106661,7 +106668,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:04.664143+00:00",
+          "validated_at": "2026-10-10T22:48:45.931179+00:00",
           "validation_method": "bytes"
         },
         {
@@ -106670,7 +106677,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:05.165265+00:00",
+          "validated_at": "2026-10-10T22:48:46.314718+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -106690,14 +106697,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:02.826812+00:00",
-      "updated_at": "2026-10-07T21:28:02.826812+00:00",
+      "profile_checked_at": "2026-10-10T22:48:44.579425+00:00",
+      "updated_at": "2026-10-10T22:48:44.579425+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:02.826812+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:44.579425+00:00",
+      "attempt_count": 3
     },
     "orgy": {
       "name": "Orgy",
@@ -106907,7 +106914,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:07.416663+00:00",
+          "validated_at": "2026-10-10T22:48:47.997189+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -106927,14 +106934,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:06.168327+00:00",
-      "updated_at": "2026-10-07T21:28:06.168327+00:00",
+      "profile_checked_at": "2026-10-10T22:48:47.333939+00:00",
+      "updated_at": "2026-10-10T22:48:47.333939+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:06.168327+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:47.333939+00:00",
+      "attempt_count": 3
     },
     "the-departure": {
       "name": "The Departure",
@@ -108086,7 +108093,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:09.026725+00:00",
+          "validated_at": "2026-10-10T22:48:49.550336+00:00",
           "validation_method": "bytes"
         },
         {
@@ -108095,7 +108102,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:09.386532+00:00",
+          "validated_at": "2026-10-10T22:48:49.848925+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -108115,14 +108122,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:08.405640+00:00",
-      "updated_at": "2026-10-07T21:28:08.405640+00:00",
+      "profile_checked_at": "2026-10-10T22:48:49.005383+00:00",
+      "updated_at": "2026-10-10T22:48:49.005383+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:08.405640+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:49.005383+00:00",
+      "attempt_count": 3
     },
     "unkle": {
       "name": "UNKLE",
@@ -114947,7 +114954,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:11.222826+00:00",
+          "validated_at": "2026-10-10T22:48:51.484810+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -114967,14 +114974,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:10.379904+00:00",
-      "updated_at": "2026-10-07T21:28:10.379904+00:00",
+      "profile_checked_at": "2026-10-10T22:48:50.860358+00:00",
+      "updated_at": "2026-10-10T22:48:50.860358+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:10.379904+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:50.860358+00:00",
+      "attempt_count": 3
     },
     "caviar": {
       "name": "Caviar",
@@ -121249,7 +121256,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:12.848414+00:00",
+          "validated_at": "2026-10-10T22:48:53.557036+00:00",
           "validation_method": "bytes"
         },
         {
@@ -121258,7 +121265,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:13.141879+00:00",
+          "validated_at": "2026-10-10T22:48:53.786804+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -121278,14 +121285,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:12.217436+00:00",
-      "updated_at": "2026-10-07T21:28:12.217436+00:00",
+      "profile_checked_at": "2026-10-10T22:48:52.508305+00:00",
+      "updated_at": "2026-10-10T22:48:52.508305+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:12.217436+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:52.508305+00:00",
+      "attempt_count": 3
     },
     "california-x": {
       "name": "California X",
@@ -127244,7 +127251,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:14.785402+00:00",
+          "validated_at": "2026-10-10T22:48:55.592165+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -127264,14 +127271,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:14.130555+00:00",
-      "updated_at": "2026-10-07T21:28:14.130555+00:00",
+      "profile_checked_at": "2026-10-10T22:48:54.811085+00:00",
+      "updated_at": "2026-10-10T22:48:54.811085+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:14.130555+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:54.811085+00:00",
+      "attempt_count": 3
     },
     "shades-apart": {
       "name": "Shades Apart",
@@ -131163,7 +131170,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:17.934633+00:00",
+          "validated_at": "2026-10-10T22:48:58.614792+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -131183,14 +131190,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:17.520953+00:00",
-      "updated_at": "2026-10-07T21:28:17.520953+00:00",
+      "profile_checked_at": "2026-10-10T22:48:58.247005+00:00",
+      "updated_at": "2026-10-10T22:48:58.247005+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:17.520953+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:58.247005+00:00",
+      "attempt_count": 3
     },
     "donkeyboy": {
       "name": "Donkeyboy",
@@ -133018,7 +133025,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:16.522158+00:00",
+          "validated_at": "2026-10-10T22:48:57.231095+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -133038,14 +133045,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:15.780294+00:00",
-      "updated_at": "2026-10-07T21:28:15.780294+00:00",
+      "profile_checked_at": "2026-10-10T22:48:56.616704+00:00",
+      "updated_at": "2026-10-10T22:48:56.616704+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:15.780294+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:56.616704+00:00",
+      "attempt_count": 3
     },
     "weird-dreams": {
       "name": "Weird Dreams",
@@ -134047,7 +134054,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:19.332232+00:00",
+          "validated_at": "2026-10-10T22:49:00.051951+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -134067,14 +134074,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:18.926677+00:00",
-      "updated_at": "2026-10-07T21:28:18.926677+00:00",
+      "profile_checked_at": "2026-10-10T22:48:59.635552+00:00",
+      "updated_at": "2026-10-10T22:48:59.635552+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:18.926677+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:48:59.635552+00:00",
+      "attempt_count": 3
     },
     "flume-nick-murphy-chet-faker": {
       "name": "Flume/Nick Murphy / Chet Faker",
@@ -135499,7 +135506,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:20.828037+00:00",
+          "validated_at": "2026-10-10T22:49:01.653835+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -135519,14 +135526,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:20.318642+00:00",
-      "updated_at": "2026-10-07T21:28:20.318642+00:00",
+      "profile_checked_at": "2026-10-10T22:49:01.082686+00:00",
+      "updated_at": "2026-10-10T22:49:01.082686+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:20.318642+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:01.082686+00:00",
+      "attempt_count": 3
     },
     "synne-sanden": {
       "name": "Synne Sanden",
@@ -140546,7 +140553,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:22.306016+00:00",
+          "validated_at": "2026-10-10T22:49:03.161671+00:00",
           "validation_method": "bytes"
         },
         {
@@ -140555,7 +140562,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:22.755472+00:00",
+          "validated_at": "2026-10-10T22:49:03.634044+00:00",
           "validation_method": "bytes"
         },
         {
@@ -140564,7 +140571,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:23.193312+00:00",
+          "validated_at": "2026-10-10T22:49:04.066171+00:00",
           "validation_method": "bytes"
         },
         {
@@ -140573,7 +140580,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:23.612081+00:00",
+          "validated_at": "2026-10-10T22:49:04.552471+00:00",
           "validation_method": "bytes"
         },
         {
@@ -140582,7 +140589,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:24.194763+00:00",
+          "validated_at": "2026-10-10T22:49:04.919303+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -140602,14 +140609,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:21.816924+00:00",
-      "updated_at": "2026-10-07T21:28:21.816924+00:00",
+      "profile_checked_at": "2026-10-10T22:49:02.675568+00:00",
+      "updated_at": "2026-10-10T22:49:02.675568+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:21.816924+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:02.675568+00:00",
+      "attempt_count": 3
     },
     "emperor-yes": {
       "name": "Emperor Yes",
@@ -144170,14 +144177,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:25.190490+00:00",
-      "updated_at": "2026-10-07T21:28:25.190490+00:00",
+      "profile_checked_at": "2026-10-10T22:49:05.926925+00:00",
+      "updated_at": "2026-10-10T22:49:05.926925+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:25.190490+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:05.926925+00:00",
+      "attempt_count": 3
     },
     "alcoholic-faith-mission": {
       "name": "Alcoholic Faith Mission",
@@ -159512,7 +159519,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:30.969355+00:00",
+          "validated_at": "2026-10-10T22:49:10.901923+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -159532,14 +159539,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:30.397133+00:00",
-      "updated_at": "2026-10-07T21:28:30.397133+00:00",
+      "profile_checked_at": "2026-10-10T22:49:10.552292+00:00",
+      "updated_at": "2026-10-10T22:49:10.552292+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:30.397133+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:10.552292+00:00",
+      "attempt_count": 3
     },
     "evan-the-brave": {
       "name": "Evan & The Brave",
@@ -161583,7 +161590,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:27.446097+00:00",
+          "validated_at": "2026-10-10T22:49:07.926460+00:00",
           "validation_method": "bytes"
         },
         {
@@ -161592,7 +161599,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:28.287628+00:00",
+          "validated_at": "2026-10-10T22:49:08.636730+00:00",
           "validation_method": "bytes"
         },
         {
@@ -161601,7 +161608,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:28.859767+00:00",
+          "validated_at": "2026-10-10T22:49:09.085129+00:00",
           "validation_method": "bytes"
         },
         {
@@ -161610,7 +161617,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:29.393372+00:00",
+          "validated_at": "2026-10-10T22:49:09.534585+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -161630,14 +161637,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:26.726678+00:00",
-      "updated_at": "2026-10-07T21:28:26.726678+00:00",
+      "profile_checked_at": "2026-10-10T22:49:07.392562+00:00",
+      "updated_at": "2026-10-10T22:49:07.392562+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:26.726678+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:07.392562+00:00",
+      "attempt_count": 3
     },
     "pantera": {
       "name": "Pantera",
@@ -171740,7 +171747,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:32.494795+00:00",
+          "validated_at": "2026-10-10T22:49:12.549808+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -171760,14 +171767,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:31.954167+00:00",
-      "updated_at": "2026-10-07T21:28:31.954167+00:00",
+      "profile_checked_at": "2026-10-10T22:49:11.918398+00:00",
+      "updated_at": "2026-10-10T22:49:11.918398+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:31.954167+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:11.918398+00:00",
+      "attempt_count": 3
     },
     "bruce-springsteen": {
       "name": "Bruce Springsteen",
@@ -178437,7 +178444,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:34.274984+00:00",
+          "validated_at": "2026-10-10T22:49:14.204988+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -178457,14 +178464,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:33.483602+00:00",
-      "updated_at": "2026-10-07T21:28:33.483602+00:00",
+      "profile_checked_at": "2026-10-10T22:49:13.567465+00:00",
+      "updated_at": "2026-10-10T22:49:13.567465+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:33.483602+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:13.567465+00:00",
+      "attempt_count": 3
     },
     "boy-genius": {
       "name": "Boy Genius",
@@ -184757,7 +184764,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:46.118807+00:00",
+          "validated_at": "2026-10-10T22:49:17.110459+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -184777,14 +184784,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:45.661972+00:00",
-      "updated_at": "2026-10-07T21:28:45.661972+00:00",
+      "profile_checked_at": "2026-10-10T22:49:16.799675+00:00",
+      "updated_at": "2026-10-10T22:49:16.799675+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:45.661972+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:16.799675+00:00",
+      "attempt_count": 3
     },
     "al-aire": {
       "name": "Al Aire",
@@ -184867,7 +184874,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:42.720360+00:00",
+          "validated_at": "2026-10-10T22:49:57.784356+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -184887,14 +184894,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:42.268549+00:00",
-      "updated_at": "2026-10-07T21:30:42.268549+00:00",
+      "profile_checked_at": "2026-10-10T22:49:57.454239+00:00",
+      "updated_at": "2026-10-10T22:49:57.454239+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:42.268549+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:57.454239+00:00",
+      "attempt_count": 2
     },
     "andrew-mcmahon-in-the-wilderness": {
       "name": "Andrew McMahon in the Wilderness",
@@ -185217,7 +185224,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:10.453284+00:00",
+          "validated_at": "2026-10-10T22:50:03.093286+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -185237,14 +185244,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:09.761214+00:00",
-      "updated_at": "2026-10-07T21:31:09.761214+00:00",
+      "profile_checked_at": "2026-10-10T22:50:01.520403+00:00",
+      "updated_at": "2026-10-10T22:50:01.520403+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:09.761214+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:01.520403+00:00",
+      "attempt_count": 2
     },
     "beach-baby": {
       "name": "Beach Baby",
@@ -185588,7 +185595,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:45.183809+00:00",
+          "validated_at": "2026-10-10T22:49:43.945716+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -185608,14 +185615,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:44.266044+00:00",
-      "updated_at": "2026-10-07T21:29:44.266044+00:00",
+      "profile_checked_at": "2026-10-10T22:49:43.560396+00:00",
+      "updated_at": "2026-10-10T22:49:43.560396+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:44.266044+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:43.560396+00:00",
+      "attempt_count": 2
     },
     "bromheads": {
       "name": "Bromheads",
@@ -185698,12 +185705,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist/bf5489c5e543c070e6d8f951d817a90b/1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist/bf5489c5e543c070e6d8f951d817a90b/1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:22.852363+00:00",
+          "validated_at": "2026-10-10T22:49:36.380715+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -185723,14 +185730,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:21.858627+00:00",
-      "updated_at": "2026-10-07T21:29:21.858627+00:00",
+      "profile_checked_at": "2026-10-10T22:49:35.719292+00:00",
+      "updated_at": "2026-10-10T22:49:35.719292+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:21.858627+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:35.719292+00:00",
+      "attempt_count": 2
     },
     "buffalo-tales": {
       "name": "Buffalo Tales",
@@ -186285,7 +186292,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:38.528835+00:00",
+          "validated_at": "2026-10-10T22:49:42.531315+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -186305,14 +186312,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:37.648680+00:00",
-      "updated_at": "2026-10-07T21:29:37.648680+00:00",
+      "profile_checked_at": "2026-10-10T22:49:41.989415+00:00",
+      "updated_at": "2026-10-10T22:49:41.989415+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:37.648680+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:41.989415+00:00",
+      "attempt_count": 2
     },
     "die-toten-hosen": {
       "name": "Die Toten Hosen",
@@ -186813,7 +186820,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:47.507550+00:00",
+          "validated_at": "2026-10-10T22:49:18.502169+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -186833,14 +186840,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:47.115233+00:00",
-      "updated_at": "2026-10-07T21:28:47.115233+00:00",
+      "profile_checked_at": "2026-10-10T22:49:18.129614+00:00",
+      "updated_at": "2026-10-10T22:49:18.129614+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:47.115233+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:18.129614+00:00",
+      "attempt_count": 2
     },
     "ether-teeth": {
       "name": "Ether Teeth",
@@ -186956,12 +186963,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:48.633396+00:00",
+          "validated_at": "2026-10-10T22:49:45.362733+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -186981,14 +186988,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:48.213028+00:00",
-      "updated_at": "2026-10-07T21:29:48.213028+00:00",
+      "profile_checked_at": "2026-10-10T22:49:44.963039+00:00",
+      "updated_at": "2026-10-10T22:49:44.963039+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:48.213028+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:44.963039+00:00",
+      "attempt_count": 2
     },
     "flightside": {
       "name": "Flightside",
@@ -187031,7 +187038,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:48.853258+00:00",
+          "validated_at": "2026-10-10T22:49:19.922895+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -187051,14 +187058,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:48.495597+00:00",
-      "updated_at": "2026-10-07T21:28:48.495597+00:00",
+      "profile_checked_at": "2026-10-10T22:49:19.521633+00:00",
+      "updated_at": "2026-10-10T22:49:19.521633+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:48.495597+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:19.521633+00:00",
+      "attempt_count": 2
     },
     "foxes-in-fiction": {
       "name": "Foxes in Fiction",
@@ -187192,14 +187199,14 @@
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "Garbage (band)",
-      "profile_checked_at": "2026-10-07T21:30:45.139450+00:00",
-      "updated_at": "2026-10-07T21:30:45.139450+00:00",
+      "profile_checked_at": "2026-10-10T22:49:58.782319+00:00",
+      "updated_at": "2026-10-10T22:49:58.782319+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "image"
       ],
-      "next_retry_at": "2026-10-10T21:30:45.139450+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:58.782319+00:00",
+      "attempt_count": 2
     },
     "ghost-beach": {
       "name": "Ghost Beach",
@@ -187418,7 +187425,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:12.693564+00:00",
+          "validated_at": "2026-10-10T22:49:48.728017+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -187438,14 +187445,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:11.637573+00:00",
-      "updated_at": "2026-10-07T21:30:11.637573+00:00",
+      "profile_checked_at": "2026-10-10T22:49:48.262926+00:00",
+      "updated_at": "2026-10-10T22:49:48.262926+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:11.637573+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:48.262926+00:00",
+      "attempt_count": 2
     },
     "goodnight-lenin": {
       "name": "Goodnight Lenin",
@@ -187602,7 +187609,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:33.136122+00:00",
+          "validated_at": "2026-10-10T22:49:40.970114+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -187622,14 +187629,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:32.288443+00:00",
-      "updated_at": "2026-10-07T21:29:32.288443+00:00",
+      "profile_checked_at": "2026-10-10T22:49:40.521756+00:00",
+      "updated_at": "2026-10-10T22:49:40.521756+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:32.288443+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:40.521756+00:00",
+      "attempt_count": 2
     },
     "hannah-cohen": {
       "name": "Hannah Cohen",
@@ -188009,7 +188016,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:21.693822+00:00",
+          "validated_at": "2026-10-10T22:49:50.166564+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -188029,14 +188036,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:21.158169+00:00",
-      "updated_at": "2026-10-07T21:30:21.158169+00:00",
+      "profile_checked_at": "2026-10-10T22:49:49.747613+00:00",
+      "updated_at": "2026-10-10T22:49:49.747613+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:21.158169+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:49.747613+00:00",
+      "attempt_count": 2
     },
     "hooton-tennis-club": {
       "name": "Hooton Tennis Club",
@@ -188086,7 +188093,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:28:44.657198+00:00",
+          "validated_at": "2026-10-10T22:49:15.790251+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -188106,14 +188113,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:28:44.064855+00:00",
-      "updated_at": "2026-10-07T21:28:44.064855+00:00",
+      "profile_checked_at": "2026-10-10T22:49:15.223136+00:00",
+      "updated_at": "2026-10-10T22:49:15.223136+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:28:44.064855+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:49:15.223136+00:00",
+      "attempt_count": 3
     },
     "i-used-to-be-a-sparrow": {
       "name": "I Used to Be a Sparrow",
@@ -188528,7 +188535,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:02.628405+00:00",
+          "validated_at": "2026-10-10T22:49:25.952382+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -188548,14 +188555,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:01.934930+00:00",
-      "updated_at": "2026-10-07T21:29:01.934930+00:00",
+      "profile_checked_at": "2026-10-10T22:49:25.445172+00:00",
+      "updated_at": "2026-10-10T22:49:25.445172+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:01.934930+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:25.445172+00:00",
+      "attempt_count": 2
     },
     "katie-herzig": {
       "name": "Katie Herzig",
@@ -188727,7 +188734,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:27.759959+00:00",
+          "validated_at": "2026-10-10T22:49:54.616697+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -188747,14 +188754,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:27.351087+00:00",
-      "updated_at": "2026-10-07T21:30:27.351087+00:00",
+      "profile_checked_at": "2026-10-10T22:49:54.212532+00:00",
+      "updated_at": "2026-10-10T22:49:54.212532+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:27.351087+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:54.212532+00:00",
+      "attempt_count": 2
     },
     "lemmy-kilmister-and-others": {
       "name": "Lemmy Kilmister and Others",
@@ -188776,14 +188783,14 @@
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "Lemmy",
-      "profile_checked_at": "2026-10-07T21:31:29.361380+00:00",
-      "updated_at": "2026-10-07T21:31:29.361380+00:00",
+      "profile_checked_at": "2026-10-10T22:50:09.145801+00:00",
+      "updated_at": "2026-10-10T22:50:09.145801+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "image"
       ],
-      "next_retry_at": "2026-10-10T21:31:29.361380+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:09.145801+00:00",
+      "attempt_count": 2
     },
     "life-limb": {
       "name": "Life & Limb",
@@ -189140,7 +189147,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:50.285010+00:00",
+          "validated_at": "2026-10-10T22:49:46.897474+00:00",
           "validation_method": "bytes"
         },
         {
@@ -189149,7 +189156,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:50.961389+00:00",
+          "validated_at": "2026-10-10T22:49:47.241294+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -189169,14 +189176,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:49.625208+00:00",
-      "updated_at": "2026-10-07T21:29:49.625208+00:00",
+      "profile_checked_at": "2026-10-10T22:49:46.375930+00:00",
+      "updated_at": "2026-10-10T22:49:46.375930+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:49.625208+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:46.375930+00:00",
+      "attempt_count": 2
     },
     "marilyn-manson": {
       "name": "Marilyn Manson",
@@ -189470,7 +189477,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:13.858111+00:00",
+          "validated_at": "2026-10-10T22:49:30.442592+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -189490,14 +189497,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:12.677993+00:00",
-      "updated_at": "2026-10-07T21:29:12.677993+00:00",
+      "profile_checked_at": "2026-10-10T22:49:29.951108+00:00",
+      "updated_at": "2026-10-10T22:49:29.951108+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:12.677993+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:29.951108+00:00",
+      "attempt_count": 2
     },
     "morning-parade": {
       "name": "Morning Parade",
@@ -189556,7 +189563,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:18.493003+00:00",
+          "validated_at": "2026-10-10T22:49:33.277561+00:00",
           "validation_method": "bytes"
         },
         {
@@ -189565,7 +189572,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:19.509438+00:00",
+          "validated_at": "2026-10-10T22:49:33.807263+00:00",
           "validation_method": "bytes"
         },
         {
@@ -189574,7 +189581,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:20.437207+00:00",
+          "validated_at": "2026-10-10T22:49:34.306528+00:00",
           "validation_method": "bytes"
         },
         {
@@ -189583,7 +189590,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:20.866760+00:00",
+          "validated_at": "2026-10-10T22:49:34.709705+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -189603,14 +189610,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:17.728303+00:00",
-      "updated_at": "2026-10-07T21:29:17.728303+00:00",
+      "profile_checked_at": "2026-10-10T22:49:32.770648+00:00",
+      "updated_at": "2026-10-10T22:49:32.770648+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:17.728303+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:32.770648+00:00",
+      "attempt_count": 2
     },
     "nicole-atkins": {
       "name": "Nicole Atkins",
@@ -189791,7 +189798,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:31.349183+00:00",
+          "validated_at": "2026-10-10T22:50:10.847307+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -189811,14 +189818,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:30.761506+00:00",
-      "updated_at": "2026-10-07T21:31:30.761506+00:00",
+      "profile_checked_at": "2026-10-10T22:50:10.451210+00:00",
+      "updated_at": "2026-10-10T22:50:10.451210+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:30.761506+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:10.451210+00:00",
+      "attempt_count": 2
     },
     "papa": {
       "name": "Papa",
@@ -189979,7 +189986,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:22.601012+00:00",
+          "validated_at": "2026-10-10T22:50:08.139344+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -189999,14 +190006,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:21.906627+00:00",
-      "updated_at": "2026-10-07T21:31:21.906627+00:00",
+      "profile_checked_at": "2026-10-10T22:50:07.459495+00:00",
+      "updated_at": "2026-10-10T22:50:07.459495+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:21.906627+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:07.459495+00:00",
+      "attempt_count": 2
     },
     "pear-shape": {
       "name": "Pear Shape",
@@ -190275,7 +190282,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:26.350302+00:00",
+          "validated_at": "2026-10-10T22:49:53.191155+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -190295,14 +190302,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:25.843236+00:00",
-      "updated_at": "2026-10-07T21:30:25.843236+00:00",
+      "profile_checked_at": "2026-10-10T22:49:52.688825+00:00",
+      "updated_at": "2026-10-10T22:49:52.688825+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:25.843236+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:52.688825+00:00",
+      "attempt_count": 2
     },
     "rev-theory": {
       "name": "Rev Theory",
@@ -190972,7 +190979,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:17.761001+00:00",
+          "validated_at": "2026-10-10T22:50:06.447186+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -190992,14 +190999,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:16.796285+00:00",
-      "updated_at": "2026-10-07T21:31:16.796285+00:00",
+      "profile_checked_at": "2026-10-10T22:50:05.534973+00:00",
+      "updated_at": "2026-10-10T22:50:05.534973+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:16.796285+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:05.534973+00:00",
+      "attempt_count": 2
     },
     "tallows": {
       "name": "Tallows",
@@ -191087,7 +191094,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:26.027337+00:00",
+          "validated_at": "2026-10-10T22:49:37.885306+00:00",
           "validation_method": "bytes"
         },
         {
@@ -191096,7 +191103,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:26.764929+00:00",
+          "validated_at": "2026-10-10T22:49:38.624373+00:00",
           "validation_method": "bytes"
         },
         {
@@ -191105,7 +191112,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:27.436428+00:00",
+          "validated_at": "2026-10-10T22:49:39.147031+00:00",
           "validation_method": "bytes"
         },
         {
@@ -191114,7 +191121,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:27.826534+00:00",
+          "validated_at": "2026-10-10T22:49:39.499906+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -191134,14 +191141,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:25.301191+00:00",
-      "updated_at": "2026-10-07T21:29:25.301191+00:00",
+      "profile_checked_at": "2026-10-10T22:49:37.435764+00:00",
+      "updated_at": "2026-10-10T22:49:37.435764+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:25.301191+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:37.435764+00:00",
+      "attempt_count": 2
     },
     "teenage-sweater": {
       "name": "Teenage Sweater",
@@ -191325,7 +191332,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:04.167180+00:00",
+          "validated_at": "2026-10-10T22:49:27.450592+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -191345,14 +191352,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:03.623551+00:00",
-      "updated_at": "2026-10-07T21:29:03.623551+00:00",
+      "profile_checked_at": "2026-10-10T22:49:26.965164+00:00",
+      "updated_at": "2026-10-10T22:49:26.965164+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:03.623551+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:26.965164+00:00",
+      "attempt_count": 2
     },
     "the-dudes": {
       "name": "The Dudes",
@@ -191750,7 +191757,7 @@
           "source": "TheAudioDB",
           "kind": "fanart",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:29.350360+00:00",
+          "validated_at": "2026-10-10T22:49:56.107240+00:00",
           "validation_method": "bytes"
         },
         {
@@ -191759,7 +191766,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:29.727606+00:00",
+          "validated_at": "2026-10-10T22:49:56.459672+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -191779,14 +191786,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:28.748445+00:00",
-      "updated_at": "2026-10-07T21:30:28.748445+00:00",
+      "profile_checked_at": "2026-10-10T22:49:55.630929+00:00",
+      "updated_at": "2026-10-10T22:49:55.630929+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:28.748445+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:55.630929+00:00",
+      "attempt_count": 2
     },
     "the-pinker-tones": {
       "name": "The Pinker Tones",
@@ -191892,14 +191899,14 @@
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "The Wars",
-      "profile_checked_at": "2026-10-07T21:29:14.852281+00:00",
-      "updated_at": "2026-10-07T21:29:14.852281+00:00",
+      "profile_checked_at": "2026-10-10T22:49:31.449549+00:00",
+      "updated_at": "2026-10-10T22:49:31.449549+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "image"
       ],
-      "next_retry_at": "2026-10-10T21:29:14.852281+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:31.449549+00:00",
+      "attempt_count": 2
     },
     "this-void": {
       "name": "this void",
@@ -192703,7 +192710,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:52.080533+00:00",
+          "validated_at": "2026-10-10T22:50:00.516928+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -192723,14 +192730,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:51.151895+00:00",
-      "updated_at": "2026-10-07T21:30:51.151895+00:00",
+      "profile_checked_at": "2026-10-10T22:50:00.119693+00:00",
+      "updated_at": "2026-10-10T22:50:00.119693+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:51.151895+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:00.119693+00:00",
+      "attempt_count": 2
     },
     "woodenbox": {
       "name": "Woodenbox",
@@ -192742,7 +192749,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:13.908575+00:00",
+          "validated_at": "2026-10-10T22:50:04.528016+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -192762,14 +192769,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:13.236840+00:00",
-      "updated_at": "2026-10-07T21:31:13.236840+00:00",
+      "profile_checked_at": "2026-10-10T22:50:04.099492+00:00",
+      "updated_at": "2026-10-10T22:50:04.099492+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:13.236840+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:04.099492+00:00",
+      "attempt_count": 2
     },
     "yellowbirds": {
       "name": "Yellowbirds",
@@ -192857,7 +192864,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:30:24.858733+00:00",
+          "validated_at": "2026-10-10T22:49:51.670643+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -192877,14 +192884,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:30:24.125355+00:00",
-      "updated_at": "2026-10-07T21:30:24.125355+00:00",
+      "profile_checked_at": "2026-10-10T22:49:51.186540+00:00",
+      "updated_at": "2026-10-10T22:49:51.186540+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:30:24.125355+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:51.186540+00:00",
+      "attempt_count": 2
     },
     "yu-uchida": {
       "name": "YU UCHIDA",
@@ -192964,7 +192971,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:29:10.034166+00:00",
+          "validated_at": "2026-10-10T22:49:28.925549+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -192984,14 +192991,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:29:09.304593+00:00",
-      "updated_at": "2026-10-07T21:29:09.304593+00:00",
+      "profile_checked_at": "2026-10-10T22:49:28.464450+00:00",
+      "updated_at": "2026-10-10T22:49:28.464450+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:29:09.304593+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:49:28.464450+00:00",
+      "attempt_count": 2
     },
     "11-tv-girl": {
       "name": "11 Tv Girl",
@@ -194959,7 +194966,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:22.501977+00:00",
+          "validated_at": "2026-10-10T22:50:26.673475+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -194979,14 +194986,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:21.462373+00:00",
-      "updated_at": "2026-10-07T21:32:21.462373+00:00",
+      "profile_checked_at": "2026-10-10T22:50:25.997123+00:00",
+      "updated_at": "2026-10-10T22:50:25.997123+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:21.462373+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:25.997123+00:00",
+      "attempt_count": 2
     },
     "cymbals": {
       "name": "Cymbals",
@@ -195037,7 +195044,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:33.915998+00:00",
+          "validated_at": "2026-10-10T22:50:31.542550+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -195057,14 +195064,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:32.833787+00:00",
-      "updated_at": "2026-10-07T21:32:32.833787+00:00",
+      "profile_checked_at": "2026-10-10T22:50:30.929048+00:00",
+      "updated_at": "2026-10-10T22:50:30.929048+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:32.833787+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:30.929048+00:00",
+      "attempt_count": 2
     },
     "dead-stars": {
       "name": "Dead Stars",
@@ -195346,7 +195353,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:40.441634+00:00",
+          "validated_at": "2026-10-10T22:50:12.792110+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -195366,14 +195373,14 @@
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:39.729413+00:00",
-      "updated_at": "2026-10-07T21:31:39.729413+00:00",
+      "profile_checked_at": "2026-10-10T22:50:11.840410+00:00",
+      "updated_at": "2026-10-10T22:50:11.840410+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:39.729413+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-10-13T22:50:11.840410+00:00",
+      "attempt_count": 3
     },
     "el-cuarteto-de-nos": {
       "name": "El Cuarteto De Nos",
@@ -195690,7 +195697,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:58.231470+00:00",
+          "validated_at": "2026-10-10T22:50:16.267585+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -195710,14 +195717,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:57.628852+00:00",
-      "updated_at": "2026-10-07T21:31:57.628852+00:00",
+      "profile_checked_at": "2026-10-10T22:50:15.453161+00:00",
+      "updated_at": "2026-10-10T22:50:15.453161+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:57.628852+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:15.453161+00:00",
+      "attempt_count": 2
     },
     "ex-hex": {
       "name": "Ex Hex",
@@ -196108,12 +196115,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist/cf6041e7c7f2d5f973ef7704e7b3fb3b/1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist/cf6041e7c7f2d5f973ef7704e7b3fb3b/1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:38.850439+00:00",
+          "validated_at": "2026-10-10T22:50:32.976560+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -196133,14 +196140,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:37.942034+00:00",
-      "updated_at": "2026-10-07T21:32:37.942034+00:00",
+      "profile_checked_at": "2026-10-10T22:50:32.541510+00:00",
+      "updated_at": "2026-10-10T22:50:32.541510+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:37.942034+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:32.541510+00:00",
+      "attempt_count": 2
     },
     "free-energy": {
       "name": "Free Energy",
@@ -196195,12 +196202,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:42.415791+00:00",
+          "validated_at": "2026-10-10T22:50:34.466495+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -196220,14 +196227,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:41.783142+00:00",
-      "updated_at": "2026-10-07T21:32:41.783142+00:00",
+      "profile_checked_at": "2026-10-10T22:50:33.979611+00:00",
+      "updated_at": "2026-10-10T22:50:33.979611+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:41.783142+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:33.979611+00:00",
+      "attempt_count": 2
     },
     "glass-vaults": {
       "name": "Glass Vaults",
@@ -198228,7 +198235,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:28.456418+00:00",
+          "validated_at": "2026-10-10T22:50:29.927736+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -198248,14 +198255,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:27.514981+00:00",
-      "updated_at": "2026-10-07T21:32:27.514981+00:00",
+      "profile_checked_at": "2026-10-10T22:50:29.113348+00:00",
+      "updated_at": "2026-10-10T22:50:29.113348+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:27.514981+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:29.113348+00:00",
+      "attempt_count": 2
     },
     "madeon": {
       "name": "Madeon",
@@ -200008,7 +200015,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:10.114977+00:00",
+          "validated_at": "2026-10-10T22:50:19.684774+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -200028,14 +200035,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:09.696595+00:00",
-      "updated_at": "2026-10-07T21:32:09.696595+00:00",
+      "profile_checked_at": "2026-10-10T22:50:18.796103+00:00",
+      "updated_at": "2026-10-10T22:50:18.796103+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:09.696595+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:18.796103+00:00",
+      "attempt_count": 2
     },
     "rachel-zeffira": {
       "name": "Rachel Zeffira",
@@ -200776,7 +200783,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:24.526114+00:00",
+          "validated_at": "2026-10-10T22:50:28.107367+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -200796,14 +200803,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:23.490252+00:00",
-      "updated_at": "2026-10-07T21:32:23.490252+00:00",
+      "profile_checked_at": "2026-10-10T22:50:27.667944+00:00",
+      "updated_at": "2026-10-10T22:50:27.667944+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:23.490252+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:27.667944+00:00",
+      "attempt_count": 2
     },
     "scorpio-loon": {
       "name": "Scorpio Loon",
@@ -201363,7 +201370,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:51.499488+00:00",
+          "validated_at": "2026-10-10T22:50:36.076188+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -201383,14 +201390,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:50.194082+00:00",
-      "updated_at": "2026-10-07T21:32:50.194082+00:00",
+      "profile_checked_at": "2026-10-10T22:50:35.466776+00:00",
+      "updated_at": "2026-10-10T22:50:35.466776+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:50.194082+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:35.466776+00:00",
+      "attempt_count": 2
     },
     "the-analog-affair": {
       "name": "The Analog Affair",
@@ -201402,7 +201409,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:12.129561+00:00",
+          "validated_at": "2026-10-10T22:50:21.324232+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -201422,14 +201429,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:11.111741+00:00",
-      "updated_at": "2026-10-07T21:32:11.111741+00:00",
+      "profile_checked_at": "2026-10-10T22:50:20.682462+00:00",
+      "updated_at": "2026-10-10T22:50:20.682462+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:11.111741+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:20.682462+00:00",
+      "attempt_count": 2
     },
     "the-babies": {
       "name": "The Babies",
@@ -201677,7 +201684,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:14.118352+00:00",
+          "validated_at": "2026-10-10T22:50:23.354695+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -201697,14 +201704,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:13.119673+00:00",
-      "updated_at": "2026-10-07T21:32:13.119673+00:00",
+      "profile_checked_at": "2026-10-10T22:50:22.321355+00:00",
+      "updated_at": "2026-10-10T22:50:22.321355+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:13.119673+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:22.321355+00:00",
+      "attempt_count": 2
     },
     "the-halo-benders": {
       "name": "The Halo Benders",
@@ -201745,7 +201752,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:16.062757+00:00",
+          "validated_at": "2026-10-10T22:50:24.984787+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -201765,14 +201772,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:15.114127+00:00",
-      "updated_at": "2026-10-07T21:32:15.114127+00:00",
+      "profile_checked_at": "2026-10-10T22:50:24.354848+00:00",
+      "updated_at": "2026-10-10T22:50:24.354848+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:15.114127+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:24.354848+00:00",
+      "attempt_count": 2
     },
     "the-heavy": {
       "name": "The Heavy",
@@ -202110,7 +202117,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:31:56.625139+00:00",
+          "validated_at": "2026-10-10T22:50:14.447129+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -202130,14 +202137,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:31:56.089926+00:00",
-      "updated_at": "2026-10-07T21:31:56.089926+00:00",
+      "profile_checked_at": "2026-10-10T22:50:13.789340+00:00",
+      "updated_at": "2026-10-10T22:50:13.789340+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:31:56.089926+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:13.789340+00:00",
+      "attempt_count": 2
     },
     "the-van-jets": {
       "name": "The Van Jets",
@@ -203412,7 +203419,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T21:32:02.884190+00:00",
+          "validated_at": "2026-10-10T22:50:17.787290+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -203432,14 +203439,14 @@
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T21:32:02.477524+00:00",
-      "updated_at": "2026-10-07T21:32:02.477524+00:00",
+      "profile_checked_at": "2026-10-10T22:50:17.257061+00:00",
+      "updated_at": "2026-10-10T22:50:17.257061+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T21:32:02.477524+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:17.257061+00:00",
+      "attempt_count": 2
     },
     "you-me-at-six": {
       "name": "You Me at Six",
@@ -244119,12 +244126,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:35:18.952172+00:00",
-      "updated_at": "2026-09-29T21:35:18.952172+00:00"
+      "profile_checked_at": "2026-10-10T22:52:43.123066+00:00",
+      "updated_at": "2026-10-10T22:52:43.123066+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:43.123066+00:00",
+      "attempt_count": 1
     },
     "050": {
       "name": "050",
@@ -244142,12 +244156,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:35:23.381897+00:00",
-      "updated_at": "2026-09-29T21:35:23.381897+00:00"
+      "profile_checked_at": "2026-10-10T22:52:44.469239+00:00",
+      "updated_at": "2026-10-10T22:52:44.469239+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:44.469239+00:00",
+      "attempt_count": 1
     },
     "060": {
       "name": "060",
@@ -244287,12 +244308,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:35:49.774992+00:00",
-      "updated_at": "2026-09-29T21:35:49.774992+00:00"
+      "profile_checked_at": "2026-10-10T22:52:39.063765+00:00",
+      "updated_at": "2026-10-10T22:52:39.063765+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:39.063765+00:00",
+      "attempt_count": 1
     },
     "075": {
       "name": "075",
@@ -244487,12 +244515,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:36:20.807932+00:00",
-      "updated_at": "2026-09-29T21:36:20.807932+00:00"
+      "profile_checked_at": "2026-10-10T22:52:40.445327+00:00",
+      "updated_at": "2026-10-10T22:52:40.445327+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:40.445327+00:00",
+      "attempt_count": 1
     },
     "096": {
       "name": "096",
@@ -244536,8 +244571,18 @@
     "100": {
       "name": "100",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/602ba33ee8d12a9b2ab420f01dff6f5f/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/602ba33ee8d12a9b2ab420f01dff6f5f/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:42.113644+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "100 or one hundred is the natural number following 99 and preceding 101.",
       "official_url": "",
@@ -244549,18 +244594,32 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/100",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "100",
-      "profile_checked_at": "2026-09-29T21:36:31.925325+00:00",
-      "updated_at": "2026-09-29T21:36:31.925325+00:00"
+      "profile_checked_at": "2026-10-10T22:52:41.745373+00:00",
+      "updated_at": "2026-10-10T22:52:41.745373+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "110": {
       "name": "110",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/2a6d929282ea4a9115fb913c9d3895c0/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/2a6d929282ea4a9115fb913c9d3895c0/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:51.405050+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -244572,12 +244631,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:36:38.532907+00:00",
-      "updated_at": "2026-09-29T21:36:38.532907+00:00"
+      "profile_checked_at": "2026-10-10T22:52:51.078772+00:00",
+      "updated_at": "2026-10-10T22:52:51.078772+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:51.078772+00:00",
+      "attempt_count": 1
     },
     "13": {
       "name": "13",
@@ -244634,12 +244699,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:36:49.687945+00:00",
-      "updated_at": "2026-09-29T21:36:49.687945+00:00"
+      "profile_checked_at": "2026-10-10T22:52:53.757100+00:00",
+      "updated_at": "2026-10-10T22:52:53.757100+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:53.757100+00:00",
+      "attempt_count": 1
     },
     "13-little-scream": {
       "name": "13 Little Scream",
@@ -244657,12 +244729,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:36:54.156339+00:00",
-      "updated_at": "2026-09-29T21:36:54.156339+00:00"
+      "profile_checked_at": "2026-10-10T22:52:35.046995+00:00",
+      "updated_at": "2026-10-10T22:52:35.046995+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:35.046995+00:00",
+      "attempt_count": 1
     },
     "13-picnic": {
       "name": "13 Picnic",
@@ -244680,12 +244759,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:36:58.615914+00:00",
-      "updated_at": "2026-09-29T21:36:58.615914+00:00"
+      "profile_checked_at": "2026-10-10T22:52:45.737222+00:00",
+      "updated_at": "2026-10-10T22:52:45.737222+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:45.737222+00:00",
+      "attempt_count": 1
     },
     "13-sleep-over": {
       "name": "13 Sleep Over",
@@ -244733,12 +244819,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:37:07.537211+00:00",
-      "updated_at": "2026-09-29T21:37:07.537211+00:00"
+      "profile_checked_at": "2026-10-10T22:52:47.083569+00:00",
+      "updated_at": "2026-10-10T22:52:47.083569+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:47.083569+00:00",
+      "attempt_count": 1
     },
     "16-friendly-fires": {
       "name": "16 Friendly Fires",
@@ -244756,18 +244849,35 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:37:12.029782+00:00",
-      "updated_at": "2026-09-29T21:37:12.029782+00:00"
+      "profile_checked_at": "2026-10-10T22:52:48.463879+00:00",
+      "updated_at": "2026-10-10T22:52:48.463879+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:48.463879+00:00",
+      "attempt_count": 1
     },
     "161": {
       "name": "161",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/355cba662905b9aa639ea29300d00ce4/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/355cba662905b9aa639ea29300d00ce4/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:36.752346+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -244779,12 +244889,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:37:18.611863+00:00",
-      "updated_at": "2026-09-29T21:37:18.611863+00:00"
+      "profile_checked_at": "2026-10-10T22:52:36.377160+00:00",
+      "updated_at": "2026-10-10T22:52:36.377160+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:36.377160+00:00",
+      "attempt_count": 1
     },
     "165": {
       "name": "165",
@@ -244802,12 +244918,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:37:25.184772+00:00",
-      "updated_at": "2026-09-29T21:37:25.184772+00:00"
+      "profile_checked_at": "2026-10-10T22:52:52.416121+00:00",
+      "updated_at": "2026-10-10T22:52:52.416121+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:52.416121+00:00",
+      "attempt_count": 1
     },
     "17-ikons": {
       "name": "17 Ikons",
@@ -244908,12 +245031,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:37:43.089795+00:00",
-      "updated_at": "2026-09-29T21:37:43.089795+00:00"
+      "profile_checked_at": "2026-10-10T22:52:49.770455+00:00",
+      "updated_at": "2026-10-10T22:52:49.770455+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:49.770455+00:00",
+      "attempt_count": 1
     },
     "19-two-wounded-birds": {
       "name": "19 Two Wounded birds",
@@ -245068,8 +245198,18 @@
     "3-mother-funkers": {
       "name": "3 Mother Funkers",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/d38de115f950295e0366ada0ab152e1f/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d38de115f950295e0366ada0ab152e1f/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:34.169567+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -245081,12 +245221,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:38:10.245893+00:00",
-      "updated_at": "2026-09-29T21:38:10.245893+00:00"
+      "profile_checked_at": "2026-10-10T22:51:33.702167+00:00",
+      "updated_at": "2026-10-10T22:51:33.702167+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:33.702167+00:00",
+      "attempt_count": 1
     },
     "%d1%88%d1%80%d0%b5%d0%ba-3-shrek-3": {
       "name": "Шрек 3 (Shrek 3)",
@@ -245114,8 +245260,18 @@
     "42": {
       "name": "42",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/dbdae0667e51e3050f1acb4652c0c48a/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/dbdae0667e51e3050f1acb4652c0c48a/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:38.064815+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -245127,12 +245283,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:38:21.424030+00:00",
-      "updated_at": "2026-09-29T21:38:21.424030+00:00"
+      "profile_checked_at": "2026-10-10T22:52:37.753436+00:00",
+      "updated_at": "2026-10-10T22:52:37.753436+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:37.753436+00:00",
+      "attempt_count": 1
     },
     "424": {
       "name": "424",
@@ -245741,7 +245903,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:24:41.830260+00:00",
+          "validated_at": "2026-10-10T22:50:40.491995+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -245757,19 +245919,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:24:35.110402+00:00",
-      "updated_at": "2026-10-07T07:24:35.110402+00:00",
+      "profile_checked_at": "2026-10-10T22:50:40.013096+00:00",
+      "updated_at": "2026-10-10T22:50:40.013096+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:24:35.110402+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:40.013096+00:00",
+      "attempt_count": 2
     },
     "adelitas-way": {
       "name": "Adelitas Way",
@@ -246480,10 +246641,13 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/AM_%26_Shawn_Lee_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "preview": "https://upload.wikimedia.org/wikipedia/commons/f/fd/AM_%26_Shawn_Lee_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "source": "Wikipedia",
-          "kind": "portrait"
+          "url": "https://cdn-images.dzcdn.net/images/artist/6a42dc00de55a0b5ee8a7ef10f9274df/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/6a42dc00de55a0b5ee8a7ef10f9274df/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:31.069530+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -246498,12 +246662,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/AM_%26_Shawn_Lee",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "AM & Shawn Lee",
-      "profile_checked_at": "2026-09-29T21:41:37.208191+00:00",
-      "updated_at": "2026-09-29T21:41:37.208191+00:00"
+      "profile_checked_at": "2026-10-10T22:51:30.706994+00:00",
+      "updated_at": "2026-10-10T22:51:30.706994+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "amanda-palmer-the-grand-theft-orchestra": {
       "name": "Amanda Palmer & The Grand Theft Orchestra",
@@ -246924,12 +247092,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:42:31.863871+00:00",
-      "updated_at": "2026-09-29T21:42:31.863871+00:00"
+      "profile_checked_at": "2026-10-10T22:51:10.472887+00:00",
+      "updated_at": "2026-10-10T22:51:10.472887+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:10.472887+00:00",
+      "attempt_count": 1
     },
     "ane-brun": {
       "name": "Ane Brun",
@@ -247814,7 +247989,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:27:01.270649+00:00",
+          "validated_at": "2026-10-10T22:50:43.508683+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -247830,19 +248005,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:26:57.131629+00:00",
-      "updated_at": "2026-10-07T07:26:57.131629+00:00",
+      "profile_checked_at": "2026-10-10T22:50:42.970706+00:00",
+      "updated_at": "2026-10-10T22:50:42.970706+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:26:57.131629+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:42.970706+00:00",
+      "attempt_count": 2
     },
     "asylum-street-spankers": {
       "name": "Asylum Street Spankers",
@@ -248458,7 +248632,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/dqyc0o1781692116.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/dqyc0o1781692116.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:32.711820+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -248473,12 +248650,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:46:01.397529+00:00",
-      "updated_at": "2026-09-29T21:46:01.397529+00:00"
+      "profile_checked_at": "2026-10-10T22:51:32.070543+00:00",
+      "updated_at": "2026-10-10T22:51:32.070543+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:32.070543+00:00",
+      "attempt_count": 1
     },
     "barbi-recanati": {
       "name": "Barbi Recanati",
@@ -249132,25 +249315,37 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xtxrrs1374401148.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xtxrrs1374401148.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:29.933772+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rtwtvs1383265514.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rtwtvs1383265514.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:30.322326+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xsspvr1398687345.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xsspvr1398687345.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:30.833958+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qsqxvp1375297060.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qsqxvp1375297060.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:31.236337+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
@@ -249165,12 +249360,16 @@
       "genre": "",
       "style": "",
       "country": "Buenos Aires, Argentina",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-29T21:47:22.662669+00:00",
-      "updated_at": "2026-09-29T21:47:22.662669+00:00"
+      "profile_checked_at": "2026-10-10T22:52:29.452069+00:00",
+      "updated_at": "2026-10-10T22:52:29.452069+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "bert-brett": {
       "name": "Bert Brett",
@@ -249485,25 +249684,37 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/black-prairie-50839b5aefd92.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/black-prairie-50839b5aefd92.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:22.906318+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wxvvqx1437996074.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wxvvqx1437996074.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:23.685790+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rtvttw1437996075.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rtvttw1437996075.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:24.765780+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wrxurw1437996156.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wrxurw1437996156.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:25.383053+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 4,
@@ -249518,12 +249729,16 @@
       "genre": "BlueGrass",
       "style": "Folk",
       "country": "Portland, Oregon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Prairie",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Black Prairie",
-      "profile_checked_at": "2026-09-29T21:48:10.445165+00:00",
-      "updated_at": "2026-09-29T21:48:10.445165+00:00"
+      "profile_checked_at": "2026-10-10T22:51:22.371903+00:00",
+      "updated_at": "2026-10-10T22:51:22.371903+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "blackout-problems": {
       "name": "Blackout Problems",
@@ -252399,31 +252614,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf7baf2f0.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf7baf2f0.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:52.650956+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf8629f54.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf8629f54.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:52.990792+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf90844a6.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-4f74bf90844a6.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:53.506541+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-514b2a653e48f.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/chickenfoot-514b2a653e48f.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:54.024540+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/twwxwt1348674198.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/twwxwt1348674198.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:54.537087+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -252438,12 +252668,16 @@
       "genre": "Hard Rock",
       "style": "Rock/Pop",
       "country": "Cabo San Lucas, BCS, USA",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chickenfoot",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Chickenfoot",
-      "profile_checked_at": "2026-09-30T00:40:13.563882+00:00",
-      "updated_at": "2026-09-30T00:40:13.563882+00:00"
+      "profile_checked_at": "2026-10-10T22:51:51.664967+00:00",
+      "updated_at": "2026-10-10T22:51:51.664967+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "chico-blanco": {
       "name": "Chico Blanco",
@@ -254253,15 +254487,8 @@
     "danger-mouse-and-sparklehorse": {
       "name": "Danger Mouse and Sparklehorse",
       "musicbrainz_id": "",
-      "images": [
-        {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Danger_Mouse_with_Broken_Bells_2010_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "preview": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Danger_Mouse_with_Broken_Bells_2010_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "source": "Wikipedia",
-          "kind": "portrait"
-        }
-      ],
-      "image_count": 1,
+      "images": [],
+      "image_count": 0,
       "bio_es": "",
       "bio_en": "Brian Joseph Burton, known professionally as Danger Mouse, is an American musician and record producer. He has been nominated for 22 Grammy Awards and has won six. He has been nominated in the Producer of the Year category five times, and won the award in 2011. In 2008, Esquire named him one of the \"75 most influential people of the 21st century\".",
       "official_url": "",
@@ -254273,12 +254500,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Danger_Mouse_(musician)",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "Danger Mouse (musician)",
-      "profile_checked_at": "2026-09-30T00:44:33.211603+00:00",
-      "updated_at": "2026-09-30T00:44:33.211603+00:00"
+      "profile_checked_at": "2026-10-10T22:52:17.387537+00:00",
+      "updated_at": "2026-10-10T22:52:17.387537+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-13T22:52:17.387537+00:00",
+      "attempt_count": 1
     },
     "danger-mouse-daniele-luppi-jack-white": {
       "name": "Danger Mouse/ Daniele Luppi/ Jack White",
@@ -254323,12 +254556,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist/5dc781b9b33b1b2d1930db0058d6196c/1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist/5dc781b9b33b1b2d1930db0058d6196c/1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:30:01.996251+00:00",
+          "validated_at": "2026-10-10T22:50:55.682186+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -254344,19 +254577,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:29:57.721709+00:00",
-      "updated_at": "2026-10-07T07:29:57.721709+00:00",
+      "profile_checked_at": "2026-10-10T22:50:54.920136+00:00",
+      "updated_at": "2026-10-10T22:50:54.920136+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:29:57.721709+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:54.920136+00:00",
+      "attempt_count": 2
     },
     "danny-goo": {
       "name": "Danny Goo",
@@ -257760,7 +257992,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:28:48.275668+00:00",
+          "validated_at": "2026-10-10T22:50:46.910490+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -257776,19 +258008,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:28:41.427317+00:00",
-      "updated_at": "2026-10-07T07:28:41.427317+00:00",
+      "profile_checked_at": "2026-10-10T22:50:46.418375+00:00",
+      "updated_at": "2026-10-10T22:50:46.418375+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:28:41.427317+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:46.418375+00:00",
+      "attempt_count": 2
     },
     "fake-dad": {
       "name": "Fake Dad",
@@ -258053,7 +258284,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:28:55.600857+00:00",
+          "validated_at": "2026-10-10T22:50:48.776318+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -258069,19 +258300,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:28:48.276467+00:00",
-      "updated_at": "2026-10-07T07:28:48.276467+00:00",
+      "profile_checked_at": "2026-10-10T22:50:47.908781+00:00",
+      "updated_at": "2026-10-10T22:50:47.908781+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:28:48.276467+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:47.908781+00:00",
+      "attempt_count": 2
     },
     "fat-koala-disorder-paul-numi": {
       "name": "Fat Koala Disorder / Paul Numi",
@@ -259649,7 +259879,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:38:44.239372+00:00",
+          "validated_at": "2026-10-10T22:50:58.649338+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -259665,19 +259895,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:38:39.415385+00:00",
-      "updated_at": "2026-10-07T07:38:39.415385+00:00",
+      "profile_checked_at": "2026-10-10T22:50:58.232718+00:00",
+      "updated_at": "2026-10-10T22:50:58.232718+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:38:39.415385+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:58.232718+00:00",
+      "attempt_count": 2
     },
     "fuller": {
       "name": "Fuller",
@@ -260413,7 +260642,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:28:59.855448+00:00",
+          "validated_at": "2026-10-10T22:50:50.599398+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -260429,19 +260658,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:28:55.601702+00:00",
-      "updated_at": "2026-10-07T07:28:55.601702+00:00",
+      "profile_checked_at": "2026-10-10T22:50:49.781263+00:00",
+      "updated_at": "2026-10-10T22:50:49.781263+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:28:55.601702+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:49.781263+00:00",
+      "attempt_count": 2
     },
     "glass-beach": {
       "name": "Glass Beach",
@@ -261881,7 +262109,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/3l5fsn1731063241.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/3l5fsn1731063241.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:13.351298+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -261896,12 +262127,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hearts_of_Black_Science",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Hearts of Black Science",
-      "profile_checked_at": "2026-09-30T01:01:44.611711+00:00",
-      "updated_at": "2026-09-30T01:01:44.611711+00:00"
+      "profile_checked_at": "2026-10-10T22:52:12.840175+00:00",
+      "updated_at": "2026-10-10T22:52:12.840175+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "heaviness": {
       "name": "Heavïness",
@@ -263660,7 +263895,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/ba6u5s1662036181.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/ba6u5s1662036181.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:41.867114+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -263675,12 +263913,16 @@
       "genre": "Electronic",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacques_Greene",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Jacques Greene",
-      "profile_checked_at": "2026-09-30T01:05:50.590666+00:00",
-      "updated_at": "2026-09-30T01:05:50.590666+00:00"
+      "profile_checked_at": "2026-10-10T22:51:41.278241+00:00",
+      "updated_at": "2026-10-10T22:51:41.278241+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "jalea-negra": {
       "name": "Jalea Negra",
@@ -263877,13 +264119,19 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vvxwst1397546010.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vvxwst1397546010.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:56.127190+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qrquss1397545999.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qrquss1397545999.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:56.515544+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
@@ -263898,12 +264146,16 @@
       "genre": "Noise",
       "style": "Rock/Pop",
       "country": "Brooklyn, NY",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Japanther",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Japanther",
-      "profile_checked_at": "2026-09-30T01:06:33.358192+00:00",
-      "updated_at": "2026-09-30T01:06:33.358192+00:00"
+      "profile_checked_at": "2026-10-10T22:51:55.532714+00:00",
+      "updated_at": "2026-10-10T22:51:55.532714+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "jarrow": {
       "name": "Jarrow",
@@ -266450,8 +266702,18 @@
     "kowalski": {
       "name": "Kowalski",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/5a7d459c8b89b8b12157997639fa3ae4/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/5a7d459c8b89b8b12157997639fa3ae4/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:57.983009+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "Kowalski is the second most common surname in Poland. In January 2026, the Polish register PESEL listed 67,308 women and 66,589 men with the surname. Kowalski surname is derived from the word kowal, meaning \"[black]smith\".",
       "official_url": "",
@@ -266463,12 +266725,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kowalski",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "Kowalski",
-      "profile_checked_at": "2026-09-30T01:12:13.886172+00:00",
-      "updated_at": "2026-09-30T01:12:13.886172+00:00"
+      "profile_checked_at": "2026-10-10T22:51:57.522979+00:00",
+      "updated_at": "2026-10-10T22:51:57.522979+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "kyosko": {
       "name": "Kyosko",
@@ -267412,13 +267678,19 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sywptr1346576253.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sywptr1346576253.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:12.443831+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/utyqwv1346576057.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/utyqwv1346576057.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:12.765352+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 2,
@@ -267433,12 +267705,16 @@
       "genre": "",
       "style": "Indie Rock",
       "country": "Providence, Rhode Island, USA",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Savy_Fav",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Les Savy Fav",
-      "profile_checked_at": "2026-09-30T01:14:18.274098+00:00",
-      "updated_at": "2026-09-30T01:14:18.274098+00:00"
+      "profile_checked_at": "2026-10-10T22:51:11.919454+00:00",
+      "updated_at": "2026-10-10T22:51:11.919454+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "liam-finn": {
       "name": "Liam Finn",
@@ -269357,31 +269633,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/dtgblo1630572230.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/dtgblo1630572230.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:43.289807+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/3qhi7k1630572038.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/3qhi7k1630572038.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:43.627497+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/qxupvq1431784285.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/qxupvq1431784285.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:43.983040+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/mw2no31630572152.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/mw2no31630572152.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:44.407576+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/quwqxs1526651606.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/quwqxs1526651606.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:44.729831+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -269396,12 +269687,16 @@
       "genre": "Electronic",
       "style": "Electronic",
       "country": "England",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Major_Lazer",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Major Lazer",
-      "profile_checked_at": "2026-09-30T01:18:57.254036+00:00",
-      "updated_at": "2026-09-30T01:18:57.254036+00:00"
+      "profile_checked_at": "2026-10-10T22:51:42.882666+00:00",
+      "updated_at": "2026-10-10T22:51:42.882666+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "major-lazer-amber-of-dirty-projectors": {
       "name": "Major Lazer, Amber of Dirty Projectors",
@@ -269752,7 +270047,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:31:55.324494+00:00",
+          "validated_at": "2026-10-10T22:50:57.232108+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -269768,19 +270063,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:31:49.235822+00:00",
-      "updated_at": "2026-10-07T07:31:49.235822+00:00",
+      "profile_checked_at": "2026-10-10T22:50:56.680271+00:00",
+      "updated_at": "2026-10-10T22:50:56.680271+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:31:49.235822+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:56.680271+00:00",
+      "attempt_count": 2
     },
     "maple-glider": {
       "name": "Maple Glider",
@@ -270395,7 +270689,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:29:04.144463+00:00",
+          "validated_at": "2026-10-10T22:50:52.559273+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -270411,19 +270705,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:28:59.856324+00:00",
-      "updated_at": "2026-10-07T07:28:59.856324+00:00",
+      "profile_checked_at": "2026-10-10T22:50:51.596865+00:00",
+      "updated_at": "2026-10-10T22:50:51.596865+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:28:59.856324+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:51.596865+00:00",
+      "attempt_count": 2
     },
     "masquer": {
       "name": "Masquer",
@@ -271531,19 +271824,28 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/micachu-518c1f9d95099.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/micachu-518c1f9d95099.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:22.094240+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/micachu-518c1f9d9786f.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/micachu-518c1f9d9786f.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:22.958191+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/micachu-500e508214e9b.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/micachu-500e508214e9b.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:23.390518+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
@@ -271558,12 +271860,18 @@
       "genre": "Indie",
       "style": "",
       "country": "Surrey, United Kingdom",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T01:23:36.536800+00:00",
-      "updated_at": "2026-09-30T01:23:36.536800+00:00"
+      "profile_checked_at": "2026-10-10T22:52:21.489229+00:00",
+      "updated_at": "2026-10-10T22:52:21.489229+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:21.489229+00:00",
+      "attempt_count": 1
     },
     "middle-brother": {
       "name": "Middle Brother",
@@ -271719,7 +272027,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qyxsxr1428938770.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qyxsxr1428938770.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:38.816530+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -271734,12 +272045,18 @@
       "genre": "Pop",
       "style": "",
       "country": "Dobrich, Bulgaria",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T01:24:05.064170+00:00",
-      "updated_at": "2026-09-30T01:24:05.064170+00:00"
+      "profile_checked_at": "2026-10-10T22:51:38.130743+00:00",
+      "updated_at": "2026-10-10T22:51:38.130743+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:38.130743+00:00",
+      "attempt_count": 1
     },
     "mirwais": {
       "name": "Mirwais",
@@ -271749,19 +272066,28 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/usvtuy1390406512.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/usvtuy1390406512.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:06.854240+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/tf46ph1680508068.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/tf46ph1680508068.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:07.318110+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wrsssv1390405115.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wrsssv1390405115.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:07.630196+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
@@ -271776,12 +272102,16 @@
       "genre": "House",
       "style": "Electronic",
       "country": "Lausanne, Switzerland",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mirwais",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Mirwais",
-      "profile_checked_at": "2026-09-30T01:24:12.803747+00:00",
-      "updated_at": "2026-09-30T01:24:12.803747+00:00"
+      "profile_checked_at": "2026-10-10T22:52:06.245060+00:00",
+      "updated_at": "2026-10-10T22:52:06.245060+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "miso-extra": {
       "name": "Miso Extra",
@@ -272426,12 +272756,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T01:25:41.417008+00:00",
-      "updated_at": "2026-09-30T01:25:41.417008+00:00"
+      "profile_checked_at": "2026-10-10T22:52:18.706175+00:00",
+      "updated_at": "2026-10-10T22:52:18.706175+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:18.706175+00:00",
+      "attempt_count": 1
     },
     "moreish-idols": {
       "name": "Moreish Idols",
@@ -273033,7 +273370,7 @@
           "source": "TheAudioDB",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:24:59.232555+00:00",
+          "validated_at": "2026-10-10T22:50:41.956377+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -273049,19 +273386,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:24:53.224590+00:00",
-      "updated_at": "2026-10-07T07:24:53.224590+00:00",
+      "profile_checked_at": "2026-10-10T22:50:41.497480+00:00",
+      "updated_at": "2026-10-10T22:50:41.497480+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:24:53.224590+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:41.497480+00:00",
+      "attempt_count": 2
     },
     "n-2": {
       "name": "N",
@@ -273416,7 +273752,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:20:02.761625+00:00",
+          "validated_at": "2026-10-10T22:50:37.537569+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -273432,19 +273768,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:19:58.588744+00:00",
-      "updated_at": "2026-10-07T07:19:58.588744+00:00",
+      "profile_checked_at": "2026-10-10T22:50:37.074300+00:00",
+      "updated_at": "2026-10-10T22:50:37.074300+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:19:58.588744+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:37.074300+00:00",
+      "attempt_count": 2
     },
     "neil-young-neil-young-and-the-chrome-hearts": {
       "name": "Neil Young, neil young and the chrome hearts",
@@ -274627,12 +274962,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T06:52:19.674089+00:00",
-      "updated_at": "2026-09-30T06:52:19.674089+00:00"
+      "profile_checked_at": "2026-10-10T22:51:45.743257+00:00",
+      "updated_at": "2026-10-10T22:51:45.743257+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:45.743257+00:00",
+      "attempt_count": 1
     },
     "okon": {
       "name": "Okon",
@@ -274715,8 +275057,18 @@
     "olly-knights": {
       "name": "Olly Knights",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/3c80bfba3f9e001d602d0e85a458b31f/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/3c80bfba3f9e001d602d0e85a458b31f/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:26.851136+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -274728,12 +275080,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T06:52:42.082295+00:00",
-      "updated_at": "2026-09-30T06:52:42.082295+00:00"
+      "profile_checked_at": "2026-10-10T22:51:26.384514+00:00",
+      "updated_at": "2026-10-10T22:51:26.384514+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:26.384514+00:00",
+      "attempt_count": 1
     },
     "only-the-poets": {
       "name": "Only The Poets",
@@ -276208,19 +276566,28 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/wtswyx1364659744.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/wtswyx1364659744.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:24.883214+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/uruqwp1530260825.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/uruqwp1530260825.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:25.249995+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/ruytsy1364659620.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/ruytsy1364659620.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:25.774846+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
@@ -276235,12 +276602,16 @@
       "genre": "Trip Hop",
       "style": "Electronic",
       "country": "Bath, England, United Kingdom",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Propellerheads",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Propellerheads",
-      "profile_checked_at": "2026-09-30T06:55:53.047221+00:00",
-      "updated_at": "2026-09-30T06:55:53.047221+00:00"
+      "profile_checked_at": "2026-10-10T22:52:24.388448+00:00",
+      "updated_at": "2026-10-10T22:52:24.388448+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "proper": {
       "name": "Proper.",
@@ -276964,8 +277335,18 @@
     "reeds": {
       "name": "Reeds",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/6ba7245d3d378fe94abea44dd757829e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/6ba7245d3d378fe94abea44dd757829e/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:40.280928+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -276977,12 +277358,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T06:57:42.068039+00:00",
-      "updated_at": "2026-09-30T06:57:42.068039+00:00"
+      "profile_checked_at": "2026-10-10T22:51:39.828807+00:00",
+      "updated_at": "2026-10-10T22:51:39.828807+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:39.828807+00:00",
+      "attempt_count": 1
     },
     "reigning-sound": {
       "name": "Reigning Sound",
@@ -277234,12 +277621,12 @@
       "musicbrainz_id": "",
       "images": [
         {
-          "url": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
-          "preview": "https://cdn-images.dzcdn.net/images/artist//1000x1000-000000-80-0-0.jpg",
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:29:08.021063+00:00",
+          "validated_at": "2026-10-10T22:50:53.918656+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -277255,19 +277642,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:29:04.145306+00:00",
-      "updated_at": "2026-10-07T07:29:04.145306+00:00",
+      "profile_checked_at": "2026-10-10T22:50:53.554934+00:00",
+      "updated_at": "2026-10-10T22:50:53.554934+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:29:04.145306+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:53.554934+00:00",
+      "attempt_count": 2
     },
     "roisin-murphy": {
       "name": "Róisín Murphy",
@@ -277566,15 +277952,8 @@
     "royksopp-feat-susanne-sundf-r": {
       "name": "Röyksopp feat. Susanne Sundfør",
       "musicbrainz_id": "",
-      "images": [
-        {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Royksopp_2014-09-29_001_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "preview": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Royksopp_2014-09-29_001_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-          "source": "Wikipedia",
-          "kind": "portrait"
-        }
-      ],
-      "image_count": 1,
+      "images": [],
+      "image_count": 0,
       "bio_es": "",
       "bio_en": "Röyksopp are a Norwegian electronic music duo from Tromsø formed in 1998. The duo consists of childhood friends Svein Berge and Torbjørn Brundtland, who formed Röyksopp during the Bergen Wave. After experimenting with different genres of electronic music, the band solidified their place in the electronica scene with their 2001 debut album, Melody A.M., released on the Wall of Sound record label.",
       "official_url": "",
@@ -277586,18 +277965,34 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/R%C3%B6yksopp",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "Wikipedia",
       "verification_title": "Röyksopp",
-      "profile_checked_at": "2026-09-30T06:59:05.210541+00:00",
-      "updated_at": "2026-09-30T06:59:05.210541+00:00"
+      "profile_checked_at": "2026-10-10T22:52:08.632617+00:00",
+      "updated_at": "2026-10-10T22:52:08.632617+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "image"
+      ],
+      "next_retry_at": "2026-10-13T22:52:08.632617+00:00",
+      "attempt_count": 1
     },
     "royseven": {
       "name": "Royseven",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/79a03d5c93de946b5e85b50bc51d270e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/79a03d5c93de946b5e85b50bc51d270e/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:03.275540+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "Royseven are a six-piece alternative rock band from Dublin, Ireland. They are known for songs such as \"Dance\" and \"We Should Be Lovers\", and have released two albums to date: The Art of Insincerity (2006) and You Say, We Say (2011).",
       "official_url": "",
@@ -277609,12 +278004,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Royseven",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "Royseven",
-      "profile_checked_at": "2026-09-30T06:59:11.615769+00:00",
-      "updated_at": "2026-09-30T06:59:11.615769+00:00"
+      "profile_checked_at": "2026-10-10T22:51:02.752021+00:00",
+      "updated_at": "2026-10-10T22:51:02.752021+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "rudy-lvrod": {
       "name": "RUDY, LvRod",
@@ -277688,31 +278087,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uxsptq1523093362.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uxsptq1523093362.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:14.237252+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/bnzipg1631441187.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/bnzipg1631441187.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:14.564538+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/jp1m921631441252.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/jp1m921631441252.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:14.951109+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/yhgibl1631441343.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/yhgibl1631441343.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:15.887819+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vvvrpw1363905774.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vvvrpw1363905774.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:16.323252+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -277727,12 +278141,18 @@
       "genre": "Pop",
       "style": "Classical",
       "country": "Rhinebeck, USA",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T06:59:24.710167+00:00",
-      "updated_at": "2026-09-30T06:59:24.710167+00:00"
+      "profile_checked_at": "2026-10-10T22:51:13.772929+00:00",
+      "updated_at": "2026-10-10T22:51:13.772929+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:13.772929+00:00",
+      "attempt_count": 1
     },
     "ruisenora": {
       "name": "Ruiseñora",
@@ -278604,12 +279024,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:01:49.439825+00:00",
-      "updated_at": "2026-09-30T07:01:49.439825+00:00"
+      "profile_checked_at": "2026-10-10T22:51:58.986024+00:00",
+      "updated_at": "2026-10-10T22:51:58.986024+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:58.986024+00:00",
+      "attempt_count": 1
     },
     "secret-company": {
       "name": "Secret Company",
@@ -279290,12 +279717,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:03:26.828319+00:00",
-      "updated_at": "2026-09-30T07:03:26.828319+00:00"
+      "profile_checked_at": "2026-10-10T22:52:26.777327+00:00",
+      "updated_at": "2026-10-10T22:52:26.777327+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:26.777327+00:00",
+      "attempt_count": 1
     },
     "sid-sriram": {
       "name": "Sid Sriram",
@@ -279381,7 +279815,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/70uq801599525784.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/70uq801599525784.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:35.765989+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -279396,12 +279833,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:03:44.600631+00:00",
-      "updated_at": "2026-09-30T07:03:44.600631+00:00"
+      "profile_checked_at": "2026-10-10T22:51:35.162871+00:00",
+      "updated_at": "2026-10-10T22:51:35.162871+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:35.162871+00:00",
+      "attempt_count": 1
     },
     "silverbacks": {
       "name": "Silverbacks",
@@ -279964,7 +280407,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:39:01.797405+00:00",
+          "validated_at": "2026-10-10T22:51:00.080747+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -279980,19 +280423,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:38:58.008875+00:00",
-      "updated_at": "2026-10-07T07:38:58.008875+00:00",
+      "profile_checked_at": "2026-10-10T22:50:59.649713+00:00",
+      "updated_at": "2026-10-10T22:50:59.649713+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:38:58.008875+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:59.649713+00:00",
+      "attempt_count": 2
     },
     "slow-fiction": {
       "name": "Slow Fiction",
@@ -280043,7 +280485,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:22:01.432677+00:00",
+          "validated_at": "2026-10-10T22:50:39.015010+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -280059,19 +280501,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:21:54.906604+00:00",
-      "updated_at": "2026-10-07T07:21:54.906604+00:00",
+      "profile_checked_at": "2026-10-10T22:50:38.548406+00:00",
+      "updated_at": "2026-10-10T22:50:38.548406+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:21:54.906604+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:38.548406+00:00",
+      "attempt_count": 2
     },
     "snake-eyes": {
       "name": "snake eyes",
@@ -280260,7 +280701,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:39:06.147062+00:00",
+          "validated_at": "2026-10-10T22:51:01.749026+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -280276,19 +280717,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:39:01.798278+00:00",
-      "updated_at": "2026-10-07T07:39:01.798278+00:00",
+      "profile_checked_at": "2026-10-10T22:51:01.111028+00:00",
+      "updated_at": "2026-10-10T22:51:01.111028+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:39:01.798278+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:51:01.111028+00:00",
+      "attempt_count": 2
     },
     "soley": {
       "name": "Sóley",
@@ -281195,8 +281635,18 @@
     "stylusboy": {
       "name": "Stylusboy",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/25b4e4bdf48b860cb8734dbced564f4e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/25b4e4bdf48b860cb8734dbced564f4e/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:17.967288+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -281208,12 +281658,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:08:10.367659+00:00",
-      "updated_at": "2026-09-30T07:08:10.367659+00:00"
+      "profile_checked_at": "2026-10-10T22:51:17.321925+00:00",
+      "updated_at": "2026-10-10T22:51:17.321925+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:17.321925+00:00",
+      "attempt_count": 1
     },
     "subshine": {
       "name": "Subshine",
@@ -281394,31 +281850,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/suuns-515609fcc9b37.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/suuns-515609fcc9b37.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:47.738362+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/sywrsu1398696527.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/sywrsu1398696527.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:48.217810+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/21hh2a1630756688.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/21hh2a1630756688.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:48.969274+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/28wpo21630756783.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/28wpo21630756783.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:50.243793+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/uuwqvx1398696511.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/uuwqvx1398696511.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:50.657151+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -281433,12 +281904,16 @@
       "genre": "Rock",
       "style": "",
       "country": "Canadian",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Suuns",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Suuns",
-      "profile_checked_at": "2026-09-30T07:08:43.443756+00:00",
-      "updated_at": "2026-09-30T07:08:43.443756+00:00"
+      "profile_checked_at": "2026-10-10T22:51:47.067874+00:00",
+      "updated_at": "2026-10-10T22:51:47.067874+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "sw": {
       "name": "SW",
@@ -282197,8 +282672,18 @@
     "teleradio-donoso": {
       "name": "Teleradio Donoso",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:11.835479+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -282210,12 +282695,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:10:32.519630+00:00",
-      "updated_at": "2026-09-30T07:10:32.519630+00:00"
+      "profile_checked_at": "2026-10-10T22:52:11.258120+00:00",
+      "updated_at": "2026-10-10T22:52:11.258120+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:11.258120+00:00",
+      "attempt_count": 1
     },
     "telescreens": {
       "name": "Telescreens",
@@ -282829,19 +283320,28 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/rxuupt1458178832.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/rxuupt1458178832.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:04.296555+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/xtwtrw1458178842.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/xtwtrw1458178842.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:04.798245+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vtquts1458178823.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vtquts1458178823.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:05.240742+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 3,
@@ -282856,12 +283356,16 @@
       "genre": "Post-Hardcore",
       "style": "Rock/Pop",
       "country": "Seattle, Washington, USA",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Blood_Brothers_(band)",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "The Blood Brothers (band)",
-      "profile_checked_at": "2026-09-30T07:11:55.496551+00:00",
-      "updated_at": "2026-09-30T07:11:55.496551+00:00"
+      "profile_checked_at": "2026-10-10T22:52:03.743246+00:00",
+      "updated_at": "2026-10-10T22:52:03.743246+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "the-british-corner-al-aire": {
       "name": "The British Corner! al aire",
@@ -284073,8 +284577,18 @@
     "the-mono-jacks": {
       "name": "The Mono Jacks",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/5a97c6438d38ce501ba67ac20700cca2/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/5a97c6438d38ce501ba67ac20700cca2/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:04.775204+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -284086,12 +284600,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:15:11.693129+00:00",
-      "updated_at": "2026-09-30T07:15:11.693129+00:00"
+      "profile_checked_at": "2026-10-10T22:51:04.289398+00:00",
+      "updated_at": "2026-10-10T22:51:04.289398+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:04.289398+00:00",
+      "attempt_count": 1
     },
     "the-moonlandingz-iggy-pop": {
       "name": "The Moonlandingz, Iggy Pop",
@@ -285099,12 +285619,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:17:20.172214+00:00",
-      "updated_at": "2026-09-30T07:17:20.172214+00:00"
+      "profile_checked_at": "2026-10-10T22:51:05.796183+00:00",
+      "updated_at": "2026-10-10T22:51:05.796183+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:05.796183+00:00",
+      "attempt_count": 1
     },
     "the-vestals": {
       "name": "The Vestals",
@@ -285239,7 +285766,7 @@
           "source": "Deezer",
           "kind": "portrait",
           "valid": true,
-          "validated_at": "2026-10-07T07:27:12.300760+00:00",
+          "validated_at": "2026-10-10T22:50:45.418582+00:00",
           "validation_method": "bytes"
         }
       ],
@@ -285255,19 +285782,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
       "lastfm_url": "",
       "verified": false,
       "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-10-07T07:27:07.784901+00:00",
-      "updated_at": "2026-10-07T07:27:07.784901+00:00",
+      "profile_checked_at": "2026-10-10T22:50:44.506398+00:00",
+      "updated_at": "2026-10-10T22:50:44.506398+00:00",
       "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-10T07:27:07.784901+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-13T22:50:44.506398+00:00",
+      "attempt_count": 2
     },
     "the-winery-dogs": {
       "name": "The Winery Dogs",
@@ -285277,31 +285803,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/vyqvvx1378477087.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/vyqvvx1378477087.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:00.865190+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/uyytsx1448187547.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/uyytsx1448187547.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:01.190380+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/winery-dogs-549df465ee731.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/winery-dogs-549df465ee731.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:01.697925+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/winery-dogs-55fee5190c865.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/winery-dogs-55fee5190c865.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:02.382831+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/winery-dogs-51f7216e63620.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/winery-dogs-51f7216e63620.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:02.741960+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -285316,12 +285857,16 @@
       "genre": "Hard Rock",
       "style": "Rock/Pop",
       "country": "New York, USA",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Winery_Dogs",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "The Winery Dogs",
-      "profile_checked_at": "2026-09-30T07:17:52.759251+00:00",
-      "updated_at": "2026-09-30T07:17:52.759251+00:00"
+      "profile_checked_at": "2026-10-10T22:52:00.302521+00:00",
+      "updated_at": "2026-10-10T22:52:00.302521+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "there-will-be-fireworks": {
       "name": "There Will Be Fireworks",
@@ -285448,12 +285993,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:18:15.294098+00:00",
-      "updated_at": "2026-09-30T07:18:15.294098+00:00"
+      "profile_checked_at": "2026-10-10T22:51:36.776621+00:00",
+      "updated_at": "2026-10-10T22:51:36.776621+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:36.776621+00:00",
+      "attempt_count": 1
     },
     "thousand-yard-stare": {
       "name": "Thousand Yard Stare",
@@ -285539,12 +286091,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:18:36.158664+00:00",
-      "updated_at": "2026-09-30T07:18:36.158664+00:00"
+      "profile_checked_at": "2026-10-10T22:51:27.861992+00:00",
+      "updated_at": "2026-10-10T22:51:27.861992+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:51:27.861992+00:00",
+      "attempt_count": 1
     },
     "tijuana-no": {
       "name": "Tijuana No",
@@ -285654,8 +286213,18 @@
     "titan": {
       "name": "Titan",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/19a07ca8b31eb585c3c343e08e8e8267/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/19a07ca8b31eb585c3c343e08e8e8267/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:34.040995+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "",
       "official_url": "",
@@ -285667,12 +286236,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
-      "verification_source": "",
+      "verification_source": "Deezer",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:18:55.970542+00:00",
-      "updated_at": "2026-09-30T07:18:55.970542+00:00"
+      "profile_checked_at": "2026-10-10T22:52:33.581209+00:00",
+      "updated_at": "2026-10-10T22:52:33.581209+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:52:33.581209+00:00",
+      "attempt_count": 1
     },
     "tobey": {
       "name": "Tobey",
@@ -286332,31 +286907,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd14d3b8477.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd14d3b8477.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:19.479739+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd154e7b601.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd154e7b601.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:20.164040+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd15d824135.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/trans-siberian-orchestra-4fdd15d824135.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:20.553769+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/fu2qlv1617707108.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/fu2qlv1617707108.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:21.037702+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/widethumb/p40pr21635194641.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/widethumb/p40pr21635194641.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "wide"
+          "kind": "wide",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:21.378031+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -286371,12 +286961,16 @@
       "genre": "Progressive Rock",
       "style": "Classical",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Orchestra",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Trans-Siberian Orchestra",
-      "profile_checked_at": "2026-09-30T07:20:19.626906+00:00",
-      "updated_at": "2026-09-30T07:20:19.626906+00:00"
+      "profile_checked_at": "2026-10-10T22:51:18.964790+00:00",
+      "updated_at": "2026-10-10T22:51:18.964790+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "trent-reznor-and-atticus-ross": {
       "name": "Trent Reznor and Atticus Ross",
@@ -286835,8 +287429,18 @@
     "ultraista": {
       "name": "Ultraísta",
       "musicbrainz_id": "",
-      "images": [],
-      "image_count": 0,
+      "images": [
+        {
+          "url": "https://cdn-images.dzcdn.net/images/artist/99e518f526e94c13a9438fef986caa5d/1000x1000-000000-80-0-0.jpg",
+          "preview": "https://cdn-images.dzcdn.net/images/artist/99e518f526e94c13a9438fef986caa5d/1000x1000-000000-80-0-0.jpg",
+          "source": "Deezer",
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:10.246210+00:00",
+          "validation_method": "bytes"
+        }
+      ],
+      "image_count": 1,
       "bio_es": "",
       "bio_en": "Ultraísta is an English-American experimental rock trio, formed in 2008. The band consists of Atoms for Peace members Nigel Godrich and Joey Waronker, alongside Laura Bettinson. The band's self-titled debut album was released on 2 October 2012. The band's biography notes that it was \"conceived from a love of afrobeat, electronica, art and inspired by tequila\".",
       "official_url": "",
@@ -286848,12 +287452,16 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ultra%C3%ADsta",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "Deezer",
       "verification_title": "Ultraísta",
-      "profile_checked_at": "2026-09-30T07:21:31.291488+00:00",
-      "updated_at": "2026-09-30T07:21:31.291488+00:00"
+      "profile_checked_at": "2026-10-10T22:52:09.910288+00:00",
+      "updated_at": "2026-10-10T22:52:09.910288+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "un-muerto-mas": {
       "name": "un muerto mas",
@@ -287189,7 +287797,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/qtxwuq1533767556.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/qtxwuq1533767556.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:07.858510+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -287204,12 +287815,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:22:19.453694+00:00",
-      "updated_at": "2026-09-30T07:22:19.453694+00:00"
+      "profile_checked_at": "2026-10-10T22:51:07.289206+00:00",
+      "updated_at": "2026-10-10T22:51:07.289206+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:07.289206+00:00",
+      "attempt_count": 1
     },
     "venus-grrrls": {
       "name": "VENUS GRRRLS",
@@ -287737,7 +288354,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/vtqqxv1551968232.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/vtqqxv1551968232.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:09.473236+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -287752,12 +288372,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:23:40.124012+00:00",
-      "updated_at": "2026-09-30T07:23:40.124012+00:00"
+      "profile_checked_at": "2026-10-10T22:51:08.866994+00:00",
+      "updated_at": "2026-10-10T22:51:08.866994+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:08.866994+00:00",
+      "attempt_count": 1
     },
     "webbed-wing": {
       "name": "Webbed Wing",
@@ -287945,31 +288571,46 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/k0de7t1761503537.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/k0de7t1761503537.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:14.849464+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/0isat61761503415.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/0isat61761503415.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:15.257651+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/fiwm2k1761503455.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/fiwm2k1761503455.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:15.667626+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/fanart/il076k1761503490.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/fanart/il076k1761503490.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "fanart"
+          "kind": "fanart",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:16.064378+00:00",
+          "validation_method": "bytes"
         },
         {
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/wqquus1366815307.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/wqquus1366815307.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:52:16.385913+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 5,
@@ -287984,12 +288625,16 @@
       "genre": "Rock",
       "style": "Rock/Pop",
       "country": "Long Island, New York (USA)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Wheatus",
+      "lastfm_url": "",
       "verified": true,
-      "verification_source": "Wikipedia",
+      "verification_source": "TheAudioDB",
       "verification_title": "Wheatus",
-      "profile_checked_at": "2026-09-30T07:24:24.439805+00:00",
-      "updated_at": "2026-09-30T07:24:24.439805+00:00"
+      "profile_checked_at": "2026-10-10T22:52:14.368456+00:00",
+      "updated_at": "2026-10-10T22:52:14.368456+00:00",
+      "profile_status": "complete",
+      "missing_fields": [],
+      "next_retry_at": "",
+      "attempt_count": 1
     },
     "whethan-saint-punk-grandson": {
       "name": "Whethan / Saint Punk / grandson",
@@ -288123,7 +288768,10 @@
           "url": "https://r2.theaudiodb.com/images/media/artist/thumb/fxc76w1781695726.jpg",
           "preview": "https://r2.theaudiodb.com/images/media/artist/thumb/fxc76w1781695726.jpg/medium",
           "source": "TheAudioDB",
-          "kind": "portrait"
+          "kind": "portrait",
+          "valid": true,
+          "validated_at": "2026-10-10T22:51:29.703131+00:00",
+          "validation_method": "bytes"
         }
       ],
       "image_count": 1,
@@ -288138,12 +288786,18 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": true,
       "verification_source": "TheAudioDB",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:24:44.710211+00:00",
-      "updated_at": "2026-09-30T07:24:44.710211+00:00"
+      "profile_checked_at": "2026-10-10T22:51:29.193020+00:00",
+      "updated_at": "2026-10-10T22:51:29.193020+00:00",
+      "profile_status": "partial",
+      "missing_fields": [
+        "bio"
+      ],
+      "next_retry_at": "2026-10-13T22:51:29.193020+00:00",
+      "attempt_count": 1
     },
     "wilmah": {
       "name": "Wilmah",
@@ -288745,12 +289399,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:26:03.660705+00:00",
-      "updated_at": "2026-09-30T07:26:03.660705+00:00"
+      "profile_checked_at": "2026-10-10T22:52:28.064100+00:00",
+      "updated_at": "2026-10-10T22:52:28.064100+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:28.064100+00:00",
+      "attempt_count": 1
     },
     "ytht": {
       "name": "ÿþT",
@@ -288768,12 +289429,19 @@
       "genre": "",
       "style": "",
       "country": "",
-      "wikipedia_url": "",
+      "lastfm_url": "",
       "verified": false,
       "verification_source": "",
       "verification_title": "",
-      "profile_checked_at": "2026-09-30T07:26:08.015061+00:00",
-      "updated_at": "2026-09-30T07:26:08.015061+00:00"
+      "profile_checked_at": "2026-10-10T22:52:32.229199+00:00",
+      "updated_at": "2026-10-10T22:52:32.229199+00:00",
+      "profile_status": "not_found",
+      "missing_fields": [
+        "image",
+        "bio"
+      ],
+      "next_retry_at": "2026-10-24T22:52:32.229199+00:00",
+      "attempt_count": 1
     },
     "years": {
       "name": "Years",
