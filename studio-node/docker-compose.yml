@@ -1,0 +1,60 @@
+services:
+  vault:
+    build: ./vault
+    restart: unless-stopped
+    environment:
+      TELEGRAM_API_ID: ${TELEGRAM_API_ID}
+      TELEGRAM_API_HASH: ${TELEGRAM_API_HASH}
+      TELEGRAM_SESSION: ${TELEGRAM_SESSION}
+      TELEGRAM_VAULT_CHAT_ID: ${TELEGRAM_VAULT_CHAT_ID}
+      TELEGRAM_VAULT_TOKEN: ${TELEGRAM_VAULT_TOKEN}
+    expose:
+      - "8765"
+
+  api:
+    build: ./api
+    restart: unless-stopped
+    environment:
+      LOUDER_API_TOKEN: ${LOUDER_API_TOKEN}
+      LOUDER_INTERNAL_KEY: ${LOUDER_INTERNAL_KEY}
+      LOUDER_CORS_ORIGIN: ${LOUDER_CORS_ORIGIN:-*}
+      LIQUIDSOAP_HOST: liquidsoap
+      LIQUIDSOAP_PORT: 1234
+      VOICE_HARBOR_HOST: liquidsoap
+      VOICE_HARBOR_PORT: 8005
+      VOICE_HARBOR_PASSWORD: ${VOICE_HARBOR_PASSWORD}
+      TELEGRAM_VAULT_BASE_URL: http://vault:8765
+      TELEGRAM_VAULT_TOKEN: ${TELEGRAM_VAULT_TOKEN}
+      YESSTREAMING_STATUS_URL: ${YESSTREAMING_STATUS_URL:-}
+      EMERGENCY_URI: ${EMERGENCY_URI:-}
+    volumes:
+      - louder_data:/data
+    ports:
+      - "8787:8787"
+    depends_on:
+      - vault
+
+  liquidsoap:
+    build: ./liquidsoap
+    restart: unless-stopped
+    environment:
+      LOUDER_NEXT_URL: http://api:8787/internal/next?key=${LOUDER_INTERNAL_KEY}
+      LOUDER_HISTORY_URL: http://api:8787/internal/history?key=${LOUDER_INTERNAL_KEY}
+      YESSTREAMING_HOST: ${YESSTREAMING_HOST}
+      YESSTREAMING_PORT: ${YESSTREAMING_PORT}
+      YESSTREAMING_MOUNT: ${YESSTREAMING_MOUNT}
+      YESSTREAMING_USER: ${YESSTREAMING_USER:-source}
+      YESSTREAMING_PASSWORD: ${YESSTREAMING_PASSWORD}
+      VOICE_HARBOR_PASSWORD: ${VOICE_HARBOR_PASSWORD}
+    volumes:
+      - louder_data:/data
+      - ./liquidsoap/radio.liq:/radio.liq:ro
+    command: ["/radio.liq"]
+    expose:
+      - "1234"
+      - "8005"
+    depends_on:
+      - api
+
+volumes:
+  louder_data:
