@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-10T20:18:37.752805+00:00",
+  "generated_at": "2026-10-10T23:48:31.931472+00:00",
   "source_updates": {
-    "artists": "2026-10-10T20:18:33.147829Z",
-    "galleries": "2026-10-10T19:24:37.009779+00:00",
-    "album_art": "2026-10-10T20:02:44.805590+00:00"
+    "artists": "2026-10-10T23:48:25.927010Z",
+    "galleries": "2026-10-10T22:52:54.038517+00:00",
+    "album_art": "2026-10-10T23:31:47.026735+00:00"
   },
   "catalog": {
     "raw_artists": 8039,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1319
+      "yesstreaming_live": 1320
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-10T20:18:33.147829Z"
+      "merged_at": "2026-10-10T23:48:25.927010Z"
     }
   },
   "profile_enrichment": {
@@ -47,23 +47,23 @@
     "real_profile_missing": 3537,
     "real_profile_complete_pct": 55.31,
     "profile_status": {
-      "complete": 4181,
-      "partial": 2462,
-      "not_found": 676,
-      "legacy": 596
+      "complete": 4180,
+      "partial": 2482,
+      "not_found": 690,
+      "legacy": 563
     },
-    "missing_validated_profile_image": 979,
+    "missing_validated_profile_image": 977,
     "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4350,
     "core_complete_pct": 54.96,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6938,
-    "effective_image_pct": 87.66,
+    "effective_image": 6940,
+    "effective_image_pct": 87.68,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5293,
-    "missing_image": 977,
+    "image_gallery_fallback": 5295,
+    "missing_image": 975,
     "effective_bio": 4459,
     "effective_bio_pct": 56.34,
     "bio_direct_artist": 1026,
@@ -72,21 +72,21 @@
     "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.36,
-    "gallery_with_images": 6936,
+    "gallery_with_images": 6938,
     "with_social": 4794,
-    "with_genre": 3905,
+    "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
     "total": 18165,
-    "with_effective_artwork": 13430,
-    "with_effective_artwork_pct": 73.93,
-    "missing_artwork": 4735,
+    "with_effective_artwork": 13434,
+    "with_effective_artwork_pct": 73.96,
+    "missing_artwork": 4731,
     "grouped_as_otras": 5875,
     "with_first_and_last_dates": 17701,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10538,
-    "album_art_cache_missed": 4373
+    "album_art_cache_found": 10541,
+    "album_art_cache_missed": 4370
   },
   "focus": {
     "boylife": {
@@ -4655,9 +4655,9 @@
     {
       "name": "Nick Murphy / Chet Faker/BANKS",
       "slug": "nick-murphy-chet-faker-banks",
-      "plays": 28,
+      "plays": 29,
       "first_played": "25 jul 2022",
-      "last_played": "7 oct 2026 · 21:03",
+      "last_played": "10 oct 2026 · 15:22",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
