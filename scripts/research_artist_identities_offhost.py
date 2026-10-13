@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+"""Louder artists: lightweight OFF-HOST identity research. Never writes to WordPress."""
+import json, os, re, time, math
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data" / "artists.json"
+OUT = ROOT / "artifacts" / "artist-review"
+OUT.mkdir(parents=True, exist_ok=True)
+
+def names_from(data):
+    if isinstance(data, list):
+        for row in data:
+            if isinstance(row, str): yield row
+            elif isinstance(row, dict):
+                for field in ("name", "artist", "artist_name", "title"):
+                    if isinstance(row.get(field), str) and row[field].strip():
+                        yield row[field]; break
+    elif isinstance(data, dict):
+        for key in ("artists", "items", "rows", "data"):
+            if isinstance(data.get(key), (list, dict)):
+                yield from names_from(data[key]); return
+        for key, row in data.items():
+            if isinstance(row, dict):
+                yield row.get("name") or row.get("artist") or row.get("artist_name") or key
+
+def normalize(s):
+    return re.sub(r"\s+", " ", str(s).strip()).casefold()
+
+def lookup(name):
+    url = "https://musicbrainz.org/ws/2/artist/?" + urlencode({"query": 'artist:"' + name.replace('"', "") + '"', "fmt": "json", "limit": 8})
+    req = Request(url, headers={"User-Agent": "Louder-ArtistResearch/1.0 (https://loudermx.com)", "Accept": "application/json"})
+    with urlopen(req, timeout=12) as response:
+        artists = json.load(response).get("artists", [])
+    exact = [r for r in artists if normalize(r.get("name", "")) == normalize(name)]
+    if len(exact) != 1:
+        return {"name": name, "status": "manual_review", "reason": "ambiguous_or_missing", "matches": len(exact)}
+    match = exact[0]
+    return {"name": name, "status": "identity_candidate_only", "mbid": match.get("id"), "type": match.get("type", ""),
+            "country": match.get("country", ""), "disambiguation": match.get("disambiguation", ""),
+            "genres": [g.get("name") for g in match.get("genres", []) if g.get("name")],
+            "source": "https://musicbrainz.org/artist/" + str(match.get("id", ""))}
+
+def main():
+    data = json.loads(DATA.read_text(encoding="utf-8"))
+    names = list(dict.fromkeys(x.strip() for x in names_from(data) if isinstance(x, str) and x.strip()))
+    if not names: raise SystemExit("No artist names found; no changes published.")
+    batch = max(1, min(25, int(os.environ.get("BATCH_SIZE", "20"))))
+    slot = int(time.time() // 3600) % math.ceil(len(names) / batch)
+    selected = names[slot * batch:(slot + 1) * batch]
+    out = {"generated_at": datetime.now(timezone.utc).isoformat(), "source": "GitHub Actions; WordPress untouched",
+           "batch": slot, "catalog_size": len(names), "records": []}
+    for name in selected:
+        try: out["records"].append(lookup(name))
+        except Exception as exc:
+            out["records"].append({"name": name, "status": "retry", "error": str(exc)[:180]})
+        time.sleep(1.15)  # MusicBrainz max 1 request/sec
+    target = OUT / "identity-candidates.json"
+    target.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    counts = {s: sum(row["status"] == s for row in out["records"]) for s in ("identity_candidate_only", "manual_review", "retry")}
+    print("No WordPress writes. Candidate identities require editorial verification.", counts)
+    with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a", encoding="utf-8") as summary:
+        summary.write(f"### Louder: revisión externa de identidades\nProcesados: {len(selected)} / {len(names)}. Candidatos: {counts['identity_candidate_only']}; revisión: {counts['manual_review']}; reintentos: {counts['retry']}. Ninguna publicación automática.\n")
+
+if __name__ == "__main__": main()
