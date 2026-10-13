@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Louder artists: lightweight OFF-HOST identity research. Never writes to WordPress."""
-import json, os, re, time, math
+import json, os, re, time, math, hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
@@ -47,6 +47,8 @@ def lookup(name):
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     names = list(dict.fromkeys(x.strip() for x in names_from(data) if isinstance(x, str) and x.strip()))
+    # Canonical alphabetical order makes each hourly slot deterministic across runs.
+    names.sort(key=normalize)
     if not names: raise SystemExit("No artist names found; no changes published.")
     batch = max(1, min(25, int(os.environ.get("BATCH_SIZE", "20"))))
     slot = int(time.time() // 3600) % math.ceil(len(names) / batch)
@@ -60,8 +62,12 @@ def main():
         time.sleep(1.15)  # MusicBrainz max 1 request/sec
     target = OUT / "identity-candidates.json"
     target.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    if not out["records"]:
+        raise SystemExit("Empty batch: inspect catalog format")
     counts = {s: sum(row["status"] == s for row in out["records"]) for s in ("identity_candidate_only", "manual_review", "retry")}
     print("No WordPress writes. Candidate identities require editorial verification.", counts)
+    if counts["retry"] == len(selected):
+        raise SystemExit("All MusicBrainz requests failed; report retained for inspection")
     with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a", encoding="utf-8") as summary:
         summary.write(f"### Louder: revisión externa de identidades\nProcesados: {len(selected)} / {len(names)}. Candidatos: {counts['identity_candidate_only']}; revisión: {counts['manual_review']}; reintentos: {counts['retry']}. Ninguna publicación automática.\n")
 
