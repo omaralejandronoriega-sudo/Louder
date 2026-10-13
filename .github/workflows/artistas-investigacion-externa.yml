@@ -1,0 +1,39 @@
+name: Louder Artistas - investigación externa segura
+
+on:
+  schedule:
+    - cron: "13 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: louder-artists-offhost-research
+  cancel-in-progress: false
+
+jobs:
+  review-identities:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate script
+        run: python -m py_compile scripts/research_artist_identities_offhost.py
+      - name: Research next group entirely on GitHub
+        env:
+          BATCH_SIZE: "20"
+        run: python scripts/research_artist_identities_offhost.py
+      - name: Keep candidate report for editorial review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: louder-artistas-revision-${{ github.run_id }}
+          path: artifacts/artist-review/
+          if-no-files-found: warn
+          retention-days: 14
