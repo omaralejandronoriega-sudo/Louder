@@ -31,19 +31,41 @@ def names_from(data):
 def normalize(s):
     return re.sub(r"\s+", " ", str(s).strip()).casefold()
 
+def get_json(url):
+    req = Request(url, headers={"User-Agent": "Louder-ArtistResearch/1.1 (https://loudermx.com)", "Accept": "application/json"})
+    with urlopen(req, timeout=12) as response:
+        return json.load(response)
+
 def lookup(name):
     url = "https://musicbrainz.org/ws/2/artist/?" + urlencode({"query": 'artist:"' + name.replace('"', "") + '"', "fmt": "json", "limit": 8})
-    req = Request(url, headers={"User-Agent": "Louder-ArtistResearch/1.0 (https://loudermx.com)", "Accept": "application/json"})
-    with urlopen(req, timeout=12) as response:
-        artists = json.load(response).get("artists", [])
+    artists = get_json(url).get("artists", [])
     exact = [r for r in artists if normalize(r.get("name", "")) == normalize(name)]
     if len(exact) != 1:
         return {"name": name, "status": "manual_review", "reason": "ambiguous_or_missing", "matches": len(exact)}
     match = exact[0]
-    return {"name": name, "status": "identity_candidate_only", "mbid": match.get("id"), "type": match.get("type", ""),
-            "country": match.get("country", ""), "disambiguation": match.get("disambiguation", ""),
-            "genres": [g.get("name") for g in match.get("genres", []) if g.get("name")],
-            "source": "https://musicbrainz.org/artist/" + str(match.get("id", ""))}
+    mbid = str(match.get("id") or "")
+    result = {"name": name, "status": "identity_candidate_only", "mbid": mbid, "type": match.get("type", ""),
+              "country": match.get("country", ""), "disambiguation": match.get("disambiguation", ""),
+              "genres": [g.get("name") for g in match.get("genres", []) if g.get("name")],
+              "source": "https://musicbrainz.org/artist/" + mbid}
+    # Information remains a review candidate, never an automatically verified biography.
+    time.sleep(1.1)
+    try:
+        detail = get_json("https://musicbrainz.org/ws/2/artist/" + mbid + "?inc=url-rels+genres&fmt=json")
+        relations = detail.get("relations", [])
+        links = []
+        for rel in relations:
+            resource = str((rel.get("url") or {}).get("resource") or "")
+            if resource.startswith("https://") and any(host in resource for host in (
+                "wikipedia.org/wiki/", "wikidata.org/wiki/", "bandcamp.com", "instagram.com/",
+                "facebook.com/", "youtube.com/", "soundcloud.com/", "musicbrainz.org/")):
+                links.append({"type": rel.get("type", ""), "url": resource})
+        result["evidence_links"] = links[:20]
+        result["genres"] = result["genres"] or [g.get("name") for g in detail.get("genres", []) if g.get("name")]
+        result["life_span"] = detail.get("life-span", {})
+    except Exception as exc:
+        result["details_warning"] = str(exc)[:160]
+    return result
 
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
