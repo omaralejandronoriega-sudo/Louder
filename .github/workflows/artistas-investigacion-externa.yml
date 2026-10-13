@@ -25,6 +25,8 @@ jobs:
           python-version: "3.12"
       - name: Validate script
         run: python -m py_compile scripts/research_artist_identities_offhost.py
+      - name: Validate catalog parsing without network
+        run: python -m unittest discover -s tests -p 'test_offhost_artist_research.py'
       - name: Research next group entirely on GitHub
         env:
           BATCH_SIZE: "20"
