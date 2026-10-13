@@ -77,7 +77,7 @@ def main():
             previous[key] = row
     STATE.write_text(json.dumps({"cursor": (cursor + len(selected)) % len(names),
                                   "total_catalog": len(names), "updated_at": out["generated_at"],
-                                  "artists": previous}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+                                  "artists": previous}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if not out["records"]:
         raise SystemExit("Empty batch: inspect catalog format")
     counts = {s: sum(row["status"] == s for row in out["records"]) for s in ("identity_candidate_only", "manual_review", "retry")}
