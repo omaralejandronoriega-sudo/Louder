@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Louder artists: lightweight OFF-HOST identity research. Never writes to WordPress."""
-import json, os, re, time, math, hashlib
+import json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
@@ -8,6 +8,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "artists.json"
+STATE = ROOT / "data" / "identity_research_progress.json"
 OUT = ROOT / "artifacts" / "artist-review"
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -51,8 +52,15 @@ def main():
     names.sort(key=normalize)
     if not names: raise SystemExit("No artist names found; no changes published.")
     batch = max(1, min(25, int(os.environ.get("BATCH_SIZE", "20"))))
-    slot = int(time.time() // 3600) % math.ceil(len(names) / batch)
-    selected = names[slot * batch:(slot + 1) * batch]
+    try:
+        state = json.loads(STATE.read_text(encoding="utf-8"))
+        if not isinstance(state, dict): state = {}
+    except (FileNotFoundError, ValueError):
+        state = {}
+    previous = state.get("artists") if isinstance(state.get("artists"), dict) else {}
+    cursor = max(0, int(state.get("cursor", 0))) % len(names)
+    slot = cursor // batch
+    selected = [names[(cursor + i) % len(names)] for i in range(min(batch, len(names))]
     out = {"generated_at": datetime.now(timezone.utc).isoformat(), "source": "GitHub Actions; WordPress untouched",
            "batch": slot, "catalog_size": len(names), "records": []}
     for name in selected:
@@ -62,6 +70,14 @@ def main():
         time.sleep(1.15)  # MusicBrainz max 1 request/sec
     target = OUT / "identity-candidates.json"
     target.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    for row in out["records"]:
+        key = normalize(row["name"])
+        old = previous.get(key, {})
+        if row["status"] != "retry" or not old:
+            previous[key] = row
+    STATE.write_text(json.dumps({"cursor": (cursor + len(selected)) % len(names),
+                                  "total_catalog": len(names), "updated_at": out["generated_at"],
+                                  "artists": previous}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
     if not out["records"]:
         raise SystemExit("Empty batch: inspect catalog format")
     counts = {s: sum(row["status"] == s for row in out["records"]) for s in ("identity_candidate_only", "manual_review", "retry")}
