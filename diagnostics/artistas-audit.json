@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-12T23:12:26.614639+00:00",
+  "generated_at": "2026-10-13T07:04:12.736285+00:00",
   "source_updates": {
-    "artists": "2026-10-12T23:12:20.662950Z",
-    "galleries": "2026-10-12T19:02:57.505174+00:00",
-    "album_art": "2026-10-12T19:47:22.679135+00:00"
+    "artists": "2026-10-13T07:04:06.664779Z",
+    "galleries": "2026-10-13T01:23:50.381258+00:00",
+    "album_art": "2026-10-13T01:59:47.402805+00:00"
   },
   "catalog": {
     "raw_artists": 8041,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1350
+      "yesstreaming_live": 1351
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-12T23:12:20.662950Z"
+      "merged_at": "2026-10-13T07:04:06.664779Z"
     }
   },
   "profile_enrichment": {
@@ -73,17 +73,17 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.33,
     "gallery_with_images": 6939,
-    "with_social": 4793,
-    "with_genre": 3907,
+    "with_social": 4792,
+    "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18174,
+    "total": 18175,
     "with_effective_artwork": 13474,
-    "with_effective_artwork_pct": 74.14,
-    "missing_artwork": 4700,
-    "grouped_as_otras": 5884,
-    "with_first_and_last_dates": 17725,
+    "with_effective_artwork_pct": 74.13,
+    "missing_artwork": 4701,
+    "grouped_as_otras": 5885,
+    "with_first_and_last_dates": 17731,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10574,
     "album_art_cache_missed": 4337
@@ -92,9 +92,9 @@
     "boylife": {
       "name": "boylife",
       "slug": "boylife",
-      "plays": 11,
+      "plays": 12,
       "first_played": "16 mar 2025",
-      "last_played": "9 oct 2026 · 21:09",
+      "last_played": "12 oct 2026 · 22:22",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -262,9 +262,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 126,
+      "plays": 127,
       "first_played": "21 nov 2012",
-      "last_played": "10 oct 2026 · 06:50",
+      "last_played": "12 oct 2026 · 22:09",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -4548,6 +4548,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 31,
+      "first_played": "26 jul 2022",
+      "last_played": "12 oct 2026 · 21:42",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Melero",
       "slug": "melero",
       "plays": 31,
@@ -4598,44 +4636,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 30,
-      "first_played": "26 jul 2022",
-      "last_played": "11 oct 2026 · 21:53",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6055,6 +6055,44 @@
       "profile_complete": false
     },
     {
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
+      "plays": 17,
+      "first_played": "28 feb 2025",
+      "last_played": "12 oct 2026 · 22:36",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lily Allen Media Center",
       "slug": "lily-allen-media-center",
       "plays": 17,
@@ -6276,44 +6314,6 @@
       "plays": 16,
       "first_played": "4 mar 2025",
       "last_played": "10 oct 2026 · 09:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 16,
-      "first_played": "28 feb 2025",
-      "last_played": "7 oct 2026 · 23:07",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -7321,9 +7321,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 126,
+      "plays": 127,
       "first_played": "21 nov 2012",
-      "last_played": "10 oct 2026 · 06:50",
+      "last_played": "12 oct 2026 · 22:09",
       "catalog_status": "",
       "sources": [
         "wp_db",

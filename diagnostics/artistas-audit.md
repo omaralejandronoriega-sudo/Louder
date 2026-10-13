@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-10-12T23:12:26.614639+00:00
+Generada: 2026-10-13T07:04:12.736285+00:00
 
 ## Resumen
 
@@ -19,13 +19,13 @@ Generada: 2026-10-12T23:12:26.614639+00:00
 - Sin biografía: 3457
 - Galerías ya revisadas: 7864/7917 (99.33%)
 - Artistas con canciones: 7911/7917
-- Canciones totales: 18174
-- Canciones con portada efectiva: 13474/18174 (74.14%)
-- Canciones sin portada: 4700
-- Canciones agrupadas en Otras: 5884
+- Canciones totales: 18175
+- Canciones con portada efectiva: 13474/18175 (74.13%)
+- Canciones sin portada: 4701
+- Canciones agrupadas en Otras: 5885
 
 ## Casos solicitados
 
-- boylife: plays=11, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
+- boylife: plays=12, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
 - Monsune: plays=14, tracks=1, imagen=sí, bio=sí, portadas faltantes=0, Otras=1, faltantes core=ninguno.
 - monsun: no localizado entre perfiles públicos normalizados.
