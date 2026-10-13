@@ -60,7 +60,7 @@ def main():
     previous = state.get("artists") if isinstance(state.get("artists"), dict) else {}
     cursor = max(0, int(state.get("cursor", 0))) % len(names)
     slot = cursor // batch
-    selected = [names[(cursor + i) % len(names)] for i in range(min(batch, len(names))]
+    selected = [names[(cursor + i) % len(names)] for i in range(min(batch, len(names)))]
     out = {"generated_at": datetime.now(timezone.utc).isoformat(), "source": "GitHub Actions; WordPress untouched",
            "batch": slot, "catalog_size": len(names), "records": []}
     for name in selected:
