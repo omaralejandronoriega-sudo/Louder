@@ -1,7 +1,7 @@
 {
-  "cursor": 60,
+  "cursor": 80,
   "total_catalog": 7988,
-  "updated_at": "2026-10-14T10:09:33.006244+00:00",
+  "updated_at": "2026-10-14T15:07:54.075039+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -466,6 +466,181 @@
     },
     "03 slowdance": {
       "name": "03 Slowdance",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "030": {
+      "name": "030",
+      "status": "identity_candidate_only",
+      "mbid": "180aaf80-b4d1-466e-a860-9cfbae7f5143",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/180aaf80-b4d1-466e-a860-9cfbae7f5143",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "031": {
+      "name": "031",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "032": {
+      "name": "032",
+      "status": "identity_candidate_only",
+      "mbid": "50c6c9af-d719-4da9-9ca0-75015ce16ef5",
+      "type": "Group",
+      "country": "BG",
+      "disambiguation": "Bulgarian pop-folk group",
+      "genres": [
+        "chalga"
+      ],
+      "source": "https://musicbrainz.org/artist/50c6c9af-d719-4da9-9ca0-75015ce16ef5",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "033": {
+      "name": "033",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "035": {
+      "name": "035",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "036": {
+      "name": "036",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "039": {
+      "name": "039",
+      "status": "identity_candidate_only",
+      "mbid": "e832f84d-024e-451b-977e-a9d36491a5de",
+      "type": "",
+      "country": "",
+      "disambiguation": "worked with \"Compadres Recerdos\"",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e832f84d-024e-451b-977e-a9d36491a5de",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "04 magic wands": {
+      "name": "04 Magic Wands",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "04 panthers": {
+      "name": "04 Panthers",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "04 real estate": {
+      "name": "04 Real Estate",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "04 swimwear": {
+      "name": "04 Swimwear",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "04 van she": {
+      "name": "04 Van She",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "040": {
+      "name": "040",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "041": {
+      "name": "041",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "042": {
+      "name": "042",
+      "status": "identity_candidate_only",
+      "mbid": "2afb9483-d8ac-4c76-95e5-f5804e9908b5",
+      "type": "Group",
+      "country": "FR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/2afb9483-d8ac-4c76-95e5-f5804e9908b5",
+      "evidence_links": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCC61Lr1rJTOGYUcny626ZPQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "044": {
+      "name": "044",
+      "status": "identity_candidate_only",
+      "mbid": "4ab9984a-935a-41a9-8e2d-da100d0c511d",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4ab9984a-935a-41a9-8e2d-da100d0c511d",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "046": {
+      "name": "046",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "047": {
+      "name": "047",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "048": {
+      "name": "048",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "05 amanda mair": {
+      "name": "05 Amanda Mair",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
