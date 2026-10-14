@@ -1,7 +1,7 @@
 {
-  "cursor": 40,
+  "cursor": 60,
   "total_catalog": 7988,
-  "updated_at": "2026-10-14T04:48:59.158045+00:00",
+  "updated_at": "2026-10-14T10:09:33.006244+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -319,6 +319,156 @@
         "ended": false,
         "begin": null
       }
+    },
+    "013": {
+      "name": "013",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "014": {
+      "name": "014",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "015": {
+      "name": "015",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "016": {
+      "name": "016",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "017": {
+      "name": "017",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "018": {
+      "name": "018",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "019": {
+      "name": "019",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "01_3_doors_down_": {
+      "name": "01_3_Doors_Down_",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "02 meltones": {
+      "name": "02 Meltones",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "020": {
+      "name": "020",
+      "status": "identity_candidate_only",
+      "mbid": "b61489ef-408b-4ace-a7dd-f01b8df6dae0",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b61489ef-408b-4ace-a7dd-f01b8df6dae0",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2001"
+      }
+    },
+    "021": {
+      "name": "021",
+      "status": "identity_candidate_only",
+      "mbid": "b548acf5-476e-4a81-9ff3-6dade20d2887",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "punk"
+      ],
+      "source": "https://musicbrainz.org/artist/b548acf5-476e-4a81-9ff3-6dade20d2887",
+      "evidence_links": [],
+      "life_span": {
+        "begin": "1980",
+        "ended": false,
+        "end": null
+      }
+    },
+    "022": {
+      "name": "022",
+      "status": "identity_candidate_only",
+      "mbid": "970e86dd-ea10-4765-8f72-412c2e208b18",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/970e86dd-ea10-4765-8f72-412c2e208b18",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "023": {
+      "name": "023",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "024": {
+      "name": "024",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "025": {
+      "name": "025",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "026": {
+      "name": "026",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "029": {
+      "name": "029",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "03 haim": {
+      "name": "03 Haim",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "03 panama": {
+      "name": "03 Panama",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "03 slowdance": {
+      "name": "03 Slowdance",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
     }
   }
 }
