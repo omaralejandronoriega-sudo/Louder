@@ -1,14 +1,14 @@
 # Revisión de identidad · Louder Artistas
 
-- Universo bruto: 8041
+- Universo bruto: 8043
 - Candidatos de alta confianza: 18
 - Candidatos para revisión: 75
 
 ## Alta confianza
 
-- Louder — internal_exact — 608 plays — Transmitting Live Live (0); Louder Radio (155)
+- Louder — internal_exact — 612 plays — Transmitting Live Live (0); Louder Radio (159)
 - The British Corner — internal_exact — 460 plays — www.louder.mx (241); EN VIVO!! (76); Louder Radio (48); Omar Noriega En Vivo (28)
-- Louder Radio — internal_exact — 375 plays — stream (0); Louder · La Única Alternativa (215)
+- Louder Radio — internal_exact — 377 plays — stream (0); Louder · La Única Alternativa (217)
 - ¡Mordaz! — internal_exact — 167 plays — Al Aire (62); Al aire 1 (52); Al aire 2 (49); @mxlouder (3)
 - Louder.mx — internal_exact — 26 plays — PLANETA ROCK 2 de OCTUBRE (0)
 - The British Corner www.louder.mx — program_name — 8 plays — Louder Radio (8)
