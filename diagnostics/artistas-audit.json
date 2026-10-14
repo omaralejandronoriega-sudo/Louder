@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-14T07:59:53.332410+00:00",
+  "generated_at": "2026-10-14T14:00:09.583394+00:00",
   "source_updates": {
-    "artists": "2026-10-14T07:59:49.406686Z",
-    "galleries": "2026-10-14T04:55:48.742477+00:00",
-    "album_art": "2026-10-14T06:41:30.557036+00:00"
+    "artists": "2026-10-14T14:00:05.638440Z",
+    "galleries": "2026-10-14T10:00:12.738929+00:00",
+    "album_art": "2026-10-14T12:51:10.229807+00:00"
   },
   "catalog": {
     "raw_artists": 8043,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1369
+      "yesstreaming_live": 1373
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-14T07:59:49.406686Z"
+      "merged_at": "2026-10-14T14:00:05.638440Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.12,
     "missing_artwork": 4705,
     "grouped_as_otras": 5891,
-    "with_first_and_last_dates": 17739,
+    "with_first_and_last_dates": 17740,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10576,
     "album_art_cache_missed": 4335
@@ -4445,6 +4445,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 32,
+      "first_played": "26 jul 2022",
+      "last_played": "14 oct 2026 · 02:31",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "ME and LP",
       "slug": "me-and-lp",
       "plays": 32,
@@ -4582,44 +4620,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 31,
-      "first_played": "26 jul 2022",
-      "last_played": "12 oct 2026 · 21:42",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
