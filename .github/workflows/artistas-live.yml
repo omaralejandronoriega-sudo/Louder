@@ -46,6 +46,7 @@ jobs:
           python scripts/build_artists.py
           python scripts/build_radar_2026.py
           python scripts/build_control.py
+          python scripts/build_artist_progress_panel.py
 
       - name: Validate Louder Control PWA
         shell: bash
