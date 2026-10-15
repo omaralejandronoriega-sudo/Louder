@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-15T05:08:02.590551+00:00",
+  "generated_at": "2026-10-15T12:04:00.161925+00:00",
   "source_updates": {
-    "artists": "2026-10-15T05:07:56.617456Z",
-    "galleries": "2026-10-15T00:48:55.077952+00:00",
-    "album_art": "2026-10-15T04:31:24.591812+00:00"
+    "artists": "2026-10-15T12:03:55.434086Z",
+    "galleries": "2026-10-15T10:15:46.395709+00:00",
+    "album_art": "2026-10-15T09:24:34.509681+00:00"
   },
   "catalog": {
     "raw_artists": 8043,
     "public_artists": 7919,
     "aliases_normalized": 7997,
-    "with_history": 7863,
+    "with_history": 7864,
     "with_tracks": 7913,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1376
+      "yesstreaming_live": 1378
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-15T05:07:56.617456Z"
+      "merged_at": "2026-10-15T12:03:55.434086Z"
     }
   },
   "profile_enrichment": {
@@ -56,8 +56,8 @@
     "missing_profile_bio": 3458,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4355,
-    "core_complete_pct": 54.99,
+    "core_complete": 4356,
+    "core_complete_pct": 55.01,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 6942,
     "effective_image_pct": 87.66,
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.11,
     "missing_artwork": 4709,
     "grouped_as_otras": 5895,
-    "with_first_and_last_dates": 17747,
+    "with_first_and_last_dates": 17749,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10576,
     "album_art_cache_missed": 4335
@@ -2123,6 +2123,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Cave & the Bad Seeds",
+      "slug": "nick-cave-the-bad-seeds",
+      "plays": 42,
+      "first_played": "24 ene 2016",
+      "last_played": "14 oct 2026 · 23:17",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pepper",
       "slug": "pepper",
       "plays": 42,
@@ -2143,43 +2180,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Cave & the Bad Seeds",
-      "slug": "nick-cave-the-bad-seeds",
-      "plays": 41,
-      "first_played": "24 ene 2016",
-      "last_played": "11 oct 2026 · 05:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 5,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
       "has_social": true,
       "has_genre": true,
       "related": 0,
@@ -6056,6 +6056,44 @@
       "profile_complete": false
     },
     {
+      "name": "Bombay Bicycle Club/Matilda Mann",
+      "slug": "bombay-bicycle-club-matilda-mann",
+      "plays": 17,
+      "first_played": "28 feb 2025",
+      "last_played": "15 oct 2026 · 05:29",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Iron & Wine/Fiona Apple",
       "slug": "iron-wine-fiona-apple",
       "plays": 17,
@@ -6272,44 +6310,6 @@
       "profile_complete": false
     },
     {
-      "name": "Bombay Bicycle Club/Matilda Mann",
-      "slug": "bombay-bicycle-club-matilda-mann",
-      "plays": 16,
-      "first_played": "28 feb 2025",
-      "last_played": "6 oct 2026 · 13:00",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Dent May/Jordana",
       "slug": "dent-may-jordana",
       "plays": 16,
@@ -6479,6 +6479,43 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
+      "plays": 15,
+      "first_played": "6 mar 2025",
+      "last_played": "15 oct 2026 · 00:59",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6780,43 +6817,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 14,
-      "first_played": "6 mar 2025",
-      "last_played": "6 oct 2026 · 10:49",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Mizter Koffy",
       "slug": "mizter-koffy",
       "plays": 14,
@@ -6918,6 +6918,41 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 14,
+      "first_played": "23 sep 2026",
+      "last_played": "14 oct 2026 · 23:14",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7163,42 +7198,6 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Inspired And The Sleep",
-      "slug": "inspired-and-the-sleep",
-      "plays": 13,
-      "first_played": "20 mar 2013",
-      "last_played": "7 feb 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -9116,6 +9115,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Cave & the Bad Seeds",
+      "slug": "nick-cave-the-bad-seeds",
+      "plays": 42,
+      "first_played": "24 ene 2016",
+      "last_played": "14 oct 2026 · 23:17",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 5,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pepper",
       "slug": "pepper",
       "plays": 42,
@@ -9136,43 +9172,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Cave & the Bad Seeds",
-      "slug": "nick-cave-the-bad-seeds",
-      "plays": 41,
-      "first_played": "24 ene 2016",
-      "last_played": "11 oct 2026 · 05:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 5,
-      "tracks_with_artwork": 5,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
       "has_social": true,
       "has_genre": true,
       "related": 0,
