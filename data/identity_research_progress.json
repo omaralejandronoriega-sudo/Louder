@@ -1,7 +1,7 @@
 {
-  "cursor": 140,
+  "cursor": 160,
   "total_catalog": 7988,
-  "updated_at": "2026-10-15T00:52:09.104764+00:00",
+  "updated_at": "2026-10-15T11:23:25.615532+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -1135,6 +1135,153 @@
     },
     "11 roses": {
       "name": "11 Roses",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "11 tv girl": {
+      "name": "11 Tv Girl",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "110": {
+      "name": "110",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "113": {
+      "name": "113",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "118": {
+      "name": "118",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "12 alpine": {
+      "name": "12 Alpine",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "12 anthem facility": {
+      "name": "12 Anthem Facility",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "12 black city lights": {
+      "name": "12 Black City Lights",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "121": {
+      "name": "121",
+      "status": "identity_candidate_only",
+      "mbid": "e2c5e445-ba05-407a-8263-4eecf187e5bd",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e2c5e445-ba05-407a-8263-4eecf187e5bd",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "123": {
+      "name": "123",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "126": {
+      "name": "126",
+      "status": "identity_candidate_only",
+      "mbid": "f87572bd-381e-4ee1-84d9-8f207f534988",
+      "type": "Group",
+      "country": "NO",
+      "disambiguation": "Pop band from Norway",
+      "genres": [
+        "pop rock",
+        "psychedelic pop"
+      ],
+      "source": "https://musicbrainz.org/artist/f87572bd-381e-4ee1-84d9-8f207f534988",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17525707"
+        }
+      ],
+      "life_span": {
+        "begin": "1964",
+        "end": "1967-12-23",
+        "ended": true
+      }
+    },
+    "13": {
+      "name": "13",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "13 darkness falls": {
+      "name": "13 Darkness Falls",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "13 little scream": {
+      "name": "13 Little Scream",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "13 picnic": {
+      "name": "13 Picnic",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "13 sleep over": {
+      "name": "13 Sleep Over",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "133": {
+      "name": "133",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "135": {
+      "name": "135",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "137": {
+      "name": "137",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "138": {
+      "name": "138",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "14 blue boats": {
+      "name": "14 Blue Boats",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
