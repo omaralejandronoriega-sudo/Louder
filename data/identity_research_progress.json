@@ -1,7 +1,7 @@
 {
-  "cursor": 280,
+  "cursor": 300,
   "total_catalog": 7988,
-  "updated_at": "2026-10-16T11:54:11.911785+00:00",
+  "updated_at": "2026-10-16T16:35:18.828200+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -3007,6 +3007,356 @@
       "life_span": {
         "ended": false,
         "begin": "1986-08-24",
+        "end": null
+      }
+    },
+    "abadabad": {
+      "name": "Abadabad",
+      "status": "identity_candidate_only",
+      "mbid": "18a3965a-5af0-4770-8643-e62efbefc3c2",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/18a3965a-5af0-4770-8643-e62efbefc3c2",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://abadabad.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Abadabad/154056194664888"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/abadabad"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "abay": {
+      "name": "Abay",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "abby christo": {
+      "name": "Abby Christo",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "abby sage": {
+      "name": "Abby Sage",
+      "status": "identity_candidate_only",
+      "mbid": "5fdf9304-c5c8-499c-959f-81482251e387",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5fdf9304-c5c8-499c-959f-81482251e387",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "abominables": {
+      "name": "Abominables",
+      "status": "identity_candidate_only",
+      "mbid": "e1561ac2-55db-4d7e-a11b-8e14a925111d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e1561ac2-55db-4d7e-a11b-8e14a925111d",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "absent elk": {
+      "name": "Absent Elk",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "absofacto": {
+      "name": "Absofacto",
+      "status": "identity_candidate_only",
+      "mbid": "085bbb68-d9c5-4183-8a2a-f9f7dd53d9f3",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "alternative pop",
+        "art pop",
+        "experimental",
+        "indie pop",
+        "indie rock",
+        "synth funk",
+        "trip hop"
+      ],
+      "source": "https://musicbrainz.org/artist/085bbb68-d9c5-4183-8a2a-f9f7dd53d9f3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/absofacto"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/absofacto/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/absofacto"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q84607011"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCXzV-iv6cbua5gTyv-vY3Tw"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "absofacto & 10k cities": {
+      "name": "Absofacto & 10k Cities",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "ac": {
+      "name": "AC",
+      "status": "identity_candidate_only",
+      "mbid": "778bbd1a-d8a2-4ef8-a0ef-6ab234f4ce61",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "blues",
+        "hip hop",
+        "soul",
+        "underground hip hop"
+      ],
+      "source": "https://musicbrainz.org/artist/778bbd1a-d8a2-4ef8-a0ef-6ab234f4ce61",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/iam.ATC.IDT"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/iam.atg_/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC4odwAm8-knnkVt_J_DFwJA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1996-03-04",
+        "end": null
+      }
+    },
+    "ac/dc": {
+      "name": "AC/DC",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "acbs": {
+      "name": "ACBs",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "accept": {
+      "name": "Accept",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "acceptance": {
+      "name": "Acceptance",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "acopia": {
+      "name": "Acopia",
+      "status": "identity_candidate_only",
+      "mbid": "e4513864-b6e8-431e-8b82-bfdb22714444",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e4513864-b6e8-431e-8b82-bfdb22714444",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "acre yawn": {
+      "name": "Acre Yawn",
+      "status": "identity_candidate_only",
+      "mbid": "0fd21df1-8d04-4b85-9330-e36713018a7a",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0fd21df1-8d04-4b85-9330-e36713018a7a",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "active child": {
+      "name": "Active Child",
+      "status": "identity_candidate_only",
+      "mbid": "979437d4-9514-4078-89cd-0b87907ddf86",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "ambient",
+        "chillwave",
+        "downtempo"
+      ],
+      "source": "https://musicbrainz.org/artist/979437d4-9514-4078-89cd-0b87907ddf86",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://activechild.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/168415536939"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/active_child/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/active-child"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2159646"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCVAjJ92jpqan51Xwtd1PfyA"
+        }
+      ],
+      "life_span": {
+        "begin": "1983-05-28",
+        "end": null,
+        "ended": false
+      }
+    },
+    "actor": {
+      "name": "Actor",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "actors": {
+      "name": "Actors",
+      "status": "identity_candidate_only",
+      "mbid": "230f2c85-8b1c-4e88-ab5d-0d015a4bbe16",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "Canadian post-punk new-wave",
+      "genres": [
+        "coldwave",
+        "dark wave",
+        "new wave",
+        "post-punk",
+        "synthwave"
+      ],
+      "source": "https://musicbrainz.org/artist/230f2c85-8b1c-4e88-ab5d-0d015a4bbe16",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://actors.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/actors1984"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/actorsmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/actors1984"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q110060791"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCaCBAtliMofjPZ9knY0jjmw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2012"
+      }
+    },
+    "ada oda": {
+      "name": "Ada Oda",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "adam freeland": {
+      "name": "Adam Freeland",
+      "status": "identity_candidate_only",
+      "mbid": "51af3ae9-3f39-4b2c-bec3-ded427708590",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "breakbeat",
+        "electronic",
+        "nu skool breaks"
+      ],
+      "source": "https://musicbrainz.org/artist/51af3ae9-3f39-4b2c-bec3-ded427708590",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://adamfreeland.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/adamfreeland"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/adamfreeland"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q349406"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1973-08-07",
         "end": null
       }
     }
