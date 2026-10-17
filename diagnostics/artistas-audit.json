@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T12:23:24.576835+00:00",
+  "generated_at": "2026-10-17T15:55:27.616541+00:00",
   "source_updates": {
-    "artists": "2026-10-17T12:23:20.002379Z",
-    "galleries": "2026-10-17T10:46:05.676970+00:00",
-    "album_art": "2026-10-17T09:18:16.810024+00:00"
+    "artists": "2026-10-17T15:55:21.829471Z",
+    "galleries": "2026-10-17T14:01:26.846923+00:00",
+    "album_art": "2026-10-17T13:11:01.361633+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1397
+      "yesstreaming_live": 1398
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-17T12:23:20.002379Z"
+      "merged_at": "2026-10-17T15:55:21.829471Z"
     }
   },
   "profile_enrichment": {
@@ -47,10 +47,10 @@
     "real_profile_missing": 3537,
     "real_profile_complete_pct": 55.34,
     "profile_status": {
-      "complete": 4167,
-      "partial": 2679,
-      "not_found": 770,
-      "legacy": 304
+      "complete": 4164,
+      "partial": 2718,
+      "not_found": 798,
+      "legacy": 240
     },
     "missing_validated_profile_image": 976,
     "missing_profile_bio": 3459,
@@ -123,9 +123,9 @@
     "monsune": {
       "name": "Monsune",
       "slug": "monsune",
-      "plays": 14,
+      "plays": 15,
       "first_played": "5 mar 2025",
-      "last_played": "10 oct 2026 · 02:23",
+      "last_played": "17 oct 2026 · 09:15",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -4981,6 +4981,43 @@
       "profile_complete": false
     },
     {
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
+      "plays": 25,
+      "first_played": "25 jul 2022",
+      "last_played": "17 oct 2026 · 06:33",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lo mejor del 2013",
       "slug": "lo-mejor-del-2013",
       "plays": 25,
@@ -5030,43 +5067,6 @@
       "tracks": 1,
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Flume/Nick Murphy / Chet Faker",
-      "slug": "flume-nick-murphy-chet-faker",
-      "plays": 24,
-      "first_played": "25 jul 2022",
-      "last_played": "15 oct 2026 · 20:55",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
