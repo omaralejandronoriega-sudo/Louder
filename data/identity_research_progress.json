@@ -1,7 +1,7 @@
 {
-  "cursor": 460,
+  "cursor": 480,
   "total_catalog": 7988,
-  "updated_at": "2026-10-17T18:49:53.703283+00:00",
+  "updated_at": "2026-10-17T21:26:14.972576+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -6059,6 +6059,486 @@
     },
     "amy shark / travis barker": {
       "name": "Amy Shark / Travis Barker",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "amy winehouse": {
+      "name": "Amy Winehouse",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "amyl and the sniffers": {
+      "name": "Amyl and The Sniffers",
+      "status": "identity_candidate_only",
+      "mbid": "0f74b263-65bf-4027-9708-45aadf40122d",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "Australian rock’n’roll/punk band",
+      "genres": [
+        "alternative rock",
+        "garage punk",
+        "garage rock",
+        "hardcore punk",
+        "punk",
+        "punk rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0f74b263-65bf-4027-9708-45aadf40122d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://amylandthesniffers.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/amylandthesniffers"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/amylandthesniffers/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q65040870"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCr7iv49zibCciRCzlFauotQ"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCErTnCDIYujpRgVV_rq29Ug"
+        }
+      ],
+      "life_span": {
+        "begin": "2016",
+        "end": null,
+        "ended": false
+      }
+    },
+    "an horse": {
+      "name": "An Horse",
+      "status": "identity_candidate_only",
+      "mbid": "462e8abc-a26b-4e6d-b909-75b8453fd03a",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "Australian band",
+      "genres": [
+        "indie pop"
+      ],
+      "source": "https://musicbrainz.org/artist/462e8abc-a26b-4e6d-b909-75b8453fd03a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/anhorse"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anhorse/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/anhorse"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q482443"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://www.wikidata.org/wiki/Q482443"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCBEbHBpy8QF9m97X6Boi2ew"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2007",
+        "ended": false
+      }
+    },
+    "anabel g.": {
+      "name": "Anabel G.",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "analog rebellion": {
+      "name": "Analog Rebellion",
+      "status": "identity_candidate_only",
+      "mbid": "30329c6a-302a-4248-88cf-ccaab6eddc3a",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Indie band from Aldie, TX (formerly PlayRadioPlay!)",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/30329c6a-302a-4248-88cf-ccaab6eddc3a",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "anamanaguchi": {
+      "name": "Anamanaguchi",
+      "status": "identity_candidate_only",
+      "mbid": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US chiptune rock band",
+      "genres": [
+        "bitpop",
+        "chiptune",
+        "electronic",
+        "electronic rock",
+        "electropop",
+        "power pop",
+        "slacker rock"
+      ],
+      "source": "https://musicbrainz.org/artist/e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://anamanaguchi.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/anamanaguchi"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anamanaguchi_official/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/anamanaguchi"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q485416"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCheleHtBBdcjMe-9fi0Neug"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCtdPSQIDsZyhq3L7kITrKoA"
+        }
+      ],
+      "life_span": {
+        "begin": "2003",
+        "ended": false,
+        "end": null
+      }
+    },
+    "ananoduerme": {
+      "name": "ananoduerme",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "anaïs mitchell": {
+      "name": "Anaïs Mitchell",
+      "status": "identity_candidate_only",
+      "mbid": "9f41d3cd-5fe4-4144-b658-b00c557f0441",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative folk",
+        "americana",
+        "country folk",
+        "folk"
+      ],
+      "source": "https://musicbrainz.org/artist/9f41d3cd-5fe4-4144-b658-b00c557f0441",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AnaisMitchellMusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anaismitchell/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1467912"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/anaismitchell"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1981-03-26",
+        "ended": false
+      }
+    },
+    "anberlin": {
+      "name": "Anberlin",
+      "status": "identity_candidate_only",
+      "mbid": "c648509e-9916-4c56-ab63-652a03da16dd",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "emo",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/c648509e-9916-4c56-ab63-652a03da16dd",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/anberlin"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anberlin/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/anberlinofficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q488833"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/anberlin"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2002"
+      }
+    },
+    "anchor & braille": {
+      "name": "Anchor & Braille",
+      "status": "identity_candidate_only",
+      "mbid": "0acfd6bd-82d9-431d-bfee-450d1399a27d",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0acfd6bd-82d9-431d-bfee-450d1399a27d",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/anchorandbraille"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anchorbraille/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/anchorbraille"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4752654"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCmotocouco4AD1dVwiAqrtg"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1980-07-28",
+        "ended": false
+      }
+    },
+    "ancient astronauts": {
+      "name": "Ancient Astronauts",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "ancient cities": {
+      "name": "Ancient Cities",
+      "status": "identity_candidate_only",
+      "mbid": "5e9daab4-f85c-4a07-986f-2d7e29fdedd8",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5e9daab4-f85c-4a07-986f-2d7e29fdedd8",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://ancientcities.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ancientcities"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ancient-cities"
+        }
+      ],
+      "life_span": {
+        "begin": "2013",
+        "ended": false,
+        "end": null
+      }
+    },
+    "and and and": {
+      "name": "And And And",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "and selby jase": {
+      "name": "And Selby Jase",
+      "status": "identity_candidate_only",
+      "mbid": "dedb688d-cc7e-4bb2-86a7-2bca2a2b1dd4",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/dedb688d-cc7e-4bb2-86a7-2bca2a2b1dd4",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "and so i watch you from afar": {
+      "name": "And So I Watch You From Afar",
+      "status": "identity_candidate_only",
+      "mbid": "0fb7d725-4dfd-45d2-944c-6ffa375a142d",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "Northern Irish rock band",
+      "genres": [
+        "experimental",
+        "instrumental",
+        "instrumental rock",
+        "math rock",
+        "post-rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0fb7d725-4dfd-45d2-944c-6ffa375a142d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://asiwyfa.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/andsoiwatchyoufromafar"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q489577"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2005",
+        "ended": false
+      }
+    },
+    "anderson .paak": {
+      "name": "Anderson .Paak",
+      "status": "identity_candidate_only",
+      "mbid": "d02dd67e-f655-4600-bc47-f789f59e7367",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "American rapper and producer",
+      "genres": [
+        "alternative hip hop",
+        "alternative r&b",
+        "contemporary r&b",
+        "funk",
+        "hip hop",
+        "neo soul",
+        "r&b",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/d02dd67e-f655-4600-bc47-f789f59e7367",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://breezylovejoy.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AndersonPaak"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anderson._paak/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/andersonpaak"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q20810369"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCVMSK1i_uksa4FrXZZqGYvw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1986-02-08",
+        "end": null
+      }
+    },
+    "andre 3000": {
+      "name": "Andre 3000",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "andrew belle": {
+      "name": "Andrew Belle",
+      "status": "identity_candidate_only",
+      "mbid": "246b1060-628e-4b02-ba6a-afd4868a6814",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/246b1060-628e-4b02-ba6a-afd4868a6814",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/andrewbelle"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/andrewbelle/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4756318"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/andrewbelle"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1984-08-26"
+      }
+    },
+    "andrew bird": {
+      "name": "Andrew Bird",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "andrew jackson jihad": {
+      "name": "Andrew Jackson Jihad",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
