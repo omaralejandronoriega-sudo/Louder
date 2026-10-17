@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T21:40:38.087936+00:00",
+  "generated_at": "2026-10-17T00:45:36.457653+00:00",
   "source_updates": {
-    "artists": "2026-10-16T21:40:33.172642Z",
-    "galleries": "2026-10-16T21:09:29.776047+00:00",
-    "album_art": "2026-10-16T18:47:04.634332+00:00"
+    "artists": "2026-10-17T00:45:30.475012Z",
+    "galleries": "2026-10-16T23:37:17.334282+00:00",
+    "album_art": "2026-10-17T00:25:45.572495+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1391
+      "yesstreaming_live": 1392
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-16T21:40:33.172642Z"
+      "merged_at": "2026-10-17T00:45:30.475012Z"
     }
   },
   "profile_enrichment": {
@@ -47,23 +47,23 @@
     "real_profile_missing": 3537,
     "real_profile_complete_pct": 55.34,
     "profile_status": {
-      "complete": 4169,
-      "partial": 2636,
-      "not_found": 745,
-      "legacy": 370
+      "complete": 4167,
+      "partial": 2679,
+      "not_found": 770,
+      "legacy": 304
     },
-    "missing_validated_profile_image": 974,
+    "missing_validated_profile_image": 976,
     "missing_profile_bio": 3459,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4358,
     "core_complete_pct": 55.03,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6946,
-    "effective_image_pct": 87.7,
+    "effective_image": 6944,
+    "effective_image_pct": 87.68,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5301,
-    "missing_image": 974,
+    "image_gallery_fallback": 5299,
+    "missing_image": 976,
     "effective_bio": 4461,
     "effective_bio_pct": 56.33,
     "bio_direct_artist": 1026,
@@ -72,8 +72,8 @@
     "missing_bio": 3459,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6946,
-    "with_social": 4786,
+    "gallery_with_images": 6944,
+    "with_social": 4780,
     "with_genre": 3905,
     "with_related": 1599
   },
@@ -3601,7 +3601,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -4391,7 +4391,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -10557,7 +10557,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
