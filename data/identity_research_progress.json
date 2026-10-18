@@ -1,7 +1,7 @@
 {
-  "cursor": 600,
+  "cursor": 620,
   "total_catalog": 7988,
-  "updated_at": "2026-10-18T18:04:17.864077+00:00",
+  "updated_at": "2026-10-18T20:37:59.607796+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -8772,6 +8772,377 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 8
+    },
+    "astrobrite": {
+      "name": "Astrobrite",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "astronauts": {
+      "name": "Astronauts",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "astronauts, etc.": {
+      "name": "Astronauts, etc.",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "asylum street spankers": {
+      "name": "Asylum Street Spankers",
+      "status": "identity_candidate_only",
+      "mbid": "be9f392d-0475-4c8a-a3b9-f4b476942b40",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blues",
+        "folk",
+        "jazz"
+      ],
+      "source": "https://musicbrainz.org/artist/be9f392d-0475-4c8a-a3b9-f4b476942b40",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://asylumstreetspankers.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/asylumstreet"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q261800"
+        }
+      ],
+      "life_span": {
+        "end": "2011-04-23",
+        "begin": "1994",
+        "ended": true
+      }
+    },
+    "at 1980/ dana jean phoenix": {
+      "name": "At 1980/ Dana Jean Phoenix",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "at last an atlas": {
+      "name": "At Last An Atlas",
+      "status": "identity_candidate_only",
+      "mbid": "f1bf036d-e11f-4b5f-986f-f88730f03cd0",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f1bf036d-e11f-4b5f-986f-f88730f03cd0",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "at the drive-in": {
+      "name": "At the Drive-In",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "ataque polaris": {
+      "name": "Ataque Polaris",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "aterciopelados": {
+      "name": "Aterciopelados",
+      "status": "identity_candidate_only",
+      "mbid": "0ba1966a-e471-4f98-85d7-8ac0c1f836f0",
+      "type": "Group",
+      "country": "CO",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "latin",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0ba1966a-e471-4f98-85d7-8ac0c1f836f0",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/aterciopelados"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/aterciopelados/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q754549"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCGaqHkWSf7izAZDX5mVTowg"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCe4FzB0Xg6NbPmKjTVg7x1g"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1992",
+        "ended": false
+      }
+    },
+    "athlete": {
+      "name": "Athlete",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "atlas genius": {
+      "name": "Atlas Genius",
+      "status": "identity_candidate_only",
+      "mbid": "967234b5-bef9-4fee-8dfe-61fbcd400d8b",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "indietronica"
+      ],
+      "source": "https://musicbrainz.org/artist/967234b5-bef9-4fee-8dfe-61fbcd400d8b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AtlasGenius"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/atlasgenius/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/atlas-genius"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4816806"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCQMGO_YpzXNAmsg4QK6zjGg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2009"
+      }
+    },
+    "atomic neon": {
+      "name": "Atomic Neon",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "atomic tom": {
+      "name": "Atomic Tom",
+      "status": "identity_candidate_only",
+      "mbid": "647f7d42-cd8f-498c-a8b2-c241ee6a60b0",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/647f7d42-cd8f-498c-a8b2-c241ee6a60b0",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://atomictom.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/atomictomband"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q757607"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/weareatomictom"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2005-08-10"
+      }
+    },
+    "atoms for peace": {
+      "name": "Atoms for Peace",
+      "status": "identity_candidate_only",
+      "mbid": "9e299bee-d7e2-49f3-8cd7-d6b28ab204d1",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "crossover prog",
+        "electronic",
+        "electronic rock",
+        "electronica",
+        "experimental",
+        "experimental electronic",
+        "experimental rock",
+        "idm"
+      ],
+      "source": "https://musicbrainz.org/artist/9e299bee-d7e2-49f3-8cd7-d6b28ab204d1",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/atomsforpeace"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/atomsforpeace"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2666532"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/atomsforpeacetv"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2009"
+      }
+    },
+    "atreyu / travis barker": {
+      "name": "Atreyu / Travis Barker",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "atrás hay truenos": {
+      "name": "Atrás Hay Truenos",
+      "status": "identity_candidate_only",
+      "mbid": "faa63ab8-5454-42c8-9dcd-0eb3d3129b78",
+      "type": "Group",
+      "country": "AR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/faa63ab8-5454-42c8-9dcd-0eb3d3129b78",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://atrashaytruenos.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/atrashaytruenos"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/atrashaytruenos/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/videostruenos"
+        }
+      ],
+      "life_span": {
+        "begin": "2005",
+        "ended": false,
+        "end": null
+      }
+    },
+    "attawalpa": {
+      "name": "Attawalpa",
+      "status": "identity_candidate_only",
+      "mbid": "a1a70fa8-2e31-4dea-9928-31421f8c1540",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "British-Peruvian musician, producer and writer",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a1a70fa8-2e31-4dea-9928-31421f8c1540",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://attawalpa.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/attawalpasongs"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/attawalpa/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/attawalpa"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=o-Po0pPxFpc"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=pR33WN95VdY"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1986-06-09",
+        "ended": false
+      }
+    },
+    "attawalpa / misty miller": {
+      "name": "Attawalpa / Misty Miller",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "attica riots": {
+      "name": "Attica Riots",
+      "status": "identity_candidate_only",
+      "mbid": "cc117792-5a3f-499d-b7bb-f37df9058c0b",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/cc117792-5a3f-499d-b7bb-f37df9058c0b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/atticariots"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/attica_riots/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "atto": {
+      "name": "Atto",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
