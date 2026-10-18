@@ -1,7 +1,7 @@
 {
-  "cursor": 500,
+  "cursor": 520,
   "total_catalog": 7988,
-  "updated_at": "2026-10-17T23:24:59.406568+00:00",
+  "updated_at": "2026-10-18T01:31:36.581351+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -6884,6 +6884,421 @@
       "name": "Anika",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "animal bodies": {
+      "name": "Animal Bodies",
+      "status": "identity_candidate_only",
+      "mbid": "93469106-bd33-433e-981c-8276f319fbe0",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/93469106-bd33-433e-981c-8276f319fbe0",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ANIMALBODIES"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/animalbodies"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "animal collective": {
+      "name": "Animal Collective",
+      "status": "identity_candidate_only",
+      "mbid": "0c751690-c784-4a4f-b1e4-c1de27d47581",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US experimental band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0c751690-c784-4a4f-b1e4-c1de27d47581",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "animal flag": {
+      "name": "Animal Flag",
+      "status": "identity_candidate_only",
+      "mbid": "10b45ba3-4c9a-4023-8cc7-7a79e2f14a16",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Matthew Politoski",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/10b45ba3-4c9a-4023-8cc7-7a79e2f14a16",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://animalflag.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "animal kingdom": {
+      "name": "Animal Kingdom",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "anja garbarek": {
+      "name": "Anja Garbarek",
+      "status": "identity_candidate_only",
+      "mbid": "2b8ec839-58bd-4304-82af-17ff693d0c0d",
+      "type": "Person",
+      "country": "NO",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/2b8ec839-58bd-4304-82af-17ff693d0c0d",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "anna b savage": {
+      "name": "Anna B Savage",
+      "status": "identity_candidate_only",
+      "mbid": "01b0fc43-07d7-4825-bfdd-d159c8da47c6",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/01b0fc43-07d7-4825-bfdd-d159c8da47c6",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annabsavage.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AnnaBSavage"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/annabsavage/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/annabsavage"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q116978775"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@AnnaBSavage"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "anna of the north": {
+      "name": "Anna of the North",
+      "status": "identity_candidate_only",
+      "mbid": "4d7db1c4-3c00-4140-8c83-c6d99cfdecf4",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "pop"
+      ],
+      "source": "https://musicbrainz.org/artist/4d7db1c4-3c00-4140-8c83-c6d99cfdecf4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annaofthenorth.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/annaofthenorth"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/annaofthenorth/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/annaofthenorth"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30325398"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCfknyfYWO50xJovhXjOheDw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1991-06-17",
+        "end": null
+      }
+    },
+    "anna roo": {
+      "name": "Anna Roo",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "anna von hausswolff, ethel cain": {
+      "name": "Anna von Hausswolff, Ethel Cain",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "annabelle dinda": {
+      "name": "Annabelle Dinda",
+      "status": "identity_candidate_only",
+      "mbid": "832db740-2d24-492b-b73a-a5f4829edddf",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "bedroom pop",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/832db740-2d24-492b-b73a-a5f4829edddf",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annabelledinda.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/annabellesays/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/annabelle-dinda"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "annahstasia": {
+      "name": "Annahstasia",
+      "status": "identity_candidate_only",
+      "mbid": "abd48371-0c51-4265-beb2-98e5b120c21c",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "Nigerian-American singer-songwriter & artist",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/abd48371-0c51-4265-beb2-98e5b120c21c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annahstasia.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/annahstasia/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q134969275"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UChHQ9sso5wytIiyefz3EFng"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "anni rossi": {
+      "name": "Anni Rossi",
+      "status": "identity_candidate_only",
+      "mbid": "f1c7e462-7d08-430f-8255-dd2afec63f36",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f1c7e462-7d08-430f-8255-dd2afec63f36",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annirossi.bandcamp.com/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4769169"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anni_Rossi"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "annie dirusso": {
+      "name": "Annie DiRusso",
+      "status": "identity_candidate_only",
+      "mbid": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anniedirusso/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/AnnieDiRusso/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "annuals": {
+      "name": "Annuals",
+      "status": "identity_candidate_only",
+      "mbid": "c6156dc9-9e26-430d-adfb-55ca745f017f",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "indie‐pop from North Carolina",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c6156dc9-9e26-430d-adfb-55ca745f017f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://annuals.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/annuals"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4769704"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2003"
+      }
+    },
+    "ansia": {
+      "name": "Ansia",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "answers": {
+      "name": "Answers",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "antemasque": {
+      "name": "Antemasque",
+      "status": "identity_candidate_only",
+      "mbid": "1985d53e-d4e4-4705-9341-8747091b0b18",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "progressive rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/1985d53e-d4e4-4705-9341-8747091b0b18",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://antemasque.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ANTEMASQUE"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16269463"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCVy9VARy_ihe4-g0PcB8S5w"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2014"
+      }
+    },
+    "antena radio": {
+      "name": "Antena RADIO",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "antennas": {
+      "name": "Antennas",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "anteros": {
+      "name": "Anteros",
+      "status": "identity_candidate_only",
+      "mbid": "58949c2c-a585-46ba-96f6-a74068dcf669",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "British pop band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/58949c2c-a585-46ba-96f6-a74068dcf669",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/anterosofficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/anterosofficial/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/anterosofficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q48700502"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC0ixS0vQvu2oskzHdmjoadw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2014",
+        "ended": false
+      }
     }
   }
 }
