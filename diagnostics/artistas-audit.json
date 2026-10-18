@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T05:05:42.831349+00:00",
+  "generated_at": "2026-10-18T11:40:23.686021+00:00",
   "source_updates": {
-    "artists": "2026-10-18T05:05:36.863841Z",
-    "galleries": "2026-10-18T01:25:44.083851+00:00",
-    "album_art": "2026-10-18T01:30:57.285644+00:00"
+    "artists": "2026-10-18T11:40:17.748850Z",
+    "galleries": "2026-10-18T11:37:58.951632+00:00",
+    "album_art": "2026-10-18T06:34:43.112458+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1399
+      "yesstreaming_live": 1402
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-18T05:05:36.863841Z"
+      "merged_at": "2026-10-18T11:40:17.748850Z"
     }
   },
   "profile_enrichment": {
@@ -78,12 +78,12 @@
     "with_related": 1599
   },
   "tracks": {
-    "total": 18189,
+    "total": 18191,
     "with_effective_artwork": 13477,
     "with_effective_artwork_pct": 74.09,
-    "missing_artwork": 4712,
-    "grouped_as_otras": 5899,
-    "with_first_and_last_dates": 17770,
+    "missing_artwork": 4714,
+    "grouped_as_otras": 5901,
+    "with_first_and_last_dates": 17772,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10577,
     "album_art_cache_missed": 4334
@@ -1573,18 +1573,19 @@
     {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 47,
+      "plays": 48,
       "first_played": "14 jul 2012",
-      "last_played": "25 ene 2016 · 23:59",
+      "last_played": "17 oct 2026 · 23:14",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
-      "tracks": 2,
+      "tracks": 3,
       "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
       "has_bio": false,
@@ -8568,18 +8569,19 @@
     {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 47,
+      "plays": 48,
       "first_played": "14 jul 2012",
-      "last_played": "25 ene 2016 · 23:59",
+      "last_played": "17 oct 2026 · 23:14",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
-      "tracks": 2,
+      "tracks": 3,
       "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "artist",
       "has_bio": false,
