@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T22:38:03.663242+00:00",
+  "generated_at": "2026-10-18T05:05:42.831349+00:00",
   "source_updates": {
-    "artists": "2026-10-17T22:37:57.759689Z",
-    "galleries": "2026-10-17T21:39:52.485915+00:00",
-    "album_art": "2026-10-17T21:25:39.348691+00:00"
+    "artists": "2026-10-18T05:05:36.863841Z",
+    "galleries": "2026-10-18T01:25:44.083851+00:00",
+    "album_art": "2026-10-18T01:30:57.285644+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1398
+      "yesstreaming_live": 1399
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-17T22:37:57.759689Z"
+      "merged_at": "2026-10-18T05:05:36.863841Z"
     }
   },
   "profile_enrichment": {
@@ -48,22 +48,22 @@
     "real_profile_complete_pct": 55.35,
     "profile_status": {
       "complete": 4162,
-      "partial": 2774,
-      "not_found": 812,
+      "partial": 2775,
+      "not_found": 811,
       "legacy": 172
     },
-    "missing_validated_profile_image": 975,
+    "missing_validated_profile_image": 974,
     "missing_profile_bio": 3459,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4359,
     "core_complete_pct": 55.04,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6945,
-    "effective_image_pct": 87.69,
+    "effective_image": 6946,
+    "effective_image_pct": 87.7,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5300,
-    "missing_image": 975,
+    "image_gallery_fallback": 5301,
+    "missing_image": 974,
     "effective_bio": 4461,
     "effective_bio_pct": 56.33,
     "bio_direct_artist": 1026,
@@ -72,7 +72,7 @@
     "missing_bio": 3459,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6945,
+    "gallery_with_images": 6946,
     "with_social": 4780,
     "with_genre": 3905,
     "with_related": 1599
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.09,
     "missing_artwork": 4712,
     "grouped_as_otras": 5899,
-    "with_first_and_last_dates": 17769,
+    "with_first_and_last_dates": 17770,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10577,
     "album_art_cache_missed": 4334
@@ -92,9 +92,9 @@
     "boylife": {
       "name": "boylife",
       "slug": "boylife",
-      "plays": 14,
+      "plays": 15,
       "first_played": "16 mar 2025",
-      "last_played": "15 oct 2026 · 12:48",
+      "last_played": "17 oct 2026 · 18:31",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -225,9 +225,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 143,
+      "plays": 144,
       "first_played": "22 jul 2012",
-      "last_played": "13 oct 2026 · 14:15",
+      "last_played": "17 oct 2026 · 17:59",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -2606,6 +2606,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 37,
+      "first_played": "14 jul 2022",
+      "last_played": "17 oct 2026 · 20:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Furland",
       "slug": "furland",
       "plays": 37,
@@ -2844,42 +2880,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 36,
-      "first_played": "14 jul 2022",
-      "last_played": "13 oct 2026 · 18:04",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -4012,6 +4012,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 37,
+      "first_played": "14 jul 2022",
+      "last_played": "17 oct 2026 · 20:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "MVSCLES",
       "slug": "mvscles",
       "plays": 37,
@@ -4080,42 +4116,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 36,
-      "first_played": "14 jul 2022",
-      "last_played": "13 oct 2026 · 18:04",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -4557,6 +4557,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 32,
+      "first_played": "15 jul 2022",
+      "last_played": "17 oct 2026 · 22:25",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Yakuza",
       "slug": "the-yakuza",
       "plays": 32,
@@ -4638,43 +4675,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 31,
-      "first_played": "15 jul 2022",
-      "last_played": "14 oct 2026 · 09:02",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6926,6 +6926,44 @@
       "profile_complete": false
     },
     {
+      "name": "The Decemberists/James Mercer",
+      "slug": "the-decemberists-james-mercer",
+      "plays": 14,
+      "first_played": "3 mar 2025",
+      "last_played": "17 oct 2026 · 20:35",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Long Blondes",
       "slug": "the-long-blondes",
       "plays": 14,
@@ -7176,42 +7214,6 @@
         "bio"
       ],
       "profile_complete": false
-    },
-    {
-      "name": "Gelow Foster",
-      "slug": "gelow-foster",
-      "plays": 13,
-      "first_played": "17 jun 2014",
-      "last_played": "27 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7286,9 +7288,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 143,
+      "plays": 144,
       "first_played": "22 jul 2012",
-      "last_played": "13 oct 2026 · 14:15",
+      "last_played": "17 oct 2026 · 17:59",
       "catalog_status": "",
       "sources": [
         "wp_db",
