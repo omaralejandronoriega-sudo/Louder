@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T11:40:23.686021+00:00",
+  "generated_at": "2026-10-18T16:07:17.602298+00:00",
   "source_updates": {
-    "artists": "2026-10-18T11:40:17.748850Z",
-    "galleries": "2026-10-18T11:37:58.951632+00:00",
-    "album_art": "2026-10-18T06:34:43.112458+00:00"
+    "artists": "2026-10-18T16:07:11.791455Z",
+    "galleries": "2026-10-18T14:52:37.856548+00:00",
+    "album_art": "2026-10-18T15:48:27.302208+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-18T11:40:17.748850Z"
+      "merged_at": "2026-10-18T16:07:11.791455Z"
     }
   },
   "profile_enrichment": {
@@ -48,9 +48,9 @@
     "real_profile_complete_pct": 55.35,
     "profile_status": {
       "complete": 4162,
-      "partial": 2775,
-      "not_found": 811,
-      "legacy": 172
+      "partial": 2787,
+      "not_found": 819,
+      "legacy": 152
     },
     "missing_validated_profile_image": 974,
     "missing_profile_bio": 3459,
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.09,
     "missing_artwork": 4714,
     "grouped_as_otras": 5901,
-    "with_first_and_last_dates": 17772,
+    "with_first_and_last_dates": 17774,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10577,
     "album_art_cache_missed": 4334
@@ -3410,6 +3410,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 34,
+      "first_played": "22 ago 2022",
+      "last_played": "18 oct 2026 · 06:07",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -3571,40 +3609,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Baths",
-      "slug": "baths",
-      "plays": 33,
-      "first_played": "2 ago 2012",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
       "has_social": true,
       "has_genre": true,
       "related": 0,
@@ -4303,6 +4307,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 34,
+      "first_played": "22 ago 2022",
+      "last_played": "18 oct 2026 · 06:07",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -4424,44 +4466,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 33,
-      "first_played": "22 ago 2022",
-      "last_played": "17 oct 2026 · 11:57",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5951,6 +5955,44 @@
       "profile_complete": false
     },
     {
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
+      "plays": 18,
+      "first_played": "28 feb 2025",
+      "last_played": "18 oct 2026 · 08:34",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "It Hated Silence",
       "slug": "it-hated-silence",
       "plays": 18,
@@ -6073,44 +6115,6 @@
       "tracks": 2,
       "tracks_with_artwork": 2,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 17,
-      "first_played": "28 feb 2025",
-      "last_played": "12 oct 2026 · 22:36",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -10370,6 +10374,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 34,
+      "first_played": "22 ago 2022",
+      "last_played": "18 oct 2026 · 06:07",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -10593,44 +10635,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 33,
-      "first_played": "22 ago 2022",
-      "last_played": "17 oct 2026 · 11:57",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
