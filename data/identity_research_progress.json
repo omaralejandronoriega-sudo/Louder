@@ -1,7 +1,7 @@
 {
-  "cursor": 540,
+  "cursor": 560,
   "total_catalog": 7988,
-  "updated_at": "2026-10-18T06:35:07.927805+00:00",
+  "updated_at": "2026-10-18T11:42:25.126064+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -7685,6 +7685,316 @@
       "name": "Aquaduck",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "aqualung": {
+      "name": "Aqualung",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "aquilo": {
+      "name": "Aquilo",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "araabmuzik": {
+      "name": "araabMUZIK",
+      "status": "identity_candidate_only",
+      "mbid": "c0b58a7f-5615-4b22-8af4-8f16b10a0177",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "edm",
+        "hip hop",
+        "trap edm"
+      ],
+      "source": "https://musicbrainz.org/artist/c0b58a7f-5615-4b22-8af4-8f16b10a0177",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AraabMuzikMVP"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/araabmuzik/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4783115"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC9X_erUjP-dL3Jqf7Fd-v3w"
+        }
+      ],
+      "life_span": {
+        "begin": "1989-06-16",
+        "end": null,
+        "ended": false
+      }
+    },
+    "arab strap": {
+      "name": "Arab Strap",
+      "status": "identity_candidate_only",
+      "mbid": "6caf09f5-2f01-4f76-bcc7-6207930c56c6",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "Scottish indie rock band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6caf09f5-2f01-4f76-bcc7-6207930c56c6",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "arca": {
+      "name": "Arca",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "arcade fire": {
+      "name": "Arcade Fire",
+      "status": "identity_candidate_only",
+      "mbid": "52074ba6-e495-4ef3-9bb4-0703888a9f68",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "alternative dance",
+        "alternative rock",
+        "art rock",
+        "baroque pop",
+        "chamber pop",
+        "indie pop",
+        "indie rock",
+        "post-punk revival",
+        "rock",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/52074ba6-e495-4ef3-9bb4-0703888a9f68",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/arcadefire"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/arcadefire/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/arcade-fire-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q58608"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCIIGxQ6BA9MwIJXBu47SyZQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCUiiO_bccZFMVmnJ2Jj95lg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2001",
+        "end": null
+      }
+    },
+    "arcade fire/david bowie": {
+      "name": "Arcade Fire/David Bowie",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "arche": {
+      "name": "Arche",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "archie bronson outfit": {
+      "name": "Archie Bronson Outfit",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "architecture in helsinki": {
+      "name": "Architecture in Helsinki",
+      "status": "identity_candidate_only",
+      "mbid": "b91f0973-002e-4237-a39f-c7e02e786e53",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "chamber pop",
+        "indie pop",
+        "indietronica",
+        "neo-psychedelia",
+        "twee pop"
+      ],
+      "source": "https://musicbrainz.org/artist/b91f0973-002e-4237-a39f-c7e02e786e53",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/architectureinhelsinki"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/aihmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/aih"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q61107"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCxHh0oXO-qrRKKrRdhso7Lw"
+        }
+      ],
+      "life_span": {
+        "begin": "2000",
+        "end": null,
+        "ended": false
+      }
+    },
+    "arctic": {
+      "name": "Arctic",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "arctic monkeys": {
+      "name": "Arctic Monkeys",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "arctic monkeys live at the apollo": {
+      "name": "Arctic Monkeys Live at the Apollo",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "arctic monkeys, war child records": {
+      "name": "Arctic Monkeys, War Child Records",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "aretha franklin": {
+      "name": "Aretha Franklin",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "argentina": {
+      "name": "Argentina",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "argonaut & wasp": {
+      "name": "Argonaut & Wasp",
+      "status": "identity_candidate_only",
+      "mbid": "a0f0f532-df75-4ab4-bb86-f279e3b541bb",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a0f0f532-df75-4ab4-bb86-f279e3b541bb",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://argonautwasp.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/argonautandwasp"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "arhkota": {
+      "name": "Arhkota",
+      "status": "identity_candidate_only",
+      "mbid": "23de37e5-33c6-4224-8007-965833273c73",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/23de37e5-33c6-4224-8007-965833273c73",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "ariel pink": {
+      "name": "Ariel Pink",
+      "status": "identity_candidate_only",
+      "mbid": "5882e375-503f-4bd2-89b1-967e0bfcb199",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "experimental",
+        "hypnagogic pop",
+        "indie pop",
+        "lo-fi",
+        "neo-psychedelia",
+        "new wave",
+        "post-punk",
+        "psychedelic pop",
+        "zolo"
+      ],
+      "source": "https://musicbrainz.org/artist/5882e375-503f-4bd2-89b1-967e0bfcb199",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://arielpink.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/arielxpink"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/arielxpink/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q659238"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1978-06-24"
+      }
+    },
+    "ark identity": {
+      "name": "ARK IDENTITY",
+      "status": "identity_candidate_only",
+      "mbid": "8955a32d-7c1e-4a61-a5ec-5bce59157b28",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8955a32d-7c1e-4a61-a5ec-5bce59157b28",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
     }
   }
 }
