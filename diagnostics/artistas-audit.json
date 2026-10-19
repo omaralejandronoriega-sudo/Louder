@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T13:54:33.041691+00:00",
+  "generated_at": "2026-10-19T20:09:47.005446+00:00",
   "source_updates": {
-    "artists": "2026-10-19T13:54:27.399763Z",
-    "galleries": "2026-10-19T10:20:24.127590+00:00",
-    "album_art": "2026-10-19T06:48:00.864586+00:00"
+    "artists": "2026-10-19T20:09:40.462760Z",
+    "galleries": "2026-10-19T17:06:50.020129+00:00",
+    "album_art": "2026-10-19T14:38:27.718088+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-19T13:54:27.399763Z"
+      "merged_at": "2026-10-19T20:09:40.462760Z"
     }
   },
   "profile_enrichment": {
@@ -74,17 +74,17 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6946,
-    "with_social": 4775,
+    "with_social": 4766,
     "with_genre": 3904,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18193,
+    "total": 18194,
     "with_effective_artwork": 13477,
-    "with_effective_artwork_pct": 74.08,
-    "missing_artwork": 4716,
-    "grouped_as_otras": 5903,
-    "with_first_and_last_dates": 17779,
+    "with_effective_artwork_pct": 74.07,
+    "missing_artwork": 4717,
+    "grouped_as_otras": 5904,
+    "with_first_and_last_dates": 17780,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10577,
     "album_art_cache_missed": 4334
@@ -7009,6 +7009,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 14,
+      "first_played": "22 sep 2026",
+      "last_played": "19 oct 2026 · 13:55",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Arlo Parks/Lous and The Yakuza",
       "slug": "arlo-parks-lous-and-the-yakuza",
       "plays": 13,
@@ -7168,42 +7203,6 @@
       "tracks_with_artwork": 2,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Frightened Rabbit & Manchester Orchestra",
-      "slug": "frightened-rabbit-manchester-orchestra",
-      "plays": 13,
-      "first_played": "20 may 2013",
-      "last_played": "7 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
