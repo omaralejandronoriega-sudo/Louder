@@ -1,7 +1,7 @@
 {
-  "cursor": 640,
+  "cursor": 660,
   "total_catalog": 7988,
-  "updated_at": "2026-10-18T22:35:43.688227+00:00",
+  "updated_at": "2026-10-19T00:29:28.384346+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -9481,6 +9481,379 @@
       "name": "Autobahn",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "autobus": {
+      "name": "Autobus",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "autoheart": {
+      "name": "Autoheart",
+      "status": "identity_candidate_only",
+      "mbid": "eba72c3c-47e5-4541-ae1c-c34b217d38c4",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "pop"
+      ],
+      "source": "https://musicbrainz.org/artist/eba72c3c-47e5-4541-ae1c-c34b217d38c4",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Autoheart"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/autoheart"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4826334"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCf5PB3Vsn184v6yLADzrQDQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2011"
+      }
+    },
+    "autokratz": {
+      "name": "AutoKratz",
+      "status": "identity_candidate_only",
+      "mbid": "92337972-f0c5-4ebd-be8c-f6b23d596ae1",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "electro",
+        "electroclash",
+        "electronic",
+        "electronica",
+        "techno"
+      ],
+      "source": "https://musicbrainz.org/artist/92337972-f0c5-4ebd-be8c-f6b23d596ae1",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4826073"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/AutoKratz"
+        }
+      ],
+      "life_span": {
+        "begin": "2007",
+        "end": null,
+        "ended": false
+      }
+    },
+    "automatic": {
+      "name": "Automatic",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "automelodi": {
+      "name": "Automelodi",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "avec sans": {
+      "name": "Avec Sans",
+      "status": "identity_candidate_only",
+      "mbid": "b1bc9535-e63e-4067-a37a-4f163e5b3dba",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b1bc9535-e63e-4067-a37a-4f163e5b3dba",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/avecsansband"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/avecsans"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "avenged sevenfold": {
+      "name": "Avenged Sevenfold",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "avey tare's slasher flicks": {
+      "name": "Avey Tare's Slasher Flicks",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "avi buffalo": {
+      "name": "Avi Buffalo",
+      "status": "identity_candidate_only",
+      "mbid": "816e913e-78af-44d2-9c37-daff3d66a4cf",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/816e913e-78af-44d2-9c37-daff3d66a4cf",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://avibuffalo.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/avibuffalomusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/avibuffalo"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4828461"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/avibuffalo"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "aviso_a_la_audiencia_": {
+      "name": "Aviso_A_La_Audiencia_",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "avril lavigne": {
+      "name": "Avril Lavigne",
+      "status": "identity_candidate_only",
+      "mbid": "0103c1cc-4a09-4a5d-a344-56ad99a77193",
+      "type": "Person",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "acoustic rock",
+        "alternative pop",
+        "alternative rock",
+        "pop",
+        "pop punk",
+        "pop rock",
+        "post-grunge",
+        "rock",
+        "teen pop"
+      ],
+      "source": "https://musicbrainz.org/artist/0103c1cc-4a09-4a5d-a344-56ad99a77193",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://avril-lavigne.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/avrillavigne"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/avrillavigne/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/avrillavigne"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30449"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/AvrilLavigne"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCC6XuDtfec7DxZdUa7ClFBQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC_k8KFBzEf0uQ8LRFSAgSUA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCdOp8DxiQw6hKZ9b2FY6hbg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1984-09-27"
+      }
+    },
+    "awfultune": {
+      "name": "awfultune",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "awolnation": {
+      "name": "AWOLNATION",
+      "status": "identity_candidate_only",
+      "mbid": "77b29df2-056e-409e-a1b2-5e2bbfe421c4",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "pop rock"
+      ],
+      "source": "https://musicbrainz.org/artist/77b29df2-056e-409e-a1b2-5e2bbfe421c4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://awolnation.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AWOLNATION"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/awolnation/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/awolnation"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q66413"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC6nHSpckOIcVmMfl_878Vuw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2009",
+        "end": null
+      }
+    },
+    "ayer": {
+      "name": "Ayer",
+      "status": "identity_candidate_only",
+      "mbid": "21cfbe7b-0f91-4880-8501-5b96cfb5cbce",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/21cfbe7b-0f91-4880-8501-5b96cfb5cbce",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/AYERofficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dannyayer777"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ayerofficial/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/officialayer"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/officialayer"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "ayer amarillo": {
+      "name": "Ayer Amarillo",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "ayleen valentine": {
+      "name": "Ayleen Valentine",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "ayo river": {
+      "name": "Ayo River",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "ayoni": {
+      "name": "Ayoni",
+      "status": "identity_candidate_only",
+      "mbid": "242ffdce-4609-4b8d-a9a9-1f0d22821b41",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/242ffdce-4609-4b8d-a9a9-1f0d22821b41",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "azari & iii": {
+      "name": "Azari & III",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "azul violeta": {
+      "name": "Azul Violeta",
+      "status": "identity_candidate_only",
+      "mbid": "a3f8eedc-fc15-4e92-89a3-768e4406eb6b",
+      "type": "Group",
+      "country": "MX",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a3f8eedc-fc15-4e92-89a3-768e4406eb6b",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4833042"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1988",
+        "ended": false
+      }
     }
   }
 }
