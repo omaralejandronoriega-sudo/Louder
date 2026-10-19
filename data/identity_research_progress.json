@@ -1,7 +1,7 @@
 {
-  "cursor": 720,
+  "cursor": 740,
   "total_catalog": 7988,
-  "updated_at": "2026-10-19T17:46:31.412643+00:00",
+  "updated_at": "2026-10-19T22:19:18.537680+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -10936,6 +10936,390 @@
         "end": null,
         "ended": false
       }
+    },
+    "bambi": {
+      "name": "Bambi",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "band of horses": {
+      "name": "Band of Horses",
+      "status": "identity_candidate_only",
+      "mbid": "07b6020a-c539-4d68-aeef-f159f3befc76",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "americana",
+        "folk pop",
+        "folk rock",
+        "indie folk",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/07b6020a-c539-4d68-aeef-f159f3befc76",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bandofhorses.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/5162567788"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bandofhorses/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bandofhorses"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q806235"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCD5QVN7OwJhnx6iO9L3uT_Q"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCD5viIlmWKfkj1YUTQchpGA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCLEJF57HPNem3bdqXSiIo3Q"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2004",
+        "ended": false
+      }
+    },
+    "band of skulls": {
+      "name": "Band Of Skulls",
+      "status": "identity_candidate_only",
+      "mbid": "1641141b-3c9c-4772-a5cc-7e23fdf17382",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "blues rock",
+        "garage rock",
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/1641141b-3c9c-4772-a5cc-7e23fdf17382",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bandofskulls"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bandofskullsofficial/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bandofskulls"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2413479"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCmSuPyFSe22I25YRdhXxXUA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2004",
+        "ended": false
+      }
+    },
+    "banda de turistas": {
+      "name": "Banda de Turistas",
+      "status": "identity_candidate_only",
+      "mbid": "67efec0f-2103-4346-a808-4bec4981b450",
+      "type": "Group",
+      "country": "AR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/67efec0f-2103-4346-a808-4bec4981b450",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bandetur"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bandadeturistas/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5718319"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/bandadeturistas"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2006",
+        "end": null
+      }
+    },
+    "banda do mar": {
+      "name": "Banda do Mar",
+      "status": "identity_candidate_only",
+      "mbid": "51f8de5b-2e13-48ef-b6b9-0c5a1cf07262",
+      "type": "Group",
+      "country": "BR",
+      "disambiguation": "",
+      "genres": [
+        "bossa nova",
+        "mpb",
+        "samba"
+      ],
+      "source": "https://musicbrainz.org/artist/51f8de5b-2e13-48ef-b6b9-0c5a1cf07262",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bandadomar"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bandadomar/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q18238392"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2014-05-06",
+        "ended": false
+      }
+    },
+    "bandcalledbeach/ the planetoids": {
+      "name": "bandcalledbeach/ The Planetoids",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "banjo or freakout": {
+      "name": "Banjo Or Freakout",
+      "status": "identity_candidate_only",
+      "mbid": "79b4aa91-81ea-4522-80d8-9b28e1869695",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/79b4aa91-81ea-4522-80d8-9b28e1869695",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://banjoorfreakout.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "banks": {
+      "name": "BANKS",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "banners": {
+      "name": "BANNERS",
+      "status": "identity_candidate_only",
+      "mbid": "e9cda0a2-285c-4a15-9697-c295c216a94f",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e9cda0a2-285c-4a15-9697-c295c216a94f",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "baobab": {
+      "name": "BaoBab",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "bar italia": {
+      "name": "bar italia",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "barbi recanati": {
+      "name": "Barbi Recanati",
+      "status": "identity_candidate_only",
+      "mbid": "4ad2af79-360e-4ac7-9abc-55623fa2a9c1",
+      "type": "Person",
+      "country": "AR",
+      "disambiguation": "Argentinian singer",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4ad2af79-360e-4ac7-9abc-55623fa2a9c1",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/barbirecanatioficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/barbirecanati/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/barbirecanati"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q18224804"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC4i-H-ka00VZPOigzqEecfA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1986-11-28",
+        "ended": false
+      }
+    },
+    "barenaked ladies": {
+      "name": "Barenaked Ladies",
+      "status": "identity_candidate_only",
+      "mbid": "86e736b4-93e2-40ff-9e1c-fb7c63fef5f6",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "acoustic rock",
+        "alternative rock",
+        "comedy rock",
+        "folk pop",
+        "folk rock",
+        "geek rock",
+        "jangle pop",
+        "jazz pop",
+        "pop rock",
+        "power pop",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/86e736b4-93e2-40ff-9e1c-fb7c63fef5f6",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/barenakedladies"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/barenakedladiesmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/barenaked-ladies"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q371997"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCk1VTZtKTDV1Zo1mHyoPyZA"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCZ5fcCDgq2xEo6niWSr3dVg"
+        }
+      ],
+      "life_span": {
+        "begin": "1988",
+        "end": null,
+        "ended": false
+      }
+    },
+    "barlowgirl": {
+      "name": "BarlowGirl",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "barrio lindo": {
+      "name": "Barrio Lindo",
+      "status": "identity_candidate_only",
+      "mbid": "8b51890f-4f7e-4e55-9552-d895648bb17a",
+      "type": "Person",
+      "country": "AR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8b51890f-4f7e-4e55-9552-d895648bb17a",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "barry de vorzon": {
+      "name": "Barry De Vorzon",
+      "status": "identity_candidate_only",
+      "mbid": "b33c8aa6-036b-4c99-9249-b06791e7b2fd",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b33c8aa6-036b-4c99-9249-b06791e7b2fd",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q123684"
+        }
+      ],
+      "life_span": {
+        "begin": "1934-07-31",
+        "end": null,
+        "ended": false
+      }
+    },
+    "barry white": {
+      "name": "Barry White",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "bartees strange": {
+      "name": "Bartees Strange",
+      "status": "identity_candidate_only",
+      "mbid": "9e1ea361-c2cc-45a4-a926-00518453efc0",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9e1ea361-c2cc-45a4-a926-00518453efc0",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "baseball gregg": {
+      "name": "Baseball Gregg",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "basecamp": {
+      "name": "Basecamp",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
