@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T05:13:37.803009+00:00",
+  "generated_at": "2026-10-20T12:06:10.607825+00:00",
   "source_updates": {
-    "artists": "2026-10-20T05:13:31.539923Z",
-    "galleries": "2026-10-20T00:41:38.893010+00:00",
-    "album_art": "2026-10-20T04:42:59.086647+00:00"
+    "artists": "2026-10-20T12:06:04.993116Z",
+    "galleries": "2026-10-20T10:16:02.291683+00:00",
+    "album_art": "2026-10-20T09:59:35.459146+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-20T05:13:31.539923Z"
+      "merged_at": "2026-10-20T12:06:04.993116Z"
     }
   },
   "profile_enrichment": {
@@ -48,23 +48,23 @@
     "real_profile_complete_pct": 55.39,
     "profile_status": {
       "complete": 4157,
-      "partial": 2834,
-      "not_found": 843,
+      "partial": 2835,
+      "not_found": 842,
       "legacy": 79,
       "retry": 7
     },
-    "missing_validated_profile_image": 975,
+    "missing_validated_profile_image": 974,
     "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4363,
     "core_complete_pct": 55.09,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6945,
-    "effective_image_pct": 87.69,
+    "effective_image": 6946,
+    "effective_image_pct": 87.7,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5300,
-    "missing_image": 975,
+    "image_gallery_fallback": 5301,
+    "missing_image": 974,
     "effective_bio": 4464,
     "effective_bio_pct": 56.36,
     "bio_direct_artist": 1026,
@@ -73,7 +73,7 @@
     "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6945,
+    "gallery_with_images": 6946,
     "with_social": 4763,
     "with_genre": 3904,
     "with_related": 1599
@@ -4885,6 +4885,43 @@
       "profile_complete": false
     },
     {
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
+      "plays": 26,
+      "first_played": "25 jul 2022",
+      "last_played": "20 oct 2026 · 05:00",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Justice/Tame Impala",
       "slug": "justice-tame-impala",
       "plays": 26,
@@ -4970,43 +5007,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Flume/Nick Murphy / Chet Faker",
-      "slug": "flume-nick-murphy-chet-faker",
-      "plays": 25,
-      "first_played": "25 jul 2022",
-      "last_played": "17 oct 2026 · 06:33",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6937,6 +6937,43 @@
       "profile_complete": false
     },
     {
+      "name": "Sacred Skin, SRSQ",
+      "slug": "sacred-skin-srsq",
+      "plays": 14,
+      "first_played": "5 sep 2026",
+      "last_played": "20 oct 2026 · 01:07",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 9,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sursauter",
       "slug": "sursauter",
       "plays": 14,
@@ -7166,43 +7203,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 4,
       "tracks_in_otras": 4,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CHVRCHES / Robert Smith",
-      "slug": "chvrches-robert-smith",
-      "plays": 13,
-      "first_played": "2 sep 2022",
-      "last_played": "14 oct 2026 · 12:03",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
