@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T12:06:10.607825+00:00",
+  "generated_at": "2026-10-20T17:30:09.561268+00:00",
   "source_updates": {
-    "artists": "2026-10-20T12:06:04.993116Z",
-    "galleries": "2026-10-20T10:16:02.291683+00:00",
-    "album_art": "2026-10-20T09:59:35.459146+00:00"
+    "artists": "2026-10-20T17:30:03.499855Z",
+    "galleries": "2026-10-20T15:17:48.498793+00:00",
+    "album_art": "2026-10-20T15:01:28.292197+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-20T12:06:04.993116Z"
+      "merged_at": "2026-10-20T17:30:03.499855Z"
     }
   },
   "profile_enrichment": {
@@ -79,12 +79,12 @@
     "with_related": 1599
   },
   "tracks": {
-    "total": 18194,
+    "total": 18195,
     "with_effective_artwork": 13477,
     "with_effective_artwork_pct": 74.07,
-    "missing_artwork": 4717,
-    "grouped_as_otras": 5904,
-    "with_first_and_last_dates": 17780,
+    "missing_artwork": 4718,
+    "grouped_as_otras": 5905,
+    "with_first_and_last_dates": 17781,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10577,
     "album_art_cache_missed": 4334
@@ -334,9 +334,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 101,
+      "plays": 102,
       "first_played": "14 jul 2022",
-      "last_played": "18 oct 2026 · 10:58",
+      "last_played": "20 oct 2026 · 06:50",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -1504,6 +1504,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 49,
+      "first_played": "14 jul 2012",
+      "last_played": "20 oct 2026 · 10:15",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "LostBoy! AKA Jim Kerr",
       "slug": "lostboy-aka-jim-kerr",
       "plays": 48,
@@ -1561,41 +1596,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 48,
-      "first_played": "14 jul 2012",
-      "last_played": "17 oct 2026 · 23:14",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -2401,6 +2401,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 38,
+      "first_played": "14 jul 2022",
+      "last_played": "20 oct 2026 · 08:26",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -2604,42 +2640,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 37,
-      "first_played": "14 jul 2022",
-      "last_played": "17 oct 2026 · 20:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -3632,9 +3632,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 101,
+      "plays": 102,
       "first_played": "14 jul 2022",
-      "last_played": "18 oct 2026 · 10:58",
+      "last_played": "20 oct 2026 · 06:50",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3951,6 +3951,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 38,
+      "first_played": "14 jul 2022",
+      "last_played": "20 oct 2026 · 08:26",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -4018,42 +4054,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 37,
-      "first_played": "14 jul 2022",
-      "last_played": "17 oct 2026 · 20:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -6143,6 +6143,44 @@
       "profile_complete": false
     },
     {
+      "name": "Dent May/Jordana",
+      "slug": "dent-may-jordana",
+      "plays": 17,
+      "first_played": "4 mar 2025",
+      "last_played": "20 oct 2026 · 09:07",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lily Allen Media Center",
       "slug": "lily-allen-media-center",
       "plays": 17,
@@ -6299,44 +6337,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Dent May/Jordana",
-      "slug": "dent-may-jordana",
-      "plays": 16,
-      "first_played": "4 mar 2025",
-      "last_played": "10 oct 2026 · 09:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7405,9 +7405,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 101,
+      "plays": 102,
       "first_played": "14 jul 2022",
-      "last_played": "18 oct 2026 · 10:58",
+      "last_played": "20 oct 2026 · 06:50",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -8507,6 +8507,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 49,
+      "first_played": "14 jul 2012",
+      "last_played": "20 oct 2026 · 10:15",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "LostBoy! AKA Jim Kerr",
       "slug": "lostboy-aka-jim-kerr",
       "plays": 48,
@@ -8564,41 +8599,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 48,
-      "first_played": "14 jul 2012",
-      "last_played": "17 oct 2026 · 23:14",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
