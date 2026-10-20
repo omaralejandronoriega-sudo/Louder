@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T23:55:17.410285+00:00",
+  "generated_at": "2026-10-20T05:13:37.803009+00:00",
   "source_updates": {
-    "artists": "2026-10-19T23:55:12.360456Z",
-    "galleries": "2026-10-19T21:34:27.211681+00:00",
-    "album_art": "2026-10-19T20:12:31.002592+00:00"
+    "artists": "2026-10-20T05:13:31.539923Z",
+    "galleries": "2026-10-20T00:41:38.893010+00:00",
+    "album_art": "2026-10-20T04:42:59.086647+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,13 +39,13 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-19T23:55:12.360456Z"
+      "merged_at": "2026-10-20T05:13:31.539923Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4386,
-    "real_profile_missing": 3534,
-    "real_profile_complete_pct": 55.38,
+    "real_profile_complete": 4387,
+    "real_profile_missing": 3533,
+    "real_profile_complete_pct": 55.39,
     "profile_status": {
       "complete": 4157,
       "partial": 2834,
@@ -53,28 +53,28 @@
       "legacy": 79,
       "retry": 7
     },
-    "missing_validated_profile_image": 974,
-    "missing_profile_bio": 3457,
+    "missing_validated_profile_image": 975,
+    "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4362,
-    "core_complete_pct": 55.08,
+    "core_complete": 4363,
+    "core_complete_pct": 55.09,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6946,
-    "effective_image_pct": 87.7,
+    "effective_image": 6945,
+    "effective_image_pct": 87.69,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5301,
-    "missing_image": 974,
-    "effective_bio": 4463,
-    "effective_bio_pct": 56.35,
+    "image_gallery_fallback": 5300,
+    "missing_image": 975,
+    "effective_bio": 4464,
+    "effective_bio_pct": 56.36,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 3182,
-    "missing_bio": 3457,
+    "bio_gallery_en": 3183,
+    "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6946,
-    "with_social": 4766,
+    "gallery_with_images": 6945,
+    "with_social": 4763,
     "with_genre": 3904,
     "with_related": 1599
   },
@@ -1091,9 +1091,9 @@
     {
       "name": "The London Suede",
       "slug": "the-london-suede",
-      "plays": 55,
+      "plays": 56,
       "first_played": "17 jul 2022",
-      "last_played": "16 oct 2026 · 21:19",
+      "last_played": "19 oct 2026 · 21:44",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -1113,6 +1113,43 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 55,
+      "first_played": "29 mar 2016",
+      "last_played": "19 oct 2026 · 19:03",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
@@ -1213,43 +1250,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 54,
-      "first_played": "29 mar 2016",
-      "last_played": "15 oct 2026 · 23:18",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -4727,7 +4727,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -8128,9 +8128,9 @@
     {
       "name": "The London Suede",
       "slug": "the-london-suede",
-      "plays": 55,
+      "plays": 56,
       "first_played": "17 jul 2022",
-      "last_played": "16 oct 2026 · 21:19",
+      "last_played": "19 oct 2026 · 21:44",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -8150,6 +8150,43 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 55,
+      "first_played": "29 mar 2016",
+      "last_played": "19 oct 2026 · 19:03",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
@@ -8216,43 +8253,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 54,
-      "first_played": "29 mar 2016",
-      "last_played": "15 oct 2026 · 23:18",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
