@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-20T15:02:06.014618+00:00",
+  "updated_at": "2026-10-20T19:13:26.810764+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -23459,8 +23459,8 @@
     "los-veranos": {
       "name": "Los Veranos",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:54:41.155083+00:00",
-      "checked_at": "2026-10-06T16:54:41.155083+00:00",
+      "profile_checked_at": "2026-10-20T19:12:31.458040+00:00",
+      "checked_at": "2026-10-20T19:12:31.458040+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Los Veranos",
       "match_score": 0,
@@ -23475,11 +23475,10 @@
       "profile_status": "not_found",
       "status": "not_found",
       "missing_fields": [
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:54:41.155083+00:00",
-      "attempt_count": 2
+      "next_retry_at": "2026-11-03T19:12:31.458040+00:00",
+      "attempt_count": 3
     },
     "pearl-jam": {
       "name": "Pearl Jam",
@@ -62676,8 +62675,8 @@
     "n-al-aire": {
       "name": "Ñ (Al Aire)",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:57:56.185413+00:00",
-      "checked_at": "2026-10-06T16:57:56.185413+00:00",
+      "profile_checked_at": "2026-10-20T19:12:33.705520+00:00",
+      "checked_at": "2026-10-20T19:12:33.705520+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Ñ (Al Aire)",
       "match_score": 0,
@@ -62693,11 +62692,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:57:56.185413+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:33.705520+00:00",
+      "attempt_count": 2
     },
     "joe-banfi": {
       "name": "Joe Banfi",
@@ -62757,55 +62755,56 @@
     },
     "jake-hart": {
       "name": "Jake Hart",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:02.780037+00:00",
-      "checked_at": "2026-10-06T16:58:02.780037+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-20T19:12:34.715348+00:00",
+      "checked_at": "2026-10-20T19:12:34.715348+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Jake Hart",
       "match_score": 0,
-      "verification_source": "",
+      "verification_source": "Deezer exact artist match",
       "official_url": "",
       "social": {},
       "genre": "",
       "bio_en": "",
-      "image": "",
-      "image_source": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:02.780037+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-23T19:12:34.715348+00:00",
+      "attempt_count": 2
     },
     "sports-fan": {
       "name": "Sports Fan",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:03.906269+00:00",
-      "checked_at": "2026-10-06T16:58:03.906269+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-20T19:12:37.177466+00:00",
+      "checked_at": "2026-10-20T19:12:37.177466+00:00",
+      "musicbrainz_id": "e5884ff1-7eb2-4eaf-8a3e-27630b8b11a0",
       "canonical_name": "Sports Fan",
-      "match_score": 0,
-      "verification_source": "",
-      "official_url": "",
-      "social": {},
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://sportsfanband.com/",
+      "social": {
+        "facebook": "https://www.facebook.com/sportsfanband#_=_",
+        "twitter": "https://twitter.com/sportsfanband",
+        "instagram": ""
+      },
       "genre": "",
       "bio_en": "",
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:03.906269+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-23T19:12:37.177466+00:00",
+      "attempt_count": 2
     },
     "goodnight-lenin": {
       "name": "Goodnight Lenin",
@@ -62942,8 +62941,8 @@
     "cuatro-veinticuatro": {
       "name": "Cuatro Veinticuatro",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:19.078900+00:00",
-      "checked_at": "2026-10-06T16:58:19.078900+00:00",
+      "profile_checked_at": "2026-10-20T19:12:40.838144+00:00",
+      "checked_at": "2026-10-20T19:12:40.838144+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Cuatro Veinticuatro",
       "match_score": 0,
@@ -62959,11 +62958,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:19.078900+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:40.838144+00:00",
+      "attempt_count": 2
     },
     "dolphant": {
       "name": "Dolphant",
@@ -62992,8 +62990,8 @@
     "kate-tempest": {
       "name": "Kate Tempest",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:21.633853+00:00",
-      "checked_at": "2026-10-06T16:58:21.633853+00:00",
+      "profile_checked_at": "2026-10-20T19:12:42.252156+00:00",
+      "checked_at": "2026-10-20T19:12:42.252156+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Kate Tempest",
       "match_score": 0,
@@ -63010,8 +63008,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:21.633853+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:42.252156+00:00",
+      "attempt_count": 2
     },
     "super-tigre": {
       "name": "Super Tigre",
@@ -63294,8 +63292,8 @@
     "alex-vans": {
       "name": "Alex Vans",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:47.599163+00:00",
-      "checked_at": "2026-10-06T16:58:47.599163+00:00",
+      "profile_checked_at": "2026-10-20T19:12:45.240282+00:00",
+      "checked_at": "2026-10-20T19:12:45.240282+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Alex Vans",
       "match_score": 0,
@@ -63311,11 +63309,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:47.599163+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:45.240282+00:00",
+      "attempt_count": 2
     },
     "after-hours": {
       "name": "After Hours",
@@ -63344,8 +63341,8 @@
     "ythd": {
       "name": "Ÿþd",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:51.387081+00:00",
-      "checked_at": "2026-10-06T16:58:51.387081+00:00",
+      "profile_checked_at": "2026-10-20T19:12:46.130684+00:00",
+      "checked_at": "2026-10-20T19:12:46.130684+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Ÿþd",
       "match_score": 0,
@@ -63361,11 +63358,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:58:51.387081+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:46.130684+00:00",
+      "attempt_count": 2
     },
     "deadwood": {
       "name": "Deadwood",
@@ -63422,8 +63418,8 @@
     "gibson-bull-and-carmen": {
       "name": "Gibson Bull and Carmen",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:58:56.571965+00:00",
-      "checked_at": "2026-10-06T16:58:56.571965+00:00",
+      "profile_checked_at": "2026-10-20T19:12:47.971753+00:00",
+      "checked_at": "2026-10-20T19:12:47.971753+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Gibson Bull and Carmen",
       "match_score": 0,
@@ -63435,15 +63431,16 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio",
         "data"
       ],
-      "next_retry_at": "2026-10-20T16:58:56.571965+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-21T01:12:47.971753+00:00",
+      "attempt_count": 2,
+      "error": "500 Server Error: Internal Server Error for url: https://en.wikipedia.org/w/rest.php/v1/search/page?q=Gibson+Bull+and+Carmen&limit=6"
     },
     "noiserv": {
       "name": "Noiserv",
@@ -63476,8 +63473,8 @@
     "recorrido-paranormal": {
       "name": "Recorrido Paranormal",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:59:00.411597+00:00",
-      "checked_at": "2026-10-06T16:59:00.411597+00:00",
+      "profile_checked_at": "2026-10-20T19:12:48.856959+00:00",
+      "checked_at": "2026-10-20T19:12:48.856959+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Recorrido Paranormal",
       "match_score": 0,
@@ -63489,15 +63486,16 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio",
         "data"
       ],
-      "next_retry_at": "2026-10-20T16:59:00.411597+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-21T01:12:48.856959+00:00",
+      "attempt_count": 2,
+      "error": "500 Server Error: Internal Server Error for url: https://en.wikipedia.org/w/rest.php/v1/search/page?q=Recorrido+Paranormal&limit=6"
     },
     "eleanor-friedberger": {
       "name": "Eleanor Friedberger",
@@ -63577,8 +63575,8 @@
     "recorrido-paranormal-radio": {
       "name": "Recorrido Paranormal Radio",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:59:10.125617+00:00",
-      "checked_at": "2026-10-06T16:59:10.125617+00:00",
+      "profile_checked_at": "2026-10-20T19:12:50.793509+00:00",
+      "checked_at": "2026-10-20T19:12:50.793509+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Recorrido Paranormal Radio",
       "match_score": 0,
@@ -63594,11 +63592,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:59:10.125617+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:50.793509+00:00",
+      "attempt_count": 2
     },
     "lydia-jayne": {
       "name": "Lydia Jayne",
@@ -63628,8 +63625,8 @@
     "eo%c3%b7oay-100-ea-daaei-maximum": {
       "name": "Ëó÷øàÿ 100-êà Ðàäèî Maximum",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:59:13.974486+00:00",
-      "checked_at": "2026-10-06T16:59:13.974486+00:00",
+      "profile_checked_at": "2026-10-20T19:12:53.093315+00:00",
+      "checked_at": "2026-10-20T19:12:53.093315+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Ëó÷øàÿ 100-êà Ðàäèî Maximum",
       "match_score": 0,
@@ -63645,17 +63642,16 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:59:13.974486+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:53.093315+00:00",
+      "attempt_count": 2
     },
     "nina-lorraine": {
       "name": "Nina Lorraine",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:59:15.170794+00:00",
-      "checked_at": "2026-10-06T16:59:15.170794+00:00",
+      "profile_checked_at": "2026-10-20T19:12:54.332386+00:00",
+      "checked_at": "2026-10-20T19:12:54.332386+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Nina Lorraine",
       "match_score": 0,
@@ -63671,11 +63667,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:59:15.170794+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:54.332386+00:00",
+      "attempt_count": 2
     },
     "weekend": {
       "name": "Weekend",
@@ -63940,8 +63935,8 @@
     "line-kasa": {
       "name": "Line Kasa",
       "verified": false,
-      "profile_checked_at": "2026-10-06T16:59:40.840757+00:00",
-      "checked_at": "2026-10-06T16:59:40.840757+00:00",
+      "profile_checked_at": "2026-10-20T19:12:55.518794+00:00",
+      "checked_at": "2026-10-20T19:12:55.518794+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Line Kasa",
       "match_score": 0,
@@ -63957,11 +63952,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T16:59:40.840757+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:55.518794+00:00",
+      "attempt_count": 2
     },
     "love-inks": {
       "name": "Love Inks",
@@ -64171,8 +64165,8 @@
     "nightandgales": {
       "name": "Nightandgales",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:00:02.614480+00:00",
-      "checked_at": "2026-10-06T17:00:02.614480+00:00",
+      "profile_checked_at": "2026-10-20T19:12:56.864708+00:00",
+      "checked_at": "2026-10-20T19:12:56.864708+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Nightandgales",
       "match_score": 0,
@@ -64188,17 +64182,16 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:00:02.614480+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:56.864708+00:00",
+      "attempt_count": 2
     },
     "rose-and-the-howling-north": {
       "name": "Rose And The Howling North",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:00:03.748317+00:00",
-      "checked_at": "2026-10-06T17:00:03.748317+00:00",
+      "profile_checked_at": "2026-10-20T19:12:58.268464+00:00",
+      "checked_at": "2026-10-20T19:12:58.268464+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Rose And The Howling North",
       "match_score": 0,
@@ -64214,11 +64207,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:00:03.748317+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:58.268464+00:00",
+      "attempt_count": 2
     },
     "martin-solveig-the-cataracs": {
       "name": "Martin Solveig & The Cataracs",
@@ -64474,8 +64466,8 @@
     "bennettthecat": {
       "name": "bennettthecat",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:00:28.445619+00:00",
-      "checked_at": "2026-10-06T17:00:28.445619+00:00",
+      "profile_checked_at": "2026-10-20T19:12:59.709095+00:00",
+      "checked_at": "2026-10-20T19:12:59.709095+00:00",
       "musicbrainz_id": "",
       "canonical_name": "bennettthecat",
       "match_score": 0,
@@ -64491,11 +64483,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:00:28.445619+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:12:59.709095+00:00",
+      "attempt_count": 2
     },
     "bloom": {
       "name": "Bloom",
@@ -64632,8 +64623,8 @@
     "revenge-surgery": {
       "name": "Revenge Surgery",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:00:40.708699+00:00",
-      "checked_at": "2026-10-06T17:00:40.708699+00:00",
+      "profile_checked_at": "2026-10-20T19:13:00.839535+00:00",
+      "checked_at": "2026-10-20T19:13:00.839535+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Revenge Surgery",
       "match_score": 0,
@@ -64649,17 +64640,16 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:00:40.708699+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:00.839535+00:00",
+      "attempt_count": 2
     },
     "riothorse": {
       "name": "Riothorse",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:00:41.664193+00:00",
-      "checked_at": "2026-10-06T17:00:41.664193+00:00",
+      "profile_checked_at": "2026-10-20T19:13:02.871368+00:00",
+      "checked_at": "2026-10-20T19:13:02.871368+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Riothorse",
       "match_score": 0,
@@ -64675,11 +64665,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:00:41.664193+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:02.871368+00:00",
+      "attempt_count": 2
     },
     "the-soundcarriers": {
       "name": "The Soundcarriers",
@@ -65055,29 +65044,32 @@
     },
     "the-van-doos": {
       "name": "The Van Doos",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T17:01:16.635576+00:00",
-      "checked_at": "2026-10-06T17:01:16.635576+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-20T19:13:04.444988+00:00",
+      "checked_at": "2026-10-20T19:13:04.444988+00:00",
+      "musicbrainz_id": "2c408a96-1937-497d-9c21-35b597528f15",
       "canonical_name": "The Van Doos",
-      "match_score": 0,
-      "verification_source": "",
-      "official_url": "",
-      "social": {},
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
+      "official_url": "http://www.thevandoos.com/thevandoos/Home.html",
+      "social": {
+        "facebook": "",
+        "twitter": "https://twitter.com/thevandoos",
+        "instagram": ""
+      },
       "genre": "",
       "bio_en": "",
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:01:16.635576+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-23T19:13:04.444988+00:00",
+      "attempt_count": 2
     },
     "operators": {
       "name": "Operators",
@@ -65162,8 +65154,8 @@
     "cassette-cathedral": {
       "name": "Cassette Cathedral",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:01:23.232945+00:00",
-      "checked_at": "2026-10-06T17:01:23.232945+00:00",
+      "profile_checked_at": "2026-10-20T19:13:07.708038+00:00",
+      "checked_at": "2026-10-20T19:13:07.708038+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Cassette Cathedral",
       "match_score": 0,
@@ -65179,11 +65171,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:01:23.232945+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:07.708038+00:00",
+      "attempt_count": 2
     },
     "dream-boat": {
       "name": "Dream Boat",
@@ -65267,29 +65258,31 @@
     },
     "lovepark": {
       "name": "Lovepark",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T17:01:32.562874+00:00",
-      "checked_at": "2026-10-06T17:01:32.562874+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-20T19:13:08.652749+00:00",
+      "checked_at": "2026-10-20T19:13:08.652749+00:00",
+      "musicbrainz_id": "4426928b-2e9c-4fac-a741-9167981abbe9",
       "canonical_name": "Lovepark",
-      "match_score": 0,
-      "verification_source": "",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
       "official_url": "",
-      "social": {},
+      "social": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": "https://www.instagram.com/loveparkbeats/"
+      },
       "genre": "",
       "bio_en": "",
-      "image": "",
-      "image_source": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
-        "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:01:32.562874+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-23T19:13:08.652749+00:00",
+      "attempt_count": 2
     },
     "mothlight": {
       "name": "Mothlight",
@@ -65695,8 +65688,8 @@
     "the-new-division-ft-keep-shelly-in-athens": {
       "name": "The New Division ft. Keep Shelly in Athens",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:02:11.476169+00:00",
-      "checked_at": "2026-10-06T17:02:11.476169+00:00",
+      "profile_checked_at": "2026-10-20T19:13:12.096526+00:00",
+      "checked_at": "2026-10-20T19:13:12.096526+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The New Division ft. Keep Shelly in Athens",
       "match_score": 0,
@@ -65712,11 +65705,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:02:11.476169+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:12.096526+00:00",
+      "attempt_count": 2
     },
     "gold-bears": {
       "name": "Gold-Bears",
@@ -66672,8 +66664,8 @@
     "glass-random": {
       "name": "Glass Random",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:03:36.691770+00:00",
-      "checked_at": "2026-10-06T17:03:36.691770+00:00",
+      "profile_checked_at": "2026-10-20T19:13:13.140898+00:00",
+      "checked_at": "2026-10-20T19:13:13.140898+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Glass Random",
       "match_score": 0,
@@ -66689,11 +66681,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:03:36.691770+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:13.140898+00:00",
+      "attempt_count": 2
     },
     "big-friendlies": {
       "name": "Big Friendlies",
@@ -66826,8 +66817,8 @@
     "stopmotion-sickness": {
       "name": "Stopmotion Sickness",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:03:48.690710+00:00",
-      "checked_at": "2026-10-06T17:03:48.690710+00:00",
+      "profile_checked_at": "2026-10-20T19:13:14.600972+00:00",
+      "checked_at": "2026-10-20T19:13:14.600972+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Stopmotion Sickness",
       "match_score": 0,
@@ -66843,11 +66834,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:03:48.690710+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:14.600972+00:00",
+      "attempt_count": 2
     },
     "sunbears": {
       "name": "Sunbears!",
@@ -66924,8 +66914,8 @@
     "nikolai-fraiture-of-the-strokes": {
       "name": "Nikolai Fraiture of The Strokes",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:03:57.372698+00:00",
-      "checked_at": "2026-10-06T17:03:57.372698+00:00",
+      "profile_checked_at": "2026-10-20T19:13:15.671110+00:00",
+      "checked_at": "2026-10-20T19:13:15.671110+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Nikolai Fraiture of The Strokes",
       "match_score": 0,
@@ -66941,11 +66931,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:03:57.372698+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:15.671110+00:00",
+      "attempt_count": 2
     },
     "ted-zed": {
       "name": "Ted Zed",
@@ -67191,29 +67180,32 @@
     },
     "wooly-the-mammoth": {
       "name": "Wooly & the Mammoth",
-      "verified": false,
-      "profile_checked_at": "2026-10-06T17:04:19.073688+00:00",
-      "checked_at": "2026-10-06T17:04:19.073688+00:00",
-      "musicbrainz_id": "",
+      "verified": true,
+      "profile_checked_at": "2026-10-20T19:13:16.954827+00:00",
+      "checked_at": "2026-10-20T19:13:16.954827+00:00",
+      "musicbrainz_id": "4c442759-e36a-414b-bfb8-5b354c30ccc6",
       "canonical_name": "Wooly & the Mammoth",
-      "match_score": 0,
-      "verification_source": "",
+      "match_score": 100,
+      "verification_source": "MusicBrainz",
       "official_url": "",
-      "social": {},
+      "social": {
+        "facebook": "https://www.facebook.com/woolyandthemammoth",
+        "twitter": "",
+        "instagram": ""
+      },
       "genre": "",
       "bio_en": "",
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:04:19.073688+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-10-23T19:13:16.954827+00:00",
+      "attempt_count": 2
     },
     "luke-lalonde": {
       "name": "Luke Lalonde",
@@ -67396,8 +67388,8 @@
     "hollands": {
       "name": "Hollands",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:04:34.879840+00:00",
-      "checked_at": "2026-10-06T17:04:34.879840+00:00",
+      "profile_checked_at": "2026-10-20T19:13:19.732383+00:00",
+      "checked_at": "2026-10-20T19:13:19.732383+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Hollands",
       "match_score": 0,
@@ -67413,11 +67405,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:04:34.879840+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:19.732383+00:00",
+      "attempt_count": 2
     },
     "los-tones": {
       "name": "Los tones",
@@ -67471,8 +67462,8 @@
     "peachpit": {
       "name": "Peachpit",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:04:41.488043+00:00",
-      "checked_at": "2026-10-06T17:04:41.488043+00:00",
+      "profile_checked_at": "2026-10-20T19:13:20.925862+00:00",
+      "checked_at": "2026-10-20T19:13:20.925862+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Peachpit",
       "match_score": 0,
@@ -67489,8 +67480,8 @@
       "missing_fields": [
         "image"
       ],
-      "next_retry_at": "2026-10-20T17:04:41.488043+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:20.925862+00:00",
+      "attempt_count": 2
     },
     "pocket-fox": {
       "name": "Pocket Fox",
@@ -67703,8 +67694,8 @@
     "gelow-foster": {
       "name": "Gelow Foster",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:05:01.340729+00:00",
-      "checked_at": "2026-10-06T17:05:01.340729+00:00",
+      "profile_checked_at": "2026-10-20T19:13:22.842296+00:00",
+      "checked_at": "2026-10-20T19:13:22.842296+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Gelow Foster",
       "match_score": 0,
@@ -67720,11 +67711,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:05:01.340729+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:22.842296+00:00",
+      "attempt_count": 2
     },
     "laura-hill": {
       "name": "Laura Hill",
@@ -68058,8 +68048,8 @@
     "flaming-lips-fwends": {
       "name": "Flaming Lips & Fwends",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:05:34.018211+00:00",
-      "checked_at": "2026-10-06T17:05:34.018211+00:00",
+      "profile_checked_at": "2026-10-20T19:13:23.950180+00:00",
+      "checked_at": "2026-10-20T19:13:23.950180+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Flaming Lips & Fwends",
       "match_score": 0,
@@ -68075,11 +68065,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:05:34.018211+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:23.950180+00:00",
+      "attempt_count": 2
     },
     "hideous-towns": {
       "name": "Hideous Towns",
@@ -68138,8 +68127,8 @@
     "meenk": {
       "name": "Meenk",
       "verified": false,
-      "profile_checked_at": "2026-10-06T17:05:39.542877+00:00",
-      "checked_at": "2026-10-06T17:05:39.542877+00:00",
+      "profile_checked_at": "2026-10-20T19:13:25.455979+00:00",
+      "checked_at": "2026-10-20T19:13:25.455979+00:00",
       "musicbrainz_id": "",
       "canonical_name": "Meenk",
       "match_score": 0,
@@ -68155,11 +68144,10 @@
       "status": "not_found",
       "missing_fields": [
         "image",
-        "bio",
-        "data"
+        "bio"
       ],
-      "next_retry_at": "2026-10-20T17:05:39.542877+00:00",
-      "attempt_count": 1
+      "next_retry_at": "2026-11-03T19:13:25.455979+00:00",
+      "attempt_count": 2
     },
     "spaceface": {
       "name": "SPACEFACE",
