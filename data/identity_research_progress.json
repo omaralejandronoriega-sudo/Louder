@@ -1,7 +1,7 @@
 {
-  "cursor": 780,
+  "cursor": 800,
   "total_catalog": 7988,
-  "updated_at": "2026-10-20T06:36:25.193954+00:00",
+  "updated_at": "2026-10-20T12:11:55.818171+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -12234,6 +12234,314 @@
         "end": null,
         "begin": null
       }
+    },
+    "bearfoot bluegrass": {
+      "name": "Bearfoot Bluegrass",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bearhug": {
+      "name": "Bearhug",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "bears & dolls": {
+      "name": "Bears & Dolls",
+      "status": "identity_candidate_only",
+      "mbid": "08613894-1769-416d-89be-d7f32e27e832",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/08613894-1769-416d-89be-d7f32e27e832",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bearsanddolls"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "beastie boys": {
+      "name": "Beastie Boys",
+      "status": "identity_candidate_only",
+      "mbid": "9beb62b2-88db-4cea-801e-162cd344ee53",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative hip hop",
+        "alternative rock",
+        "east coast hip hop",
+        "experimental hip hop",
+        "funk",
+        "hardcore hip hop",
+        "hardcore punk",
+        "hip hop",
+        "rap rock",
+        "rapcore",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/9beb62b2-88db-4cea-801e-162cd344ee53",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beastieboys"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beastieboys"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q214039"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCX62fwFYJNo5U-Flu2V-kGQ"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "end": "2014",
+        "begin": "1979"
+      }
+    },
+    "beastie boys/ santigold": {
+      "name": "Beastie Boys/ Santigold",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "beat connection": {
+      "name": "Beat Connection",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "beat culture": {
+      "name": "Beat Culture",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "beat radio": {
+      "name": "Beat Radio",
+      "status": "identity_candidate_only",
+      "mbid": "b17880c4-63a0-4271-bc5d-bcf8bf8ce002",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b17880c4-63a0-4271-bc5d-bcf8bf8ce002",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://beatradio.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2005",
+        "ended": false
+      }
+    },
+    "beat!beat!beat!": {
+      "name": "BEAT!BEAT!BEAT!",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "beatbullyz": {
+      "name": "Beatbullyz",
+      "status": "identity_candidate_only",
+      "mbid": "675a66b4-12e9-417a-b86f-e587decce0e5",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "hip hop"
+      ],
+      "source": "https://musicbrainz.org/artist/675a66b4-12e9-417a-b86f-e587decce0e5",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beatbullyz"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beatbullyz"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4877025"
+        }
+      ],
+      "life_span": {
+        "begin": "2006",
+        "ended": false,
+        "end": null
+      }
+    },
+    "beaten awake": {
+      "name": "Beaten Awake",
+      "status": "identity_candidate_only",
+      "mbid": "bc668820-34e6-4d88-a697-189ce493a929",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/bc668820-34e6-4d88-a697-189ce493a929",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "beatsteaks": {
+      "name": "Beatsteaks",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "beaty heart": {
+      "name": "Beaty Heart",
+      "status": "identity_candidate_only",
+      "mbid": "5928cb56-cb10-4816-a22b-615134e523d2",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5928cb56-cb10-4816-a22b-615134e523d2",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Beatyheartmusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beatyheart"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "beau and the arrows": {
+      "name": "Beau and the Arrows",
+      "status": "identity_candidate_only",
+      "mbid": "41a2daff-5c5d-4d0a-856b-e366fa586e74",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "ambient",
+        "grunge",
+        "indie pop",
+        "punk",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/41a2daff-5c5d-4d0a-856b-e366fa586e74",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beauandthearrows"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/beauandthearrows/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beauandthearrows"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2008-03-27",
+        "end": null
+      }
+    },
+    "beau x": {
+      "name": "Beau x",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "beaulieu porch": {
+      "name": "Beaulieu Porch",
+      "status": "identity_candidate_only",
+      "mbid": "5b44a0ec-9eaa-43e9-b597-c3dc88a3329c",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5b44a0ec-9eaa-43e9-b597-c3dc88a3329c",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "beautiful small machines": {
+      "name": "Beautiful Small Machines",
+      "status": "identity_candidate_only",
+      "mbid": "e513cc33-3b15-473d-942f-f807a05912c6",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e513cc33-3b15-473d-942f-f807a05912c6",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beautifulsmallmachines"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/beautifulsmallmachines/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beautifulsmallmachines"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q124368733"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCT-8ByIEUM21FP1YzZl5csA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "bebeboy": {
+      "name": "BEBEBOY",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "beck": {
+      "name": "Beck",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "becker": {
+      "name": "Becker",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
     }
   }
 }
