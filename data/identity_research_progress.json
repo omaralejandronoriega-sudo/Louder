@@ -1,7 +1,7 @@
 {
-  "cursor": 800,
+  "cursor": 820,
   "total_catalog": 7988,
-  "updated_at": "2026-10-20T12:11:55.818171+00:00",
+  "updated_at": "2026-10-20T17:09:46.165903+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -12542,6 +12542,333 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "bed": {
+      "name": "Bed",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bedon": {
+      "name": "Bedon",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bedroom": {
+      "name": "Bedroom",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "bedside manners": {
+      "name": "Bedside Manners",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bee gees": {
+      "name": "Bee Gees",
+      "status": "identity_candidate_only",
+      "mbid": "bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "baroque pop",
+        "blue-eyed soul",
+        "classic rock",
+        "dance",
+        "disco",
+        "pop",
+        "pop rock",
+        "psychedelic pop",
+        "rock",
+        "soft rock"
+      ],
+      "source": "https://musicbrainz.org/artist/bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beegees"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/beegees/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/beegees"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q133405"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCD9sCcKXnFxMeuFoNayVxeQ"
+        }
+      ],
+      "life_span": {
+        "begin": "1958",
+        "end": "2003",
+        "ended": true
+      }
+    },
+    "been stellar": {
+      "name": "Been Stellar",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "begging dog": {
+      "name": "Begging Dog",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "beginners": {
+      "name": "Beginners",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "behind sapphire": {
+      "name": "Behind Sapphire",
+      "status": "identity_candidate_only",
+      "mbid": "e723689f-71bb-4571-b3c2-d9a2537b26da",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e723689f-71bb-4571-b3c2-d9a2537b26da",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://behindsapphire.bandcamp.com/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/behind-sapphire"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "being dead": {
+      "name": "Being Dead",
+      "status": "identity_candidate_only",
+      "mbid": "90955e9c-860e-4881-a454-07de62c85534",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/90955e9c-860e-4881-a454-07de62c85534",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://beingdead.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/beingdeadforever"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/being__dead/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCMrUT8ETz5XUc8gYSKAlzFw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "beirut": {
+      "name": "Beirut",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "bel": {
+      "name": "BEL",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "belgian fog": {
+      "name": "Belgian Fog",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bell orchestre": {
+      "name": "Bell Orchestre",
+      "status": "identity_candidate_only",
+      "mbid": "d10822a1-52d0-4aea-b5d0-ca022820d64b",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "instrumental",
+        "instrumental rock",
+        "post-rock"
+      ],
+      "source": "https://musicbrainz.org/artist/d10822a1-52d0-4aea-b5d0-ca022820d64b",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q846190"
+        }
+      ],
+      "life_span": {
+        "begin": "1999",
+        "end": null,
+        "ended": false
+      }
+    },
+    "bell weather department": {
+      "name": "Bell Weather Department",
+      "status": "identity_candidate_only",
+      "mbid": "2780d0f9-784d-457d-945d-330a52fa0882",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/2780d0f9-784d-457d-945d-330a52fa0882",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "bella ruse": {
+      "name": "Bella Ruse",
+      "status": "identity_candidate_only",
+      "mbid": "2e02e882-9ba5-43d6-9622-0819e13eefcf",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/2e02e882-9ba5-43d6-9622-0819e13eefcf",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bellaruse"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bellaruse"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCBzfXWSjKXJ85EC27TEDRoA"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": null,
+        "ended": false
+      }
+    },
+    "belle & sebastian": {
+      "name": "Belle & Sebastian",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "belle and sebastian": {
+      "name": "Belle and Sebastian",
+      "status": "identity_candidate_only",
+      "mbid": "e5c7b94f-e264-473c-bb0f-37c85d4d5c70",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "baroque pop",
+        "chamber pop",
+        "dance-pop",
+        "indie folk",
+        "indie pop",
+        "indie rock",
+        "psychedelic pop",
+        "rock",
+        "sunshine pop",
+        "synth-pop",
+        "twee pop"
+      ],
+      "source": "https://musicbrainz.org/artist/e5c7b94f-e264-473c-bb0f-37c85d4d5c70",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://belleandsebastian.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/belleandsebastian"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bellesglasgow/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/belle-and-sebastian"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q691568"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCIS-RzDIUQcYGL0aSLA67hw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UClz7tzOxFJT_v5iOfh8PPvg"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1996-01"
+      }
+    },
+    "belle and the bone people": {
+      "name": "Belle and the Bone People",
+      "status": "identity_candidate_only",
+      "mbid": "ceebddf9-cbc9-4fbe-bbde-2fd2875810b5",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Sydney based Indie",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ceebddf9-cbc9-4fbe-bbde-2fd2875810b5",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://belleandthebonepeople.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "bellevue days": {
+      "name": "Bellevue Days",
+      "status": "identity_candidate_only",
+      "mbid": "4d5fbb03-8cc1-44c8-83a1-d12fb91b38d4",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4d5fbb03-8cc1-44c8-83a1-d12fb91b38d4",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
