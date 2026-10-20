@@ -1,7 +1,7 @@
 {
-  "cursor": 820,
+  "cursor": 840,
   "total_catalog": 7988,
-  "updated_at": "2026-10-20T17:09:46.165903+00:00",
+  "updated_at": "2026-10-20T20:34:44.476047+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -12869,6 +12869,366 @@
       "genres": [],
       "source": "https://musicbrainz.org/artist/4d5fbb03-8cc1-44c8-83a1-d12fb91b38d4",
       "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bellows": {
+      "name": "Bellows",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "below the sea": {
+      "name": "Below the Sea",
+      "status": "identity_candidate_only",
+      "mbid": "528de22f-7b02-457b-83f3-f37d6a16003e",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/528de22f-7b02-457b-83f3-f37d6a16003e",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "ben browning": {
+      "name": "Ben Browning",
+      "status": "identity_candidate_only",
+      "mbid": "1cf64897-821e-40a6-9055-a34244494636",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/1cf64897-821e-40a6-9055-a34244494636",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://benbrowning.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/benbrowningofficial"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/benbrowning"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q84524397"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "ben folds": {
+      "name": "Ben Folds",
+      "status": "identity_candidate_only",
+      "mbid": "51b7f46f-6c0f-46f2-9496-08c9ec2624d4",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie pop",
+        "indie rock",
+        "piano rock",
+        "pop",
+        "rock",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/51b7f46f-6c0f-46f2-9496-08c9ec2624d4",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BenFolds"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/actualbenfolds/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/murkanpianist/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/user7557926"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q435681"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCNjEo_L1jMY7mMqb5G70JvA"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCXpuZ-3FlxeI1jAG630d2pg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1966-09-12"
+      }
+    },
+    "ben folds five": {
+      "name": "Ben Folds Five",
+      "status": "identity_candidate_only",
+      "mbid": "abe2669a-a612-4bf6-9193-bb4f4b8a9088",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie pop",
+        "indie rock",
+        "piano rock",
+        "pop",
+        "pop rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/abe2669a-a612-4bf6-9193-bb4f4b8a9088",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Ben-Folds-Five/408278449201590"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/benfoldsfive/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q816495"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCV-vTNBvc98cYqUG2vhR6bw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/@benfoldsTV"
+        }
+      ],
+      "life_span": {
+        "end": "2023-08-23",
+        "begin": "1993",
+        "ended": true
+      }
+    },
+    "ben gibbard": {
+      "name": "Ben Gibbard",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "ben harper and relentless7": {
+      "name": "Ben Harper and Relentless7",
+      "status": "identity_candidate_only",
+      "mbid": "78a8b409-89cc-4ec4-ba07-e41b8870fb4a",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/78a8b409-89cc-4ec4-ba07-e41b8870fb4a",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3424310"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": "2010",
+        "ended": true
+      }
+    },
+    "ben howard": {
+      "name": "Ben Howard",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "ben khan": {
+      "name": "Ben Khan",
+      "status": "identity_candidate_only",
+      "mbid": "9dabeeb9-7766-468c-856b-e924058d69d6",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Benedict Khan",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9dabeeb9-7766-468c-856b-e924058d69d6",
+      "evidence_links": [
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/benkhan"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "ben kweller": {
+      "name": "Ben Kweller",
+      "status": "identity_candidate_only",
+      "mbid": "ff9deaae-da4f-42b7-a19e-36fedd3fc706",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie folk",
+        "indie pop",
+        "indie rock",
+        "rock",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/ff9deaae-da4f-42b7-a19e-36fedd3fc706",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/benkweller"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/benkweller"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q774923"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCofB4mRf0j5kyn9lnoiSoNA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1981-06-16",
+        "ended": false
+      }
+    },
+    "ben sheppard": {
+      "name": "Ben Sheppard",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "ben sollee & daniel martin moore": {
+      "name": "Ben Sollee & Daniel Martin Moore",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "ben wuyts": {
+      "name": "Ben Wuyts",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "beneath her parachute": {
+      "name": "Beneath her parachute",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "benee": {
+      "name": "BENEE",
+      "status": "identity_candidate_only",
+      "mbid": "b8cc2c1b-f62e-4a60-a9a6-5ebae2ec040b",
+      "type": "Person",
+      "country": "NZ",
+      "disambiguation": "NZ singer and songwriter",
+      "genres": [
+        "alternative pop",
+        "bedroom pop",
+        "electronic",
+        "electropop",
+        "indie pop",
+        "pop",
+        "r&b",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/b8cc2c1b-f62e-4a60-a9a6-5ebae2ec040b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BENEE"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/beneemusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/benee"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q61749159"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCqkzefLq9-QoYwFwolcImQw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCBfIRqiUk_-57izXvbZPYlA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2000-01-30",
+        "end": null
+      }
+    },
+    "bengala": {
+      "name": "Bengala",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "beni": {
+      "name": "Beni",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "benjamin diamond": {
+      "name": "Benjamin Diamond",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "benjamin dunn and the animal orchestra": {
+      "name": "Benjamin Dunn And The Animal Orchestra",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "benjamin e. morsberger": {
+      "name": "Benjamin E. Morsberger",
+      "status": "identity_candidate_only",
+      "mbid": "069f54c2-0b84-4151-87b4-2ba7c17a147e",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/069f54c2-0b84-4151-87b4-2ba7c17a147e",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
     }
   }
 }
