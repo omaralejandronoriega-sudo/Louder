@@ -5,7 +5,7 @@
       "slug": "louder",
       "reason": "internal_exact",
       "confidence": "high",
-      "plays": 668,
+      "plays": 671,
       "catalog_status": "history_only",
       "sources": [
         "lastfm",
@@ -24,7 +24,38 @@
         {
           "title": "Louder Radio",
           "album": "Recién incorporada al historial",
-          "plays": 215,
+          "plays": 218,
+          "sources": [
+            "yesstreaming_live"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Louder Radio",
+      "slug": "louder-radio",
+      "reason": "internal_exact",
+      "confidence": "high",
+      "plays": 461,
+      "catalog_status": "history_only",
+      "sources": [
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": [
+        {
+          "title": "stream",
+          "album": "",
+          "plays": 0,
+          "sources": [
+            "lastfm",
+            "migrated"
+          ]
+        },
+        {
+          "title": "Louder · La Única Alternativa",
+          "album": "Recién incorporada al historial",
+          "plays": 301,
           "sources": [
             "yesstreaming_live"
           ]
@@ -114,37 +145,6 @@
           "sources": [
             "wp_db",
             "migrated"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Louder Radio",
-      "slug": "louder-radio",
-      "reason": "internal_exact",
-      "confidence": "high",
-      "plays": 459,
-      "catalog_status": "history_only",
-      "sources": [
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": [
-        {
-          "title": "stream",
-          "album": "",
-          "plays": 0,
-          "sources": [
-            "lastfm",
-            "migrated"
-          ]
-        },
-        {
-          "title": "Louder · La Única Alternativa",
-          "album": "Recién incorporada al historial",
-          "plays": 299,
-          "sources": [
-            "yesstreaming_live"
           ]
         }
       ]
