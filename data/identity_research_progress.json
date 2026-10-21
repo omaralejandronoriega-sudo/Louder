@@ -1,7 +1,7 @@
 {
-  "cursor": 900,
+  "cursor": 920,
   "total_catalog": 7988,
-  "updated_at": "2026-10-21T07:34:07.432170+00:00",
+  "updated_at": "2026-10-21T13:13:59.418710+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -14596,6 +14596,412 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "bikinians": {
+      "name": "Bikinians",
+      "status": "identity_candidate_only",
+      "mbid": "7a31cd4c-c3bf-4208-ba58-5ba2066ed361",
+      "type": "Group",
+      "country": "BE",
+      "disambiguation": "Belgian indie",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7a31cd4c-c3bf-4208-ba58-5ba2066ed361",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bikinians.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bikinians"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2008"
+      }
+    },
+    "bikos": {
+      "name": "Bikos",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bill withers": {
+      "name": "Bill Withers",
+      "status": "identity_candidate_only",
+      "mbid": "fd1a2d9d-9bb6-44de-83a3-41560658aba9",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blues",
+        "deep soul",
+        "funk",
+        "motown",
+        "pop soul",
+        "singer-songwriter",
+        "smooth soul",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/fd1a2d9d-9bb6-44de-83a3-41560658aba9",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BillWithers"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/RealBillWithers/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q346565"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCBTrTXbSiv4Pq7As_tcB0UA"
+        }
+      ],
+      "life_span": {
+        "begin": "1938-07-04",
+        "end": "2020-03-30",
+        "ended": true
+      }
+    },
+    "billie eilish": {
+      "name": "Billie Eilish",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "billy idol": {
+      "name": "Billy Idol",
+      "status": "identity_candidate_only",
+      "mbid": "47c8f88b-987a-4b64-9175-2b1b57809727",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "English rock singer‐songwriter",
+      "genres": [
+        "alternative dance",
+        "classic rock",
+        "electronic",
+        "hard rock",
+        "new wave",
+        "pop rock",
+        "post-punk",
+        "punk",
+        "punk rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/47c8f88b-987a-4b64-9175-2b1b57809727",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/153679928035576"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/billyidol/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BillyIdol"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/official-billy-idol"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q73437"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC22iRbeDan0Qe_PrhdOkj2w"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCZAfHkJj43Lir2Id3GiGCjQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC_R3nYWHZV0tGgbpuDoI0vA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC22iRbeDan0Qe_PrhdOkj2w"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC_R3nYWHZV0tGgbpuDoI0vA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCZAfHkJj43Lir2Id3GiGCjQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1955-11-30",
+        "end": null
+      }
+    },
+    "billy j. kramer & the dakotas": {
+      "name": "Billy J. Kramer & The Dakotas",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "billy joel": {
+      "name": "Billy Joel",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "billy nomates": {
+      "name": "Billy Nomates",
+      "status": "identity_candidate_only",
+      "mbid": "a9b2d360-0ebc-47d9-9870-a7e7b225b365",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "indie rock",
+        "post-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/a9b2d360-0ebc-47d9-9870-a7e7b225b365",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://billynomates.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/billynomatestor"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/iambillynomates/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q108911665"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://www.wikidata.org/wiki/Q108911665"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCDuDc22uYlLOluGkvUrXuEA"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "biomechanical": {
+      "name": "Biomechanical",
+      "status": "identity_candidate_only",
+      "mbid": "c862465d-bc9e-4b47-a360-6eb8f4d11a72",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c862465d-bc9e-4b47-a360-6eb8f4d11a72",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://biomechanical.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Biomechanical-6785416358"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q864580"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2001"
+      }
+    },
+    "bipolar sunshine": {
+      "name": "Bipolar Sunshine",
+      "status": "identity_candidate_only",
+      "mbid": "ba9cfe3a-1aef-4a2a-9d97-03a624ca899c",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative r&b"
+      ],
+      "source": "https://musicbrainz.org/artist/ba9cfe3a-1aef-4a2a-9d97-03a624ca899c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bipolarsunshine"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bipolarsunshinelife/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bipolarsunshine"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16727521"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/bipolarsunshine"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/BipolarSunshineVEVO"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1984-01-13",
+        "ended": false
+      }
+    },
+    "birdland": {
+      "name": "Birdland",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "birds in the airport": {
+      "name": "Birds in the Airport",
+      "status": "identity_candidate_only",
+      "mbid": "36528737-77fb-4cca-8cf4-9b7c5479d1d3",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/36528737-77fb-4cca-8cf4-9b7c5479d1d3",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "birds of tokyo": {
+      "name": "Birds of Tokyo",
+      "status": "identity_candidate_only",
+      "mbid": "8eec195f-d357-4e0a-bcc7-74fd5c462e6e",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/8eec195f-d357-4e0a-bcc7-74fd5c462e6e",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/birdsoftokyomusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1078"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/birdsoftokyo"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2004",
+        "end": null
+      }
+    },
+    "birds vs planes": {
+      "name": "Birds Vs Planes",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "birdy": {
+      "name": "Birdy",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "bisaid": {
+      "name": "Bisaid",
+      "status": "identity_candidate_only",
+      "mbid": "f99fba2d-c72b-4cdb-8fba-f9654eb7642d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "alternative rock band from Coquimbo, Chile",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f99fba2d-c72b-4cdb-8fba-f9654eb7642d",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bishop allen": {
+      "name": "Bishop Allen",
+      "status": "identity_candidate_only",
+      "mbid": "1043a3a9-6722-4cdb-a28a-6acbad217b38",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/1043a3a9-6722-4cdb-a28a-6acbad217b38",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q866325"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2001"
+      }
+    },
+    "biting elbows": {
+      "name": "Biting Elbows",
+      "status": "identity_candidate_only",
+      "mbid": "8adf5343-b907-48d5-81de-577f5fb2e12a",
+      "type": "Group",
+      "country": "RU",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8adf5343-b907-48d5-81de-577f5fb2e12a",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4035135"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCM4wjxmSOzrIO9K0pmsGpVA"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": null,
+        "ended": false
+      }
+    },
+    "bizou": {
+      "name": "Bizou",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "björk": {
+      "name": "Björk",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
