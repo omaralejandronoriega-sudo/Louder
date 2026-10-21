@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-21T00:53:02.374384+00:00",
+  "generated_at": "2026-10-21T07:58:58.438047+00:00",
   "source_updates": {
-    "artists": "2026-10-21T00:52:57.387461Z",
-    "galleries": "2026-10-20T22:34:56.384330+00:00",
-    "album_art": "2026-10-20T22:40:17.107464+00:00"
+    "artists": "2026-10-21T07:58:52.403904Z",
+    "galleries": "2026-10-21T05:46:15.239286+00:00",
+    "album_art": "2026-10-21T06:00:40.127271+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
     "public_artists": 7920,
     "aliases_normalized": 7998,
-    "with_history": 7871,
+    "with_history": 7872,
     "with_tracks": 7914,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1406
+      "yesstreaming_live": 1410
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-21T00:52:57.387461Z"
+      "merged_at": "2026-10-21T07:58:52.403904Z"
     }
   },
   "profile_enrichment": {
@@ -53,18 +53,18 @@
       "legacy": 79,
       "retry": 7
     },
-    "missing_validated_profile_image": 973,
+    "missing_validated_profile_image": 969,
     "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4363,
     "core_complete_pct": 55.09,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6947,
-    "effective_image_pct": 87.71,
+    "effective_image": 6951,
+    "effective_image_pct": 87.77,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5302,
-    "missing_image": 973,
+    "image_gallery_fallback": 5306,
+    "missing_image": 969,
     "effective_bio": 4464,
     "effective_bio_pct": 56.36,
     "bio_direct_artist": 1026,
@@ -73,21 +73,21 @@
     "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6947,
-    "with_social": 4766,
+    "gallery_with_images": 6951,
+    "with_social": 4767,
     "with_genre": 3904,
     "with_related": 1599
   },
   "tracks": {
     "total": 18195,
-    "with_effective_artwork": 13480,
-    "with_effective_artwork_pct": 74.09,
-    "missing_artwork": 4715,
+    "with_effective_artwork": 13482,
+    "with_effective_artwork_pct": 74.1,
+    "missing_artwork": 4713,
     "grouped_as_otras": 5905,
-    "with_first_and_last_dates": 17783,
+    "with_first_and_last_dates": 17786,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10580,
-    "album_art_cache_missed": 4331
+    "album_art_cache_found": 10582,
+    "album_art_cache_missed": 4329
   },
   "focus": {
     "boylife": {
@@ -263,9 +263,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 129,
+      "plays": 130,
       "first_played": "21 nov 2012",
-      "last_played": "18 oct 2026 · 14:22",
+      "last_played": "20 oct 2026 · 23:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -918,6 +918,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 59,
+      "first_played": "29 jul 2012",
+      "last_played": "21 oct 2026 · 01:58",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -961,41 +996,6 @@
       "sources": [
         "wp_db",
         "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 58,
-      "first_played": "29 jul 2012",
-      "last_played": "15 oct 2026 · 21:51",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
       ],
       "tracks": 4,
       "tracks_with_artwork": 4,
@@ -1089,6 +1089,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 56,
+      "first_played": "29 mar 2016",
+      "last_played": "20 oct 2026 · 19:38",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 56,
@@ -1113,43 +1150,6 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 55,
-      "first_played": "29 mar 2016",
-      "last_played": "19 oct 2026 · 19:03",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
@@ -3594,35 +3594,38 @@
       "profile_complete": false
     },
     {
-      "name": "Rooney",
-      "slug": "rooney",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 34,
-      "first_played": "23 jul 2012",
-      "last_played": "10 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
+      "first_played": "15 jul 2022",
+      "last_played": "20 oct 2026 · 20:53",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 2,
+      "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "gallery",
+      "has_image": false,
+      "image_source": "",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
       "related": 0,
       "missing_core": [
+        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "partial",
+      "profile_status": "not_found",
       "profile_missing_fields": [
+        "image",
         "bio"
       ],
       "profile_complete": false
@@ -4495,20 +4498,21 @@
       "profile_complete": false
     },
     {
-      "name": "Fops",
-      "slug": "fops",
-      "plays": 33,
-      "first_played": "25 jul 2012",
-      "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "wp_draft",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 34,
+      "first_played": "15 jul 2022",
+      "last_played": "20 oct 2026 · 20:53",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4531,21 +4535,20 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "name": "Fops",
+      "slug": "fops",
       "plays": 33,
-      "first_played": "15 jul 2022",
-      "last_played": "18 oct 2026 · 15:43",
-      "catalog_status": "programmed_history",
+      "first_played": "25 jul 2012",
+      "last_played": "27 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
       "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "wp_db",
+        "lastfm"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5748,6 +5751,44 @@
       "profile_complete": false
     },
     {
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
+      "plays": 19,
+      "first_played": "28 feb 2025",
+      "last_played": "21 oct 2026 · 00:44",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sons Between Guns",
       "slug": "sons-between-guns",
       "plays": 19,
@@ -5974,44 +6015,6 @@
       "tracks": 3,
       "tracks_with_artwork": 3,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 18,
-      "first_played": "28 feb 2025",
-      "last_played": "18 oct 2026 · 08:34",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6433,6 +6436,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 16,
+      "first_played": "23 sep 2026",
+      "last_played": "20 oct 2026 · 21:35",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "We Were Evergreen",
       "slug": "we-were-evergreen",
       "plays": 16,
@@ -6606,41 +6644,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Long Blondes",
-      "slug": "the-long-blondes",
-      "plays": 15,
-      "first_played": "23 sep 2026",
-      "last_played": "18 oct 2026 · 22:08",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7334,9 +7337,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 129,
+      "plays": 130,
       "first_played": "21 nov 2012",
-      "last_played": "18 oct 2026 · 14:22",
+      "last_played": "20 oct 2026 · 23:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7955,6 +7958,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 59,
+      "first_played": "29 jul 2012",
+      "last_played": "21 oct 2026 · 01:58",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -7998,41 +8036,6 @@
       "sources": [
         "wp_db",
         "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 58,
-      "first_played": "29 jul 2012",
-      "last_played": "15 oct 2026 · 21:51",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
       ],
       "tracks": 4,
       "tracks_with_artwork": 4,
@@ -8126,6 +8129,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 56,
+      "first_played": "29 mar 2016",
+      "last_played": "20 oct 2026 · 19:38",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 56,
@@ -8150,43 +8190,6 @@
       "gallery_images": 1,
       "has_social": false,
       "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 55,
-      "first_played": "29 mar 2016",
-      "last_played": "19 oct 2026 · 19:03",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
       "related": 10,
       "missing_core": [
         "bio"
@@ -10561,6 +10564,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 34,
+      "first_played": "15 jul 2022",
+      "last_played": "20 oct 2026 · 20:53",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Rooney",
       "slug": "rooney",
       "plays": 34,
@@ -10658,42 +10698,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Fops",
-      "slug": "fops",
-      "plays": 33,
-      "first_played": "25 jul 2012",
-      "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
