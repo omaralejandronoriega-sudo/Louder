@@ -1,7 +1,7 @@
 {
-  "cursor": 880,
+  "cursor": 900,
   "total_catalog": 7988,
-  "updated_at": "2026-10-21T02:01:26.545576+00:00",
+  "updated_at": "2026-10-21T07:34:07.432170+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -14214,6 +14214,385 @@
     },
     "big data/white sea": {
       "name": "Big Data/White Sea",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "big deal": {
+      "name": "Big Deal",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
+    },
+    "big fear": {
+      "name": "Big Fear",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "big friendlies": {
+      "name": "Big Friendlies",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "big hush": {
+      "name": "Big Hush",
+      "status": "identity_candidate_only",
+      "mbid": "6a367de8-2e4d-465c-a579-10a6997e8b54",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6a367de8-2e4d-465c-a579-10a6997e8b54",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "big jackson": {
+      "name": "Big Jackson",
+      "status": "identity_candidate_only",
+      "mbid": "7d33e983-0028-4914-bc24-d87451e16239",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7d33e983-0028-4914-bc24-d87451e16239",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigjackson.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/big.jackson.beats"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/big_jackson"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "big linda": {
+      "name": "Big Linda",
+      "status": "identity_candidate_only",
+      "mbid": "f149b9b6-4421-4efd-a538-8ea6173381e3",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f149b9b6-4421-4efd-a538-8ea6173381e3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Big-Linda/48048341467"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCWIkUrqoeythXewZtpbrFGg"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "big red machine": {
+      "name": "Big Red Machine",
+      "status": "identity_candidate_only",
+      "mbid": "6757d72a-3ac9-4ccb-b69b-39f691477180",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Bon Iver's Justin Vernon and The National's Aaron Dessner",
+      "genres": [
+        "experimental",
+        "folktronica",
+        "indie folk",
+        "indie pop",
+        "post-rock"
+      ],
+      "source": "https://musicbrainz.org/artist/6757d72a-3ac9-4ccb-b69b-39f691477180",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigredmachine.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bigredmachineadjv/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q60742613"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": null,
+        "ended": false
+      }
+    },
+    "big red machine / anaïs mitchell": {
+      "name": "Big Red Machine / Anaïs Mitchell",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "big red machine / fleet foxes / anaïs mitchell": {
+      "name": "Big Red Machine / Fleet Foxes / Anaïs Mitchell",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "big red machine / taylor swift": {
+      "name": "Big Red Machine / Taylor Swift",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "big scary": {
+      "name": "Big Scary",
+      "status": "identity_candidate_only",
+      "mbid": "3dd2e53d-fe3a-4caa-81e5-fe0ea7c2b616",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "art pop",
+        "dream pop",
+        "indie pop"
+      ],
+      "source": "https://musicbrainz.org/artist/3dd2e53d-fe3a-4caa-81e5-fe0ea7c2b616",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigscary.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bigscaryband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bigscarymusic/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4460133"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCNTQy22yqRQ7aSSaGXc99Fg"
+        }
+      ],
+      "life_span": {
+        "begin": "2006",
+        "end": null,
+        "ended": false
+      }
+    },
+    "big sir": {
+      "name": "big Sir",
+      "status": "identity_candidate_only",
+      "mbid": "98c0b0bb-f04d-4674-ac71-8842770968d9",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/98c0b0bb-f04d-4674-ac71-8842770968d9",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigsir.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bigsirband"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3802486"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "big smile": {
+      "name": "Big Smile",
+      "status": "identity_candidate_only",
+      "mbid": "8dfdbd65-1db6-4ffd-814c-1742467c4174",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Cincinnati, Ohio pop punk band.",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8dfdbd65-1db6-4ffd-814c-1742467c4174",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "big special": {
+      "name": "BIG SPECIAL",
+      "status": "identity_candidate_only",
+      "mbid": "38d929d1-502d-486e-947a-00d6e4194039",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "UK post-punk duo",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/38d929d1-502d-486e-947a-00d6e4194039",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigspecial.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bigspecialmusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bigspecial_/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bigspecial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q136403295"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCSU1xIUwJVAYcIVOiUOiNJg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2020"
+      }
+    },
+    "big talk": {
+      "name": "Big Talk",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "big thief": {
+      "name": "Big Thief",
+      "status": "identity_candidate_only",
+      "mbid": "9f81247f-7f57-42f3-a8ba-75bef554e591",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US indie folk band",
+      "genres": [
+        "alternative rock",
+        "americana",
+        "folk rock",
+        "indie folk",
+        "indie rock",
+        "psychedelic rock"
+      ],
+      "source": "https://musicbrainz.org/artist/9f81247f-7f57-42f3-a8ba-75bef554e591",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bigthief.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bigthiefmusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bigthiefmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/big-thief"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q28228836"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCvN64FqCG5hi2cTsOLH2lqQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2015"
+      }
+    },
+    "big tree": {
+      "name": "Big Tree",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "big troubles": {
+      "name": "Big Troubles",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "biig piig": {
+      "name": "Biig Piig",
+      "status": "identity_candidate_only",
+      "mbid": "b618a5f3-085d-4966-887f-6d264c61524a",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "r&b"
+      ],
+      "source": "https://musicbrainz.org/artist/b618a5f3-085d-4966-887f-6d264c61524a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BiigPiig"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/biig_piig/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/biiggpiigg"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q86459139"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCknUiQbBajFvNEC0iI28BGQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1998-01-22",
+        "end": null
+      }
+    },
+    "bikini fatal": {
+      "name": "Bikini Fatal",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
