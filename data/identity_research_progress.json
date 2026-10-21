@@ -1,7 +1,7 @@
 {
-  "cursor": 920,
+  "cursor": 940,
   "total_catalog": 7988,
-  "updated_at": "2026-10-21T13:13:59.418710+00:00",
+  "updated_at": "2026-10-21T18:15:56.471871+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -15000,6 +15000,320 @@
     },
     "björk": {
       "name": "Björk",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "blabbermouth": {
+      "name": "Blabbermouth",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black box": {
+      "name": "Black Box",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "black city lights": {
+      "name": "Black City Lights",
+      "status": "identity_candidate_only",
+      "mbid": "c8f59f91-34e4-4ea0-9ffa-cdcbf8548e68",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "pop"
+      ],
+      "source": "https://musicbrainz.org/artist/c8f59f91-34e4-4ea0-9ffa-cdcbf8548e68",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://blackcitylights.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/blackcitylights"
+        }
+      ],
+      "life_span": {
+        "begin": "2011",
+        "end": null,
+        "ended": false
+      }
+    },
+    "black country, new road": {
+      "name": "Black Country, New Road",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black foxxes": {
+      "name": "Black Foxxes",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black handed kites": {
+      "name": "Black handed Kites",
+      "status": "identity_candidate_only",
+      "mbid": "b8c04809-4656-4775-bbe4-3b90c2bf450c",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b8c04809-4656-4775-bbe4-3b90c2bf450c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BlackHandedKites"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "black honey": {
+      "name": "Black Honey",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "black kids": {
+      "name": "Black Kids",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black label society": {
+      "name": "Black Label Society",
+      "status": "identity_candidate_only",
+      "mbid": "a8e935c6-3fcc-414c-900c-77e8170e7e7c",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "acoustic rock",
+        "groove metal",
+        "hard rock",
+        "heavy metal",
+        "metal",
+        "rock",
+        "southern metal",
+        "southern rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a8e935c6-3fcc-414c-900c-77e8170e7e7c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://blacklabelsocietyband.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/blacklabelsociety"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/black-label-society"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q727736"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCWCYMrQfLTsnixbmD15JNnw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCuh997EhSaMH44xsN7JC-RA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1998"
+      }
+    },
+    "black light burns": {
+      "name": "Black Light Burns",
+      "status": "identity_candidate_only",
+      "mbid": "a33ecf1b-a4ed-43e4-b6ab-26623b40cfad",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "industrial",
+        "industrial rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a33ecf1b-a4ed-43e4-b6ab-26623b40cfad",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BlackLightBurnsOfficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q880373"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Black_Light_Burns"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2005",
+        "end": null
+      }
+    },
+    "black light dinner party": {
+      "name": "Black Light Dinner Party",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black lips": {
+      "name": "Black Lips",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "black marble": {
+      "name": "Black Marble",
+      "status": "identity_candidate_only",
+      "mbid": "fd7d4ed7-1a14-4b5b-b8f2-074888187ebc",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "electronic"
+      ],
+      "source": "https://musicbrainz.org/artist/fd7d4ed7-1a14-4b5b-b8f2-074888187ebc",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://blackmarble.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/blackmarblenyc"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/blackmarblenyc/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/blackmarble"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q28194812"
+        }
+      ],
+      "life_span": {
+        "begin": "2012",
+        "end": null,
+        "ended": false
+      }
+    },
+    "black midi": {
+      "name": "black midi",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "black milk": {
+      "name": "Black Milk",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "black pistol fire": {
+      "name": "Black Pistol Fire",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black poets": {
+      "name": "Black Poets",
+      "status": "identity_candidate_only",
+      "mbid": "acd52a67-c8ef-4fb6-bb21-93b20caa6650",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/acd52a67-c8ef-4fb6-bb21-93b20caa6650",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "black prairie": {
+      "name": "Black Prairie",
+      "status": "identity_candidate_only",
+      "mbid": "60a5cca4-c7c1-4746-b915-d39e09bbe513",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Portland, OR folk/bluegrass",
+      "genres": [
+        "alternative folk",
+        "progressive bluegrass",
+        "progressive folk"
+      ],
+      "source": "https://musicbrainz.org/artist/60a5cca4-c7c1-4746-b915-d39e09bbe513",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4921500"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2007",
+        "end": null
+      }
+    },
+    "black rebel motorcycle club": {
+      "name": "Black Rebel Motorcycle Club",
+      "status": "identity_candidate_only",
+      "mbid": "32b90c92-9978-4a07-90eb-caa4b22f4907",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US rock band from San Francisco",
+      "genres": [
+        "alternative rock",
+        "blues rock",
+        "garage rock",
+        "garage rock revival",
+        "gothic country",
+        "indie rock",
+        "psychedelic rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/32b90c92-9978-4a07-90eb-caa4b22f4907",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BRMCOfficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/brmcofficial/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q166120"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/BRMCOfficial"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1998",
+        "ended": false
+      }
+    },
+    "black sabbath": {
+      "name": "Black Sabbath",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
