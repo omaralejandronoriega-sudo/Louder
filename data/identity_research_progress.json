@@ -1,7 +1,7 @@
 {
-  "cursor": 1040,
+  "cursor": 1060,
   "total_catalog": 7988,
-  "updated_at": "2026-10-22T15:39:44.852300+00:00",
+  "updated_at": "2026-10-22T19:31:05.393350+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -17236,6 +17236,403 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "boedekka": {
+      "name": "Boedekka",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bogan via": {
+      "name": "Bogan Via",
+      "status": "identity_candidate_only",
+      "mbid": "c2389f0a-f2c5-4a2d-92dc-fc6d90d82a7f",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Indie group from Phoenix, AZ",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c2389f0a-f2c5-4a2d-92dc-fc6d90d82a7f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://boganvia.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/TheBoganVia"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bogan-via"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "bombadil": {
+      "name": "Bombadil",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bombay bicycle club": {
+      "name": "Bombay Bicycle Club",
+      "status": "identity_candidate_only",
+      "mbid": "0ae49abe-d6af-44fa-8ab0-b9ace5690e6f",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie pop",
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0ae49abe-d6af-44fa-8ab0-b9ace5690e6f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bombaybicycleclub.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/7232081282"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bombayinsta/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bombay-bicycle-club"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q891829"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCTmVnjXgqOwBYPXMXUrMj6Q"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2005",
+        "end": null
+      }
+    },
+    "bombay bicycle club / flyte": {
+      "name": "Bombay Bicycle Club / Flyte",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bombay bicycle club/lucy rose": {
+      "name": "Bombay Bicycle Club/Lucy Rose",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bombay bicycle club/matilda mann": {
+      "name": "Bombay Bicycle Club/Matilda Mann",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bon iver": {
+      "name": "Bon Iver",
+      "status": "identity_candidate_only",
+      "mbid": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US indie folk band",
+      "genres": [
+        "ambient pop",
+        "art pop",
+        "contemporary folk",
+        "folk",
+        "folktronica",
+        "indie folk",
+        "indie rock",
+        "lo-fi",
+        "singer-songwriter",
+        "sophisti-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://boniver.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/boniverwi"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/boniver/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/boniver"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q357340"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCci2c90HJbY0VAS3_eLF3Wg"
+        }
+      ],
+      "life_span": {
+        "begin": "2006",
+        "ended": false,
+        "end": null
+      }
+    },
+    "bon iver, danielle haim": {
+      "name": "Bon Iver, Danielle Haim",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bon jovi": {
+      "name": "Bon Jovi",
+      "status": "identity_candidate_only",
+      "mbid": "5dcdb5eb-cb72-4e6e-9e63-b7bace604965",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "group",
+      "genres": [
+        "aor",
+        "arena rock",
+        "classic rock",
+        "country pop",
+        "country rock",
+        "glam metal",
+        "glam rock",
+        "hard rock",
+        "heartland rock",
+        "pop",
+        "pop rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/5dcdb5eb-cb72-4e6e-9e63-b7bace604965",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/BonJovi"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bonjovi/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bonjovi"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bon-jovi-com"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q259254"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCkBwnm7GOfYHsacwUjriC-w"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCwlTofOAY79PS_GhmborAdA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCCL-yoaPLR-7bxZM1xlcQcQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1983",
+        "end": null
+      }
+    },
+    "bon y los enemigos del silencio": {
+      "name": "Bon Y Los Enemigos Del Silencio",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bonaparte": {
+      "name": "Bonaparte",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "bonnie 'prince' billy, john anderson": {
+      "name": "Bonnie 'Prince' Billy, John Anderson",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bonny light horseman": {
+      "name": "Bonny Light Horseman",
+      "status": "identity_candidate_only",
+      "mbid": "b569861e-935b-434e-b521-7f77991299aa",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "folk"
+      ],
+      "source": "https://musicbrainz.org/artist/b569861e-935b-434e-b521-7f77991299aa",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bonnylighthorseman.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bonnylighthorseman"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bonnylighthorseman/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q104844880"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/BonnyLightHorseman"
+        }
+      ],
+      "life_span": {
+        "begin": "2018",
+        "end": null,
+        "ended": false
+      }
+    },
+    "bonobo": {
+      "name": "Bonobo",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "bonobo/ andreya triana": {
+      "name": "Bonobo/ Andreya Triana",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bonsur": {
+      "name": "Bonsur",
+      "status": "identity_candidate_only",
+      "mbid": "b9537ec9-191a-4ec5-b647-503598275025",
+      "type": "Group",
+      "country": "AR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b9537ec9-191a-4ec5-b647-503598275025",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": "2005-09",
+        "ended": false
+      }
+    },
+    "bonzai": {
+      "name": "BONZAI",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "booka shade": {
+      "name": "Booka Shade",
+      "status": "identity_candidate_only",
+      "mbid": "9940c604-2456-4193-a403-ab18420bc1e9",
+      "type": "Group",
+      "country": "DE",
+      "disambiguation": "",
+      "genres": [
+        "dance",
+        "electronic",
+        "electronica",
+        "house",
+        "melodic house",
+        "melodic techno",
+        "minimal techno",
+        "techno"
+      ],
+      "source": "https://musicbrainz.org/artist/9940c604-2456-4193-a403-ab18420bc1e9",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bookashade.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bookashade"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bookashade/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/booka-shade"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q530994"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC6DtfEBMqLFb6HUAcCAeHxQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "bootblacks": {
+      "name": "Bootblacks",
+      "status": "identity_candidate_only",
+      "mbid": "2268f44e-f0a2-40f9-bcad-62b02e49360e",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "post‐punk",
+      "genres": [
+        "post-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/2268f44e-f0a2-40f9-bcad-62b02e49360e",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bootblacks.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bootblacksNYC"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bootblacks/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bootblacks"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
     }
   }
 }
