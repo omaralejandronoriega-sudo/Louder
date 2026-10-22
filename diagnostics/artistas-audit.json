@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T12:21:14.622820+00:00",
+  "generated_at": "2026-10-22T17:36:07.409918+00:00",
   "source_updates": {
-    "artists": "2026-10-22T12:21:10.040906Z",
-    "galleries": "2026-10-22T11:42:43.911480+00:00",
-    "album_art": "2026-10-22T07:32:24.499215+00:00"
+    "artists": "2026-10-22T17:36:03.223439Z",
+    "galleries": "2026-10-22T16:09:57.403169+00:00",
+    "album_art": "2026-10-22T13:11:45.119117+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-22T12:21:10.040906Z"
+      "merged_at": "2026-10-22T17:36:03.223439Z"
     }
   },
   "profile_enrichment": {
@@ -48,8 +48,8 @@
     "real_profile_complete_pct": 55.39,
     "profile_status": {
       "complete": 4157,
-      "partial": 2842,
-      "not_found": 835,
+      "partial": 2844,
+      "not_found": 833,
       "legacy": 79,
       "retry": 7
     },
@@ -124,9 +124,9 @@
     "monsune": {
       "name": "Monsune",
       "slug": "monsune",
-      "plays": 15,
+      "plays": 16,
       "first_played": "5 mar 2025",
-      "last_played": "17 oct 2026 · 09:15",
+      "last_played": "22 oct 2026 · 06:28",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -263,9 +263,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 130,
+      "plays": 131,
       "first_played": "21 nov 2012",
-      "last_played": "20 oct 2026 · 23:32",
+      "last_played": "22 oct 2026 · 07:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -1089,6 +1089,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 57,
+      "first_played": "17 jul 2022",
+      "last_played": "22 oct 2026 · 09:54",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pale Honey",
       "slug": "pale-honey",
       "plays": 56,
@@ -1114,42 +1150,6 @@
       "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 56,
-      "first_played": "17 jul 2022",
-      "last_played": "19 oct 2026 · 21:44",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
       "related": 10,
       "missing_core": [
         "bio"
@@ -6038,6 +6038,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 18,
+      "first_played": "23 sep 2026",
+      "last_played": "22 oct 2026 · 09:58",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6213,41 +6248,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Long Blondes",
-      "slug": "the-long-blondes",
-      "plays": 17,
-      "first_played": "23 sep 2026",
-      "last_played": "21 oct 2026 · 15:10",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7340,9 +7340,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 130,
+      "plays": 131,
       "first_played": "21 nov 2012",
-      "last_played": "20 oct 2026 · 23:32",
+      "last_played": "22 oct 2026 · 07:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -8132,6 +8132,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 57,
+      "first_played": "17 jul 2022",
+      "last_played": "22 oct 2026 · 09:54",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pale Honey",
       "slug": "pale-honey",
       "plays": 56,
@@ -8157,42 +8193,6 @@
       "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 56,
-      "first_played": "17 jul 2022",
-      "last_played": "19 oct 2026 · 21:44",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
       "related": 10,
       "missing_core": [
         "bio"
