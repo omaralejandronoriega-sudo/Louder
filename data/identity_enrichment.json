@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-22T15:14:08.899309+00:00",
+  "updated_at": "2026-10-22T19:13:11.952807+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -72023,9 +72023,9 @@
     },
     "failed-flowers": {
       "name": "Failed Flowers",
-      "verified": false,
-      "profile_checked_at": "2026-10-22T10:16:34.383831+00:00",
-      "checked_at": "2026-10-22T10:16:34.383831+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-10-22T19:13:08.380243+00:00",
+      "checked_at": "2026-10-22T19:13:08.380243+00:00",
       "musicbrainz_id": "2d0333c1-7f11-46e9-a950-72fbecd77079",
       "canonical_name": "Failed Flowers",
       "match_score": 100,
@@ -72037,14 +72037,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/3209eb99d3f396a834a9e2d304c75e56/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "retry",
-      "status": "retry",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-22T16:16:34.383831+00:00",
-      "attempt_count": 6,
-      "error": "HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=35)"
+      "next_retry_at": "2026-10-25T19:13:08.380243+00:00",
+      "attempt_count": 7
     },
     "houses": {
       "name": "Houses",
