@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T23:36:28.350569+00:00",
+  "generated_at": "2026-10-22T05:19:23.840835+00:00",
   "source_updates": {
-    "artists": "2026-10-21T23:36:23.297656Z",
-    "galleries": "2026-10-21T22:50:02.840661+00:00",
-    "album_art": "2026-10-21T20:37:57.527448+00:00"
+    "artists": "2026-10-22T05:19:19.830978Z",
+    "galleries": "2026-10-22T01:02:49.520705+00:00",
+    "album_art": "2026-10-22T01:53:17.793626+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1410
+      "yesstreaming_live": 1412
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-21T23:36:23.297656Z"
+      "merged_at": "2026-10-22T05:19:19.830978Z"
     }
   },
   "profile_enrichment": {
@@ -48,8 +48,8 @@
     "real_profile_complete_pct": 55.39,
     "profile_status": {
       "complete": 4157,
-      "partial": 2841,
-      "not_found": 836,
+      "partial": 2842,
+      "not_found": 835,
       "legacy": 79,
       "retry": 7
     },
@@ -74,20 +74,20 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6954,
-    "with_social": 4767,
+    "with_social": 4766,
     "with_genre": 3904,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18196,
-    "with_effective_artwork": 13508,
-    "with_effective_artwork_pct": 74.24,
-    "missing_artwork": 4688,
-    "grouped_as_otras": 5906,
-    "with_first_and_last_dates": 17789,
+    "total": 18197,
+    "with_effective_artwork": 13516,
+    "with_effective_artwork_pct": 74.28,
+    "missing_artwork": 4681,
+    "grouped_as_otras": 5907,
+    "with_first_and_last_dates": 17791,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10606,
-    "album_art_cache_missed": 4305
+    "album_art_cache_found": 10613,
+    "album_art_cache_missed": 4298
   },
   "focus": {
     "boylife": {
@@ -816,6 +816,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 60,
+      "first_played": "29 jul 2012",
+      "last_played": "21 oct 2026 · 21:00",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "YesYou",
       "slug": "yesyou",
       "plays": 60,
@@ -914,41 +949,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 59,
-      "first_played": "29 jul 2012",
-      "last_played": "21 oct 2026 · 01:58",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
       ],
       "profile_complete": false
     },
@@ -6653,6 +6653,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 15,
+      "first_played": "22 sep 2026",
+      "last_played": "21 oct 2026 · 21:46",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Lunatic the Lover and the Poet",
       "slug": "the-lunatic-the-lover-and-the-poet",
       "plays": 15,
@@ -7050,41 +7085,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Holloways",
-      "slug": "the-holloways",
-      "plays": 14,
-      "first_played": "22 sep 2026",
-      "last_played": "19 oct 2026 · 13:55",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Arlo Parks/Lous and The Yakuza",
       "slug": "arlo-parks-lous-and-the-yakuza",
       "plays": 13,
@@ -7193,20 +7193,22 @@
       "profile_complete": false
     },
     {
-      "name": "Charmin Al Aire",
-      "slug": "charmin-al-aire",
+      "name": "Bullion/Carly Rae Jepsen",
+      "slug": "bullion-carly-rae-jepsen",
       "plays": 13,
-      "first_played": "24 abr 2013",
-      "last_played": "25 abr 2013 · 23:59",
+      "first_played": "4 mar 2025",
+      "last_played": "21 oct 2026 · 21:13",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 4,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 4,
-      "tracks_in_otras": 4,
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7891,6 +7893,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 60,
+      "first_played": "29 jul 2012",
+      "last_played": "21 oct 2026 · 21:00",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "YesYou",
       "slug": "yesyou",
       "plays": 60,
@@ -7948,41 +7985,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 59,
-      "first_played": "29 jul 2012",
-      "last_played": "21 oct 2026 · 01:58",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
