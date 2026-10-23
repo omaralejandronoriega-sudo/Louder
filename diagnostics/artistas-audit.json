@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T18:41:44.513444+00:00",
+  "generated_at": "2026-10-23T23:28:15.209119+00:00",
   "source_updates": {
-    "artists": "2026-10-23T18:41:39.494883Z",
-    "galleries": "2026-10-23T17:04:46.244108+00:00",
-    "album_art": "2026-10-23T15:01:21.152507+00:00"
+    "artists": "2026-10-23T23:28:09.477677Z",
+    "galleries": "2026-10-23T23:23:38.246417+00:00",
+    "album_art": "2026-10-23T22:09:50.294624+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1414
+      "yesstreaming_live": 1415
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-23T18:41:39.494883Z"
+      "merged_at": "2026-10-23T23:28:09.477677Z"
     }
   },
   "profile_enrichment": {
@@ -74,8 +74,8 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6954,
-    "with_social": 4764,
-    "with_genre": 3904,
+    "with_social": 4765,
+    "with_genre": 3905,
     "with_related": 1599
   },
   "tracks": {
@@ -1402,6 +1402,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 51,
+      "first_played": "14 jul 2012",
+      "last_played": "23 oct 2026 · 14:33",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -1459,41 +1494,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 50,
-      "first_played": "14 jul 2012",
-      "last_played": "21 oct 2026 · 12:32",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -2856,6 +2856,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 37,
+      "first_played": "3 abr 2013",
+      "last_played": "23 oct 2026 · 12:54",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Superhumanoids",
       "slug": "superhumanoids",
       "plays": 37,
@@ -3137,6 +3173,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 36,
+      "first_played": "15 jul 2022",
+      "last_played": "23 oct 2026 · 13:16",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sacred Animals",
       "slug": "sacred-animals",
       "plays": 36,
@@ -3194,42 +3267,6 @@
       "has_social": true,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 36,
-      "first_played": "3 abr 2013",
-      "last_played": "16 oct 2026 · 10:21",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -3414,43 +3451,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 35,
-      "first_played": "15 jul 2022",
-      "last_played": "22 oct 2026 · 19:16",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -4282,6 +4282,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 36,
+      "first_played": "15 jul 2022",
+      "last_played": "23 oct 2026 · 13:16",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Disdente",
       "slug": "disdente",
       "plays": 35,
@@ -4370,43 +4407,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 35,
-      "first_played": "15 jul 2022",
-      "last_played": "22 oct 2026 · 19:16",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5569,6 +5569,44 @@
       "profile_complete": false
     },
     {
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
+      "plays": 20,
+      "first_played": "28 feb 2025",
+      "last_played": "23 oct 2026 · 15:46",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Louder En Vivo",
       "slug": "louder-en-vivo",
       "plays": 20,
@@ -5715,44 +5753,6 @@
       "profile_complete": false
     },
     {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 19,
-      "first_played": "28 feb 2025",
-      "last_played": "21 oct 2026 · 00:44",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Sons Between Guns",
       "slug": "sons-between-guns",
       "plays": 19,
@@ -5782,6 +5782,41 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 19,
+      "first_played": "23 sep 2026",
+      "last_played": "23 oct 2026 · 15:12",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6038,41 +6073,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Long Blondes",
-      "slug": "the-long-blondes",
-      "plays": 18,
-      "first_played": "23 sep 2026",
-      "last_played": "22 oct 2026 · 09:58",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6293,6 +6293,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 17,
+      "first_played": "22 sep 2026",
+      "last_played": "23 oct 2026 · 15:28",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Arts & Crafts México",
       "slug": "arts-crafts-mexico",
       "plays": 16,
@@ -6347,7 +6382,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": false,
+      "has_social": true,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6465,41 +6500,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Holloways",
-      "slug": "the-holloways",
-      "plays": 16,
-      "first_played": "22 sep 2026",
-      "last_played": "22 oct 2026 · 17:32",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8411,6 +8411,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 51,
+      "first_played": "14 jul 2012",
+      "last_played": "23 oct 2026 · 14:33",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -8468,41 +8503,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 50,
-      "first_played": "14 jul 2012",
-      "last_played": "21 oct 2026 · 12:32",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -9829,6 +9829,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 37,
+      "first_played": "3 abr 2013",
+      "last_played": "23 oct 2026 · 12:54",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Superhumanoids",
       "slug": "superhumanoids",
       "plays": 37,
@@ -10110,6 +10146,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 36,
+      "first_played": "15 jul 2022",
+      "last_played": "23 oct 2026 · 13:16",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sacred Animals",
       "slug": "sacred-animals",
       "plays": 36,
@@ -10167,42 +10240,6 @@
       "has_social": true,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 36,
-      "first_played": "3 abr 2013",
-      "last_played": "16 oct 2026 · 10:21",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -10387,43 +10424,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 35,
-      "first_played": "15 jul 2022",
-      "last_played": "22 oct 2026 · 19:16",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
