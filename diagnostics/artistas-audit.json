@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T13:47:28.165392+00:00",
+  "generated_at": "2026-10-23T18:41:44.513444+00:00",
   "source_updates": {
-    "artists": "2026-10-23T13:47:22.880956Z",
-    "galleries": "2026-10-23T12:08:09.823540+00:00",
-    "album_art": "2026-10-23T10:00:07.649970+00:00"
+    "artists": "2026-10-23T18:41:39.494883Z",
+    "galleries": "2026-10-23T17:04:46.244108+00:00",
+    "album_art": "2026-10-23T15:01:21.152507+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-23T13:47:22.880956Z"
+      "merged_at": "2026-10-23T18:41:39.494883Z"
     }
   },
   "profile_enrichment": {
@@ -84,7 +84,7 @@
     "with_effective_artwork_pct": 74.44,
     "missing_artwork": 4652,
     "grouped_as_otras": 5907,
-    "with_first_and_last_dates": 17794,
+    "with_first_and_last_dates": 17796,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10640,
     "album_art_cache_missed": 4271
@@ -334,9 +334,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 102,
+      "plays": 103,
       "first_played": "14 jul 2022",
-      "last_played": "20 oct 2026 · 06:50",
+      "last_played": "23 oct 2026 · 11:36",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -2198,9 +2198,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 40,
+      "plays": 41,
       "first_played": "14 jul 2022",
-      "last_played": "22 oct 2026 · 12:57",
+      "last_played": "23 oct 2026 · 07:49",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3635,9 +3635,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 102,
+      "plays": 103,
       "first_played": "14 jul 2022",
-      "last_played": "20 oct 2026 · 06:50",
+      "last_played": "23 oct 2026 · 11:36",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3920,9 +3920,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 40,
+      "plays": 41,
       "first_played": "14 jul 2022",
-      "last_played": "22 oct 2026 · 12:57",
+      "last_played": "23 oct 2026 · 07:49",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -6543,6 +6543,43 @@
       "profile_complete": false
     },
     {
+      "name": "CHVRCHES / Robert Smith",
+      "slug": "chvrches-robert-smith",
+      "plays": 15,
+      "first_played": "2 sep 2022",
+      "last_played": "23 oct 2026 · 07:58",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Eyedress/Cuco",
       "slug": "eyedress-cuco",
       "plays": 15,
@@ -6844,43 +6881,6 @@
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CHVRCHES / Robert Smith",
-      "slug": "chvrches-robert-smith",
-      "plays": 14,
-      "first_played": "2 sep 2022",
-      "last_played": "21 oct 2026 · 07:04",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
@@ -7411,9 +7411,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 102,
+      "plays": 103,
       "first_played": "14 jul 2022",
-      "last_played": "20 oct 2026 · 06:50",
+      "last_played": "23 oct 2026 · 11:36",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -10672,27 +10672,28 @@
       "profile_complete": false
     },
     {
-      "name": "Baths",
-      "slug": "baths",
-      "plays": 33,
-      "first_played": "2 ago 2012",
-      "last_played": "9 ene 2015 · 23:59",
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 34,
+      "first_played": "17 mar 2013",
+      "last_played": "23 oct 2026 · 09:26",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "lastfm",
+        "yesstreaming_live"
       ],
       "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": true,
       "image_source": "gallery",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
+      "gallery_images": 3,
+      "has_social": false,
       "has_genre": true,
       "related": 0,
       "missing_core": [
