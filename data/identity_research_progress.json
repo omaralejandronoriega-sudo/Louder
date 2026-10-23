@@ -1,7 +1,7 @@
 {
-  "cursor": 1160,
+  "cursor": 1180,
   "total_catalog": 7988,
-  "updated_at": "2026-10-23T17:03:19.202149+00:00",
+  "updated_at": "2026-10-23T20:26:13.035861+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -19710,6 +19710,313 @@
       "name": "brøthers",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "bt": {
+      "name": "BT",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "buchanan": {
+      "name": "Buchanan",
+      "status": "identity_candidate_only",
+      "mbid": "32d0c418-46d3-4f8c-a491-e07dcbb2c689",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "Australian group",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/32d0c418-46d3-4f8c-a491-e07dcbb2c689",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "buck meek": {
+      "name": "Buck Meek",
+      "status": "identity_candidate_only",
+      "mbid": "b8780175-4ff4-4d87-8e54-999f70dbb5ec",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie folk"
+      ],
+      "source": "https://musicbrainz.org/artist/b8780175-4ff4-4d87-8e54-999f70dbb5ec",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/buckmeeksongs"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/buckmeek/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q73897729"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1987-07-10"
+      }
+    },
+    "buckcherry": {
+      "name": "Buckcherry",
+      "status": "identity_candidate_only",
+      "mbid": "822e92ef-72ea-42e0-9af1-b987816b487a",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/822e92ef-72ea-42e0-9af1-b987816b487a",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "buddy holliday": {
+      "name": "Buddy Holliday",
+      "status": "identity_candidate_only",
+      "mbid": "a2ae031f-2187-4aaf-bb60-867aabea9a90",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a2ae031f-2187-4aaf-bb60-867aabea9a90",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "buffalo tales": {
+      "name": "Buffalo Tales",
+      "status": "identity_candidate_only",
+      "mbid": "3e82a703-4465-458c-85d0-66bf3a9cc7f4",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3e82a703-4465-458c-85d0-66bf3a9cc7f4",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "buffalo tom": {
+      "name": "Buffalo Tom",
+      "status": "identity_candidate_only",
+      "mbid": "1159e0d0-a782-471a-9dae-93ac046eac72",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US alternative rock band",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "jangle pop",
+        "power pop",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/1159e0d0-a782-471a-9dae-93ac046eac72",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://buffalotom.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/buffalotomband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/buffalotomband/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1002101"
+        }
+      ],
+      "life_span": {
+        "begin": "1986",
+        "end": null,
+        "ended": false
+      }
+    },
+    "bufi": {
+      "name": "Bufi",
+      "status": "identity_candidate_only",
+      "mbid": "4a8014bf-5333-4a25-8b99-213c7b92bdc1",
+      "type": "Person",
+      "country": "MX",
+      "disambiguation": "Mexican DJ/producer Mateo González Bufi, aka Bufi Rolas",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4a8014bf-5333-4a25-8b99-213c7b92bdc1",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bufi.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bufirolas"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/bufirolas/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bufirolas"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "built by animals": {
+      "name": "Built by Animals",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "built to spill": {
+      "name": "Built to Spill",
+      "status": "identity_candidate_only",
+      "mbid": "3ac482b8-1494-4071-a0e9-f192f9d2c2b0",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/3ac482b8-1494-4071-a0e9-f192f9d2c2b0",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://built-to-spill.bandcamp.com/"
+        },
+        {
+          "type": "bandcamp",
+          "url": "https://builttospill.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/builttospill"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/builttospill/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/builttospill"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1003115"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCHx9idqEfLZjA2jxaXojccg"
+        }
+      ],
+      "life_span": {
+        "begin": "1992",
+        "end": null,
+        "ended": false
+      }
+    },
+    "buke and gase": {
+      "name": "Buke and Gase",
+      "status": "identity_candidate_only",
+      "mbid": "0f063bba-a850-47a9-ba52-cc9b048d010f",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0f063bba-a850-47a9-ba52-cc9b048d010f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://bukeandgase.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/bukeandgase"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/buke-and-gase"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4986825"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://www.wikidata.org/wiki/Q4986825"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": null,
+        "ended": false
+      }
+    },
+    "bullion/carly rae jepsen": {
+      "name": "Bullion/Carly Rae Jepsen",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bully": {
+      "name": "Bully",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "bummer girl": {
+      "name": "Bummer Girl",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "bungalow": {
+      "name": "Bungalow",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "bunny's a swine": {
+      "name": "Bunny's a Swine",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "burbank cartel": {
+      "name": "Burbank Cartel",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "burial": {
+      "name": "Burial",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "burn": {
+      "name": "Burn",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "burning hearts": {
+      "name": "Burning Hearts",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
