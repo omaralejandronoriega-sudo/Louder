@@ -39,12 +39,11 @@ def get_json(url):
 def suspicious_name(name):
     """Do not assign external identities to obvious import/track-number artifacts."""
     cleaned = name.strip()
-    # Explicitly retained numeric artist 424 must not be discarded.
-    if re.fullmatch(r"\\d{3,}", cleaned) and cleaned not in {"424"}:
+    if cleaned.isdigit() and len(cleaned) >= 3 and cleaned not in {"424"}:
         return True
-    if re.match(r"^\\.\\s+\\S", cleaned):
+    if cleaned.startswith(". "):
         return True
-    if re.match(r"^0\\d{1,2}\\s+\\S", cleaned):
+    if re.match(r"^0[0-9]{1,2} +[^ ]", cleaned):
         return True
     return False
 
