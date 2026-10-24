@@ -1,7 +1,7 @@
 {
-  "cursor": 1240,
+  "cursor": 1260,
   "total_catalog": 7988,
-  "updated_at": "2026-10-24T07:15:29.080036+00:00",
+  "updated_at": "2026-10-24T12:13:46.518219+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -21133,6 +21133,326 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 2
+    },
+    "cannons": {
+      "name": "Cannons",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "canoodle": {
+      "name": "Canoodle",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "canopies": {
+      "name": "Canopies",
+      "status": "identity_candidate_only",
+      "mbid": "291f3dfe-00b3-4baf-87a6-07efa9a9ff6a",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/291f3dfe-00b3-4baf-87a6-07efa9a9ff6a",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "canopy climbers": {
+      "name": "Canopy Climbers",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cansei de ser sexy": {
+      "name": "Cansei de Ser Sexy",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "canterbury": {
+      "name": "Canterbury",
+      "status": "identity_candidate_only",
+      "mbid": "db3657aa-5428-4281-9343-a9d1e3c534a1",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/db3657aa-5428-4281-9343-a9d1e3c534a1",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/thisiscanterbury"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5033616"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC5hgZ32yKwN-77IIHgRfgyw"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "caos": {
+      "name": "Caos",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "cap pas cap": {
+      "name": "Cap Pas Cap",
+      "status": "identity_candidate_only",
+      "mbid": "33f2e75d-fc04-4064-8b62-eb5d075e4466",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/33f2e75d-fc04-4064-8b62-eb5d075e4466",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "capital": {
+      "name": "Capital",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "capital cities": {
+      "name": "Capital Cities",
+      "status": "identity_candidate_only",
+      "mbid": "119a2c67-e6d6-41cf-a58c-c51b75c80daa",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "electronic",
+        "indie pop",
+        "indie rock",
+        "instrumental",
+        "instrumental rock",
+        "pop",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/119a2c67-e6d6-41cf-a58c-c51b75c80daa",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://capitalcities.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/capitalcities"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/capitalcities/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/capital-cities"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5035696"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCQraIhcLCFjoI4B1B9KcmRQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/capitalcitiesmusic"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UClxuMOFeLBJXk8nt-SolPvw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2009"
+      }
+    },
+    "capital soiree": {
+      "name": "Capital Soiree",
+      "status": "identity_candidate_only",
+      "mbid": "78875544-5d2a-4abc-a6f2-76eedbbc7ad6",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/78875544-5d2a-4abc-a6f2-76eedbbc7ad6",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "capitol": {
+      "name": "Capitol",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "capsula": {
+      "name": "Capsula",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "captain & the princess": {
+      "name": "Captain & the Princess",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "captain phoenix": {
+      "name": "Captain Phoenix",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "car seat headrest": {
+      "name": "Car Seat Headrest",
+      "status": "identity_candidate_only",
+      "mbid": "0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "US indie rock band",
+      "genres": [
+        "indie rock",
+        "lo-fi",
+        "noise rock",
+        "psychedelic",
+        "slacker rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://carseatheadrest.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/carseatheadrest"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/notcarseatheadrest/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/car-seat-headrest"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q22080761"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC6Rl1uJ-KEC8VJ94l1QYvBg"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC97xosBrQZ7jdWVFInndIDg"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2010",
+        "ended": false
+      }
+    },
+    "cara mitchell": {
+      "name": "Cara Mitchell",
+      "status": "identity_candidate_only",
+      "mbid": "973c5afc-8eb6-4c5e-9f56-ef77db0e322b",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Indie Pop-Folk artist from Aberdeen, UK.",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/973c5afc-8eb6-4c5e-9f56-ef77db0e322b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://caramitchellmusic.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CaraMitchellMusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/caratraceymitchell"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "caramelos de cianuro": {
+      "name": "Caramelos de Cianuro",
+      "status": "identity_candidate_only",
+      "mbid": "3ee62edc-3521-4c39-89ce-081aafa79c00",
+      "type": "Group",
+      "country": "VE",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3ee62edc-3521-4c39-89ce-081aafa79c00",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "caravan palace": {
+      "name": "Caravan Palace",
+      "status": "identity_candidate_only",
+      "mbid": "72eabb1a-4d2c-4de6-90f2-671b2cada42b",
+      "type": "Group",
+      "country": "FR",
+      "disambiguation": "French electro swing band",
+      "genres": [
+        "electro house",
+        "electro swing",
+        "fidget house"
+      ],
+      "source": "https://musicbrainz.org/artist/72eabb1a-4d2c-4de6-90f2-671b2cada42b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://caravanpalace.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CaravanPalace"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/caravanpalace/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/caravan-palace-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1035442"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCKH9HfYY_GEcyltl2mbD5lA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2005",
+        "ended": false
+      }
+    },
+    "carbon leaf": {
+      "name": "Carbon Leaf",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
