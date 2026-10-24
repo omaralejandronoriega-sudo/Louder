@@ -1,7 +1,7 @@
 {
-  "cursor": 1220,
+  "cursor": 1240,
   "total_catalog": 7988,
-  "updated_at": "2026-10-24T01:58:09.703995+00:00",
+  "updated_at": "2026-10-24T07:15:29.080036+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -20855,6 +20855,284 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "calvin harris": {
+      "name": "Calvin Harris",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "calvin harris / tom grennan": {
+      "name": "Calvin Harris / Tom Grennan",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "camden": {
+      "name": "Camden",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "camera obscura": {
+      "name": "Camera Obscura",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cameras": {
+      "name": "Cameras",
+      "status": "identity_candidate_only",
+      "mbid": "8cc4f65e-568c-4377-a119-03d4cd6d31cd",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "Australian indie rock trio",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8cc4f65e-568c-4377-a119-03d4cd6d31cd",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2008"
+      }
+    },
+    "cameron winter": {
+      "name": "Cameron Winter",
+      "status": "identity_candidate_only",
+      "mbid": "79c6b6f4-cb92-4f03-a1ef-82e7aa4eddbb",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "frontman of NYC‐based band Geese",
+      "genres": [
+        "chamber folk",
+        "contemporary folk",
+        "indie folk",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/79c6b6f4-cb92-4f03-a1ef-82e7aa4eddbb",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://cameronwinter.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/mrcameron_winter/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q134691738"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://www.wikidata.org/wiki/Q134691738"
+        }
+      ],
+      "life_span": {
+        "begin": "2002-03-04",
+        "end": null,
+        "ended": false
+      }
+    },
+    "cami petyn": {
+      "name": "Cami Petyn",
+      "status": "identity_candidate_only",
+      "mbid": "753b4581-ec9d-4c68-8816-6405985a59ac",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/753b4581-ec9d-4c68-8816-6405985a59ac",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "camille rose": {
+      "name": "Camille Rose",
+      "status": "identity_candidate_only",
+      "mbid": "30586f14-ad0c-466e-8afd-3902d2978863",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/30586f14-ad0c-466e-8afd-3902d2978863",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "camilo séptimo": {
+      "name": "Camilo Séptimo",
+      "status": "identity_candidate_only",
+      "mbid": "f52bc10e-6eca-4967-9d55-9b3bc62919c1",
+      "type": "Group",
+      "country": "MX",
+      "disambiguation": "",
+      "genres": [
+        "latin",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/f52bc10e-6eca-4967-9d55-9b3bc62919c1",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CamiloVIImx"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/camiloseptimomx/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q59403617"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCg79SLdgm1-1OUzQwqmbzrA"
+        }
+      ],
+      "life_span": {
+        "begin": "2013-01-01",
+        "end": null,
+        "ended": false
+      }
+    },
+    "camouflage": {
+      "name": "Camouflage",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
+    },
+    "can": {
+      "name": "Can",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "can't kids": {
+      "name": "Can't Kids",
+      "status": "identity_candidate_only",
+      "mbid": "b7fa0045-8eea-4dba-895c-36446fcf6e0d",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/b7fa0045-8eea-4dba-895c-36446fcf6e0d",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "cancamusa": {
+      "name": "Cancamusa",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "candid": {
+      "name": "Candid",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "candlebox": {
+      "name": "Candlebox",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "candy 66": {
+      "name": "Candy 66",
+      "status": "identity_candidate_only",
+      "mbid": "814c7007-5308-48cf-9117-323f5736e5e5",
+      "type": "Group",
+      "country": "VE",
+      "disambiguation": "",
+      "genres": [
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/814c7007-5308-48cf-9117-323f5736e5e5",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5032061"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1998"
+      }
+    },
+    "candy claws": {
+      "name": "Candy Claws",
+      "status": "identity_candidate_only",
+      "mbid": "da5eaa3b-397e-4af8-9a12-5c4ec93e8b48",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/da5eaa3b-397e-4af8-9a12-5c4ec93e8b48",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://candyclaws.bandcamp.com/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q24963055"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCz-HPlKPuuBbQAVo5Mwg_-Q"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2007"
+      }
+    },
+    "candy glam": {
+      "name": "Candy Glam",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "candy moore": {
+      "name": "Candy Moore",
+      "status": "identity_candidate_only",
+      "mbid": "ef2fa212-28f7-481c-a10d-c2488283a045",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ef2fa212-28f7-481c-a10d-c2488283a045",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://candymoore.bandcamp.com/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/iamcandymusic"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "candy says": {
+      "name": "Candy Says",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
