@@ -1,7 +1,7 @@
 {
-  "cursor": 1280,
+  "cursor": 1300,
   "total_catalog": 7988,
-  "updated_at": "2026-10-24T15:21:23.021456+00:00",
+  "updated_at": "2026-10-24T16:14:41.848248+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -21791,6 +21791,205 @@
         "ended": false,
         "begin": null
       }
+    },
+    "carroll": {
+      "name": "Carroll",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "carter cook": {
+      "name": "Carter Cook",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cartoon bar fight": {
+      "name": "Cartoon Bar Fight",
+      "status": "identity_candidate_only",
+      "mbid": "7f5604a8-9682-4ab9-b540-a52f7e1d6145",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7f5604a8-9682-4ab9-b540-a52f7e1d6145",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "cartoonhead": {
+      "name": "cartoonhead",
+      "status": "identity_candidate_only",
+      "mbid": "87328c05-d2fe-41fa-93a4-f88229af2cfe",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/87328c05-d2fe-41fa-93a4-f88229af2cfe",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/cartoonheadband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cartoonheadband/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2022"
+      }
+    },
+    "cartridge": {
+      "name": "Cartridge",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "casa del mirto": {
+      "name": "Casa Del Mirto",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "case oats": {
+      "name": "Case Oats",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "casey lalonde": {
+      "name": "Casey LaLonde",
+      "status": "identity_candidate_only",
+      "mbid": "dc61a758-8f7f-4907-838f-7e0a98075f64",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/dc61a758-8f7f-4907-838f-7e0a98075f64",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cash + david": {
+      "name": "Cash + David",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "cashier no. 9": {
+      "name": "Cashier No. 9",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cashmere cat": {
+      "name": "Cashmere Cat",
+      "status": "identity_candidate_only",
+      "mbid": "8fbcd70f-bf1e-4624-b94a-fcff6b0c637e",
+      "type": "Person",
+      "country": "NO",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8fbcd70f-bf1e-4624-b94a-fcff6b0c637e",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "casiokids": {
+      "name": "Casiokids",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "casket cassette": {
+      "name": "Casket Cassette",
+      "status": "identity_candidate_only",
+      "mbid": "f6fd224d-3924-4dda-986f-dd185ce2ba41",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f6fd224d-3924-4dda-986f-dd185ce2ba41",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cass mccombs": {
+      "name": "Cass McCombs",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cassandra jenkins": {
+      "name": "Cassandra Jenkins",
+      "status": "identity_candidate_only",
+      "mbid": "1c5fb201-9555-4e94-94b6-d5ac6fccb64c",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "US singer‐songwriter",
+      "genres": [
+        "ambient pop",
+        "folk pop",
+        "indie folk",
+        "indie pop",
+        "indie rock",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/1c5fb201-9555-4e94-94b6-d5ac6fccb64c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://cassandrajenkins.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CassandraJenkinsOfficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cassandrajenkins/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q105635611"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1984"
+      }
+    },
+    "cassette cathedral": {
+      "name": "Cassette Cathedral",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cassettes won't listen": {
+      "name": "Cassettes Won't Listen",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cassia": {
+      "name": "Cassia",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "cassidi": {
+      "name": "Cassidi",
+      "status": "identity_candidate_only",
+      "mbid": "8d3c645c-d97a-4639-a37b-22faffb47c0d",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8d3c645c-d97a-4639-a37b-22faffb47c0d",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "cassis orange": {
+      "name": "Cassis Orange",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
