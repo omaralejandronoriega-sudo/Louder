@@ -1,15 +1,26 @@
-name: Louder Artistas - activar WP-Cron externo
+name: Louder Artistas - WP-Cron externo
 on:
   schedule:
-    - cron: "7 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: louder-artistas-wpcron
+  cancel-in-progress: false
 jobs:
   cron-ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 3
     steps:
-      - name: Ejecutar eventos programados de WordPress
+      - name: Activar WordPress Cron y registrar respuesta HTTP
+        shell: bash
         run: |
-          curl --fail --silent --show-error --max-time 25 --retry 1 --user-agent "Louder-Artists-Cron/1.0" "https://loudermx.com/wp-cron.php?doing_wp_cron=1" -o /dev/null
+          set -euo pipefail
+          code=$(curl --location --silent --show-error --max-time 35 --retry 2 --retry-delay 3 --output /tmp/wpcron-response.txt --write-out '%{http_code}' --user-agent 'Louder-Artists-Cron/1.1' 'https://loudermx.com/wp-cron.php?doing_wp_cron=1')
+          echo "HTTP status: $code"
+          if [[ "$code" != "200" ]]; then
+            head -c 300 /tmp/wpcron-response.txt || true
+            exit 1
+          fi
+          echo 'WP-Cron request completed; this does not itself verify that artist callback executed.'
