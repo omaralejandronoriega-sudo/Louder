@@ -36,7 +36,21 @@ def get_json(url):
     with urlopen(req, timeout=12) as response:
         return json.load(response)
 
+def suspicious_name(name):
+    """Do not assign external identities to obvious import/track-number artifacts."""
+    cleaned = name.strip()
+    # Explicitly retained numeric artist 424 must not be discarded.
+    if re.fullmatch(r"\\d{3,}", cleaned) and cleaned not in {"424"}:
+        return True
+    if re.match(r"^\\.\\s+\\S", cleaned):
+        return True
+    if re.match(r"^0\\d{1,2}\\s+\\S", cleaned):
+        return True
+    return False
+
 def lookup(name):
+    if suspicious_name(name):
+        return {"name": name, "status": "manual_review", "reason": "suspicious_import_name", "matches": 0}
     url = "https://musicbrainz.org/ws/2/artist/?" + urlencode({"query": 'artist:"' + name.replace('"', "") + '"', "fmt": "json", "limit": 8})
     artists = get_json(url).get("artists", [])
     exact = [r for r in artists if normalize(r.get("name", "")) == normalize(name)]
