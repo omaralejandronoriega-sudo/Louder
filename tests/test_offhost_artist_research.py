@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """No-network contract tests for the off-host artist researcher."""
 import unittest
-from scripts.research_artist_identities_offhost import names_from, normalize
+from scripts.research_artist_identities_offhost import names_from, normalize, suspicious_name
 
 class ArtistInputTest(unittest.TestCase):
     def test_list_rows(self):
@@ -12,6 +12,13 @@ class ArtistInputTest(unittest.TestCase):
         self.assertEqual(list(names_from({"artists":[{"name":"Cat Power"}]})),["Cat Power"])
     def test_unicode_equivalent_case(self):
         self.assertEqual(normalize(" PUP "),"pup")
+    def test_suspicious_import_names(self):
+        self.assertTrue(suspicious_name("001"))
+        self.assertTrue(suspicious_name("01 Neon Indian"))
+        self.assertTrue(suspicious_name(". Lady Gaga)"))
+        self.assertFalse(suspicious_name("424"))
+        self.assertFalse(suspicious_name("30 Seconds to Mars"))
+        self.assertFalse(suspicious_name("!!!"))
     def test_empty_data(self):
         self.assertEqual(list(names_from({})),[])
 
