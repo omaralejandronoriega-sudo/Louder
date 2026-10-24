@@ -46,7 +46,18 @@ jobs:
           git add data/identity_research_progress.json
           if ! git diff --cached --quiet; then
             git commit -m "artistas: save off-host research progress"
-            git push
+            # Gallery and artwork jobs also commit to main.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [[ "$attempt" == "3" ]]; then
+                echo "Could not save progress after three attempts."
+                exit 1
+              fi
+              sleep $((attempt * 3))
+            done
           fi
       - name: Keep candidate report for editorial review
         if: always()
