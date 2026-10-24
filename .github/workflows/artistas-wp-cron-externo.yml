@@ -1,0 +1,15 @@
+name: Louder Artistas - activar WP-Cron externo
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cron-ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Ejecutar eventos programados de WordPress
+        run: |
+          curl --fail --silent --show-error --max-time 25 --retry 1 --user-agent "Louder-Artists-Cron/1.0" "https://loudermx.com/wp-cron.php?doing_wp_cron=1" -o /dev/null
