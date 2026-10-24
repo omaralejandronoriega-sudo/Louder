@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-24T04:59:20.918448+00:00",
+  "generated_at": "2026-10-24T11:34:54.070619+00:00",
   "source_updates": {
-    "artists": "2026-10-24T04:59:15.085297Z",
-    "galleries": "2026-10-24T01:51:56.222862+00:00",
-    "album_art": "2026-10-24T00:41:57.372999+00:00"
+    "artists": "2026-10-24T11:34:47.543061Z",
+    "galleries": "2026-10-24T06:38:57.244313+00:00",
+    "album_art": "2026-10-24T10:52:07.696838+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-24T04:59:15.085297Z"
+      "merged_at": "2026-10-24T11:34:47.543061Z"
     }
   },
   "profile_enrichment": {
@@ -53,18 +53,18 @@
       "legacy": 79,
       "retry": 7
     },
-    "missing_validated_profile_image": 966,
+    "missing_validated_profile_image": 967,
     "missing_profile_bio": 3456,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4363,
     "core_complete_pct": 55.09,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6954,
-    "effective_image_pct": 87.8,
+    "effective_image": 6953,
+    "effective_image_pct": 87.79,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5309,
-    "missing_image": 966,
+    "image_gallery_fallback": 5308,
+    "missing_image": 967,
     "effective_bio": 4464,
     "effective_bio_pct": 56.36,
     "bio_direct_artist": 1026,
@@ -73,9 +73,9 @@
     "missing_bio": 3456,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6954,
-    "with_social": 4764,
-    "with_genre": 3905,
+    "gallery_with_images": 6953,
+    "with_social": 4765,
+    "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
@@ -2125,6 +2125,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 42,
+      "first_played": "14 jul 2022",
+      "last_played": "24 oct 2026 · 01:17",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Nick Cave & the Bad Seeds",
       "slug": "nick-cave-the-bad-seeds",
       "plays": 42,
@@ -2192,42 +2228,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 41,
-      "first_played": "14 jul 2022",
-      "last_played": "23 oct 2026 · 07:49",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -3920,9 +3920,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 41,
+      "plays": 42,
       "first_played": "14 jul 2022",
-      "last_played": "23 oct 2026 · 07:49",
+      "last_played": "24 oct 2026 · 01:17",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -7051,6 +7051,43 @@
       "profile_complete": false
     },
     {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 14,
+      "first_played": "13 sep 2026",
+      "last_played": "24 oct 2026 · 02:46",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sursauter",
       "slug": "sursauter",
       "plays": 14,
@@ -7173,42 +7210,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Britpoint",
-      "slug": "britpoint",
-      "plays": 13,
-      "first_played": "26 abr 2013",
-      "last_played": "27 abr 2013 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
