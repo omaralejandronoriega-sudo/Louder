@@ -1,7 +1,7 @@
 {
-  "cursor": 1440,
+  "cursor": 1460,
   "total_catalog": 7988,
-  "updated_at": "2026-10-25T16:49:00.785595+00:00",
+  "updated_at": "2026-10-25T19:35:01.272452+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -24151,6 +24151,444 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "chris lake": {
+      "name": "Chris Lake",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "chris letcher": {
+      "name": "Chris Letcher",
+      "status": "identity_candidate_only",
+      "mbid": "18885f1f-fa4c-4719-85aa-73dc38a498b5",
+      "type": "Person",
+      "country": "ZA",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/18885f1f-fa4c-4719-85aa-73dc38a498b5",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://chrisletcher.bandcamp.com/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/chris-letcher/sets/film-music"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5107224"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "chris robinson brotherhood": {
+      "name": "Chris Robinson Brotherhood",
+      "status": "identity_candidate_only",
+      "mbid": "21e31312-bfc1-4425-a93b-bab5cc5969af",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blues rock",
+        "jam band",
+        "southern rock"
+      ],
+      "source": "https://musicbrainz.org/artist/21e31312-bfc1-4425-a93b-bab5cc5969af",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CRBrotherhood"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3675560"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2010"
+      }
+    },
+    "christian blunda": {
+      "name": "Christian Blunda",
+      "status": "identity_candidate_only",
+      "mbid": "fbd4dcb2-cb1b-4174-8f10-0669d268ae7c",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/fbd4dcb2-cb1b-4174-8f10-0669d268ae7c",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "christine and the queens": {
+      "name": "Christine and the Queens",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "christine hoberg": {
+      "name": "Christine Hoberg",
+      "status": "identity_candidate_only",
+      "mbid": "cbe75153-db58-4fb9-a814-a9259408ea1a",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/cbe75153-db58-4fb9-a814-a9259408ea1a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://christinehoberg.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ChristineHobergMusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/christine-hoberg"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q59753353"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/HobergMusic"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "christopher norman": {
+      "name": "Christopher Norman",
+      "status": "identity_candidate_only",
+      "mbid": "8d06d4a7-290f-4af8-98d6-042c9264efe9",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8d06d4a7-290f-4af8-98d6-042c9264efe9",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "chromadadata": {
+      "name": "ChromadaData",
+      "status": "identity_candidate_only",
+      "mbid": "0731c70f-670b-4d24-aaad-9a3cef859c0e",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0731c70f-670b-4d24-aaad-9a3cef859c0e",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "chromatics": {
+      "name": "Chromatics",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "chromeo": {
+      "name": "Chromeo",
+      "status": "identity_candidate_only",
+      "mbid": "647221d0-f6b1-4e03-924c-c59b8059536f",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "electronic/disco duo, Dave 1 and P-Thugg",
+      "genres": [
+        "dance-pop",
+        "electro-disco",
+        "electro-funk",
+        "funktronica",
+        "nu disco",
+        "synth funk",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/647221d0-f6b1-4e03-924c-c59b8059536f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://chromeo-music.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/chromeo"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/chromeo/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/chromeo"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1087706"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCP_4jCsGVDPauX_N5UlhaWw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC1ctBJpXnWNRmDNrfIvRH4A"
+        }
+      ],
+      "life_span": {
+        "begin": "2001",
+        "end": null,
+        "ended": false
+      }
+    },
+    "chuck berry": {
+      "name": "Chuck Berry",
+      "status": "identity_candidate_only",
+      "mbid": "592a3b6d-c42b-4567-99c9-ecf63bd66499",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blues",
+        "blues rock",
+        "classic rock",
+        "rock",
+        "rock and roll",
+        "rockabilly",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/592a3b6d-c42b-4567-99c9-ecf63bd66499",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ChuckBerry"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5921"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCjsrlAJyfzPeBIPbinoCnSQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCk0YBqtXKF9p-nfyjVoW9Cg"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCUfKmP9mv1yUkxlE5DDX5Zg"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCUfKmP9mv1yUkxlE5DDX5Zg"
+        }
+      ],
+      "life_span": {
+        "begin": "1926-10-18",
+        "ended": true,
+        "end": "2017-03-18"
+      }
+    },
+    "chuck billy and others": {
+      "name": "Chuck Billy and Others",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "chuck criss": {
+      "name": "Chuck Criss",
+      "status": "identity_candidate_only",
+      "mbid": "c7fd7516-7787-4dd9-a04d-8475b8492da7",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c7fd7516-7787-4dd9-a04d-8475b8492da7",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://chuckcriss.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/charlescriss/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/chuckcriss"
+        }
+      ],
+      "life_span": {
+        "end": "2022-02",
+        "begin": "1985-04-15",
+        "ended": true
+      }
+    },
+    "chumbawamba": {
+      "name": "Chumbawamba",
+      "status": "identity_candidate_only",
+      "mbid": "7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative dance",
+        "alternative rock",
+        "anarcho-punk",
+        "art punk",
+        "britpop",
+        "contemporary folk",
+        "dance-pop",
+        "dance-rock",
+        "folk",
+        "folk pop",
+        "folk punk",
+        "folk rock",
+        "grebo",
+        "hip hop",
+        "indie pop",
+        "indie rock",
+        "plunderphonics",
+        "pop rock",
+        "punk rock"
+      ],
+      "source": "https://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://chumbawamba.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/281645925931"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1089523"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCmhCi61qcB0Pygs91fbtw1Q"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "end": "2012",
+        "begin": "1982"
+      }
+    },
+    "chung ha": {
+      "name": "CHUNG HA",
+      "status": "identity_candidate_only",
+      "mbid": "08525643-7a01-411e-8188-8bf57261c8b3",
+      "type": "Person",
+      "country": "KR",
+      "disambiguation": "",
+      "genres": [
+        "k-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/08525643-7a01-411e-8188-8bf57261c8b3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/chungha.art/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/chungha_official/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/morechunghaplz/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q26214034"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCtC14nS1y4T54RJMk4t08Uw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCpUChkP-KE20GRsyfjU83_g"
+        }
+      ],
+      "life_span": {
+        "begin": "1996-02-09",
+        "ended": false,
+        "end": null
+      }
+    },
+    "chungking": {
+      "name": "Chungking",
+      "status": "identity_candidate_only",
+      "mbid": "458dc7c6-8d7d-437e-aaa6-c2be199e9697",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/458dc7c6-8d7d-437e-aaa6-c2be199e9697",
+      "evidence_links": [
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/chungking"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5116380"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "churchill": {
+      "name": "Churchill",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "chvrches": {
+      "name": "CHVRCHES",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "chvrches / robert smith": {
+      "name": "CHVRCHES / Robert Smith",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "cibo matto": {
+      "name": "Cibo Matto",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
