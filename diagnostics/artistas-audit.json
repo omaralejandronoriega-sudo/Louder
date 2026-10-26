@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T15:27:04.670499+00:00",
+  "generated_at": "2026-10-26T21:10:48.421939+00:00",
   "source_updates": {
-    "artists": "2026-10-26T15:26:58.625201Z",
-    "galleries": "2026-10-26T11:30:14.438669+00:00",
-    "album_art": "2026-10-26T14:12:12.751672+00:00"
+    "artists": "2026-10-26T21:10:44.635210Z",
+    "galleries": "2026-10-26T17:38:02.584253+00:00",
+    "album_art": "2026-10-26T20:08:16.093479+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-26T15:26:58.625201Z"
+      "merged_at": "2026-10-26T21:10:44.635210Z"
     }
   },
   "profile_enrichment": {
@@ -78,12 +78,12 @@
     "with_related": 1599
   },
   "tracks": {
-    "total": 18198,
+    "total": 18199,
     "with_effective_artwork": 13547,
     "with_effective_artwork_pct": 74.44,
-    "missing_artwork": 4651,
-    "grouped_as_otras": 5908,
-    "with_first_and_last_dates": 17804,
+    "missing_artwork": 4652,
+    "grouped_as_otras": 5909,
+    "with_first_and_last_dates": 17805,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -225,9 +225,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 148,
+      "plays": 149,
       "first_played": "22 jul 2012",
-      "last_played": "24 oct 2026 · 16:25",
+      "last_played": "26 oct 2026 · 12:56",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -2474,6 +2474,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 39,
+      "first_played": "26 jul 2022",
+      "last_played": "26 oct 2026 · 09:27",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -2503,44 +2541,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 38,
-      "first_played": "26 jul 2022",
-      "last_played": "25 oct 2026 · 07:27",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3491,6 +3491,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 35,
+      "first_played": "17 mar 2013",
+      "last_played": "26 oct 2026 · 13:16",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Ben Browning",
       "slug": "ben-browning",
       "plays": 34,
@@ -3565,41 +3600,6 @@
       "plays": 34,
       "first_played": "27 jul 2012",
       "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "history_only",
-      "sources": [
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "MSTRKRFT feat. John Legend",
-      "slug": "mstrkrft-feat-john-legend",
-      "plays": 34,
-      "first_played": "22 jul 2012",
-      "last_played": "29 ago 2014 · 23:59",
       "catalog_status": "history_only",
       "sources": [
         "lastfm"
@@ -4029,9 +4029,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 38,
+      "plays": 39,
       "first_played": "26 jul 2022",
-      "last_played": "25 oct 2026 · 07:27",
+      "last_played": "26 oct 2026 · 09:27",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -7306,9 +7306,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 148,
+      "plays": 149,
       "first_played": "22 jul 2012",
-      "last_played": "24 oct 2026 · 16:25",
+      "last_played": "26 oct 2026 · 12:56",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -9451,6 +9451,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 39,
+      "first_played": "26 jul 2022",
+      "last_played": "26 oct 2026 · 09:27",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -9480,44 +9518,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 38,
-      "first_played": "26 jul 2022",
-      "last_played": "25 oct 2026 · 07:27",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -10468,6 +10468,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 35,
+      "first_played": "17 mar 2013",
+      "last_played": "26 oct 2026 · 13:16",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Ben Browning",
       "slug": "ben-browning",
       "plays": 34,
@@ -10662,41 +10697,6 @@
       "gallery_checked": true,
       "gallery_images": 3,
       "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 34,
-      "first_played": "17 mar 2013",
-      "last_played": "23 oct 2026 · 09:26",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
       "has_genre": true,
       "related": 0,
       "missing_core": [
