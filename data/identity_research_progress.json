@@ -1,7 +1,7 @@
 {
-  "cursor": 1540,
+  "cursor": 1560,
   "total_catalog": 7988,
-  "updated_at": "2026-10-26T11:32:31.393905+00:00",
+  "updated_at": "2026-10-26T17:38:48.822221+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -26361,6 +26361,378 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 6
+    },
+    "cola": {
+      "name": "Cola",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cola boyy": {
+      "name": "Cola Boyy",
+      "status": "identity_candidate_only",
+      "mbid": "27dc2be4-db34-4f2e-b0cb-65b911f0039b",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "bedroom pop",
+        "hypnagogic pop",
+        "nu disco"
+      ],
+      "source": "https://musicbrainz.org/artist/27dc2be4-db34-4f2e-b0cb-65b911f0039b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://colaboyy.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ColaBoyy"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cola_boyy/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/cola_boyy"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q107365106"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCRWClGg1x-enHjgpdvORpcw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC0HU2_I7r3nY2SKBlq_SnNA"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "end": "2024-03-17",
+        "begin": "1990-02-14"
+      }
+    },
+    "colatura": {
+      "name": "Colatura",
+      "status": "identity_candidate_only",
+      "mbid": "9492e745-d81e-4a29-8845-ae381d4c67f8",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "dream pop",
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/9492e745-d81e-4a29-8845-ae381d4c67f8",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://colatura.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/colaturaband"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "cold cave": {
+      "name": "Cold Cave",
+      "status": "identity_candidate_only",
+      "mbid": "f7f32d93-0801-45cb-9f5a-e68f640649f4",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f7f32d93-0801-45cb-9f5a-e68f640649f4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://coldcave.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/COLDCAVE"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/coldcave23/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4036392"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/ColdCave23"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2007",
+        "ended": false
+      }
+    },
+    "cold comfort": {
+      "name": "Cold Comfort",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "cold contrast": {
+      "name": "Cold Contrast",
+      "status": "identity_candidate_only",
+      "mbid": "e72ba9a8-3b96-411b-823f-eabc2bb45fa1",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e72ba9a8-3b96-411b-823f-eabc2bb45fa1",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cold crows dead": {
+      "name": "Cold Crows Dead",
+      "status": "identity_candidate_only",
+      "mbid": "d22f283e-7423-4d4c-9609-b2525878a2ed",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d22f283e-7423-4d4c-9609-b2525878a2ed",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cold in berlin": {
+      "name": "Cold In Berlin",
+      "status": "identity_candidate_only",
+      "mbid": "41507a1d-cdb8-40cd-a4f8-71b3f7ee231b",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "drone",
+        "gothic rock",
+        "grunge",
+        "noise",
+        "post-punk",
+        "punk",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/41507a1d-cdb8-40cd-a4f8-71b3f7ee231b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://coldinberlin.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/coldinberlinband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/coldinberlin/"
+        }
+      ],
+      "life_span": {
+        "begin": "2010",
+        "end": null,
+        "ended": false
+      }
+    },
+    "cold mailman": {
+      "name": "Cold Mailman",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "cold showers": {
+      "name": "Cold Showers",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "cold war kids": {
+      "name": "Cold War Kids",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "coldplay": {
+      "name": "Coldplay",
+      "status": "identity_candidate_only",
+      "mbid": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "art pop",
+        "britpop",
+        "dream pop",
+        "indie rock",
+        "piano rock",
+        "pop",
+        "pop rock",
+        "post-britpop",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/coldplay"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/coldplay/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/coldplay"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q45188"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCfJOsk44wjzby9H64jDd4Nw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCIaFw5VBEK8qaW6nRpx_qnw"
+        }
+      ],
+      "life_span": {
+        "begin": "1996-09",
+        "end": null,
+        "ended": false
+      }
+    },
+    "coldplay (live 2003 sydney's horden pavilion)": {
+      "name": "Coldplay (Live 2003 Sydney's Horden Pavilion)",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "coldplay / bts": {
+      "name": "Coldplay / BTS",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "colin meloy": {
+      "name": "Colin Meloy",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "collective soul": {
+      "name": "Collective Soul",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "collectors club": {
+      "name": "Collectors Club",
+      "status": "identity_candidate_only",
+      "mbid": "803d3129-2193-4994-99cc-082292e681ab",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/803d3129-2193-4994-99cc-082292e681ab",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "college": {
+      "name": "College",
+      "status": "identity_candidate_only",
+      "mbid": "d41396da-ed4b-4d0a-a902-d4bcd39cef62",
+      "type": "Person",
+      "country": "FR",
+      "disambiguation": "Producer from France",
+      "genres": [
+        "synthwave"
+      ],
+      "source": "https://musicbrainz.org/artist/d41396da-ed4b-4d0a-a902-d4bcd39cef62",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://collegeoflove.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/College/24743627433"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/college"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3017989"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@valeriejetaime"
+        }
+      ],
+      "life_span": {
+        "begin": "1979-07-02",
+        "ended": false,
+        "end": null
+      }
+    },
+    "colony house": {
+      "name": "Colony House",
+      "status": "identity_candidate_only",
+      "mbid": "5f3987e9-20f7-4f45-8187-7ef2102e712a",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "rock and roll"
+      ],
+      "source": "https://musicbrainz.org/artist/5f3987e9-20f7-4f45-8187-7ef2102e712a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/colonyhousemusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q18330910"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCyTPH96oSgYb4S62pSPok1w"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2009"
+      }
+    },
+    "color collage": {
+      "name": "Color Collage",
+      "status": "identity_candidate_only",
+      "mbid": "12c673cb-371d-4f5f-875a-a34db59ce254",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/12c673cb-371d-4f5f-875a-a34db59ce254",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
