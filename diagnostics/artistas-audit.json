@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-25T21:12:32.290296+00:00",
+  "generated_at": "2026-10-26T00:42:28.896499+00:00",
   "source_updates": {
-    "artists": "2026-10-25T21:12:28.448057Z",
-    "galleries": "2026-10-25T20:04:55.352267+00:00",
-    "album_art": "2026-10-25T20:46:49.597016+00:00"
+    "artists": "2026-10-26T00:42:22.995838Z",
+    "galleries": "2026-10-25T22:34:06.650238+00:00",
+    "album_art": "2026-10-25T23:12:47.287305+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
     "public_artists": 7920,
     "aliases_normalized": 7998,
-    "with_history": 7872,
+    "with_history": 7873,
     "with_tracks": 7914,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1419
+      "yesstreaming_live": 1420
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-25T21:12:28.448057Z"
+      "merged_at": "2026-10-26T00:42:22.995838Z"
     }
   },
   "profile_enrichment": {
@@ -73,20 +73,20 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6956,
-    "with_social": 4765,
+    "with_social": 4761,
     "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
     "total": 18198,
-    "with_effective_artwork": 13546,
+    "with_effective_artwork": 13547,
     "with_effective_artwork_pct": 74.44,
-    "missing_artwork": 4652,
+    "missing_artwork": 4651,
     "grouped_as_otras": 5908,
-    "with_first_and_last_dates": 17803,
+    "with_first_and_last_dates": 17804,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10641,
-    "album_art_cache_missed": 4270
+    "album_art_cache_found": 10642,
+    "album_art_cache_missed": 4269
   },
   "focus": {
     "boylife": {
@@ -2878,7 +2878,7 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": false,
-      "has_genre": true,
+      "has_genre": false,
       "related": 0,
       "missing_core": [
         "image",
@@ -4157,7 +4157,7 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": false,
-      "has_genre": true,
+      "has_genre": false,
       "related": 0,
       "missing_core": [
         "image",
@@ -9855,7 +9855,7 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": false,
-      "has_genre": true,
+      "has_genre": false,
       "related": 0,
       "missing_core": [
         "image",
