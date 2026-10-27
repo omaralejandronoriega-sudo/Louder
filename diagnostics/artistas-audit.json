@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-27T08:21:33.442088+00:00",
+  "generated_at": "2026-10-27T14:53:43.675217+00:00",
   "source_updates": {
-    "artists": "2026-10-27T08:21:27.185042Z",
-    "galleries": "2026-10-27T06:17:57.209478+00:00",
-    "album_art": "2026-10-27T04:57:27.497860+00:00"
+    "artists": "2026-10-27T14:53:37.950174Z",
+    "galleries": "2026-10-27T12:32:13.859027+00:00",
+    "album_art": "2026-10-27T10:29:52.077112+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
     "public_artists": 7920,
     "aliases_normalized": 7998,
-    "with_history": 7873,
+    "with_history": 7875,
     "with_tracks": 7914,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1421
+      "yesstreaming_live": 1423
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-27T08:21:27.185042Z"
+      "merged_at": "2026-10-27T14:53:37.950174Z"
     }
   },
   "profile_enrichment": {
@@ -56,8 +56,8 @@
     "missing_profile_bio": 3455,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4365,
-    "core_complete_pct": 55.11,
+    "core_complete": 4367,
+    "core_complete_pct": 55.14,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 6956,
     "effective_image_pct": 87.83,
@@ -73,8 +73,8 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6956,
-    "with_social": 4761,
-    "with_genre": 3907,
+    "with_social": 4765,
+    "with_genre": 3909,
     "with_related": 1599
   },
   "tracks": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.44,
     "missing_artwork": 4652,
     "grouped_as_otras": 5909,
-    "with_first_and_last_dates": 17806,
+    "with_first_and_last_dates": 17808,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -2512,6 +2512,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 39,
+      "first_played": "3 abr 2013",
+      "last_played": "27 oct 2026 · 08:09",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -2613,42 +2649,6 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 38,
-      "first_played": "3 abr 2013",
-      "last_played": "24 oct 2026 · 20:32",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -6761,6 +6761,43 @@
       "profile_complete": false
     },
     {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 15,
+      "first_played": "13 sep 2026",
+      "last_played": "27 oct 2026 · 03:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Decemberists/James Mercer",
       "slug": "the-decemberists-james-mercer",
       "plays": 15,
@@ -7075,43 +7112,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "NiTE, Rosegarden Funeral Party",
-      "slug": "nite-rosegarden-funeral-party",
-      "plays": 14,
-      "first_played": "13 sep 2026",
-      "last_played": "24 oct 2026 · 02:46",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 6,
       "missing_core": [
         "image",
         "bio"
@@ -9489,6 +9489,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 39,
+      "first_played": "3 abr 2013",
+      "last_played": "27 oct 2026 · 08:09",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -9590,42 +9626,6 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 38,
-      "first_played": "3 abr 2013",
-      "last_played": "24 oct 2026 · 20:32",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
