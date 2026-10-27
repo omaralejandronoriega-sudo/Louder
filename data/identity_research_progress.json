@@ -1,7 +1,7 @@
 {
-  "cursor": 1620,
+  "cursor": 1640,
   "total_catalog": 7988,
-  "updated_at": "2026-10-27T06:49:59.192366+00:00",
+  "updated_at": "2026-10-27T13:10:57.554392+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -27817,6 +27817,391 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 3
+    },
+    "coves": {
+      "name": "Coves",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "cow parade cow": {
+      "name": "Cow Parade Cow",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "coyoli": {
+      "name": "Coyoli",
+      "status": "identity_candidate_only",
+      "mbid": "8746338b-090a-4475-b6de-8c9171460b25",
+      "type": "Group",
+      "country": "MX",
+      "disambiguation": "",
+      "genres": [
+        "folk",
+        "noise"
+      ],
+      "source": "https://musicbrainz.org/artist/8746338b-090a-4475-b6de-8c9171460b25",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "cq wrestling": {
+      "name": "CQ Wrestling",
+      "status": "identity_candidate_only",
+      "mbid": "9065c2ee-0e4a-4f36-8e9e-92a572e1fa8e",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Band formerly known as Chappaqua Wrestling",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9065c2ee-0e4a-4f36-8e9e-92a572e1fa8e",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://chappaquawrestling.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/chappaquawrestling"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cqwrestling/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/chappaquawrestling"
+        }
+      ],
+      "life_span": {
+        "begin": "2016",
+        "end": null,
+        "ended": false
+      }
+    },
+    "craft spells": {
+      "name": "Craft Spells",
+      "status": "identity_candidate_only",
+      "mbid": "d3afff73-119e-406e-8551-9403e80c531b",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "US indie rock/dream pop band",
+      "genres": [
+        "dream pop",
+        "indie pop",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/d3afff73-119e-406e-8551-9403e80c531b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CraftSpells"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/craftspells/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/craftspells"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30591845"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2010",
+        "ended": false
+      }
+    },
+    "craig armstrong": {
+      "name": "Craig Armstrong",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "craig finn": {
+      "name": "Craig Finn",
+      "status": "identity_candidate_only",
+      "mbid": "6a62a034-cee3-490c-a2ad-621eca2f25a4",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "post-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/6a62a034-cee3-490c-a2ad-621eca2f25a4",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/CraigSteady"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/steadycraig/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/craig-finn-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5180963"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCJl3rlunlzq0-sMnXM_HRAg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1971-08-22",
+        "end": null
+      }
+    },
+    "cranes": {
+      "name": "Cranes",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "crash test dummies": {
+      "name": "Crash Test Dummies",
+      "status": "identity_candidate_only",
+      "mbid": "afb8f901-d846-4c70-a898-59bc183d1da7",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "folk rock",
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/afb8f901-d846-4c70-a898-59bc183d1da7",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Crash-Test-Dummies/152157364820371"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/crashtestdummiesofficial/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q277715"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC8cYDHoMlLvnoViNU1K9yKA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1989"
+      }
+    },
+    "crate": {
+      "name": "Crate",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "crawling": {
+      "name": "Crawling",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "crawling with kings": {
+      "name": "Crawling With Kings",
+      "status": "identity_candidate_only",
+      "mbid": "c3a20559-2bbb-450d-a295-2335fadf3696",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c3a20559-2bbb-450d-a295-2335fadf3696",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/crawlingwithkings"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "crazy p": {
+      "name": "Crazy P",
+      "status": "identity_candidate_only",
+      "mbid": "45644225-982e-4b76-a529-d8f9688e9a7d",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "formerly Crazy Penis",
+      "genres": [
+        "deep house",
+        "nu disco"
+      ],
+      "source": "https://musicbrainz.org/artist/45644225-982e-4b76-a529-d8f9688e9a7d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://crazyp.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/crazypmusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/crazyp"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3002398"
+        }
+      ],
+      "life_span": {
+        "begin": "1995",
+        "ended": false,
+        "end": null
+      }
+    },
+    "crazy town": {
+      "name": "Crazy Town",
+      "status": "identity_candidate_only",
+      "mbid": "8996b655-fbad-4018-b430-1bd8fab43235",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "nu metal",
+        "rap rock",
+        "rapcore",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/8996b655-fbad-4018-b430-1bd8fab43235",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/officialcrazytown"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/therealcrazytown/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q869604"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/CrazyTownVEVO"
+        }
+      ],
+      "life_span": {
+        "begin": "1995",
+        "ended": true,
+        "end": "2024"
+      }
+    },
+    "cream": {
+      "name": "Cream",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "creature canyon": {
+      "name": "Creature Canyon",
+      "status": "identity_candidate_only",
+      "mbid": "63654665-33bc-41c5-8431-ffb15c940c2c",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/63654665-33bc-41c5-8431-ffb15c940c2c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://creaturecanyon.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/creaturecanyon/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "creatures": {
+      "name": "Creatures",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "creatures of habit": {
+      "name": "Creatures of Habit",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "creed": {
+      "name": "Creed",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "creux lies": {
+      "name": "Creux Lies",
+      "status": "identity_candidate_only",
+      "mbid": "aa606ef4-3aed-4505-9406-c44929642fe2",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "dark wave",
+        "gothic",
+        "post-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/aa606ef4-3aed-4505-9406-c44929642fe2",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://creuxlies.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/creuxlies"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cruexlies/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/creuxlies"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
     }
   }
 }
