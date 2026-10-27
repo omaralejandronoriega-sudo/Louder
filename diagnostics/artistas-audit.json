@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-27T14:53:43.675217+00:00",
+  "generated_at": "2026-10-27T20:57:03.894650+00:00",
   "source_updates": {
-    "artists": "2026-10-27T14:53:37.950174Z",
-    "galleries": "2026-10-27T12:32:13.859027+00:00",
-    "album_art": "2026-10-27T10:29:52.077112+00:00"
+    "artists": "2026-10-27T20:56:57.660976Z",
+    "galleries": "2026-10-27T18:15:20.759901+00:00",
+    "album_art": "2026-10-27T20:40:05.075884+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1423
+      "yesstreaming_live": 1424
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-27T14:53:37.950174Z"
+      "merged_at": "2026-10-27T20:56:57.660976Z"
     }
   },
   "profile_enrichment": {
@@ -73,8 +73,8 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6956,
-    "with_social": 4765,
-    "with_genre": 3909,
+    "with_social": 4767,
+    "with_genre": 3910,
     "with_related": 1599
   },
   "tracks": {
@@ -262,9 +262,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 132,
+      "plays": 133,
       "first_played": "21 nov 2012",
-      "last_played": "23 oct 2026 · 19:42",
+      "last_played": "27 oct 2026 · 11:53",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -333,9 +333,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 105,
+      "plays": 106,
       "first_played": "14 jul 2022",
-      "last_played": "25 oct 2026 · 21:22",
+      "last_played": "27 oct 2026 · 10:56",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -2619,6 +2619,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 38,
+      "first_played": "15 jul 2022",
+      "last_played": "27 oct 2026 · 10:41",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -2908,43 +2945,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 37,
-      "first_played": "15 jul 2022",
-      "last_played": "24 oct 2026 · 10:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3634,9 +3634,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 105,
+      "plays": 106,
       "first_played": "14 jul 2022",
-      "last_played": "25 oct 2026 · 21:22",
+      "last_played": "27 oct 2026 · 10:56",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -4102,6 +4102,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 38,
+      "first_played": "15 jul 2022",
+      "last_played": "27 oct 2026 · 10:41",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -4187,43 +4224,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 37,
-      "first_played": "15 jul 2022",
-      "last_played": "24 oct 2026 · 10:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7343,9 +7343,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 132,
+      "plays": 133,
       "first_played": "21 nov 2012",
-      "last_played": "23 oct 2026 · 19:42",
+      "last_played": "27 oct 2026 · 11:53",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7414,9 +7414,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 105,
+      "plays": 106,
       "first_played": "14 jul 2022",
-      "last_played": "25 oct 2026 · 21:22",
+      "last_played": "27 oct 2026 · 10:56",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -9596,6 +9596,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 38,
+      "first_played": "15 jul 2022",
+      "last_played": "27 oct 2026 · 10:41",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -9885,43 +9922,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 37,
-      "first_played": "15 jul 2022",
-      "last_played": "24 oct 2026 · 10:51",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
