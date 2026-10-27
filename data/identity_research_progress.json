@@ -1,7 +1,7 @@
 {
-  "cursor": 1580,
+  "cursor": 1600,
   "total_catalog": 7988,
-  "updated_at": "2026-10-26T21:51:53.521764+00:00",
+  "updated_at": "2026-10-27T01:27:59.902102+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -27129,6 +27129,312 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 4
+    },
+    "concrete blonde": {
+      "name": "Concrete Blonde",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "concrete knives": {
+      "name": "Concrete Knives",
+      "status": "identity_candidate_only",
+      "mbid": "75296680-d93b-43ea-b8ac-8695262e4b1d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/75296680-d93b-43ea-b8ac-8695262e4b1d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://concreteknives.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/concreteknives"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCO6dNZyFxtHzLko0gk7eJwA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "concrete robot": {
+      "name": "Concrete Robot",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "confidence man": {
+      "name": "Confidence Man",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "congrats / kwasi": {
+      "name": "Congrats / Kwasi",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "connor bracken and the mother leeds band": {
+      "name": "Connor Bracken and the Mother Leeds Band",
+      "status": "identity_candidate_only",
+      "mbid": "f3a07e0e-64fc-41b9-a529-48ec6e928a37",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Mother Leeds Band, Leeds",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f3a07e0e-64fc-41b9-a529-48ec6e928a37",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://motherleedsband.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/leeds.usa"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/motherleedsband/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/LEEDSrocksUSA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2011"
+      }
+    },
+    "conor oberst": {
+      "name": "Conor Oberst",
+      "status": "identity_candidate_only",
+      "mbid": "0eee89dc-7d86-4a15-97be-011652c49288",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "folk",
+        "folk rock",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0eee89dc-7d86-4a15-97be-011652c49288",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/conoroberst"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q550900"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCPrWVPL8Ea-EjxhCwBpCP3A"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1980-02-15",
+        "ended": false
+      }
+    },
+    "conquering animal sound": {
+      "name": "Conquering Animal Sound",
+      "status": "identity_candidate_only",
+      "mbid": "10c12783-d3f7-4092-a762-414c3eb51c75",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "electronica",
+        "indie pop",
+        "indietronica"
+      ],
+      "source": "https://musicbrainz.org/artist/10c12783-d3f7-4092-a762-414c3eb51c75",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Conquering-Animal-Sound/205594179060"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/conqueringanimalsound"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17150069"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2008",
+        "end": null
+      }
+    },
+    "conquistador": {
+      "name": "Conquistador",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "constrobuz": {
+      "name": "Constrobuz",
+      "status": "identity_candidate_only",
+      "mbid": "cb980d81-657d-4640-9f9c-841b6be31898",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/cb980d81-657d-4640-9f9c-841b6be31898",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "contre jour": {
+      "name": "Contre Jour",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "control machete": {
+      "name": "Control Machete",
+      "status": "identity_candidate_only",
+      "mbid": "38c8254f-ceac-460d-9123-5af2d7a4fc7e",
+      "type": "Group",
+      "country": "MX",
+      "disambiguation": "",
+      "genres": [
+        "hip hop"
+      ],
+      "source": "https://musicbrainz.org/artist/38c8254f-ceac-460d-9123-5af2d7a4fc7e",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1129179"
+        }
+      ],
+      "life_span": {
+        "begin": "1996",
+        "end": null,
+        "ended": false
+      }
+    },
+    "control room": {
+      "name": "Control Room",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "controller.controller": {
+      "name": "Controller.Controller",
+      "status": "identity_candidate_only",
+      "mbid": "3b496254-6d46-46be-b7f2-1297e1e54622",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/3b496254-6d46-46be-b7f2-1297e1e54622",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/controllercontroller"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1129210"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "end": "2006-10",
+        "begin": "2002"
+      }
+    },
+    "cool heat": {
+      "name": "COOL HEAT",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "cooper": {
+      "name": "Cooper",
+      "status": "identity_candidate_only",
+      "mbid": "8ec5c8c2-adde-4fd8-98d8-7495beaea621",
+      "type": "Group",
+      "country": "ES",
+      "disambiguation": "Spanish pop band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8ec5c8c2-adde-4fd8-98d8-7495beaea621",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5786259"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "coord. de los alpes 215 a": {
+      "name": "Coord. De Los Alpes 215 A",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "copyright sbi global limited 2014": {
+      "name": "Copyright SBI Global Limited 2014",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "coquin migale": {
+      "name": "Coquin Migale",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "corbeau hangs": {
+      "name": "Corbeau Hangs",
+      "status": "identity_candidate_only",
+      "mbid": "d427bd4a-911c-4bac-b6c4-e7465142e44f",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d427bd4a-911c-4bac-b6c4-e7465142e44f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://corbeauhangs.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/profile.php?id=61552281161260"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/corbeauhangs/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@corbeauhangs"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
     }
   }
 }
