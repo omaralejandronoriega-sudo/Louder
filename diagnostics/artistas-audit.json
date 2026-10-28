@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T16:48:51.665229+00:00",
+  "generated_at": "2026-10-28T22:49:49.726712+00:00",
   "source_updates": {
-    "artists": "2026-10-28T16:48:45.175014Z",
-    "galleries": "2026-10-28T14:23:34.004066+00:00",
-    "album_art": "2026-10-28T11:37:58.088511+00:00"
+    "artists": "2026-10-28T22:49:44.216339Z",
+    "galleries": "2026-10-28T19:45:20.999622+00:00",
+    "album_art": "2026-10-28T21:54:11.737543+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-28T16:48:45.175014Z"
+      "merged_at": "2026-10-28T22:49:44.216339Z"
     }
   },
   "profile_enrichment": {
@@ -73,7 +73,7 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6956,
-    "with_social": 4766,
+    "with_social": 4765,
     "with_genre": 3910,
     "with_related": 1599
   },
@@ -1263,6 +1263,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 54,
+      "first_played": "14 jul 2012",
+      "last_played": "28 oct 2026 · 12:09",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Hey Sholay",
       "slug": "hey-sholay",
       "plays": 53,
@@ -1286,41 +1321,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 5,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 53,
-      "first_played": "14 jul 2012",
-      "last_played": "26 oct 2026 · 23:56",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -5570,6 +5570,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 21,
+      "first_played": "22 sep 2026",
+      "last_played": "28 oct 2026 · 14:54",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "fthrsn",
       "slug": "fthrsn",
       "plays": 20,
@@ -5635,41 +5670,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Holloways",
-      "slug": "the-holloways",
-      "plays": 20,
-      "first_played": "22 sep 2026",
-      "last_played": "27 oct 2026 · 20:36",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8275,6 +8275,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 54,
+      "first_played": "14 jul 2012",
+      "last_played": "28 oct 2026 · 12:09",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Hey Sholay",
       "slug": "hey-sholay",
       "plays": 53,
@@ -8298,41 +8333,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 5,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 53,
-      "first_played": "14 jul 2012",
-      "last_played": "26 oct 2026 · 23:56",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
