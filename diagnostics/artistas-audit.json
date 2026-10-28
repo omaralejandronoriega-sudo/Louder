@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T08:57:29.135137+00:00",
+  "generated_at": "2026-10-28T16:48:51.665229+00:00",
   "source_updates": {
-    "artists": "2026-10-28T08:57:23.008070Z",
-    "galleries": "2026-10-28T07:26:35.072901+00:00",
-    "album_art": "2026-10-28T05:32:45.044521+00:00"
+    "artists": "2026-10-28T16:48:45.175014Z",
+    "galleries": "2026-10-28T14:23:34.004066+00:00",
+    "album_art": "2026-10-28T11:37:58.088511+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1425
+      "yesstreaming_live": 1426
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,13 +39,13 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-28T08:57:23.008070Z"
+      "merged_at": "2026-10-28T16:48:45.175014Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4389,
-    "real_profile_missing": 3531,
-    "real_profile_complete_pct": 55.42,
+    "real_profile_complete": 4390,
+    "real_profile_missing": 3530,
+    "real_profile_complete_pct": 55.43,
     "profile_status": {
       "complete": 4158,
       "partial": 2871,
@@ -53,27 +53,27 @@
       "legacy": 56
     },
     "missing_validated_profile_image": 964,
-    "missing_profile_bio": 3455,
+    "missing_profile_bio": 3454,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4367,
-    "core_complete_pct": 55.14,
+    "core_complete": 4368,
+    "core_complete_pct": 55.15,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 6956,
     "effective_image_pct": 87.83,
     "image_direct_artist": 1645,
     "image_gallery_fallback": 5311,
     "missing_image": 964,
-    "effective_bio": 4465,
-    "effective_bio_pct": 56.38,
+    "effective_bio": 4466,
+    "effective_bio_pct": 56.39,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 3184,
-    "missing_bio": 3455,
+    "bio_gallery_en": 3185,
+    "missing_bio": 3454,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6956,
-    "with_social": 4767,
+    "with_social": 4766,
     "with_genre": 3910,
     "with_related": 1599
   },
@@ -123,9 +123,9 @@
     "monsune": {
       "name": "Monsune",
       "slug": "monsune",
-      "plays": 17,
+      "plays": 18,
       "first_played": "5 mar 2025",
-      "last_played": "24 oct 2026 · 14:56",
+      "last_played": "28 oct 2026 · 05:46",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -333,9 +333,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 106,
+      "plays": 107,
       "first_played": "14 jul 2022",
-      "last_played": "27 oct 2026 · 10:56",
+      "last_played": "28 oct 2026 · 07:20",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -2271,9 +2271,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 40,
+      "plays": 41,
       "first_played": "26 jul 2022",
-      "last_played": "27 oct 2026 · 16:19",
+      "last_played": "28 oct 2026 · 09:51",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3634,9 +3634,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 106,
+      "plays": 107,
       "first_played": "14 jul 2022",
-      "last_played": "27 oct 2026 · 10:56",
+      "last_played": "28 oct 2026 · 07:20",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3993,9 +3993,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 40,
+      "plays": 41,
       "first_played": "26 jul 2022",
-      "last_played": "27 oct 2026 · 16:19",
+      "last_played": "28 oct 2026 · 09:51",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -6107,6 +6107,43 @@
       "profile_complete": false
     },
     {
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
+      "plays": 18,
+      "first_played": "6 mar 2025",
+      "last_played": "28 oct 2026 · 09:39",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6255,43 +6292,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 17,
-      "first_played": "6 mar 2025",
-      "last_played": "25 oct 2026 · 22:22",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Lily Allen Media Center",
       "slug": "lily-allen-media-center",
       "plays": 17,
@@ -6351,6 +6351,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Sacred Skin, SRSQ",
+      "slug": "sacred-skin-srsq",
+      "plays": 17,
+      "first_played": "5 sep 2026",
+      "last_played": "28 oct 2026 · 05:19",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 9,
       "missing_core": [
         "image",
         "bio"
@@ -6531,43 +6568,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Sacred Skin, SRSQ",
-      "slug": "sacred-skin-srsq",
-      "plays": 16,
-      "first_played": "5 sep 2026",
-      "last_played": "26 oct 2026 · 03:08",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 9,
       "missing_core": [
         "image",
         "bio"
@@ -7413,9 +7413,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 106,
+      "plays": 107,
       "first_played": "14 jul 2022",
-      "last_played": "27 oct 2026 · 10:56",
+      "last_played": "28 oct 2026 · 07:20",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -9247,9 +9247,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 40,
+      "plays": 41,
       "first_played": "26 jul 2022",
-      "last_played": "27 oct 2026 · 16:19",
+      "last_played": "28 oct 2026 · 09:51",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
