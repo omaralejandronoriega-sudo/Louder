@@ -1,7 +1,7 @@
 {
-  "cursor": 1720,
+  "cursor": 1740,
   "total_catalog": 7988,
-  "updated_at": "2026-10-28T07:30:10.329061+00:00",
+  "updated_at": "2026-10-28T14:30:38.426205+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -29463,6 +29463,332 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "danger danger": {
+      "name": "Danger Danger",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "danger mouse & daniele luppi": {
+      "name": "Danger Mouse & Daniele Luppi",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "danger mouse and sparklehorse": {
+      "name": "Danger Mouse and Sparklehorse",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "danger mouse, mormor": {
+      "name": "Danger Mouse, Mormor",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "danger mouse/ daniele luppi/ jack white": {
+      "name": "Danger Mouse/ Daniele Luppi/ Jack White",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "danger mouse/ daniele luppi/ norah jones": {
+      "name": "Danger Mouse/ Daniele Luppi/ Norah Jones",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dani mack": {
+      "name": "dani mack",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dani shivers": {
+      "name": "Dani Shivers",
+      "status": "identity_candidate_only",
+      "mbid": "97f36d8d-41de-495c-b8cf-edf692151b03",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "electronic"
+      ],
+      "source": "https://musicbrainz.org/artist/97f36d8d-41de-495c-b8cf-edf692151b03",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "daniel avery": {
+      "name": "Daniel Avery",
+      "status": "identity_candidate_only",
+      "mbid": "3e7aa4a4-5b7e-46a3-a7ff-c57044fa1b64",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "acid house",
+        "ambient",
+        "breakbeat",
+        "breaks",
+        "club",
+        "dance",
+        "downtempo",
+        "drum and bass",
+        "edm",
+        "electro",
+        "electronic",
+        "electronica",
+        "experimental",
+        "house",
+        "idm",
+        "melodic house",
+        "melodic techno",
+        "pop",
+        "rock",
+        "techno"
+      ],
+      "source": "https://musicbrainz.org/artist/3e7aa4a4-5b7e-46a3-a7ff-c57044fa1b64",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://danielavery.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/danielmarkavery"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/danielmarkavery/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/danielavery"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15640990"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC3eQfls4JJ9MfSQPyubu5Sw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1986-09-30",
+        "ended": false
+      }
+    },
+    "daniel avery, cecile believe": {
+      "name": "Daniel Avery, Cecile Believe",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "daniel ellsworth & the great lakes": {
+      "name": "Daniel Ellsworth & The Great Lakes",
+      "status": "identity_candidate_only",
+      "mbid": "bbbffa17-47a1-40e3-9bb8-b42826650d95",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/bbbffa17-47a1-40e3-9bb8-b42826650d95",
+      "evidence_links": [
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/danielellsworthmusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5217069"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCSlJBIlowqjb3vf2mBxiX5A"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "danny brown": {
+      "name": "Danny Brown",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "danny dwyer": {
+      "name": "Danny Dwyer",
+      "status": "identity_candidate_only",
+      "mbid": "e7048106-e190-4079-8529-94ce8b309257",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e7048106-e190-4079-8529-94ce8b309257",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/itssleepydan"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/_dannydwyer/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/danny_dwyer"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCXzFvV-tn6sEIKJN19KUOew"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1997"
+      }
+    },
+    "danny goo": {
+      "name": "Danny Goo",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dante elephante": {
+      "name": "Dante Elephante",
+      "status": "identity_candidate_only",
+      "mbid": "e53a8565-eca6-4e6f-a81e-73884686b2aa",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e53a8565-eca6-4e6f-a81e-73884686b2aa",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://danteelephante.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DanteElephante"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/danteelephante"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2010-09"
+      }
+    },
+    "dantevilles": {
+      "name": "Dantevilles",
+      "status": "identity_candidate_only",
+      "mbid": "5d4208cd-5fb5-4c36-bdb7-0fc46cc1a6ed",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5d4208cd-5fb5-4c36-bdb7-0fc46cc1a6ed",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dantevilles"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dantevilles/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dantevilles"
+        }
+      ],
+      "life_span": {
+        "begin": "2015-01-01",
+        "end": null,
+        "ended": false
+      }
+    },
+    "danzig": {
+      "name": "Danzig",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "daphni": {
+      "name": "Daphni",
+      "status": "identity_candidate_only",
+      "mbid": "859216c4-5d01-479b-b6c3-e20cc591a86a",
+      "type": "Person",
+      "country": "CA",
+      "disambiguation": "electronic act from Dan Snaith",
+      "genres": [
+        "electronic",
+        "house"
+      ],
+      "source": "https://musicbrainz.org/artist/859216c4-5d01-479b-b6c3-e20cc591a86a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://caribouband.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/cariboumusic/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1036131"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1978-03-29",
+        "ended": false
+      }
+    },
+    "dappled cities": {
+      "name": "Dappled Cities",
+      "status": "identity_candidate_only",
+      "mbid": "830daed9-96bd-446d-b733-3ab48f6ab9b4",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "Australian indie rock, previously Dappled Cities Fly",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/830daed9-96bd-446d-b733-3ab48f6ab9b4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dappledcities.bandcamp.com/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5221806"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2001"
+      }
+    },
+    "darius, wayne snow": {
+      "name": "Darius, Wayne Snow",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
   }
 }
