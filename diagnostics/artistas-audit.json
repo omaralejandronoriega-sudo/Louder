@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-27T20:57:03.894650+00:00",
+  "generated_at": "2026-10-28T01:40:30.570765+00:00",
   "source_updates": {
-    "artists": "2026-10-27T20:56:57.660976Z",
-    "galleries": "2026-10-27T18:15:20.759901+00:00",
-    "album_art": "2026-10-27T20:40:05.075884+00:00"
+    "artists": "2026-10-28T01:40:24.265133Z",
+    "galleries": "2026-10-28T01:36:51.470128+00:00",
+    "album_art": "2026-10-28T00:01:57.367634+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-27T20:56:57.660976Z"
+      "merged_at": "2026-10-28T01:40:24.265133Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.44,
     "missing_artwork": 4652,
     "grouped_as_otras": 5909,
-    "with_first_and_last_dates": 17808,
+    "with_first_and_last_dates": 17809,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -2269,6 +2269,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 40,
+      "first_played": "26 jul 2022",
+      "last_played": "27 oct 2026 · 16:19",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Church",
       "slug": "the-church",
       "plays": 40,
@@ -2469,44 +2507,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 39,
-      "first_played": "26 jul 2022",
-      "last_played": "26 oct 2026 · 09:27",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3991,20 +3991,22 @@
       "profile_complete": false
     },
     {
-      "name": "800beloved",
-      "slug": "800beloved",
-      "plays": 39,
-      "first_played": "27 jul 2012",
-      "last_played": "27 jun 2016 · 23:59",
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 40,
+      "first_played": "26 jul 2022",
+      "last_played": "27 oct 2026 · 16:19",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4027,22 +4029,20 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
+      "name": "800beloved",
+      "slug": "800beloved",
       "plays": 39,
-      "first_played": "26 jul 2022",
-      "last_played": "26 oct 2026 · 09:27",
+      "first_played": "27 jul 2012",
+      "last_played": "27 jun 2016 · 23:59",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "lastfm"
       ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7053,6 +7053,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 14,
+      "first_played": "19 sep 2026",
+      "last_played": "27 oct 2026 · 15:17",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Giant Fang",
       "slug": "giant-fang",
       "plays": 14,
@@ -7176,42 +7211,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "THE BRITCO",
-      "slug": "the-britco",
-      "plays": 14,
-      "first_played": "30 sep 2014",
-      "last_played": "1 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -9246,6 +9245,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 40,
+      "first_played": "26 jul 2022",
+      "last_played": "27 oct 2026 · 16:19",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Church",
       "slug": "the-church",
       "plays": 40,
@@ -9446,44 +9483,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 39,
-      "first_played": "26 jul 2022",
-      "last_played": "26 oct 2026 · 09:27",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
