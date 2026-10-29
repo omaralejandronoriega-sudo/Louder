@@ -1,7 +1,7 @@
 {
-  "cursor": 1780,
+  "cursor": 1800,
   "total_catalog": 7988,
-  "updated_at": "2026-10-28T23:59:29.802330+00:00",
+  "updated_at": "2026-10-29T05:42:31.884485+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -30245,6 +30245,280 @@
     },
     "dawes": {
       "name": "Dawes",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dawn golden": {
+      "name": "Dawn Golden",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dawn landes": {
+      "name": "Dawn Landes",
+      "status": "identity_candidate_only",
+      "mbid": "3257dcfb-0b88-4efa-ae43-9b92a799a463",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "singer-songwriter",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3257dcfb-0b88-4efa-ae43-9b92a799a463",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dawnlandesofficial.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dawnlandes"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2803858"
+        }
+      ],
+      "life_span": {
+        "begin": "1980-12-05",
+        "end": null,
+        "ended": false
+      }
+    },
+    "day sleeper": {
+      "name": "Day Sleeper",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "day wave": {
+      "name": "Day Wave",
+      "status": "identity_candidate_only",
+      "mbid": "e46758a5-28e4-41c0-9893-2f5720d712f3",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "US indie rock musician, multi-instrumentalist, and producer",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e46758a5-28e4-41c0-9893-2f5720d712f3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/daywavemusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/daywavemusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/day-wave/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q20857900"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCM2qhEtNcUWjcxK4-pRlfkQ"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC2WUFt3EWJQNCZ-PCMkSNQA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1989-09-03",
+        "ended": false
+      }
+    },
+    "dayglow": {
+      "name": "Dayglow",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dc": {
+      "name": "DC",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "de mónaco": {
+      "name": "De Mónaco",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "de vito": {
+      "name": "De Vito",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dead by sunrise": {
+      "name": "Dead by Sunrise",
+      "status": "identity_candidate_only",
+      "mbid": "10a0bbc1-4236-4de2-b827-f9fc25f3655c",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "electronic rock",
+        "metal",
+        "nu metal",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/10a0bbc1-4236-4de2-b827-f9fc25f3655c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DeadBySunrise"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q627617"
+        }
+      ],
+      "life_span": {
+        "begin": "2005",
+        "ended": true,
+        "end": "2018-09"
+      }
+    },
+    "dead can dance": {
+      "name": "Dead Can Dance",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dead ceremony": {
+      "name": "Dead Ceremony",
+      "status": "identity_candidate_only",
+      "mbid": "afe70a60-57b9-460a-8720-c98102255021",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/afe70a60-57b9-460a-8720-c98102255021",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": "2013",
+        "end": null
+      }
+    },
+    "dead letter circus": {
+      "name": "Dead Letter Circus",
+      "status": "identity_candidate_only",
+      "mbid": "a92f9025-b15e-460c-8cc4-4784c8d66f39",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "neo-progressive rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a92f9025-b15e-460c-8cc4-4784c8d66f39",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deadlettercircus"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/deadletterinsta/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/deadlettercircus"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1180813"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/DEADLETTERCIRCUSTV"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2004",
+        "end": null
+      }
+    },
+    "dead man's bones": {
+      "name": "Dead Man's Bones",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dead mellotron": {
+      "name": "Dead Mellotron",
+      "status": "identity_candidate_only",
+      "mbid": "453221d2-9c1a-4644-ad3c-3ab36277a309",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/453221d2-9c1a-4644-ad3c-3ab36277a309",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deadmellotronband"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "dead nature": {
+      "name": "Dead Nature",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dead sons": {
+      "name": "Dead Sons",
+      "status": "identity_candidate_only",
+      "mbid": "0cf9cff4-4604-4c73-ba89-1e22c8b51140",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0cf9cff4-4604-4c73-ba89-1e22c8b51140",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5245408"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "dead stars": {
+      "name": "Dead Stars",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dead times": {
+      "name": "Dead Times",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dead town radio": {
+      "name": "Dead Town Radio",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "deadboy": {
+      "name": "Deadboy",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 2
