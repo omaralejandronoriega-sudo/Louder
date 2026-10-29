@@ -1,7 +1,7 @@
 {
-  "cursor": 1760,
+  "cursor": 1780,
   "total_catalog": 7988,
-  "updated_at": "2026-10-28T19:52:19.063428+00:00",
+  "updated_at": "2026-10-28T23:59:29.802330+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -30033,6 +30033,221 @@
         "end": "2012-12-05",
         "begin": "1920-12-06"
       }
+    },
+    "dave gahan": {
+      "name": "Dave Gahan",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dave matthews & tim reynolds": {
+      "name": "Dave Matthews & Tim Reynolds",
+      "status": "identity_candidate_only",
+      "mbid": "9c92d62c-1d8b-404e-8766-e4d9300486e5",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9c92d62c-1d8b-404e-8766-e4d9300486e5",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5229307"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "dave matthews band": {
+      "name": "Dave Matthews Band",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "david bianco": {
+      "name": "David Bianco",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "david bowie": {
+      "name": "David Bowie",
+      "status": "identity_candidate_only",
+      "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "English singer‐songwriter",
+      "genres": [
+        "alternative rock",
+        "art pop",
+        "art rock",
+        "classic rock",
+        "glam rock",
+        "new wave",
+        "pop",
+        "pop rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/davidbowie/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/davidbowie"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/davidbowieofficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5383"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC3MD06xOSoPyfGY9GqWq3gQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC8YgWcDKi1rLbQ1OtrOHeDw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCh8hlIe7EcmVilHjnrE7gNw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCvY1eVE6lTebXsdFbbXUtkQ"
+        }
+      ],
+      "life_span": {
+        "begin": "1947-01-08",
+        "end": "2016-01-10",
+        "ended": true
+      }
+    },
+    "david bowie[fazmusic.net]": {
+      "name": "David Bowie[FazMusic.net]",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "david byrne": {
+      "name": "David Byrne",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "david byrne & st. vincent": {
+      "name": "David Byrne & St. Vincent",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "david byrne, ghost train orchestra": {
+      "name": "David Byrne, Ghost Train Orchestra",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "david byrne, ghost train orchestra, hayley williams": {
+      "name": "David Byrne, Ghost Train Orchestra, Hayley Williams",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "david byrne, hayley williams": {
+      "name": "David Byrne, Hayley Williams",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "david carretta": {
+      "name": "David Carretta",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "david gilmour": {
+      "name": "David Gilmour",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "david gray": {
+      "name": "David Gray",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
+    },
+    "david guetta": {
+      "name": "David Guetta",
+      "status": "identity_candidate_only",
+      "mbid": "302bd7b9-d012-4360-897a-93b00c855680",
+      "type": "Person",
+      "country": "FR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/302bd7b9-d012-4360-897a-93b00c855680",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "david lynch": {
+      "name": "David Lynch",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 5
+    },
+    "david unlayao": {
+      "name": "David Unlayao",
+      "status": "identity_candidate_only",
+      "mbid": "81a35ed7-f6b0-471f-8675-a69fc03ef814",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/81a35ed7-f6b0-471f-8675-a69fc03ef814",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/davidunlayaomusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/davidunlayao/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCr_PI9dwAUuEu4cFYrxuTsA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "david wax museum": {
+      "name": "David Wax Museum",
+      "status": "identity_candidate_only",
+      "mbid": "42b38ec4-8ecb-4241-9320-30d5dd9f6556",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Fusion of traditional Mexican and American folk music",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/42b38ec4-8ecb-4241-9320-30d5dd9f6556",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "davids": {
+      "name": "Davids",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dawes": {
+      "name": "Dawes",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
