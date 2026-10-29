@@ -1,7 +1,7 @@
 {
-  "cursor": 1800,
+  "cursor": 1820,
   "total_catalog": 7988,
-  "updated_at": "2026-10-29T05:42:31.884485+00:00",
+  "updated_at": "2026-10-29T11:47:46.158283+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -30522,6 +30522,478 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 2
+    },
+    "deadletter": {
+      "name": "DEADLETTER",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "deadmau5": {
+      "name": "deadmau5",
+      "status": "identity_candidate_only",
+      "mbid": "4a00ec9d-c635-463a-8cd4-eb61725f0c60",
+      "type": "Person",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "bass house",
+        "breakbeat",
+        "club",
+        "complextro",
+        "dance",
+        "deep house",
+        "drum and bass",
+        "dubstep",
+        "edm",
+        "electro",
+        "electro house",
+        "electronic",
+        "electronica",
+        "future bass",
+        "house",
+        "idm",
+        "melodic house",
+        "melodic techno",
+        "orchestral",
+        "pop",
+        "progressive house",
+        "progressive trance",
+        "tech house",
+        "techno",
+        "trance",
+        "trap"
+      ],
+      "source": "https://musicbrainz.org/artist/4a00ec9d-c635-463a-8cd4-eb61725f0c60",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://deadmau5.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deadmau5"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/deadmau5/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/deadmau5"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fuckmylife"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q49009"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCYEK6xds6eo-3tr4xRdflmQ"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCL44WZGVf-BU5N0ymCXrpBg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1981-01-05"
+      }
+    },
+    "deadmau5/ gerard way": {
+      "name": "deadmau5/ Gerard Way",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "deadwood": {
+      "name": "Deadwood",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
+    },
+    "deaf club": {
+      "name": "Deaf Club",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "deaf havana": {
+      "name": "Deaf Havana",
+      "status": "identity_candidate_only",
+      "mbid": "98edd2f1-d136-4c47-ab9b-c31839dd1d98",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative metal",
+        "alternative rock",
+        "metal",
+        "post-hardcore",
+        "rock",
+        "screamo",
+        "southern metal",
+        "southern rock"
+      ],
+      "source": "https://musicbrainz.org/artist/98edd2f1-d136-4c47-ab9b-c31839dd1d98",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deafhavana"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/deafhavana/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/deafhavana"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5245773"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCNurJ63QBZYQ3o5DXqRy9ig"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCW5bkwocGGoeJjHTJZIEAOw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2005"
+      }
+    },
+    "deafheaven": {
+      "name": "Deafheaven",
+      "status": "identity_candidate_only",
+      "mbid": "f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "USA post‐black metal/shoegaze",
+      "genres": [
+        "atmospheric black metal",
+        "black metal",
+        "blackgaze",
+        "dream pop",
+        "post-metal",
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://deafheavens.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deafheaven"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/deafheavenband/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/deafheaven-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5245804"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC97UMkZzchbn0uO-KFyq8ww"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCpJAUou7A5TOpQEoYSVP_zQ"
+        }
+      ],
+      "life_span": {
+        "begin": "2010",
+        "ended": false,
+        "end": null
+      }
+    },
+    "dealers": {
+      "name": "Dealers",
+      "status": "identity_candidate_only",
+      "mbid": "f392a956-5211-4e90-a378-42e1b99a3780",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "chilean alternative rock band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f392a956-5211-4e90-a378-42e1b99a3780",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Dealers/34125842935"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/bandadealers"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/bandadealers"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "dean martin": {
+      "name": "Dean Martin",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dean wareham": {
+      "name": "DEAN WAREHAM",
+      "status": "identity_candidate_only",
+      "mbid": "a21a3ff2-064c-452d-8aea-3d4039ab70d6",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a21a3ff2-064c-452d-8aea-3d4039ab70d6",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q373354"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1963-08-01"
+      }
+    },
+    "deap vally": {
+      "name": "Deap Vally",
+      "status": "identity_candidate_only",
+      "mbid": "6f794982-c5f3-462c-ad0e-9319f43c7a8e",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Californian female blues/rock duo",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6f794982-c5f3-462c-ad0e-9319f43c7a8e",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://deapvally.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deapvally"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/deapvally"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5246801"
+        }
+      ],
+      "life_span": {
+        "begin": "2011",
+        "end": null,
+        "ended": false
+      }
+    },
+    "dear boy": {
+      "name": "Dear Boy",
+      "status": "identity_candidate_only",
+      "mbid": "f518cc7a-3af8-4c8b-a667-d0992090be2d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f518cc7a-3af8-4c8b-a667-d0992090be2d",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dearboyofficial"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dearboyofficial"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2012"
+      }
+    },
+    "dear comrade": {
+      "name": "Dear Comrade",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dear reader": {
+      "name": "Dear Reader",
+      "status": "identity_candidate_only",
+      "mbid": "dc70bf33-5c52-4699-871b-0008126ba88b",
+      "type": "Group",
+      "country": "ZA",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/dc70bf33-5c52-4699-871b-0008126ba88b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dearreadermusic.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dearreadermusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dearreadermusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dearreadermusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1181201"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dear_Reader"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/DearReaderMusic"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "dear rouge": {
+      "name": "Dear Rouge",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dear seattle": {
+      "name": "Dear Seattle",
+      "status": "identity_candidate_only",
+      "mbid": "f101428f-ade1-4f2d-ae4d-3f046189e624",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/f101428f-ade1-4f2d-ae4d-3f046189e624",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dearseattle.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dearseattlemusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dearseattle/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q66840949"
+        }
+      ],
+      "life_span": {
+        "begin": "2013-08",
+        "end": null,
+        "ended": false
+      }
+    },
+    "dear-god": {
+      "name": "DEAR-GOD",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "deas vail": {
+      "name": "Deas Vail",
+      "status": "identity_candidate_only",
+      "mbid": "328f3943-d0d4-45af-a1ba-2475a0d6c068",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/328f3943-d0d4-45af-a1ba-2475a0d6c068",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/deasvail"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5247021"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2003",
+        "ended": false
+      }
+    },
+    "death bells": {
+      "name": "Death Bells",
+      "status": "identity_candidate_only",
+      "mbid": "da9c1ec9-6ac1-4cfb-b24d-1932e22b7b37",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/da9c1ec9-6ac1-4cfb-b24d-1932e22b7b37",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "death by kite": {
+      "name": "Death by Kite",
+      "status": "identity_candidate_only",
+      "mbid": "6df94299-2024-4b6f-839f-5b22b1141e49",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6df94299-2024-4b6f-839f-5b22b1141e49",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Death-By-Kite-18102709626"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q61059852"
+        }
+      ],
+      "life_span": {
+        "begin": "2003-08-28",
+        "end": "2009",
+        "ended": true
+      }
     }
   }
 }
