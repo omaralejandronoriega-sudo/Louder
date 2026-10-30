@@ -1,7 +1,7 @@
 {
-  "cursor": 1900,
+  "cursor": 1920,
   "total_catalog": 7988,
-  "updated_at": "2026-10-30T08:58:53.992732+00:00",
+  "updated_at": "2026-10-30T15:54:20.879981+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -32397,6 +32397,354 @@
       "genres": [],
       "source": "https://musicbrainz.org/artist/a79f094f-fe07-4573-ad61-30df27f0e31f",
       "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "detachments": {
+      "name": "Detachments",
+      "status": "identity_candidate_only",
+      "mbid": "706e1be3-4d37-4497-8ebc-1e646f8e85fb",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "post-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/706e1be3-4d37-4497-8ebc-1e646f8e85fb",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://detachments.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Detachmentsmusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5265565"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "detects": {
+      "name": "DETECTS",
+      "status": "identity_candidate_only",
+      "mbid": "4bd01508-3e7f-4b1c-8aca-47f60ce760fa",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4bd01508-3e7f-4b1c-8aca-47f60ce760fa",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://detects.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/_detects/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "detroit social club": {
+      "name": "Detroit Social Club",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "deus ex lumina, antipole": {
+      "name": "Deus Ex Lumina, Antipole",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dev lemons": {
+      "name": "Dev Lemons",
+      "status": "identity_candidate_only",
+      "mbid": "d1db50d7-9e78-4975-b57b-81539121d3b2",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d1db50d7-9e78-4975-b57b-81539121d3b2",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://devlemons.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DevLemonsMusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dev-lemons"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q138763870"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@devlimes"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "devan dubois": {
+      "name": "Devan DuBois",
+      "status": "identity_candidate_only",
+      "mbid": "57761b3f-fa01-407d-afec-1a62dec14672",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "folk"
+      ],
+      "source": "https://musicbrainz.org/artist/57761b3f-fa01-407d-afec-1a62dec14672",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "devendra banhart": {
+      "name": "Devendra Banhart",
+      "status": "identity_candidate_only",
+      "mbid": "0110e63e-0a9b-4818-af8e-41e180c20b9a",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "singer-songwriter",
+      "genres": [
+        "folk",
+        "freak folk",
+        "indie folk",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/0110e63e-0a9b-4818-af8e-41e180c20b9a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://devendrabanhart.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DevendraBanhartMusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/devendrabanhart/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/devendrabanhart"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q223443"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/devbanhart"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1981-05-30"
+      }
+    },
+    "devo": {
+      "name": "Devo",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "devon again": {
+      "name": "Devon Again",
+      "status": "identity_candidate_only",
+      "mbid": "380bcc00-83b4-495e-aea6-73f2f4c22b0f",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "Devon Johanningmeier, pop singer-songerwriter",
+      "genres": [
+        "alternative pop",
+        "dance-pop",
+        "electropop",
+        "indie pop",
+        "pop",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/380bcc00-83b4-495e-aea6-73f2f4c22b0f",
+      "evidence_links": [
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/rosewater40oz"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Devon_Again"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCiJSUvaazZccvqwBzqjYZtQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2000-12-27",
+        "ended": false
+      }
+    },
+    "devora": {
+      "name": "DEVORA",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "dexter freebish": {
+      "name": "Dexter Freebish",
+      "status": "identity_candidate_only",
+      "mbid": "5fc402ba-360b-4ed6-ac5c-ae5a33e60cad",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "pop rock"
+      ],
+      "source": "https://musicbrainz.org/artist/5fc402ba-360b-4ed6-ac5c-ae5a33e60cad",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DexterFreebish"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5268402"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCnlo0UQReBeSM7X_xO8hDdA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1995",
+        "ended": false
+      }
+    },
+    "dexters": {
+      "name": "Dexters",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "diablo blvd.": {
+      "name": "Diablo Blvd.",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "diagram of the heart": {
+      "name": "Diagram Of The Heart",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dial m for murder 33": {
+      "name": "Dial M For Murder 33",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dial m for murder!": {
+      "name": "Dial M for Murder!",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "diamante eléctrico": {
+      "name": "Diamante Eléctrico",
+      "status": "identity_candidate_only",
+      "mbid": "ed3666f2-0be2-41ed-abbd-ebd77c4776d5",
+      "type": "Group",
+      "country": "CO",
+      "disambiguation": "Colombian rock band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ed3666f2-0be2-41ed-abbd-ebd77c4776d5",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "diamond thug": {
+      "name": "Diamond Thug",
+      "status": "identity_candidate_only",
+      "mbid": "1036e837-c9ec-4e16-a166-f99d0217cd8b",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/1036e837-c9ec-4e16-a166-f99d0217cd8b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/diamondthugSA"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/diamondthugband/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCBuIaJxAdi9P72nWB38gZbw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2012-09",
+        "end": null
+      }
+    },
+    "diana ross / tame impala": {
+      "name": "Diana Ross / Tame Impala",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dick diver": {
+      "name": "Dick Diver",
+      "status": "identity_candidate_only",
+      "mbid": "157aed6f-e861-4649-b838-41d11c2e5f0a",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [
+        "indie pop"
+      ],
+      "source": "https://musicbrainz.org/artist/157aed6f-e861-4649-b838-41d11c2e5f0a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dickdiverband"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16829617"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2008"
+      }
     }
   }
 }
