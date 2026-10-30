@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T19:49:53.544903+00:00",
+  "generated_at": "2026-10-30T00:18:19.756966+00:00",
   "source_updates": {
-    "artists": "2026-10-29T19:49:47.034047Z",
-    "galleries": "2026-10-29T16:22:12.790209+00:00",
-    "album_art": "2026-10-29T15:32:05.428627+00:00"
+    "artists": "2026-10-30T00:18:13.214689Z",
+    "galleries": "2026-10-29T21:18:55.337098+00:00",
+    "album_art": "2026-10-29T20:35:00.354256+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-29T19:49:47.034047Z"
+      "merged_at": "2026-10-30T00:18:13.214689Z"
     }
   },
   "profile_enrichment": {
@@ -6507,6 +6507,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 16,
+      "first_played": "19 sep 2026",
+      "last_played": "29 oct 2026 · 17:49",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Eyedress/Cuco",
       "slug": "eyedress-cuco",
       "plays": 16,
@@ -6647,41 +6682,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 15,
-      "first_played": "19 sep 2026",
-      "last_played": "28 oct 2026 · 21:03",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
