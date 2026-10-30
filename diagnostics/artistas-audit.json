@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T00:18:19.756966+00:00",
+  "generated_at": "2026-10-30T06:24:24.453363+00:00",
   "source_updates": {
-    "artists": "2026-10-30T00:18:13.214689Z",
-    "galleries": "2026-10-29T21:18:55.337098+00:00",
-    "album_art": "2026-10-29T20:35:00.354256+00:00"
+    "artists": "2026-10-30T06:24:18.122213Z",
+    "galleries": "2026-10-30T01:12:14.059853+00:00",
+    "album_art": "2026-10-30T00:20:14.276470+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-30T00:18:13.214689Z"
+      "merged_at": "2026-10-30T06:24:18.122213Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.43,
     "missing_artwork": 4653,
     "grouped_as_otras": 5910,
-    "with_first_and_last_dates": 17813,
+    "with_first_and_last_dates": 17814,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -262,9 +262,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 133,
+      "plays": 134,
       "first_played": "21 nov 2012",
-      "last_played": "27 oct 2026 · 11:53",
+      "last_played": "29 oct 2026 · 19:52",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -952,6 +952,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 59,
+      "first_played": "17 jul 2022",
+      "last_played": "29 oct 2026 · 23:04",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -1008,42 +1044,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 58,
-      "first_played": "17 jul 2022",
-      "last_played": "23 oct 2026 · 22:32",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
       "related": 10,
       "missing_core": [
         "bio"
@@ -6507,6 +6507,43 @@
       "profile_complete": false
     },
     {
+      "name": "CHVRCHES / Robert Smith",
+      "slug": "chvrches-robert-smith",
+      "plays": 16,
+      "first_played": "2 sep 2022",
+      "last_played": "29 oct 2026 · 18:28",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "CSS",
       "slug": "css",
       "plays": 16,
@@ -6629,43 +6666,6 @@
       "tracks": 3,
       "tracks_with_artwork": 3,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CHVRCHES / Robert Smith",
-      "slug": "chvrches-robert-smith",
-      "plays": 15,
-      "first_played": "2 sep 2022",
-      "last_played": "23 oct 2026 · 07:58",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -7343,9 +7343,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 133,
+      "plays": 134,
       "first_played": "21 nov 2012",
-      "last_played": "27 oct 2026 · 11:53",
+      "last_played": "29 oct 2026 · 19:52",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7999,6 +7999,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 59,
+      "first_played": "17 jul 2022",
+      "last_played": "29 oct 2026 · 23:04",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -8055,42 +8091,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 58,
-      "first_played": "17 jul 2022",
-      "last_played": "23 oct 2026 · 22:32",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
       "related": 10,
       "missing_core": [
         "bio"
