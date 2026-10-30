@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T13:30:02.536601+00:00",
+  "generated_at": "2026-10-30T19:41:08.540155+00:00",
   "source_updates": {
-    "artists": "2026-10-30T13:29:55.482097Z",
-    "galleries": "2026-10-30T07:10:34.422835+00:00",
-    "album_art": "2026-10-30T06:25:52.003720+00:00"
+    "artists": "2026-10-30T19:41:02.036421Z",
+    "galleries": "2026-10-30T19:21:58.628450+00:00",
+    "album_art": "2026-10-30T18:50:37.794688+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-30T13:29:55.482097Z"
+      "merged_at": "2026-10-30T19:41:02.036421Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.43,
     "missing_artwork": 4653,
     "grouped_as_otras": 5910,
-    "with_first_and_last_dates": 17815,
+    "with_first_and_last_dates": 17817,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -2197,6 +2197,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 42,
+      "first_played": "25 jul 2022",
+      "last_played": "30 oct 2026 · 12:14",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
       "plays": 42,
@@ -2264,44 +2302,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 41,
-      "first_played": "25 jul 2022",
-      "last_played": "26 oct 2026 · 23:25",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -2549,6 +2549,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 39,
+      "first_played": "15 jul 2022",
+      "last_played": "30 oct 2026 · 10:03",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Strangejuice",
       "slug": "strangejuice",
       "plays": 39,
@@ -2614,43 +2651,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 38,
-      "first_played": "15 jul 2022",
-      "last_played": "27 oct 2026 · 10:41",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3953,11 +3953,11 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
       "plays": 42,
-      "first_played": "26 jul 2022",
-      "last_played": "29 oct 2026 · 11:26",
+      "first_played": "25 jul 2022",
+      "last_played": "30 oct 2026 · 12:14",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3965,10 +3965,10 @@
         "yesstreaming",
         "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3991,11 +3991,11 @@
       "profile_complete": false
     },
     {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 41,
-      "first_played": "25 jul 2022",
-      "last_played": "26 oct 2026 · 23:25",
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 42,
+      "first_played": "26 jul 2022",
+      "last_played": "29 oct 2026 · 11:26",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -4003,10 +4003,10 @@
         "yesstreaming",
         "yesstreaming_live"
       ],
-      "tracks": 2,
+      "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4104,9 +4104,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 38,
+      "plays": 39,
       "first_played": "15 jul 2022",
-      "last_played": "27 oct 2026 · 10:41",
+      "last_played": "30 oct 2026 · 10:03",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -4709,20 +4709,21 @@
       "profile_complete": false
     },
     {
-      "name": "Northpilot",
-      "slug": "northpilot",
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
       "plays": 30,
-      "first_played": "14 jul 2012",
-      "last_played": "23 feb 2013 · 23:59",
-      "catalog_status": "wp_draft",
+      "first_played": "25 jul 2022",
+      "last_played": "30 oct 2026 · 08:16",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4745,21 +4746,20 @@
       "profile_complete": false
     },
     {
-      "name": "Flume/Nick Murphy / Chet Faker",
-      "slug": "flume-nick-murphy-chet-faker",
-      "plays": 29,
-      "first_played": "25 jul 2022",
-      "last_played": "29 oct 2026 · 07:27",
-      "catalog_status": "programmed_history",
+      "name": "Northpilot",
+      "slug": "northpilot",
+      "plays": 30,
+      "first_played": "14 jul 2012",
+      "last_played": "23 feb 2013 · 23:59",
+      "catalog_status": "wp_draft",
       "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "wp_db",
+        "lastfm"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6870,6 +6870,41 @@
       "profile_complete": false
     },
     {
+      "name": "Sean Solomon",
+      "slug": "sean-solomon",
+      "plays": 15,
+      "first_played": "20 sep 2026",
+      "last_played": "30 oct 2026 · 10:24",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Avalanches / MGMT / Johnny Marr",
       "slug": "the-avalanches-mgmt-johnny-marr",
       "plays": 15,
@@ -7186,42 +7221,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 1,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Giant Fang",
-      "slug": "giant-fang",
-      "plays": 14,
-      "first_played": "24 may 2013",
-      "last_played": "11 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "image",
         "bio"
@@ -9175,6 +9174,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 42,
+      "first_played": "25 jul 2022",
+      "last_played": "30 oct 2026 · 12:14",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
       "plays": 42,
@@ -9242,44 +9279,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 41,
-      "first_played": "25 jul 2022",
-      "last_played": "26 oct 2026 · 23:25",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -9527,6 +9526,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 39,
+      "first_played": "15 jul 2022",
+      "last_played": "30 oct 2026 · 10:03",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Strangejuice",
       "slug": "strangejuice",
       "plays": 39,
@@ -9592,43 +9628,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 38,
-      "first_played": "15 jul 2022",
-      "last_played": "27 oct 2026 · 10:41",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
