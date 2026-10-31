@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T00:01:50.834171+00:00",
+  "generated_at": "2026-10-31T06:14:45.444354+00:00",
   "source_updates": {
-    "artists": "2026-10-31T00:01:46.819038Z",
-    "galleries": "2026-10-30T23:08:57.605052+00:00",
-    "album_art": "2026-10-30T22:56:51.914282+00:00"
+    "artists": "2026-10-31T06:14:38.863236Z",
+    "galleries": "2026-10-31T02:21:35.706859+00:00",
+    "album_art": "2026-10-31T02:18:37.036483+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-31T00:01:46.819038Z"
+      "merged_at": "2026-10-31T06:14:38.863236Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 835,
       "legacy": 56
     },
-    "missing_validated_profile_image": 963,
+    "missing_validated_profile_image": 961,
     "missing_profile_bio": 3454,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4368,
     "core_complete_pct": 55.15,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6957,
-    "effective_image_pct": 87.84,
+    "effective_image": 6959,
+    "effective_image_pct": 87.87,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5312,
-    "missing_image": 963,
+    "image_gallery_fallback": 5314,
+    "missing_image": 961,
     "effective_bio": 4466,
     "effective_bio_pct": 56.39,
     "bio_direct_artist": 1026,
@@ -72,18 +72,18 @@
     "missing_bio": 3454,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6957,
-    "with_social": 4759,
+    "gallery_with_images": 6959,
+    "with_social": 4765,
     "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18200,
+    "total": 18201,
     "with_effective_artwork": 13547,
     "with_effective_artwork_pct": 74.43,
-    "missing_artwork": 4653,
-    "grouped_as_otras": 5910,
-    "with_first_and_last_dates": 17817,
+    "missing_artwork": 4654,
+    "grouped_as_otras": 5911,
+    "with_first_and_last_dates": 17819,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -262,9 +262,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 134,
+      "plays": 135,
       "first_played": "21 nov 2012",
-      "last_played": "29 oct 2026 · 19:52",
+      "last_played": "30 oct 2026 · 20:50",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -4554,7 +4554,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": false,
+      "has_social": true,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6980,6 +6980,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Itch",
+      "slug": "the-itch",
+      "plays": 15,
+      "first_played": "26 sep 2026",
+      "last_played": "30 oct 2026 · 23:30",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Lunatic the Lover and the Poet",
       "slug": "the-lunatic-the-lover-and-the-poet",
       "plays": 15,
@@ -7195,43 +7230,6 @@
         "bio"
       ],
       "profile_complete": false
-    },
-    {
-      "name": "Dina Summer, Kalipo, Local Suicide",
-      "slug": "dina-summer-kalipo-local-suicide",
-      "plays": 14,
-      "first_played": "7 sep 2026",
-      "last_played": "30 oct 2026 · 02:24",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 1,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
     }
   ],
   "priority_missing_bio": [
@@ -7343,9 +7341,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 134,
+      "plays": 135,
       "first_played": "21 nov 2012",
-      "last_played": "29 oct 2026 · 19:52",
+      "last_played": "30 oct 2026 · 20:50",
       "catalog_status": "",
       "sources": [
         "wp_db",
