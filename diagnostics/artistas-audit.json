@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T06:14:45.444354+00:00",
+  "generated_at": "2026-10-31T13:01:48.416913+00:00",
   "source_updates": {
-    "artists": "2026-10-31T06:14:38.863236Z",
-    "galleries": "2026-10-31T02:21:35.706859+00:00",
-    "album_art": "2026-10-31T02:18:37.036483+00:00"
+    "artists": "2026-10-31T13:01:41.929099Z",
+    "galleries": "2026-10-31T08:36:49.070292+00:00",
+    "album_art": "2026-10-31T08:51:08.534756+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-10-31T06:14:38.863236Z"
+      "merged_at": "2026-10-31T13:01:41.929099Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.43,
     "missing_artwork": 4654,
     "grouped_as_otras": 5911,
-    "with_first_and_last_dates": 17819,
+    "with_first_and_last_dates": 17821,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10642,
     "album_art_cache_missed": 4269
@@ -5318,6 +5318,44 @@
       "profile_complete": false
     },
     {
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
+      "plays": 22,
+      "first_played": "28 feb 2025",
+      "last_played": "31 oct 2026 · 06:53",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jamiroquai/Beverley Knight",
       "slug": "jamiroquai-beverley-knight",
       "plays": 22,
@@ -5475,44 +5513,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 21,
-      "first_played": "28 feb 2025",
-      "last_played": "25 oct 2026 · 14:58",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6291,6 +6291,44 @@
       "profile_complete": false
     },
     {
+      "name": "Eyedress/Cuco",
+      "slug": "eyedress-cuco",
+      "plays": 17,
+      "first_played": "4 mar 2025",
+      "last_played": "31 oct 2026 · 05:29",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "illuminati hotties/Cavetown",
       "slug": "illuminati-hotties-cavetown",
       "plays": 17,
@@ -6388,6 +6426,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 17,
+      "first_played": "13 sep 2026",
+      "last_played": "31 oct 2026 · 04:07",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
       "missing_core": [
         "image",
         "bio"
@@ -6507,6 +6582,43 @@
       "profile_complete": false
     },
     {
+      "name": "Bragolin/Adam Tristar",
+      "slug": "bragolin-adam-tristar",
+      "plays": 16,
+      "first_played": "4 sep 2026",
+      "last_played": "31 oct 2026 · 03:37",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "CHVRCHES / Robert Smith",
       "slug": "chvrches-robert-smith",
       "plays": 16,
@@ -6579,44 +6691,6 @@
       "profile_complete": false
     },
     {
-      "name": "Eyedress/Cuco",
-      "slug": "eyedress-cuco",
-      "plays": 16,
-      "first_played": "4 mar 2025",
-      "last_played": "24 oct 2026 · 06:05",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Joy Division (Les Bains Douches)",
       "slug": "joy-division-les-bains-douches",
       "plays": 16,
@@ -6653,43 +6727,6 @@
       "profile_complete": false
     },
     {
-      "name": "NiTE, Rosegarden Funeral Party",
-      "slug": "nite-rosegarden-funeral-party",
-      "plays": 16,
-      "first_played": "13 sep 2026",
-      "last_played": "30 oct 2026 · 01:03",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 6,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "We Were Evergreen",
       "slug": "we-were-evergreen",
       "plays": 16,
@@ -6704,43 +6741,6 @@
       "tracks_with_artwork": 3,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bragolin/Adam Tristar",
-      "slug": "bragolin-adam-tristar",
-      "plays": 15,
-      "first_played": "4 sep 2026",
-      "last_played": "30 oct 2026 · 03:33",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
