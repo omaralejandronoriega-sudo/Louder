@@ -1,7 +1,7 @@
 {
-  "cursor": 2060,
+  "cursor": 2080,
   "total_catalog": 7988,
-  "updated_at": "2026-11-01T00:25:59.469830+00:00",
+  "updated_at": "2026-11-01T06:50:50.207321+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -35263,6 +35263,483 @@
       "life_span": {
         "end": null,
         "begin": null,
+        "ended": false
+      }
+    },
+    "ducktails": {
+      "name": "Ducktails",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "ductape": {
+      "name": "Ductape",
+      "status": "identity_candidate_only",
+      "mbid": "d5ed4bd7-56be-4586-aca4-fbbac75a5d5a",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Istanbul based post-punk/darkwave duo",
+      "genres": [
+        "coldwave",
+        "dark wave",
+        "deathrock",
+        "ebm",
+        "funk",
+        "gothic rock",
+        "indie rock",
+        "pop",
+        "post-punk",
+        "punk",
+        "rock",
+        "synthwave"
+      ],
+      "source": "https://musicbrainz.org/artist/d5ed4bd7-56be-4586-aca4-fbbac75a5d5a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://ductape.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ductapeofficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ductape_official/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ductape_official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q130298820"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC7yg052GRJoFtSLYXui8bCw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2019"
+      }
+    },
+    "dug pinnick and others": {
+      "name": "dUg Pinnick and Others",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "dum dum girls": {
+      "name": "Dum Dum Girls",
+      "status": "identity_candidate_only",
+      "mbid": "ca405011-906d-4090-992f-f230739278b1",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US rock band",
+      "genres": [
+        "noise pop",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/ca405011-906d-4090-992f-f230739278b1",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DumDumGirls"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2982240"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "end": "2016-01",
+        "begin": "2008"
+      }
+    },
+    "dumas": {
+      "name": "Dumas",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "dumb": {
+      "name": "Dumb",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 7
+    },
+    "dumbo gets mad": {
+      "name": "Dumbo Gets Mad",
+      "status": "identity_candidate_only",
+      "mbid": "73162ac3-c74c-4bf5-8cff-c8cd48700e01",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Psych-rock duo project from Italy",
+      "genres": [
+        "indie pop",
+        "psychedelic rock"
+      ],
+      "source": "https://musicbrainz.org/artist/73162ac3-c74c-4bf5-8cff-c8cd48700e01",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DumboGetsMadMusic"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dumbogetsmad"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5313736"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/DumboGetsMad"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2010",
+        "ended": false
+      }
+    },
+    "duncan dhu": {
+      "name": "Duncan Dhu",
+      "status": "identity_candidate_only",
+      "mbid": "60a14c16-ac69-4898-b0cd-12cb87e327c9",
+      "type": "Group",
+      "country": "ES",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/60a14c16-ac69-4898-b0cd-12cb87e327c9",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1221349"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1984"
+      }
+    },
+    "duplekita": {
+      "name": "Duplekita",
+      "status": "identity_candidate_only",
+      "mbid": "e5198716-56da-4040-899b-674e3a088073",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e5198716-56da-4040-899b-674e3a088073",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "duplexx": {
+      "name": "Duplexx",
+      "status": "identity_candidate_only",
+      "mbid": "1e2b8bc6-15c3-480a-9188-45bbc312cfbd",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/1e2b8bc6-15c3-480a-9188-45bbc312cfbd",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "duran duran": {
+      "name": "Duran Duran",
+      "status": "identity_candidate_only",
+      "mbid": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "English rock band",
+      "genres": [
+        "alternative rock",
+        "dance",
+        "electro",
+        "electronic",
+        "new romantic",
+        "new wave",
+        "pop",
+        "pop rock",
+        "rock",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/duranduran"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/duranduran/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/duranduran"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q58381"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC3Pb3fztIUVLCisYZgygcjg"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC7d6hou24HcG5sA2lwTgV0A"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1978"
+      }
+    },
+    "dust": {
+      "name": "Dust",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "dust (85": {
+      "name": "dust (85",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "dusty": {
+      "name": "Dusty",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "dusty springfield": {
+      "name": "Dusty Springfield",
+      "status": "identity_candidate_only",
+      "mbid": "b896aa8c-2761-40ce-b485-0e1fffd26167",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "baroque pop",
+        "blue-eyed soul",
+        "philly soul",
+        "pop",
+        "pop soul",
+        "r&b",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/b896aa8c-2761-40ce-b485-0e1fffd26167",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DustySpringfieldOfficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q219782"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCBVqdwqJHO5fSQskJb8BljA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCeaE6DwTIEIFrk4K8kXB9LA"
+        }
+      ],
+      "life_span": {
+        "end": "1999-03-02",
+        "ended": true,
+        "begin": "1939-04-16"
+      }
+    },
+    "dutch interior": {
+      "name": "Dutch Interior",
+      "status": "identity_candidate_only",
+      "mbid": "bcf79726-1541-431b-9122-c79707f1b653",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/bcf79726-1541-431b-9122-c79707f1b653",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dutchinterior.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dutchinterior/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2020",
+        "end": null
+      }
+    },
+    "dutch mustard": {
+      "name": "Dutch Mustard",
+      "status": "identity_candidate_only",
+      "mbid": "990a91dd-6df6-421b-9732-dc62781f6fe4",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/990a91dd-6df6-421b-9732-dc62781f6fe4",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/DutchMustard"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "dutch uncles": {
+      "name": "Dutch Uncles",
+      "status": "identity_candidate_only",
+      "mbid": "fcb6b8af-028a-415c-a4d6-01ddb47dbaff",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "art rock",
+        "indie pop",
+        "math rock",
+        "progressive rock"
+      ],
+      "source": "https://musicbrainz.org/artist/fcb6b8af-028a-415c-a4d6-01ddb47dbaff",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dutchuncles"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dutchuncles/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dutch-uncles"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5317407"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dutch_Uncles"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCpOpnT0jg5B3Yh8Sz07--aQ"
+        }
+      ],
+      "life_span": {
+        "begin": "2008",
+        "end": null,
+        "ended": false
+      }
+    },
+    "dvtr": {
+      "name": "DVTR",
+      "status": "identity_candidate_only",
+      "mbid": "ac6a7992-44ef-46e0-85b6-1e6776315838",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Montreal punk duo",
+      "genres": [
+        "dance-punk"
+      ],
+      "source": "https://musicbrainz.org/artist/ac6a7992-44ef-46e0-85b6-1e6776315838",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://dvtr.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/dvtr.band"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/dvtr.band/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/dvtrband"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCk6IlR4sNJ24GvRV172U_Pg"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2023-04-27",
+        "ended": false
+      }
+    },
+    "dwarves": {
+      "name": "Dwarves",
+      "status": "identity_candidate_only",
+      "mbid": "762e1e6d-ba12-4946-b8ee-dfa0cf9a2655",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "US punk rock band",
+      "genres": [
+        "garage punk",
+        "hardcore punk",
+        "punk rock"
+      ],
+      "source": "https://musicbrainz.org/artist/762e1e6d-ba12-4946-b8ee-dfa0cf9a2655",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://thedwarves.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/The-Dwarves/339745519075"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/thedwarves/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q969914"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCZPJIU4oCvbSJq-ElClZ8Bw"
+        }
+      ],
+      "life_span": {
+        "begin": "1983",
+        "end": null,
         "ended": false
       }
     }
