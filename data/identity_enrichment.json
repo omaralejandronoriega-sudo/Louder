@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-31T22:27:36.562944+00:00",
+  "updated_at": "2026-11-01T02:10:38.651251+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -470,10 +470,10 @@
     },
     "the-yurrs": {
       "name": "The Yurrs",
-      "verified": false,
-      "status": "not_found",
-      "checked_at": "2026-10-18T00:03:51.806925+00:00",
-      "profile_checked_at": "2026-10-18T00:03:51.806925+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-11-01T02:10:31.305000+00:00",
+      "profile_checked_at": "2026-11-01T02:10:31.305000+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The Yurrs",
       "match_score": 0,
@@ -485,12 +485,12 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/6336a708a548cb65ddd7723a99c72d30/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "not_found",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-01T00:03:51.806925+00:00",
-      "attempt_count": 6
+      "next_retry_at": "2026-11-04T02:10:31.305000+00:00",
+      "attempt_count": 7
     },
     "jasmine-4-t-jacob-alon": {
       "name": "jasmine.4.t, Jacob Alon",
@@ -52115,9 +52115,9 @@
     },
     "new-beard": {
       "name": "New Beard",
-      "verified": false,
-      "profile_checked_at": "2026-10-18T00:08:02.042834+00:00",
-      "checked_at": "2026-10-18T00:08:02.042834+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-11-01T02:10:33.554566+00:00",
+      "checked_at": "2026-11-01T02:10:33.554566+00:00",
       "musicbrainz_id": "45fed0d4-fa33-4dda-ba0d-e7fc5fcaa667",
       "canonical_name": "New Beard",
       "match_score": 100,
@@ -52129,14 +52129,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-01T00:08:02.042834+00:00",
-      "attempt_count": 5
+      "next_retry_at": "2026-11-04T02:10:33.554566+00:00",
+      "attempt_count": 6
     },
     "pete-lawrie": {
       "name": "Pete Lawrie",
@@ -72024,8 +72024,8 @@
     "failed-flowers": {
       "name": "Failed Flowers",
       "verified": true,
-      "profile_checked_at": "2026-10-28T23:11:28.378078+00:00",
-      "checked_at": "2026-10-28T23:11:28.378078+00:00",
+      "profile_checked_at": "2026-11-01T02:10:35.690402+00:00",
+      "checked_at": "2026-11-01T02:10:35.690402+00:00",
       "musicbrainz_id": "2d0333c1-7f11-46e9-a950-72fbecd77079",
       "canonical_name": "Failed Flowers",
       "match_score": 100,
@@ -72042,8 +72042,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-10-31T23:11:28.378078+00:00",
-      "attempt_count": 9
+      "next_retry_at": "2026-11-04T02:10:35.690402+00:00",
+      "attempt_count": 10
     },
     "houses": {
       "name": "Houses",
