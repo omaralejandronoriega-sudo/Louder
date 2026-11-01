@@ -1,7 +1,7 @@
 {
-  "cursor": 2100,
+  "cursor": 2120,
   "total_catalog": 7988,
-  "updated_at": "2026-11-01T14:14:56.121365+00:00",
+  "updated_at": "2026-11-01T19:12:20.108612+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -35998,6 +35998,371 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "easy life": {
+      "name": "easy life",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "eau rouge": {
+      "name": "EAU ROUGE",
+      "status": "identity_candidate_only",
+      "mbid": "d31618e0-1e4b-4bda-9881-edfd2a422206",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d31618e0-1e4b-4bda-9881-edfd2a422206",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "eaves": {
+      "name": "Eaves",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "ebbb": {
+      "name": "Ebbb",
+      "status": "identity_candidate_only",
+      "mbid": "efaf62b6-0f94-4a1b-a82a-dc386a7fd947",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/efaf62b6-0f94-4a1b-a82a-dc386a7fd947",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://ebbb.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/people/Ebbb/61555463062066"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ebbbbbbbbbbbbb_/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ebbb-634785383"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q136682676"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "ecca vandal": {
+      "name": "Ecca Vandal",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "echo & the bunnymen": {
+      "name": "Echo & the Bunnymen",
+      "status": "identity_candidate_only",
+      "mbid": "ccd4879c-5e88-4385-b131-bf65296bf245",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "neo-psychedelia",
+        "new wave",
+        "pop",
+        "pop rock",
+        "post-punk",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/ccd4879c-5e88-4385-b131-bf65296bf245",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/thebunnymen"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/officialbunnymen/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q925641"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1978",
+        "end": null
+      }
+    },
+    "echo and the bunnymen": {
+      "name": "Echo and the Bunnymen",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "echo frame": {
+      "name": "Echo Frame",
+      "status": "identity_candidate_only",
+      "mbid": "070eb195-0260-4f73-9a45-afe95622f0da",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Male solo artist",
+      "genres": [
+        "alternative rock",
+        "bedroom pop"
+      ],
+      "source": "https://musicbrainz.org/artist/070eb195-0260-4f73-9a45-afe95622f0da",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "echo machine": {
+      "name": "Echo Machine",
+      "status": "identity_candidate_only",
+      "mbid": "7b7a26c7-2623-4a29-b1cb-c7eb8ba92d79",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7b7a26c7-2623-4a29-b1cb-c7eb8ba92d79",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://echomachine.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/echomachinez"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/echomachinez/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/echo-machine"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q85758474"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCoMptI3anMRd2SOeNs7fCWg?view_as=subscriber"
+        }
+      ],
+      "life_span": {
+        "begin": "2018-04-01",
+        "ended": false,
+        "end": null
+      }
+    },
+    "echo market": {
+      "name": "Echo Market",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "echobelly": {
+      "name": "Echobelly",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "echoberyl": {
+      "name": "Echoberyl",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "echopark": {
+      "name": "Echopark",
+      "status": "identity_candidate_only",
+      "mbid": "42e87d7e-c99e-40c7-bba5-90423274d7df",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/42e87d7e-c99e-40c7-bba5-90423274d7df",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/theechopark"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/theechopark"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "echosmith": {
+      "name": "Echosmith",
+      "status": "identity_candidate_only",
+      "mbid": "53317371-09a4-4bf4-a832-22a9c6704be2",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "pop rock"
+      ],
+      "source": "https://musicbrainz.org/artist/53317371-09a4-4bf4-a832-22a9c6704be2",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Echosmith"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/echosmith/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/echosmith"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15044343"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Echosmith"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCpPZggubTs5NvcMCHfRCVKw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC6Gp7glWcQr1cbhzQNUomDA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2009-02"
+      }
+    },
+    "echotape": {
+      "name": "Echotape",
+      "status": "identity_candidate_only",
+      "mbid": "0793b4c0-9d9f-4a76-ae68-823a2d0d290e",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "UK indie rock band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0793b4c0-9d9f-4a76-ae68-823a2d0d290e",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://echotape.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Echotape"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "eclipse": {
+      "name": "Eclipse",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "ecstasy": {
+      "name": "Ecstasy",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 7
+    },
+    "ed harcourt": {
+      "name": "Ed Harcourt",
+      "status": "identity_candidate_only",
+      "mbid": "0cda9358-1def-49aa-a0ff-10320f40522f",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "English singer‐songwriter",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/0cda9358-1def-49aa-a0ff-10320f40522f",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://edharcourt1.bandcamp.com/"
+        },
+        {
+          "type": "bandcamp",
+          "url": "https://edharcourt.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/edharcourtuk"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/edharcourt/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2330552"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/EdHarcourtmusic"
+        }
+      ],
+      "life_span": {
+        "begin": "1977-08-14",
+        "end": null,
+        "ended": false
+      }
+    },
+    "ed zealous": {
+      "name": "Ed Zealous",
+      "status": "identity_candidate_only",
+      "mbid": "47fdf7eb-8db9-4d4f-b18a-411452f7e5fa",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/47fdf7eb-8db9-4d4f-b18a-411452f7e5fa",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": "2005",
+        "ended": false
+      }
+    },
+    "edamame": {
+      "name": "Edamame",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
     }
   }
 }
