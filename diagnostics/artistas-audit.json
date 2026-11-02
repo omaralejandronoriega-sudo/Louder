@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T09:55:42.077856+00:00",
+  "generated_at": "2026-11-02T20:29:47.027724+00:00",
   "source_updates": {
-    "artists": "2026-11-02T09:55:35.483925Z",
-    "galleries": "2026-11-02T09:29:17.492697+00:00",
-    "album_art": "2026-11-02T06:50:32.120802+00:00"
+    "artists": "2026-11-02T20:29:40.611171Z",
+    "galleries": "2026-11-02T19:46:16.870954+00:00",
+    "album_art": "2026-11-02T17:00:37.191121+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-02T09:55:35.483925Z"
+      "merged_at": "2026-11-02T20:29:40.611171Z"
     }
   },
   "profile_enrichment": {
@@ -73,7 +73,7 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
     "gallery_with_images": 6963,
-    "with_social": 4763,
+    "with_social": 4762,
     "with_genre": 3906,
     "with_related": 1599
   },
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.43,
     "missing_artwork": 4654,
     "grouped_as_otras": 5912,
-    "with_first_and_last_dates": 17830,
+    "with_first_and_last_dates": 17831,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10643,
     "album_art_cache_missed": 4268
@@ -713,9 +713,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 63,
+      "plays": 64,
       "first_played": "29 jul 2012",
-      "last_played": "1 nov 2026 · 11:07",
+      "last_played": "2 nov 2026 · 13:01",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -5282,20 +5282,22 @@
       "profile_complete": false
     },
     {
-      "name": "Recorrido Paranormal",
-      "slug": "recorrido-paranormal",
+      "name": "Iron & Wine/Fiona Apple",
+      "slug": "iron-wine-fiona-apple",
       "plays": 23,
-      "first_played": "25 sep 2014",
-      "last_played": "5 dic 2014 · 23:59",
+      "first_played": "28 feb 2025",
+      "last_played": "2 nov 2026 · 09:05",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5318,22 +5320,20 @@
       "profile_complete": false
     },
     {
-      "name": "Iron & Wine/Fiona Apple",
-      "slug": "iron-wine-fiona-apple",
-      "plays": 22,
-      "first_played": "28 feb 2025",
-      "last_played": "31 oct 2026 · 06:53",
+      "name": "Recorrido Paranormal",
+      "slug": "recorrido-paranormal",
+      "plays": 23,
+      "first_played": "25 sep 2014",
+      "last_played": "5 dic 2014 · 23:59",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "lastfm"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6219,6 +6219,43 @@
       "profile_complete": false
     },
     {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 18,
+      "first_played": "13 sep 2026",
+      "last_played": "2 nov 2026 · 04:02",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6499,43 +6536,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "NiTE, Rosegarden Funeral Party",
-      "slug": "nite-rosegarden-funeral-party",
-      "plays": 17,
-      "first_played": "13 sep 2026",
-      "last_played": "31 oct 2026 · 04:07",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 6,
       "missing_core": [
         "image",
         "bio"
@@ -6874,6 +6874,43 @@
       "profile_complete": false
     },
     {
+      "name": "Dina Summer, Kalipo, Local Suicide",
+      "slug": "dina-summer-kalipo-local-suicide",
+      "plays": 15,
+      "first_played": "7 sep 2026",
+      "last_played": "2 nov 2026 · 04:41",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 1,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Iskaa & The Red Cars",
       "slug": "iskaa-the-red-cars",
       "plays": 15,
@@ -7169,42 +7206,6 @@
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Clover Club",
-      "slug": "clover-club",
-      "plays": 14,
-      "first_played": "28 abr 2013",
-      "last_played": "29 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
       ],
       "tracks": 1,
       "tracks_with_artwork": 1,
@@ -7792,9 +7793,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 63,
+      "plays": 64,
       "first_played": "29 jul 2012",
-      "last_played": "1 nov 2026 · 11:07",
+      "last_played": "2 nov 2026 · 13:01",
       "catalog_status": "",
       "sources": [
         "wp_db",
