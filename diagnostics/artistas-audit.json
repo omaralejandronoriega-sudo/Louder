@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T20:29:47.027724+00:00",
+  "generated_at": "2026-11-03T02:37:40.924924+00:00",
   "source_updates": {
-    "artists": "2026-11-02T20:29:40.611171Z",
-    "galleries": "2026-11-02T19:46:16.870954+00:00",
-    "album_art": "2026-11-02T17:00:37.191121+00:00"
+    "artists": "2026-11-03T02:37:34.829348Z",
+    "galleries": "2026-11-03T01:54:43.874930+00:00",
+    "album_art": "2026-11-02T23:52:01.821305+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-02T20:29:40.611171Z"
+      "merged_at": "2026-11-03T02:37:34.829348Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 834,
       "legacy": 56
     },
-    "missing_validated_profile_image": 957,
+    "missing_validated_profile_image": 956,
     "missing_profile_bio": 3454,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4368,
     "core_complete_pct": 55.15,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6963,
-    "effective_image_pct": 87.92,
+    "effective_image": 6964,
+    "effective_image_pct": 87.93,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5318,
-    "missing_image": 957,
+    "image_gallery_fallback": 5319,
+    "missing_image": 956,
     "effective_bio": 4466,
     "effective_bio_pct": 56.39,
     "bio_direct_artist": 1026,
@@ -72,18 +72,18 @@
     "missing_bio": 3454,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6963,
-    "with_social": 4762,
-    "with_genre": 3906,
+    "gallery_with_images": 6964,
+    "with_social": 4768,
+    "with_genre": 3905,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18202,
+    "total": 18203,
     "with_effective_artwork": 13548,
     "with_effective_artwork_pct": 74.43,
-    "missing_artwork": 4654,
-    "grouped_as_otras": 5912,
-    "with_first_and_last_dates": 17831,
+    "missing_artwork": 4655,
+    "grouped_as_otras": 5913,
+    "with_first_and_last_dates": 17833,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10643,
     "album_art_cache_missed": 4268
@@ -2060,6 +2060,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 44,
+      "first_played": "26 jul 2022",
+      "last_played": "2 nov 2026 · 18:56",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Nick Cave & the Bad Seeds",
       "slug": "nick-cave-the-bad-seeds",
       "plays": 44,
@@ -2201,44 +2239,6 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 43,
-      "first_played": "26 jul 2022",
-      "last_played": "31 oct 2026 · 18:32",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "A Lull",
       "slug": "a-lull",
       "plays": 42,
@@ -2307,11 +2307,11 @@
       "profile_complete": false
     },
     {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 40,
-      "first_played": "25 jul 2022",
-      "last_played": "1 nov 2026 · 21:27",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 41,
+      "first_played": "15 jul 2022",
+      "last_played": "2 nov 2026 · 16:48",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -2321,7 +2321,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -2344,11 +2344,11 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
       "plays": 40,
-      "first_played": "15 jul 2022",
-      "last_played": "1 nov 2026 · 11:45",
+      "first_played": "25 jul 2022",
+      "last_played": "1 nov 2026 · 21:27",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -2358,7 +2358,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3955,6 +3955,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 44,
+      "first_played": "26 jul 2022",
+      "last_played": "2 nov 2026 · 18:56",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
       "plays": 43,
@@ -3991,14 +4029,13 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 43,
-      "first_played": "26 jul 2022",
-      "last_played": "31 oct 2026 · 18:32",
-      "catalog_status": "wp_draft",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 41,
+      "first_played": "15 jul 2022",
+      "last_played": "2 nov 2026 · 16:48",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
@@ -4044,43 +4081,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 40,
-      "first_played": "15 jul 2022",
-      "last_played": "1 nov 2026 · 11:45",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6838,6 +6838,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Itch",
+      "slug": "the-itch",
+      "plays": 16,
+      "first_played": "26 sep 2026",
+      "last_played": "2 nov 2026 · 18:02",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "We Were Evergreen",
       "slug": "we-were-evergreen",
       "plays": 16,
@@ -7010,41 +7045,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Itch",
-      "slug": "the-itch",
-      "plays": 15,
-      "first_played": "26 sep 2026",
-      "last_played": "30 oct 2026 · 23:30",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -9072,6 +9072,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 44,
+      "first_played": "26 jul 2022",
+      "last_played": "2 nov 2026 · 18:56",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Nick Cave & the Bad Seeds",
       "slug": "nick-cave-the-bad-seeds",
       "plays": 44,
@@ -9177,44 +9215,6 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 43,
-      "first_played": "26 jul 2022",
-      "last_played": "31 oct 2026 · 18:32",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "A Lull",
       "slug": "a-lull",
       "plays": 42,
@@ -9283,11 +9283,11 @@
       "profile_complete": false
     },
     {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 40,
-      "first_played": "25 jul 2022",
-      "last_played": "1 nov 2026 · 21:27",
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 41,
+      "first_played": "15 jul 2022",
+      "last_played": "2 nov 2026 · 16:48",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -9297,7 +9297,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -9320,11 +9320,11 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
       "plays": 40,
-      "first_played": "15 jul 2022",
-      "last_played": "1 nov 2026 · 11:45",
+      "first_played": "25 jul 2022",
+      "last_played": "1 nov 2026 · 21:27",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -9334,7 +9334,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
