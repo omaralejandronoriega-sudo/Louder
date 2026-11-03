@@ -1,7 +1,7 @@
 {
-  "cursor": 2240,
+  "cursor": 2260,
   "total_catalog": 7988,
-  "updated_at": "2026-11-03T10:04:06.834779+00:00",
+  "updated_at": "2026-11-03T17:49:11.104990+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -38932,6 +38932,439 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
+    },
+    "entertainment": {
+      "name": "Entertainment",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "entidad animada": {
+      "name": "Entidad Animada",
+      "status": "identity_candidate_only",
+      "mbid": "38eae849-5243-489a-b970-fe73ffbd04e3",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/38eae849-5243-489a-b970-fe73ffbd04e3",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "entre ríos": {
+      "name": "Entre Ríos",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "entwine": {
+      "name": "Entwine",
+      "status": "identity_candidate_only",
+      "mbid": "eb2432e6-8d97-41b0-beba-b36e77ddc5b8",
+      "type": "Group",
+      "country": "FI",
+      "disambiguation": "",
+      "genres": [
+        "gothic metal"
+      ],
+      "source": "https://musicbrainz.org/artist/eb2432e6-8d97-41b0-beba-b36e77ddc5b8",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Entwine/137377466320641"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/entwine-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1345788"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Entwine"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/EntwineOfficial"
+        }
+      ],
+      "life_span": {
+        "begin": "1995",
+        "ended": false,
+        "end": null
+      }
+    },
+    "eola": {
+      "name": "Eola",
+      "status": "identity_candidate_only",
+      "mbid": "a034dc1b-65a5-4ee6-967d-936f33b441f6",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a034dc1b-65a5-4ee6-967d-936f33b441f6",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://eola.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/edwineola"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "ephemerals": {
+      "name": "Ephemerals",
+      "status": "identity_candidate_only",
+      "mbid": "36bd144a-b500-4023-92ad-3aeeb074d69a",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "funk",
+        "jazz",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/36bd144a-b500-4023-92ad-3aeeb074d69a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ephemeralsmusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ephemeralsmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ephemeralsmusic"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/HillmanProjects"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2013"
+      }
+    },
+    "eric clapton": {
+      "name": "Eric Clapton",
+      "status": "identity_candidate_only",
+      "mbid": "618b6900-0618-4f1e-b835-bccb17f84294",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "blues",
+        "blues rock",
+        "classic rock",
+        "rock",
+        "singer-songwriter",
+        "soft rock"
+      ],
+      "source": "https://musicbrainz.org/artist/618b6900-0618-4f1e-b835-bccb17f84294",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ericclapton"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ericclapton/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ericclapton"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q48187"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCtCOFqqGGGunX71nfZgPQOQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1945-03-30"
+      }
+    },
+    "eric prydz": {
+      "name": "Eric Prydz",
+      "status": "identity_candidate_only",
+      "mbid": "35dac7d2-0b1f-470f-9a5a-c53c8821f6d6",
+      "type": "Person",
+      "country": "SE",
+      "disambiguation": "",
+      "genres": [
+        "edm",
+        "electronic",
+        "house",
+        "progressive",
+        "progressive house",
+        "trance"
+      ],
+      "source": "https://musicbrainz.org/artist/35dac7d2-0b1f-470f-9a5a-c53c8821f6d6",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/EricPrydzOfficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ericprydz/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/eric-prydz"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q155141"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCOjTxt7xBAjh1NraToYYlog"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1976-07-19"
+      }
+    },
+    "erik hassle": {
+      "name": "Erik Hassle",
+      "status": "identity_candidate_only",
+      "mbid": "826bd981-656f-48e2-b5ef-625f298d41a2",
+      "type": "Person",
+      "country": "SE",
+      "disambiguation": "",
+      "genres": [
+        "pop"
+      ],
+      "source": "https://musicbrainz.org/artist/826bd981-656f-48e2-b5ef-625f298d41a2",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q446748"
+        }
+      ],
+      "life_span": {
+        "begin": "1988-08-26",
+        "end": null,
+        "ended": false
+      }
+    },
+    "erika de casier": {
+      "name": "Erika de Casier",
+      "status": "identity_candidate_only",
+      "mbid": "071409d0-ce21-4f03-a111-aec4dbc1590d",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Portugal-born Danish singer, songwriter, and producer",
+      "genres": [
+        "r&b",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/071409d0-ce21-4f03-a111-aec4dbc1590d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://erikadecasier.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/erikadecasier"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/erikadecasier/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/erikacasier"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q105047838"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCklUVCXk0jZny51BO_qK3Rw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1990-03-21",
+        "end": null
+      }
+    },
+    "erland and the carnival": {
+      "name": "Erland and the Carnival",
+      "status": "identity_candidate_only",
+      "mbid": "d433d875-e4d1-4611-8c4b-2e06ef9ba5ef",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "British folk-rock band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d433d875-e4d1-4611-8c4b-2e06ef9ba5ef",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/erlandandthecarnival"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1355249"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "erlend øye": {
+      "name": "Erlend Øye",
+      "status": "identity_candidate_only",
+      "mbid": "bdb8e865-98f6-4dd3-a8ac-74b9b7ae8abd",
+      "type": "Person",
+      "country": "NO",
+      "disambiguation": "",
+      "genres": [
+        "electropop",
+        "indie pop",
+        "indietronica"
+      ],
+      "source": "https://musicbrainz.org/artist/bdb8e865-98f6-4dd3-a8ac-74b9b7ae8abd",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ErlendOyeOfficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q726170"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1975-11-21",
+        "end": null
+      }
+    },
+    "ernest ellis": {
+      "name": "Ernest Ellis",
+      "status": "identity_candidate_only",
+      "mbid": "589ba988-9690-4dc7-9804-ae130451b23b",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/589ba988-9690-4dc7-9804-ae130451b23b",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "ernesto licona": {
+      "name": "Ernesto Licona",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "errors": {
+      "name": "Errors",
+      "status": "identity_candidate_only",
+      "mbid": "2736bad5-6280-4c8f-92c8-27a5e63bbab2",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "electronic"
+      ],
+      "source": "https://musicbrainz.org/artist/2736bad5-6280-4c8f-92c8-27a5e63bbab2",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/errorsband"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/weareerrors"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3732599"
+        }
+      ],
+      "life_span": {
+        "begin": "2004",
+        "end": null,
+        "ended": false
+      }
+    },
+    "escapists": {
+      "name": "Escapists",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "eskimo joe": {
+      "name": "Eskimo Joe",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "especial gc54años": {
+      "name": "Especial GC54años",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "essential machine": {
+      "name": "Essential Machine",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "estación sur": {
+      "name": "estación sur",
+      "status": "identity_candidate_only",
+      "mbid": "6a7178fb-3acc-475c-b7ff-b3c293ee5bbc",
+      "type": "Group",
+      "country": "AR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6a7178fb-3acc-475c-b7ff-b3c293ee5bbc",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/estacionsurbanda/"
+        }
+      ],
+      "life_span": {
+        "begin": "2023",
+        "end": null,
+        "ended": false
+      }
     }
   }
 }
