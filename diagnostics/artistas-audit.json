@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T12:19:07.023113+00:00",
+  "generated_at": "2026-11-03T19:46:47.781310+00:00",
   "source_updates": {
-    "artists": "2026-11-03T12:19:00.823615Z",
-    "galleries": "2026-11-03T09:03:32.817984+00:00",
-    "album_art": "2026-11-03T06:41:10.989385+00:00"
+    "artists": "2026-11-03T19:46:43.931781Z",
+    "galleries": "2026-11-03T17:05:52.118553+00:00",
+    "album_art": "2026-11-03T14:41:12.504573+00:00"
   },
   "catalog": {
     "raw_artists": 8044,
@@ -39,31 +39,31 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-03T12:19:00.823615Z"
+      "merged_at": "2026-11-03T19:46:43.931781Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4390,
-    "real_profile_missing": 3530,
-    "real_profile_complete_pct": 55.43,
+    "real_profile_complete": 4391,
+    "real_profile_missing": 3529,
+    "real_profile_complete_pct": 55.44,
     "profile_status": {
       "complete": 4158,
       "partial": 2872,
       "not_found": 834,
       "legacy": 56
     },
-    "missing_validated_profile_image": 956,
+    "missing_validated_profile_image": 955,
     "missing_profile_bio": 3454,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4368,
-    "core_complete_pct": 55.15,
+    "core_complete": 4369,
+    "core_complete_pct": 55.16,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6964,
-    "effective_image_pct": 87.93,
+    "effective_image": 6965,
+    "effective_image_pct": 87.94,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5319,
-    "missing_image": 956,
+    "image_gallery_fallback": 5320,
+    "missing_image": 955,
     "effective_bio": 4466,
     "effective_bio_pct": 56.39,
     "bio_direct_artist": 1026,
@@ -72,9 +72,9 @@
     "missing_bio": 3454,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.29,
-    "gallery_with_images": 6964,
+    "gallery_with_images": 6965,
     "with_social": 4768,
-    "with_genre": 3905,
+    "with_genre": 3906,
     "with_related": 1599
   },
   "tracks": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.43,
     "missing_artwork": 4655,
     "grouped_as_otras": 5913,
-    "with_first_and_last_dates": 17834,
+    "with_first_and_last_dates": 17835,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10643,
     "album_art_cache_missed": 4268
@@ -225,9 +225,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 153,
+      "plays": 154,
       "first_played": "22 jul 2012",
-      "last_played": "1 nov 2026 · 09:11",
+      "last_played": "3 nov 2026 · 07:00",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -713,9 +713,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 64,
+      "plays": 65,
       "first_played": "29 jul 2012",
-      "last_played": "2 nov 2026 · 13:01",
+      "last_played": "3 nov 2026 · 09:43",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -2656,6 +2656,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 38,
+      "first_played": "22 ago 2022",
+      "last_played": "3 nov 2026 · 11:08",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -2858,44 +2896,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 37,
-      "first_played": "22 ago 2022",
-      "last_played": "30 oct 2026 · 06:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -4139,6 +4139,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 38,
+      "first_played": "22 ago 2022",
+      "last_played": "3 nov 2026 · 11:08",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -4188,44 +4226,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 37,
-      "first_played": "22 ago 2022",
-      "last_played": "30 oct 2026 · 06:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5356,6 +5356,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 23,
+      "first_played": "22 sep 2026",
+      "last_played": "3 nov 2026 · 08:37",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jamiroquai/Beverley Knight",
       "slug": "jamiroquai-beverley-knight",
       "plays": 22,
@@ -5456,41 +5491,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Holloways",
-      "slug": "the-holloways",
-      "plays": 22,
-      "first_played": "22 sep 2026",
-      "last_played": "31 oct 2026 · 21:42",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6109,6 +6109,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 18,
+      "first_played": "19 sep 2026",
+      "last_played": "3 nov 2026 · 09:06",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Evil arrows",
       "slug": "evil-arrows",
       "plays": 18,
@@ -6321,41 +6356,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 17,
-      "first_played": "19 sep 2026",
-      "last_played": "1 nov 2026 · 09:17",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6800,6 +6800,43 @@
       "profile_complete": false
     },
     {
+      "name": "The Avalanches / MGMT / Johnny Marr",
+      "slug": "the-avalanches-mgmt-johnny-marr",
+      "plays": 16,
+      "first_played": "10 sep 2022",
+      "last_played": "3 nov 2026 · 11:29",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Decemberists/James Mercer",
       "slug": "the-decemberists-james-mercer",
       "plays": 16,
@@ -7011,43 +7048,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Avalanches / MGMT / Johnny Marr",
-      "slug": "the-avalanches-mgmt-johnny-marr",
-      "plays": 15,
-      "first_played": "10 sep 2022",
-      "last_played": "27 oct 2026 · 23:02",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -7305,9 +7305,9 @@
     {
       "name": "Big Deal",
       "slug": "big-deal",
-      "plays": 153,
+      "plays": 154,
       "first_played": "22 jul 2012",
-      "last_played": "1 nov 2026 · 09:11",
+      "last_played": "3 nov 2026 · 07:00",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7793,9 +7793,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 64,
+      "plays": 65,
       "first_played": "29 jul 2012",
-      "last_played": "2 nov 2026 · 13:01",
+      "last_played": "3 nov 2026 · 09:43",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -9632,6 +9632,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 38,
+      "first_played": "22 ago 2022",
+      "last_played": "3 nov 2026 · 11:08",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "SBTRKT feat. Yukimi Nagano",
       "slug": "sbtrkt-feat-yukimi-nagano",
       "plays": 38,
@@ -9834,44 +9872,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 37,
-      "first_played": "22 ago 2022",
-      "last_played": "30 oct 2026 · 06:38",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
