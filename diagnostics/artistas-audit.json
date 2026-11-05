@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T16:47:53.685380+00:00",
+  "generated_at": "2026-11-05T23:49:50.414007+00:00",
   "source_updates": {
-    "artists": "2026-11-05T16:47:48.319302Z",
-    "galleries": "2026-11-05T10:53:15.212164+00:00",
-    "album_art": "2026-11-05T09:51:23.469919+00:00"
+    "artists": "2026-11-05T23:49:45.015298Z",
+    "galleries": "2026-11-05T18:25:55.851088+00:00",
+    "album_art": "2026-11-05T23:37:31.186248+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-05T16:47:48.319302Z"
+      "merged_at": "2026-11-05T23:49:45.015298Z"
     }
   },
   "profile_enrichment": {
@@ -74,19 +74,19 @@
     "gallery_checked_pct": 99.27,
     "gallery_with_images": 6965,
     "with_social": 4765,
-    "with_genre": 3908,
+    "with_genre": 3909,
     "with_related": 1599
   },
   "tracks": {
     "total": 18210,
-    "with_effective_artwork": 13585,
-    "with_effective_artwork_pct": 74.6,
-    "missing_artwork": 4625,
+    "with_effective_artwork": 13587,
+    "with_effective_artwork_pct": 74.61,
+    "missing_artwork": 4623,
     "grouped_as_otras": 5920,
     "with_first_and_last_dates": 17845,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10681,
-    "album_art_cache_missed": 4230
+    "album_art_cache_found": 10683,
+    "album_art_cache_missed": 4228
   },
   "focus": {
     "boylife": {
@@ -608,6 +608,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 67,
+      "first_played": "29 jul 2012",
+      "last_played": "5 nov 2026 · 14:40",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Citizens!",
       "slug": "citizens",
       "plays": 66,
@@ -655,41 +690,6 @@
       ],
       "tracks": 6,
       "tracks_with_artwork": 6,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 66,
-      "first_played": "29 jul 2012",
-      "last_played": "4 nov 2026 · 08:08",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
@@ -1853,6 +1853,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 45,
+      "first_played": "14 jul 2022",
+      "last_played": "5 nov 2026 · 16:42",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Cameras",
       "slug": "cameras",
       "plays": 45,
@@ -1882,6 +1918,44 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 45,
+      "first_played": "25 jul 2022",
+      "last_played": "5 nov 2026 · 14:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
         "bio"
       ],
       "profile_complete": false
@@ -1919,42 +1993,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 44,
-      "first_played": "14 jul 2022",
-      "last_played": "4 nov 2026 · 19:55",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -2091,44 +2129,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 44,
-      "first_played": "25 jul 2022",
-      "last_played": "1 nov 2026 · 16:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3919,47 +3919,11 @@
       "profile_complete": false
     },
     {
-      "name": "Alert New London",
-      "slug": "alert-new-london",
-      "plays": 44,
-      "first_played": "14 jul 2012",
-      "last_played": "30 jul 2016 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 44,
+      "plays": 45,
       "first_played": "14 jul 2022",
-      "last_played": "4 nov 2026 · 19:55",
+      "last_played": "5 nov 2026 · 16:42",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3993,9 +3957,9 @@
     {
       "name": "Jamiroquai/David Morales",
       "slug": "jamiroquai-david-morales",
-      "plays": 44,
+      "plays": 45,
       "first_played": "25 jul 2022",
-      "last_played": "1 nov 2026 · 16:23",
+      "last_played": "5 nov 2026 · 14:18",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -4007,6 +3971,42 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Alert New London",
+      "slug": "alert-new-london",
+      "plays": 44,
+      "first_played": "14 jul 2012",
+      "last_played": "30 jul 2016 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5858,6 +5858,44 @@
       "profile_complete": false
     },
     {
+      "name": "illuminati hotties/Cavetown",
+      "slug": "illuminati-hotties-cavetown",
+      "plays": 19,
+      "first_played": "4 mar 2025",
+      "last_played": "5 nov 2026 · 16:36",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jim-E Stack / Empress Of",
       "slug": "jim-e-stack-empress-of",
       "plays": 19,
@@ -6197,44 +6235,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "illuminati hotties/Cavetown",
-      "slug": "illuminati-hotties-cavetown",
-      "plays": 18,
-      "first_played": "4 mar 2025",
-      "last_played": "31 oct 2026 · 15:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7087,6 +7087,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Youth Play",
+      "slug": "the-youth-play",
+      "plays": 15,
+      "first_played": "22 sep 2026",
+      "last_played": "5 nov 2026 · 13:37",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "True Faith, Sculpture Club",
       "slug": "true-faith-sculpture-club",
       "plays": 15,
@@ -7170,42 +7205,6 @@
       ],
       "tracks": 2,
       "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "AAR The Singles Collection on Louder",
-      "slug": "aar-the-singles-collection-on-louder",
-      "plays": 14,
-      "first_played": "29 oct 2012",
-      "last_played": "3 nov 2012 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
@@ -7685,6 +7684,41 @@
       "profile_complete": false
     },
     {
+      "name": "No Ceremony",
+      "slug": "no-ceremony",
+      "plays": 67,
+      "first_played": "29 jul 2012",
+      "last_played": "5 nov 2026 · 14:40",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Citizens!",
       "slug": "citizens",
       "plays": 66,
@@ -7732,41 +7766,6 @@
       ],
       "tracks": 6,
       "tracks_with_artwork": 6,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "No Ceremony",
-      "slug": "no-ceremony",
-      "plays": 66,
-      "first_played": "29 jul 2012",
-      "last_played": "4 nov 2026 · 08:08",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": true,
@@ -8896,6 +8895,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 45,
+      "first_played": "25 jul 2022",
+      "last_played": "5 nov 2026 · 14:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Alert New London",
       "slug": "alert-new-london",
       "plays": 44,
@@ -9064,44 +9101,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 44,
-      "first_played": "25 jul 2022",
-      "last_played": "1 nov 2026 · 16:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
