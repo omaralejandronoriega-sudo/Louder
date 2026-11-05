@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T23:55:13.448764+00:00",
+  "generated_at": "2026-11-05T07:20:55.474397+00:00",
   "source_updates": {
-    "artists": "2026-11-04T23:55:07.930394Z",
-    "galleries": "2026-11-04T22:56:56.910659+00:00",
-    "album_art": "2026-11-04T21:53:19.275787+00:00"
+    "artists": "2026-11-05T07:20:51.119270Z",
+    "galleries": "2026-11-05T03:11:15.994791+00:00",
+    "album_art": "2026-11-05T02:24:41.907946+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-04T23:55:07.930394Z"
+      "merged_at": "2026-11-05T07:20:51.119270Z"
     }
   },
   "profile_enrichment": {
@@ -73,20 +73,20 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.27,
     "gallery_with_images": 6965,
-    "with_social": 4764,
+    "with_social": 4766,
     "with_genre": 3908,
     "with_related": 1599
   },
   "tracks": {
     "total": 18210,
-    "with_effective_artwork": 13575,
-    "with_effective_artwork_pct": 74.55,
-    "missing_artwork": 4635,
+    "with_effective_artwork": 13584,
+    "with_effective_artwork_pct": 74.6,
+    "missing_artwork": 4626,
     "grouped_as_otras": 5920,
     "with_first_and_last_dates": 17844,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10670,
-    "album_art_cache_missed": 4241
+    "album_art_cache_found": 10680,
+    "album_art_cache_missed": 4231
   },
   "focus": {
     "boylife": {
@@ -850,6 +850,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 60,
+      "first_played": "29 mar 2016",
+      "last_played": "4 nov 2026 · 22:35",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 60,
@@ -984,43 +1021,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 59,
-      "first_played": "29 mar 2016",
-      "last_played": "31 oct 2026 · 20:22",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
       ],
       "profile_complete": false
     },
@@ -1163,9 +1163,9 @@
     {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 56,
+      "plays": 57,
       "first_played": "14 jul 2012",
-      "last_played": "1 nov 2026 · 13:21",
+      "last_played": "4 nov 2026 · 22:15",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -1711,6 +1711,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 46,
+      "first_played": "26 jul 2022",
+      "last_played": "4 nov 2026 · 22:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Telefunka",
       "slug": "telefunka",
       "plays": 46,
@@ -1849,44 +1887,6 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 45,
-      "first_played": "26 jul 2022",
-      "last_played": "3 nov 2026 · 23:46",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Alert New London",
       "slug": "alert-new-london",
       "plays": 44,
@@ -1919,6 +1919,42 @@
       "profile_missing_fields": [
         "image",
         "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 44,
+      "first_played": "14 jul 2022",
+      "last_played": "4 nov 2026 · 19:55",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
       ],
       "profile_complete": false
     },
@@ -2131,42 +2167,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 43,
-      "first_played": "14 jul 2022",
-      "last_played": "31 oct 2026 · 22:02",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -3845,20 +3845,22 @@
       "profile_complete": false
     },
     {
-      "name": "The Fucking Fat Porns",
-      "slug": "the-fucking-fat-porns",
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
       "plays": 46,
-      "first_played": "16 ene 2013",
-      "last_played": "17 sep 2014 · 23:59",
+      "first_played": "26 jul 2022",
+      "last_played": "4 nov 2026 · 22:18",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 8,
+      "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
-      "tracks_in_otras": 8,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3881,22 +3883,20 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 45,
-      "first_played": "26 jul 2022",
-      "last_played": "3 nov 2026 · 23:46",
+      "name": "The Fucking Fat Porns",
+      "slug": "the-fucking-fat-porns",
+      "plays": 46,
+      "first_played": "16 ene 2013",
+      "last_played": "17 sep 2014 · 23:59",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
+        "lastfm"
       ],
-      "tracks": 1,
+      "tracks": 8,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_missing_artwork": 8,
+      "tracks_in_otras": 8,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3955,6 +3955,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 44,
+      "first_played": "14 jul 2022",
+      "last_played": "4 nov 2026 · 19:55",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jamiroquai/David Morales",
       "slug": "jamiroquai-david-morales",
       "plays": 44,
@@ -3989,42 +4025,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 43,
-      "first_played": "14 jul 2022",
-      "last_played": "31 oct 2026 · 22:02",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -5751,6 +5751,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 19,
+      "first_played": "19 sep 2026",
+      "last_played": "4 nov 2026 · 22:29",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Alan Wilder/Steve Lyon",
       "slug": "depeche-mode-alan-wilder-steve-lyon",
       "plays": 19,
@@ -6110,41 +6145,6 @@
       "profile_complete": false
     },
     {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 18,
-      "first_played": "19 sep 2026",
-      "last_played": "3 nov 2026 · 09:06",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Evil arrows",
       "slug": "evil-arrows",
       "plays": 18,
@@ -6293,6 +6293,44 @@
       "profile_complete": false
     },
     {
+      "name": "Liam Gallagher/John Squire",
+      "slug": "liam-gallagher-john-squire",
+      "plays": 18,
+      "first_played": "16 mar 2025",
+      "last_played": "4 nov 2026 · 22:09",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6380,44 +6418,6 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Liam Gallagher/John Squire",
-      "slug": "liam-gallagher-john-squire",
-      "plays": 17,
-      "first_played": "16 mar 2025",
-      "last_played": "1 nov 2026 · 15:35",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -6541,6 +6541,43 @@
       ],
       "core_complete": false,
       "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Avalanches / MGMT / Johnny Marr",
+      "slug": "the-avalanches-mgmt-johnny-marr",
+      "plays": 17,
+      "first_played": "10 sep 2022",
+      "last_played": "4 nov 2026 · 18:25",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6779,43 +6816,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 16,
       "tracks_in_otras": 16,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Avalanches / MGMT / Johnny Marr",
-      "slug": "the-avalanches-mgmt-johnny-marr",
-      "plays": 16,
-      "first_played": "10 sep 2022",
-      "last_played": "3 nov 2026 · 11:29",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7087,6 +7087,42 @@
       "profile_complete": false
     },
     {
+      "name": "True Faith, Sculpture Club",
+      "slug": "true-faith-sculpture-club",
+      "plays": 15,
+      "first_played": "28 sep 2026",
+      "last_played": "5 nov 2026 · 00:54",
+      "catalog_status": "programmed_only",
+      "sources": [
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Waxahatchee/MJ Lenderman",
       "slug": "waxahatchee-mj-lenderman",
       "plays": 15,
@@ -7172,44 +7208,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bullion/Carly Rae Jepsen",
-      "slug": "bullion-carly-rae-jepsen",
-      "plays": 14,
-      "first_played": "4 mar 2025",
-      "last_played": "25 oct 2026 · 09:32",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7929,6 +7927,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 60,
+      "first_played": "29 mar 2016",
+      "last_played": "4 nov 2026 · 22:35",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The London Suede",
       "slug": "the-london-suede",
       "plays": 60,
@@ -8022,43 +8057,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 59,
-      "first_played": "29 mar 2016",
-      "last_played": "31 oct 2026 · 20:22",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -8208,9 +8206,9 @@
     {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 56,
+      "plays": 57,
       "first_played": "14 jul 2012",
-      "last_played": "1 nov 2026 · 13:21",
+      "last_played": "4 nov 2026 · 22:15",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -8722,6 +8720,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 46,
+      "first_played": "26 jul 2022",
+      "last_played": "4 nov 2026 · 22:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Telefunka",
       "slug": "telefunka",
       "plays": 46,
@@ -8855,44 +8891,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 45,
-      "first_played": "26 jul 2022",
-      "last_played": "3 nov 2026 · 23:46",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
