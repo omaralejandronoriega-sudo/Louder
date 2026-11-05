@@ -1,7 +1,7 @@
 {
-  "cursor": 2380,
+  "cursor": 2400,
   "total_catalog": 7988,
-  "updated_at": "2026-11-05T07:23:49.265766+00:00",
+  "updated_at": "2026-11-05T15:48:54.810585+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -41867,6 +41867,286 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 2
+    },
+    "feist": {
+      "name": "Feist",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "feist x timber timbre": {
+      "name": "Feist x Timber Timbre",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "feldberg": {
+      "name": "Feldberg",
+      "status": "identity_candidate_only",
+      "mbid": "4e322ccb-4f73-4e1b-a4ef-f0fcfcfebece",
+      "type": "Group",
+      "country": "IS",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4e322ccb-4f73-4e1b-a4ef-f0fcfcfebece",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/feldbergmusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5441641"
+        }
+      ],
+      "life_span": {
+        "begin": "2009",
+        "end": null,
+        "ended": false
+      }
+    },
+    "felines": {
+      "name": "Felines",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "felipe el hombre": {
+      "name": "Felipe El Hombre",
+      "status": "identity_candidate_only",
+      "mbid": "48e0865c-8a7b-47c7-8b6c-9de78a22be8e",
+      "type": "",
+      "country": "MX",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/48e0865c-8a7b-47c7-8b6c-9de78a22be8e",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/felipeelhombreoficial"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "femfemfem": {
+      "name": "FemFemFem",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "femme": {
+      "name": "Femme",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "fenech-soler": {
+      "name": "Fenech-Soler",
+      "status": "identity_candidate_only",
+      "mbid": "5b234e2f-f1fc-45f9-9cba-e69d230fd37a",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5b234e2f-f1fc-45f9-9cba-e69d230fd37a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/fenechsoler"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/fenechsoler/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4038700"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC2G8HXkZKbBthnVuAMn8mgw"
+        }
+      ],
+      "life_span": {
+        "begin": "2006",
+        "end": null,
+        "ended": false
+      }
+    },
+    "feng li": {
+      "name": "Feng Li",
+      "status": "identity_candidate_only",
+      "mbid": "342b377c-6475-4c3e-af4f-b4630b631fea",
+      "type": "Person",
+      "country": "CN",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/342b377c-6475-4c3e-af4f-b4630b631fea",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": "1943-09-02",
+        "ended": false
+      }
+    },
+    "fenne lily": {
+      "name": "Fenne Lily",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "feral & stray": {
+      "name": "Feral & Stray",
+      "status": "identity_candidate_only",
+      "mbid": "1e04ecf9-4b08-4610-b9b0-6ed5dae18de3",
+      "type": "Group",
+      "country": "XW",
+      "disambiguation": "Erin Lang",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/1e04ecf9-4b08-4610-b9b0-6ed5dae18de3",
+      "evidence_links": [
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/feralandstray"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "fergie": {
+      "name": "Fergie",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "fesway": {
+      "name": "Fesway",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "fever the ghost": {
+      "name": "Fever The Ghost",
+      "status": "identity_candidate_only",
+      "mbid": "3b7dbf09-0f10-4fc5-8d44-69dc6673c5fe",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3b7dbf09-0f10-4fc5-8d44-69dc6673c5fe",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://fevertheghost.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/fevertheghost"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/fevertheghost/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fevertheghost"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCHPowOjm4ulvoNv3uQlgaRg"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCXyIFtLePk2AJGYjjEyUd1w"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCU6mX4jk_cNEuHLkdfAYWaw"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "fews": {
+      "name": "fews",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "fff": {
+      "name": "FFF",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "ffs": {
+      "name": "FFS",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "fiasko leitmotiv": {
+      "name": "Fiasko Leitmotiv",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "fibes, oh fibes!": {
+      "name": "Fibes, Oh Fibes!",
+      "status": "identity_candidate_only",
+      "mbid": "65c71d20-a93b-43df-abac-3b14117f0ade",
+      "type": "Group",
+      "country": "SE",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/65c71d20-a93b-43df-abac-3b14117f0ade",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "fickle friends": {
+      "name": "Fickle Friends",
+      "status": "identity_candidate_only",
+      "mbid": "2520d6eb-fe07-4403-bb99-7f7bfd68b701",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "electropop",
+        "indie pop"
+      ],
+      "source": "https://musicbrainz.org/artist/2520d6eb-fe07-4403-bb99-7f7bfd68b701",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://ficklefriends.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/FickleFriends"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ficklefriendsuk/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ficklefriends"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q24895505"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2013",
+        "end": null
+      }
     }
   }
 }
