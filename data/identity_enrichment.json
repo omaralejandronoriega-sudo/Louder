@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-06T18:37:09.259938+00:00",
+  "updated_at": "2026-11-06T23:05:13.756279+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -55294,13 +55294,13 @@
     },
     "lief-hall": {
       "name": "Lief Hall",
-      "verified": false,
-      "profile_checked_at": "2026-10-23T18:17:31.353760+00:00",
-      "checked_at": "2026-10-23T18:17:31.353760+00:00",
-      "profile_status": "not_found",
-      "status": "not_found",
-      "next_retry_at": "2026-11-06T18:17:31.353760+00:00",
-      "attempt_count": 4,
+      "verified": true,
+      "profile_checked_at": "2026-11-06T23:04:58.516941+00:00",
+      "checked_at": "2026-11-06T23:04:58.516941+00:00",
+      "profile_status": "partial",
+      "status": "partial",
+      "next_retry_at": "2026-11-09T23:04:58.516941+00:00",
+      "attempt_count": 5,
       "musicbrainz_id": "de15add5-047a-4065-b606-6d370dc8673d",
       "canonical_name": "Lief Hall",
       "match_score": 100,
@@ -56616,9 +56616,9 @@
     },
     "minttu-olli": {
       "name": "Minttu & Olli",
-      "verified": false,
-      "profile_checked_at": "2026-10-23T18:17:32.457350+00:00",
-      "checked_at": "2026-10-23T18:17:32.457350+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-11-06T23:05:03.959442+00:00",
+      "checked_at": "2026-11-06T23:05:03.959442+00:00",
       "musicbrainz_id": "da0bd3b4-e2b9-4cbc-b165-686a8d76263b",
       "canonical_name": "Minttu & Olli",
       "match_score": 100,
@@ -56630,14 +56630,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-06T18:17:32.457350+00:00",
-      "attempt_count": 3
+      "next_retry_at": "2026-11-09T23:05:03.959442+00:00",
+      "attempt_count": 4
     },
     "beta-frontiers": {
       "name": "Beta Frontiers",
@@ -62775,9 +62775,9 @@
     },
     "sports-fan": {
       "name": "Sports Fan",
-      "verified": false,
-      "profile_checked_at": "2026-10-23T22:06:57.684869+00:00",
-      "checked_at": "2026-10-23T22:06:57.684869+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-11-06T23:05:06.436718+00:00",
+      "checked_at": "2026-11-06T23:05:06.436718+00:00",
       "musicbrainz_id": "e5884ff1-7eb2-4eaf-8a3e-27630b8b11a0",
       "canonical_name": "Sports Fan",
       "match_score": 100,
@@ -62790,17 +62790,16 @@
       },
       "genre": "",
       "bio_en": "",
-      "image": "",
-      "image_source": "",
+      "image": "https://cdn-images.dzcdn.net/images/artist/32ec0ce86105e6c66312d5492df37dc3/1000x1000-000000-80-0-0.jpg",
+      "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
-        "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-06T22:06:57.684869+00:00",
-      "attempt_count": 3
+      "next_retry_at": "2026-11-09T23:05:06.436718+00:00",
+      "attempt_count": 4
     },
     "goodnight-lenin": {
       "name": "Goodnight Lenin",
