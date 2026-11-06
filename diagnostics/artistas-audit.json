@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T23:49:50.414007+00:00",
+  "generated_at": "2026-11-06T07:21:51.754634+00:00",
   "source_updates": {
-    "artists": "2026-11-05T23:49:45.015298Z",
-    "galleries": "2026-11-05T18:25:55.851088+00:00",
-    "album_art": "2026-11-05T23:37:31.186248+00:00"
+    "artists": "2026-11-06T07:21:46.643379Z",
+    "galleries": "2026-11-06T03:49:00.317190+00:00",
+    "album_art": "2026-11-06T03:41:28.097424+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,54 +39,54 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-05T23:49:45.015298Z"
+      "merged_at": "2026-11-06T07:21:46.643379Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4393,
-    "real_profile_missing": 3529,
-    "real_profile_complete_pct": 55.45,
+    "real_profile_complete": 4394,
+    "real_profile_missing": 3528,
+    "real_profile_complete_pct": 55.47,
     "profile_status": {
       "complete": 4158,
-      "partial": 2874,
-      "not_found": 832,
+      "partial": 2875,
+      "not_found": 831,
       "legacy": 58
     },
-    "missing_validated_profile_image": 957,
-    "missing_profile_bio": 3454,
+    "missing_validated_profile_image": 956,
+    "missing_profile_bio": 3453,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4372,
-    "core_complete_pct": 55.19,
+    "core_complete": 4373,
+    "core_complete_pct": 55.2,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6965,
-    "effective_image_pct": 87.92,
+    "effective_image": 6966,
+    "effective_image_pct": 87.93,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5320,
-    "missing_image": 957,
-    "effective_bio": 4468,
-    "effective_bio_pct": 56.4,
+    "image_gallery_fallback": 5321,
+    "missing_image": 956,
+    "effective_bio": 4469,
+    "effective_bio_pct": 56.41,
     "bio_direct_artist": 1026,
     "bio_gallery_es": 255,
-    "bio_gallery_en": 3187,
-    "missing_bio": 3454,
+    "bio_gallery_en": 3188,
+    "missing_bio": 3453,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.27,
-    "gallery_with_images": 6965,
-    "with_social": 4765,
+    "gallery_with_images": 6966,
+    "with_social": 4766,
     "with_genre": 3909,
     "with_related": 1599
   },
   "tracks": {
     "total": 18210,
-    "with_effective_artwork": 13587,
-    "with_effective_artwork_pct": 74.61,
-    "missing_artwork": 4623,
+    "with_effective_artwork": 13602,
+    "with_effective_artwork_pct": 74.7,
+    "missing_artwork": 4608,
     "grouped_as_otras": 5920,
-    "with_first_and_last_dates": 17845,
+    "with_first_and_last_dates": 17846,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10683,
-    "album_art_cache_missed": 4228
+    "album_art_cache_found": 10700,
+    "album_art_cache_missed": 4211
   },
   "focus": {
     "boylife": {
@@ -212,43 +212,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Deal",
-      "slug": "big-deal",
-      "plays": 154,
-      "first_played": "22 jul 2012",
-      "last_played": "3 nov 2026 · 07:00",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 8,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -852,9 +815,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 60,
+      "plays": 61,
       "first_played": "29 mar 2016",
-      "last_played": "4 nov 2026 · 22:35",
+      "last_played": "5 nov 2026 · 23:11",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -3628,6 +3591,41 @@
         "bio"
       ],
       "profile_complete": false
+    },
+    {
+      "name": "MSTRKRFT feat. John Legend",
+      "slug": "mstrkrft-feat-john-legend",
+      "plays": 34,
+      "first_played": "22 jul 2012",
+      "last_played": "29 ago 2014 · 23:59",
+      "catalog_status": "history_only",
+      "sources": [
+        "lastfm"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
     }
   ],
   "priority_missing_image": [
@@ -5604,6 +5602,78 @@
       "profile_complete": false
     },
     {
+      "name": "Yannis & The Yaw/Tony Allen/Yannis",
+      "slug": "yannis-the-yaw-tony-allen-yannis",
+      "plays": 21,
+      "first_played": "15 mar 2025",
+      "last_played": "6 nov 2026 · 01:04",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 20,
+      "first_played": "19 sep 2026",
+      "last_played": "5 nov 2026 · 20:07",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "fthrsn",
       "slug": "fthrsn",
       "plays": 20,
@@ -5676,43 +5746,6 @@
       "profile_complete": false
     },
     {
-      "name": "Yannis & The Yaw/Tony Allen/Yannis",
-      "slug": "yannis-the-yaw-tony-allen-yannis",
-      "plays": 20,
-      "first_played": "15 mar 2025",
-      "last_played": "26 oct 2026 · 16:03",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Bombay Bicycle Club/Matilda Mann",
       "slug": "bombay-bicycle-club-matilda-mann",
       "plays": 19,
@@ -5744,41 +5777,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 19,
-      "first_played": "19 sep 2026",
-      "last_played": "4 nov 2026 · 22:29",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6331,6 +6329,43 @@
       "profile_complete": false
     },
     {
+      "name": "The Avalanches / MGMT / Johnny Marr",
+      "slug": "the-avalanches-mgmt-johnny-marr",
+      "plays": 18,
+      "first_played": "10 sep 2022",
+      "last_played": "5 nov 2026 · 19:05",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Tough Guys Of America",
       "slug": "tough-guys-of-america",
       "plays": 18,
@@ -6541,43 +6576,6 @@
       ],
       "core_complete": false,
       "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Avalanches / MGMT / Johnny Marr",
-      "slug": "the-avalanches-mgmt-johnny-marr",
-      "plays": 17,
-      "first_played": "10 sep 2022",
-      "last_played": "4 nov 2026 · 18:25",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7051,6 +7049,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Delays",
+      "slug": "the-delays",
+      "plays": 15,
+      "first_played": "10 oct 2026",
+      "last_played": "5 nov 2026 · 18:57",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Lunatic the Lover and the Poet",
       "slug": "the-lunatic-the-lover-and-the-poet",
       "plays": 15,
@@ -7122,6 +7155,41 @@
       "profile_complete": false
     },
     {
+      "name": "Thirteen Senses",
+      "slug": "thirteen-senses",
+      "plays": 15,
+      "first_played": "12 oct 2026",
+      "last_played": "5 nov 2026 · 19:26",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "True Faith, Sculpture Club",
       "slug": "true-faith-sculpture-club",
       "plays": 15,
@@ -7134,77 +7202,6 @@
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waxahatchee/MJ Lenderman",
-      "slug": "waxahatchee-mj-lenderman",
-      "plays": 15,
-      "first_played": "3 mar 2025",
-      "last_played": "1 may 2026 · 16:22",
-      "catalog_status": "history_only",
-      "sources": [
-        "megaseg"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Windigo",
-      "slug": "windigo",
-      "plays": 15,
-      "first_played": "25 mar 2013",
-      "last_played": "5 dic 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
       "has_image": false,
@@ -7288,43 +7285,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Deal",
-      "slug": "big-deal",
-      "plays": 154,
-      "first_played": "22 jul 2012",
-      "last_played": "3 nov 2026 · 07:00",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 8,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -7928,9 +7888,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 60,
+      "plays": 61,
       "first_played": "29 mar 2016",
-      "last_played": "4 nov 2026 · 22:35",
+      "last_played": "5 nov 2026 · 23:11",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -10691,6 +10651,40 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Baths",
+      "slug": "baths",
+      "plays": 33,
+      "first_played": "2 ago 2012",
+      "last_played": "9 ene 2015 · 23:59",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
       "has_social": true,
       "has_genre": true,
       "related": 0,
