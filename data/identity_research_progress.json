@@ -1,7 +1,7 @@
 {
-  "cursor": 2420,
+  "cursor": 2440,
   "total_catalog": 7988,
-  "updated_at": "2026-11-05T21:58:19.227389+00:00",
+  "updated_at": "2026-11-06T02:23:38.086008+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -42469,6 +42469,433 @@
       "name": "Findlay",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "findlay brown": {
+      "name": "Findlay Brown",
+      "status": "identity_candidate_only",
+      "mbid": "5935310f-e81e-4f8b-8b80-1116527abedf",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5935310f-e81e-4f8b-8b80-1116527abedf",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5449982"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1979-05-11",
+        "ended": false
+      }
+    },
+    "fine": {
+      "name": "Fine",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "fine china": {
+      "name": "Fine China",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "fine print": {
+      "name": "Fine Print",
+      "status": "identity_candidate_only",
+      "mbid": "7b223aad-72db-4fdc-8e13-62636035654f",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7b223aad-72db-4fdc-8e13-62636035654f",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/fineprintmusicuk"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/fineprint_music/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fine-print-2"
+        }
+      ],
+      "life_span": {
+        "begin": "2014-01-01",
+        "ended": false,
+        "end": null
+      }
+    },
+    "fine times": {
+      "name": "Fine Times",
+      "status": "identity_candidate_only",
+      "mbid": "4f1bc501-c117-4a88-8570-fcb113572af3",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "Canadian indie rock duo",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4f1bc501-c117-4a88-8570-fcb113572af3",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://finetimes.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/finetimes"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/finetimes/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fine-times"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCaSZu8pMIQFAzStz_vrtDUw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "finger eleven": {
+      "name": "Finger Eleven",
+      "status": "identity_candidate_only",
+      "mbid": "0b76f632-25fa-4681-9862-86499c28afd3",
+      "type": "Group",
+      "country": "CA",
+      "disambiguation": "",
+      "genres": [
+        "alternative metal",
+        "alternative rock",
+        "hard rock",
+        "metal",
+        "nu metal",
+        "post-grunge",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0b76f632-25fa-4681-9862-86499c28afd3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/FingerEleven"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/finger_eleven/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fingereleven"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1071154"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCVlNzjYeJ87GbSr8BOJJ4Sw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/FingerElevenVEVO"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCOyW38qjTk06wjY-6qihZVQ"
+        }
+      ],
+      "life_span": {
+        "begin": "1996",
+        "ended": false,
+        "end": null
+      }
+    },
+    "fingers of the sun": {
+      "name": "Fingers of the Sun",
+      "status": "identity_candidate_only",
+      "mbid": "88d964de-1faf-46ae-b0f1-c3d118af6490",
+      "type": "",
+      "country": "",
+      "disambiguation": "Colorado Psychedelic Rock",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/88d964de-1faf-46ae-b0f1-c3d118af6490",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "fink": {
+      "name": "Fink",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "finn wolfhard": {
+      "name": "Finn Wolfhard",
+      "status": "identity_candidate_only",
+      "mbid": "becca5db-ec3a-404d-8e94-03ebf27276e3",
+      "type": "Person",
+      "country": "CA",
+      "disambiguation": "actor, Calpurnia lead vocalist/guitarist",
+      "genres": [
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/becca5db-ec3a-404d-8e94-03ebf27276e3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/FinnWolfhardOfficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/finnwolfhardofficial/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q26308335"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCd-z42FNqm2Z8SVkcVd4zyw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2002-12-23",
+        "ended": false
+      }
+    },
+    "fiona apple": {
+      "name": "Fiona Apple",
+      "status": "identity_candidate_only",
+      "mbid": "a9ee533f-8871-4f62-a6bb-91eb264abc90",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "singer-songwriter and pianist",
+      "genres": [
+        "alternative pop",
+        "art pop",
+        "baroque pop",
+        "jazz",
+        "piano rock",
+        "rock",
+        "singer-songwriter",
+        "soft rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a9ee533f-8871-4f62-a6bb-91eb264abc90",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/fionaapple"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fionaapple"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q228968"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC5dgHJR5MnbNzzkXWkU_CzQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCtuF-p5_86ajFS-49gXIlHw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCx7oc-KdHX3OosmhmWryDBQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1977-09-13",
+        "end": null
+      }
+    },
+    "fior": {
+      "name": "Fior",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "firehorse": {
+      "name": "Firehorse",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "firekites": {
+      "name": "Firekites",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "first aid kit": {
+      "name": "First Aid Kit",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "fischerspooner": {
+      "name": "Fischerspooner",
+      "status": "identity_candidate_only",
+      "mbid": "a4f54716-24d9-4c6b-8ba7-1d7e7a5173d0",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "electroclash",
+        "electronica"
+      ],
+      "source": "https://musicbrainz.org/artist/a4f54716-24d9-4c6b-8ba7-1d7e7a5173d0",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/22430220222"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/fischerspooner/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fischerspooner-official"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1420144"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCH_fpKusEQIEojPir1y5t6Q"
+        }
+      ],
+      "life_span": {
+        "begin": "1998",
+        "end": "2019-10-30",
+        "ended": true
+      }
+    },
+    "fish out of water": {
+      "name": "Fish Out of Water",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "fishboy": {
+      "name": "Fishboy",
+      "status": "identity_candidate_only",
+      "mbid": "d09ef6e9-321b-4715-9a93-b7392032f8be",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/d09ef6e9-321b-4715-9a93-b7392032f8be",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://yofishboy.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/yofishboy"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5454703"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2000"
+      }
+    },
+    "fishlights": {
+      "name": "Fishlights",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "fitz / fitz and the tantrums": {
+      "name": "FITZ / Fitz and The Tantrums",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "fitz and the tantrums": {
+      "name": "Fitz and the Tantrums",
+      "status": "identity_candidate_only",
+      "mbid": "8560d4e8-05e2-4c20-980b-ad2db445dd5d",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blue-eyed soul",
+        "electronic",
+        "funk",
+        "indie pop",
+        "pop",
+        "pop rock",
+        "pop soul",
+        "soul",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/8560d4e8-05e2-4c20-980b-ad2db445dd5d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://fitzandthetantrums.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/fitzandthetantrums"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/fitzandthetantrums/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/fitzandthetantrums"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3746211"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCey2z8VZ7Mc0R1M5QiBU4EA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCYDHG41CGrBZhbFw7lZMI9w"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2008"
+      }
     }
   }
 }
