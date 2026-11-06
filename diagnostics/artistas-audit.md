@@ -1,22 +1,22 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-11-06T16:14:37.726684+00:00
+Generada: 2026-11-06T21:44:55.390636+00:00
 
 ## Resumen
 
 - Artistas crudos: 8046
 - Artistas públicos normalizados: 7922
-- Perfiles realmente completos: 4394/7922 (55.47%)
-- Perfiles con faltantes reales: 3528
+- Perfiles realmente completos: 4395/7922 (55.48%)
+- Perfiles con faltantes reales: 3527
 - Estados de enriquecimiento: {'complete': 4158, 'partial': 2875, 'not_found': 831, 'legacy': 58}
 - Sin imagen validada de perfil: 956
-- Sin biografía de perfil: 3453
+- Sin biografía de perfil: 3452
 - Sin datos de identidad/perfil: 0
-- Fichas core completas: 4373/7922 (55.20%)
+- Fichas core completas: 4374/7922 (55.21%)
 - Con imagen efectiva: 6966/7922 (87.93%)
 - Sin imagen: 956
-- Con biografía efectiva: 4469/7922 (56.41%)
-- Sin biografía: 3453
+- Con biografía efectiva: 4470/7922 (56.43%)
+- Sin biografía: 3452
 - Galerías ya revisadas: 7864/7922 (99.27%)
 - Artistas con canciones: 7916/7922
 - Canciones totales: 18210
