@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-07T20:30:09.869121+00:00",
+  "generated_at": "2026-11-07T23:55:44.778031+00:00",
   "source_updates": {
-    "artists": "2026-11-07T20:30:04.795918Z",
-    "galleries": "2026-11-07T20:24:39.300367+00:00",
-    "album_art": "2026-11-07T16:38:34.537363+00:00"
+    "artists": "2026-11-07T23:55:39.042679Z",
+    "galleries": "2026-11-07T23:52:05.865644+00:00",
+    "album_art": "2026-11-07T20:30:13.921925+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-07T20:30:04.795918Z"
+      "merged_at": "2026-11-07T23:55:39.042679Z"
     }
   },
   "profile_enrichment": {
@@ -73,7 +73,7 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.27,
     "gallery_with_images": 6967,
-    "with_social": 4767,
+    "with_social": 4765,
     "with_genre": 3911,
     "with_related": 1599
   },
@@ -779,6 +779,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 62,
+      "first_played": "29 mar 2016",
+      "last_played": "7 nov 2026 · 16:49",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Misty Miller",
       "slug": "misty-miller",
       "plays": 61,
@@ -799,43 +836,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 61,
-      "first_played": "29 mar 2016",
-      "last_played": "5 nov 2026 · 23:11",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -3072,6 +3072,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 37,
+      "first_played": "17 mar 2013",
+      "last_played": "7 nov 2026 · 15:43",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "City of Glass",
       "slug": "city-of-glass",
       "plays": 36,
@@ -3300,41 +3335,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 36,
-      "first_played": "17 mar 2013",
-      "last_played": "6 nov 2026 · 13:37",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
@@ -4532,6 +4532,43 @@
       "profile_complete": false
     },
     {
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
+      "plays": 33,
+      "first_played": "25 jul 2022",
+      "last_played": "7 nov 2026 · 15:03",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Fops",
       "slug": "fops",
       "plays": 33,
@@ -4553,43 +4590,6 @@
       "gallery_checked": true,
       "gallery_images": 0,
       "has_social": true,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Flume/Nick Murphy / Chet Faker",
-      "slug": "flume-nick-murphy-chet-faker",
-      "plays": 32,
-      "first_played": "25 jul 2022",
-      "last_played": "6 nov 2026 · 09:21",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -7854,6 +7854,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 62,
+      "first_played": "29 mar 2016",
+      "last_played": "7 nov 2026 · 16:49",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Misty Miller",
       "slug": "misty-miller",
       "plays": 61,
@@ -7874,43 +7911,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 61,
-      "first_played": "29 mar 2016",
-      "last_played": "5 nov 2026 · 23:11",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -10043,6 +10043,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 37,
+      "first_played": "17 mar 2013",
+      "last_played": "7 nov 2026 · 15:43",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "City of Glass",
       "slug": "city-of-glass",
       "plays": 36,
@@ -10271,41 +10306,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 36,
-      "first_played": "17 mar 2013",
-      "last_played": "6 nov 2026 · 13:37",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
