@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-08T20:44:52.545796+00:00",
+  "generated_at": "2026-11-09T01:56:43.956482+00:00",
   "source_updates": {
-    "artists": "2026-11-08T20:44:45.931938Z",
-    "galleries": "2026-11-08T20:43:37.230272+00:00",
-    "album_art": "2026-11-08T18:29:44.535078+00:00"
+    "artists": "2026-11-09T01:56:37.558632Z",
+    "galleries": "2026-11-09T00:06:33.440923+00:00",
+    "album_art": "2026-11-08T22:28:47.719400+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
     "public_artists": 7922,
     "aliases_normalized": 8000,
-    "with_history": 7880,
+    "with_history": 7881,
     "with_tracks": 7916,
     "without_tracks": 6,
     "catalog_status": {
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1444
+      "yesstreaming_live": 1445
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-08T20:44:45.931938Z"
+      "merged_at": "2026-11-09T01:56:37.558632Z"
     }
   },
   "profile_enrichment": {
@@ -56,8 +56,8 @@
     "missing_profile_bio": 3452,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4374,
-    "core_complete_pct": 55.21,
+    "core_complete": 4375,
+    "core_complete_pct": 55.23,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
     "effective_image": 6967,
     "effective_image_pct": 87.94,
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.69,
     "missing_artwork": 4610,
     "grouped_as_otras": 5922,
-    "with_first_and_last_dates": 17851,
+    "with_first_and_last_dates": 17852,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10700,
     "album_art_cache_missed": 4211
@@ -225,9 +225,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 135,
+      "plays": 136,
       "first_played": "21 nov 2012",
-      "last_played": "30 oct 2026 · 20:50",
+      "last_played": "8 nov 2026 · 18:39",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -573,9 +573,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 68,
+      "plays": 69,
       "first_played": "29 jul 2012",
-      "last_played": "7 nov 2026 · 12:47",
+      "last_played": "8 nov 2026 · 14:56",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -1501,6 +1501,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 48,
+      "first_played": "25 jul 2022",
+      "last_played": "8 nov 2026 · 19:21",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "LostBoy! AKA Jim Kerr",
       "slug": "lostboy-aka-jim-kerr",
       "plays": 48,
@@ -1535,6 +1573,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 48,
+      "first_played": "26 jul 2022",
+      "last_played": "8 nov 2026 · 19:46",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "So Many Wizards",
       "slug": "so-many-wizards",
       "plays": 48,
@@ -1564,82 +1640,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 47,
-      "first_played": "25 jul 2022",
-      "last_played": "7 nov 2026 · 09:15",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 47,
-      "first_played": "26 jul 2022",
-      "last_played": "7 nov 2026 · 20:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3558,19 +3558,21 @@
       "profile_complete": false
     },
     {
-      "name": "M83 feat. Zola Jesus",
-      "slug": "m83-feat-zola-jesus",
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
       "plays": 34,
-      "first_played": "27 jul 2012",
-      "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "history_only",
+      "first_played": "25 jul 2022",
+      "last_played": "8 nov 2026 · 17:42",
+      "catalog_status": "programmed_history",
       "sources": [
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3593,11 +3595,11 @@
       "profile_complete": false
     },
     {
-      "name": "MSTRKRFT feat. John Legend",
-      "slug": "mstrkrft-feat-john-legend",
+      "name": "M83 feat. Zola Jesus",
+      "slug": "m83-feat-zola-jesus",
       "plays": 34,
-      "first_played": "22 jul 2012",
-      "last_played": "29 ago 2014 · 23:59",
+      "first_played": "27 jul 2012",
+      "last_played": "27 feb 2013 · 23:59",
       "catalog_status": "history_only",
       "sources": [
         "lastfm"
@@ -3809,9 +3811,9 @@
     {
       "name": "Jamiroquai/David Morales",
       "slug": "jamiroquai-david-morales",
-      "plays": 47,
+      "plays": 48,
       "first_played": "25 jul 2022",
-      "last_played": "7 nov 2026 · 09:15",
+      "last_played": "8 nov 2026 · 19:21",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3847,9 +3849,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 47,
+      "plays": 48,
       "first_played": "26 jul 2022",
-      "last_played": "7 nov 2026 · 20:23",
+      "last_played": "8 nov 2026 · 19:46",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -4462,6 +4464,43 @@
       "profile_complete": false
     },
     {
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
+      "plays": 34,
+      "first_played": "25 jul 2022",
+      "last_played": "8 nov 2026 · 17:42",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -4510,43 +4549,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Flume/Nick Murphy / Chet Faker",
-      "slug": "flume-nick-murphy-chet-faker",
-      "plays": 33,
-      "first_played": "25 jul 2022",
-      "last_played": "7 nov 2026 · 15:03",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5388,6 +5390,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 22,
+      "first_played": "19 sep 2026",
+      "last_played": "8 nov 2026 · 18:09",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jamiroquai/Beverley Knight",
       "slug": "jamiroquai-beverley-knight",
       "plays": 22,
@@ -5524,41 +5561,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 21,
-      "first_played": "19 sep 2026",
-      "last_played": "6 nov 2026 · 14:19",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6655,6 +6657,41 @@
       "profile_complete": false
     },
     {
+      "name": "Thirteen Senses",
+      "slug": "thirteen-senses",
+      "plays": 17,
+      "first_played": "12 oct 2026",
+      "last_played": "8 nov 2026 · 15:58",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "True Faith, Sculpture Club",
       "slug": "true-faith-sculpture-club",
       "plays": 17,
@@ -7018,41 +7055,6 @@
       "profile_complete": false
     },
     {
-      "name": "Thirteen Senses",
-      "slug": "thirteen-senses",
-      "plays": 16,
-      "first_played": "12 oct 2026",
-      "last_played": "7 nov 2026 · 09:22",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "We Were Evergreen",
       "slug": "we-were-evergreen",
       "plays": 16,
@@ -7302,9 +7304,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 135,
+      "plays": 136,
       "first_played": "21 nov 2012",
-      "last_played": "30 oct 2026 · 20:50",
+      "last_played": "8 nov 2026 · 18:39",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7650,9 +7652,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 68,
+      "plays": 69,
       "first_played": "29 jul 2012",
-      "last_played": "7 nov 2026 · 12:47",
+      "last_played": "8 nov 2026 · 14:56",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -8510,6 +8512,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 48,
+      "first_played": "25 jul 2022",
+      "last_played": "8 nov 2026 · 19:21",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "LostBoy! AKA Jim Kerr",
       "slug": "lostboy-aka-jim-kerr",
       "plays": 48,
@@ -8544,6 +8584,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 48,
+      "first_played": "26 jul 2022",
+      "last_played": "8 nov 2026 · 19:46",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "So Many Wizards",
       "slug": "so-many-wizards",
       "plays": 48,
@@ -8573,82 +8651,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 47,
-      "first_played": "25 jul 2022",
-      "last_played": "7 nov 2026 · 09:15",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 47,
-      "first_played": "26 jul 2022",
-      "last_played": "7 nov 2026 · 20:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -10531,6 +10533,43 @@
       "profile_complete": false
     },
     {
+      "name": "Flume/Nick Murphy / Chet Faker",
+      "slug": "flume-nick-murphy-chet-faker",
+      "plays": 34,
+      "first_played": "25 jul 2022",
+      "last_played": "8 nov 2026 · 17:42",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "M83 feat. Zola Jesus",
       "slug": "m83-feat-zola-jesus",
       "plays": 34,
@@ -10655,40 +10694,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 3,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Baths",
-      "slug": "baths",
-      "plays": 33,
-      "first_played": "2 ago 2012",
-      "last_played": "9 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
       "has_social": true,
       "has_genre": true,
       "related": 0,

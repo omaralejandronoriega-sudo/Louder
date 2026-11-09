@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-11-08T20:44:52.545796+00:00
+Generada: 2026-11-09T01:56:43.956482+00:00
 
 ## Resumen
 
@@ -12,7 +12,7 @@ Generada: 2026-11-08T20:44:52.545796+00:00
 - Sin imagen validada de perfil: 955
 - Sin biografía de perfil: 3452
 - Sin datos de identidad/perfil: 0
-- Fichas core completas: 4374/7922 (55.21%)
+- Fichas core completas: 4375/7922 (55.23%)
 - Con imagen efectiva: 6967/7922 (87.94%)
 - Sin imagen: 955
 - Con biografía efectiva: 4470/7922 (56.43%)
