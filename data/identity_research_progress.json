@@ -1,7 +1,7 @@
 {
-  "cursor": 2720,
+  "cursor": 2740,
   "total_catalog": 7988,
-  "updated_at": "2026-11-09T09:44:04.992232+00:00",
+  "updated_at": "2026-11-09T20:42:07.284347+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -48494,6 +48494,347 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 5
+    },
+    "gilbere forte'": {
+      "name": "Gilbere Forte'",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gillette": {
+      "name": "Gillette",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "gin blossoms": {
+      "name": "Gin Blossoms",
+      "status": "identity_candidate_only",
+      "mbid": "1c42b705-d3fc-452e-93ee-d0030bdd70f3",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/1c42b705-d3fc-452e-93ee-d0030bdd70f3",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gin wigmore": {
+      "name": "Gin Wigmore",
+      "status": "identity_candidate_only",
+      "mbid": "cb0b7933-a5bc-48dc-a36b-00315d12ca8c",
+      "type": "Person",
+      "country": "NZ",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "blues rock",
+        "pop rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/cb0b7933-a5bc-48dc-a36b-00315d12ca8c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GinWigmore"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ginwigmore/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q441908"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC89m7zFv8ozNUvU4ucXXbIQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCFUopht2bewGG8ph8ULCUUg"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "1986-06-06"
+      }
+    },
+    "ginger and the ghost": {
+      "name": "Ginger and The Ghost",
+      "status": "identity_candidate_only",
+      "mbid": "e3105e14-9f74-4ed7-9394-98be17ada315",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e3105e14-9f74-4ed7-9394-98be17ada315",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gingerandtheghost"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gingerandtheghost"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/gingerandtheghost"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2012"
+      }
+    },
+    "ginger ninja": {
+      "name": "Ginger Ninja",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "ginger root": {
+      "name": "Ginger Root",
+      "status": "identity_candidate_only",
+      "mbid": "22dc2681-4260-437e-a570-c4e92e011f68",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "city pop",
+        "funk",
+        "indie pop",
+        "j-pop",
+        "soul",
+        "synth funk"
+      ],
+      "source": "https://musicbrainz.org/artist/22dc2681-4260-437e-a570-c4e92e011f68",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gingerroot.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gingerrootmusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gingerrootmusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gingerrootmusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q104843780"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCkel1hn6h7FEtlCQnfcLctg"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1995-11-26"
+      }
+    },
+    "ginger snaps": {
+      "name": "Ginger Snaps",
+      "status": "identity_candidate_only",
+      "mbid": "747d774a-8061-4156-b8c5-f096ce7388fc",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Jay Brook",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/747d774a-8061-4156-b8c5-f096ce7388fc",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gingersnapspop"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gingersnapspop/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2016-04-01"
+      }
+    },
+    "giraffage": {
+      "name": "Giraffage",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "girl and girl": {
+      "name": "Girl and Girl",
+      "status": "identity_candidate_only",
+      "mbid": "e46bfd13-f271-494e-a4e9-f535c76a70f0",
+      "type": "Group",
+      "country": "AU",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e46bfd13-f271-494e-a4e9-f535c76a70f0",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://girlandgirl.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/girlandgirl.music"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "girl as wave": {
+      "name": "Girl As Wave",
+      "status": "identity_candidate_only",
+      "mbid": "a67ebe67-070b-4c69-8fe6-0b1f3e67b8fb",
+      "type": "",
+      "country": "US",
+      "disambiguation": "project of NY based artist, Marci Elizabeth",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a67ebe67-070b-4c69-8fe6-0b1f3e67b8fb",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "girl band": {
+      "name": "Girl Band",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "girl group": {
+      "name": "Girl Group",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "girl in red": {
+      "name": "girl in red",
+      "status": "identity_candidate_only",
+      "mbid": "4ae429fe-735c-4968-8253-a591421b1bd0",
+      "type": "Person",
+      "country": "NO",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "avant-garde",
+        "bedroom pop",
+        "dream pop",
+        "indie pop",
+        "indie rock",
+        "lo-fi",
+        "pop",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/4ae429fe-735c-4968-8253-a591421b1bd0",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://girlinred.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/girlinred"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/girlinred/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/girlin.red/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/lyfsuxx"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q62140662"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCwlHDQ83jgF1crd6XXzSmIA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCmNtyqQl03eWyvikCMbO3fA"
+        }
+      ],
+      "life_span": {
+        "begin": "1999-02-16",
+        "ended": false,
+        "end": null
+      }
+    },
+    "girl scout": {
+      "name": "Girl Scout",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "girl tones": {
+      "name": "Girl Tones",
+      "status": "identity_candidate_only",
+      "mbid": "4771a96d-bd64-4da2-9acc-da68e52dbd35",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Power pop from Kentucky",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/4771a96d-bd64-4da2-9acc-da68e52dbd35",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/girl.tones/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCkSXAOzHryZojjJ6h-_EqAw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2017",
+        "ended": false
+      }
+    },
+    "girlfriends / jasiah": {
+      "name": "girlfriends / Jasiah",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "girlfriends / travis barker": {
+      "name": "girlfriends / Travis Barker",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "girlfriends and boyfriends": {
+      "name": "Girlfriends and Boyfriends",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "girlhood": {
+      "name": "Girlhood",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
     }
   }
 }
