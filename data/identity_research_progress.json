@@ -1,7 +1,7 @@
 {
-  "cursor": 2800,
+  "cursor": 2820,
   "total_catalog": 7988,
-  "updated_at": "2026-11-10T18:39:37.346125+00:00",
+  "updated_at": "2026-11-10T23:43:32.157270+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -50011,6 +50011,431 @@
     },
     "goldensuns / warpaint": {
       "name": "Goldensuns / Warpaint",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "goldfish": {
+      "name": "Goldfish",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
+    },
+    "goldfrapp": {
+      "name": "Goldfrapp",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "goldie scott": {
+      "name": "Goldie Scott",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "goldpark": {
+      "name": "Goldpark",
+      "status": "identity_candidate_only",
+      "mbid": "2db49346-4327-4fdd-89bb-c55bfca5b6d8",
+      "type": "",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/2db49346-4327-4fdd-89bb-c55bfca5b6d8",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/goldparkband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/goldparkband/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC-mZfecqrOIrgNd033Hsx-A"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2020",
+        "ended": false
+      }
+    },
+    "goldroom": {
+      "name": "Goldroom",
+      "status": "identity_candidate_only",
+      "mbid": "73d91e4c-88f7-4da5-8d18-06fbb4bfcca3",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/73d91e4c-88f7-4da5-8d18-06fbb4bfcca3",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://goldroom.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/goldroomtunes"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/goldroom"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q19564296"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCb5bVOsL8yeR0ah0lyjrwSQ"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "goldroom ft. mammals": {
+      "name": "Goldroom Ft. Mammals",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "goldspot": {
+      "name": "Goldspot",
+      "status": "identity_candidate_only",
+      "mbid": "80888ccc-c2e1-4fb6-a286-5b68a756a768",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/80888ccc-c2e1-4fb6-a286-5b68a756a768",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5580330"
+        }
+      ],
+      "life_span": {
+        "begin": "2001",
+        "end": null,
+        "ended": false
+      }
+    },
+    "golomb": {
+      "name": "Golomb",
+      "status": "identity_candidate_only",
+      "mbid": "e85d97b9-b6bc-4232-9f41-0bc50771e556",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Alternative rock from Columbus, Ohio.",
+      "genres": [
+        "alternative rock",
+        "experimental rock"
+      ],
+      "source": "https://musicbrainz.org/artist/e85d97b9-b6bc-4232-9f41-0bc50771e556",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://golomb.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "gomez": {
+      "name": "Gomez",
+      "status": "identity_candidate_only",
+      "mbid": "304cdd9d-a04e-4eb2-865c-980a553a0efd",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "UK indie rock band",
+      "genres": [
+        "alternative rock",
+        "blues rock",
+        "folk rock",
+        "indie rock",
+        "neo-psychedelia",
+        "post-britpop"
+      ],
+      "source": "https://musicbrainz.org/artist/304cdd9d-a04e-4eb2-865c-980a553a0efd",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gomez"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gomeztheband"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1536853"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCobsNpc_tFJ-7o08vHeUumQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1996",
+        "ended": false
+      }
+    },
+    "gondola": {
+      "name": "Gondola",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "gone by june": {
+      "name": "Gone By June",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "goo goo dolls": {
+      "name": "Goo Goo Dolls",
+      "status": "identity_candidate_only",
+      "mbid": "e2c00c56-8365-4160-9f40-a64682917633",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "acoustic rock",
+        "alternative rock",
+        "hardcore punk",
+        "jangle pop",
+        "pop punk",
+        "pop rock",
+        "post-grunge",
+        "power pop",
+        "punk rock",
+        "rock",
+        "soft rock"
+      ],
+      "source": "https://musicbrainz.org/artist/e2c00c56-8365-4160-9f40-a64682917633",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/googoodolls"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/googoodollsofficial/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/thegoogoodolls"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q730046"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Goo_Goo_Dolls"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCiEKDhv4v0YTc-ZtpABkXZA"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCjOkbXu7vYeeQrA7R3-OfXQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1986",
+        "ended": false
+      }
+    },
+    "good charlotte": {
+      "name": "Good Charlotte",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "good dangers": {
+      "name": "Good Dangers",
+      "status": "identity_candidate_only",
+      "mbid": "cb53ddb7-30b3-4d92-a5d9-1a2337f3338b",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/cb53ddb7-30b3-4d92-a5d9-1a2337f3338b",
+      "evidence_links": [],
+      "life_span": {
+        "begin": "2011",
+        "end": null,
+        "ended": true
+      }
+    },
+    "good for grapes": {
+      "name": "Good For Grapes",
+      "status": "identity_candidate_only",
+      "mbid": "ea26e02f-fdbf-4808-b7d6-af9e4456c0b1",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ea26e02f-fdbf-4808-b7d6-af9e4456c0b1",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5583103"
+        }
+      ],
+      "life_span": {
+        "begin": "2010-09",
+        "end": null,
+        "ended": false
+      }
+    },
+    "good graeff": {
+      "name": "Good Graeff",
+      "status": "identity_candidate_only",
+      "mbid": "24cf67a6-d6e8-4342-9b50-62ac99c5f243",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/24cf67a6-d6e8-4342-9b50-62ac99c5f243",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GoodGraeff"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/GoodGraeff/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "good kid": {
+      "name": "Good Kid",
+      "status": "identity_candidate_only",
+      "mbid": "adab38f4-297d-4af8-9450-4e84697240e7",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "indie pop",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/adab38f4-297d-4af8-9450-4e84697240e7",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://goodkid.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/goodkidband"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/goodkidband/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q108492453"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCW2QxqqE_j-utMTBq5Oh2fA"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@goodkiddlc"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCbI9iBN07igKwQQ9bJ2Mk4g"
+        }
+      ],
+      "life_span": {
+        "begin": "2015",
+        "end": null,
+        "ended": false
+      }
+    },
+    "good lekker": {
+      "name": "Good Lekker",
+      "status": "identity_candidate_only",
+      "mbid": "21d10827-f1b0-4513-997e-84df93490a8e",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Indie pop—Wollongong NSW Australia",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/21d10827-f1b0-4513-997e-84df93490a8e",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://goodlekker.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/goodlekker"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2017-04"
+      }
+    },
+    "good looks": {
+      "name": "Good Looks",
+      "status": "identity_candidate_only",
+      "mbid": "64d57dc4-ad42-4489-b62e-572d8c7f1334",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Austin band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/64d57dc4-ad42-4489-b62e-572d8c7f1334",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://goodlooksband.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/goodlooksmusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/goodlooksband/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/goodlooks-music"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCS0V2enpipik6AvCx89Hh_A"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "good morning": {
+      "name": "Good Morning",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
