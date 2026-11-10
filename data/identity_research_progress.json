@@ -1,7 +1,7 @@
 {
-  "cursor": 2760,
+  "cursor": 2780,
   "total_catalog": 7988,
-  "updated_at": "2026-11-10T02:56:47.036030+00:00",
+  "updated_at": "2026-11-10T11:05:19.361654+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -49192,6 +49192,406 @@
     },
     "glass random": {
       "name": "Glass Random",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "glass spells": {
+      "name": "Glass Spells",
+      "status": "identity_candidate_only",
+      "mbid": "3c2fd8b8-2438-482a-b895-73c256e9601a",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/3c2fd8b8-2438-482a-b895-73c256e9601a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://glassspells.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GlassSpells"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/glass_spells/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "glass vaults": {
+      "name": "Glass Vaults",
+      "status": "identity_candidate_only",
+      "mbid": "41c4afdd-f1d2-43df-853d-b02142004c7c",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "New Zealand shoegaze",
+      "genres": [
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/41c4afdd-f1d2-43df-853d-b02142004c7c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://glassvaults.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/glassvaults"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q30647301"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2010",
+        "end": null
+      }
+    },
+    "glassbody": {
+      "name": "Glassbody",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "glasvegas": {
+      "name": "Glasvegas",
+      "status": "identity_candidate_only",
+      "mbid": "da785f6e-86e2-4efa-aca6-6c3cbd15d91c",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "indie rock",
+        "pop rock",
+        "psychedelic rock",
+        "rock",
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/da785f6e-86e2-4efa-aca6-6c3cbd15d91c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/glasvegas"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/glasvegas"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q740692"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCThb6-4_Nv2liich11QBezQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": "2005"
+      }
+    },
+    "glazyhaze": {
+      "name": "Glazyhaze",
+      "status": "identity_candidate_only",
+      "mbid": "dc11bae7-96a5-4e60-a1e1-41902b0b7d60",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/dc11bae7-96a5-4e60-a1e1-41902b0b7d60",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://glazyhazemusic.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/glazyhazeband/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC9itnGubXSOsY7QUxc1xIXA"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2021",
+        "ended": false
+      }
+    },
+    "gleemer": {
+      "name": "Gleemer",
+      "status": "identity_candidate_only",
+      "mbid": "a07ab1a4-0877-42b0-879b-3d1005af3fd4",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "emo",
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a07ab1a4-0877-42b0-879b-3d1005af3fd4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gleemer.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gleemergleemer"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gleemerband/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gleemer"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2011"
+      }
+    },
+    "glenn danzig": {
+      "name": "Glenn Danzig",
+      "status": "identity_candidate_only",
+      "mbid": "f0bec136-82e8-4fcb-8172-421d9c542d09",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "ambient",
+        "classical",
+        "dark ambient",
+        "gothic",
+        "metal",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/f0bec136-82e8-4fcb-8172-421d9c542d09",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q354654"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1955-06-23"
+      }
+    },
+    "glimmer": {
+      "name": "Glimmer",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "glimpse": {
+      "name": "Glimpse",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "glitterer": {
+      "name": "Glitterer",
+      "status": "identity_candidate_only",
+      "mbid": "fb29a165-203d-497b-9a01-fc48f4dba65c",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/fb29a165-203d-497b-9a01-fc48f4dba65c",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://glitterer.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/glitterererer"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/glitterererer/"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Glitterer"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "glo-worm": {
+      "name": "Glo-Worm",
+      "status": "identity_candidate_only",
+      "mbid": "9eb696e6-0f0f-4f46-90ef-fd67e4627f55",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/9eb696e6-0f0f-4f46-90ef-fd67e4627f55",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "glom": {
+      "name": "Glom",
+      "status": "identity_candidate_only",
+      "mbid": "17cde238-cfd7-4ec3-9bf9-69e9daf9840a",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/17cde238-cfd7-4ec3-9bf9-69e9daf9840a",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://newyorkglom.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/newyorkglom/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@newyorkglom"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "gloss": {
+      "name": "Gloss",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "glove": {
+      "name": "Glove",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "glowbug": {
+      "name": "Glowbug",
+      "status": "identity_candidate_only",
+      "mbid": "a7927778-48ea-4c30-a868-e44763e4af53",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "US | electronic-rock",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a7927778-48ea-4c30-a868-e44763e4af53",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://glowbug.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GlowbugOfficial"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5572244"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1986-03-03",
+        "ended": false
+      }
+    },
+    "glycerine queens": {
+      "name": "Glycerine Queens",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "glüme": {
+      "name": "Glüme",
+      "status": "identity_candidate_only",
+      "mbid": "86668f64-a620-4a92-8f6f-41047543133c",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Italians Do It Better singer",
+      "genres": [
+        "electronic"
+      ],
+      "source": "https://musicbrainz.org/artist/86668f64-a620-4a92-8f6f-41047543133c",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "go go charlton": {
+      "name": "Go Go Charlton",
+      "status": "identity_candidate_only",
+      "mbid": "617ecd7c-df33-4b2f-a3c0-c9229ec95364",
+      "type": "Group",
+      "country": "FR",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/617ecd7c-df33-4b2f-a3c0-c9229ec95364",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/pages/Go-Go-Charlton/10419330775"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "go hawaii": {
+      "name": "Go Hawaii",
+      "status": "identity_candidate_only",
+      "mbid": "745a04ff-e530-49c9-bf32-15695a515986",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/745a04ff-e530-49c9-bf32-15695a515986",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "go no-go": {
+      "name": "GO NO-GO",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
