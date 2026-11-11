@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T09:49:27.493219+00:00",
+  "generated_at": "2026-11-11T18:01:57.275245+00:00",
   "source_updates": {
-    "artists": "2026-11-11T09:49:22.273816Z",
-    "galleries": "2026-11-11T08:18:54.242715+00:00",
-    "album_art": "2026-11-11T06:04:24.688317+00:00"
+    "artists": "2026-11-11T18:01:52.218930Z",
+    "galleries": "2026-11-11T16:21:10.027800+00:00",
+    "album_art": "2026-11-11T14:10:46.959145+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,31 +39,31 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-11T09:49:22.273816Z"
+      "merged_at": "2026-11-11T18:01:52.218930Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4396,
-    "real_profile_missing": 3526,
-    "real_profile_complete_pct": 55.49,
+    "real_profile_complete": 4397,
+    "real_profile_missing": 3525,
+    "real_profile_complete_pct": 55.5,
     "profile_status": {
-      "complete": 4160,
-      "partial": 2873,
+      "complete": 4161,
+      "partial": 2872,
       "not_found": 831,
       "legacy": 58
     },
-    "missing_validated_profile_image": 952,
+    "missing_validated_profile_image": 951,
     "missing_profile_bio": 3452,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4376,
-    "core_complete_pct": 55.24,
+    "core_complete": 4377,
+    "core_complete_pct": 55.25,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6970,
-    "effective_image_pct": 87.98,
+    "effective_image": 6971,
+    "effective_image_pct": 88.0,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5325,
-    "missing_image": 952,
+    "image_gallery_fallback": 5326,
+    "missing_image": 951,
     "effective_bio": 4470,
     "effective_bio_pct": 56.43,
     "bio_direct_artist": 1026,
@@ -72,7 +72,7 @@
     "missing_bio": 3452,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.27,
-    "gallery_with_images": 6970,
+    "gallery_with_images": 6971,
     "with_social": 4767,
     "with_genre": 3911,
     "with_related": 1599
@@ -573,9 +573,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 69,
+      "plays": 70,
       "first_played": "29 jul 2012",
-      "last_played": "8 nov 2026 · 14:56",
+      "last_played": "11 nov 2026 · 11:17",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -709,6 +709,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 63,
+      "first_played": "29 mar 2016",
+      "last_played": "11 nov 2026 · 07:40",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -768,43 +805,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 8,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 62,
-      "first_played": "29 mar 2016",
-      "last_played": "7 nov 2026 · 16:49",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -2416,6 +2416,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 40,
+      "first_played": "17 mar 2013",
+      "last_played": "11 nov 2026 · 07:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Popopopops",
       "slug": "the-popopopops",
       "plays": 40,
@@ -2612,41 +2647,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 39,
-      "first_played": "17 mar 2013",
-      "last_played": "9 nov 2026 · 18:33",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -5898,6 +5898,41 @@
       "profile_complete": false
     },
     {
+      "name": "Thirteen Senses",
+      "slug": "thirteen-senses",
+      "plays": 20,
+      "first_played": "12 oct 2026",
+      "last_played": "11 nov 2026 · 07:06",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Alan Wilder/Steve Lyon",
       "slug": "depeche-mode-alan-wilder-steve-lyon",
       "plays": 19,
@@ -6111,41 +6146,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Thirteen Senses",
-      "slug": "thirteen-senses",
-      "plays": 19,
-      "first_played": "12 oct 2026",
-      "last_played": "10 nov 2026 · 12:46",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
       ],
       "profile_complete": false
     },
@@ -6657,6 +6657,44 @@
       "profile_complete": false
     },
     {
+      "name": "Bullion/Carly Rae Jepsen",
+      "slug": "bullion-carly-rae-jepsen",
+      "plays": 17,
+      "first_played": "4 mar 2025",
+      "last_played": "11 nov 2026 · 07:09",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Dent May/Jordana",
       "slug": "dent-may-jordana",
       "plays": 17,
@@ -6956,44 +6994,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bullion/Carly Rae Jepsen",
-      "slug": "bullion-carly-rae-jepsen",
-      "plays": 16,
-      "first_played": "4 mar 2025",
-      "last_played": "8 nov 2026 · 04:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7651,9 +7651,9 @@
     {
       "name": "No Ceremony",
       "slug": "no-ceremony",
-      "plays": 69,
+      "plays": 70,
       "first_played": "29 jul 2012",
-      "last_played": "8 nov 2026 · 14:56",
+      "last_played": "11 nov 2026 · 11:17",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7787,6 +7787,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 63,
+      "first_played": "29 mar 2016",
+      "last_played": "11 nov 2026 · 07:40",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -7846,43 +7883,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 8,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 62,
-      "first_played": "29 mar 2016",
-      "last_played": "7 nov 2026 · 16:49",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
       "missing_core": [
         "bio"
       ],
@@ -9390,6 +9390,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 40,
+      "first_played": "17 mar 2013",
+      "last_played": "11 nov 2026 · 07:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Popopopops",
       "slug": "the-popopopops",
       "plays": 40,
@@ -9586,41 +9621,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 39,
-      "first_played": "17 mar 2013",
-      "last_played": "9 nov 2026 · 18:33",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
