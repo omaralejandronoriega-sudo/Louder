@@ -1,7 +1,7 @@
 {
-  "cursor": 2860,
+  "cursor": 2880,
   "total_catalog": 7988,
-  "updated_at": "2026-11-11T14:14:13.972098+00:00",
+  "updated_at": "2026-11-11T21:32:25.986303+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -51181,6 +51181,372 @@
         "end": null,
         "ended": false,
         "begin": "1969"
+      }
+    },
+    "grandaddy": {
+      "name": "Grandaddy",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "grateful dead": {
+      "name": "Grateful Dead",
+      "status": "identity_candidate_only",
+      "mbid": "6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "blues rock",
+        "classic rock",
+        "country rock",
+        "folk rock",
+        "jam band",
+        "psychedelic rock",
+        "rock",
+        "roots rock"
+      ],
+      "source": "https://musicbrainz.org/artist/6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gratefuldead"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gratefuldead/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gratefuldead"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q212533"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UC9dWluHyEwvIj5NNs7KkJ0A"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/gratefulvideo"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC9dWluHyEwvIj5NNs7KkJ0A"
+        }
+      ],
+      "life_span": {
+        "end": "1995",
+        "begin": "1965",
+        "ended": true
+      }
+    },
+    "grave flowers bongo band": {
+      "name": "Grave Flowers Bongo Band",
+      "status": "identity_candidate_only",
+      "mbid": "3c1dd9be-bd25-40b7-bade-27f728c2635d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3c1dd9be-bd25-40b7-bade-27f728c2635d",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "grave goods": {
+      "name": "Grave Goods",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "graveyard club": {
+      "name": "Graveyard Club",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "graveyard lovers": {
+      "name": "Graveyard Lovers",
+      "status": "identity_candidate_only",
+      "mbid": "013509bd-a466-4341-a7d3-247a41dc2b72",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/013509bd-a466-4341-a7d3-247a41dc2b72",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GraveyardLovers"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/GraveyardLovers2011"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "grayson matthews": {
+      "name": "Grayson Matthews",
+      "status": "identity_candidate_only",
+      "mbid": "ba0269a4-7778-49f4-a6dd-cb86d64b523d",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ba0269a4-7778-49f4-a6dd-cb86d64b523d",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "grazer": {
+      "name": "Grazer",
+      "status": "identity_candidate_only",
+      "mbid": "77a85d58-875c-46de-b5bf-0239d1ae4584",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/77a85d58-875c-46de-b5bf-0239d1ae4584",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://grazer2.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/grazer.band"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/grazer.band/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2020",
+        "ended": false
+      }
+    },
+    "great australian bank": {
+      "name": "Great Australian Bank",
+      "status": "identity_candidate_only",
+      "mbid": "ab4fcccf-11e0-4ad6-86b4-ecc71141bdaa",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/ab4fcccf-11e0-4ad6-86b4-ecc71141bdaa",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://greataustralianbank.bandcamp.com/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "great good fine ok": {
+      "name": "Great Good Fine OK",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "great grandpa": {
+      "name": "Great Grandpa",
+      "status": "identity_candidate_only",
+      "mbid": "fe920df0-e56d-4556-84c4-11f530ec4abc",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/fe920df0-e56d-4556-84c4-11f530ec4abc",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://greatgrandpa.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/profile.php?id=378813545616076"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gr8_grandpa/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/double-double-whammy/04-mono-no-aware"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q48816661"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2014",
+        "end": null
+      }
+    },
+    "great lake swimmers": {
+      "name": "Great Lake Swimmers",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "great news": {
+      "name": "Great News",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "great northern": {
+      "name": "Great Northern",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "great peacock": {
+      "name": "Great Peacock",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "great plain sundance": {
+      "name": "Great Plain Sundance",
+      "status": "identity_candidate_only",
+      "mbid": "6089cb02-876a-41e1-a30e-99d071422154",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6089cb02-876a-41e1-a30e-99d071422154",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/greatplainsun"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/greatplainsundance"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "greedi": {
+      "name": "Greedi",
+      "status": "identity_candidate_only",
+      "mbid": "c5f24d75-178e-4d6d-a5ea-1c5222bfa5af",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "Alternative Rapper",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c5f24d75-178e-4d6d-a5ea-1c5222bfa5af",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gr333di/"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2003-02-13",
+        "end": null
+      }
+    },
+    "greek": {
+      "name": "greek",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "green apple quick step": {
+      "name": "Green Apple Quick Step",
+      "status": "identity_candidate_only",
+      "mbid": "3b5869cb-0051-4ecb-9812-db4585c17d2d",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/3b5869cb-0051-4ecb-9812-db4585c17d2d",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5602293"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "begin": "1992",
+        "end": "1997"
+      }
+    },
+    "green day": {
+      "name": "Green Day",
+      "status": "identity_candidate_only",
+      "mbid": "084308bd-1654-436f-ba03-df6697104e19",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "pop",
+        "pop punk",
+        "pop rock",
+        "power pop",
+        "punk",
+        "punk rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/084308bd-1654-436f-ba03-df6697104e19",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/GreenDay"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/greenday/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/greenday"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q47871"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCqC_GY2ZiENFz2pwL0cSfAw"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UC4JNeITH4P7G51C1hJoG6vQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1989",
+        "end": null
       }
     }
   }
