@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T02:13:23.210055+00:00",
+  "generated_at": "2026-11-11T09:49:27.493219+00:00",
   "source_updates": {
-    "artists": "2026-11-11T02:13:18.022160Z",
-    "galleries": "2026-11-11T01:30:50.689916+00:00",
-    "album_art": "2026-11-10T23:43:57.336975+00:00"
+    "artists": "2026-11-11T09:49:22.273816Z",
+    "galleries": "2026-11-11T08:18:54.242715+00:00",
+    "album_art": "2026-11-11T06:04:24.688317+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-11T02:13:18.022160Z"
+      "merged_at": "2026-11-11T09:49:22.273816Z"
     }
   },
   "profile_enrichment": {
@@ -988,6 +988,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 59,
+      "first_played": "14 jul 2012",
+      "last_played": "10 nov 2026 · 23:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -1079,41 +1114,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 58,
-      "first_played": "14 jul 2012",
-      "last_played": "9 nov 2026 · 09:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -2310,6 +2310,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 42,
+      "first_played": "22 ago 2022",
+      "last_played": "10 nov 2026 · 23:38",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pepper",
       "slug": "pepper",
       "plays": 42,
@@ -2339,44 +2377,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 41,
-      "first_played": "22 ago 2022",
-      "last_played": "9 nov 2026 · 15:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -4105,9 +4105,9 @@
     {
       "name": "Gorillaz/Neneh Cherry",
       "slug": "gorillaz-neneh-cherry",
-      "plays": 41,
+      "plays": 42,
       "first_played": "22 ago 2022",
-      "last_played": "9 nov 2026 · 15:59",
+      "last_played": "10 nov 2026 · 23:38",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -5824,6 +5824,44 @@
       "profile_complete": false
     },
     {
+      "name": "Liam Gallagher/John Squire",
+      "slug": "liam-gallagher-john-squire",
+      "plays": 20,
+      "first_played": "16 mar 2025",
+      "last_played": "11 nov 2026 · 01:08",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Louder En Vivo",
       "slug": "louder-en-vivo",
       "plays": 20,
@@ -5937,44 +5975,6 @@
       "plays": 19,
       "first_played": "4 mar 2025",
       "last_played": "5 nov 2026 · 16:36",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Liam Gallagher/John Squire",
-      "slug": "liam-gallagher-john-squire",
-      "plays": 19,
-      "first_played": "16 mar 2025",
-      "last_played": "6 nov 2026 · 18:41",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -6186,6 +6186,43 @@
       "profile_complete": false
     },
     {
+      "name": "Bragolin/Adam Tristar",
+      "slug": "bragolin-adam-tristar",
+      "plays": 18,
+      "first_played": "4 sep 2026",
+      "last_played": "11 nov 2026 · 00:05",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Celista",
       "slug": "celista",
       "plays": 18,
@@ -6280,6 +6317,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Dina Summer, Kalipo, Local Suicide",
+      "slug": "dina-summer-kalipo-local-suicide",
+      "plays": 18,
+      "first_played": "7 sep 2026",
+      "last_played": "11 nov 2026 · 02:06",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 1,
       "missing_core": [
         "image",
         "bio"
@@ -6583,43 +6657,6 @@
       "profile_complete": false
     },
     {
-      "name": "Bragolin/Adam Tristar",
-      "slug": "bragolin-adam-tristar",
-      "plays": 17,
-      "first_played": "4 sep 2026",
-      "last_played": "9 nov 2026 · 04:44",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Dent May/Jordana",
       "slug": "dent-may-jordana",
       "plays": 17,
@@ -6658,36 +6695,34 @@
       "profile_complete": false
     },
     {
-      "name": "Dina Summer, Kalipo, Local Suicide",
-      "slug": "dina-summer-kalipo-local-suicide",
+      "name": "Girl Apocrypha",
+      "slug": "girl-apocrypha",
       "plays": 17,
-      "first_played": "7 sep 2026",
-      "last_played": "7 nov 2026 · 05:11",
-      "catalog_status": "",
+      "first_played": "19 sep 2026",
+      "last_played": "11 nov 2026 · 01:40",
+      "catalog_status": "live_only",
       "sources": [
-        "wp_db",
-        "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
       "bio_source": "",
-      "gallery_checked": true,
+      "gallery_checked": false,
       "gallery_images": 0,
       "has_social": false,
       "has_genre": false,
-      "related": 1,
+      "related": 0,
       "missing_core": [
         "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "not_found",
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6974,41 +7009,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Girl Apocrypha",
-      "slug": "girl-apocrypha",
-      "plays": 16,
-      "first_played": "19 sep 2026",
-      "last_played": "9 nov 2026 · 19:10",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8032,6 +8032,41 @@
       "profile_complete": false
     },
     {
+      "name": "Waylayers",
+      "slug": "waylayers",
+      "plays": 59,
+      "first_played": "14 jul 2012",
+      "last_played": "10 nov 2026 · 23:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Your Nature",
       "slug": "your-nature",
       "plays": 59,
@@ -8123,41 +8158,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Waylayers",
-      "slug": "waylayers",
-      "plays": 58,
-      "first_played": "14 jul 2012",
-      "last_played": "9 nov 2026 · 09:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -9284,6 +9284,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 42,
+      "first_played": "22 ago 2022",
+      "last_played": "10 nov 2026 · 23:38",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pepper",
       "slug": "pepper",
       "plays": 42,
@@ -9313,44 +9351,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 41,
-      "first_played": "22 ago 2022",
-      "last_played": "9 nov 2026 · 15:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
