@@ -1,7 +1,7 @@
 {
-  "cursor": 2820,
+  "cursor": 2840,
   "total_catalog": 7988,
-  "updated_at": "2026-11-10T23:43:32.157270+00:00",
+  "updated_at": "2026-11-11T06:08:06.373290+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -50438,6 +50438,329 @@
       "name": "Good Morning",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "good neighbours": {
+      "name": "Good Neighbours",
+      "status": "identity_candidate_only",
+      "mbid": "a84a3df1-a873-4be9-b6ff-4238393d46d7",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/a84a3df1-a873-4be9-b6ff-4238393d46d7",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/wearegoodneighbours"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/wearegoodneighbours/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/good-neighbours"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q133568394"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCMFMFVgO4IKiSlJDbdZmINQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2023",
+        "ended": false
+      }
+    },
+    "good shoes": {
+      "name": "Good Shoes",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "goodbooks": {
+      "name": "GoodBooks",
+      "status": "identity_candidate_only",
+      "mbid": "edc26f67-c3a8-40f8-832b-15560bca413f",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/edc26f67-c3a8-40f8-832b-15560bca413f",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5582398"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "goodnight lenin": {
+      "name": "Goodnight Lenin",
+      "status": "identity_candidate_only",
+      "mbid": "6b9df37e-6d22-45b3-b504-f1c24da0ec41",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/6b9df37e-6d22-45b3-b504-f1c24da0ec41",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "goon": {
+      "name": "GOON",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "gorgeous bully": {
+      "name": "Gorgeous Bully",
+      "status": "identity_candidate_only",
+      "mbid": "fd93b336-a4d5-4fe1-a3b8-bf4f1ce99c4d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/fd93b336-a4d5-4fe1-a3b8-bf4f1ce99c4d",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gorgeousbully.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gorgeousbullyband"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "gorgon city": {
+      "name": "Gorgon City",
+      "status": "identity_candidate_only",
+      "mbid": "ba8aaa28-2de4-4d5c-824e-1e9d49235c55",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "deep house",
+        "electronic",
+        "house"
+      ],
+      "source": "https://musicbrainz.org/artist/ba8aaa28-2de4-4d5c-824e-1e9d49235c55",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gorgoncity"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gorgoncity/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gorgon-city"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16839700"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/GorgonCityTv"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2012"
+      }
+    },
+    "gorgon city feat. laura welsh": {
+      "name": "Gorgon City feat. Laura Welsh",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz": {
+      "name": "Gorillaz",
+      "status": "identity_candidate_only",
+      "mbid": "e21857d5-3256-4547-afb3-4b6ded592596",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "virtual band",
+      "genres": [
+        "alternative dance",
+        "alternative hip hop",
+        "alternative pop",
+        "alternative rock",
+        "art pop",
+        "bassline",
+        "breakbeat",
+        "breaks",
+        "dance",
+        "disco",
+        "electronic",
+        "electronica",
+        "electropop",
+        "experimental",
+        "future bass",
+        "hip hop",
+        "indie rock",
+        "latin",
+        "pop",
+        "pop rock",
+        "rock",
+        "synth-pop",
+        "tech house",
+        "trap",
+        "trip hop",
+        "uk garage"
+      ],
+      "source": "https://musicbrainz.org/artist/e21857d5-3256-4547-afb3-4b6ded592596",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gorillaz.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Gorillaz"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gorillaz/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gorillaz"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q189991"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCfIXdjDQH9Fau7y99_Orpjw"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/GorillazVEVO"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCNIV5B_aJnLrKDSnW_MOmcQ"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "1999",
+        "ended": false
+      }
+    },
+    "gorillaz / tame impala / bootie brown": {
+      "name": "Gorillaz / Tame Impala / Bootie Brown",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz / thundercat": {
+      "name": "Gorillaz / Thundercat",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz, idles": {
+      "name": "Gorillaz, IDLES",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz, sparks": {
+      "name": "Gorillaz, Sparks",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz/ robert smith": {
+      "name": "Gorillaz/ Robert Smith",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz/bobby womack/mos def": {
+      "name": "Gorillaz/Bobby Womack/Mos Def",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz/dram": {
+      "name": "Gorillaz/DRAM",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz/jehnny beth": {
+      "name": "Gorillaz/Jehnny Beth",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorillaz/neneh cherry": {
+      "name": "Gorillaz/Neneh Cherry",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gorky park": {
+      "name": "Gorky Park",
+      "status": "identity_candidate_only",
+      "mbid": "72de01b4-59ea-45d2-9975-6239ce031072",
+      "type": "Group",
+      "country": "RU",
+      "disambiguation": "",
+      "genres": [
+        "glam metal"
+      ],
+      "source": "https://musicbrainz.org/artist/72de01b4-59ea-45d2-9975-6239ce031072",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q983830"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCD0dnf4i3GidlgkE3ZYkHsA"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1987",
+        "end": null
+      }
+    },
+    "gossip": {
+      "name": "Gossip",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 8
     }
   }
 }
