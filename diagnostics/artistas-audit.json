@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-10T20:59:16.454976+00:00",
+  "generated_at": "2026-11-11T02:13:23.210055+00:00",
   "source_updates": {
-    "artists": "2026-11-10T20:59:11.059744Z",
-    "galleries": "2026-11-10T15:53:08.803085+00:00",
-    "album_art": "2026-11-10T18:39:22.142446+00:00"
+    "artists": "2026-11-11T02:13:18.022160Z",
+    "galleries": "2026-11-11T01:30:50.689916+00:00",
+    "album_art": "2026-11-10T23:43:57.336975+00:00"
   },
   "catalog": {
     "raw_artists": 8046,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-10T20:59:11.059744Z"
+      "merged_at": "2026-11-11T02:13:18.022160Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 831,
       "legacy": 58
     },
-    "missing_validated_profile_image": 953,
+    "missing_validated_profile_image": 952,
     "missing_profile_bio": 3452,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4376,
     "core_complete_pct": 55.24,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6969,
-    "effective_image_pct": 87.97,
+    "effective_image": 6970,
+    "effective_image_pct": 87.98,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5324,
-    "missing_image": 953,
+    "image_gallery_fallback": 5325,
+    "missing_image": 952,
     "effective_bio": 4470,
     "effective_bio_pct": 56.43,
     "bio_direct_artist": 1026,
@@ -72,8 +72,8 @@
     "missing_bio": 3452,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.27,
-    "gallery_with_images": 6969,
-    "with_social": 4769,
+    "gallery_with_images": 6970,
+    "with_social": 4767,
     "with_genre": 3911,
     "with_related": 1599
   },
@@ -225,9 +225,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 136,
+      "plays": 137,
       "first_played": "21 nov 2012",
-      "last_played": "8 nov 2026 · 18:39",
+      "last_played": "10 nov 2026 · 15:28",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -2239,6 +2239,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 43,
+      "first_played": "25 jul 2022",
+      "last_played": "10 nov 2026 · 18:48",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "A Lull",
       "slug": "a-lull",
       "plays": 42,
@@ -2268,43 +2305,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 42,
-      "first_played": "25 jul 2022",
-      "last_played": "6 nov 2026 · 12:49",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -4068,9 +4068,9 @@
     {
       "name": "Nick Murphy / Chet Faker/BANKS",
       "slug": "nick-murphy-chet-faker-banks",
-      "plays": 42,
+      "plays": 43,
       "first_played": "25 jul 2022",
-      "last_played": "6 nov 2026 · 12:49",
+      "last_played": "10 nov 2026 · 18:48",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -6220,6 +6220,43 @@
       "profile_complete": false
     },
     {
+      "name": "CHVRCHES / Robert Smith",
+      "slug": "chvrches-robert-smith",
+      "plays": 18,
+      "first_played": "2 sep 2022",
+      "last_played": "10 nov 2026 · 18:31",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Coast Jumper",
       "slug": "coast-jumper",
       "plays": 18,
@@ -6561,43 +6598,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CHVRCHES / Robert Smith",
-      "slug": "chvrches-robert-smith",
-      "plays": 17,
-      "first_played": "2 sep 2022",
-      "last_played": "9 nov 2026 · 15:29",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7303,9 +7303,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 136,
+      "plays": 137,
       "first_played": "21 nov 2012",
-      "last_played": "8 nov 2026 · 18:39",
+      "last_played": "10 nov 2026 · 15:28",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -9213,6 +9213,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 43,
+      "first_played": "25 jul 2022",
+      "last_played": "10 nov 2026 · 18:48",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "A Lull",
       "slug": "a-lull",
       "plays": 42,
@@ -9242,43 +9279,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 42,
-      "first_played": "25 jul 2022",
-      "last_played": "6 nov 2026 · 12:49",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
