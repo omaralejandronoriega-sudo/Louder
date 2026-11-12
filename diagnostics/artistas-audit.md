@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-11-12T10:14:51.963118+00:00
+Generada: 2026-11-12T18:34:39.192866+00:00
 
 ## Resumen
 
@@ -19,10 +19,10 @@ Generada: 2026-11-12T10:14:51.963118+00:00
 - Sin biografía: 3451
 - Galerías ya revisadas: 7864/7923 (99.26%)
 - Artistas con canciones: 7917/7923
-- Canciones totales: 18218
-- Canciones con portada efectiva: 13602/18218 (74.66%)
-- Canciones sin portada: 4616
-- Canciones agrupadas en Otras: 5928
+- Canciones totales: 18219
+- Canciones con portada efectiva: 13602/18219 (74.66%)
+- Canciones sin portada: 4617
+- Canciones agrupadas en Otras: 5929
 
 ## Casos solicitados
 
