@@ -1,7 +1,7 @@
 {
-  "cursor": 2920,
+  "cursor": 2940,
   "total_catalog": 7988,
-  "updated_at": "2026-11-12T10:18:57.611866+00:00",
+  "updated_at": "2026-11-12T18:35:36.193842+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -52241,6 +52241,316 @@
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 2
+    },
+    "guitar": {
+      "name": "Guitar",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gungor": {
+      "name": "Gungor",
+      "status": "identity_candidate_only",
+      "mbid": "f68ad842-13b9-4302-8eeb-ade8af70ce96",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/f68ad842-13b9-4302-8eeb-ade8af70ce96",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gungormusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25056063"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCl9ue8IWDmTCDGediYncodw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": "2010",
+        "ended": false
+      }
+    },
+    "gunning for tamar": {
+      "name": "Gunning For Tamar",
+      "status": "identity_candidate_only",
+      "mbid": "e6a831d4-b1a5-480d-99da-bd822f4eb1be",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/e6a831d4-b1a5-480d-99da-bd822f4eb1be",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "guns n' roses": {
+      "name": "Guns N' Roses",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "gurriers": {
+      "name": "Gurriers",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gus dapperton": {
+      "name": "Gus Dapperton",
+      "status": "identity_candidate_only",
+      "mbid": "dd158dc3-33a8-45aa-af0c-d9bf13905d0a",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "bedroom pop",
+        "indie pop"
+      ],
+      "source": "https://musicbrainz.org/artist/dd158dc3-33a8-45aa-af0c-d9bf13905d0a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gusdapperton"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gusdapperton/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gus-dapperton"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q51858412"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCpxmpwUgsNNT96iyiIuOa3w"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCDYFulyOicnU-WwZ651OEdQ"
+        }
+      ],
+      "life_span": {
+        "begin": "1997-03-11",
+        "ended": false,
+        "end": null
+      }
+    },
+    "gus dapperton / channel tres": {
+      "name": "Gus Dapperton / Channel Tres",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gus englehorn": {
+      "name": "Gus Englehorn",
+      "status": "identity_candidate_only",
+      "mbid": "d3e304f6-347f-4f6b-95f9-2f1d1edc2714",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "alternative rock",
+        "grunge",
+        "indie rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/d3e304f6-347f-4f6b-95f9-2f1d1edc2714",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gusenglehorn.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gusenglehorn"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gusenglehorn/"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "gusgus": {
+      "name": "GusGus",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gusgus/vök": {
+      "name": "GusGus/Vök",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "guspy": {
+      "name": "GUSPY",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gustaf": {
+      "name": "Gustaf",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "gustav holst": {
+      "name": "Gustav Holst",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gustavo cerati": {
+      "name": "Gustavo Cerati",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gustavo cerati y santaolalla": {
+      "name": "Gustavo cerati y santaolalla",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "guster": {
+      "name": "Guster",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "guy andrews": {
+      "name": "Guy Andrews",
+      "status": "identity_candidate_only",
+      "mbid": "750c10e2-ee89-4eb1-bf93-5304abc6a29b",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/750c10e2-ee89-4eb1-bf93-5304abc6a29b",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://guyandrews.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/guyandrews.music"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/guy_andrews/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/guyandrews"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "gwallt": {
+      "name": "Gwallt",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "gwen stefani": {
+      "name": "Gwen Stefani",
+      "status": "identity_candidate_only",
+      "mbid": "2e41ae9c-afd2-4f20-8f1e-17281ce9b472",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "alternative pop",
+        "contemporary r&b",
+        "dance",
+        "dance-pop",
+        "electronic",
+        "electropop",
+        "pop",
+        "pop rap",
+        "pop rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/2e41ae9c-afd2-4f20-8f1e-17281ce9b472",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/gwenstefani"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gwenstefani/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/gwen-stefani"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q483379"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCX6mObpqyrtKMdxvCV9YkGg"
+        }
+      ],
+      "life_span": {
+        "begin": "1969-10-03",
+        "end": null,
+        "ended": false
+      }
+    },
+    "gwenno": {
+      "name": "Gwenno",
+      "status": "identity_candidate_only",
+      "mbid": "8f5b15bd-0777-4564-9801-17462e5ff715",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "electropop",
+        "hauntology",
+        "indietronica"
+      ],
+      "source": "https://musicbrainz.org/artist/8f5b15bd-0777-4564-9801-17462e5ff715",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://gwenno.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Gwennomusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/gwennosaunders/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3050580"
+        }
+      ],
+      "life_span": {
+        "begin": "1981-05-23",
+        "end": null,
+        "ended": false
+      }
     }
   }
 }
