@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-13T23:51:03.139092+00:00",
+  "generated_at": "2026-11-14T06:59:01.975159+00:00",
   "source_updates": {
-    "artists": "2026-11-13T23:50:56.244027Z",
-    "galleries": "2026-11-13T21:41:20.863775+00:00",
-    "album_art": "2026-11-13T21:24:27.692057+00:00"
+    "artists": "2026-11-14T06:58:55.272238Z",
+    "galleries": "2026-11-14T01:51:26.488966+00:00",
+    "album_art": "2026-11-14T01:45:21.767232+00:00"
   },
   "catalog": {
     "raw_artists": 8048,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-13T23:50:56.244027Z"
+      "merged_at": "2026-11-14T06:58:55.272238Z"
     }
   },
   "profile_enrichment": {
@@ -73,8 +73,8 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.24,
     "gallery_with_images": 6970,
-    "with_social": 4771,
-    "with_genre": 3916,
+    "with_social": 4770,
+    "with_genre": 3917,
     "with_related": 1599
   },
   "tracks": {
@@ -225,9 +225,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 137,
+      "plays": 138,
       "first_played": "21 nov 2012",
-      "last_played": "10 nov 2026 · 15:28",
+      "last_played": "14 nov 2026 · 00:05",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -296,9 +296,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 113,
+      "plays": 114,
       "first_played": "14 jul 2022",
-      "last_played": "10 nov 2026 · 00:54",
+      "last_played": "13 nov 2026 · 18:54",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -1924,6 +1924,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 45,
+      "first_played": "25 jul 2022",
+      "last_played": "13 nov 2026 · 18:14",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 45,
@@ -2204,43 +2241,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 44,
-      "first_played": "25 jul 2022",
-      "last_played": "12 nov 2026 · 13:17",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3635,9 +3635,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 113,
+      "plays": 114,
       "first_played": "14 jul 2022",
-      "last_played": "10 nov 2026 · 00:54",
+      "last_played": "13 nov 2026 · 18:54",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3994,6 +3994,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 45,
+      "first_played": "25 jul 2022",
+      "last_played": "13 nov 2026 · 18:14",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 45,
@@ -4083,43 +4120,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 44,
-      "first_played": "25 jul 2022",
-      "last_played": "12 nov 2026 · 13:17",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5680,6 +5680,43 @@
       "profile_complete": false
     },
     {
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
+      "plays": 21,
+      "first_played": "6 mar 2025",
+      "last_played": "13 nov 2026 · 19:25",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Liam Gallagher/John Squire",
       "slug": "liam-gallagher-john-squire",
       "plays": 21,
@@ -5876,43 +5913,6 @@
       "tracks": 1,
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 20,
-      "first_played": "6 mar 2025",
-      "last_played": "6 nov 2026 · 17:37",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7302,9 +7302,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 137,
+      "plays": 138,
       "first_played": "21 nov 2012",
-      "last_played": "10 nov 2026 · 15:28",
+      "last_played": "14 nov 2026 · 00:05",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7373,9 +7373,9 @@
     {
       "name": "Nick Murphy / Chet Faker",
       "slug": "nick-murphy-chet-faker",
-      "plays": 113,
+      "plays": 114,
       "first_played": "14 jul 2022",
-      "last_played": "10 nov 2026 · 00:54",
+      "last_played": "13 nov 2026 · 18:54",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -8897,6 +8897,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 45,
+      "first_played": "25 jul 2022",
+      "last_played": "13 nov 2026 · 18:14",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 45,
@@ -9177,43 +9214,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 44,
-      "first_played": "25 jul 2022",
-      "last_played": "12 nov 2026 · 13:17",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
