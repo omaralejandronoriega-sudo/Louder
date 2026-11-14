@@ -1,7 +1,7 @@
 {
-  "cursor": 3020,
+  "cursor": 3040,
   "total_catalog": 7988,
-  "updated_at": "2026-11-13T21:25:03.775713+00:00",
+  "updated_at": "2026-11-14T01:46:22.616122+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -53757,6 +53757,307 @@
       "name": "hazy waters",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "headsend": {
+      "name": "HEADSEND",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "health": {
+      "name": "HEALTH",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "hear me out": {
+      "name": "Hear Me Out",
+      "status": "identity_candidate_only",
+      "mbid": "7f98818a-0992-4bb0-80a0-72eb78a2e99e",
+      "type": "Group",
+      "country": "DE",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/7f98818a-0992-4bb0-80a0-72eb78a2e99e",
+      "evidence_links": [],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "heart": {
+      "name": "Heart",
+      "status": "identity_candidate_only",
+      "mbid": "bdbd48f5-abf3-4a4f-9a21-4551dbc3fde9",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "rock band, Ann and Nancy Wilson",
+      "genres": [
+        "aor",
+        "arena rock",
+        "classic rock",
+        "folk rock",
+        "hard rock",
+        "pop",
+        "pop rock",
+        "rock",
+        "soft rock",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/bdbd48f5-abf3-4a4f-9a21-4551dbc3fde9",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/heart"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/heartofficial/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q941662"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCsFPCqkPsesPa8XxN1pJx-w"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCCT8KMU8ReissgaPl7pvo9g"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1973"
+      }
+    },
+    "heart-set self-destruct": {
+      "name": "Heart-Set Self-Destruct",
+      "status": "identity_candidate_only",
+      "mbid": "d8cd3c4e-8fdc-4654-bb8c-b6c354efbc71",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/d8cd3c4e-8fdc-4654-bb8c-b6c354efbc71",
+      "evidence_links": [],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
+    },
+    "hearts and rockets": {
+      "name": "Hearts and Rockets",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hearts of black science": {
+      "name": "Hearts of Black Science",
+      "status": "identity_candidate_only",
+      "mbid": "e641d0d6-f776-4985-a984-51ddc01ff680",
+      "type": "Group",
+      "country": "SE",
+      "disambiguation": "",
+      "genres": [
+        "dream pop",
+        "shoegaze"
+      ],
+      "source": "https://musicbrainz.org/artist/e641d0d6-f776-4985-a984-51ddc01ff680",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://heartsofblackscience.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Hobsband"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCFQbWvRfxaEpVcPrWHJ1LHw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "heartsrevolution": {
+      "name": "Heartsrevolution",
+      "status": "identity_candidate_only",
+      "mbid": "158535ff-f2bb-45b3-a53f-c41c38a2b2f8",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "breakbeat",
+        "breaks",
+        "dance",
+        "edm",
+        "electro",
+        "electroclash",
+        "electronic",
+        "electronic rock",
+        "electronica",
+        "house",
+        "new rave",
+        "pop",
+        "progressive house"
+      ],
+      "source": "https://musicbrainz.org/artist/158535ff-f2bb-45b3-a53f-c41c38a2b2f8",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/HEARTSREVOLUTION"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/heartsrevolution"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q5692939"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCjhdhigETwzRUuDcQW1Lhkw"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "heartworms": {
+      "name": "Heartworms",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "heat": {
+      "name": "Heat",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "heat band": {
+      "name": "Heat Band",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "heaven process": {
+      "name": "Heaven Process",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "heavenly beat": {
+      "name": "Heavenly Beat",
+      "status": "identity_candidate_only",
+      "mbid": "29b8f93f-4708-47fd-ba34-d98e2617142f",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/29b8f93f-4708-47fd-ba34-d98e2617142f",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/heavenlybeat"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/heavenly-beat/"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "end": null,
+        "ended": false
+      }
+    },
+    "heavn": {
+      "name": "heavn",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "heavïness": {
+      "name": "Heavïness",
+      "status": "identity_candidate_only",
+      "mbid": "04be5fdc-d7ee-428e-8b1a-4924a97b0bc8",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "European Shoegaze",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/04be5fdc-d7ee-428e-8b1a-4924a97b0bc8",
+      "evidence_links": [],
+      "life_span": {
+        "begin": "2006",
+        "end": null,
+        "ended": false
+      }
+    },
+    "hebronix": {
+      "name": "Hebronix",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hectic zeniths": {
+      "name": "Hectic Zeniths",
+      "status": "identity_candidate_only",
+      "mbid": "a1658896-85a2-4c4f-9253-b2d524a75734",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/a1658896-85a2-4c4f-9253-b2d524a75734",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "hector boys": {
+      "name": "Hector Boys",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "heems, unknown mortal orchestra": {
+      "name": "Heems, Unknown Mortal Orchestra",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "heimatt": {
+      "name": "Heimatt",
+      "status": "identity_candidate_only",
+      "mbid": "04faa766-4574-444d-a961-a2cb129bdeda",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "Danish Band",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/04faa766-4574-444d-a961-a2cb129bdeda",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://heimatt.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/heimattofficial"
+        }
+      ],
+      "life_span": {
+        "begin": null,
+        "ended": false,
+        "end": null
+      }
     }
   }
 }
