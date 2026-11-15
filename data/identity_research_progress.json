@@ -1,7 +1,7 @@
 {
-  "cursor": 3160,
+  "cursor": 3180,
   "total_catalog": 7988,
-  "updated_at": "2026-11-15T14:46:13.581068+00:00",
+  "updated_at": "2026-11-15T20:23:01.702934+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -56071,6 +56071,246 @@
     },
     "horsepower": {
       "name": "Horsepower",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hospital": {
+      "name": "Hospital",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "hospital ships": {
+      "name": "Hospital Ships",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hospitality": {
+      "name": "Hospitality",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hoster": {
+      "name": "hoster",
+      "status": "identity_candidate_only",
+      "mbid": "bbe00198-4263-43ba-aac4-a9e87e4cb332",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/bbe00198-4263-43ba-aac4-a9e87e4cb332",
+      "evidence_links": [],
+      "life_span": {
+        "ended": false,
+        "begin": null,
+        "end": null
+      }
+    },
+    "hot as sun": {
+      "name": "Hot As Sun",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hot chip": {
+      "name": "Hot Chip",
+      "status": "identity_candidate_only",
+      "mbid": "d8915e13-d67a-4aa0-9c0b-1f126af951af",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "alternative dance",
+        "deep house",
+        "electronic",
+        "electronica",
+        "electropop",
+        "house",
+        "indie pop",
+        "indie rock",
+        "indietronica",
+        "new rave",
+        "pop",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/d8915e13-d67a-4aa0-9c0b-1f126af951af",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://hotchip.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/hotchip"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/hot.chip/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/hot_chip"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q877512"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCHFDIPcCMJ7IhNalPJGjKlA"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCXDSU8YngYYpKwyXntqU83w"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2000"
+      }
+    },
+    "hot chip, boys' shorts": {
+      "name": "Hot Chip, Boys' Shorts",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "hot fudge": {
+      "name": "Hot Fudge",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hot hot heat": {
+      "name": "Hot Hot Heat",
+      "status": "identity_candidate_only",
+      "mbid": "0e0dd9da-5878-4c46-9a9a-6df43abb5c96",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "indie rock"
+      ],
+      "source": "https://musicbrainz.org/artist/0e0dd9da-5878-4c46-9a9a-6df43abb5c96",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://hothotheat.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/hothotheat"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/hothotheat/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/hothotheat"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q978591"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCtLfUqEHHzCKufxGF5_wZQg"
+        }
+      ],
+      "life_span": {
+        "ended": true,
+        "begin": "1999",
+        "end": "2016"
+      }
+    },
+    "hot mulligan, cory castro, free throw": {
+      "name": "Hot Mulligan, Cory Castro, Free Throw",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hot panda": {
+      "name": "Hot Panda",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hotel cinema": {
+      "name": "Hotel Cinema",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hotgirl": {
+      "name": "Hotgirl",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hotline tnt": {
+      "name": "Hotline TNT",
+      "status": "identity_candidate_only",
+      "mbid": "229aac0b-3567-4bcc-b57d-76b865eb572e",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/229aac0b-3567-4bcc-b57d-76b865eb572e",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "hotwax": {
+      "name": "HotWax",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "houndmouth": {
+      "name": "Houndmouth",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "house of harm": {
+      "name": "House of Harm",
+      "status": "identity_candidate_only",
+      "mbid": "cb6307b3-07aa-4a88-af69-58853ccad02e",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/cb6307b3-07aa-4a88-af69-58853ccad02e",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "house of pain": {
+      "name": "House of Pain",
+      "status": "identity_candidate_only",
+      "mbid": "c2d6a6fb-7999-4bb3-b2df-7d752fdf4e95",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [
+        "hip hop"
+      ],
+      "source": "https://musicbrainz.org/artist/c2d6a6fb-7999-4bb3-b2df-7d752fdf4e95",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/houseofpain"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q752410"
+        }
+      ],
+      "life_span": {
+        "end": "1996",
+        "begin": "1990",
+        "ended": true
+      }
+    },
+    "houses": {
+      "name": "Houses",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "housse de racket": {
+      "name": "Housse de Racket",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
     }
