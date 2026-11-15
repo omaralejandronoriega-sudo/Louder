@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-15T09:52:49.142290+00:00",
+  "generated_at": "2026-11-15T17:22:52.465554+00:00",
   "source_updates": {
-    "artists": "2026-11-15T09:52:43.323217Z",
-    "galleries": "2026-11-15T03:09:28.265077+00:00",
-    "album_art": "2026-11-15T07:09:40.565931+00:00"
+    "artists": "2026-11-15T17:22:47.786389Z",
+    "galleries": "2026-11-15T10:49:55.085965+00:00",
+    "album_art": "2026-11-15T14:44:55.826203+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-15T09:52:43.323217Z"
+      "merged_at": "2026-11-15T17:22:47.786389Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 831,
       "legacy": 61
     },
-    "missing_validated_profile_image": 955,
+    "missing_validated_profile_image": 954,
     "missing_profile_bio": 3453,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4380,
     "core_complete_pct": 55.27,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6970,
-    "effective_image_pct": 87.95,
+    "effective_image": 6971,
+    "effective_image_pct": 87.96,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5325,
-    "missing_image": 955,
+    "image_gallery_fallback": 5326,
+    "missing_image": 954,
     "effective_bio": 4472,
     "effective_bio_pct": 56.43,
     "bio_direct_artist": 1026,
@@ -72,9 +72,9 @@
     "missing_bio": 3453,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
-    "gallery_with_images": 6970,
-    "with_social": 4771,
-    "with_genre": 3917,
+    "gallery_with_images": 6971,
+    "with_social": 4760,
+    "with_genre": 3916,
     "with_related": 1599
   },
   "tracks": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.63,
     "missing_artwork": 4624,
     "grouped_as_otras": 5936,
-    "with_first_and_last_dates": 17869,
+    "with_first_and_last_dates": 17870,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10700,
     "album_art_cache_missed": 4211
@@ -1433,6 +1433,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 50,
+      "first_played": "14 jul 2022",
+      "last_played": "15 nov 2026 · 09:57",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Cashier No. 9",
       "slug": "cashier-no-9",
       "plays": 50,
@@ -1463,42 +1499,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 49,
-      "first_played": "14 jul 2022",
-      "last_played": "12 nov 2026 · 15:19",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -1786,6 +1786,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 46,
+      "first_played": "25 jul 2022",
+      "last_played": "15 nov 2026 · 09:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 46,
@@ -1956,43 +1993,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 45,
-      "first_played": "25 jul 2022",
-      "last_played": "13 nov 2026 · 18:14",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -2417,6 +2417,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 40,
+      "first_played": "3 abr 2013",
+      "last_played": "15 nov 2026 · 04:52",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Church",
       "slug": "the-church",
       "plays": 40,
@@ -2609,42 +2645,6 @@
       "gallery_checked": true,
       "gallery_images": 1,
       "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 39,
-      "first_played": "3 abr 2013",
-      "last_played": "27 oct 2026 · 08:09",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
       "has_genre": true,
       "related": 10,
       "missing_core": [
@@ -3812,9 +3812,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 49,
+      "plays": 50,
       "first_played": "14 jul 2022",
-      "last_played": "12 nov 2026 · 15:19",
+      "last_played": "15 nov 2026 · 09:57",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3958,6 +3958,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 46,
+      "first_played": "25 jul 2022",
+      "last_played": "15 nov 2026 · 09:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 46,
@@ -4009,43 +4046,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 8,
       "tracks_in_otras": 8,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 45,
-      "first_played": "25 jul 2022",
-      "last_played": "13 nov 2026 · 18:14",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4819,6 +4819,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 27,
+      "first_played": "23 sep 2026",
+      "last_played": "15 nov 2026 · 06:35",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Anthem Facility",
       "slug": "anthem-facility",
       "plays": 26,
@@ -4953,41 +4988,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Long Blondes",
-      "slug": "the-long-blondes",
-      "plays": 26,
-      "first_played": "23 sep 2026",
-      "last_played": "12 nov 2026 · 18:07",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6190,6 +6190,41 @@
       "profile_complete": false
     },
     {
+      "name": "Sean Solomon",
+      "slug": "sean-solomon",
+      "plays": 19,
+      "first_played": "20 sep 2026",
+      "last_played": "15 nov 2026 · 07:09",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Sons Between Guns",
       "slug": "sons-between-guns",
       "plays": 19,
@@ -6577,41 +6612,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Sean Solomon",
-      "slug": "sean-solomon",
-      "plays": 18,
-      "first_played": "20 sep 2026",
-      "last_played": "13 nov 2026 · 06:07",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8756,6 +8756,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 46,
+      "first_played": "25 jul 2022",
+      "last_played": "15 nov 2026 · 09:51",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
       "plays": 46,
@@ -8926,43 +8963,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 45,
-      "first_played": "25 jul 2022",
-      "last_played": "13 nov 2026 · 18:14",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -9387,6 +9387,42 @@
       "profile_complete": false
     },
     {
+      "name": "Strangejuice",
+      "slug": "strangejuice",
+      "plays": 40,
+      "first_played": "3 abr 2013",
+      "last_played": "15 nov 2026 · 04:52",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 7,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Church",
       "slug": "the-church",
       "plays": 40,
@@ -9579,42 +9615,6 @@
       "gallery_checked": true,
       "gallery_images": 1,
       "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Strangejuice",
-      "slug": "strangejuice",
-      "plays": 39,
-      "first_played": "3 abr 2013",
-      "last_played": "27 oct 2026 · 08:09",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 7,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
       "has_genre": true,
       "related": 10,
       "missing_core": [
