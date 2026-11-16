@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-16T10:05:18.437558+00:00",
+  "updated_at": "2026-11-16T20:24:54.495427+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -472,8 +472,8 @@
       "name": "The Yurrs",
       "verified": true,
       "status": "partial",
-      "checked_at": "2026-11-13T15:20:34.043669+00:00",
-      "profile_checked_at": "2026-11-13T15:20:34.043669+00:00",
+      "checked_at": "2026-11-16T20:24:34.244336+00:00",
+      "profile_checked_at": "2026-11-16T20:24:34.244336+00:00",
       "musicbrainz_id": "",
       "canonical_name": "The Yurrs",
       "match_score": 0,
@@ -489,8 +489,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:34.043669+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-19T20:24:34.244336+00:00",
+      "attempt_count": 12
     },
     "jasmine-4-t-jacob-alon": {
       "name": "jasmine.4.t, Jacob Alon",
@@ -998,9 +998,9 @@
     },
     "torpid": {
       "name": "Torpid",
-      "verified": false,
-      "status": "not_found",
-      "checked_at": "2026-11-02T18:19:04.784516+00:00",
+      "verified": true,
+      "status": "partial",
+      "checked_at": "2026-11-16T20:24:35.631237+00:00",
       "musicbrainz_id": "723693fe-d44a-4a8a-9d1e-7307b4e4e0d1",
       "canonical_name": "Torpid",
       "match_score": 100,
@@ -1016,13 +1016,13 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_checked_at": "2026-11-02T18:19:04.784516+00:00",
-      "profile_status": "not_found",
+      "profile_checked_at": "2026-11-16T20:24:35.631237+00:00",
+      "profile_status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T18:19:04.784516+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-19T20:24:35.631237+00:00",
+      "attempt_count": 12
     },
     "jupe-jupe": {
       "name": "Jupe Jupe",
@@ -46995,12 +46995,12 @@
     "tim-fitz": {
       "name": "Tim Fitz",
       "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:35.395383+00:00",
-      "checked_at": "2026-11-13T15:20:35.395383+00:00",
+      "profile_checked_at": "2026-11-16T20:24:37.782868+00:00",
+      "checked_at": "2026-11-16T20:24:37.782868+00:00",
       "musicbrainz_id": "bacc4a13-4e73-450e-9cfd-4b5cd9514172",
       "canonical_name": "Tim Fitz",
       "match_score": 100,
-      "verification_source": "Deezer exact artist match",
+      "verification_source": "MusicBrainz",
       "official_url": "",
       "social": {},
       "genre": "",
@@ -47013,8 +47013,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:35.395383+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-19T20:24:37.782868+00:00",
+      "attempt_count": 11
     },
     "southern": {
       "name": "Southern",
@@ -47120,9 +47120,9 @@
     },
     "le-fever": {
       "name": "Le Fever",
-      "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:36.590353+00:00",
-      "checked_at": "2026-11-13T15:20:36.590353+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-16T20:24:40.463515+00:00",
+      "checked_at": "2026-11-16T20:24:40.463515+00:00",
       "musicbrainz_id": "74169790-707a-46a9-865f-0ec46aadda53",
       "canonical_name": "Le Fever",
       "match_score": 100,
@@ -47134,13 +47134,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/c3621358f4732a9a4cb0cd7ca146355c/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "not_found",
+      "status": "not_found",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:36.590353+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-30T20:24:40.463515+00:00",
+      "attempt_count": 11
     },
     "chuck-criss": {
       "name": "Chuck Criss",
@@ -47964,9 +47964,9 @@
     },
     "dark-furs": {
       "name": "Dark Furs",
-      "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:40.342844+00:00",
-      "checked_at": "2026-11-13T15:20:40.342844+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-16T20:24:41.668788+00:00",
+      "checked_at": "2026-11-16T20:24:41.668788+00:00",
       "musicbrainz_id": "a30ff609-72e6-49fd-85d8-dce5316dae46",
       "canonical_name": "Dark Furs",
       "match_score": 100,
@@ -47982,14 +47982,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "not_found",
+      "status": "not_found",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:40.342844+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-30T20:24:41.668788+00:00",
+      "attempt_count": 11
     },
     "unknown": {
       "name": "[unknown]",
@@ -49266,12 +49266,12 @@
     "diving": {
       "name": "Diving",
       "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:42.993414+00:00",
-      "checked_at": "2026-11-13T15:20:42.993414+00:00",
+      "profile_checked_at": "2026-11-16T20:24:42.925436+00:00",
+      "checked_at": "2026-11-16T20:24:42.925436+00:00",
       "musicbrainz_id": "ea7a7915-cc33-436d-accd-ee359841523d",
       "canonical_name": "Diving",
       "match_score": 100,
-      "verification_source": "Deezer exact artist match",
+      "verification_source": "MusicBrainz",
       "official_url": "",
       "social": {},
       "genre": "",
@@ -49284,8 +49284,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:42.993414+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-19T20:24:42.925436+00:00",
+      "attempt_count": 11
     },
     "guards": {
       "name": "Guards",
@@ -52106,9 +52106,9 @@
     },
     "new-beard": {
       "name": "New Beard",
-      "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:45.461091+00:00",
-      "checked_at": "2026-11-13T15:20:45.461091+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-16T20:24:45.630302+00:00",
+      "checked_at": "2026-11-16T20:24:45.630302+00:00",
       "musicbrainz_id": "45fed0d4-fa33-4dda-ba0d-e7fc5fcaa667",
       "canonical_name": "New Beard",
       "match_score": 100,
@@ -52120,14 +52120,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "not_found",
+      "status": "not_found",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:45.461091+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-30T20:24:45.630302+00:00",
+      "attempt_count": 11
     },
     "pete-lawrie": {
       "name": "Pete Lawrie",
@@ -52388,8 +52388,8 @@
     "the-lunatic-the-lover-and-the-poet": {
       "name": "The Lunatic the Lover and the Poet",
       "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:48.100164+00:00",
-      "checked_at": "2026-11-13T15:20:48.100164+00:00",
+      "profile_checked_at": "2026-11-16T20:24:46.477799+00:00",
+      "checked_at": "2026-11-16T20:24:46.477799+00:00",
       "musicbrainz_id": "0c4e4b7f-078b-499f-a1a3-a1e41ad7fc5b",
       "canonical_name": "The Lunatic The Lover And The Poet",
       "match_score": 100,
@@ -52407,8 +52407,8 @@
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:48.100164+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-19T20:24:46.477799+00:00",
+      "attempt_count": 11
     },
     "kalle-kaasinen": {
       "name": "Kalle Kaasinen",
@@ -52729,11 +52729,11 @@
     },
     "greeneyes": {
       "name": "GREEN!EYES",
-      "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:50.863089+00:00",
-      "checked_at": "2026-11-13T15:20:50.863089+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-16T20:24:49.299454+00:00",
+      "checked_at": "2026-11-16T20:24:49.299454+00:00",
       "musicbrainz_id": "144f26e8-1a1c-4dc6-b9a1-c897dfbeb880",
-      "canonical_name": "Green!Eyes",
+      "canonical_name": "GREEN!EYES",
       "match_score": 100,
       "verification_source": "MusicBrainz",
       "official_url": "",
@@ -52747,13 +52747,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/fe7b19fc4479ff90c7844a1db34ae597/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "not_found",
+      "status": "not_found",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:50.863089+00:00",
-      "attempt_count": 10
+      "next_retry_at": "2026-11-30T20:24:49.299454+00:00",
+      "attempt_count": 11
     },
     "ryan": {
       "name": "Ryan",
@@ -69933,9 +69933,9 @@
     },
     "016": {
       "name": "016",
-      "verified": false,
-      "profile_checked_at": "2026-11-02T18:31:08.307488+00:00",
-      "checked_at": "2026-11-02T18:31:08.307488+00:00",
+      "verified": true,
+      "profile_checked_at": "2026-11-16T20:24:50.745995+00:00",
+      "checked_at": "2026-11-16T20:24:50.745995+00:00",
       "musicbrainz_id": "",
       "canonical_name": "016",
       "match_score": 0,
@@ -69947,13 +69947,13 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/8d5613534f7988b823af6d4968f03e67/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "not_found",
-      "status": "not_found",
+      "profile_status": "partial",
+      "status": "partial",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T18:31:08.307488+00:00",
-      "attempt_count": 6
+      "next_retry_at": "2026-11-19T20:24:50.745995+00:00",
+      "attempt_count": 7
     },
     "019": {
       "name": "019",
@@ -72012,8 +72012,8 @@
     "failed-flowers": {
       "name": "Failed Flowers",
       "verified": true,
-      "profile_checked_at": "2026-11-13T15:20:53.497298+00:00",
-      "checked_at": "2026-11-13T15:20:53.497298+00:00",
+      "profile_checked_at": "2026-11-16T20:24:51.820442+00:00",
+      "checked_at": "2026-11-16T20:24:51.820442+00:00",
       "musicbrainz_id": "2d0333c1-7f11-46e9-a950-72fbecd77079",
       "canonical_name": "Failed Flowers",
       "match_score": 100,
@@ -72030,8 +72030,8 @@
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-16T15:20:53.497298+00:00",
-      "attempt_count": 14
+      "next_retry_at": "2026-11-19T20:24:51.820442+00:00",
+      "attempt_count": 15
     },
     "houses": {
       "name": "Houses",
