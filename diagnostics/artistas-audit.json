@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-16T07:13:26.113908+00:00",
+  "generated_at": "2026-11-16T18:52:35.677556+00:00",
   "source_updates": {
-    "artists": "2026-11-16T07:13:21.435608Z",
-    "galleries": "2026-11-16T02:02:26.249233+00:00",
-    "album_art": "2026-11-16T00:21:20.841864+00:00"
+    "artists": "2026-11-16T18:52:29.049763Z",
+    "galleries": "2026-11-16T09:23:52.945262+00:00",
+    "album_art": "2026-11-16T17:25:51.400402+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-16T07:13:21.435608Z"
+      "merged_at": "2026-11-16T18:52:29.049763Z"
     }
   },
   "profile_enrichment": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 74.63,
     "missing_artwork": 4624,
     "grouped_as_otras": 5936,
-    "with_first_and_last_dates": 17873,
+    "with_first_and_last_dates": 17874,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10700,
     "album_art_cache_missed": 4211
@@ -225,9 +225,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 139,
+      "plays": 140,
       "first_played": "21 nov 2012",
-      "last_played": "14 nov 2026 · 21:21",
+      "last_played": "16 nov 2026 · 03:43",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -2384,9 +2384,9 @@
     {
       "name": "The Organ",
       "slug": "the-organ",
-      "plays": 41,
+      "plays": 42,
       "first_played": "17 mar 2013",
-      "last_played": "12 nov 2026 · 12:25",
+      "last_played": "16 nov 2026 · 01:54",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -5390,6 +5390,43 @@
       "profile_complete": false
     },
     {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 23,
+      "first_played": "13 sep 2026",
+      "last_played": "16 nov 2026 · 01:24",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Recorrido Paranormal",
       "slug": "recorrido-paranormal",
       "plays": 23,
@@ -5461,19 +5498,20 @@
       "profile_complete": false
     },
     {
-      "name": "Louds",
-      "slug": "louds",
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
       "plays": 22,
-      "first_played": "7 oct 2014",
-      "last_played": "16 nov 2014 · 23:59",
-      "catalog_status": "wp_draft",
+      "first_played": "6 mar 2025",
+      "last_played": "16 nov 2026 · 05:39",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
-        "lastfm"
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -5497,21 +5535,20 @@
       "profile_complete": false
     },
     {
-      "name": "NiTE, Rosegarden Funeral Party",
-      "slug": "nite-rosegarden-funeral-party",
+      "name": "Louds",
+      "slug": "louds",
       "plays": 22,
-      "first_played": "13 sep 2026",
-      "last_played": "9 nov 2026 · 03:45",
-      "catalog_status": "",
+      "first_played": "7 oct 2014",
+      "last_played": "16 nov 2014 · 23:59",
+      "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
+        "lastfm"
       ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5520,7 +5557,7 @@
       "gallery_images": 0,
       "has_social": false,
       "has_genre": false,
-      "related": 6,
+      "related": 0,
       "missing_core": [
         "image",
         "bio"
@@ -5754,43 +5791,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 21,
-      "first_played": "6 mar 2025",
-      "last_played": "13 nov 2026 · 19:25",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Liam Gallagher/John Squire",
       "slug": "liam-gallagher-john-squire",
       "plays": 21,
@@ -5857,6 +5857,41 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Delays",
+      "slug": "the-delays",
+      "plays": 21,
+      "first_played": "10 oct 2026",
+      "last_played": "16 nov 2026 · 11:10",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6076,41 +6111,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Delays",
-      "slug": "the-delays",
-      "plays": 20,
-      "first_played": "10 oct 2026",
-      "last_played": "14 nov 2026 · 22:27",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6549,6 +6549,44 @@
       "profile_complete": false
     },
     {
+      "name": "Dent May/Jordana",
+      "slug": "dent-may-jordana",
+      "plays": 18,
+      "first_played": "4 mar 2025",
+      "last_played": "16 nov 2026 · 04:22",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Evil arrows",
       "slug": "evil-arrows",
       "plays": 18,
@@ -6778,44 +6816,6 @@
       "tracks": 1,
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Dent May/Jordana",
-      "slug": "dent-may-jordana",
-      "plays": 17,
-      "first_played": "4 mar 2025",
-      "last_played": "20 oct 2026 · 09:07",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
@@ -7299,9 +7299,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 139,
+      "plays": 140,
       "first_played": "21 nov 2012",
-      "last_played": "14 nov 2026 · 21:21",
+      "last_played": "16 nov 2026 · 03:43",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -9354,9 +9354,9 @@
     {
       "name": "The Organ",
       "slug": "the-organ",
-      "plays": 41,
+      "plays": 42,
       "first_played": "17 mar 2013",
-      "last_played": "12 nov 2026 · 12:25",
+      "last_played": "16 nov 2026 · 01:54",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
