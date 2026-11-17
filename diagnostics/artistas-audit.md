@@ -1,6 +1,6 @@
 # Auditoría Louder Artistas
 
-Generada: 2026-11-16T18:52:35.677556+00:00
+Generada: 2026-11-17T03:08:01.807395+00:00
 
 ## Resumen
 
