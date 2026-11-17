@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T13:48:27.830844+00:00",
+  "generated_at": "2026-11-17T22:37:41.908824+00:00",
   "source_updates": {
-    "artists": "2026-11-17T13:48:22.217377Z",
-    "galleries": "2026-11-17T11:18:17.444406+00:00",
-    "album_art": "2026-11-17T09:10:08.066399+00:00"
+    "artists": "2026-11-17T22:37:37.396904Z",
+    "galleries": "2026-11-17T19:58:59.714845+00:00",
+    "album_art": "2026-11-17T18:34:04.755469+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-17T13:48:22.217377Z"
+      "merged_at": "2026-11-17T22:37:37.396904Z"
     }
   },
   "profile_enrichment": {
@@ -73,17 +73,17 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
     "gallery_with_images": 6972,
-    "with_social": 4759,
+    "with_social": 4757,
     "with_genre": 3916,
     "with_related": 1599
   },
   "tracks": {
-    "total": 18226,
+    "total": 18227,
     "with_effective_artwork": 13602,
     "with_effective_artwork_pct": 74.63,
-    "missing_artwork": 4624,
-    "grouped_as_otras": 5936,
-    "with_first_and_last_dates": 17874,
+    "missing_artwork": 4625,
+    "grouped_as_otras": 5937,
+    "with_first_and_last_dates": 17875,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10700,
     "album_art_cache_missed": 4211
@@ -92,9 +92,9 @@
     "boylife": {
       "name": "boylife",
       "slug": "boylife",
-      "plays": 18,
+      "plays": 19,
       "first_played": "16 mar 2025",
-      "last_played": "12 nov 2026 · 18:33",
+      "last_played": "17 nov 2026 · 11:21",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -746,6 +746,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 64,
+      "first_played": "17 jul 2022",
+      "last_played": "17 nov 2026 · 08:07",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -777,42 +813,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 63,
-      "first_played": "17 jul 2022",
-      "last_played": "15 nov 2026 · 16:53",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -1401,6 +1401,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "17 nov 2026 · 15:15",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Kristoffer Ragnstam",
       "slug": "kristoffer-ragnstam",
       "plays": 51,
@@ -1541,44 +1579,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "16 nov 2026 · 15:11",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "She's A Tease",
       "slug": "shes-a-tease",
       "plays": 49,
@@ -1647,6 +1647,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 48,
+      "first_played": "15 jul 2022",
+      "last_played": "17 nov 2026 · 07:52",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "So Many Wizards",
       "slug": "so-many-wizards",
       "plays": 48,
@@ -1676,43 +1713,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 47,
-      "first_played": "15 jul 2022",
-      "last_played": "15 nov 2026 · 13:10",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3847,6 +3847,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "17 nov 2026 · 15:15",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
       "plays": 51,
@@ -3885,49 +3923,11 @@
       "profile_complete": false
     },
     {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "16 nov 2026 · 15:11",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 47,
+      "plays": 48,
       "first_played": "15 jul 2022",
-      "last_played": "15 nov 2026 · 13:10",
+      "last_played": "17 nov 2026 · 07:52",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -4891,6 +4891,41 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 26,
+      "first_played": "19 sep 2026",
+      "last_played": "17 nov 2026 · 08:36",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Elevator Music",
       "slug": "elevator-music",
       "plays": 26,
@@ -5009,41 +5044,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 25,
-      "first_played": "19 sep 2026",
-      "last_played": "14 nov 2026 · 06:09",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5609,6 +5609,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Delays",
+      "slug": "the-delays",
+      "plays": 22,
+      "first_played": "10 oct 2026",
+      "last_played": "17 nov 2026 · 10:02",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Family Rain/N/A",
       "slug": "the-family-rain-n-a",
       "plays": 22,
@@ -5893,41 +5928,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Delays",
-      "slug": "the-delays",
-      "plays": 21,
-      "first_played": "10 oct 2026",
-      "last_played": "16 nov 2026 · 11:10",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7824,6 +7824,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 64,
+      "first_played": "17 jul 2022",
+      "last_played": "17 nov 2026 · 08:07",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Popcult",
       "slug": "popcult",
       "plays": 63,
@@ -7855,42 +7891,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 63,
-      "first_played": "17 jul 2022",
-      "last_played": "15 nov 2026 · 16:53",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -8375,6 +8375,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "17 nov 2026 · 15:15",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Kristoffer Ragnstam",
       "slug": "kristoffer-ragnstam",
       "plays": 51,
@@ -8515,44 +8553,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "16 nov 2026 · 15:11",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "She's A Tease",
       "slug": "shes-a-tease",
       "plays": 49,
@@ -8621,6 +8621,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 48,
+      "first_played": "15 jul 2022",
+      "last_played": "17 nov 2026 · 07:52",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "So Many Wizards",
       "slug": "so-many-wizards",
       "plays": 48,
@@ -8650,43 +8687,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 47,
-      "first_played": "15 jul 2022",
-      "last_played": "15 nov 2026 · 13:10",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
