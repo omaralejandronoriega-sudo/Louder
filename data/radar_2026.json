@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "updated_at": "2026-11-18T07:27:29.891400+00:00",
-  "scan_cursor": 1312,
+  "updated_at": "2026-11-18T20:30:42.242608+00:00",
+  "scan_cursor": 1372,
   "rules": {
     "original_release_year": 2026,
     "reject_reissues": true,
@@ -10,6 +10,28 @@
     "reject_pre_2026_originals": true
   },
   "tracks": [
+    {
+      "id": "mb:7667c39a-d0f9-4c4f-b138-0733ceb264ee",
+      "artist": "The 69 Eyes",
+      "title": "Wasting the Dawn (Forma Acustica)",
+      "original_release_date": "2026-11-16",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7667c39a-d0f9-4c4f-b138-0733ceb264ee"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533362+00:00"
+    },
     {
       "id": "mb:6068f2ce-c486-44b6-92a7-b1fc46a7b9ed",
       "artist": "Trentemøller",
@@ -2827,6 +2849,28 @@
       "discovered_at": "2026-11-13T06:43:57.237610+00:00"
     },
     {
+      "id": "mb:481b1571-cc71-4484-9e5a-2da1569324ff",
+      "artist": "Rome 56",
+      "title": "Medley: Junk / Single Pigeon",
+      "original_release_date": "2026-11-07",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/481b1571-cc71-4484-9e5a-2da1569324ff"
+      },
+      "discovered_at": "2026-11-18T20:29:53.433010+00:00"
+    },
+    {
       "id": "mb:287b5ce3-958d-4f6e-9473-46a14bfce2ad",
       "artist": "Zahara",
       "title": "SPENCER",
@@ -3903,6 +3947,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/7be4637f-f200-476e-82d6-eec254c89634"
       },
       "discovered_at": "2026-11-09T06:24:47.851179+00:00"
+    },
+    {
+      "id": "mb:73909841-ca5e-41f1-9593-522a94c3ed3d",
+      "artist": "The Offspring",
+      "title": "Oi to the World!",
+      "original_release_date": "2026-11-06",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/73909841-ca5e-41f1-9593-522a94c3ed3d"
+      },
+      "discovered_at": "2026-11-18T20:30:07.435849+00:00"
     },
     {
       "id": "mb:2f8e1440-11ad-43a9-bfce-50b44f5d8810",
@@ -8809,6 +8875,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/45a481a4-a85e-42a8-b8ba-8169a16d27b9"
       },
       "discovered_at": "2026-11-07T12:59:28.439084+00:00"
+    },
+    {
+      "id": "mb:18d5a5e8-72cd-4dc5-a48a-847cd07c2d64",
+      "artist": "Aili & Orson",
+      "title": "Keitai",
+      "original_release_date": "2026-11-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/18d5a5e8-72cd-4dc5-a48a-847cd07c2d64"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374989+00:00"
     },
     {
       "id": "mb:705b9d1f-8f1d-4ef2-b931-b1a61d8aeb3d",
@@ -33330,6 +33418,270 @@
       "discovered_at": "2026-10-19T04:39:55.761333+00:00"
     },
     {
+      "id": "mb:0fa924c4-9412-4529-a064-6718a967202b",
+      "artist": "Orson Claeys feat. Lander Gyselinck",
+      "title": "SHADOWBOXING",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0fa924c4-9412-4529-a064-6718a967202b"
+      },
+      "discovered_at": "2026-11-18T20:30:11.375014+00:00"
+    },
+    {
+      "id": "mb:1c5aa0b7-534d-4e65-be58-ac378fca0c70",
+      "artist": "Orson Claeys feat. IAMOMNI",
+      "title": "WHAT A NIGHT",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1c5aa0b7-534d-4e65-be58-ac378fca0c70"
+      },
+      "discovered_at": "2026-11-18T20:30:11.375002+00:00"
+    },
+    {
+      "id": "mb:cc973f73-f884-4062-aeb9-310102cccc2e",
+      "artist": "Orson Claeys feat. Helena Casella",
+      "title": "SPIRAL",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cc973f73-f884-4062-aeb9-310102cccc2e"
+      },
+      "discovered_at": "2026-11-18T20:30:11.375025+00:00"
+    },
+    {
+      "id": "mb:079731b2-78e3-48e6-a7be-98f773585835",
+      "artist": "Orson Claeys feat. Akram Ben Romdhane",
+      "title": "OUTRO/HANIN",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/079731b2-78e3-48e6-a7be-98f773585835"
+      },
+      "discovered_at": "2026-11-18T20:30:11.375037+00:00"
+    },
+    {
+      "id": "mb:3f0a29f2-7160-4184-8f65-4ffe04276813",
+      "artist": "Orson Claeys",
+      "title": "RODNEY'S DANCE",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3f0a29f2-7160-4184-8f65-4ffe04276813"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374912+00:00"
+    },
+    {
+      "id": "mb:0fb018b7-2e83-42a4-9515-87e253a10698",
+      "artist": "Orson Claeys",
+      "title": "ONE ON ONE",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0fb018b7-2e83-42a4-9515-87e253a10698"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374924+00:00"
+    },
+    {
+      "id": "mb:ad02c7ad-ea29-494f-afa6-32be69b97a74",
+      "artist": "Orson Claeys",
+      "title": "INTRO / L.O.V.E.",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ad02c7ad-ea29-494f-afa6-32be69b97a74"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374967+00:00"
+    },
+    {
+      "id": "mb:e961e3ed-9fa4-4d1a-978f-6c26a7865f33",
+      "artist": "Orson Claeys",
+      "title": "GLASPERLUDE",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e961e3ed-9fa4-4d1a-978f-6c26a7865f33"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374935+00:00"
+    },
+    {
+      "id": "mb:209d73da-96a3-4a4a-8298-388af68fab8b",
+      "artist": "Orson Claeys",
+      "title": "FOR AMBROSE",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/209d73da-96a3-4a4a-8298-388af68fab8b"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374870+00:00"
+    },
+    {
+      "id": "mb:034fbde6-6abb-4a85-99f7-e35f979e5b5f",
+      "artist": "Orson Claeys",
+      "title": "ENCORE",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/034fbde6-6abb-4a85-99f7-e35f979e5b5f"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374899+00:00"
+    },
+    {
+      "id": "mb:ce436c11-c1d1-4787-b5be-f7539b05e39f",
+      "artist": "Orson Claeys",
+      "title": "EMPHASIS OF A DREAM",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ce436c11-c1d1-4787-b5be-f7539b05e39f"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374956+00:00"
+    },
+    {
+      "id": "mb:59e7af40-6d70-418a-9aa5-593abfdba489",
+      "artist": "Orson Claeys",
+      "title": "DRIFT",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/59e7af40-6d70-418a-9aa5-593abfdba489"
+      },
+      "discovered_at": "2026-11-18T20:30:11.374944+00:00"
+    },
+    {
       "id": "mb:f02e9e0b-9505-4818-ae20-52417e41c0ed",
       "artist": "Olivia Rodrigo",
       "title": "The Cure",
@@ -51040,6 +51392,28 @@
       "discovered_at": "2026-10-26T04:46:50.913666+00:00"
     },
     {
+      "id": "mb:3f68dea9-bc61-4672-944c-f0eb9c647f28",
+      "artist": "Sacha Rome",
+      "title": "Two Ways (All So Good)",
+      "original_release_date": "2026-09-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3f68dea9-bc61-4672-944c-f0eb9c647f28"
+      },
+      "discovered_at": "2026-11-18T20:29:53.432896+00:00"
+    },
+    {
       "id": "mb:7b05f67f-90c5-4fa4-a004-eb9f525570f0",
       "artist": "N.G & NXCO",
       "title": "Em Đang Nơi Đâu",
@@ -52424,6 +52798,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/69c62699-20db-40ca-b37f-3086c3ca9f84"
       },
       "discovered_at": "2026-10-30T22:18:29.668001+00:00"
+    },
+    {
+      "id": "mb:b5772d48-7567-4dc4-8b3e-72cdd3814c0d",
+      "artist": "The 69 Eyes",
+      "title": "Brandon Lee (Forma Acustica)",
+      "original_release_date": "2026-09-25",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b5772d48-7567-4dc4-8b3e-72cdd3814c0d"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533314+00:00"
     },
     {
       "id": "mb:6aff9500-2b51-428e-8e03-58e7efadc2d5",
@@ -113131,6 +113527,28 @@
       "discovered_at": "2026-09-27T16:57:30.084838+00:00"
     },
     {
+      "id": "mb:df238444-4de5-4db2-bf7d-2692f1f0aead",
+      "artist": "The B‐52’s",
+      "title": "Throw That Beat in the Garbage Can",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/df238444-4de5-4db2-bf7d-2692f1f0aead"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458934+00:00"
+    },
+    {
       "id": "mb:2daf5365-bc76-4d4f-a9d2-c79ca2572740",
       "artist": "The B‐52’s",
       "title": "Queen Of Las Vegas",
@@ -113151,6 +113569,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/2daf5365-bc76-4d4f-a9d2-c79ca2572740"
       },
       "discovered_at": "2026-10-03T11:38:55.343838+00:00"
+    },
+    {
+      "id": "mb:7000563f-1b7c-44bc-bf7e-330ef5636b49",
+      "artist": "The B‐52’s",
+      "title": "Private Idaho",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7000563f-1b7c-44bc-bf7e-330ef5636b49"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458968+00:00"
+    },
+    {
+      "id": "mb:c7c3fdf9-4933-48d2-8e74-6ba8dcdb3143",
+      "artist": "The B‐52’s",
+      "title": "Planet Claire",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c7c3fdf9-4933-48d2-8e74-6ba8dcdb3143"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458786+00:00"
     },
     {
       "id": "mb:c1a7c0ce-3b06-4ce4-b7fc-ff88ecc9d01b",
@@ -113241,6 +113703,28 @@
       "discovered_at": "2026-10-03T11:38:55.343823+00:00"
     },
     {
+      "id": "mb:6f6d4660-f9b3-42f9-9dd3-a9dcd1aaa5d2",
+      "artist": "The B‐52’s",
+      "title": "Nip It in the Bud",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6f6d4660-f9b3-42f9-9dd3-a9dcd1aaa5d2"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458839+00:00"
+    },
+    {
       "id": "mb:5f03d670-5f24-4fe1-b289-fbf5457c0d8f",
       "artist": "The B‐52’s",
       "title": "Mesopotamia",
@@ -113307,6 +113791,28 @@
       "discovered_at": "2026-10-03T11:38:55.343603+00:00"
     },
     {
+      "id": "mb:6cea89a4-263e-4042-8408-cd37db964a1e",
+      "artist": "The B‐52’s",
+      "title": "Loveland",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6cea89a4-263e-4042-8408-cd37db964a1e"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458851+00:00"
+    },
+    {
       "id": "mb:13d7947e-ac17-45a3-bd48-cca1919e45f9",
       "artist": "The B‐52’s",
       "title": "Lava",
@@ -113349,6 +113855,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/6e333160-53d6-41d7-a2b2-cbffcff083cf"
       },
       "discovered_at": "2026-10-03T11:38:55.343877+00:00"
+    },
+    {
+      "id": "mb:133a9332-bbff-4e3d-b685-0b792f33bf66",
+      "artist": "The B‐52’s",
+      "title": "Give Me Back My Man",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/133a9332-bbff-4e3d-b685-0b792f33bf66"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458920+00:00"
     },
     {
       "id": "mb:4188fa78-7d92-4906-bf26-a79a7973e8fa",
@@ -113461,6 +113989,28 @@
       "discovered_at": "2026-10-03T11:38:55.343695+00:00"
     },
     {
+      "id": "mb:1c8217f1-c60b-44e9-84d8-5aebde65e6c5",
+      "artist": "The B‐52’s",
+      "title": "Big Bird",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1c8217f1-c60b-44e9-84d8-5aebde65e6c5"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458958+00:00"
+    },
+    {
       "id": "mb:04a6a13e-3707-4789-bec9-d381009d51e8",
       "artist": "The B‐52’s",
       "title": "Adios Desconocida",
@@ -113481,6 +114031,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/04a6a13e-3707-4789-bec9-d381009d51e8"
       },
       "discovered_at": "2026-10-03T11:38:55.343571+00:00"
+    },
+    {
+      "id": "mb:e82cc681-782e-4ef9-b95a-2b2a0f1ba656",
+      "artist": "The B‐52’s",
+      "title": "606‒0842",
+      "original_release_date": "2026-08-21",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e82cc681-782e-4ef9-b95a-2b2a0f1ba656"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458946+00:00"
     },
     {
       "id": "mb:87e815fd-b848-4a94-8acf-5851d6abaa0b",
@@ -136341,6 +136913,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/c2d1d24e-e139-443a-8e2a-5c79098a9d97"
       },
       "discovered_at": "2026-09-27T12:02:47.311408+00:00"
+    },
+    {
+      "id": "mb:e4d0369e-3dab-400b-b476-3971a2ec0e4c",
+      "artist": "Sacha Rome",
+      "title": "All Night (Back & Forth)",
+      "original_release_date": "2026-08-07",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e4d0369e-3dab-400b-b476-3971a2ec0e4c"
+      },
+      "discovered_at": "2026-11-18T20:29:53.432854+00:00"
     },
     {
       "id": "mb:140e50df-a5af-4381-924e-a940cfeb2317",
@@ -186064,6 +186658,28 @@
       "discovered_at": "2026-11-04T06:19:09.082348+00:00"
     },
     {
+      "id": "mb:cd282575-b3d3-4729-81eb-a450d0c2a209",
+      "artist": "The B-52's",
+      "title": "Mesopotamia",
+      "original_release_date": "2026-07-08",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cd282575-b3d3-4729-81eb-a450d0c2a209"
+      },
+      "discovered_at": "2026-11-18T20:29:51.458978+00:00"
+    },
+    {
       "id": "mb:4c5a0504-e531-4808-81e3-c5ac4657ecf2",
       "artist": "Sharp Pins",
       "title": "Saturday Sun",
@@ -200957,6 +201573,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/39ce445b-0fe0-4c30-a442-b2c6c8a8e362"
       },
       "discovered_at": "2026-10-26T04:46:13.286162+00:00"
+    },
+    {
+      "id": "mb:b4afd61e-c23f-4a9f-a118-b9c1f4854623",
+      "artist": "Sacha Rome",
+      "title": "A Long Time Coming (Show Me)",
+      "original_release_date": "2026-06-26",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b4afd61e-c23f-4a9f-a118-b9c1f4854623"
+      },
+      "discovered_at": "2026-11-18T20:29:53.432948+00:00"
     },
     {
       "id": "mb:99678552-3b14-4792-8886-0dda262b2162",
@@ -236584,6 +237222,28 @@
       "discovered_at": "2026-10-02T05:35:47.167898+00:00"
     },
     {
+      "id": "mb:2cf87285-c0b4-4d35-9d01-f08164a96ab9",
+      "artist": "DJ Rome",
+      "title": "Can't Help You VIP",
+      "original_release_date": "2026-06-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2cf87285-c0b4-4d35-9d01-f08164a96ab9"
+      },
+      "discovered_at": "2026-11-18T20:29:53.432960+00:00"
+    },
+    {
       "id": "mb:82884772-a04f-4828-9bf5-d1090d6d88f7",
       "artist": "deeper sleeper",
       "title": "Wishing for You",
@@ -237792,6 +238452,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/cc6ebb7f-7db6-438c-b79c-14f66e0502eb"
       },
       "discovered_at": "2026-10-14T21:40:24.092866+00:00"
+    },
+    {
+      "id": "mb:e1927c84-3b7c-44f6-9286-f73124a09485",
+      "artist": "The 69 Eyes & Ed Mundell",
+      "title": "Devil's Rose",
+      "original_release_date": "2026-06-05",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e1927c84-3b7c-44f6-9286-f73124a09485"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533417+00:00"
+    },
+    {
+      "id": "mb:59aa5af4-eac1-4f0f-8108-1219700567a0",
+      "artist": "The 69 Eyes",
+      "title": "In the Misery",
+      "original_release_date": "2026-06-05",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/59aa5af4-eac1-4f0f-8108-1219700567a0"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533404+00:00"
     },
     {
       "id": "mb:7a1be52b-6cc4-4f8d-9a3f-3cc7b328b135",
@@ -314069,6 +314773,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/a13c0ae5-ba05-4637-9cd0-e9c4e232e35f"
       },
       "discovered_at": "2026-10-20T17:03:16.284725+00:00"
+    },
+    {
+      "id": "mb:4aee605a-b4bb-43cb-aaf8-003a4bd2599f",
+      "artist": "Sacha Rome",
+      "title": "That's The Way Love Is (Good Inside)",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4aee605a-b4bb-43cb-aaf8-003a4bd2599f"
+      },
+      "discovered_at": "2026-11-18T20:29:53.432883+00:00"
     },
     {
       "id": "mb:91137488-7999-4d0b-a693-393a17c5a10f",
@@ -399735,6 +400461,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/687b4612-3c2c-4fcc-8e62-f70c477f16c8"
       },
       "discovered_at": "2026-10-05T05:38:29.052264+00:00"
+    },
+    {
+      "id": "mb:5f290246-6b61-4ec2-9793-5a2e35b07df6",
+      "artist": "The 69 Eyes",
+      "title": "Cold Sweat",
+      "original_release_date": "2026-03-26",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5f290246-6b61-4ec2-9793-5a2e35b07df6"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533345+00:00"
     },
     {
       "id": "mb:a5308255-165c-427f-86dc-5af382ca6665",
@@ -538998,6 +539746,28 @@
       "discovered_at": "2026-10-03T21:13:52.108831+00:00"
     },
     {
+      "id": "mb:8899fb14-c62a-45b8-9af0-4eec8e8e676d",
+      "artist": "The 69 Eyes & Steve Stevens",
+      "title": "I Survive",
+      "original_release_date": "2026-01-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/8899fb14-c62a-45b8-9af0-4eec8e8e676d"
+      },
+      "discovered_at": "2026-11-18T20:30:21.533430+00:00"
+    },
+    {
       "id": "mb:481b4b59-950c-4259-a8fe-55120acca93d",
       "artist": "Stars Crusaders",
       "title": "Eternal Dance",
@@ -563757,15 +564527,15 @@
     }
   ],
   "stats": {
-    "total": 25619,
-    "released": 25392,
+    "total": 25654,
+    "released": 25427,
     "upcoming": 227,
-    "pending": 14152,
+    "pending": 14166,
     "downloaded": 0,
     "programmed": 0,
-    "review_queue": 11240,
+    "review_queue": 11261,
     "discarded": 0,
-    "louder_yes": 14315,
-    "review": 11304
+    "louder_yes": 14329,
+    "review": 11325
   }
 }
