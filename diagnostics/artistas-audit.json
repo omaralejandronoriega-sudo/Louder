@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T22:37:41.908824+00:00",
+  "generated_at": "2026-11-18T07:54:53.958474+00:00",
   "source_updates": {
-    "artists": "2026-11-17T22:37:37.396904Z",
-    "galleries": "2026-11-17T19:58:59.714845+00:00",
-    "album_art": "2026-11-17T18:34:04.755469+00:00"
+    "artists": "2026-11-18T07:54:47.593321Z",
+    "galleries": "2026-11-18T02:14:44.050754+00:00",
+    "album_art": "2026-11-18T01:19:24.152051+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-17T22:37:37.396904Z"
+      "merged_at": "2026-11-18T07:54:47.593321Z"
     }
   },
   "profile_enrichment": {
@@ -73,20 +73,20 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
     "gallery_with_images": 6972,
-    "with_social": 4757,
+    "with_social": 4752,
     "with_genre": 3916,
     "with_related": 1599
   },
   "tracks": {
     "total": 18227,
-    "with_effective_artwork": 13602,
-    "with_effective_artwork_pct": 74.63,
-    "missing_artwork": 4625,
+    "with_effective_artwork": 13604,
+    "with_effective_artwork_pct": 74.64,
+    "missing_artwork": 4623,
     "grouped_as_otras": 5937,
     "with_first_and_last_dates": 17875,
     "album_art_cache_entries": 14911,
-    "album_art_cache_found": 10700,
-    "album_art_cache_missed": 4211
+    "album_art_cache_found": 10702,
+    "album_art_cache_missed": 4209
   },
   "focus": {
     "boylife": {
@@ -608,9 +608,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 67,
+      "plays": 68,
       "first_played": "29 mar 2016",
-      "last_played": "15 nov 2026 · 14:58",
+      "last_played": "17 nov 2026 · 23:10",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -1295,6 +1295,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 52,
+      "first_played": "26 jul 2022",
+      "last_played": "17 nov 2026 · 23:02",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -1468,44 +1506,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 51,
-      "first_played": "26 jul 2022",
-      "last_played": "16 nov 2026 · 18:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3775,6 +3775,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 52,
+      "first_played": "26 jul 2022",
+      "last_played": "17 nov 2026 · 23:02",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "A Freudian Slip",
       "slug": "a-freudian-slip",
       "plays": 51,
@@ -3863,44 +3901,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 51,
-      "first_played": "26 jul 2022",
-      "last_played": "16 nov 2026 · 18:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5176,6 +5176,43 @@
       "profile_complete": false
     },
     {
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
+      "plays": 24,
+      "first_played": "6 mar 2025",
+      "last_played": "17 nov 2026 · 21:47",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Never Work For Free",
       "slug": "never-work-for-free",
       "plays": 24,
@@ -5364,43 +5401,6 @@
       "catalog_status": "history_only",
       "sources": [
         "megaseg"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 23,
-      "first_played": "6 mar 2025",
-      "last_played": "17 nov 2026 · 04:58",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
       ],
       "tracks": 1,
       "tracks_with_artwork": 0,
@@ -6009,6 +6009,44 @@
       "profile_complete": false
     },
     {
+      "name": "Eyedress/Cuco",
+      "slug": "eyedress-cuco",
+      "plays": 20,
+      "first_played": "4 mar 2025",
+      "last_played": "18 nov 2026 · 00:35",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "fthrsn",
       "slug": "fthrsn",
       "plays": 20,
@@ -6133,44 +6171,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Eyedress/Cuco",
-      "slug": "eyedress-cuco",
-      "plays": 19,
-      "first_played": "4 mar 2025",
-      "last_played": "15 nov 2026 · 23:46",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6608,7 +6608,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6801,6 +6801,41 @@
       "profile_complete": false
     },
     {
+      "name": "1000 Rabbits",
+      "slug": "1000-rabbits",
+      "plays": 17,
+      "first_played": "19 sep 2026",
+      "last_played": "17 nov 2026 · 20:52",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Benjamin Dunn And The Animal Orchestra",
       "slug": "benjamin-dunn-and-the-animal-orchestra",
       "plays": 17,
@@ -6868,6 +6903,76 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Bye Parula",
+      "slug": "bye-parula",
+      "plays": 17,
+      "first_played": "19 sep 2026",
+      "last_played": "17 nov 2026 · 22:14",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Dour",
+      "slug": "dour",
+      "plays": 17,
+      "first_played": "20 sep 2026",
+      "last_played": "17 nov 2026 · 19:05",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7123,110 +7228,6 @@
       "profile_missing_fields": [
         "image",
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "1000 Rabbits",
-      "slug": "1000-rabbits",
-      "plays": 16,
-      "first_played": "19 sep 2026",
-      "last_played": "13 nov 2026 · 03:23",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "American Motors",
-      "slug": "american-motors",
-      "plays": 16,
-      "first_played": "22 sep 2026",
-      "last_played": "15 nov 2026 · 14:51",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Arts & Crafts México",
-      "slug": "arts-crafts-mexico",
-      "plays": 16,
-      "first_played": "11 dic 2012",
-      "last_played": "20 feb 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 8,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 8,
-      "tracks_in_otras": 8,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     }
@@ -7686,9 +7687,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 67,
+      "plays": 68,
       "first_played": "29 mar 2016",
-      "last_played": "15 nov 2026 · 14:58",
+      "last_played": "17 nov 2026 · 23:10",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -8305,6 +8306,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 52,
+      "first_played": "26 jul 2022",
+      "last_played": "17 nov 2026 · 23:02",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -8442,44 +8481,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 51,
-      "first_played": "26 jul 2022",
-      "last_played": "16 nov 2026 · 18:24",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
