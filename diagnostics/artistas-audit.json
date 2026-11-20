@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-20T13:33:34.914613+00:00",
+  "generated_at": "2026-11-20T21:56:52.774523+00:00",
   "source_updates": {
-    "artists": "2026-11-20T13:33:29.343051Z",
-    "galleries": "2026-11-20T06:03:21.192785+00:00",
-    "album_art": "2026-11-20T07:06:55.436116+00:00"
+    "artists": "2026-11-20T21:56:46.030736Z",
+    "galleries": "2026-11-20T14:57:39.563692+00:00",
+    "album_art": "2026-11-20T16:05:43.955388+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-20T13:33:29.343051Z"
+      "merged_at": "2026-11-20T21:56:46.030736Z"
     }
   },
   "profile_enrichment": {
@@ -3178,6 +3178,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 36,
+      "first_played": "28 dic 2012",
+      "last_played": "20 nov 2026 · 10:23",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Heavenly Beat",
       "slug": "heavenly-beat",
       "plays": 36,
@@ -3420,42 +3456,6 @@
       "profile_complete": false
     },
     {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 35,
-      "first_played": "28 dic 2012",
-      "last_played": "13 nov 2026 · 02:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Little Moe and The Atomic Two-Tones",
       "slug": "little-moe-and-the-atomic-two-tones",
       "plays": 35,
@@ -3562,46 +3562,47 @@
       "profile_complete": false
     },
     {
-      "name": "M83 feat. Zola Jesus",
-      "slug": "m83-feat-zola-jesus",
-      "plays": 34,
-      "first_played": "27 jul 2012",
-      "last_played": "27 feb 2013 · 23:59",
-      "catalog_status": "history_only",
+      "name": "The Sweet Serenades",
+      "slug": "the-sweet-serenades",
+      "plays": 35,
+      "first_played": "28 dic 2012",
+      "last_played": "20 nov 2026 · 12:24",
+      "catalog_status": "",
       "sources": [
-        "lastfm"
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
       ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
+      "has_image": true,
+      "image_source": "artist",
       "has_bio": false,
       "bio_source": "",
       "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 7,
       "missing_core": [
-        "image",
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "not_found",
+      "profile_status": "partial",
       "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
     },
     {
-      "name": "MSTRKRFT feat. John Legend",
-      "slug": "mstrkrft-feat-john-legend",
+      "name": "M83 feat. Zola Jesus",
+      "slug": "m83-feat-zola-jesus",
       "plays": 34,
-      "first_played": "22 jul 2012",
-      "last_played": "29 ago 2014 · 23:59",
+      "first_played": "27 jul 2012",
+      "last_played": "27 feb 2013 · 23:59",
       "catalog_status": "history_only",
       "sources": [
         "lastfm"
@@ -5321,6 +5322,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Delays",
+      "slug": "the-delays",
+      "plays": 24,
+      "first_played": "10 oct 2026",
+      "last_played": "20 nov 2026 · 08:29",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Morning Light Project",
       "slug": "the-morning-light-project",
       "plays": 24,
@@ -5501,11 +5537,11 @@
       "profile_complete": false
     },
     {
-      "name": "The Delays",
-      "slug": "the-delays",
+      "name": "Thirteen Senses",
+      "slug": "thirteen-senses",
       "plays": 23,
-      "first_played": "10 oct 2026",
-      "last_played": "19 nov 2026 · 05:29",
+      "first_played": "12 oct 2026",
+      "last_played": "19 nov 2026 · 09:47",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -5536,24 +5572,26 @@
       "profile_complete": false
     },
     {
-      "name": "Thirteen Senses",
-      "slug": "thirteen-senses",
+      "name": "Yannis & The Yaw/Tony Allen/Yannis",
+      "slug": "yannis-the-yaw-tony-allen-yannis",
       "plays": 23,
-      "first_played": "12 oct 2026",
-      "last_played": "19 nov 2026 · 09:47",
-      "catalog_status": "live_only",
+      "first_played": "15 mar 2025",
+      "last_played": "20 nov 2026 · 13:17",
+      "catalog_status": "programmed_history",
       "sources": [
+        "megaseg",
+        "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
       "bio_source": "",
-      "gallery_checked": false,
+      "gallery_checked": true,
       "gallery_images": 0,
       "has_social": false,
       "has_genre": false,
@@ -5563,7 +5601,7 @@
         "bio"
       ],
       "core_complete": false,
-      "profile_status": "legacy",
+      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5729,43 +5767,6 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Yannis & The Yaw/Tony Allen/Yannis",
-      "slug": "yannis-the-yaw-tony-allen-yannis",
-      "plays": 22,
-      "first_played": "15 mar 2025",
-      "last_played": "14 nov 2026 · 10:27",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
@@ -6477,6 +6478,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Youth Play",
+      "slug": "the-youth-play",
+      "plays": 19,
+      "first_played": "22 sep 2026",
+      "last_played": "20 nov 2026 · 08:39",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Water Moccasins",
       "slug": "water-moccasins",
       "plays": 19,
@@ -6803,19 +6839,19 @@
       "profile_complete": false
     },
     {
-      "name": "the sound chalk makes",
-      "slug": "the-sound-chalk-makes",
+      "name": "The Itch",
+      "slug": "the-itch",
       "plays": 18,
       "first_played": "26 sep 2026",
-      "last_played": "19 nov 2026 · 17:58",
+      "last_played": "20 nov 2026 · 11:08",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6838,11 +6874,11 @@
       "profile_complete": false
     },
     {
-      "name": "The Youth Play",
-      "slug": "the-youth-play",
+      "name": "the sound chalk makes",
+      "slug": "the-sound-chalk-makes",
       "plays": 18,
-      "first_played": "22 sep 2026",
-      "last_played": "18 nov 2026 · 13:50",
+      "first_played": "26 sep 2026",
+      "last_played": "19 nov 2026 · 17:58",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -7182,42 +7218,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 10,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Lily Allen Media Center",
-      "slug": "lily-allen-media-center",
-      "plays": 17,
-      "first_played": "26 jul 2012",
-      "last_played": "15 ene 2015 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "image",
         "bio"
@@ -10152,6 +10152,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 36,
+      "first_played": "28 dic 2012",
+      "last_played": "20 nov 2026 · 10:23",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Heavenly Beat",
       "slug": "heavenly-beat",
       "plays": 36,
@@ -10394,42 +10430,6 @@
       "profile_complete": false
     },
     {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 35,
-      "first_played": "28 dic 2012",
-      "last_played": "13 nov 2026 · 02:23",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Little Moe and The Atomic Two-Tones",
       "slug": "little-moe-and-the-atomic-two-tones",
       "plays": 35,
@@ -10531,6 +10531,42 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Sweet Serenades",
+      "slug": "the-sweet-serenades",
+      "plays": 35,
+      "first_played": "28 dic 2012",
+      "last_played": "20 nov 2026 · 12:24",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 7,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -10663,42 +10699,6 @@
       "has_social": true,
       "has_genre": true,
       "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Sweet Serenades",
-      "slug": "the-sweet-serenades",
-      "plays": 34,
-      "first_played": "28 dic 2012",
-      "last_played": "16 nov 2026 · 16:16",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 7,
       "missing_core": [
         "bio"
       ],
