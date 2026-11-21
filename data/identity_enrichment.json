@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-20T20:11:49.865245+00:00",
+  "updated_at": "2026-11-21T01:28:33.838178+00:00",
   "artists": {
     "haute-freddy": {
       "name": "Haute & Freddy",
@@ -54073,13 +54073,13 @@
     },
     "magou-dakar-transit": {
       "name": "Magou & Dakar Transit",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:46:55.822588+00:00",
-      "checked_at": "2026-11-17T21:46:55.822588+00:00",
-      "profile_status": "partial",
-      "status": "partial",
-      "next_retry_at": "2026-11-20T21:46:55.822588+00:00",
-      "attempt_count": 12,
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:07.452558+00:00",
+      "checked_at": "2026-11-21T01:28:07.452558+00:00",
+      "profile_status": "retry",
+      "status": "retry",
+      "next_retry_at": "2026-11-21T07:28:07.452558+00:00",
+      "attempt_count": 13,
       "musicbrainz_id": "c2410d4f-0546-487e-a859-906c9cc66fc8",
       "canonical_name": "Magou & Dakar Transit",
       "match_score": 100,
@@ -54094,7 +54094,8 @@
       "missing_fields": [
         "image",
         "bio"
-      ]
+      ],
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Magou+%26+Dakar+Transit&limit=8"
     },
     "tyla": {
       "name": "Tyla",
@@ -57083,9 +57084,9 @@
     },
     "lubec": {
       "name": "Lubec",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:47:16.394472+00:00",
-      "checked_at": "2026-11-17T21:47:16.394472+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:09.928734+00:00",
+      "checked_at": "2026-11-21T01:28:09.928734+00:00",
       "musicbrainz_id": "677d2313-db5f-4a11-bbef-866367eab063",
       "canonical_name": "Lubec",
       "match_score": 100,
@@ -57097,14 +57098,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:47:16.394472+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:09.928734+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Lubec&limit=8"
     },
     "mumblr": {
       "name": "Mumblr",
@@ -62431,9 +62433,9 @@
     },
     "standish": {
       "name": "Standish",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:47:37.389338+00:00",
-      "checked_at": "2026-11-17T21:47:37.389338+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:11.158943+00:00",
+      "checked_at": "2026-11-21T01:28:11.158943+00:00",
       "musicbrainz_id": "78536c80-0f28-4cf5-889a-f7832d91d65c",
       "canonical_name": "Standish",
       "match_score": 100,
@@ -62449,14 +62451,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:47:37.389338+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:11.158943+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Standish&limit=8"
     },
     "mm": {
       "name": "MM",
@@ -64872,9 +64875,9 @@
     },
     "the-lions-children": {
       "name": "The Lion's Children",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:47:59.451735+00:00",
-      "checked_at": "2026-11-17T21:47:59.451735+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:12.464188+00:00",
+      "checked_at": "2026-11-21T01:28:12.464188+00:00",
       "musicbrainz_id": "ce5b8811-183b-40aa-ba00-5ca017c93d73",
       "canonical_name": "The Lion's Children",
       "match_score": 100,
@@ -64886,14 +64889,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:47:59.451735+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:12.464188+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=The+Lion%27s+Children&limit=8"
     },
     "buchanan": {
       "name": "Buchanan",
@@ -67417,9 +67421,9 @@
     },
     "majestico": {
       "name": "Majestico",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:09.882333+00:00",
-      "checked_at": "2026-11-17T21:48:09.882333+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:15.070765+00:00",
+      "checked_at": "2026-11-21T01:28:15.070765+00:00",
       "musicbrainz_id": "bb5af561-1075-4b56-b039-95a75dda8850",
       "canonical_name": "Majestico",
       "match_score": 100,
@@ -67431,14 +67435,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:09.882333+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:15.070765+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Majestico&limit=8"
     },
     "peachpit": {
       "name": "Peachpit",
@@ -68848,9 +68853,9 @@
     },
     "hunck": {
       "name": "HUNCK",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:18.684376+00:00",
-      "checked_at": "2026-11-17T21:48:18.684376+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:17.784476+00:00",
+      "checked_at": "2026-11-21T01:28:17.784476+00:00",
       "musicbrainz_id": "13130ed2-9a52-44d1-8f14-0749ed6c0bf9",
       "canonical_name": "Hunck",
       "match_score": 100,
@@ -68866,14 +68871,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:18.684376+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:17.784476+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=HUNCK&limit=8"
     },
     "joel-magid": {
       "name": "Joel Magid",
@@ -70503,9 +70509,9 @@
     },
     "121": {
       "name": "121",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:21.461588+00:00",
-      "checked_at": "2026-11-17T21:48:21.461588+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:19.113557+00:00",
+      "checked_at": "2026-11-21T01:28:19.113557+00:00",
       "musicbrainz_id": "e2c5e445-ba05-407a-8263-4eecf187e5bd",
       "canonical_name": "121",
       "match_score": 100,
@@ -70517,13 +70523,14 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/5afc3d99e4b8c2c21e1e52fadbcfa69f/1000x1000-000000-80-0-0.jpg",
       "image_source": "Deezer exact artist match",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:21.461588+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:19.113557+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=121&limit=8"
     },
     "137": {
       "name": "137",
@@ -72235,9 +72242,9 @@
     },
     "the-tallest-tree": {
       "name": "THE TALLEST TREE",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:22.983297+00:00",
-      "checked_at": "2026-11-17T21:48:22.983297+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:22.012154+00:00",
+      "checked_at": "2026-11-21T01:28:22.012154+00:00",
       "musicbrainz_id": "477b5d98-3e73-478e-98c3-c52e93373142",
       "canonical_name": "The Tallest Tree",
       "match_score": 100,
@@ -72253,14 +72260,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:22.983297+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:22.012154+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=THE+TALLEST+TREE&limit=8"
     },
     "cheerleader": {
       "name": "Cheerleader",
@@ -73445,9 +73453,9 @@
     },
     "big-jackson": {
       "name": "Big Jackson",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:25.585087+00:00",
-      "checked_at": "2026-11-17T21:48:25.585087+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:23.299318+00:00",
+      "checked_at": "2026-11-21T01:28:23.299318+00:00",
       "musicbrainz_id": "7d33e983-0028-4914-bc24-d87451e16239",
       "canonical_name": "Big Jackson",
       "match_score": 100,
@@ -73463,13 +73471,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:25.585087+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:23.299318+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Big+Jackson&limit=8"
     },
     "edamame": {
       "name": "Edamame",
@@ -73679,9 +73688,9 @@
     },
     "gloss": {
       "name": "Gloss",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:28.540291+00:00",
-      "checked_at": "2026-11-17T21:48:28.540291+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:24.610485+00:00",
+      "checked_at": "2026-11-21T01:28:24.610485+00:00",
       "musicbrainz_id": "5cfa21b5-8a1d-4ddb-94a4-e784f174a5f8",
       "canonical_name": "Gloss",
       "match_score": 100,
@@ -73693,14 +73702,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:28.540291+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:24.610485+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Gloss&limit=8"
     },
     "tera-melos": {
       "name": "Tera Melos",
@@ -73950,9 +73960,9 @@
     },
     "lisboaphantom": {
       "name": "LisboaPhantom",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:31.433026+00:00",
-      "checked_at": "2026-11-17T21:48:31.433026+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:27.194520+00:00",
+      "checked_at": "2026-11-21T01:28:27.194520+00:00",
       "musicbrainz_id": "f32d49cd-7329-4738-a42b-62f958983c8f",
       "canonical_name": "LisboaPhantom",
       "match_score": 100,
@@ -73964,14 +73974,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:31.433026+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:27.194520+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=LisboaPhantom&limit=8"
     },
     "alex-anwandter": {
       "name": "Alex Anwandter",
@@ -75018,9 +75029,9 @@
     },
     "gobble-gobble": {
       "name": "GOBBLE GOBBLE",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:35.661811+00:00",
-      "checked_at": "2026-11-17T21:48:35.661811+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:29.724358+00:00",
+      "checked_at": "2026-11-21T01:28:29.724358+00:00",
       "musicbrainz_id": "bf4c8254-df5a-493f-b255-b27ac054c607",
       "canonical_name": "Gobble Gobble",
       "match_score": 100,
@@ -75032,14 +75043,15 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "image",
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:35.661811+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:29.724358+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=GOBBLE+GOBBLE&limit=8"
     },
     "dog-is-dead": {
       "name": "Dog Is Dead",
@@ -75358,9 +75370,9 @@
     },
     "piano-club": {
       "name": "Piano Club",
-      "verified": true,
-      "profile_checked_at": "2026-11-17T21:48:38.503131+00:00",
-      "checked_at": "2026-11-17T21:48:38.503131+00:00",
+      "verified": false,
+      "profile_checked_at": "2026-11-21T01:28:31.043901+00:00",
+      "checked_at": "2026-11-21T01:28:31.043901+00:00",
       "musicbrainz_id": "c40f804b-e46a-44f2-aa5b-f5f1405d65e4",
       "canonical_name": "Piano Club",
       "match_score": 100,
@@ -75376,13 +75388,14 @@
       "image": "",
       "image_source": "",
       "wikipedia_url": "",
-      "profile_status": "partial",
-      "status": "partial",
+      "profile_status": "retry",
+      "status": "retry",
       "missing_fields": [
         "bio"
       ],
-      "next_retry_at": "2026-11-20T21:48:38.503131+00:00",
-      "attempt_count": 11
+      "next_retry_at": "2026-11-21T07:28:31.043901+00:00",
+      "attempt_count": 12,
+      "error": "403 Client Error: Forbidden for url: https://api.deezer.com/search/artist?q=Piano+Club&limit=8"
     },
     "leagues": {
       "name": "Leagues",
