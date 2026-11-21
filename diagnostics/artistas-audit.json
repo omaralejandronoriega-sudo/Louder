@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21T03:27:00.947844+00:00",
+  "generated_at": "2026-11-21T12:58:39.320599+00:00",
   "source_updates": {
-    "artists": "2026-11-21T03:26:55.976648Z",
-    "galleries": "2026-11-21T03:15:31.955934+00:00",
-    "album_art": "2026-11-20T22:38:55.197268+00:00"
+    "artists": "2026-11-21T12:58:33.978249Z",
+    "galleries": "2026-11-21T11:21:33.019588+00:00",
+    "album_art": "2026-11-21T11:45:00.805587+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-21T03:26:55.976648Z"
+      "merged_at": "2026-11-21T12:58:33.978249Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 827,
       "legacy": 61
     },
-    "missing_validated_profile_image": 950,
+    "missing_validated_profile_image": 949,
     "missing_profile_bio": 3450,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4383,
     "core_complete_pct": 55.31,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6975,
-    "effective_image_pct": 88.01,
+    "effective_image": 6976,
+    "effective_image_pct": 88.03,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5330,
-    "missing_image": 950,
+    "image_gallery_fallback": 5331,
+    "missing_image": 949,
     "effective_bio": 4475,
     "effective_bio_pct": 56.47,
     "bio_direct_artist": 1026,
@@ -72,9 +72,9 @@
     "missing_bio": 3450,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
-    "gallery_with_images": 6975,
-    "with_social": 4738,
-    "with_genre": 3915,
+    "gallery_with_images": 6976,
+    "with_social": 4741,
+    "with_genre": 3914,
     "with_related": 1599
   },
   "tracks": {
@@ -1581,9 +1581,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 49,
+      "plays": 50,
       "first_played": "15 jul 2022",
-      "last_played": "18 nov 2026 · 21:27",
+      "last_played": "21 nov 2026 · 02:18",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3926,9 +3926,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 49,
+      "plays": 50,
       "first_played": "15 jul 2022",
-      "last_played": "18 nov 2026 · 21:27",
+      "last_played": "21 nov 2026 · 02:18",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -4820,6 +4820,76 @@
       "profile_complete": false
     },
     {
+      "name": "CSS",
+      "slug": "css",
+      "plays": 27,
+      "first_played": "19 sep 2026",
+      "last_played": "20 nov 2026 · 22:08",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Holloways",
+      "slug": "the-holloways",
+      "plays": 27,
+      "first_played": "22 sep 2026",
+      "last_played": "20 nov 2026 · 21:27",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Hot Rats",
       "slug": "the-hot-rats",
       "plays": 27,
@@ -4885,41 +4955,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "CSS",
-      "slug": "css",
-      "plays": 26,
-      "first_played": "19 sep 2026",
-      "last_played": "17 nov 2026 · 08:36",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5032,41 +5067,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Holloways",
-      "slug": "the-holloways",
-      "plays": 26,
-      "first_played": "22 sep 2026",
-      "last_played": "17 nov 2026 · 06:33",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "De Vito",
       "slug": "de-vito",
       "plays": 25,
@@ -5169,6 +5169,41 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Delays",
+      "slug": "the-delays",
+      "plays": 25,
+      "first_played": "10 oct 2026",
+      "last_played": "21 nov 2026 · 01:25",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5315,41 +5350,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Delays",
-      "slug": "the-delays",
-      "plays": 24,
-      "first_played": "10 oct 2026",
-      "last_played": "20 nov 2026 · 08:29",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5646,6 +5646,43 @@
       "profile_complete": false
     },
     {
+      "name": "Dina Summer, Kalipo, Local Suicide",
+      "slug": "dina-summer-kalipo-local-suicide",
+      "plays": 22,
+      "first_played": "7 sep 2026",
+      "last_played": "21 nov 2026 · 05:14",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 1,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Jamiroquai/Beverley Knight",
       "slug": "jamiroquai-beverley-knight",
       "plays": 22,
@@ -5851,43 +5888,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Dina Summer, Kalipo, Local Suicide",
-      "slug": "dina-summer-kalipo-local-suicide",
-      "plays": 21,
-      "first_played": "7 sep 2026",
-      "last_played": "20 nov 2026 · 01:24",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 1,
       "missing_core": [
         "image",
         "bio"
@@ -6158,6 +6158,41 @@
       "profile_complete": false
     },
     {
+      "name": "Sean Solomon",
+      "slug": "sean-solomon",
+      "plays": 20,
+      "first_played": "20 sep 2026",
+      "last_played": "20 nov 2026 · 21:52",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "True Faith, Sculpture Club",
       "slug": "true-faith-sculpture-club",
       "plays": 20,
@@ -6306,41 +6341,6 @@
       "plays": 19,
       "first_played": "20 sep 2026",
       "last_played": "19 nov 2026 · 23:47",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Sean Solomon",
-      "slug": "sean-solomon",
-      "plays": 19,
-      "first_played": "20 sep 2026",
-      "last_played": "15 nov 2026 · 07:09",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -8553,9 +8553,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 49,
+      "plays": 50,
       "first_played": "15 jul 2022",
-      "last_played": "18 nov 2026 · 21:27",
+      "last_played": "21 nov 2026 · 02:18",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
