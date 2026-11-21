@@ -6,8 +6,8 @@
 
 ## Alta confianza
 
-- Louder — internal_exact — 952 plays — Transmitting Live Live (0); Louder Radio (499)
-- Louder Radio — internal_exact — 829 plays — stream (0); Louder · La Única Alternativa (669)
+- Louder — internal_exact — 955 plays — Transmitting Live Live (0); Louder Radio (502)
+- Louder Radio — internal_exact — 832 plays — stream (0); Louder · La Única Alternativa (672)
 - The British Corner — internal_exact — 460 plays — www.louder.mx (241); EN VIVO!! (76); Louder Radio (48); Omar Noriega En Vivo (28)
 - ¡Mordaz! — internal_exact — 167 plays — Al Aire (62); Al aire 1 (52); Al aire 2 (49); @mxlouder (3)
 - Louder.mx — internal_exact — 26 plays — PLANETA ROCK 2 de OCTUBRE (0)
