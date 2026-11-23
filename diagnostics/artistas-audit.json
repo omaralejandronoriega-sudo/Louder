@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T20:49:18.335932+00:00",
+  "generated_at": "2026-11-23T03:04:21.660392+00:00",
   "source_updates": {
-    "artists": "2026-11-22T20:49:12.535431Z",
-    "galleries": "2026-11-22T18:44:10.558153+00:00",
-    "album_art": "2026-11-22T14:54:01.851553+00:00"
+    "artists": "2026-11-23T03:04:17.142197Z",
+    "galleries": "2026-11-22T23:58:00.632714+00:00",
+    "album_art": "2026-11-23T01:37:52.916370+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1462
+      "yesstreaming_live": 1463
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-22T20:49:12.535431Z"
+      "merged_at": "2026-11-23T03:04:17.142197Z"
     }
   },
   "profile_enrichment": {
@@ -52,18 +52,18 @@
       "not_found": 827,
       "legacy": 61
     },
-    "missing_validated_profile_image": 949,
+    "missing_validated_profile_image": 948,
     "missing_profile_bio": 3450,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
     "core_complete": 4383,
     "core_complete_pct": 55.31,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6976,
-    "effective_image_pct": 88.03,
+    "effective_image": 6977,
+    "effective_image_pct": 88.04,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5331,
-    "missing_image": 949,
+    "image_gallery_fallback": 5332,
+    "missing_image": 948,
     "effective_bio": 4475,
     "effective_bio_pct": 56.47,
     "bio_direct_artist": 1026,
@@ -72,9 +72,9 @@
     "missing_bio": 3450,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
-    "gallery_with_images": 6976,
-    "with_social": 4735,
-    "with_genre": 3915,
+    "gallery_with_images": 6977,
+    "with_social": 4736,
+    "with_genre": 3916,
     "with_related": 1599
   },
   "tracks": {
@@ -83,7 +83,7 @@
     "with_effective_artwork_pct": 75.05,
     "missing_artwork": 4549,
     "grouped_as_otras": 5939,
-    "with_first_and_last_dates": 17881,
+    "with_first_and_last_dates": 17882,
     "album_art_cache_entries": 14911,
     "album_art_cache_found": 10778,
     "album_art_cache_missed": 4133
@@ -123,9 +123,9 @@
     "monsune": {
       "name": "Monsune",
       "slug": "monsune",
-      "plays": 22,
+      "plays": 23,
       "first_played": "5 mar 2025",
-      "last_played": "15 nov 2026 · 18:52",
+      "last_played": "22 nov 2026 · 15:23",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -1157,6 +1157,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 54,
+      "first_played": "14 jul 2022",
+      "last_played": "22 nov 2026 · 19:02",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Chief Warrant Officer",
       "slug": "chief-warrant-officer",
       "plays": 54,
@@ -1255,42 +1291,6 @@
       "profile_status": "partial",
       "profile_missing_fields": [
         "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 53,
-      "first_played": "14 jul 2022",
-      "last_played": "21 nov 2026 · 20:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
       ],
       "profile_complete": false
     },
@@ -1509,6 +1509,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 51,
+      "first_played": "15 jul 2022",
+      "last_played": "22 nov 2026 · 20:57",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -1577,11 +1614,11 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 50,
-      "first_played": "15 jul 2022",
-      "last_played": "21 nov 2026 · 02:18",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 49,
+      "first_played": "25 jul 2022",
+      "last_played": "22 nov 2026 · 18:18",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -1591,7 +1628,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -1715,43 +1752,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 48,
-      "first_played": "25 jul 2022",
-      "last_played": "19 nov 2026 · 13:23",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -3704,6 +3704,42 @@
       "profile_complete": false
     },
     {
+      "name": "Big Data/Joywave",
+      "slug": "big-data-joywave",
+      "plays": 54,
+      "first_played": "14 jul 2022",
+      "last_played": "22 nov 2026 · 19:02",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": true,
+      "bio_source": "gallery_en",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "image"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Chief Warrant Officer",
       "slug": "chief-warrant-officer",
       "plays": 54,
@@ -3727,42 +3763,6 @@
       "has_social": false,
       "has_genre": true,
       "related": 4,
-      "missing_core": [
-        "image"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "image"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Big Data/Joywave",
-      "slug": "big-data-joywave",
-      "plays": 53,
-      "first_played": "14 jul 2022",
-      "last_played": "21 nov 2026 · 20:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": true,
-      "bio_source": "gallery_en",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "image"
       ],
@@ -3888,9 +3888,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 50,
+      "plays": 51,
       "first_played": "15 jul 2022",
-      "last_played": "21 nov 2026 · 02:18",
+      "last_played": "22 nov 2026 · 20:57",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -3901,6 +3901,43 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 49,
+      "first_played": "25 jul 2022",
+      "last_played": "22 nov 2026 · 18:18",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3939,43 +3976,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 48,
-      "first_played": "25 jul 2022",
-      "last_played": "19 nov 2026 · 13:23",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5355,6 +5355,41 @@
       "profile_complete": false
     },
     {
+      "name": "Thirteen Senses",
+      "slug": "thirteen-senses",
+      "plays": 24,
+      "first_played": "12 oct 2026",
+      "last_played": "22 nov 2026 · 17:45",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Daniel Miller/Phil Legg",
       "slug": "depeche-mode-daniel-miller-phil-legg",
       "plays": 23,
@@ -5566,41 +5601,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Thirteen Senses",
-      "slug": "thirteen-senses",
-      "plays": 23,
-      "first_played": "12 oct 2026",
-      "last_played": "19 nov 2026 · 09:47",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6301,6 +6301,41 @@
       "profile_complete": false
     },
     {
+      "name": "American Motors",
+      "slug": "american-motors",
+      "plays": 19,
+      "first_played": "22 sep 2026",
+      "last_played": "22 nov 2026 · 18:04",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Alan Wilder/Steve Lyon",
       "slug": "depeche-mode-alan-wilder-steve-lyon",
       "plays": 19,
@@ -6392,7 +6427,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6589,41 +6624,6 @@
       "plays": 18,
       "first_played": "19 sep 2026",
       "last_played": "21 nov 2026 · 23:10",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "American Motors",
-      "slug": "american-motors",
-      "plays": 18,
-      "first_played": "22 sep 2026",
-      "last_played": "21 nov 2026 · 21:55",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -6858,6 +6858,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "JJerome87, alt-J",
+      "slug": "jjerome87-alt-j",
+      "plays": 18,
+      "first_played": "6 sep 2026",
+      "last_played": "22 nov 2026 · 15:50",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
       "missing_core": [
         "image",
         "bio"
@@ -7163,41 +7200,6 @@
       "plays": 17,
       "first_played": "19 sep 2026",
       "last_played": "17 nov 2026 · 22:14",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Dour",
-      "slug": "dour",
-      "plays": 17,
-      "first_played": "20 sep 2026",
-      "last_played": "17 nov 2026 · 19:05",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -8480,6 +8482,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 51,
+      "first_played": "15 jul 2022",
+      "last_played": "22 nov 2026 · 20:57",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -8548,11 +8587,11 @@
       "profile_complete": false
     },
     {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 50,
-      "first_played": "15 jul 2022",
-      "last_played": "21 nov 2026 · 02:18",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 49,
+      "first_played": "25 jul 2022",
+      "last_played": "22 nov 2026 · 18:18",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -8562,7 +8601,7 @@
       "tracks": 1,
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -8686,43 +8725,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 48,
-      "first_played": "25 jul 2022",
-      "last_played": "19 nov 2026 · 13:23",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
