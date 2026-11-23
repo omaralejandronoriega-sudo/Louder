@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-23T03:04:21.660392+00:00",
+  "generated_at": "2026-11-23T15:18:25.140175+00:00",
   "source_updates": {
-    "artists": "2026-11-23T03:04:17.142197Z",
-    "galleries": "2026-11-22T23:58:00.632714+00:00",
-    "album_art": "2026-11-23T01:37:52.916370+00:00"
+    "artists": "2026-11-23T15:18:19.425003Z",
+    "galleries": "2026-11-23T05:47:23.110451+00:00",
+    "album_art": "2026-11-23T09:46:46.220696+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-23T03:04:17.142197Z"
+      "merged_at": "2026-11-23T15:18:19.425003Z"
     }
   },
   "profile_enrichment": {
@@ -48,8 +48,8 @@
     "real_profile_complete_pct": 55.56,
     "profile_status": {
       "complete": 4161,
-      "partial": 2876,
-      "not_found": 827,
+      "partial": 2877,
+      "not_found": 826,
       "legacy": 61
     },
     "missing_validated_profile_image": 948,
@@ -73,7 +73,7 @@
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
     "gallery_with_images": 6977,
-    "with_social": 4736,
+    "with_social": 4737,
     "with_genre": 3916,
     "with_related": 1599
   },
@@ -225,9 +225,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 142,
+      "plays": 143,
       "first_played": "21 nov 2012",
-      "last_played": "22 nov 2026 · 06:03",
+      "last_played": "22 nov 2026 · 23:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -504,6 +504,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 71,
+      "first_played": "29 mar 2016",
+      "last_played": "22 nov 2026 · 23:37",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Brazos",
       "slug": "brazos",
       "plays": 70,
@@ -592,43 +629,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 70,
-      "first_played": "29 mar 2016",
-      "last_played": "21 nov 2026 · 09:42",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -2071,6 +2071,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 45,
+      "first_played": "17 mar 2013",
+      "last_played": "22 nov 2026 · 21:27",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Alert New London",
       "slug": "alert-new-london",
       "plays": 44,
@@ -2232,41 +2267,6 @@
       "gallery_images": 2,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 44,
-      "first_played": "17 mar 2013",
-      "last_played": "21 nov 2026 · 17:26",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
@@ -6336,6 +6336,43 @@
       "profile_complete": false
     },
     {
+      "name": "CHVRCHES / Robert Smith",
+      "slug": "chvrches-robert-smith",
+      "plays": 19,
+      "first_played": "2 sep 2022",
+      "last_played": "22 nov 2026 · 22:18",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Alan Wilder/Steve Lyon",
       "slug": "depeche-mode-alan-wilder-steve-lyon",
       "plays": 19,
@@ -6430,6 +6467,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "Orla Gartland, Matt Maltese",
+      "slug": "orla-gartland-matt-maltese",
+      "plays": 19,
+      "first_played": "7 sep 2026",
+      "last_played": "23 nov 2026 · 07:47",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 7,
       "missing_core": [
         "image",
         "bio"
@@ -6726,43 +6800,6 @@
       "profile_complete": false
     },
     {
-      "name": "CHVRCHES / Robert Smith",
-      "slug": "chvrches-robert-smith",
-      "plays": 18,
-      "first_played": "2 sep 2022",
-      "last_played": "10 nov 2026 · 18:31",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Coast Jumper",
       "slug": "coast-jumper",
       "plays": 18,
@@ -6936,43 +6973,6 @@
       ],
       "core_complete": false,
       "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Orla Gartland, Matt Maltese",
-      "slug": "orla-gartland-matt-maltese",
-      "plays": 18,
-      "first_played": "7 sep 2026",
-      "last_played": "21 nov 2026 · 07:52",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 7,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7302,9 +7302,9 @@
     {
       "name": "Post War Years",
       "slug": "post-war-years",
-      "plays": 142,
+      "plays": 143,
       "first_played": "21 nov 2012",
-      "last_played": "22 nov 2026 · 06:03",
+      "last_played": "22 nov 2026 · 23:32",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7581,6 +7581,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 71,
+      "first_played": "29 mar 2016",
+      "last_played": "22 nov 2026 · 23:37",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Brazos",
       "slug": "brazos",
       "plays": 70,
@@ -7669,43 +7706,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 70,
-      "first_played": "29 mar 2016",
-      "last_played": "21 nov 2026 · 09:42",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -9044,6 +9044,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 45,
+      "first_played": "17 mar 2013",
+      "last_played": "22 nov 2026 · 21:27",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Alert New London",
       "slug": "alert-new-london",
       "plays": 44,
@@ -9205,41 +9240,6 @@
       "gallery_images": 2,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 44,
-      "first_played": "17 mar 2013",
-      "last_played": "21 nov 2026 · 17:26",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
