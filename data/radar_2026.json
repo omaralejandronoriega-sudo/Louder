@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "updated_at": "2026-11-23T07:36:26.358070+00:00",
-  "scan_cursor": 1912,
+  "updated_at": "2026-11-23T23:53:04.568897+00:00",
+  "scan_cursor": 1972,
   "rules": {
     "original_release_year": 2026,
     "reject_reissues": true,
@@ -3089,6 +3089,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/ebaac2cd-4dd8-4bc8-b0b3-08b2b4ff3b6d"
       },
       "discovered_at": "2026-11-21T07:04:47.766959+00:00"
+    },
+    {
+      "id": "mb:f00f25bc-798a-4363-9608-01b2cd2d068a",
+      "artist": "Militarie Gun",
+      "title": "Father Christmas",
+      "original_release_date": "2026-11-13",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f00f25bc-798a-4363-9608-01b2cd2d068a"
+      },
+      "discovered_at": "2026-11-23T23:52:53.895180+00:00"
     },
     {
       "id": "mb:8d0e263b-8921-4f1e-958a-2ec07aaf19fe",
@@ -11427,6 +11449,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/fe9d36a4-b295-4e63-8cf6-73e120401bff"
       },
       "discovered_at": "2026-10-24T10:59:41.029538+00:00"
+    },
+    {
+      "id": "mb:01fe0a38-dede-4d74-975c-ae14e7de847c",
+      "artist": "Alvin Stardust",
+      "title": "My Coo Ca Choo",
+      "original_release_date": "2026-11-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/01fe0a38-dede-4d74-975c-ae14e7de847c"
+      },
+      "discovered_at": "2026-11-23T23:52:48.385582+00:00"
     },
     {
       "id": "mb:5c45b1a8-6c91-4831-af8e-5e51a5a674d7",
@@ -24805,6 +24849,116 @@
       "discovered_at": "2026-10-21T04:45:05.926174+00:00"
     },
     {
+      "id": "mb:dbbf59a3-3870-4b87-886c-279c6a9a4f78",
+      "artist": "Fake Names",
+      "title": "What I Tell Myself",
+      "original_release_date": "2026-10-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/dbbf59a3-3870-4b87-886c-279c6a9a4f78"
+      },
+      "discovered_at": "2026-11-23T23:52:27.930161+00:00"
+    },
+    {
+      "id": "mb:9c693d08-aef9-4115-a8ec-d86588cef7c3",
+      "artist": "Fake Names",
+      "title": "The Little Wonders",
+      "original_release_date": "2026-10-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9c693d08-aef9-4115-a8ec-d86588cef7c3"
+      },
+      "discovered_at": "2026-11-23T23:52:27.929930+00:00"
+    },
+    {
+      "id": "mb:4d54e87e-1279-4592-8db6-ce47557a5565",
+      "artist": "Fake Names",
+      "title": "Scream",
+      "original_release_date": "2026-10-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4d54e87e-1279-4592-8db6-ce47557a5565"
+      },
+      "discovered_at": "2026-11-23T23:52:27.930171+00:00"
+    },
+    {
+      "id": "mb:398123cc-aa35-43d1-8eef-701cba278e96",
+      "artist": "Fake Names",
+      "title": "Diamond Buzz",
+      "original_release_date": "2026-10-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/398123cc-aa35-43d1-8eef-701cba278e96"
+      },
+      "discovered_at": "2026-11-23T23:52:27.930182+00:00"
+    },
+    {
+      "id": "mb:5f7eba49-c507-44be-b447-30a85f71da1f",
+      "artist": "Fake Names",
+      "title": "Beautiful Scars",
+      "original_release_date": "2026-10-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5f7eba49-c507-44be-b447-30a85f71da1f"
+      },
+      "discovered_at": "2026-11-23T23:52:27.929918+00:00"
+    },
+    {
       "id": "mb:50b4103e-0d78-4591-8dd6-28f05d20d92e",
       "artist": "DEVORA",
       "title": "Hurt Me",
@@ -29733,6 +29887,28 @@
       "discovered_at": "2026-10-06T18:21:26.832203+00:00"
     },
     {
+      "id": "mb:2d81dfa2-fbab-4ff9-b3ac-fd8203222d2f",
+      "artist": "Stray View",
+      "title": "Hourglass",
+      "original_release_date": "2026-10-16",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2d81dfa2-fbab-4ff9-b3ac-fd8203222d2f"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149830+00:00"
+    },
+    {
       "id": "mb:a3dcd75f-dbee-481d-bb36-b3faf6eb1bc3",
       "artist": "Stray View",
       "title": "For The Best",
@@ -29775,6 +29951,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/f929ab6f-2ea4-4483-ae2e-45d4a059ab33"
       },
       "discovered_at": "2026-10-06T18:21:26.832071+00:00"
+    },
+    {
+      "id": "mb:29ac6610-76d8-49d9-a4df-c08a1788e6e8",
+      "artist": "Stray View",
+      "title": "Collide",
+      "original_release_date": "2026-10-16",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/29ac6610-76d8-49d9-a4df-c08a1788e6e8"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149865+00:00"
     },
     {
       "id": "mb:cdbca091-77dd-4e0e-afb0-cc81a85ec3d2",
@@ -47828,6 +48026,28 @@
       "discovered_at": "2026-10-12T05:56:39.150204+00:00"
     },
     {
+      "id": "mb:47093c2e-cac8-4e9c-a44f-83acb9df7d4d",
+      "artist": "Nicky Sohn",
+      "title": "Galaxy Back to You",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/47093c2e-cac8-4e9c-a44f-83acb9df7d4d"
+      },
+      "discovered_at": "2026-11-23T23:52:19.915449+00:00"
+    },
+    {
       "id": "mb:87b7440c-1857-4469-b31b-b51941c7d175",
       "artist": "Money Mark",
       "title": "Helicopter",
@@ -50686,6 +50906,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/4e17241e-fe0e-4f09-9d5d-429b89e43571"
       },
       "discovered_at": "2026-11-02T06:01:31.167358+00:00"
+    },
+    {
+      "id": "mb:03a43acd-5dcd-47d2-bfc4-f29841899457",
+      "artist": "From Sand To Stardust",
+      "title": "The Sailor & The Eclipse",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/03a43acd-5dcd-47d2-bfc4-f29841899457"
+      },
+      "discovered_at": "2026-11-23T23:52:48.385891+00:00"
+    },
+    {
+      "id": "mb:0a397d2c-f89d-4002-a850-88ba4356b1cd",
+      "artist": "From Sand To Stardust",
+      "title": "Ragdoll Boogie",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0a397d2c-f89d-4002-a850-88ba4356b1cd"
+      },
+      "discovered_at": "2026-11-23T23:52:48.385832+00:00"
+    },
+    {
+      "id": "mb:4624d88e-ec4e-4e2b-b44a-f388c78d0fb9",
+      "artist": "From Sand To Stardust",
+      "title": "Carving Stone From Space",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/4624d88e-ec4e-4e2b-b44a-f388c78d0fb9"
+      },
+      "discovered_at": "2026-11-23T23:52:48.385862+00:00"
     },
     {
       "id": "mb:44d1e2f3-2024-48cd-9b51-308f516a0b08",
@@ -53942,6 +54228,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/e2aa4274-0233-43d1-8413-0fdf5f05e0bc"
       },
       "discovered_at": "2026-10-31T21:33:12.516133+00:00"
+    },
+    {
+      "id": "mb:0da556a1-8b09-4870-9f87-cc9b934d1800",
+      "artist": "[view]",
+      "title": "Partitions of Knitting Bone",
+      "original_release_date": "2026-10-01",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0da556a1-8b09-4870-9f87-cc9b934d1800"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149701+00:00"
     },
     {
       "id": "mb:32bf2fbc-c580-4a5c-9b79-0b8047aa697b",
@@ -97905,6 +98213,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/fe60af85-2ead-4a35-8085-073e417f827d"
       },
       "discovered_at": "2026-10-06T18:21:26.832175+00:00"
+    },
+    {
+      "id": "mb:26003dee-31ed-4dec-9a64-5fea173a8af9",
+      "artist": "Caged View",
+      "title": "I Was A Stranger",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/26003dee-31ed-4dec-9a64-5fea173a8af9"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149876+00:00"
     },
     {
       "id": "mb:f241b616-566d-4f79-a781-646b2f590e2d",
@@ -156208,6 +156538,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/2ab2208f-e6a0-4b6e-bce5-7064f7539280"
       },
       "discovered_at": "2026-11-22T19:38:12.499982+00:00"
+    },
+    {
+      "id": "mb:b7c2b140-1d34-46b1-b8ec-c7732b856395",
+      "artist": "As Bright As The Stars",
+      "title": "Eyes of Dawn",
+      "original_release_date": "2026-07-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:tag:shoegaze"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b7c2b140-1d34-46b1-b8ec-c7732b856395"
+      },
+      "discovered_at": "2026-11-23T23:53:01.935140+00:00"
+    },
+    {
+      "id": "mb:17a9061a-6239-410a-bb22-c76578631a54",
+      "artist": "As Bright As The Stars",
+      "title": "Crystal Light",
+      "original_release_date": "2026-07-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:tag:shoegaze"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/17a9061a-6239-410a-bb22-c76578631a54"
+      },
+      "discovered_at": "2026-11-23T23:53:01.935112+00:00"
+    },
+    {
+      "id": "mb:14326e42-7aff-4dca-93e3-aac5742b58ea",
+      "artist": "As Bright As The Stars",
+      "title": "Celestial Ascension",
+      "original_release_date": "2026-07-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:tag:shoegaze"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/14326e42-7aff-4dca-93e3-aac5742b58ea"
+      },
+      "discovered_at": "2026-11-23T23:53:01.935126+00:00"
     },
     {
       "id": "mb:d6912cdc-2fd1-4ecd-a8c5-ada40f1725db",
@@ -312819,6 +313215,28 @@
       "discovered_at": "2026-10-06T18:21:26.831938+00:00"
     },
     {
+      "id": "mb:a2fad4c4-04e7-46b9-8360-c89297490db7",
+      "artist": "Bird's View",
+      "title": "No Name Rooms",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a2fad4c4-04e7-46b9-8360-c89297490db7"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149763+00:00"
+    },
+    {
       "id": "mb:332030cc-4ba5-4c3f-8100-401d83ee1a30",
       "artist": "Bird's View",
       "title": "Hallway Eyes",
@@ -322189,6 +322607,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/99337f33-aa75-489f-b6c8-a1df6ad1ac21"
       },
       "discovered_at": "2026-10-02T22:14:10.692880+00:00"
+    },
+    {
+      "id": "mb:bea12d75-199d-44ec-9be8-c4d45a71dd2b",
+      "artist": "Matt View",
+      "title": "Papaver",
+      "original_release_date": "2026-05-01",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bea12d75-199d-44ec-9be8-c4d45a71dd2b"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149901+00:00"
     },
     {
       "id": "mb:1d3b4b2c-8824-49d3-bfd3-5e44d0e3d043",
@@ -377962,6 +378402,28 @@
       "discovered_at": "2026-09-25T21:31:20.805351+00:00"
     },
     {
+      "id": "mb:acd8b70b-4a50-42ae-b1c8-1d61f92764b9",
+      "artist": "Bird's View",
+      "title": "Ways to Fail",
+      "original_release_date": "2026-04-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/acd8b70b-4a50-42ae-b1c8-1d61f92764b9"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149751+00:00"
+    },
+    {
       "id": "mb:e508f3ae-fd9f-4677-90d8-1711345d33ea",
       "artist": "Bird's View",
       "title": "Shadows",
@@ -377984,6 +378446,28 @@
       "discovered_at": "2026-10-06T18:21:26.832135+00:00"
     },
     {
+      "id": "mb:5108996c-e408-4e5b-a51b-1fcd93caa933",
+      "artist": "Bird's View",
+      "title": "Selling a Hand",
+      "original_release_date": "2026-04-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5108996c-e408-4e5b-a51b-1fcd93caa933"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149774+00:00"
+    },
+    {
       "id": "mb:b1452ccb-2e36-4531-8939-f1df0fe00f75",
       "artist": "Bird's View",
       "title": "In Between",
@@ -378004,6 +378488,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/b1452ccb-2e36-4531-8939-f1df0fe00f75"
       },
       "discovered_at": "2026-10-06T18:21:26.832096+00:00"
+    },
+    {
+      "id": "mb:01862eca-8f6c-463b-9076-c45442138d07",
+      "artist": "Bird's View",
+      "title": "Colors of a Day",
+      "original_release_date": "2026-04-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/01862eca-8f6c-463b-9076-c45442138d07"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149737+00:00"
     },
     {
       "id": "mb:0801bb37-2d35-4142-b0f3-7dea73a1abcf",
@@ -419125,6 +419631,116 @@
       "discovered_at": "2026-10-15T16:59:55.182533+00:00"
     },
     {
+      "id": "mb:44136bc3-1f2e-41b1-aa5b-47fa97b07d84",
+      "artist": "Altered View",
+      "title": "We Are Now",
+      "original_release_date": "2026-03-20",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/44136bc3-1f2e-41b1-aa5b-47fa97b07d84"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149820+00:00"
+    },
+    {
+      "id": "mb:672e3491-393d-473e-9f69-ce9b52be54b8",
+      "artist": "Altered View",
+      "title": "Piano Disturbance",
+      "original_release_date": "2026-03-20",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/672e3491-393d-473e-9f69-ce9b52be54b8"
+      },
+      "discovered_at": "2026-11-23T23:52:18.150014+00:00"
+    },
+    {
+      "id": "mb:26014f24-7c6d-4e57-8811-006d02103e4e",
+      "artist": "Altered View",
+      "title": "Nightrunner",
+      "original_release_date": "2026-03-20",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/26014f24-7c6d-4e57-8811-006d02103e4e"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149785+00:00"
+    },
+    {
+      "id": "mb:6c3e4a09-e1e9-4d07-aafd-6afaf9b6d78b",
+      "artist": "Altered View",
+      "title": "Mission for Love",
+      "original_release_date": "2026-03-20",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6c3e4a09-e1e9-4d07-aafd-6afaf9b6d78b"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149797+00:00"
+    },
+    {
+      "id": "mb:ed0b68e1-51b5-4638-975a-0d0a35bf7a54",
+      "artist": "Altered View",
+      "title": "Looking Through the Streets",
+      "original_release_date": "2026-03-20",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ed0b68e1-51b5-4638-975a-0d0a35bf7a54"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149809+00:00"
+    },
+    {
       "id": "mb:53f63222-8a71-456b-bece-b1809a819263",
       "artist": "Alice Merton",
       "title": "Visions",
@@ -452923,6 +453539,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/7741d1be-d12f-47c5-b986-743d8fc7b8f9"
       },
       "discovered_at": "2026-11-08T05:59:18.645950+00:00"
+    },
+    {
+      "id": "mb:7e2f1166-ee6f-42c9-afaa-76b1643bfb8a",
+      "artist": "Stray View",
+      "title": "Vanity",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7e2f1166-ee6f-42c9-afaa-76b1643bfb8a"
+      },
+      "discovered_at": "2026-11-23T23:52:18.149854+00:00"
     },
     {
       "id": "mb:64d93fee-5d37-40ab-91eb-9933c2e3370d",
@@ -568907,15 +569545,15 @@
     }
   ],
   "stats": {
-    "total": 25853,
-    "released": 25720,
+    "total": 25882,
+    "released": 25749,
     "upcoming": 133,
-    "pending": 14319,
+    "pending": 14321,
     "downloaded": 0,
     "programmed": 0,
-    "review_queue": 11401,
+    "review_queue": 11428,
     "discarded": 0,
-    "louder_yes": 14433,
-    "review": 11420
+    "louder_yes": 14435,
+    "review": 11447
   }
 }
