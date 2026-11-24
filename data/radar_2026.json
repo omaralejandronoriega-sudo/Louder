@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "updated_at": "2026-11-23T23:53:04.568897+00:00",
-  "scan_cursor": 1972,
+  "updated_at": "2026-11-24T09:53:17.806453+00:00",
+  "scan_cursor": 2032,
   "rules": {
     "original_release_year": 2026,
     "reject_reissues": true,
@@ -10,6 +10,28 @@
     "reject_pre_2026_originals": true
   },
   "tracks": [
+    {
+      "id": "mb:0eef00ad-6013-434f-ae02-8703340fb4ce",
+      "artist": "HEALTH",
+      "title": "NIGHTMARE",
+      "original_release_date": "2026-11-23",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0eef00ad-6013-434f-ae02-8703340fb4ce"
+      },
+      "discovered_at": "2026-11-24T09:52:45.182903+00:00"
+    },
     {
       "id": "mb:35b97e30-c51e-45c9-a654-53c283263a6d",
       "artist": "Wayfarer featuring Midwife",
@@ -12703,6 +12725,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/6f052601-cdf1-47f6-a3c8-55e2946e25fa"
       },
       "discovered_at": "2026-11-09T22:21:43.739530+00:00"
+    },
+    {
+      "id": "mb:ebb61ff5-2425-4c24-b0e2-273965131778",
+      "artist": "The Oscillation feat. Lorelle Meets the Obsolete",
+      "title": "La Alusión",
+      "original_release_date": "2026-10-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ebb61ff5-2425-4c24-b0e2-273965131778"
+      },
+      "discovered_at": "2026-11-24T09:52:59.140059+00:00"
+    },
+    {
+      "id": "mb:a098a059-b4e1-4061-a955-0732f9533cb0",
+      "artist": "The Oscillation feat. Lorelle Meets the Obsolete",
+      "title": "Isolation Freeway",
+      "original_release_date": "2026-10-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a098a059-b4e1-4061-a955-0732f9533cb0"
+      },
+      "discovered_at": "2026-11-24T09:52:59.140035+00:00"
     },
     {
       "id": "mb:9f2b565d-8a71-4189-996d-0d95c3f9a493",
@@ -32241,6 +32307,50 @@
       "discovered_at": "2026-10-02T22:13:29.841654+00:00"
     },
     {
+      "id": "mb:f654e3e0-7886-4295-9e27-3235528db1da",
+      "artist": "HEALTH",
+      "title": "NEGATIVE EDGE",
+      "original_release_date": "2026-10-16",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f654e3e0-7886-4295-9e27-3235528db1da"
+      },
+      "discovered_at": "2026-11-24T09:52:45.182928+00:00"
+    },
+    {
+      "id": "mb:a1150cee-43ce-4f9e-a5fa-40b951985135",
+      "artist": "HEALTH",
+      "title": "BRAINROT",
+      "original_release_date": "2026-10-16",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a1150cee-43ce-4f9e-a5fa-40b951985135"
+      },
+      "discovered_at": "2026-11-24T09:52:45.182915+00:00"
+    },
+    {
       "id": "mb:66ff8664-1504-4826-ad78-bef4b34172c7",
       "artist": "Green Eyes, Witch Hands",
       "title": "Woodbine",
@@ -50202,6 +50312,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/639cd633-1aaf-47c8-8932-889c2f73bfb3"
       },
       "discovered_at": "2026-11-14T22:22:42.353055+00:00"
+    },
+    {
+      "id": "mb:ae0359b7-2706-414c-ba7a-de593d9d2e3f",
+      "artist": "HEALTH",
+      "title": "Girl Attorney / The Problem Is / Cassettes / Get Color / Zoothorns / Crimewave",
+      "original_release_date": "2026-10-02",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ae0359b7-2706-414c-ba7a-de593d9d2e3f"
+      },
+      "discovered_at": "2026-11-24T09:52:45.182703+00:00"
     },
     {
       "id": "mb:01a036f7-010a-491b-a3ed-f65aba6adbaa",
@@ -69610,6 +69742,28 @@
       "discovered_at": "2026-10-01T05:51:46.461820+00:00"
     },
     {
+      "id": "mb:205f6424-bd26-46ac-8645-bf8259671b4f",
+      "artist": "HEALTH",
+      "title": "YOU DIED (HVDES RMX)",
+      "original_release_date": "2026-09-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/205f6424-bd26-46ac-8645-bf8259671b4f"
+      },
+      "discovered_at": "2026-11-24T09:52:45.182720+00:00"
+    },
+    {
       "id": "mb:7c8c7c91-ce27-4ffc-b706-34e53e33dca8",
       "artist": "HAAi",
       "title": "2026-09-19: BBC Radio 1 Essential Mix",
@@ -86703,6 +86857,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/a49246aa-e2bb-4d73-a03b-b529bbd796f2"
       },
       "discovered_at": "2026-10-06T18:22:27.619414+00:00"
+    },
+    {
+      "id": "mb:3c1afc8f-1c67-47af-a744-70028712f781",
+      "artist": "Fred again.. & LATIN MAFIA",
+      "title": "Mabe",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3c1afc8f-1c67-47af-a744-70028712f781"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086393+00:00"
+    },
+    {
+      "id": "mb:7d3e778d-bfc9-4388-806c-99d4b18b2c73",
+      "artist": "Fred again.. & LATIN MAFIA",
+      "title": "Hey Hey",
+      "original_release_date": "2026-09-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7d3e778d-bfc9-4388-806c-99d4b18b2c73"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086408+00:00"
     },
     {
       "id": "mb:c999204e-b524-4d54-860d-7346822e5f5f",
@@ -134958,6 +135156,138 @@
       "discovered_at": "2026-11-07T21:48:25.936586+00:00"
     },
     {
+      "id": "mb:2c41eddf-74c4-43f6-bd58-194be96361d3",
+      "artist": "Internet Money",
+      "title": "TELLIN LIES",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2c41eddf-74c4-43f6-bd58-194be96361d3"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944269+00:00"
+    },
+    {
+      "id": "mb:d895efb1-5d5e-4590-b085-04a519c448bf",
+      "artist": "Internet Money",
+      "title": "STEVE NASH",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d895efb1-5d5e-4590-b085-04a519c448bf"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944347+00:00"
+    },
+    {
+      "id": "mb:bc593855-36cf-4d92-850b-cd1336de847f",
+      "artist": "Internet Money",
+      "title": "MONSTER",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bc593855-36cf-4d92-850b-cd1336de847f"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944365+00:00"
+    },
+    {
+      "id": "mb:b8d62ebe-89f5-41dd-9d89-0e93e44faf74",
+      "artist": "Internet Money",
+      "title": "HELLY",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/b8d62ebe-89f5-41dd-9d89-0e93e44faf74"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944302+00:00"
+    },
+    {
+      "id": "mb:e4ff44e4-381f-4eb4-8f5b-47c34db511dc",
+      "artist": "Internet Money",
+      "title": "CEILING",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e4ff44e4-381f-4eb4-8f5b-47c34db511dc"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944326+00:00"
+    },
+    {
+      "id": "mb:1025ef15-45d4-44e4-926f-e64fbf1f4a3c",
+      "artist": "Internet Money",
+      "title": "556",
+      "original_release_date": "2026-08-14",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/1025ef15-45d4-44e4-926f-e64fbf1f4a3c"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944384+00:00"
+    },
+    {
       "id": "mb:90d6b05f-6687-4f94-a014-d710b9d98ecb",
       "artist": "Icona Pop",
       "title": "Never Over",
@@ -155066,6 +155396,28 @@
       "discovered_at": "2026-10-15T21:22:55.726465+00:00"
     },
     {
+      "id": "mb:e9f64b16-42b3-449b-b81c-66a375b75a56",
+      "artist": "Fred again.. & LATIN MAFIA",
+      "title": "I wish it wasnt",
+      "original_release_date": "2026-07-31",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e9f64b16-42b3-449b-b81c-66a375b75a56"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086179+00:00"
+    },
+    {
       "id": "mb:1375e0e4-d72e-4a2f-a2bf-94de84c6e626",
       "artist": "Fred again.. & LATIN MAFIA",
       "title": "Film Scene Soundtrack",
@@ -157552,6 +157904,28 @@
       "discovered_at": "2026-10-07T05:58:12.348374+00:00"
     },
     {
+      "id": "mb:516b337a-0361-4094-b653-2328182c09e0",
+      "artist": "Money Man",
+      "title": "Tied In",
+      "original_release_date": "2026-07-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/516b337a-0361-4094-b653-2328182c09e0"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944247+00:00"
+    },
+    {
       "id": "mb:d285b9b1-db60-4402-832d-6eb3e2154bcc",
       "artist": "Money Man",
       "title": "Pristine",
@@ -157572,6 +157946,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/d285b9b1-db60-4402-832d-6eb3e2154bcc"
       },
       "discovered_at": "2026-10-07T05:58:12.348356+00:00"
+    },
+    {
+      "id": "mb:6499a781-2412-493a-a4f0-ece4aadbcf95",
+      "artist": "Money Man",
+      "title": "No Commas",
+      "original_release_date": "2026-07-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6499a781-2412-493a-a4f0-ece4aadbcf95"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944186+00:00"
     },
     {
       "id": "mb:a1479a30-43c4-4b29-bfab-8acf897016ac",
@@ -157616,6 +158012,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/3c30e6dd-d76b-477b-8dca-0e5ef8ee27b6"
       },
       "discovered_at": "2026-10-07T05:58:12.348396+00:00"
+    },
+    {
+      "id": "mb:2b5e1e4a-0549-4c2a-a74e-4da927aa54ce",
+      "artist": "Money Man",
+      "title": "Himalayas",
+      "original_release_date": "2026-07-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2b5e1e4a-0549-4c2a-a74e-4da927aa54ce"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944206+00:00"
     },
     {
       "id": "mb:b7a03ff1-e94d-4813-9b9a-cbfbbac3c8e8",
@@ -157682,6 +158100,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/c246d3e8-ad6f-425f-8489-f1c97bfad3b4"
       },
       "discovered_at": "2026-10-07T05:58:12.348433+00:00"
+    },
+    {
+      "id": "mb:a7cf0ea9-97a3-4904-90c3-da7e55ab6cea",
+      "artist": "Money Man",
+      "title": "Did It Again",
+      "original_release_date": "2026-07-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a7cf0ea9-97a3-4904-90c3-da7e55ab6cea"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944227+00:00"
     },
     {
       "id": "mb:4647d9e8-dcd0-43f4-b3d4-c87a8674ccb1",
@@ -199265,6 +199705,28 @@
       "discovered_at": "2026-09-27T05:18:11.796774+00:00"
     },
     {
+      "id": "mb:3b661135-2e15-4ff3-adc9-d7ac2b79e521",
+      "artist": "Tara Lily & King Krule",
+      "title": "Tropical Storm",
+      "original_release_date": "2026-07-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3b661135-2e15-4ff3-adc9-d7ac2b79e521"
+      },
+      "discovered_at": "2026-11-24T09:52:27.091875+00:00"
+    },
+    {
       "id": "mb:72262f74-7811-4d95-9a87-b1000b20e4cb",
       "artist": "Perdí La Luz",
       "title": "Megadance",
@@ -209936,6 +210398,28 @@
       "discovered_at": "2026-10-18T11:03:42.084103+00:00"
     },
     {
+      "id": "mb:5d850817-575a-4aa4-bb56-25a6b45c5371",
+      "artist": "Money Boy",
+      "title": "Wer hat das gesagt?",
+      "original_release_date": "2026-06-26",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5d850817-575a-4aa4-bb56-25a6b45c5371"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944520+00:00"
+    },
+    {
       "id": "mb:68380b82-09b3-41c2-8414-541fe0388345",
       "artist": "Money Boy",
       "title": "Eskimo",
@@ -209956,6 +210440,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/68380b82-09b3-41c2-8414-541fe0388345"
       },
       "discovered_at": "2026-10-07T05:58:12.348326+00:00"
+    },
+    {
+      "id": "mb:0bfa42f7-75f0-4183-8d97-5779c2dd4251",
+      "artist": "Money Boy",
+      "title": "Alles Gucci",
+      "original_release_date": "2026-06-26",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/0bfa42f7-75f0-4183-8d97-5779c2dd4251"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944495+00:00"
     },
     {
       "id": "mb:141de150-8a3f-4188-9366-639bb400a0a9",
@@ -296737,6 +297243,28 @@
       "discovered_at": "2026-11-01T13:24:14.919223+00:00"
     },
     {
+      "id": "mb:85c95ff3-1f4b-4886-b791-f680efe4c771",
+      "artist": "Fred again.., Skepta & PlaqueBoyMax",
+      "title": "Victory Lap",
+      "original_release_date": "2026-05-15",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/85c95ff3-1f4b-4886-b791-f680efe4c771"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086358+00:00"
+    },
+    {
       "id": "mb:ca9b1819-b2d8-46f6-b337-82c52a8df503",
       "artist": "Five Finger Death Punch",
       "title": "Eye of the Storm",
@@ -310485,6 +311013,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/497c1242-c8be-470f-8266-c938ff7bf536"
       },
       "discovered_at": "2026-10-22T04:43:22.239373+00:00"
+    },
+    {
+      "id": "mb:d3f8558c-b706-4262-9155-90c23d6ad8bf",
+      "artist": "Fred again.., PARISI & Eyelar",
+      "title": "This Is Real (Disappear)",
+      "original_release_date": "2026-05-08",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d3f8558c-b706-4262-9155-90c23d6ad8bf"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086458+00:00"
     },
     {
       "id": "mb:de67f2a4-4eae-470d-bd78-5d12b9fdafee",
@@ -374310,6 +374860,28 @@
       "discovered_at": "2026-10-17T15:33:38.372418+00:00"
     },
     {
+      "id": "mb:e4abe79b-72fe-4008-982c-aafd075f8499",
+      "artist": "Paper Money",
+      "title": "Pretty Faces",
+      "original_release_date": "2026-04-10",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e4abe79b-72fe-4008-982c-aafd075f8499"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944584+00:00"
+    },
+    {
       "id": "mb:0f8cfc38-b8f9-48f8-91d9-29f6006e6a0a",
       "artist": "papa zen",
       "title": "Sanctuary",
@@ -378886,6 +379458,28 @@
       "discovered_at": "2026-10-07T05:58:12.348217+00:00"
     },
     {
+      "id": "mb:73a2b87c-b011-4bce-9e76-fdc91952b173",
+      "artist": "Money Man",
+      "title": "It's Easy",
+      "original_release_date": "2026-04-08",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/73a2b87c-b011-4bce-9e76-fdc91952b173"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944539+00:00"
+    },
+    {
       "id": "mb:6698387e-0c5d-4305-915b-bc002ca38bcf",
       "artist": "Money Man",
       "title": "Credit Increase",
@@ -378950,6 +379544,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/000471ba-6ff9-469d-a1d1-a401fb7404fd"
       },
       "discovered_at": "2026-10-21T17:11:55.868433+00:00"
+    },
+    {
+      "id": "mb:9bb75c83-7942-4ed4-9a99-8cfbd28bd2ce",
+      "artist": "Money Man",
+      "title": "All The Gold",
+      "original_release_date": "2026-04-08",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/9bb75c83-7942-4ed4-9a99-8cfbd28bd2ce"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944560+00:00"
     },
     {
       "id": "mb:c4dddd17-bec2-4934-84d2-e5708242867b",
@@ -403171,6 +403787,28 @@
       "discovered_at": "2026-10-06T18:22:27.619668+00:00"
     },
     {
+      "id": "mb:3d82511d-bae7-4736-82ed-d17166c9a6e5",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Teachers x flight fm x Southside",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3d82511d-bae7-4736-82ed-d17166c9a6e5"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086338+00:00"
+    },
+    {
       "id": "mb:3de599dc-2670-410c-88e6-7c1b965c666d",
       "artist": "Fred again.. & Thomas Bangalter",
       "title": "Starboy x leavemealone",
@@ -403215,6 +403853,28 @@
       "discovered_at": "2026-10-06T18:22:27.619651+00:00"
     },
     {
+      "id": "mb:aee2f89e-685c-4277-a5c4-812fea30a1c5",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Raspberry Beret - Prince",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/aee2f89e-685c-4277-a5c4-812fea30a1c5"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086319+00:00"
+    },
+    {
       "id": "mb:bb9a1b6c-c9a4-4643-b626-c110ba7ada6f",
       "artist": "Fred again.. & Thomas Bangalter",
       "title": "One More Time x just stand there x Femi",
@@ -403235,6 +403895,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/bb9a1b6c-c9a4-4643-b626-c110ba7ada6f"
       },
       "discovered_at": "2026-10-06T18:22:27.619509+00:00"
+    },
+    {
+      "id": "mb:3fd0a2ad-dbd9-4362-9f51-f059b7f080ee",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Never the End x Can't Do Without You",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3fd0a2ad-dbd9-4362-9f51-f059b7f080ee"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086280+00:00"
     },
     {
       "id": "mb:95a51263-0b6c-4d80-8c0a-6e7a098a0182",
@@ -403259,6 +403941,28 @@
       "discovered_at": "2026-10-06T18:22:27.619530+00:00"
     },
     {
+      "id": "mb:03fdd9fc-5b15-4e9b-8f2d-fca0fd5ecb9e",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Music Sounds Better With You - Stardust",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/03fdd9fc-5b15-4e9b-8f2d-fca0fd5ecb9e"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086241+00:00"
+    },
+    {
       "id": "mb:ea80bad0-750f-4648-a680-5873e98e0fb6",
       "artist": "Fred again.. & Thomas Bangalter",
       "title": "LFO - LFO",
@@ -403279,6 +403983,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/ea80bad0-750f-4648-a680-5873e98e0fb6"
       },
       "discovered_at": "2026-10-06T18:22:27.619684+00:00"
+    },
+    {
+      "id": "mb:d33146d7-95ba-40c6-88b1-8ed22795afb4",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Giorgio by Moroder - Daft Punk",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/d33146d7-95ba-40c6-88b1-8ed22795afb4"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086300+00:00"
+    },
+    {
+      "id": "mb:5ecb8f5b-b550-4b9b-a231-cce93ae6027f",
+      "artist": "Fred again.. & Thomas Bangalter",
+      "title": "Digital loving arms",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/5ecb8f5b-b550-4b9b-a231-cce93ae6027f"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086197+00:00"
     },
     {
       "id": "mb:9cb621a4-ef55-4384-abb0-6f6f52bc85d0",
@@ -406163,6 +406911,50 @@
       "discovered_at": "2026-10-26T22:39:42.777403+00:00"
     },
     {
+      "id": "mb:709972fe-f3e4-4eb8-8960-5e2c45adff67",
+      "artist": "Angel Money",
+      "title": "You Signed That Away (intro)",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/709972fe-f3e4-4eb8-8960-5e2c45adff67"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944474+00:00"
+    },
+    {
+      "id": "mb:f3e16dfc-c151-4d26-b9cd-5d7309fd1aa8",
+      "artist": "Angel Money",
+      "title": "Tweaky Link",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/f3e16dfc-c151-4d26-b9cd-5d7309fd1aa8"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944405+00:00"
+    },
+    {
       "id": "mb:bf071ac9-daac-48d7-83ee-d9bc52a6f96a",
       "artist": "Angel Money",
       "title": "Tr*nnies in Paris",
@@ -406183,6 +406975,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/bf071ac9-daac-48d7-83ee-d9bc52a6f96a"
       },
       "discovered_at": "2026-10-07T05:58:12.348337+00:00"
+    },
+    {
+      "id": "mb:3711b531-af0e-47ce-888f-d1d51912e995",
+      "artist": "Angel Money",
+      "title": "Supervillain",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3711b531-af0e-47ce-888f-d1d51912e995"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944425+00:00"
+    },
+    {
+      "id": "mb:c5e1039a-96df-4cab-8a2a-1852ba6c1bd5",
+      "artist": "Angel Money",
+      "title": "Pretty Girl Dose",
+      "original_release_date": "2026-03-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c5e1039a-96df-4cab-8a2a-1852ba6c1bd5"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944446+00:00"
     },
     {
       "id": "mb:6e0f49f5-7280-4849-92eb-379caab66695",
@@ -463904,6 +464740,50 @@
       "discovered_at": "2026-10-04T12:20:17.223827+00:00"
     },
     {
+      "id": "mb:db4edf58-47d0-46f3-a97c-6e75aa3d519f",
+      "artist": "Baby Money",
+      "title": "Wrong Turn",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/db4edf58-47d0-46f3-a97c-6e75aa3d519f"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944139+00:00"
+    },
+    {
+      "id": "mb:bd62dfb8-b775-459b-9b03-7d163ae6e65b",
+      "artist": "Baby Money",
+      "title": "Perc in My Pocket",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/bd62dfb8-b775-459b-9b03-7d163ae6e65b"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944117+00:00"
+    },
+    {
       "id": "mb:513b967a-6fb7-4e87-9372-46a560af0505",
       "artist": "Baby Money",
       "title": "Letter to My Son",
@@ -463924,6 +464804,72 @@
         "musicbrainz": "https://musicbrainz.org/recording/513b967a-6fb7-4e87-9372-46a560af0505"
       },
       "discovered_at": "2026-10-07T05:58:12.348317+00:00"
+    },
+    {
+      "id": "mb:ae939b57-e1a1-4915-b6bf-51e07e6621e3",
+      "artist": "Baby Money",
+      "title": "L.I.E.",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ae939b57-e1a1-4915-b6bf-51e07e6621e3"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944069+00:00"
+    },
+    {
+      "id": "mb:328e2c8d-1e36-4bd8-8d37-7611294370c2",
+      "artist": "Baby Money",
+      "title": "Jason Terry",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/328e2c8d-1e36-4bd8-8d37-7611294370c2"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944093+00:00"
+    },
+    {
+      "id": "mb:a4b2310c-d8d4-4f58-a59d-73d739b7eb96",
+      "artist": "Baby Money",
+      "title": "I'm Just Saying",
+      "original_release_date": "2026-02-27",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/a4b2310c-d8d4-4f58-a59d-73d739b7eb96"
+      },
+      "discovered_at": "2026-11-24T09:52:40.944027+00:00"
     },
     {
       "id": "mb:64013e6a-7aa8-4c1a-b2ce-ddff6f52b976",
@@ -526831,6 +527777,28 @@
       "discovered_at": "2026-10-27T05:04:03.386885+00:00"
     },
     {
+      "id": "mb:e45ec124-3182-4190-83bf-49ed696cc999",
+      "artist": "Fred again.. & Young Thug",
+      "title": "scared",
+      "original_release_date": "2026-01-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/e45ec124-3182-4190-83bf-49ed696cc999"
+      },
+      "discovered_at": "2026-11-24T09:52:25.086439+00:00"
+    },
+    {
       "id": "mb:151f331e-b7b5-4986-a52d-6d5421366147",
       "artist": "Fort Romeau & Gold Panda",
       "title": "El Fantasma",
@@ -569545,15 +570513,15 @@
     }
   ],
   "stats": {
-    "total": 25882,
-    "released": 25749,
+    "total": 25926,
+    "released": 25793,
     "upcoming": 133,
-    "pending": 14321,
+    "pending": 14326,
     "downloaded": 0,
     "programmed": 0,
-    "review_queue": 11428,
+    "review_queue": 11467,
     "discarded": 0,
-    "louder_yes": 14435,
-    "review": 11447
+    "louder_yes": 14440,
+    "review": 11486
   }
 }
