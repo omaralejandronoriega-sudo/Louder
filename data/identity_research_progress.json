@@ -1,7 +1,7 @@
 {
-  "cursor": 3700,
+  "cursor": 3720,
   "total_catalog": 7988,
-  "updated_at": "2026-11-23T22:01:27.528627+00:00",
+  "updated_at": "2026-11-24T05:58:30.828405+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -63734,6 +63734,332 @@
       "name": "Kid Parade",
       "status": "retry",
       "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kid rock": {
+      "name": "Kid Rock",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 4
+    },
+    "kid runner": {
+      "name": "Kid Runner",
+      "status": "identity_candidate_only",
+      "mbid": "239675ff-84bd-4f28-ae07-07f42d769354",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/239675ff-84bd-4f28-ae07-07f42d769354",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://kidrunner.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/KidRunner"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/kidrunnerband/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/kidrunner"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "2012",
+        "end": null
+      }
+    },
+    "kidpunk": {
+      "name": "KIDPUNK",
+      "status": "identity_candidate_only",
+      "mbid": "10a7bbfe-f19e-4d1a-9fcf-5b952292dff3",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/10a7bbfe-f19e-4d1a-9fcf-5b952292dff3",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kids": {
+      "name": "Kids",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "kids that fly": {
+      "name": "Kids That Fly",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kill flora": {
+      "name": "Kill Flora",
+      "status": "identity_candidate_only",
+      "mbid": "564d29e4-eae1-4f7c-b304-30bb9351210d",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/564d29e4-eae1-4f7c-b304-30bb9351210d",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kill it kid": {
+      "name": "Kill It Kid",
+      "status": "identity_candidate_only",
+      "mbid": "518332e5-8564-47c2-8852-e2eb9125b1b5",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "americana",
+        "blues",
+        "grunge"
+      ],
+      "source": "https://musicbrainz.org/artist/518332e5-8564-47c2-8852-e2eb9125b1b5",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://killitkid.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/killitkid"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/killitkidofficial/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6407106"
+        },
+        {
+          "type": "wikipedia",
+          "url": "https://www.wikidata.org/wiki/Q6407106"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/killitkidofficial"
+        }
+      ],
+      "life_span": {
+        "end": "2015",
+        "begin": "2008-12-01",
+        "ended": true
+      }
+    },
+    "kill j": {
+      "name": "KIll J",
+      "status": "identity_candidate_only",
+      "mbid": "c5db87ae-3b28-4eff-98c2-c4a78d8fc318",
+      "type": "Person",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/c5db87ae-3b28-4eff-98c2-c4a78d8fc318",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/killjkill"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "begin": null,
+        "ended": false
+      }
+    },
+    "kill shelter / antipole": {
+      "name": "Kill Shelter / Antipole",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kill strings": {
+      "name": "Kill Strings",
+      "status": "identity_candidate_only",
+      "mbid": "018d2348-a1b1-49d8-95ac-d2d2b65d2b5b",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [
+        "hard rock",
+        "rock"
+      ],
+      "source": "https://musicbrainz.org/artist/018d2348-a1b1-49d8-95ac-d2d2b65d2b5b",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/killstrings/"
+        }
+      ],
+      "life_span": {
+        "end": null,
+        "ended": false,
+        "begin": null
+      }
+    },
+    "killers": {
+      "name": "Killers",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 3
+    },
+    "killing joke": {
+      "name": "Killing Joke",
+      "status": "identity_candidate_only",
+      "mbid": "f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "UK punk/goth/industrial band",
+      "genres": [
+        "alternative metal",
+        "gothic rock",
+        "industrial",
+        "industrial metal",
+        "industrial rock",
+        "metal",
+        "new wave",
+        "post-punk",
+        "rock",
+        "synth-pop"
+      ],
+      "source": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/killingjokeofficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/killingjokeband/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q250421"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCO4m-LA6oW766Vyrigjd5KQ"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/user/KillingJokeVEVO"
+        }
+      ],
+      "life_span": {
+        "begin": "1979",
+        "ended": false,
+        "end": null
+      }
+    },
+    "kim deal and morgan nagler": {
+      "name": "Kim Deal and Morgan Nagler",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "kim gordon": {
+      "name": "Kim Gordon",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kim petras": {
+      "name": "Kim Petras",
+      "status": "identity_candidate_only",
+      "mbid": "54fc0558-12b5-4854-9d57-9441bcd73a72",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/54fc0558-12b5-4854-9d57-9441bcd73a72",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kimbra": {
+      "name": "Kimbra",
+      "status": "identity_candidate_only",
+      "mbid": "fad2875e-ba81-4637-b859-4684622dcb1c",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "New Zealand singer-songwriter",
+      "genres": [
+        "art pop",
+        "indie pop",
+        "pop",
+        "singer-songwriter"
+      ],
+      "source": "https://musicbrainz.org/artist/fad2875e-ba81-4637-b859-4684622dcb1c",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/kimbramusic"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/kimbramusic/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/kimbramusic"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q235182"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCxUp7o-KYIygfaw4UOZ8ebQ"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1990-03-27"
+      }
+    },
+    "kimono kult": {
+      "name": "Kimono Kult",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kindest cuts": {
+      "name": "Kindest Cuts",
+      "status": "identity_candidate_only",
+      "mbid": "062d00e7-4795-4f86-a225-b94ca8a51ff4",
+      "type": "",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/062d00e7-4795-4f86-a225-b94ca8a51ff4",
+      "evidence_links": [
+        {
+          "type": "bandcamp",
+          "url": "https://kindestcuts.bandcamp.com/"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/kindestcuts"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": null
+      }
+    },
+    "kindest lines": {
+      "name": "Kindest Lines",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "kindness": {
+      "name": "Kindness",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
     }
   }
 }
