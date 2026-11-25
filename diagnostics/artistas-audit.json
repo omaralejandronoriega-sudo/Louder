@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T01:03:50.191293+00:00",
+  "generated_at": "2026-11-25T11:41:14.357665+00:00",
   "source_updates": {
-    "artists": "2026-11-25T01:03:42.337910Z",
-    "galleries": "2026-11-24T23:20:17.180466+00:00",
-    "album_art": "2026-11-24T17:35:09.655389+00:00"
+    "artists": "2026-11-25T11:41:06.784822Z",
+    "galleries": "2026-11-25T05:33:38.278905+00:00",
+    "album_art": "2026-11-25T10:28:03.590785+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-25T01:03:42.337910Z"
+      "merged_at": "2026-11-25T11:41:06.784822Z"
     }
   },
   "profile_enrichment": {
@@ -506,9 +506,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 71,
+      "plays": 72,
       "first_played": "29 mar 2016",
-      "last_played": "22 nov 2026 · 23:37",
+      "last_played": "24 nov 2026 · 20:13",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -643,6 +643,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 67,
+      "first_played": "17 jul 2022",
+      "last_played": "24 nov 2026 · 19:41",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Citizens!",
       "slug": "citizens",
       "plays": 66,
@@ -746,47 +782,11 @@
       "profile_complete": false
     },
     {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 66,
-      "first_played": "17 jul 2022",
-      "last_played": "23 nov 2026 · 10:35",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 65,
+      "plays": 66,
       "first_played": "14 jul 2012",
-      "last_played": "24 nov 2026 · 01:36",
+      "last_played": "24 nov 2026 · 21:48",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -1295,6 +1295,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 54,
+      "first_played": "26 jul 2022",
+      "last_played": "25 nov 2026 · 02:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Hey Sholay",
       "slug": "hey-sholay",
       "plays": 53,
@@ -1345,44 +1383,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 53,
-      "first_played": "26 jul 2022",
-      "last_played": "19 nov 2026 · 15:12",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -1614,6 +1614,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 49,
+      "first_played": "22 ago 2022",
+      "last_played": "25 nov 2026 · 04:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Nick Murphy / Chet Faker/BANKS",
       "slug": "nick-murphy-chet-faker-banks",
       "plays": 49,
@@ -1680,44 +1718,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 48,
-      "first_played": "22 ago 2022",
-      "last_played": "21 nov 2026 · 13:42",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -2693,6 +2693,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 38,
+      "first_played": "28 dic 2012",
+      "last_played": "24 nov 2026 · 19:32",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -2888,42 +2924,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 37,
-      "first_played": "28 dic 2012",
-      "last_played": "21 nov 2026 · 18:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
@@ -3775,11 +3775,11 @@
       "profile_complete": false
     },
     {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 53,
-      "first_played": "25 jul 2022",
-      "last_played": "21 nov 2026 · 18:39",
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 54,
+      "first_played": "26 jul 2022",
+      "last_played": "25 nov 2026 · 02:28",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3787,10 +3787,10 @@
         "yesstreaming",
         "yesstreaming_live"
       ],
-      "tracks": 2,
+      "tracks": 1,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3813,11 +3813,11 @@
       "profile_complete": false
     },
     {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
       "plays": 53,
-      "first_played": "26 jul 2022",
-      "last_played": "19 nov 2026 · 15:12",
+      "first_played": "25 jul 2022",
+      "last_played": "21 nov 2026 · 18:39",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3825,10 +3825,10 @@
         "yesstreaming",
         "yesstreaming_live"
       ],
-      "tracks": 1,
+      "tracks": 2,
       "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3924,21 +3924,22 @@
       "profile_complete": false
     },
     {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
       "plays": 49,
-      "first_played": "25 jul 2022",
-      "last_played": "22 nov 2026 · 18:18",
-      "catalog_status": "programmed_history",
+      "first_played": "22 ago 2022",
+      "last_played": "25 nov 2026 · 04:18",
+      "catalog_status": "wp_draft",
       "sources": [
+        "wp_db",
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3961,22 +3962,21 @@
       "profile_complete": false
     },
     {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 48,
-      "first_played": "22 ago 2022",
-      "last_played": "21 nov 2026 · 13:42",
-      "catalog_status": "wp_draft",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 49,
+      "first_played": "25 jul 2022",
+      "last_played": "22 nov 2026 · 18:18",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -5391,6 +5391,43 @@
       "profile_complete": false
     },
     {
+      "name": "Bragolin/Adam Tristar",
+      "slug": "bragolin-adam-tristar",
+      "plays": 23,
+      "first_played": "4 sep 2026",
+      "last_played": "25 nov 2026 · 05:31",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Depeche Mode/Daniel Miller/Phil Legg",
       "slug": "depeche-mode-daniel-miller-phil-legg",
       "plays": 23,
@@ -5662,43 +5699,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Bragolin/Adam Tristar",
-      "slug": "bragolin-adam-tristar",
-      "plays": 22,
-      "first_played": "4 sep 2026",
-      "last_played": "20 nov 2026 · 03:27",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -6049,6 +6049,41 @@
       "profile_complete": false
     },
     {
+      "name": "Sean Solomon",
+      "slug": "sean-solomon",
+      "plays": 21,
+      "first_played": "20 sep 2026",
+      "last_played": "25 nov 2026 · 05:04",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "The Avalanches / MGMT / Johnny Marr",
       "slug": "the-avalanches-mgmt-johnny-marr",
       "plays": 21,
@@ -6224,41 +6259,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Sean Solomon",
-      "slug": "sean-solomon",
-      "plays": 20,
-      "first_played": "20 sep 2026",
-      "last_played": "20 nov 2026 · 21:52",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7121,6 +7121,41 @@
       "profile_complete": false
     },
     {
+      "name": "Modern Woman",
+      "slug": "modern-woman",
+      "plays": 18,
+      "first_played": "26 sep 2026",
+      "last_played": "24 nov 2026 · 21:14",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Pollyfromthedirt",
       "slug": "pollyfromthedirt",
       "plays": 18,
@@ -7172,42 +7207,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 1,
       "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Tough Guys Of America",
-      "slug": "tough-guys-of-america",
-      "plays": 18,
-      "first_played": "10 abr 2013",
-      "last_played": "9 ene 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -7583,9 +7582,9 @@
     {
       "name": "Pale Honey",
       "slug": "pale-honey",
-      "plays": 71,
+      "plays": 72,
       "first_played": "29 mar 2016",
-      "last_played": "22 nov 2026 · 23:37",
+      "last_played": "24 nov 2026 · 20:13",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -7720,6 +7719,42 @@
       "profile_complete": false
     },
     {
+      "name": "The London Suede",
+      "slug": "the-london-suede",
+      "plays": 67,
+      "first_played": "17 jul 2022",
+      "last_played": "24 nov 2026 · 19:41",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": false,
+      "has_genre": false,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Citizens!",
       "slug": "citizens",
       "plays": 66,
@@ -7823,47 +7858,11 @@
       "profile_complete": false
     },
     {
-      "name": "The London Suede",
-      "slug": "the-london-suede",
-      "plays": 66,
-      "first_played": "17 jul 2022",
-      "last_played": "23 nov 2026 · 10:35",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 1,
-      "has_social": false,
-      "has_genre": false,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Waylayers",
       "slug": "waylayers",
-      "plays": 65,
+      "plays": 66,
       "first_played": "14 jul 2012",
-      "last_played": "24 nov 2026 · 01:36",
+      "last_played": "24 nov 2026 · 21:48",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -8268,6 +8267,44 @@
       "profile_complete": false
     },
     {
+      "name": "Massive Attack/Tracey Thorn",
+      "slug": "massive-attack-tracey-thorn",
+      "plays": 54,
+      "first_played": "26 jul 2022",
+      "last_played": "25 nov 2026 · 02:28",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Hey Sholay",
       "slug": "hey-sholay",
       "plays": 53,
@@ -8318,44 +8355,6 @@
       "tracks_with_artwork": 0,
       "tracks_missing_artwork": 2,
       "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Massive Attack/Tracey Thorn",
-      "slug": "massive-attack-tracey-thorn",
-      "plays": 53,
-      "first_played": "26 jul 2022",
-      "last_played": "19 nov 2026 · 15:12",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -8587,6 +8586,44 @@
       "profile_complete": false
     },
     {
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
+      "plays": 49,
+      "first_played": "22 ago 2022",
+      "last_played": "25 nov 2026 · 04:18",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Nick Murphy / Chet Faker/BANKS",
       "slug": "nick-murphy-chet-faker-banks",
       "plays": 49,
@@ -8653,44 +8690,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 48,
-      "first_played": "22 ago 2022",
-      "last_played": "21 nov 2026 · 13:42",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -9666,6 +9665,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 38,
+      "first_played": "28 dic 2012",
+      "last_played": "24 nov 2026 · 19:32",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Future Screens",
       "slug": "future-screens",
       "plays": 38,
@@ -9861,42 +9896,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 37,
-      "first_played": "28 dic 2012",
-      "last_played": "21 nov 2026 · 18:54",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
