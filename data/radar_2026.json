@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "updated_at": "2026-11-25T21:41:04.542397+00:00",
-  "scan_cursor": 2212,
+  "updated_at": "2026-11-26T08:16:16.928697+00:00",
+  "scan_cursor": 2272,
   "rules": {
     "original_release_year": 2026,
     "reject_reissues": true,
@@ -2231,6 +2231,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/33903a7f-57fa-4c26-925a-ee4ff1ac7f11"
       },
       "discovered_at": "2026-11-22T06:44:48.776357+00:00"
+    },
+    {
+      "id": "mb:7b0f229d-0bbf-40f9-9612-58c02ec22b48",
+      "artist": "Rina Sawayama",
+      "title": "TRDWFE",
+      "original_release_date": "2026-11-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7b0f229d-0bbf-40f9-9612-58c02ec22b48"
+      },
+      "discovered_at": "2026-11-26T08:15:06.835272+00:00"
     },
     {
       "id": "mb:dbd1be66-c0da-464e-917a-a7ae9d6f3d88",
@@ -9999,6 +10021,28 @@
       "discovered_at": "2026-11-14T17:59:54.987606+00:00"
     },
     {
+      "id": "mb:c953f921-d5bc-4604-9859-c1cbf5c243e0",
+      "artist": "Good Charlotte feat. Eyedress",
+      "title": "Jealousy (All Your Friends in Silverlake)",
+      "original_release_date": "2026-11-06",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c953f921-d5bc-4604-9859-c1cbf5c243e0"
+      },
+      "discovered_at": "2026-11-26T08:14:58.001583+00:00"
+    },
+    {
       "id": "mb:a4913a2d-af71-4cf3-bae5-ab90b530d788",
       "artist": "Fun Never Starts",
       "title": "You Can't Come",
@@ -16335,6 +16379,28 @@
       "discovered_at": "2026-10-19T13:12:44.215139+00:00"
     },
     {
+      "id": "mb:7e49ad84-c604-44e5-9eab-0f7c925e2493",
+      "artist": "La Femme Pendu",
+      "title": "Running Up That Hill (A Deal With God)",
+      "original_release_date": "2026-10-30",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/7e49ad84-c604-44e5-9eab-0f7c925e2493"
+      },
+      "discovered_at": "2026-11-26T08:15:47.052687+00:00"
+    },
+    {
       "id": "mb:def8af6a-fdf8-4269-ace2-4b398971455e",
       "artist": "Kylie Minogue",
       "title": "Confide in Me",
@@ -20315,6 +20381,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/e865d8d6-260c-40f0-b2e2-901af8416357"
       },
       "discovered_at": "2026-11-11T06:15:01.526627+00:00"
+    },
+    {
+      "id": "mb:2310e100-7fb1-45ca-b429-2ef61b91f034",
+      "artist": "Ohthreesosa & Eyedress",
+      "title": "GANON PADiN",
+      "original_release_date": "2026-10-26",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/2310e100-7fb1-45ca-b429-2ef61b91f034"
+      },
+      "discovered_at": "2026-11-26T08:14:58.001531+00:00"
+    },
+    {
+      "id": "mb:cbdec3c7-453a-4ebb-92f2-2bc5f2c842d8",
+      "artist": "Ohthreesosa & Eyedress",
+      "title": "BLiCKY FiT",
+      "original_release_date": "2026-10-26",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cbdec3c7-453a-4ebb-92f2-2bc5f2c842d8"
+      },
+      "discovered_at": "2026-11-26T08:14:58.001555+00:00"
     },
     {
       "id": "mb:7198ae15-4512-40d0-bd82-8339c8eacf4a",
@@ -28037,6 +28147,50 @@
         "musicbrainz": "https://musicbrainz.org/recording/85b2b203-249e-4480-b7ab-8d6073dd562f"
       },
       "discovered_at": "2026-10-24T20:48:16.353955+00:00"
+    },
+    {
+      "id": "mb:6f33f4a2-2846-4b32-b355-9cd7890d59bd",
+      "artist": "Death Rattle",
+      "title": "Your World",
+      "original_release_date": "2026-10-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/6f33f4a2-2846-4b32-b355-9cd7890d59bd"
+      },
+      "discovered_at": "2026-11-26T08:15:44.897549+00:00"
+    },
+    {
+      "id": "mb:3507a591-f19e-477e-a51b-79513c9a3717",
+      "artist": "Death Rattle",
+      "title": "Praying to the Streetlights",
+      "original_release_date": "2026-10-19",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/3507a591-f19e-477e-a51b-79513c9a3717"
+      },
+      "discovered_at": "2026-11-26T08:15:44.897580+00:00"
     },
     {
       "id": "mb:6cfdc50c-429b-462b-8e96-74f193aee3a7",
@@ -39158,6 +39312,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/f02e9e0b-9505-4818-ae20-52417e41c0ed"
       },
       "discovered_at": "2026-10-20T17:02:45.018624+00:00"
+    },
+    {
+      "id": "mb:cbd6358a-100a-4e76-ac66-0e5d515511c7",
+      "artist": "Odd Nordstoga & Sigrid Aase",
+      "title": "Før du går",
+      "original_release_date": "2026-10-09",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/cbd6358a-100a-4e76-ac66-0e5d515511c7"
+      },
+      "discovered_at": "2026-11-26T08:15:08.943288+00:00"
     },
     {
       "id": "mb:9673f02d-460d-47e7-9b28-276afafcf470",
@@ -75200,7 +75376,7 @@
     {
       "id": "mb:d2e78ebd-7fd4-435d-a22e-e244739f378d",
       "artist": "Jesus Jones",
-      "title": "Words In a Book",
+      "title": "Words in a Book",
       "original_release_date": "2026-09-18",
       "original_release_year": 2026,
       "originality": "probable_2026",
@@ -86278,7 +86454,8 @@
       "programmed_at": null,
       "notes": "",
       "source_signals": [
-        "musicbrainz:louder-artist"
+        "musicbrainz:louder-artist",
+        "musicbrainz:tag:indie pop"
       ],
       "sources": {
         "musicbrainz": "https://musicbrainz.org/recording/87a552a0-955b-4963-8874-061dbaf7ee34"
@@ -96405,6 +96582,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/5b68f5d2-dfd3-4dfb-85d3-676f41364bba"
       },
       "discovered_at": "2026-11-06T06:41:36.225408+00:00"
+    },
+    {
+      "id": "mb:ffb6dee5-bdac-4e5b-84e5-ce5a33c142dd",
+      "artist": "La Femme",
+      "title": "Septembre",
+      "original_release_date": "2026-09-04",
+      "original_release_year": 2026,
+      "originality": "probable_2026",
+      "louder_fit": "yes",
+      "in_louder_catalog": true,
+      "availability": "released",
+      "download_status": "pending",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ffb6dee5-bdac-4e5b-84e5-ce5a33c142dd"
+      },
+      "discovered_at": "2026-11-26T08:15:47.052633+00:00"
     },
     {
       "id": "mb:eb19fa69-bbbe-4cd8-8e65-ee85016bf0c4",
@@ -171361,7 +171560,8 @@
       "programmed_at": null,
       "notes": "",
       "source_signals": [
-        "musicbrainz:louder-artist"
+        "musicbrainz:louder-artist",
+        "musicbrainz:tag:indie pop"
       ],
       "sources": {
         "musicbrainz": "https://musicbrainz.org/recording/3795dc37-010d-4523-bd6c-66fb28dc0edd"
@@ -492637,6 +492837,94 @@
       "discovered_at": "2026-10-04T12:21:02.479788+00:00"
     },
     {
+      "id": "mb:c921e69d-35e8-444c-8911-2ef571ce69cc",
+      "artist": "Willow Collins",
+      "title": "Jamming Out",
+      "original_release_date": "2026-02-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/c921e69d-35e8-444c-8911-2ef571ce69cc"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122810+00:00"
+    },
+    {
+      "id": "mb:abc08920-9262-4127-afe9-2d381d5dfcc4",
+      "artist": "Willow Collins",
+      "title": "Fresh Book",
+      "original_release_date": "2026-02-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/abc08920-9262-4127-afe9-2d381d5dfcc4"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122783+00:00"
+    },
+    {
+      "id": "mb:df5535ca-0297-417c-9b16-4e60d2c59ed2",
+      "artist": "Willow Collins",
+      "title": "Dance Party",
+      "original_release_date": "2026-02-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/df5535ca-0297-417c-9b16-4e60d2c59ed2"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122801+00:00"
+    },
+    {
+      "id": "mb:674adc98-dc49-4d9d-998f-1fa2c485c1c7",
+      "artist": "Willow Collins",
+      "title": "After Class",
+      "original_release_date": "2026-02-11",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/674adc98-dc49-4d9d-998f-1fa2c485c1c7"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122792+00:00"
+    },
+    {
       "id": "mb:64065744-f05c-421c-8cf5-aaeefd30c75e",
       "artist": "Touch Girl Apple Blossom",
       "title": "The Springtime Reminds Me Of…",
@@ -508349,6 +508637,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/1ddc6b70-27da-4ca1-a964-e5ddaa595294"
       },
       "discovered_at": "2026-10-19T13:12:41.243472+00:00"
+    },
+    {
+      "id": "mb:ec0e0c35-b133-49e1-a5db-34b15ce295b5",
+      "artist": "Ayushh",
+      "title": "Winter Memories",
+      "original_release_date": "2026-02-02",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:tag:indie pop"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ec0e0c35-b133-49e1-a5db-34b15ce295b5"
+      },
+      "discovered_at": "2026-11-26T08:16:11.731977+00:00"
     },
     {
       "id": "mb:f07554ea-01e4-470e-8892-90578b169c3f",
@@ -525643,6 +525953,28 @@
       "discovered_at": "2026-11-01T06:00:41.680437+00:00"
     },
     {
+      "id": "mb:ee933dae-35d3-4be6-8de6-9e458f5a4041",
+      "artist": "Willow Tea",
+      "title": "The Winterbrook Falls",
+      "original_release_date": "2026-01-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/ee933dae-35d3-4be6-8de6-9e458f5a4041"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122765+00:00"
+    },
+    {
       "id": "mb:756b4acd-9142-4380-96a6-a6b400929161",
       "artist": "Willow Tea",
       "title": "New Life For Old",
@@ -525663,6 +525995,28 @@
         "musicbrainz": "https://musicbrainz.org/recording/756b4acd-9142-4380-96a6-a6b400929161"
       },
       "discovered_at": "2026-10-08T23:20:54.757137+00:00"
+    },
+    {
+      "id": "mb:96686b43-b904-4d32-bacb-5a5c964807cb",
+      "artist": "Willow Tea",
+      "title": "Foraging At Hollybank",
+      "original_release_date": "2026-01-23",
+      "original_release_year": 2026,
+      "originality": "review",
+      "louder_fit": "review",
+      "in_louder_catalog": false,
+      "availability": "released",
+      "download_status": "review",
+      "downloaded_at": null,
+      "programmed_at": null,
+      "notes": "",
+      "source_signals": [
+        "musicbrainz:louder-artist"
+      ],
+      "sources": {
+        "musicbrainz": "https://musicbrainz.org/recording/96686b43-b904-4d32-bacb-5a5c964807cb"
+      },
+      "discovered_at": "2026-11-26T08:15:16.122774+00:00"
     },
     {
       "id": "mb:4d2a4c93-d049-44fa-a778-36cd24da4b67",
@@ -572889,15 +573243,15 @@
     }
   ],
   "stats": {
-    "total": 26034,
-    "released": 25901,
+    "total": 26050,
+    "released": 25917,
     "upcoming": 133,
-    "pending": 14386,
+    "pending": 14390,
     "downloaded": 0,
     "programmed": 0,
-    "review_queue": 11515,
+    "review_queue": 11527,
     "discarded": 0,
-    "louder_yes": 14500,
-    "review": 11534
+    "louder_yes": 14504,
+    "review": 11546
   }
 }
