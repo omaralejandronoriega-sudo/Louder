@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T09:01:46.801830+00:00",
+  "generated_at": "2026-11-27T19:38:15.639556+00:00",
   "source_updates": {
-    "artists": "2026-11-27T09:01:40.885656Z",
-    "galleries": "2026-11-27T02:00:34.357675+00:00",
-    "album_art": "2026-11-27T04:12:12.823217+00:00"
+    "artists": "2026-11-27T19:38:09.028435Z",
+    "galleries": "2026-11-27T10:45:23.125154+00:00",
+    "album_art": "2026-11-27T14:19:36.543333+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -26,7 +26,7 @@
       "lastfm": 5319,
       "megaseg": 2356,
       "yesstreaming": 1550,
-      "yesstreaming_live": 1466
+      "yesstreaming_live": 1467
     },
     "history_merge": {
       "strategy": "preserve_migrated_else_max_lastfm_megaseg_with_snapshot_cutoff",
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-27T09:01:40.885656Z"
+      "merged_at": "2026-11-27T19:38:09.028435Z"
     }
   },
   "profile_enrichment": {
@@ -1159,9 +1159,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 55,
+      "plays": 56,
       "first_played": "14 jul 2022",
-      "last_played": "26 nov 2026 · 10:12",
+      "last_played": "27 nov 2026 · 07:49",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -1405,6 +1405,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 53,
+      "first_played": "15 jul 2022",
+      "last_played": "27 nov 2026 · 12:12",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -1434,43 +1471,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 52,
-      "first_played": "15 jul 2022",
-      "last_played": "25 nov 2026 · 06:39",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -2451,6 +2451,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 40,
+      "first_played": "28 dic 2012",
+      "last_played": "27 nov 2026 · 05:06",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Flume/Nick Murphy / Chet Faker",
       "slug": "flume-nick-murphy-chet-faker",
       "plays": 40,
@@ -2648,42 +2684,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 39,
-      "first_played": "28 dic 2012",
-      "last_played": "26 nov 2026 · 01:19",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
@@ -3707,9 +3707,9 @@
     {
       "name": "Big Data/Joywave",
       "slug": "big-data-joywave",
-      "plays": 55,
+      "plays": 56,
       "first_played": "14 jul 2022",
-      "last_played": "26 nov 2026 · 10:12",
+      "last_played": "27 nov 2026 · 07:49",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3853,9 +3853,9 @@
     {
       "name": "Primal Scream/George Drakoulias/David Bianco",
       "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 52,
+      "plays": 53,
       "first_played": "15 jul 2022",
-      "last_played": "25 nov 2026 · 06:39",
+      "last_played": "27 nov 2026 · 12:12",
       "catalog_status": "programmed_history",
       "sources": [
         "megaseg",
@@ -5071,6 +5071,44 @@
       "profile_complete": false
     },
     {
+      "name": "illuminati hotties/Cavetown",
+      "slug": "illuminati-hotties-cavetown",
+      "plays": 25,
+      "first_played": "4 mar 2025",
+      "last_played": "27 nov 2026 · 04:20",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lo mejor del 2013",
       "slug": "lo-mejor-del-2013",
       "plays": 25,
@@ -5131,44 +5169,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 6,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "illuminati hotties/Cavetown",
-      "slug": "illuminati-hotties-cavetown",
-      "plays": 24,
-      "first_played": "4 mar 2025",
-      "last_played": "25 nov 2026 · 23:51",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
       "missing_core": [
         "image",
         "bio"
@@ -6127,6 +6127,76 @@
       "profile_complete": false
     },
     {
+      "name": "The Youth Play",
+      "slug": "the-youth-play",
+      "plays": 21,
+      "first_played": "22 sep 2026",
+      "last_played": "27 nov 2026 · 11:21",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "American Motors",
+      "slug": "american-motors",
+      "plays": 20,
+      "first_played": "22 sep 2026",
+      "last_played": "27 nov 2026 · 11:59",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "fthrsn",
       "slug": "fthrsn",
       "plays": 20,
@@ -6271,41 +6341,6 @@
       "profile_complete": false
     },
     {
-      "name": "The Youth Play",
-      "slug": "the-youth-play",
-      "plays": 20,
-      "first_played": "22 sep 2026",
-      "last_played": "24 nov 2026 · 16:58",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "True Faith, Sculpture Club",
       "slug": "true-faith-sculpture-club",
       "plays": 20,
@@ -6382,41 +6417,6 @@
       "plays": 19,
       "first_played": "19 sep 2026",
       "last_played": "26 nov 2026 · 19:42",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "American Motors",
-      "slug": "american-motors",
-      "plays": 19,
-      "first_played": "22 sep 2026",
-      "last_played": "22 nov 2026 · 18:04",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -7088,6 +7088,41 @@
       "profile_complete": false
     },
     {
+      "name": "Internet Cafe",
+      "slug": "internet-cafe",
+      "plays": 18,
+      "first_played": "19 sep 2026",
+      "last_played": "27 nov 2026 · 07:14",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "It Hated Silence",
       "slug": "it-hated-silence",
       "plays": 18,
@@ -7187,44 +7222,6 @@
       ],
       "core_complete": false,
       "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Decemberists/James Mercer",
-      "slug": "the-decemberists-james-mercer",
-      "plays": 18,
-      "first_played": "3 mar 2025",
-      "last_played": "20 nov 2026 · 02:53",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8380,6 +8377,43 @@
       "profile_complete": false
     },
     {
+      "name": "Primal Scream/George Drakoulias/David Bianco",
+      "slug": "primal-scream-george-drakoulias-david-bianco",
+      "plays": 53,
+      "first_played": "15 jul 2022",
+      "last_played": "27 nov 2026 · 12:12",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "ODIO",
       "slug": "odio",
       "plays": 52,
@@ -8409,43 +8443,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Primal Scream/George Drakoulias/David Bianco",
-      "slug": "primal-scream-george-drakoulias-david-bianco",
-      "plays": 52,
-      "first_played": "15 jul 2022",
-      "last_played": "25 nov 2026 · 06:39",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -9426,6 +9423,42 @@
       "profile_complete": false
     },
     {
+      "name": "Edward Sharpe & The Magnetic Zeros",
+      "slug": "edward-sharpe-the-magnetic-zeros",
+      "plays": 40,
+      "first_played": "28 dic 2012",
+      "last_played": "27 nov 2026 · 05:06",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming_live"
+      ],
+      "tracks": 7,
+      "tracks_with_artwork": 4,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 5,
+      "has_social": true,
+      "has_genre": true,
+      "related": 0,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Flume/Nick Murphy / Chet Faker",
       "slug": "flume-nick-murphy-chet-faker",
       "plays": 40,
@@ -9623,42 +9656,6 @@
       "gallery_images": 1,
       "has_social": true,
       "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Edward Sharpe & The Magnetic Zeros",
-      "slug": "edward-sharpe-the-magnetic-zeros",
-      "plays": 39,
-      "first_played": "28 dic 2012",
-      "last_played": "26 nov 2026 · 01:19",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming_live"
-      ],
-      "tracks": 7,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
       "related": 0,
       "missing_core": [
         "bio"
