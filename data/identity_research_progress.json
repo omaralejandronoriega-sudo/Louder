@@ -1,7 +1,7 @@
 {
-  "cursor": 3900,
+  "cursor": 3920,
   "total_catalog": 7988,
-  "updated_at": "2026-11-27T14:20:34.458952+00:00",
+  "updated_at": "2026-11-27T22:56:33.477631+00:00",
   "artists": {
     "(((s)))": {
       "name": "(((S)))",
@@ -66298,6 +66298,257 @@
     },
     "lebeat": {
       "name": "LeBeat",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "lecx stacy": {
+      "name": "Lecx Stacy",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "led er est": {
+      "name": "Led Er Est",
+      "status": "identity_candidate_only",
+      "mbid": "85360045-c4c7-408f-92c4-0b0b8bd73c95",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "Minimal Wave trio from New York",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/85360045-c4c7-408f-92c4-0b0b8bd73c95",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "led zeppelin": {
+      "name": "Led Zeppelin",
+      "status": "identity_candidate_only",
+      "mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "type": "Group",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [
+        "arena rock",
+        "blues",
+        "blues rock",
+        "classic rock",
+        "folk rock",
+        "hard rock",
+        "heavy metal",
+        "pop",
+        "progressive rock",
+        "rock",
+        "rock and roll"
+      ],
+      "source": "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/ledzeppelin"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/ledzeppelin/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ledzeppelin"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2331"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCaKZA66vM_TUpetUNohmR0A"
+        },
+        {
+          "type": "youtube music",
+          "url": "https://music.youtube.com/channel/UCYtap7ujIPaxTS2iCDoMi3g"
+        }
+      ],
+      "life_span": {
+        "end": "1980-09-25",
+        "begin": "1968",
+        "ended": true
+      }
+    },
+    "lee \"scratch\" perry": {
+      "name": "Lee \"Scratch\" Perry",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "leftover cuties": {
+      "name": "Leftover Cuties",
+      "status": "identity_candidate_only",
+      "mbid": "5b902d9c-d840-47d3-80f5-0819854ebc82",
+      "type": "Group",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/5b902d9c-d840-47d3-80f5-0819854ebc82",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/Leftover.Cuties"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16956580"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "2008"
+      }
+    },
+    "lefty": {
+      "name": "lefty",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 6
+    },
+    "legss": {
+      "name": "Legss",
+      "status": "identity_candidate_only",
+      "mbid": "393a2879-2d1f-4ae0-92cf-a2c3a540d0e1",
+      "type": "Group",
+      "country": "",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/393a2879-2d1f-4ae0-92cf-a2c3a540d0e1",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lemmy kilmister and others": {
+      "name": "Lemmy Kilmister and Others",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "lemon d": {
+      "name": "Lemon D",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lemonade": {
+      "name": "Lemonade",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lemondrop": {
+      "name": "Lemondrop",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 2
+    },
+    "lemonsuckr": {
+      "name": "LEMONSUCKR",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lemuria": {
+      "name": "Lemuria",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 7
+    },
+    "lemâitre": {
+      "name": "Lemâitre",
+      "status": "manual_review",
+      "reason": "ambiguous_or_missing",
+      "matches": 0
+    },
+    "lene marlin": {
+      "name": "Lene Marlin",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lennie rayen": {
+      "name": "Lennie Rayen",
+      "status": "retry",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "lenny kravitz": {
+      "name": "Lenny Kravitz",
+      "status": "identity_candidate_only",
+      "mbid": "0ef3f425-9bd2-4216-9dd2-219d2fe90f1f",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/0ef3f425-9bd2-4216-9dd2-219d2fe90f1f",
+      "details_warning": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "leo abrahams": {
+      "name": "Leo Abrahams",
+      "status": "identity_candidate_only",
+      "mbid": "8dce9ad6-9415-4373-9747-dcac5ef43aef",
+      "type": "Person",
+      "country": "GB",
+      "disambiguation": "",
+      "genres": [],
+      "source": "https://musicbrainz.org/artist/8dce9ad6-9415-4373-9747-dcac5ef43aef",
+      "evidence_links": [
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q6523515"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "begin": "1977",
+        "end": null
+      }
+    },
+    "leon bridges": {
+      "name": "Leon Bridges",
+      "status": "identity_candidate_only",
+      "mbid": "69d9dfd7-19b7-4a75-8a53-9f733fb5d774",
+      "type": "Person",
+      "country": "US",
+      "disambiguation": "American soul singer‐songwriter",
+      "genres": [
+        "neo soul",
+        "r&b",
+        "regional mexicano",
+        "smooth soul",
+        "soul"
+      ],
+      "source": "https://musicbrainz.org/artist/69d9dfd7-19b7-4a75-8a53-9f733fb5d774",
+      "evidence_links": [
+        {
+          "type": "social network",
+          "url": "https://www.facebook.com/LeonBridgesOfficial"
+        },
+        {
+          "type": "social network",
+          "url": "https://www.instagram.com/leonbridgesofficial/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/leonbridges/"
+        },
+        {
+          "type": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q19364967"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCD8FVPChed3F3CH-xPHwf4A"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCQr1Q3uFt1K7KhMkDxa9q2w"
+        }
+      ],
+      "life_span": {
+        "ended": false,
+        "end": null,
+        "begin": "1989-07-13"
+      }
+    },
+    "leon osborn": {
+      "name": "Leon Osborn",
       "status": "manual_review",
       "reason": "ambiguous_or_missing",
       "matches": 0
