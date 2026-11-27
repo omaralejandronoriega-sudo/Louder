@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T23:16:10.032131+00:00",
+  "generated_at": "2026-11-27T09:01:46.801830+00:00",
   "source_updates": {
-    "artists": "2026-11-26T23:16:05.710821Z",
-    "galleries": "2026-11-26T18:42:38.856536+00:00",
-    "album_art": "2026-11-26T21:54:36.504414+00:00"
+    "artists": "2026-11-27T09:01:40.885656Z",
+    "galleries": "2026-11-27T02:00:34.357675+00:00",
+    "album_art": "2026-11-27T04:12:12.823217+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,7 +39,7 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-26T23:16:05.710821Z"
+      "merged_at": "2026-11-27T09:01:40.885656Z"
     }
   },
   "profile_enrichment": {
@@ -1299,6 +1299,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 54,
+      "first_played": "25 jul 2022",
+      "last_played": "26 nov 2026 · 21:58",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lightfoils",
       "slug": "lightfoils",
       "plays": 54,
@@ -1362,44 +1400,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 53,
-      "first_played": "25 jul 2022",
-      "last_played": "21 nov 2026 · 18:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -1546,6 +1546,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "26 nov 2026 · 22:31",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -1630,43 +1667,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "25 nov 2026 · 12:35",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -1780,6 +1780,41 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 47,
+      "first_played": "17 mar 2013",
+      "last_played": "26 nov 2026 · 23:31",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -1998,41 +2033,6 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 46,
-      "first_played": "17 mar 2013",
-      "last_played": "24 nov 2026 · 09:13",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -3596,11 +3596,11 @@
       "profile_complete": false
     },
     {
-      "name": "hey, nothing",
-      "slug": "hey-nothing",
+      "name": "Gurriers",
+      "slug": "gurriers",
       "plays": 34,
-      "first_played": "4 mar 2025",
-      "last_played": "23 nov 2026 · 22:53",
+      "first_played": "20 oct 2025",
+      "last_played": "26 nov 2026 · 18:37",
       "catalog_status": "",
       "sources": [
         "wp_db",
@@ -3608,10 +3608,10 @@
         "yesstreaming",
         "yesstreaming_live"
       ],
-      "tracks": 4,
-      "tracks_with_artwork": 4,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 5,
       "has_image": true,
       "image_source": "artist",
       "has_bio": false,
@@ -3815,9 +3815,9 @@
     {
       "name": "Jamiroquai/David Morales",
       "slug": "jamiroquai-david-morales",
-      "plays": 53,
+      "plays": 54,
       "first_played": "25 jul 2022",
-      "last_played": "21 nov 2026 · 18:39",
+      "last_played": "26 nov 2026 · 21:58",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3924,22 +3924,21 @@
       "profile_complete": false
     },
     {
-      "name": "Gorillaz/Neneh Cherry",
-      "slug": "gorillaz-neneh-cherry",
-      "plays": 50,
-      "first_played": "22 ago 2022",
-      "last_played": "26 nov 2026 · 10:42",
-      "catalog_status": "wp_draft",
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "26 nov 2026 · 22:31",
+      "catalog_status": "programmed_history",
       "sources": [
-        "wp_db",
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 1,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -3962,21 +3961,22 @@
       "profile_complete": false
     },
     {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
+      "name": "Gorillaz/Neneh Cherry",
+      "slug": "gorillaz-neneh-cherry",
       "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "25 nov 2026 · 12:35",
-      "catalog_status": "programmed_history",
+      "first_played": "22 ago 2022",
+      "last_played": "26 nov 2026 · 10:42",
+      "catalog_status": "wp_draft",
       "sources": [
+        "wp_db",
         "megaseg",
         "yesstreaming",
         "yesstreaming_live"
       ],
       "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
+      "tracks_with_artwork": 1,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -4927,6 +4927,43 @@
       "profile_complete": false
     },
     {
+      "name": "Jim-E Stack / Empress Of",
+      "slug": "jim-e-stack-empress-of",
+      "plays": 26,
+      "first_played": "6 mar 2025",
+      "last_played": "26 nov 2026 · 22:03",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 0,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Justice/Tame Impala",
       "slug": "justice-tame-impala",
       "plays": 26,
@@ -5034,43 +5071,6 @@
       "profile_complete": false
     },
     {
-      "name": "Jim-E Stack / Empress Of",
-      "slug": "jim-e-stack-empress-of",
-      "plays": 25,
-      "first_played": "6 mar 2025",
-      "last_played": "18 nov 2026 · 17:53",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Lo mejor del 2013",
       "slug": "lo-mejor-del-2013",
       "plays": 25,
@@ -5094,6 +5094,43 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "NiTE, Rosegarden Funeral Party",
+      "slug": "nite-rosegarden-funeral-party",
+      "plays": 25,
+      "first_played": "13 sep 2026",
+      "last_played": "27 nov 2026 · 01:38",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 6,
       "missing_core": [
         "image",
         "bio"
@@ -5206,43 +5243,6 @@
       "has_social": false,
       "has_genre": false,
       "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "NiTE, Rosegarden Funeral Party",
-      "slug": "nite-rosegarden-funeral-party",
-      "plays": 24,
-      "first_played": "13 sep 2026",
-      "last_played": "26 nov 2026 · 04:19",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 6,
       "missing_core": [
         "image",
         "bio"
@@ -6199,6 +6199,43 @@
       "profile_complete": false
     },
     {
+      "name": "Orla Gartland, Matt Maltese",
+      "slug": "orla-gartland-matt-maltese",
+      "plays": 20,
+      "first_played": "7 sep 2026",
+      "last_played": "26 nov 2026 · 17:28",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 7,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "the sound chalk makes",
       "slug": "the-sound-chalk-makes",
       "plays": 20,
@@ -6310,6 +6347,41 @@
       "plays": 20,
       "first_played": "13 oct 2026",
       "last_played": "25 nov 2026 · 21:07",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "1000 Rabbits",
+      "slug": "1000-rabbits",
+      "plays": 19,
+      "first_played": "19 sep 2026",
+      "last_played": "26 nov 2026 · 19:42",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -6483,6 +6555,41 @@
       "profile_complete": false
     },
     {
+      "name": "Flight Facilities/ Giselle",
+      "slug": "flight-facilities-giselle",
+      "plays": 19,
+      "first_played": "15 oct 2026",
+      "last_played": "26 nov 2026 · 17:19",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Hotel Cinema",
       "slug": "hotel-cinema",
       "plays": 19,
@@ -6619,43 +6726,6 @@
       ],
       "core_complete": false,
       "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Orla Gartland, Matt Maltese",
-      "slug": "orla-gartland-matt-maltese",
-      "plays": 19,
-      "first_played": "7 sep 2026",
-      "last_played": "23 nov 2026 · 07:47",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 7,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -6874,41 +6944,6 @@
       "profile_complete": false
     },
     {
-      "name": "1000 Rabbits",
-      "slug": "1000-rabbits",
-      "plays": 18,
-      "first_played": "19 sep 2026",
-      "last_played": "21 nov 2026 · 23:10",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
       "name": "Bullion/Carly Rae Jepsen",
       "slug": "bullion-carly-rae-jepsen",
       "plays": 18,
@@ -7046,41 +7081,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Flight Facilities/ Giselle",
-      "slug": "flight-facilities-giselle",
-      "plays": 18,
-      "first_played": "15 oct 2026",
-      "last_played": "25 nov 2026 · 14:31",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -8274,6 +8274,44 @@
       "profile_complete": false
     },
     {
+      "name": "Jamiroquai/David Morales",
+      "slug": "jamiroquai-david-morales",
+      "plays": 54,
+      "first_played": "25 jul 2022",
+      "last_played": "26 nov 2026 · 21:58",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 2,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Lightfoils",
       "slug": "lightfoils",
       "plays": 54,
@@ -8337,44 +8375,6 @@
       "core_complete": false,
       "profile_status": "partial",
       "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Jamiroquai/David Morales",
-      "slug": "jamiroquai-david-morales",
-      "plays": 53,
-      "first_played": "25 jul 2022",
-      "last_played": "21 nov 2026 · 18:39",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 2,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
         "bio"
       ],
       "profile_complete": false
@@ -8521,6 +8521,43 @@
       "profile_complete": false
     },
     {
+      "name": "Nick Murphy / Chet Faker/BANKS",
+      "slug": "nick-murphy-chet-faker-banks",
+      "plays": 51,
+      "first_played": "25 jul 2022",
+      "last_played": "26 nov 2026 · 22:31",
+      "catalog_status": "programmed_history",
+      "sources": [
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "not_found",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "[unknown]",
       "slug": "unknown",
       "plays": 50,
@@ -8605,43 +8642,6 @@
       "tracks_with_artwork": 1,
       "tracks_missing_artwork": 0,
       "tracks_in_otras": 0,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Nick Murphy / Chet Faker/BANKS",
-      "slug": "nick-murphy-chet-faker-banks",
-      "plays": 50,
-      "first_played": "25 jul 2022",
-      "last_played": "25 nov 2026 · 12:35",
-      "catalog_status": "programmed_history",
-      "sources": [
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
       "has_image": false,
       "image_source": "",
       "has_bio": false,
@@ -8755,6 +8755,41 @@
       "has_social": true,
       "has_genre": true,
       "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
+      "name": "The Organ",
+      "slug": "the-organ",
+      "plays": 47,
+      "first_played": "17 mar 2013",
+      "last_played": "26 nov 2026 · 23:31",
+      "catalog_status": "wp_draft",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "yesstreaming_live"
+      ],
+      "tracks": 4,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": true,
+      "image_source": "gallery",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 3,
+      "has_social": false,
+      "has_genre": true,
+      "related": 0,
       "missing_core": [
         "bio"
       ],
@@ -8973,41 +9008,6 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Organ",
-      "slug": "the-organ",
-      "plays": 46,
-      "first_played": "17 mar 2013",
-      "last_played": "24 nov 2026 · 09:13",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "yesstreaming_live"
-      ],
-      "tracks": 4,
-      "tracks_with_artwork": 3,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 3,
-      "has_social": false,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
@@ -10571,6 +10571,42 @@
       "profile_complete": false
     },
     {
+      "name": "Gurriers",
+      "slug": "gurriers",
+      "plays": 34,
+      "first_played": "20 oct 2025",
+      "last_played": "26 nov 2026 · 18:37",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 5,
+      "tracks_with_artwork": 3,
+      "tracks_missing_artwork": 2,
+      "tracks_in_otras": 5,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 1,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "hey, nothing",
       "slug": "hey-nothing",
       "plays": 34,
@@ -10672,40 +10708,6 @@
       "profile_status": "not_found",
       "profile_missing_fields": [
         "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Rooney",
-      "slug": "rooney",
-      "plays": 34,
-      "first_played": "23 jul 2012",
-      "last_played": "10 oct 2014 · 23:59",
-      "catalog_status": "wp_draft",
-      "sources": [
-        "wp_db",
-        "lastfm"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 2,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "gallery",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 5,
-      "has_social": true,
-      "has_genre": true,
-      "related": 0,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
         "bio"
       ],
       "profile_complete": false
