@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T19:38:15.639556+00:00",
+  "generated_at": "2026-11-28T02:56:29.638583+00:00",
   "source_updates": {
-    "artists": "2026-11-27T19:38:09.028435Z",
-    "galleries": "2026-11-27T10:45:23.125154+00:00",
-    "album_art": "2026-11-27T14:19:36.543333+00:00"
+    "artists": "2026-11-28T02:56:24.970085Z",
+    "galleries": "2026-11-28T02:19:02.219051+00:00",
+    "album_art": "2026-11-27T22:55:40.410704+00:00"
   },
   "catalog": {
     "raw_artists": 8049,
@@ -39,31 +39,31 @@
       "wp_db_tracks": 14606,
       "created_history_artists": 0,
       "merged_artists": 7988,
-      "merged_at": "2026-11-27T19:38:09.028435Z"
+      "merged_at": "2026-11-28T02:56:24.970085Z"
     }
   },
   "profile_enrichment": {
-    "real_profile_complete": 4408,
-    "real_profile_missing": 3517,
-    "real_profile_complete_pct": 55.62,
+    "real_profile_complete": 4409,
+    "real_profile_missing": 3516,
+    "real_profile_complete_pct": 55.63,
     "profile_status": {
-      "complete": 4164,
-      "partial": 2874,
+      "complete": 4166,
+      "partial": 2872,
       "not_found": 826,
       "legacy": 61
     },
-    "missing_validated_profile_image": 933,
+    "missing_validated_profile_image": 931,
     "missing_profile_bio": 3449,
     "missing_profile_data": 0,
     "profile_definition": "validated image + bio + identity/profile data",
-    "core_complete": 4388,
-    "core_complete_pct": 55.37,
+    "core_complete": 4389,
+    "core_complete_pct": 55.38,
     "core_definition": "effective image + effective bio + >=1 track + first_played + last_played",
-    "effective_image": 6992,
-    "effective_image_pct": 88.23,
+    "effective_image": 6994,
+    "effective_image_pct": 88.25,
     "image_direct_artist": 1645,
-    "image_gallery_fallback": 5347,
-    "missing_image": 933,
+    "image_gallery_fallback": 5349,
+    "missing_image": 931,
     "effective_bio": 4476,
     "effective_bio_pct": 56.48,
     "bio_direct_artist": 1026,
@@ -72,9 +72,9 @@
     "missing_bio": 3449,
     "gallery_checked": 7864,
     "gallery_checked_pct": 99.23,
-    "gallery_with_images": 6992,
-    "with_social": 4734,
-    "with_genre": 3914,
+    "gallery_with_images": 6994,
+    "with_social": 4732,
+    "with_genre": 3913,
     "with_related": 1599
   },
   "tracks": {
@@ -111,7 +111,7 @@
       "bio_source": "gallery_es",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
+      "has_social": false,
       "has_genre": false,
       "related": 0,
       "missing_core": [],
@@ -468,6 +468,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 73,
+      "first_played": "29 mar 2016",
+      "last_played": "27 nov 2026 · 19:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "New Navy",
       "slug": "new-navy",
       "plays": 72,
@@ -490,43 +527,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 72,
-      "first_played": "29 mar 2016",
-      "last_played": "24 nov 2026 · 20:13",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -1195,9 +1195,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 55,
+      "plays": 56,
       "first_played": "26 jul 2022",
-      "last_played": "25 nov 2026 · 23:39",
+      "last_played": "27 nov 2026 · 19:42",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -3743,9 +3743,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 55,
+      "plays": 56,
       "first_played": "26 jul 2022",
-      "last_played": "25 nov 2026 · 23:39",
+      "last_played": "27 nov 2026 · 19:42",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
@@ -4714,6 +4714,41 @@
       "profile_complete": false
     },
     {
+      "name": "The Long Blondes",
+      "slug": "the-long-blondes",
+      "plays": 31,
+      "first_played": "23 sep 2026",
+      "last_played": "27 nov 2026 · 14:08",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 3,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 3,
+      "tracks_in_otras": 3,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Northpilot",
       "slug": "northpilot",
       "plays": 30,
@@ -4743,41 +4778,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "The Long Blondes",
-      "slug": "the-long-blondes",
-      "plays": 30,
-      "first_played": "23 sep 2026",
-      "last_played": "26 nov 2026 · 12:14",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 3,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 3,
-      "tracks_in_otras": 3,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -5276,7 +5276,7 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 0,
-      "has_social": false,
+      "has_social": true,
       "has_genre": false,
       "related": 0,
       "missing_core": [
@@ -6162,6 +6162,41 @@
       "profile_complete": false
     },
     {
+      "name": "UNKLE/Ian Brown",
+      "slug": "unkle-ian-brown",
+      "plays": 21,
+      "first_played": "13 oct 2026",
+      "last_played": "27 nov 2026 · 18:58",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "American Motors",
       "slug": "american-motors",
       "plays": 20,
@@ -6370,41 +6405,6 @@
       ],
       "core_complete": false,
       "profile_status": "not_found",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "UNKLE/Ian Brown",
-      "slug": "unkle-ian-brown",
-      "plays": 20,
-      "first_played": "13 oct 2026",
-      "last_played": "25 nov 2026 · 21:07",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
       "profile_missing_fields": [
         "image",
         "bio"
@@ -7052,6 +7052,41 @@
       "profile_complete": false
     },
     {
+      "name": "Doggone",
+      "slug": "doggone",
+      "plays": 18,
+      "first_played": "21 sep 2026",
+      "last_played": "27 nov 2026 · 15:13",
+      "catalog_status": "live_only",
+      "sources": [
+        "yesstreaming_live"
+      ],
+      "tracks": 1,
+      "tracks_with_artwork": 0,
+      "tracks_missing_artwork": 1,
+      "tracks_in_otras": 1,
+      "has_image": false,
+      "image_source": "",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": false,
+      "gallery_images": 0,
+      "has_social": false,
+      "has_genre": false,
+      "related": 0,
+      "missing_core": [
+        "image",
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "legacy",
+      "profile_missing_fields": [
+        "image",
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "Evil arrows",
       "slug": "evil-arrows",
       "plays": 18,
@@ -7164,41 +7199,6 @@
       "plays": 18,
       "first_played": "26 sep 2026",
       "last_played": "24 nov 2026 · 21:14",
-      "catalog_status": "live_only",
-      "sources": [
-        "yesstreaming_live"
-      ],
-      "tracks": 1,
-      "tracks_with_artwork": 0,
-      "tracks_missing_artwork": 1,
-      "tracks_in_otras": 1,
-      "has_image": false,
-      "image_source": "",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": false,
-      "gallery_images": 0,
-      "has_social": false,
-      "has_genre": false,
-      "related": 0,
-      "missing_core": [
-        "image",
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "legacy",
-      "profile_missing_fields": [
-        "image",
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pollyfromthedirt",
-      "slug": "pollyfromthedirt",
-      "plays": 18,
-      "first_played": "23 sep 2026",
-      "last_played": "24 nov 2026 · 16:32",
       "catalog_status": "live_only",
       "sources": [
         "yesstreaming_live"
@@ -7544,6 +7544,43 @@
       "profile_complete": false
     },
     {
+      "name": "Pale Honey",
+      "slug": "pale-honey",
+      "plays": 73,
+      "first_played": "29 mar 2016",
+      "last_played": "27 nov 2026 · 19:59",
+      "catalog_status": "",
+      "sources": [
+        "wp_db",
+        "lastfm",
+        "megaseg",
+        "yesstreaming",
+        "yesstreaming_live"
+      ],
+      "tracks": 2,
+      "tracks_with_artwork": 2,
+      "tracks_missing_artwork": 0,
+      "tracks_in_otras": 0,
+      "has_image": true,
+      "image_source": "artist",
+      "has_bio": false,
+      "bio_source": "",
+      "gallery_checked": true,
+      "gallery_images": 4,
+      "has_social": true,
+      "has_genre": true,
+      "related": 10,
+      "missing_core": [
+        "bio"
+      ],
+      "core_complete": false,
+      "profile_status": "partial",
+      "profile_missing_fields": [
+        "bio"
+      ],
+      "profile_complete": false
+    },
+    {
       "name": "New Navy",
       "slug": "new-navy",
       "plays": 72,
@@ -7566,43 +7603,6 @@
       "bio_source": "",
       "gallery_checked": true,
       "gallery_images": 1,
-      "has_social": true,
-      "has_genre": true,
-      "related": 10,
-      "missing_core": [
-        "bio"
-      ],
-      "core_complete": false,
-      "profile_status": "partial",
-      "profile_missing_fields": [
-        "bio"
-      ],
-      "profile_complete": false
-    },
-    {
-      "name": "Pale Honey",
-      "slug": "pale-honey",
-      "plays": 72,
-      "first_played": "29 mar 2016",
-      "last_played": "24 nov 2026 · 20:13",
-      "catalog_status": "",
-      "sources": [
-        "wp_db",
-        "lastfm",
-        "megaseg",
-        "yesstreaming",
-        "yesstreaming_live"
-      ],
-      "tracks": 2,
-      "tracks_with_artwork": 2,
-      "tracks_missing_artwork": 0,
-      "tracks_in_otras": 0,
-      "has_image": true,
-      "image_source": "artist",
-      "has_bio": false,
-      "bio_source": "",
-      "gallery_checked": true,
-      "gallery_images": 4,
       "has_social": true,
       "has_genre": true,
       "related": 10,
@@ -8201,9 +8201,9 @@
     {
       "name": "Massive Attack/Tracey Thorn",
       "slug": "massive-attack-tracey-thorn",
-      "plays": 55,
+      "plays": 56,
       "first_played": "26 jul 2022",
-      "last_played": "25 nov 2026 · 23:39",
+      "last_played": "27 nov 2026 · 19:42",
       "catalog_status": "wp_draft",
       "sources": [
         "wp_db",
